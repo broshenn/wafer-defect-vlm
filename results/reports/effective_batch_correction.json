@@ -1,0 +1,108 @@
+{
+  "recorded": "2026-09-16 13:32:01",
+  "headline": "The training records' grad_accum field is a hardcoded constant (4), not a measurement. It is wrong for the GSPO G=8 and G=32 runs. Separately, accumulation was set equal to group size in every RL run, so effective batch grew as G^2 and group size was never varied alone.",
+  "how_found": "Read the live swift argv of the running G=32 job via /proc/<pid>/cmdline while checking whether a concurrent run would fit on the card. The argv showed --gradient_accumulation_steps 32 against a record claiming 4.",
+  "config_defect": {
+    "file": "projects/wafer-defect-vlm/scripts/29_grpo_train.sh",
+    "line_contains": "\"grad_accum\": 4,",
+    "nature": "literal constant inside the result-writing heredoc; reads no environment variable",
+    "fix": "read os.environ.get(\"GRAD_ACCUM\", 4) instead",
+    "deferred_because": "queue 41 is executing this file; editing a running .sh shifts bash's resume offset and this project has already lost two runs that way. Fix after all runs have stopped.",
+    "mismatches": [
+      {
+        "run": "GSPO G=8 lr1e-5",
+        "ran": 8,
+        "record_claims": 4
+      },
+      {
+        "run": "GSPO G=8 lr5e-5",
+        "ran": 8,
+        "record_claims": 4
+      },
+      {
+        "run": "GSPO G=32 lr5e-5",
+        "ran": 32,
+        "record_claims": 4
+      }
+    ]
+  },
+  "design_confound": {
+    "statement": "accumulation was set equal to group size in every RL run, so effective batch = G^2 x per_device_batch(1)",
+    "effective_batch_by_G": {
+      "4": 16,
+      "8": 64,
+      "32": 1024
+    },
+    "consequence": "every group-size contrast moves group size and effective batch size together: G=8 -> G=32 is a 4x change in G and a 16x change in effective batch. Section 5.2.5's group-size reading and the G=8 -> G=32 paired contrasts cannot attribute their difference to group size alone.",
+    "what_survives": "the learning-rate contrasts, which hold G -- and hence accumulation and effective batch -- fixed within each comparison: GRPO G=4 at both lrs, GSPO G=8 at both lrs, GSPO G=32 at both lrs.",
+    "relationship_to_the_other_confound": "independent of the IS-level confound already recorded (token-level always G=4, sequence-level always G=8 or G=32). The two together mean no contrast in this project varies IS level alone, or group size alone."
+  },
+  "runs": [
+    {
+      "run": "GRPO G=4 lr1e-5",
+      "num_generations": 4,
+      "grad_accum_in_record": 4,
+      "note": "no training log retained for this run; its real accumulation is not recoverable from the record either, because that field is a constant"
+    },
+    {
+      "run": "GRPO G=4 lr5e-5",
+      "num_generations": 4,
+      "grad_accum_real": 4,
+      "per_device_batch": 1,
+      "effective_batch": 16,
+      "learning_rate": "5e-5",
+      "importance_sampling_level": "token",
+      "source": "logs/29_qwen35_9b_grpo_lr5e5_train.log",
+      "grad_accum_in_record": 4,
+      "record_agrees": true
+    },
+    {
+      "run": "GSPO G=8 lr1e-5",
+      "num_generations": 8,
+      "grad_accum_real": 8,
+      "per_device_batch": 1,
+      "effective_batch": 64,
+      "learning_rate": "1e-5",
+      "importance_sampling_level": "sequence",
+      "source": "logs/29_gspo_lr1e5_train.log",
+      "grad_accum_in_record": 4,
+      "record_agrees": false
+    },
+    {
+      "run": "GSPO G=8 lr5e-5",
+      "num_generations": 8,
+      "grad_accum_real": 8,
+      "per_device_batch": 1,
+      "effective_batch": 64,
+      "learning_rate": "5e-5",
+      "importance_sampling_level": "sequence",
+      "source": "logs/29_grpo_train.log",
+      "grad_accum_in_record": 4,
+      "record_agrees": false
+    },
+    {
+      "run": "GSPO G=32 lr5e-5",
+      "num_generations": 32,
+      "grad_accum_real": 32,
+      "per_device_batch": 1,
+      "effective_batch": 1024,
+      "learning_rate": "5e-5",
+      "importance_sampling_level": "sequence",
+      "source": "logs/29_qwen35_9b_gspo_g32_train.log",
+      "grad_accum_in_record": 4,
+      "record_agrees": false
+    },
+    {
+      "run": "GSPO G=32 lr1e-5",
+      "num_generations": 32,
+      "grad_accum_real": 32,
+      "per_device_batch": 1,
+      "effective_batch": 1024,
+      "learning_rate": "1e-5",
+      "importance_sampling_level": "sequence",
+      "source": "logs/29_qwen35_9b_gspo_g32_lr1e5_train.log"
+    }
+  ],
+  "queue_41_config_is_consistent": "queue 41 passes GRAD_ACCUM=32 for G=32, matching the completed G=32 lr5e-5 run's real accum of 32. Its lr contrast at G=32 is therefore as clean as the other lr contrasts, and the run was NOT restarted.",
+  "downstream_effect_on_documents": "section 5.2 must state the confound wherever group size is read as a cause; the reward-std table's values are group-internal statistics and are not affected by accumulation, but any claim that they explain the SCORE differences is."
+}

@@ -1,0 +1,49 @@
+Run GSPO for real, and retract a number I had quoted wrongly
+
+GSPO was reported as unavailable on the grounds that the rlhf_type enum is
+['dpo','orpo','simpo','kto','cpo','rm','ppo','grpo','gkd'] and does not contain
+the name. That inference was wrong. GSPO is not a separate rlhf_type in this
+implementation: it is GRPO with --importance_sampling_level sequence, a different
+parameter in the same args class, whose own docstring points at the GSPO paper.
+The default is 'token', i.e. plain GRPO. So the first RL run was ordinary GRPO
+and the paper's algorithm had never been executed. Both GSPO runs are here now:
+the paper's lr, and 1e-5 to match the GRPO run, because the first moved the
+algorithm and the learning rate together and so cannot attribute its own result.
+
+The paper's group size of 32 is not reproducible here. ms-swift requires
+generation_batch_size to divide evenly by num_generations, and with no vLLM a
+step of G=32 is roughly 1024 generations, about 17 minutes, or 40+ hours for 150
+steps. G=8 is a resource limit, not a design choice, so this is not a
+reproduction of the paper's setting and is reported as such.
+
+At lr 5e-5 GSPO scores worse than SFT on nearly every metric: macro-F1 0.5014 vs
+0.6114, accuracy 0.5397 vs 0.6230, size MAE 0.6927 vs 0.4999, caption must-hit
+0.6627 vs 0.7540. Its 95% CI [0.4367, 0.5537] still overlaps SFT's
+[0.5496, 0.6602] by 0.0041, so the honest wording is "clearly worse", not
+"significantly worse" -- the report decides this from the intervals rather than
+from prose, and it caught me having written the opposite by hand.
+
+Per the paper's own section 8.11 gate, the final model stays the SFT adapter and
+the conclusion is "no significant improvement observed", not "RL works".
+
+This also retracts a claim I had already written into LIMITATIONS 5.2, that GSPO
+improved the gradient signal by cutting idle steps from 36% to 13%. The 13.3% was
+a single logged row, not a mean: the result record stores only first_step and
+last_step, and those happen to be 0.0 and 1.0. Measured over all 150 steps the
+share is 38.00% (57/150) for GSPO against 36.00% (54/150) for GRPO -- slightly
+worse, not better. The per-step value is bimodal, so the mean is exactly the idle
+share. The report now computes it from each run's own log and prints the counts,
+so the claim cannot drift from the evidence again.
+
+Two more defects of the same class are recorded in LIMITATIONS section 8. The
+first is that single-step-as-mean error. The second: both RL runs wrote through
+one launcher whose RUN_TAG defaulted to `grpo`, so logs/29_grpo_train.log was
+overwritten by the GSPO run while grpo_train_result.json still pointed at it --
+anything tracing the GRPO run through that field silently read GSPO's numbers.
+Each record now points at its own per-run log. The gspo_lr5e5 alias files, which
+duplicated the first GSPO run's outputs under a second name, are removed; run
+stems now match their checkpoint directories.
+
+Retrieval for both GSPO rows is filled in by scripts/35_after_gspo.sh, which
+waits for the second training run, scores both, merges each to bf16 for ranking,
+and rebuilds the comparison table and this report.

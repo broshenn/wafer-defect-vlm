@@ -1,0 +1,42 @@
+# API keys. This must never be committed, and must stay the first rule so it is
+# read before anything else in the file.
+secrets/
+
+# Raw data: 2.1 GB of WM811K, re-downloadable and unmodified.
+data/raw/
+
+# Generated 448x448 wafer PNGs. Reproducible from data/raw via prepare_data.
+data/**/images/
+benchmarks/**/robustness_images/
+
+# Model weights: 19 GB base model plus every merged/LoRA checkpoint.
+models/
+outputs/checkpoints/
+
+# A 992 MB smoke-run inference dump, superseded by the curated benchmark runs.
+outputs/smoke/
+
+# ms-swift is a third-party checkout pinned by commit, not part of this project.
+src/ms-swift/
+
+# The venv lives on the instance disk; the autodl-fs path is only a symlink.
+venvs/
+cache/
+
+# Run logs (linked by hash from outputs/reports instead) and caches.
+*.log
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Paper PDFs and full texts. AGENTS.md §17: papers/2604.27629v4.pdf contains the
+# authors' real e-mail addresses, which must not be copied into any commit.
+papers/
+
+# Assistant session-mining artefacts. Contain server login strings; not project
+# material. Kept on disk only.
+.hermes/
+
+# 14 MB of tarballs of superseded working states (2026-09-17). Binary, no delta
+# value in git; the current tree already supersedes them.
+archive/tarballs/

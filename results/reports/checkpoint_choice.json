@@ -1,0 +1,45 @@
+{
+  "run_dir": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1",
+  "source": "trainer_state",
+  "evaluations": [
+    {
+      "global_step": 100,
+      "eval_loss": 0.4692395329475403,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-100"
+    },
+    {
+      "global_step": 200,
+      "eval_loss": 0.35277342796325684,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-200"
+    },
+    {
+      "global_step": 300,
+      "eval_loss": 0.3142143785953522,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-300"
+    },
+    {
+      "global_step": 400,
+      "eval_loss": 0.2947910726070404,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-400"
+    },
+    {
+      "global_step": 500,
+      "eval_loss": 0.28136709332466125,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-500"
+    },
+    {
+      "global_step": 600,
+      "eval_loss": 0.2801724672317505,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-600"
+    },
+    {
+      "global_step": 604,
+      "eval_loss": 0.27999547123908997,
+      "path": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-604"
+    }
+  ],
+  "best_global_step": 604,
+  "best_eval_loss": 0.27999547123908997,
+  "best_checkpoint": "/root/autodl-fs/wafer-vlm/outputs/checkpoints/qwen35_9b_qlora_v1/v0-20260915-135822/checkpoint-604",
+  "note": "empty result means no eval_loss was recorded; check eval_steps before assuming a checkpoint exists"
+}

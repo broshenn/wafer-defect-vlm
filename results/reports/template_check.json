@@ -1,0 +1,49 @@
+{
+  "template": "qwen3_5",
+  "tasks_checked": [
+    {
+      "task": "caption",
+      "image": "/autodl-fs/data/wafer-vlm/data/prepared_v1/images/wafer_00000002_016.png",
+      "tokens": 274,
+      "image_pad_tokens": 196,
+      "vision_start_tokens": 1,
+      "pixel_values_shape": [
+        784,
+        1536
+      ],
+      "has_system_turn": true,
+      "assistant_chars": 40,
+      "decoded_head": "<|im_start|>system\n你是半导体晶圆 BIN 图缺陷分析专家，只依据图像回答，不推测工艺根因。<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pa"
+    },
+    {
+      "task": "classification",
+      "image": "/autodl-fs/data/wafer-vlm/data/prepared_v1/images/wafer_00000002_016.png",
+      "tokens": 251,
+      "image_pad_tokens": 196,
+      "vision_start_tokens": 1,
+      "pixel_values_shape": [
+        784,
+        1536
+      ],
+      "has_system_turn": true,
+      "assistant_chars": 3,
+      "decoded_head": "<|im_start|>system\n你是半导体晶圆 BIN 图缺陷分析专家，只依据图像回答，不推测工艺根因。<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pa"
+    },
+    {
+      "task": "structured",
+      "image": "/autodl-fs/data/wafer-vlm/data/prepared_v1/images/wafer_00000002_016.png",
+      "tokens": 382,
+      "image_pad_tokens": 196,
+      "vision_start_tokens": 1,
+      "pixel_values_shape": [
+        784,
+        1536
+      ],
+      "has_system_turn": true,
+      "assistant_chars": 361,
+      "decoded_head": "<|im_start|>system\n你是半导体晶圆 BIN 图缺陷分析专家，只依据图像回答，不推测工艺根因。<|im_end|>\n<|im_start|>user\n<|vision_start|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pad|><|image_pa"
+    }
+  ],
+  "problems": [],
+  "ok": true
+}

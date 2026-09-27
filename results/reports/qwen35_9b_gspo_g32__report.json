@@ -1,0 +1,124 @@
+{
+  "requests_scored_from": "all_requests.jsonl",
+  "requests_expected": 1512,
+  "classification": {
+    "samples": 252,
+    "accuracy": 0.5674603174603174,
+    "macro_f1": 0.540336633772156,
+    "macro_f1_95ci": [
+      0.4807387243544569,
+      0.5964806589316357
+    ],
+    "per_class": {
+      "Center": {
+        "precision": 0.5471698113207547,
+        "recall": 0.9666666666666667,
+        "f1-score": 0.6987951807228916,
+        "support": 30.0
+      },
+      "Donut": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 30.0
+      },
+      "Edge_Loc": {
+        "precision": 0.4482758620689655,
+        "recall": 0.8666666666666667,
+        "f1-score": 0.5909090909090909,
+        "support": 30.0
+      },
+      "Edge_Ring": {
+        "precision": 0.9166666666666666,
+        "recall": 0.36666666666666664,
+        "f1-score": 0.5238095238095238,
+        "support": 30.0
+      },
+      "Loc": {
+        "precision": 0.35714285714285715,
+        "recall": 0.8333333333333334,
+        "f1-score": 0.5,
+        "support": 30.0
+      },
+      "Near_full": {
+        "precision": 1.0,
+        "recall": 0.8125,
+        "f1-score": 0.896551724137931,
+        "support": 16.0
+      },
+      "Random": {
+        "precision": 0.7931034482758621,
+        "recall": 0.7666666666666667,
+        "f1-score": 0.7796610169491526,
+        "support": 30.0
+      },
+      "Scratch": {
+        "precision": 1.0,
+        "recall": 0.3,
+        "f1-score": 0.46153846153846156,
+        "support": 30.0
+      },
+      "none": {
+        "precision": 0.875,
+        "recall": 0.2692307692307692,
+        "f1-score": 0.4117647058823529,
+        "support": 26.0
+      }
+    },
+    "invalid_predictions": 0
+  },
+  "structured": {
+    "parse_errors": 0,
+    "field_accuracy": {
+      "defect_type": 0.5595238095238095,
+      "radial_zone": 0.4603174603174603
+    },
+    "clock_circular_mae_sectors": 1.6859903381642511,
+    "size_mae_r": 1.6509109114344502,
+    "size_note": "automatic gold is the defect bounding extent/R; ring width and multi-cluster cases require human review"
+  },
+  "caption": {
+    "samples": 252,
+    "must_hit_rate": 0.5714285714285714,
+    "empty_rate": 0.0,
+    "root_cause_hallucination_rate": 0.0,
+    "must_hit_rate_per_class": {
+      "Edge_Loc": 0.8666666666666667,
+      "none": 0.0,
+      "Scratch": 0.5666666666666667,
+      "Near_full": 0.625,
+      "Donut": 0.03333333333333333,
+      "Edge_Ring": 0.9,
+      "Loc": 0.9666666666666667,
+      "Center": 1.0,
+      "Random": 0.13333333333333333
+    },
+    "note": "shape/location/size boundary cases still require the frozen human rubric review"
+  },
+  "robustness": {
+    "samples": 756,
+    "accuracy": 0.5555555555555556,
+    "accuracy_per_perturbation": {
+      "recolor_v1": 0.5,
+      "resize_224": 0.5873015873015873,
+      "rotate_90_ccw": 0.5793650793650794
+    },
+    "invalid_predictions": 0,
+    "flip_rate_vs_clean": 0.25396825396825395,
+    "note": "class is invariant under resize/recolor/rotate, so a flip is genuine instability; clock-direction gold under rotation is recorded in robustness.jsonl gold_transform"
+  },
+  "retrieval": {
+    "mAP@1": 0.7222222222222222,
+    "mAP@5": 0.5236296296296297,
+    "mAP@10": 0.433718253968254,
+    "mAP@25": 0.3273786332217996,
+    "mAP@50": 0.36483935321774674,
+    "Recall@1": 0.02978210082807784,
+    "Recall@5": 0.11460563744471788,
+    "Recall@10": 0.2007554983685252,
+    "Recall@25": 0.4099866078295198,
+    "Recall@50": 0.5785983349699825,
+    "nDCG@10": 0.3906039251253451,
+    "nDCG@50": 0.49548715093794404
+  }
+}

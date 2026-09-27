@@ -1,0 +1,98 @@
+{
+  "outcome": "completed",
+  "reason": "150 steps finished without error",
+  "exit_status": 0,
+  "elapsed_seconds": 2280,
+  "gpu_peak_mib": 12576,
+  "log": "/root/autodl-fs/wafer-vlm/logs/24_grpo_qwen35_9b_grpo_lr1e5_seed3409.log",
+  "max_steps_requested": 150,
+  "save_steps": 50,
+  "steps_logged": 150,
+  "first_step": {
+    "loss": 0.03769,
+    "reward": 1.6,
+    "reward_std": 0.0,
+    "frac_reward_zero_std": 1.0,
+    "kl": 0.9423,
+    "step_time": 15.83,
+    "memory_GiB": 9.98,
+    "WaferClass": 1.0,
+    "WaferClass_std": 0.0,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 1.0,
+    "WaferRadial_std": 0.0,
+    "WaferClock": 0.0,
+    "WaferClock_std": 0.0
+  },
+  "last_step": {
+    "loss": 0.04005,
+    "reward": 1.9,
+    "reward_std": 0.2,
+    "frac_reward_zero_std": 0.0,
+    "kl": 0.9959,
+    "step_time": 14.32,
+    "memory_GiB": 11.8,
+    "WaferClass": 1.0,
+    "WaferClass_std": 0.0,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 0.75,
+    "WaferRadial_std": 0.5,
+    "WaferClock": 1.0,
+    "WaferClock_std": 0.0
+  },
+  "mean_reward": 1.6726666666666667,
+  "mean_kl": 1.1674546666666668,
+  "mean_memory_GiB": 11.716333333333333,
+  "mean_step_seconds": 14.796066666666666,
+  "reward_signal": {
+    "WaferClass": {
+      "mean_std_across_steps": 0.07539733333333333,
+      "carries_group_signal": true
+    },
+    "WaferFormat": {
+      "mean_std_across_steps": 0.013333333333333334,
+      "carries_group_signal": true
+    },
+    "WaferRadial": {
+      "mean_std_across_steps": 0.13055733333333333,
+      "carries_group_signal": true
+    },
+    "WaferClock": {
+      "mean_std_across_steps": 0.2480186666666667,
+      "carries_group_signal": true
+    }
+  },
+  "config": {
+    "rlhf_type": "grpo",
+    "use_vllm": false,
+    "note": "vLLM is not installed, so rollouts use ms-swift's TransformersEngine",
+    "num_generations": 4,
+    "per_device_batch": 1,
+    "grad_accum": 4,
+    "grad_accum_source": "GRAD_ACCUM environment variable",
+    "learning_rate": 1e-05,
+    "beta": 0.04,
+    "temperature": 1.0,
+    "seed": 3409,
+    "reward_funcs": [
+      "wafer_class",
+      "wafer_format",
+      "wafer_radial",
+      "wafer_clock"
+    ],
+    "reward_weights": [
+      1.0,
+      0.2,
+      0.4,
+      0.4
+    ],
+    "rewards_are_deterministic": true,
+    "importance_sampling_level": "token",
+    "algorithm": "GRPO",
+    "gspo_note": "GSPO is not a separate rlhf_type in ms-swift; it is GRPO with --importance_sampling_level sequence. An earlier revision of this file claimed GSPO was unavailable because the rlhf_type choices exclude the name gspo -- that was wrong."
+  },
+  "mean_frac_reward_zero_std": 0.32666666666666666,
+  "frac_reward_zero_std_note": "Share of logged optimizer steps where every generation in the group scored identically, so the advantage was zero and no gradient was produced. Measured over all steps in the per-run log."
+}

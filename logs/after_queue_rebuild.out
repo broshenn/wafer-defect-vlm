@@ -1,0 +1,9 @@
+[15:43:27] waiting for pid 3101 to exit
+[16:33:57] pid 3101 has exited
+[16:34:17] rebuilding the comparison from the reports on disk (after pid 3101)
+[16:34:17]   run set on disk: 10 run(s)
+usage: make_report.py [-h] --run RUN --output OUTPUT --markdown MARKDOWN
+                      [--provenance PROVENANCE] [--note NOTE]
+make_report.py: error: the following arguments are required: --run
+[16:34:18]   WARNING: make_report.py returned non-zero
+[16:34:18] waiting for pid 3699 to exit

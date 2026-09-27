@@ -1,0 +1,39 @@
+The paper's group size does not rescue the paper's learning rate
+
+G=32 + lr 5e-5, the paper's own setting, is now measured. It does not recover:
+macro-F1 0.5403 against SFT's 0.6114, CI [0.4807, 0.5965] overlapping SFT's
+[0.5496, 0.6602]. Group size does help -- holding the lr at 5e-5, going from 8
+to 32 moves the score 0.5014 to 0.5403. But that is +0.039, against the +0.108
+that dropping the lr from 5e-5 to 1e-5 buys at G=8. The learning rate dominates
+by roughly 2.8x, and the paper's learning rate is not usable at this scale.
+
+Two per-class collapses say more about the mechanism than the scores do. At lr
+5e-5 each run loses an entire class, and not the same one: G=8 drops `none` to
+0.000 F1, G=32 drops `Donut` to 0.000. Both recover at lr 1e-5. A whole class
+vanishing is not the stable bias a hard class would produce -- it moves when the
+group size moves, which is what a policy pushed into a degenerate region looks
+like.
+
+G=32 reshapes the error profile rather than scaling it. It is best of all runs
+on radial_zone (0.4603 vs SFT 0.2640), best on retrieval (mAP@10 0.4337 vs SFT
+0.3873, so the run that scores worst on the headline is the best at retrieval),
+best on clock MAE and on Scratch -- and worst on size MAE (1.6509, 3.3x SFT) and
+caption. "It got worse" is the wrong summary.
+
+Its idle-step share is 42.00% (63/150), the highest of the four RL runs, while
+its macro-F1 beats the G=8 run whose idle share is 38.00%. That is a third
+independent case of the signal and the score moving apart.
+
+Also fixed: the retracted claim that GSPO is unavailable had been corrected in
+LIMITATIONS but not in provenance.json, so the corrected report still printed it
+in its English summary. One fact stored twice, corrected once -- the same
+failure mode as section 8 items 5 and 6.
+
+The learning-rate claim in the verdict is now qualified. GRPO was only ever run
+at lr 1e-5, so "the learning rate, not the algorithm" rests on the two-lr
+comparison inside GSPO alone, and cannot yet rule out that GSPO is the fragile
+one. GRPO at lr 5e-5 is the missing cell of the 2x2 and is registered as an open
+item in provenance.json rather than left implicit. Reproducing the paper's
+central claim needs that run.
+
+Final model remains the SFT adapter, per the paper's own section 8.11 gate.

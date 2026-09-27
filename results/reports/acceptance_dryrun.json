@@ -1,0 +1,117 @@
+{
+  "checks": {
+    "pytest": {
+      "passed": true,
+      "summary": "50 passed in 7.66s",
+      "returncode": 0
+    },
+    "manifest": {
+      "records": 5904,
+      "unique_sample_ids": 5904,
+      "duplicate_ids": 0,
+      "splits": {
+        "train": 4721,
+        "val": 594,
+        "test": 589
+      },
+      "class_counts": {
+        "none": 400,
+        "Loc": 800,
+        "Edge_Loc": 800,
+        "Scratch": 800,
+        "Random": 800,
+        "Near_full": 149,
+        "Center": 800,
+        "Edge_Ring": 800,
+        "Donut": 555
+      },
+      "missing_images": [],
+      "missing_image_count": 0,
+      "images_checked": 600,
+      "wrong_size": [],
+      "off_palette": [],
+      "passed": true
+    },
+    "lot_isolation": {
+      "lots": 3822,
+      "rows_disagreeing_with_the_rule": [],
+      "rule_mismatch_count": 0,
+      "lots_straddling_splits": {},
+      "straddling_count": 0,
+      "passed": true,
+      "note": "a lot appearing in two splits would leak near-duplicate wafers across the split boundary"
+    },
+    "benchmark": {
+      "files_checked": 773,
+      "mismatches": [],
+      "metadata_status": "draft_pending_human_review",
+      "review_gate": "bypassed_by_allow_pending (252 samples unapproved)",
+      "core_samples": 252,
+      "human_review_status": "pending_human_review",
+      "passed": true
+    },
+    "model_shards": {
+      "shards": 4,
+      "incomplete_files": [],
+      "has_index": true,
+      "has_config": true,
+      "missing_shards": [],
+      "passed": true
+    },
+    "curated": {
+      "train_examples": 12876,
+      "val_examples": 1611,
+      "overlap_train_val": [],
+      "tasks_per_example": {
+        "caption": 4292,
+        "classification": 4292,
+        "structured": 4292
+      },
+      "accepted_samples": 4829,
+      "quarantine_samples": 486,
+      "decisions": {
+        "no_valid_teacher": 47,
+        "primary": 3448,
+        "teacher_disagreement": 439,
+        "secondary+geometry": 652,
+        "primary+geometry": 696,
+        "secondary": 33
+      },
+      "passed": true
+    }
+  },
+  "all_passed": true,
+  "artifacts": {
+    "data/raw/wm811k-wafer-map.zip": {
+      "exists": true,
+      "sha256": "0e4bd4316a110a04e475a88071f5e1c7fe4303b12ee53c851d2cae4d995a93e2",
+      "bytes": 156686283
+    },
+    "data/raw/wm811k/LSWMD.pkl": {
+      "exists": true,
+      "sha256": "1d04fccb3dd3176b276878b926b20fead7e077c5751e4d353ea9741a5e7b5c65",
+      "bytes": 2095505977
+    },
+    "data/prepared_v1/manifest.jsonl": {
+      "exists": true,
+      "sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+      "bytes": 6992491
+    },
+    "data/curated_v2/splits/train.jsonl": {
+      "exists": true,
+      "sha256": "8dfb6b0f8660306b4db9ae05481ef7dfe5c95e49607030fa06b158882fb71898",
+      "bytes": 8273496
+    },
+    "data/curated_v2/splits/val.jsonl": {
+      "exists": true,
+      "sha256": "d1ce6f864f85c8b8d649bf18f9c1beca0610bf808aec029f3786e7dc030c0198",
+      "bytes": 1039053
+    },
+    "benchmarks/wafer_bench_v1/all_requests.jsonl": {
+      "exists": true,
+      "sha256": "d51928409f4ee743c57dd79f63e7a046892cc93ef22ea72b600787fc4ddc549f",
+      "bytes": 688464
+    }
+  },
+  "note": "benchmark stays draft until two humans complete benchmarks/wafer_bench_v1/review; that step is not simulated here"
+}

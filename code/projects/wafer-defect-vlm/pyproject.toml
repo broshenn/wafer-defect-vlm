@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wafer-defect-vlm-repro"
+version = "0.1.0"
+description = "Reproducible wafer BIN map captioning, validation, training and retrieval pipeline"
+readme = "README.md"
+requires-python = ">=3.10,<3.13"
+dependencies = [
+  "aiofiles>=23.2",
+  "aiohttp>=3.9",
+  "numpy>=1.26,<3",
+  "opencv-python>=4.9",
+  "openai>=1.60",
+  "pandas>=2.1",
+  "Pillow>=10",
+  "python-dotenv>=1.0",
+  "scikit-image>=0.22",
+  "scikit-learn>=1.4",
+  "scipy>=1.11",
+  "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+quality = ["streamlit>=1.36"]
+train = [
+  "accelerate>=1.2",
+  "bitsandbytes>=0.45; platform_system != 'Windows'",
+  "datasets>=3.2",
+  "peft>=0.14",
+  "torch>=2.4",
+  "torchvision>=0.19",
+  "transformers>=4.49",
+]
+
+[project.scripts]
+wafer-vlm = "wafer_vlm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

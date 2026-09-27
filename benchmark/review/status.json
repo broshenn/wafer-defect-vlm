@@ -1,0 +1,14 @@
+{
+  "core_samples": 252,
+  "reviewers": [
+    "A",
+    "B"
+  ],
+  "sheets": [
+    "reviewer_A.csv",
+    "reviewer_B.csv"
+  ],
+  "gold_withheld": true,
+  "status": "pending_human_review",
+  "note": "The benchmark stays draft until two independent reviewers fill these in and merge_review.py reports agreement. This is a real human step and is deliberately not simulated."
+}

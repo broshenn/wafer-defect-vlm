@@ -1,0 +1,100 @@
+{
+  "outcome": "completed",
+  "reason": "150 steps finished without error",
+  "exit_status": 0,
+  "elapsed_seconds": 2414,
+  "gpu_peak_mib": 14391,
+  "log": "/root/autodl-fs/wafer-vlm/logs/24_grpo_qwen35_9b_grpo_v1.log",
+  "max_steps_requested": 150,
+  "save_steps": 50,
+  "steps_logged": 150,
+  "first_step": {
+    "loss": 0.05315,
+    "reward": 2.0,
+    "reward_std": 0.0,
+    "frac_reward_zero_std": 1.0,
+    "kl": 1.329,
+    "step_time": 15.45,
+    "memory_GiB": 10.22,
+    "WaferClass": 1.0,
+    "WaferClass_std": 0.0,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 1.0,
+    "WaferRadial_std": 0.0,
+    "WaferClock": 1.0,
+    "WaferClock_std": 0.0
+  },
+  "last_step": {
+    "loss": 0.03095,
+    "reward": 1.8,
+    "reward_std": 0.2309,
+    "frac_reward_zero_std": 0.0,
+    "kl": 0.8077,
+    "step_time": 16.79,
+    "memory_GiB": 13.58,
+    "WaferClass": 1.0,
+    "WaferClass_std": 0.0,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 0.5,
+    "WaferRadial_std": 0.5774,
+    "WaferClock": 1.0,
+    "WaferClock_std": 0.0
+  },
+  "mean_reward": 1.6972866666666666,
+  "mean_kl": 1.1067926666666668,
+  "mean_memory_GiB": 12.954666666666666,
+  "mean_step_seconds": 15.586733333333335,
+  "reward_signal": {
+    "WaferClass": {
+      "mean_std_across_steps": 0.08027866666666666,
+      "carries_group_signal": true
+    },
+    "WaferFormat": {
+      "mean_std_across_steps": 0.0004762,
+      "carries_group_signal": true
+    },
+    "WaferRadial": {
+      "mean_std_across_steps": 0.11797733333333334,
+      "carries_group_signal": true
+    },
+    "WaferClock": {
+      "mean_std_across_steps": 0.224448,
+      "carries_group_signal": true
+    }
+  },
+  "config": {
+    "rlhf_type": "grpo",
+    "use_vllm": false,
+    "note": "vLLM is not installed, so rollouts use ms-swift's TransformersEngine",
+    "num_generations": 4,
+    "per_device_batch": 1,
+    "grad_accum": 4,
+    "learning_rate": 1e-05,
+    "beta": 0.04,
+    "temperature": 1.0,
+    "reward_funcs": [
+      "wafer_class",
+      "wafer_format",
+      "wafer_radial",
+      "wafer_clock"
+    ],
+    "reward_weights": [
+      1.0,
+      0.2,
+      0.4,
+      0.4
+    ],
+    "rewards_are_deterministic": true,
+    "algorithm": "GRPO (token-level importance sampling)",
+    "algorithm_note": "This run is plain GRPO, not GSPO. GSPO in ms-swift is GRPO with --importance_sampling_level sequence, a separate flag in the same args class; an earlier revision of this record wrongly claimed GSPO was unavailable because the rlhf_type choices exclude the name gspo.",
+    "seed": 3407,
+    "seed_source": "Reconstructed, not logged: the launcher passed a literal --seed 3407 (projects/wafer-defect-vlm/scripts/24_train_grpo.sh, line 115 at commit b1092dc, the last commit in which the flag was still a literal) and no launcher set a seed any other way, so every run through that script used 3407. Written here so a later replication run can be shown to differ from its original rather than merely asserted to.",
+    "importance_sampling_level": "token",
+    "importance_sampling_level_source": "Reconstructed, not logged: the record was written before the launcher forwarded this setting into its config block. Read from the run's own log (24_grpo_qwen35_9b_grpo_v1.log), which states it once: token. Recorded because a GRPO record with no IS level cannot be distinguished from a GSPO one -- GSPO is GRPO at --importance_sampling_level sequence in this ms-swift commit -- and the GRPO-vs-GSPO comparison depends on that distinction."
+  },
+  "log_note": "Repointed from logs/29_<tag>_train.log, which the launcher shares between runs: the first GSPO run reused the tag `grpo` and overwrote it, so that file no longer contains this run's output. This per-run inner log is the artefact the numbers come from.",
+  "mean_frac_reward_zero_std": 0.36,
+  "frac_reward_zero_std_note": "Share of logged optimizer steps where every generation in the group scored identically, so the advantage was zero and no gradient was produced. Recomputed from the per-run log, not copied from prose."
+}

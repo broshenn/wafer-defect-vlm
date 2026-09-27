@@ -1,0 +1,51 @@
+{
+  "samples": 252,
+  "note": "best_constant is what a model that ignores the image scores, and is the bar that matters. uniform_random is the bar for having any signal.",
+  "defect_type": {
+    "n": 252,
+    "values": {
+      "Edge_Loc": 30,
+      "none": 26,
+      "Scratch": 30,
+      "Near_full": 16,
+      "Donut": 30,
+      "Edge_Ring": 30,
+      "Loc": 30,
+      "Center": 30,
+      "Random": 30
+    },
+    "cardinality": 9,
+    "best_constant": "Edge_Loc",
+    "best_constant_accuracy": 0.11904761904761904,
+    "uniform_random_accuracy": 0.1111111111111111
+  },
+  "radial_zone": {
+    "n": 252,
+    "values": {
+      "center": 210,
+      "middle": 36,
+      "edge": 5,
+      "none": 1
+    },
+    "cardinality": 4,
+    "best_constant": "center",
+    "best_constant_accuracy": 0.8333333333333334,
+    "uniform_random_accuracy": 0.25
+  },
+  "clock_sector": {
+    "n": 251,
+    "best_constant": 5,
+    "best_constant_circular_mae": 2.693227091633466,
+    "uniform_random_circular_mae": 3
+  },
+  "size_r": {
+    "n": 251,
+    "best_constant": 2.0313417723916634,
+    "best_constant_mae": 0.11010485206313543,
+    "mean_constant_mae": 0.11537168300306352,
+    "range": [
+      0.1181634727476536,
+      2.4485738733018296
+    ]
+  }
+}

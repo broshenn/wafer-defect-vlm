@@ -1,0 +1,56 @@
+The learning rate was the variable, not the algorithm
+
+Two claims of mine were wrong and both are corrected here.
+
+The first, that GSPO is unavailable, was corrected in the previous commit. The
+second is new: I had asserted that the paper's group size of 32 needs 40+ hours
+and is infeasible on this machine. That number was never measured. It came from
+assuming generation_batch_size counts prompts, so 32 x 32 = 1024 generations per
+step. ms-swift's own error message, printed on the first failed GSPO launch,
+shows it counts completions: "generation_batch_size (4) must be evenly divisible
+by num_generations (16). Valid values: [2, 4]". The evidence was already in the
+log and I read past it.
+
+Measured with a two-step smoke: G=32 runs at 60-62 s/step and 15,185 MiB peak,
+so 150 steps is about 2.5 hours. The claim was wrong by roughly 17x and the
+paper's group size is reproducible here. That run is now in flight and is the
+closest thing in this project to the paper's actual setting.
+
+The lr-matched GSPO run also settles what the previous commit could not. GSPO at
+G=8 with the paper's lr scored clearly worse than SFT (macro-F1 0.5014 vs 0.6114)
+but that run moved the algorithm and the learning rate together, so it attributed
+nothing. With the learning rate held at the GRPO run's 1e-5, GSPO lands back in
+the noise: macro-F1 0.6089 against SFT's 0.6114, CIs heavily overlapping, and
+accuracy 0.6151 against 0.6230. The outlier is the 5e-5 column, not the
+algorithm.
+
+The mechanism fits: at 5e-5 the KL rises to 1.02-1.12 and idle steps go from
+36.00% to 38.00%, the signature of a policy pushed into a degenerate region where
+generations converge and the group reward carries no advantage. G=32 is the test
+of that reading, since a larger group reduces advantage variance and normally
+tolerates a higher learning rate, which is the problem GSPO claims to solve.
+
+The idle-step claim has now been stated three ways and the section keeps all
+three visible. It began as "36% down to 13.3%", where 13.3% was a single logged
+row rather than a mean. Corrected against all 150 steps it became "no change",
+38.00% against 36.00%, which retracted the improvement. With the learning rate
+matched it is 15.30% against 36.00% -- the original direction was right, but it
+had been read off a confounded comparison and a misread number. What survives is
+that the signal-level gain is real and the benchmark gain is not: 36.00% down to
+15.30% in idle steps, with no measurable benchmark effect.
+
+Final model remains the SFT adapter, per the paper's own section 8.11 gate. GRPO
+and GSPO at both learning rates show no significant improvement over SFT. The
+honest summary is that RL produced no measurable benchmark gain at this model
+scale and budget, while GSPO's sequence-level normalization did cut idle steps by
+about 60%.
+
+Also fixes the second record-destroying bug. 29_grpo_train.sh passes the per-run
+result path to its embedded Python as argv[1], which unpacks it into `result` and
+then never uses it, writing to a hardcoded path instead. The previous patch
+parameterised the shell variable feeding argv[1], so the run looked isolated and
+was launched believing the records were separate. The lr 1e-5 result overwrote
+the GRPO record, the same collision as the first GSPO run. Both were recoverable
+only because the GRPO record had already been committed -- luck, not design. Now
+recorded as item 6 in LIMITATIONS section 8, which is where the other silently
+plausible failures live.

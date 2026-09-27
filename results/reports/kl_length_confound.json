@@ -1,0 +1,445 @@
+{
+  "description": "Can KL be compared across these runs at all?",
+  "question": "is the KL comparison in LIMITATIONS 5.2.2 sound?",
+  "runs": {
+    "grpo": {
+      "G": 4,
+      "repeat_of": null,
+      "lr": 1e-05,
+      "is_level": "token",
+      "log": "24_grpo_qwen35_9b_grpo_v1.log",
+      "steps": 150,
+      "mean_reward": 1.697287,
+      "mean_kl": 1.106793,
+      "mean_completion_length": 115.48,
+      "mean_completion_min_length": 106.2,
+      "mean_completion_max_length": 126.93,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.36,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 54,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 54,
+        "holds": true
+      }
+    },
+    "qwen35_9b_grpo_lr5e5": {
+      "G": 4,
+      "repeat_of": null,
+      "lr": 5e-05,
+      "is_level": "token",
+      "log": "29_qwen35_9b_grpo_lr5e5_train.log",
+      "steps": 150,
+      "mean_reward": 1.568626,
+      "mean_kl": 1.043522,
+      "mean_completion_length": 97.92,
+      "mean_completion_min_length": 87.05,
+      "mean_completion_max_length": 110.17,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.326667,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 49,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 49,
+        "holds": true
+      }
+    },
+    "gspo_lr1e5": {
+      "G": 8,
+      "repeat_of": null,
+      "lr": 1e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_gspo_lr1e5.log",
+      "steps": 150,
+      "mean_reward": 1.706447,
+      "mean_kl": 1.120086,
+      "mean_completion_length": 114.4,
+      "mean_completion_min_length": 103.13,
+      "mean_completion_max_length": 129.86,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.153333,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 23,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 23,
+        "holds": true
+      }
+    },
+    "qwen35_9b_gspo_v1": {
+      "G": 8,
+      "repeat_of": null,
+      "lr": 5e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_qwen35_9b_gspo_v1.log",
+      "steps": 150,
+      "mean_reward": 1.59628,
+      "mean_kl": 1.021719,
+      "mean_completion_length": 109.16,
+      "mean_completion_min_length": 97.73,
+      "mean_completion_max_length": 126.75,
+      "mean_clipped_ratio": 0.001667,
+      "mean_frac_reward_zero_std": 0.38,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 57,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 57,
+        "holds": true
+      }
+    },
+    "qwen35_9b_gspo_g32": {
+      "G": 32,
+      "repeat_of": null,
+      "lr": 5e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_qwen35_9b_gspo_g32.log",
+      "steps": 150,
+      "mean_reward": 1.366213,
+      "mean_kl": 0.959337,
+      "mean_completion_length": 113.74,
+      "mean_completion_min_length": 93.37,
+      "mean_completion_max_length": 155.92,
+      "mean_clipped_ratio": 0.000417,
+      "mean_frac_reward_zero_std": 0.42,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 63,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 63,
+        "holds": true
+      }
+    },
+    "qwen35_9b_gspo_g4_lr5e5": {
+      "G": 4,
+      "repeat_of": null,
+      "lr": 5e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_qwen35_9b_gspo_g4_lr5e5.log",
+      "steps": 150,
+      "mean_reward": 1.536433,
+      "mean_kl": 0.988237,
+      "mean_completion_length": 113.83,
+      "mean_completion_min_length": 102.09,
+      "mean_completion_max_length": 127.22,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.266667,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 40,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 40,
+        "holds": true
+      }
+    },
+    "qwen35_9b_gspo_g4_lr1e5": {
+      "G": 4,
+      "repeat_of": null,
+      "lr": 1e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_qwen35_9b_gspo_g4_lr1e5.log",
+      "steps": 150,
+      "mean_reward": 1.687907,
+      "mean_kl": 1.093719,
+      "mean_completion_length": 116.97,
+      "mean_completion_min_length": 106.89,
+      "mean_completion_max_length": 129.22,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.333333,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 50,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 50,
+        "holds": true
+      }
+    },
+    "qwen35_9b_gspo_g32_lr1e5": {
+      "G": 32,
+      "repeat_of": null,
+      "lr": 1e-05,
+      "is_level": "sequence",
+      "log": "24_grpo_qwen35_9b_gspo_g32_lr1e5.log",
+      "steps": 150,
+      "mean_reward": 1.707304,
+      "mean_kl": 1.099529,
+      "mean_completion_length": 118.1,
+      "mean_completion_min_length": 99.69,
+      "mean_completion_max_length": 144.82,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.073333,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 11,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 11,
+        "holds": true
+      }
+    },
+    "qwen35_9b_grpo_lr1e5_seed3408": {
+      "G": 4,
+      "repeat_of": "grpo",
+      "lr": 1e-05,
+      "is_level": "token",
+      "log": "24_grpo_qwen35_9b_grpo_lr1e5_seed3408.log",
+      "steps": 150,
+      "mean_reward": 1.695813,
+      "mean_kl": 1.124383,
+      "mean_completion_length": 120.08,
+      "mean_completion_min_length": 109.13,
+      "mean_completion_max_length": 132.44,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.38,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 57,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 57,
+        "holds": true
+      }
+    },
+    "qwen35_9b_grpo_lr1e5_seed3409": {
+      "G": 4,
+      "repeat_of": "grpo",
+      "lr": 1e-05,
+      "is_level": "token",
+      "log": "24_grpo_qwen35_9b_grpo_lr1e5_seed3409.log",
+      "steps": 150,
+      "mean_reward": 1.672667,
+      "mean_kl": 1.167455,
+      "mean_completion_length": 115.46,
+      "mean_completion_min_length": 106.55,
+      "mean_completion_max_length": 126.08,
+      "mean_clipped_ratio": 0.0,
+      "mean_frac_reward_zero_std": 0.326667,
+      "beta": 0.04,
+      "beta_sources": {
+        "cli": [
+          "0.04"
+        ],
+        "args_dump": [
+          "0.04"
+        ]
+      },
+      "kl_identity": {
+        "claim": "on steps with frac_reward_zero_std == 1 the policy-gradient term is exactly 0, so logged loss equals beta * kl, which is what makes kl identifiable as a per-token KL rather than a total",
+        "beta": 0.04,
+        "idle_steps_tested": 49,
+        "max_abs_deviation": 2e-05,
+        "steps_matching_within_1e-4": 49,
+        "holds": true
+      }
+    }
+  },
+  "matched_pairs": {
+    "GRPO G=4": {
+      "from": "grpo",
+      "to": "qwen35_9b_grpo_lr5e5",
+      "lr": [
+        1e-05,
+        5e-05
+      ],
+      "kl": [
+        1.106793,
+        1.043522
+      ],
+      "kl_delta": -0.063271,
+      "completion_length": [
+        115.48,
+        97.92
+      ],
+      "length_delta": -17.56,
+      "length_change_pct": -15.2,
+      "reward": [
+        1.697287,
+        1.568626
+      ],
+      "reward_delta": -0.128661,
+      "idle": [
+        0.36,
+        0.326667
+      ],
+      "idle_delta": -0.033333
+    },
+    "GSPO G=8": {
+      "from": "gspo_lr1e5",
+      "to": "qwen35_9b_gspo_v1",
+      "lr": [
+        1e-05,
+        5e-05
+      ],
+      "kl": [
+        1.120086,
+        1.021719
+      ],
+      "kl_delta": -0.098367,
+      "completion_length": [
+        114.4,
+        109.16
+      ],
+      "length_delta": -5.24,
+      "length_change_pct": -4.6,
+      "reward": [
+        1.706447,
+        1.59628
+      ],
+      "reward_delta": -0.110167,
+      "idle": [
+        0.153333,
+        0.38
+      ],
+      "idle_delta": 0.226667
+    },
+    "GSPO G=32": {
+      "from": "qwen35_9b_gspo_g32_lr1e5",
+      "to": "qwen35_9b_gspo_g32",
+      "lr": [
+        1e-05,
+        5e-05
+      ],
+      "kl": [
+        1.099529,
+        0.959337
+      ],
+      "kl_delta": -0.140192,
+      "completion_length": [
+        118.1,
+        113.74
+      ],
+      "length_delta": -4.36,
+      "length_change_pct": -3.7,
+      "reward": [
+        1.707304,
+        1.366213
+      ],
+      "reward_delta": -0.341091,
+      "idle": [
+        0.073333,
+        0.42
+      ],
+      "idle_delta": 0.346667
+    },
+    "GSPO G=4": {
+      "from": "qwen35_9b_gspo_g4_lr1e5",
+      "to": "qwen35_9b_gspo_g4_lr5e5",
+      "lr": [
+        1e-05,
+        5e-05
+      ],
+      "kl": [
+        1.093719,
+        0.988237
+      ],
+      "kl_delta": -0.105482,
+      "completion_length": [
+        116.97,
+        113.83
+      ],
+      "length_delta": -3.14,
+      "length_change_pct": -2.7,
+      "reward": [
+        1.687907,
+        1.536433
+      ],
+      "reward_delta": -0.151474,
+      "idle": [
+        0.333333,
+        0.266667
+      ],
+      "idle_delta": -0.066666
+    }
+  },
+  "conclusion": "kl is a per-token mean -- the identity loss == beta*kl holds on every idle step of every run, to within the logs' own rounding -- so it is not scaled by completion length. But the completions are not the same length across the pairs being compared: of the 4 matched lr pairs, the 5e-5 run emits shorter completions in 4 (GRPO G=4, GSPO G=8, GSPO G=32, GSPO G=4), so its mean is taken over a different span and the two values do not measure the same quantity. The raw kl falls in 4 of them, which is the opposite of what LIMITATIONS 5.2.2 claims; but this measurement cannot establish the direction either way, so the claim is removed rather than reversed. What the pairs agree on at 5e-5: the mean reward is lower in 4 of 4 (GRPO G=4, GSPO G=8, GSPO G=32, GSPO G=4)."
+}

@@ -1,0 +1,99 @@
+{
+  "outcome": "completed",
+  "reason": "150 steps finished without error",
+  "exit_status": 0,
+  "elapsed_seconds": 3228,
+  "gpu_peak_mib": 14879,
+  "log": "/root/autodl-fs/wafer-vlm/logs/24_grpo_gspo_lr1e5.log",
+  "max_steps_requested": 150,
+  "save_steps": 50,
+  "steps_logged": 150,
+  "first_step": {
+    "loss": 0.05117,
+    "reward": 1.775,
+    "reward_std": 0.3615,
+    "frac_reward_zero_std": 0.0,
+    "kl": 1.262,
+    "step_time": 21.05,
+    "memory_GiB": 10.66,
+    "WaferClass": 0.875,
+    "WaferClass_std": 0.3536,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 0.875,
+    "WaferRadial_std": 0.3536,
+    "WaferClock": 0.875,
+    "WaferClock_std": 0.3536
+  },
+  "last_step": {
+    "loss": 0.03329,
+    "reward": 1.8,
+    "reward_std": 0.2138,
+    "frac_reward_zero_std": 0.0,
+    "kl": 0.8482,
+    "step_time": 23.24,
+    "memory_GiB": 14.05,
+    "WaferClass": 1.0,
+    "WaferClass_std": 0.0,
+    "WaferFormat": 1.0,
+    "WaferFormat_std": 0.0,
+    "WaferRadial": 0.5,
+    "WaferRadial_std": 0.5345,
+    "WaferClock": 1.0,
+    "WaferClock_std": 0.0
+  },
+  "mean_reward": 1.7064466666666667,
+  "mean_kl": 1.120086,
+  "mean_memory_GiB": 13.600800000000001,
+  "mean_step_seconds": 21.045466666666666,
+  "reward_signal": {
+    "WaferClass": {
+      "mean_std_across_steps": 0.09124533333333333,
+      "carries_group_signal": true
+    },
+    "WaferFormat": {
+      "mean_std_across_steps": 0.0030308,
+      "carries_group_signal": true
+    },
+    "WaferRadial": {
+      "mean_std_across_steps": 0.12561,
+      "carries_group_signal": true
+    },
+    "WaferClock": {
+      "mean_std_across_steps": 0.25264933333333334,
+      "carries_group_signal": true
+    }
+  },
+  "config": {
+    "rlhf_type": "grpo",
+    "use_vllm": false,
+    "note": "vLLM is not installed, so rollouts use ms-swift's TransformersEngine",
+    "num_generations": 8,
+    "per_device_batch": 1,
+    "grad_accum": 4,
+    "learning_rate": 1e-05,
+    "beta": 0.04,
+    "temperature": 1.0,
+    "reward_funcs": [
+      "wafer_class",
+      "wafer_format",
+      "wafer_radial",
+      "wafer_clock"
+    ],
+    "reward_weights": [
+      1.0,
+      0.2,
+      0.4,
+      0.4
+    ],
+    "rewards_are_deterministic": true,
+    "importance_sampling_level": "sequence",
+    "algorithm": "GSPO (sequence-level importance sampling)",
+    "gspo_note": "GSPO is not a separate rlhf_type in ms-swift; it is GRPO with --importance_sampling_level sequence. An earlier revision of this file claimed GSPO was unavailable because the rlhf_type choices exclude the name gspo -- that was wrong.",
+    "seed": 3407,
+    "seed_source": "Reconstructed, not logged: the launcher passed a literal --seed 3407 (projects/wafer-defect-vlm/scripts/24_train_grpo.sh, line 115 at commit b1092dc, the last commit in which the flag was still a literal) and no launcher set a seed any other way, so every run through that script used 3407. Written here so a later replication run can be shown to differ from its original rather than merely asserted to."
+  },
+  "log_note": "Repointed from logs/29_<tag>_train.log, which the launcher shares between runs: the first GSPO run reused the tag `grpo` and overwrote it, so that file no longer contains this run's output. This per-run inner log is the artefact the numbers come from.",
+  "mean_frac_reward_zero_std": 0.15333333333333332,
+  "frac_reward_zero_std_note": "Share of logged optimizer steps where every generation in the group scored identically, so the advantage was zero and no gradient was produced. Recomputed from the per-run log, not copied from prose."
+}

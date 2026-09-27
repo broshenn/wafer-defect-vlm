@@ -1,0 +1,11 @@
+{
+  "dataset": "WM811K wafer map",
+  "source_url": "https://www.kaggle.com/api/v1/datasets/download/qingyi/wm811k-wafer-map",
+  "archive_path": "/root/autodl-fs/wafer-vlm/data/raw/wm811k-wafer-map.zip",
+  "archive_bytes": 156686283,
+  "archive_sha256": "0e4bd4316a110a04e475a88071f5e1c7fe4303b12ee53c851d2cae4d995a93e2",
+  "member": "LSWMD.pkl",
+  "member_bytes": 2095505977,
+  "download_verified": "2026-09-14",
+  "license_note": "Verify the upstream dataset license and publication terms before redistribution."
+}

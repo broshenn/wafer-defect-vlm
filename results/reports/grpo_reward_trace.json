@@ -1,0 +1,28 @@
+{
+  "log": "/root/autodl-fs/wafer-vlm/logs/24_grpo_qwen35_9b_grpo_v1.log",
+  "logged_steps": 150,
+  "per_reward": {
+    "WaferClass": {
+      "mean": 0.9,
+      "mean_of_std": 0.08027866666666666,
+      "carries_group_signal": true
+    },
+    "WaferFormat": {
+      "mean": 0.999762,
+      "mean_of_std": 0.0004762,
+      "carries_group_signal": true
+    },
+    "WaferRadial": {
+      "mean": 0.865,
+      "mean_of_std": 0.11797733333333334,
+      "carries_group_signal": true
+    },
+    "WaferClock": {
+      "mean": 0.6283333333333333,
+      "mean_of_std": 0.224448,
+      "carries_group_signal": true
+    }
+  },
+  "frac_steps_all_identical": 0.36,
+  "note": "Computed by tools/grpo_reward_trace.py from the per-step rows in the run's own training log. mean_of_std is the mean of each step's within-group standard deviation; a reward whose std is always zero contributes no gradient."
+}

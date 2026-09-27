@@ -1,0 +1,56 @@
+{
+  "seed": 3407,
+  "manifest_samples": 5904,
+  "groups": {
+    "train": {
+      "rows": 12876,
+      "samples": 4292,
+      "lots": 2785,
+      "unresolved": 0
+    },
+    "val": {
+      "rows": 1611,
+      "samples": 537,
+      "lots": 332,
+      "unresolved": 0
+    },
+    "grpo": {
+      "rows": 4292,
+      "samples": 4292,
+      "lots": 2785,
+      "unresolved": 0
+    }
+  },
+  "benchmark": {
+    "rows": 252,
+    "samples": 252,
+    "lots": 202,
+    "splits": [
+      "test"
+    ]
+  },
+  "sample_overlap_with_benchmark": {
+    "train": [],
+    "val": [],
+    "grpo": []
+  },
+  "lot_overlap_with_benchmark": {
+    "train": [],
+    "val": [],
+    "grpo": []
+  },
+  "expected_overlaps": {
+    "grpo/train": {
+      "samples": 4292,
+      "lots": 2785,
+      "why": "GRPO trains on the SFT training split by design"
+    }
+  },
+  "grpo_samples_outside_train_count": 0,
+  "grpo_samples_outside_train_examples": [],
+  "rule_mismatch_count": 0,
+  "rule_mismatch_examples": [],
+  "lots_straddling_splits": {},
+  "failures": [],
+  "passed": true
+}

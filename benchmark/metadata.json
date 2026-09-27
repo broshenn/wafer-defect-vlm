@@ -1,0 +1,25 @@
+{
+  "name": "wafer_bench_v1",
+  "status": "draft_pending_human_review",
+  "seed": 3407,
+  "source_manifest": "/autodl-fs/data/wafer-vlm/data/prepared_v1/manifest.jsonl",
+  "test_candidates": 589,
+  "core_samples": 252,
+  "class_counts": {
+    "Center": 30,
+    "Donut": 30,
+    "Edge_Loc": 30,
+    "Edge_Ring": 30,
+    "Loc": 30,
+    "Near_full": 16,
+    "Random": 30,
+    "Scratch": 30,
+    "none": 26
+  },
+  "queries": 90,
+  "qrels": 22505,
+  "leakage_rule": "benchmark uses test split only; retrieval relevance excludes same-lot pairs",
+  "pending_review_count": 252,
+  "hashes_pinned": true,
+  "review_gate": "bypassed_by_allow_pending (252 samples unapproved)"
+}

@@ -1,0 +1,44 @@
+{
+  "samples": 5904,
+  "splits": {
+    "train": {
+      "Center": 647,
+      "Donut": 428,
+      "Edge_Loc": 637,
+      "Edge_Ring": 636,
+      "Loc": 622,
+      "Near_full": 127,
+      "Random": 634,
+      "Scratch": 653,
+      "none": 337
+    },
+    "val": {
+      "Center": 63,
+      "Donut": 53,
+      "Edge_Loc": 84,
+      "Edge_Ring": 92,
+      "Loc": 98,
+      "Near_full": 6,
+      "Random": 90,
+      "Scratch": 71,
+      "none": 37
+    },
+    "test": {
+      "Center": 90,
+      "Donut": 74,
+      "Edge_Loc": 79,
+      "Edge_Ring": 72,
+      "Loc": 80,
+      "Near_full": 16,
+      "Random": 76,
+      "Scratch": 76,
+      "none": 26
+    }
+  },
+  "unique_sample_ids": 5904,
+  "lot_split_intersections": {
+    "train_val": [],
+    "train_test": [],
+    "val_test": []
+  }
+}

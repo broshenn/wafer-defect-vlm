@@ -1,0 +1,428 @@
+{
+  "runs": {
+    "Base": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_zero_shot__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "SFT": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_adapter__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GRPO_lr1e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_grpo__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GRPO_lr5e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_grpo_lr5e5__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GRPO_lr1e5_s2": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_grpo_lr1e5_seed3408__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GRPO_lr1e5_s3": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_grpo_lr1e5_seed3409__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_lr5e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_gspo_v1__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_lr1e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/gspo_lr1e5__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_G32": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_gspo_g32__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_G32_lr1e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_gspo_g32_lr1e5__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_G4_lr5e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_gspo_g4_lr5e5__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    },
+    "GSPO_G4_lr1e5": {
+      "source": "/root/autodl-fs/wafer-vlm/outputs/reports/qwen35_9b_gspo_g4_lr1e5__report.json",
+      "present": true,
+      "requests_scored_from": "all_requests.jsonl",
+      "requests_expected": 1512
+    }
+  },
+  "metrics": {
+    "classification accuracy": {
+      "Base": 0.21428571428571427,
+      "SFT": 0.623015873015873,
+      "GRPO_lr1e5": 0.623015873015873,
+      "GRPO_lr5e5": 0.5674603174603174,
+      "GRPO_lr1e5_s2": 0.6071428571428571,
+      "GRPO_lr1e5_s3": 0.6428571428571429,
+      "GSPO_lr5e5": 0.5396825396825397,
+      "GSPO_lr1e5": 0.6150793650793651,
+      "GSPO_G32": 0.5674603174603174,
+      "GSPO_G32_lr1e5": 0.6190476190476191,
+      "GSPO_G4_lr5e5": 0.5357142857142857,
+      "GSPO_G4_lr1e5": 0.626984126984127
+    },
+    "classification macro-F1": {
+      "Base": 0.13465497853768835,
+      "SFT": 0.6114312605800181,
+      "GRPO_lr1e5": 0.6196594127607117,
+      "GRPO_lr5e5": 0.5534971647977464,
+      "GRPO_lr1e5_s2": 0.5933539992900723,
+      "GRPO_lr1e5_s3": 0.6210824002439664,
+      "GSPO_lr5e5": 0.5013777153447943,
+      "GSPO_lr1e5": 0.608926308419274,
+      "GSPO_G32": 0.540336633772156,
+      "GSPO_G32_lr1e5": 0.614257533007533,
+      "GSPO_G4_lr5e5": 0.49098852859148034,
+      "GSPO_G4_lr1e5": 0.6255376145942512
+    },
+    "macro-F1 95% CI": {
+      "Base": [
+        0.09548324987706275,
+        0.1706124710590771
+      ],
+      "SFT": [
+        0.549637078464626,
+        0.6601904253578246
+      ],
+      "GRPO_lr1e5": [
+        0.555432218116685,
+        0.6703577930912754
+      ],
+      "GRPO_lr5e5": [
+        0.4956218548447604,
+        0.6109995110186128
+      ],
+      "GRPO_lr1e5_s2": [
+        0.531031167000608,
+        0.6443941781111772
+      ],
+      "GRPO_lr1e5_s3": [
+        0.5614080880200736,
+        0.6717005384095623
+      ],
+      "GSPO_lr5e5": [
+        0.4366978360949785,
+        0.5537083404879739
+      ],
+      "GSPO_lr1e5": [
+        0.5472054963806906,
+        0.6613301996929354
+      ],
+      "GSPO_G32": [
+        0.4807387243544569,
+        0.5964806589316357
+      ],
+      "GSPO_G32_lr1e5": [
+        0.5492057644686902,
+        0.6699466672570639
+      ],
+      "GSPO_G4_lr5e5": [
+        0.4323644869048112,
+        0.548288472969422
+      ],
+      "GSPO_G4_lr1e5": [
+        0.5643297296863341,
+        0.6745879405012725
+      ]
+    },
+    "off-vocabulary answers": {
+      "Base": 0,
+      "SFT": 0,
+      "GRPO_lr1e5": 0,
+      "GRPO_lr5e5": 0,
+      "GRPO_lr1e5_s2": 0,
+      "GRPO_lr1e5_s3": 0,
+      "GSPO_lr5e5": 0,
+      "GSPO_lr1e5": 0,
+      "GSPO_G32": 0,
+      "GSPO_G32_lr1e5": 0,
+      "GSPO_G4_lr5e5": 0,
+      "GSPO_G4_lr1e5": 0
+    },
+    "structured defect_type acc": {
+      "Base": 0.21031746031746032,
+      "SFT": 0.584,
+      "GRPO_lr1e5": 0.6031746031746031,
+      "GRPO_lr5e5": 0.5515873015873016,
+      "GRPO_lr1e5_s2": 0.58,
+      "GRPO_lr1e5_s3": 0.5873015873015873,
+      "GSPO_lr5e5": 0.5634920634920635,
+      "GSPO_lr1e5": 0.5595238095238095,
+      "GSPO_G32": 0.5595238095238095,
+      "GSPO_G32_lr1e5": 0.5714285714285714,
+      "GSPO_G4_lr5e5": 0.5436507936507936,
+      "GSPO_G4_lr1e5": 0.5793650793650794
+    },
+    "structured radial_zone acc": {
+      "Base": 0.07936507936507936,
+      "SFT": 0.264,
+      "GRPO_lr1e5": 0.2698412698412698,
+      "GRPO_lr5e5": 0.34523809523809523,
+      "GRPO_lr1e5_s2": 0.276,
+      "GRPO_lr1e5_s3": 0.27380952380952384,
+      "GSPO_lr5e5": 0.3055555555555556,
+      "GSPO_lr1e5": 0.24603174603174602,
+      "GSPO_G32": 0.4603174603174603,
+      "GSPO_G32_lr1e5": 0.2698412698412698,
+      "GSPO_G4_lr5e5": 0.3253968253968254,
+      "GSPO_G4_lr1e5": 0.2619047619047619
+    },
+    "clock circular MAE (sectors)": {
+      "Base": 5.0,
+      "SFT": 1.6847290640394088,
+      "GRPO_lr1e5": 1.7121212121212122,
+      "GRPO_lr5e5": 1.972972972972973,
+      "GRPO_lr1e5_s2": 1.7574257425742574,
+      "GRPO_lr1e5_s3": 1.7142857142857142,
+      "GSPO_lr5e5": 1.9519230769230769,
+      "GSPO_lr1e5": 1.7098445595854923,
+      "GSPO_G32": 1.6859903381642511,
+      "GSPO_G32_lr1e5": 1.7025641025641025,
+      "GSPO_G4_lr5e5": 1.6761363636363635,
+      "GSPO_G4_lr1e5": 1.7462686567164178
+    },
+    "size MAE (R)": {
+      "Base": 1.2138507364797055,
+      "SFT": 0.49990586585960645,
+      "GRPO_lr1e5": 0.5695018641523364,
+      "GRPO_lr5e5": 0.9295600691032079,
+      "GRPO_lr1e5_s2": 0.7210626703191736,
+      "GRPO_lr1e5_s3": 0.6133780528190644,
+      "GSPO_lr5e5": 0.6927332169484199,
+      "GSPO_lr1e5": 0.6203122240571414,
+      "GSPO_G32": 1.6509109114344502,
+      "GSPO_G32_lr1e5": 0.7085360726075087,
+      "GSPO_G4_lr5e5": 0.4024984023634937,
+      "GSPO_G4_lr1e5": 0.8383584728033942
+    },
+    "caption must-hit rate": {
+      "Base": 0.626984126984127,
+      "SFT": 0.753968253968254,
+      "GRPO_lr1e5": 0.7222222222222222,
+      "GRPO_lr5e5": 0.5515873015873016,
+      "GRPO_lr1e5_s2": 0.7023809523809523,
+      "GRPO_lr1e5_s3": 0.6309523809523809,
+      "GSPO_lr5e5": 0.6626984126984127,
+      "GSPO_lr1e5": 0.7142857142857143,
+      "GSPO_G32": 0.5714285714285714,
+      "GSPO_G32_lr1e5": 0.7063492063492064,
+      "GSPO_G4_lr5e5": 0.6349206349206349,
+      "GSPO_G4_lr1e5": 0.7380952380952381
+    },
+    "caption empty rate": {
+      "Base": 0.0,
+      "SFT": 0.0,
+      "GRPO_lr1e5": 0.0,
+      "GRPO_lr5e5": 0.0,
+      "GRPO_lr1e5_s2": 0.0,
+      "GRPO_lr1e5_s3": 0.0,
+      "GSPO_lr5e5": 0.0,
+      "GSPO_lr1e5": 0.0,
+      "GSPO_G32": 0.0,
+      "GSPO_G32_lr1e5": 0.0,
+      "GSPO_G4_lr5e5": 0.0,
+      "GSPO_G4_lr1e5": 0.0
+    },
+    "root-cause hallucination rate": {
+      "Base": 0.21825396825396826,
+      "SFT": 0.0,
+      "GRPO_lr1e5": 0.0,
+      "GRPO_lr5e5": 0.0,
+      "GRPO_lr1e5_s2": 0.0,
+      "GRPO_lr1e5_s3": 0.0,
+      "GSPO_lr5e5": 0.0,
+      "GSPO_lr1e5": 0.0,
+      "GSPO_G32": 0.0,
+      "GSPO_G32_lr1e5": 0.0,
+      "GSPO_G4_lr5e5": 0.0,
+      "GSPO_G4_lr1e5": 0.0
+    },
+    "robustness accuracy": {
+      "Base": 0.19047619047619047,
+      "SFT": 0.5621693121693122,
+      "GRPO_lr1e5": 0.5661375661375662,
+      "GRPO_lr5e5": 0.5251322751322751,
+      "GRPO_lr1e5_s2": 0.548941798941799,
+      "GRPO_lr1e5_s3": 0.582010582010582,
+      "GSPO_lr5e5": 0.5145502645502645,
+      "GSPO_lr1e5": 0.5687830687830688,
+      "GSPO_G32": 0.5555555555555556,
+      "GSPO_G32_lr1e5": 0.5687830687830688,
+      "GSPO_G4_lr5e5": 0.5092592592592593,
+      "GSPO_G4_lr1e5": 0.5806878306878307
+    },
+    "flip rate vs clean": {
+      "Base": 0.1388888888888889,
+      "SFT": 0.24735449735449735,
+      "GRPO_lr1e5": 0.2671957671957672,
+      "GRPO_lr5e5": 0.2619047619047619,
+      "GRPO_lr1e5_s2": 0.2619047619047619,
+      "GRPO_lr1e5_s3": 0.25,
+      "GSPO_lr5e5": 0.23544973544973544,
+      "GSPO_lr1e5": 0.24867724867724866,
+      "GSPO_G32": 0.25396825396825395,
+      "GSPO_G32_lr1e5": 0.2605820105820106,
+      "GSPO_G4_lr5e5": 0.2552910052910053,
+      "GSPO_G4_lr1e5": 0.26322751322751325
+    },
+    "retrieval mAP@10": {
+      "Base": 0.3235701058201058,
+      "SFT": 0.3872795414462081,
+      "GRPO_lr1e5": 0.3742178130511464,
+      "GRPO_lr5e5": 0.4260233686067019,
+      "GRPO_lr1e5_s2": 0.3886565255731923,
+      "GRPO_lr1e5_s3": 0.394276455026455,
+      "GSPO_lr5e5": 0.36066887125220465,
+      "GSPO_lr1e5": 0.37816313932980594,
+      "GSPO_G32": 0.433718253968254,
+      "GSPO_G32_lr1e5": 0.37022442680776013,
+      "GSPO_G4_lr5e5": 0.413771164021164,
+      "GSPO_G4_lr1e5": 0.3748046737213403
+    },
+    "retrieval nDCG@10": {
+      "Base": 0.2977854649698618,
+      "SFT": 0.35626186909259006,
+      "GRPO_lr1e5": 0.3496533694423307,
+      "GRPO_lr5e5": 0.3917203350599919,
+      "GRPO_lr1e5_s2": 0.35659386936999465,
+      "GRPO_lr1e5_s3": 0.3604680434986821,
+      "GSPO_lr5e5": 0.32529068510029463,
+      "GSPO_lr1e5": 0.34373841040172964,
+      "GSPO_G32": 0.3906039251253451,
+      "GSPO_G32_lr1e5": 0.34312334409787326,
+      "GSPO_G4_lr5e5": 0.3803869893281896,
+      "GSPO_G4_lr1e5": 0.34810783000227696
+    },
+    "retrieval Recall@10": {
+      "Base": 0.15637982947944631,
+      "SFT": 0.18361122175681566,
+      "GRPO_lr1e5": 0.17936217961122175,
+      "GRPO_lr5e5": 0.20220115913602502,
+      "GRPO_lr1e5_s2": 0.18168866099134295,
+      "GRPO_lr1e5_s3": 0.18449595841933006,
+      "GSPO_lr5e5": 0.17880933583232433,
+      "GSPO_lr1e5": 0.17961385712343564,
+      "GSPO_G32": 0.2007554983685252,
+      "GSPO_G32_lr1e5": 0.1772836254138936,
+      "GSPO_G4_lr5e5": 0.1927851263253562,
+      "GSPO_G4_lr1e5": 0.17804023917050735
+    }
+  },
+  "not_measured": {
+    "Base": [],
+    "SFT": [],
+    "GRPO_lr1e5": [],
+    "GRPO_lr5e5": [],
+    "GRPO_lr1e5_s2": [],
+    "GRPO_lr1e5_s3": [],
+    "GSPO_lr5e5": [],
+    "GSPO_lr1e5": [],
+    "GSPO_G32": [],
+    "GSPO_G32_lr1e5": [],
+    "GSPO_G4_lr5e5": [],
+    "GSPO_G4_lr1e5": []
+  },
+  "notes": [
+    "Metrics shown as not run were never measured; they are not zeros.",
+    "The run set was enumerated from the reports on disk by tools/run_set.py, not from a hand-written list; the enumeration is appended to this file as provenance and any report on disk that is in neither its table nor its exclusions would have failed that step."
+  ],
+  "provenance": {
+    "run_set_audit.json": {
+      "available": [
+        {
+          "name": "Base",
+          "tag": "qwen35_9b_zero_shot"
+        },
+        {
+          "name": "SFT",
+          "tag": "qwen35_9b_adapter"
+        },
+        {
+          "name": "GRPO_lr1e5",
+          "tag": "qwen35_9b_grpo"
+        },
+        {
+          "name": "GRPO_lr5e5",
+          "tag": "qwen35_9b_grpo_lr5e5"
+        },
+        {
+          "name": "GRPO_lr1e5_s2",
+          "tag": "qwen35_9b_grpo_lr1e5_seed3408"
+        },
+        {
+          "name": "GRPO_lr1e5_s3",
+          "tag": "qwen35_9b_grpo_lr1e5_seed3409"
+        },
+        {
+          "name": "GSPO_lr5e5",
+          "tag": "qwen35_9b_gspo_v1"
+        },
+        {
+          "name": "GSPO_lr1e5",
+          "tag": "gspo_lr1e5"
+        },
+        {
+          "name": "GSPO_G32",
+          "tag": "qwen35_9b_gspo_g32"
+        },
+        {
+          "name": "GSPO_G32_lr1e5",
+          "tag": "qwen35_9b_gspo_g32_lr1e5"
+        },
+        {
+          "name": "GSPO_G4_lr5e5",
+          "tag": "qwen35_9b_gspo_g4_lr5e5"
+        },
+        {
+          "name": "GSPO_G4_lr1e5",
+          "tag": "qwen35_9b_gspo_g4_lr1e5"
+        }
+      ],
+      "expected_but_absent": [],
+      "excluded_on_disk": {},
+      "reports_on_disk": [
+        "gspo_lr1e5",
+        "qwen35_9b_adapter",
+        "qwen35_9b_grpo",
+        "qwen35_9b_grpo_lr1e5_seed3408",
+        "qwen35_9b_grpo_lr1e5_seed3409",
+        "qwen35_9b_grpo_lr5e5",
+        "qwen35_9b_gspo_g32",
+        "qwen35_9b_gspo_g32_lr1e5",
+        "qwen35_9b_gspo_g4_lr1e5",
+        "qwen35_9b_gspo_g4_lr5e5",
+        "qwen35_9b_gspo_v1",
+        "qwen35_9b_zero_shot"
+      ],
+      "unaccounted_reports": [],
+      "note": "A report present on disk but named in neither NAMES nor EXCLUDE is listed in unaccounted_reports and fails this script: a run must be dropped by a decision that is printed, never by a list that went stale."
+    }
+  }
+}

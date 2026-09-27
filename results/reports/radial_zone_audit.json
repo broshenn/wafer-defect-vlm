@@ -1,0 +1,155 @@
+{
+  "manifest_reproduces_gold": true,
+  "gold_distributions": {
+    "centroid": {
+      "counts": {
+        "center": 210,
+        "middle": 36,
+        "edge": 5,
+        "none": 1
+      },
+      "majority_floor": 0.8333333333333334
+    },
+    "mean_radius": {
+      "counts": {
+        "edge": 123,
+        "middle": 128,
+        "none": 1
+      },
+      "majority_floor": 0.5079365079365079
+    },
+    "outer_extent": {
+      "counts": {
+        "edge": 251,
+        "none": 1
+      },
+      "majority_floor": 0.996031746031746
+    }
+  },
+  "runs": {
+    "base": {
+      "centroid": {
+        "accuracy": 0.07936507936507936,
+        "floor": 0.8333333333333334,
+        "hits": 20,
+        "n": 252
+      },
+      "mean_radius": {
+        "accuracy": 0.13095238095238096,
+        "floor": 0.5079365079365079,
+        "hits": 33,
+        "n": 252
+      },
+      "outer_extent": {
+        "accuracy": 0.17063492063492064,
+        "floor": 0.996031746031746,
+        "hits": 43,
+        "n": 252
+      },
+      "curate_rule": {
+        "accuracy": 0.10317460317460317,
+        "floor": 0.8333333333333334,
+        "hits": 26,
+        "n": 252
+      }
+    },
+    "sft": {
+      "centroid": {
+        "accuracy": 0.264,
+        "floor": 0.8333333333333334,
+        "hits": 66,
+        "n": 250
+      },
+      "mean_radius": {
+        "accuracy": 0.456,
+        "floor": 0.5079365079365079,
+        "hits": 114,
+        "n": 250
+      },
+      "outer_extent": {
+        "accuracy": 0.42,
+        "floor": 0.996031746031746,
+        "hits": 105,
+        "n": 250
+      },
+      "curate_rule": {
+        "accuracy": 0.324,
+        "floor": 0.8333333333333334,
+        "hits": 81,
+        "n": 250
+      }
+    },
+    "grpo": {
+      "centroid": {
+        "accuracy": 0.2698412698412698,
+        "floor": 0.8333333333333334,
+        "hits": 68,
+        "n": 252
+      },
+      "mean_radius": {
+        "accuracy": 0.4444444444444444,
+        "floor": 0.5079365079365079,
+        "hits": 112,
+        "n": 252
+      },
+      "outer_extent": {
+        "accuracy": 0.42063492063492064,
+        "floor": 0.996031746031746,
+        "hits": 106,
+        "n": 252
+      },
+      "curate_rule": {
+        "accuracy": 0.3333333333333333,
+        "floor": 0.8333333333333334,
+        "hits": 84,
+        "n": 252
+      }
+    }
+  },
+  "centroid_radius_by_class": {
+    "Center": {
+      "n": 30,
+      "median": 0.08902568460787338
+    },
+    "Donut": {
+      "n": 30,
+      "median": 0.1574175053342245
+    },
+    "Edge_Loc": {
+      "n": 30,
+      "median": 0.3332292486141017
+    },
+    "Edge_Ring": {
+      "n": 30,
+      "median": 0.06310200304569243
+    },
+    "Loc": {
+      "n": 30,
+      "median": 0.3207119393327252
+    },
+    "Near_full": {
+      "n": 16,
+      "median": 0.05002238859456902
+    },
+    "Random": {
+      "n": 30,
+      "median": 0.04410532526403893
+    },
+    "Scratch": {
+      "n": 30,
+      "median": 0.26487759835596686
+    },
+    "none": {
+      "n": 25,
+      "median": 0.18568814760486063
+    }
+  },
+  "center_share": {
+    "definition": "gold rows whose published radial_zone is 'center' under the _zone(centroid_r) rule",
+    "count": 210,
+    "n_all": 252,
+    "n_scored": 251,
+    "of_all": 0.8333333333333334,
+    "of_scored": 0.8366533864541833
+  }
+}

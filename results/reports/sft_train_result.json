@@ -1,0 +1,19 @@
+{
+  "run": "sft",
+  "summary": {
+    "train_runtime": 7892,
+    "train_samples_per_second": 2.449,
+    "train_steps_per_second": 0.077,
+    "train_loss": 0.3891,
+    "epoch": 1.5,
+    "global_step/max_steps": "604/604",
+    "elapsed_time": "2h 11m 32s",
+    "remaining_time": "0s",
+    "memory(GiB)": 32.92,
+    "train_speed(s/it)": 13.07
+  },
+  "source_log": "logs/08_train.log",
+  "source_line": 6767,
+  "source_note": "Transcribed verbatim from the run's own log by tools/summarise_training_log.py; the summary block prints every field as a string and the numbers are cast here.",
+  "note": "SFT run summary, previously recorded only in the log."
+}

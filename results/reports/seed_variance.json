@@ -1,0 +1,172 @@
+{
+  "question": "How large is run-to-run (seed) variation on this benchmark, and are the reported effects larger than it?",
+  "design": {
+    "seed1": "GRPO_G4_lr1e5_seed1",
+    "seed2": "GRPO_G4_lr1e5_seed3408",
+    "identical_except": "the random seed, AND algorithm, algorithm_note, gspo_note, importance_sampling_level_source, seed, seed_source -- the pair is not single-variable, so the difference below is not a pure seed effect",
+    "config_compared": true,
+    "config_diff": [
+      "algorithm",
+      "algorithm_note",
+      "gspo_note",
+      "importance_sampling_level_source",
+      "seed",
+      "seed_source"
+    ],
+    "seeds": {
+      "seed1": 3407,
+      "seed2": 3408
+    },
+    "extra": {
+      "GRPO_G4_lr1e5_seed3409": {
+        "compared": true,
+        "diff": [
+          "algorithm",
+          "algorithm_note",
+          "grad_accum_source",
+          "gspo_note",
+          "importance_sampling_level_source",
+          "seed",
+          "seed_source"
+        ],
+        "identical_except": "the random seed, AND algorithm, algorithm_note, grad_accum_source, gspo_note, importance_sampling_level_source, seed, seed_source -- not single-variable against the first draw, so what it adds to the range is not a pure seed effect"
+      }
+    },
+    "benchmark": "the same 252 classification rows for both"
+  },
+  "pre_registered_rule": {
+    "statement": "the learning-rate effect is not separable from seed noise if |seed difference| >= half of |lr effect|",
+    "fraction": 0.5,
+    "fixed_before_seeing": true,
+    "note": "if this threshold is changed after the fact, that is a finding to report and not a knob to turn"
+  },
+  "accuracy": {
+    "seed1": 0.623016,
+    "seed2": 0.607143
+  },
+  "seed_difference_accuracy": {
+    "delta": -0.015873,
+    "ci95_rows": [
+      -0.043651,
+      0.011905
+    ],
+    "excludes_zero": false,
+    "mcnemar": {
+      "seed1_wrong_seed2_right": 5,
+      "seed1_right_seed2_wrong": 9,
+      "p_exact_two_sided": 0.42395
+    }
+  },
+  "reference_lr_effect_within_grpo": {
+    "pair": "GRPO lr5e-5 minus GRPO lr1e-5 (seed 1)",
+    "accuracy_delta": -0.055556
+  },
+  "ratio_seed_to_lr_effect": 0.285714,
+  "rule_triggered": false,
+  "seed_spread": {
+    "n_draws": 3,
+    "draws": {
+      "GRPO_G4_lr1e5_seed1": 0.623016,
+      "GRPO_G4_lr1e5_seed3408": 0.607143,
+      "GRPO_G4_lr1e5_seed3409": 0.642857
+    },
+    "range": 0.035714,
+    "widest_pair": [
+      "GRPO_G4_lr1e5_seed3408",
+      "GRPO_G4_lr1e5_seed3409"
+    ],
+    "threshold_half_lr_effect": 0.027778,
+    "rule_triggered": true,
+    "rule_triggered_by_the_pair": false,
+    "rules_agree": false,
+    "declared_before_the_extra_draw": true,
+    "reading": "over 3 draws the range is 0.0357 (GRPO_G4_lr1e5_seed3408 0.6071 .. GRPO_G4_lr1e5_seed3409 0.6429), at or above half the learning-rate effect (0.0278), which is NOT the verdict the one-difference rule reached (|-0.0159| / |-0.0556| = 0.286) -- the extra draw is what moved the reading, and 5.2.2 has to be re-read against it",
+    "what_a_range_cannot_give": "3 draws give a range, not a variance estimate: a range is the distance between the extreme order statistics of the draws that exist, so it can only grow as draws are added and remains a lower bound on the spread the configuration actually has. It is more than a difference and less than a variance, and 3 draws are still few"
+  },
+  "extra_seeds": {
+    "present": [
+      "GRPO_G4_lr1e5_seed3409"
+    ],
+    "declared_but_not_evaluated": [],
+    "per_draw": {
+      "GRPO_G4_lr1e5_seed3409": {
+        "accuracy": 0.642857,
+        "delta_vs_seed1": 0.019841,
+        "ci95_rows": [
+          -0.011905,
+          0.055556
+        ],
+        "excludes_zero": false,
+        "mcnemar_vs_seed1": {
+          "seed1_wrong_draw_right": 12,
+          "seed1_right_draw_wrong": 7,
+          "p_exact_two_sided": 0.359283
+        },
+        "vs_sft": {
+          "delta": 0.019841,
+          "p_exact_two_sided": 0.301758
+        },
+        "structured_and_caption": {
+          "structured radial_zone": 0.27381,
+          "structured clock MAE": 1.714286,
+          "structured size MAE": 0.613378,
+          "caption must_hit": 0.630952,
+          "classification macro_f1": 0.621082
+        }
+      }
+    },
+    "note": "a draw enters this block only when both its predictions and the report they are parsed against are on disk; half a draw is not a draw and cannot be checked"
+  },
+  "replication_vs_sft": {
+    "seed1": {
+      "delta": 0.0,
+      "p_exact_two_sided": 1.0
+    },
+    "seed2": {
+      "delta": -0.015873,
+      "p_exact_two_sided": 0.34375
+    },
+    "same_side_of_sft": false,
+    "significantly_different_from_sft": false,
+    "reading": "not reproducible: the two seeds land on opposite sides of SFT (+0.0000 and -0.0159), so the seed moves the comparison by more than the comparison resolves"
+  },
+  "structured_and_caption": {
+    "structured radial_zone": {
+      "seed1": 0.269841,
+      "seed2": 0.276,
+      "diff": 0.006159,
+      "lr_effect": 0.075397,
+      "ratio_seed_to_lr": 0.0817
+    },
+    "structured clock MAE": {
+      "seed1": 1.712121,
+      "seed2": 1.757426,
+      "diff": 0.045305,
+      "lr_effect": 0.260852,
+      "ratio_seed_to_lr": 0.1737
+    },
+    "structured size MAE": {
+      "seed1": 0.569502,
+      "seed2": 0.721063,
+      "diff": 0.151561,
+      "lr_effect": 0.360058,
+      "ratio_seed_to_lr": 0.4209
+    },
+    "caption must_hit": {
+      "seed1": 0.722222,
+      "seed2": 0.702381,
+      "diff": -0.019841,
+      "lr_effect": -0.170635,
+      "ratio_seed_to_lr": 0.1163
+    },
+    "classification macro_f1": {
+      "seed1": 0.619659,
+      "seed2": 0.593354,
+      "diff": -0.026305,
+      "lr_effect": -0.066162,
+      "ratio_seed_to_lr": 0.3976
+    }
+  },
+  "what_two_seeds_cannot_give": "two draws give one difference and no interval on the spread, so this is a lower bound on seed variation: it can understate it and cannot overstate it. A real noise floor needs several seeds, which were not run.",
+  "structured_metrics_are_marginal": "no per-row decomposition, so the paired apparatus does not apply to them; they are compared only in magnitude"
+}

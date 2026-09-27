@@ -1,0 +1,39 @@
+Audit the documents for numbers that no record backs
+
+Every metric in FINAL_REPORT and LIMITATIONS should trace to something
+measured. tools/audit_report_numbers.py now checks exactly that, and its first
+run found numbers that existed only in prose.
+
+Three of them were the evidence for arguments the report makes:
+
+  - the per-pattern median centroid radius (Edge_Ring 0.063, Donut 0.157) was a
+    literal typed into two different source files, so the argument would have
+    kept reading correctly after the data changed underneath it
+  - the share of the benchmark labelled "center" was quoted as 83.7%, computed
+    over 251 rows, while the audit record used 252 and said 0.8333; both are
+    defensible and they silently disagreed
+  - the per-reward means used to argue that the clock reward carries the signal
+    (0.9998 / 0.8650 / 0.6283) were computed by grpo_reward_trace.py, printed,
+    and never written down
+
+All four turned out to be correct when recomputed. So the fix is not to correct
+the prose but to record what it cites: radial_zone_audit.py now stores the
+per-class medians and both denominators, grpo_reward_trace.py gained an
+--output, and final_report.py reads those values back instead of restating them.
+An absent record now degrades the sentence rather than reinstating the old
+number from memory.
+
+The SFT run also had no *_train_result.json at all -- the only training run
+without one -- so its summary lived solely in logs/08_train.log.
+tools/summarise_training_log.py transcribes the block and cites the file and
+line it came from, which is transcription rather than invention.
+
+Untraceable metric numbers in the documents: 31 before, 4 after. The four that
+remain are differences between two recorded values (Base->SFT gains, and the
+5e-5 -> 1e-5 gain) and are arithmetic rather than measurements.
+
+Queued behind this, none of it run yet: GRPO at lr 5e-5 (driver 40), GSPO at
+G=32, lr 1e-5 (queue 41), and a second seed of GRPO at lr 1e-5 (queue 42). The
+training seed is now forwarded to ms-swift and written into the run record, so
+a replication can be shown to differ from the run it replicates instead of
+being asserted to.

@@ -1,0 +1,38 @@
+{
+  "sft": {
+    "parsed": 250,
+    "parse_errors": 2,
+    "radial_zone_accuracy": 0.264,
+    "radial_zone_accuracy_casefolded": 0.264,
+    "radial_zone_predicted": {
+      "edge": 105,
+      "full": 69,
+      "center": 59,
+      "middle": 17
+    },
+    "radial_zone_confusion": {
+      "center->edge": 71,
+      "center->full": 63,
+      "center->center": 59,
+      "center->middle": 15,
+      "middle->edge": 29,
+      "edge->edge": 5,
+      "middle->middle": 2,
+      "middle->full": 5,
+      "none->full": 1
+    },
+    "size_r": {
+      "pairs": 249,
+      "missing": 1,
+      "mae": 0.49990586585960645,
+      "predicted": "n=249 min=0.102 median=1.964 mean=1.572 max=2.099",
+      "gold": "n=249 min=0.118 median=2.031 mean=2.000 max=2.449",
+      "distinct_predictions": 88
+    },
+    "clock_sector": {
+      "usable": 203,
+      "unparseable": 47,
+      "circular_mae": 1.6847290640394088
+    }
+  }
+}

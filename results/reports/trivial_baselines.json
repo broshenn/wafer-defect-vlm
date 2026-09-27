@@ -1,0 +1,115 @@
+{
+  "core_samples": 252,
+  "class_counts": {
+    "Center": 30,
+    "Donut": 30,
+    "Edge_Loc": 30,
+    "Edge_Ring": 30,
+    "Loc": 30,
+    "Near_full": 16,
+    "Random": 30,
+    "Scratch": 30,
+    "none": 26
+  },
+  "majority_class": "Edge_Loc",
+  "classification": {
+    "majority": {
+      "samples": 252,
+      "accuracy": 0.11904761904761904,
+      "macro_f1": 0.02364066193853428,
+      "macro_f1_95ci": [
+        0.016339869281045753,
+        0.029782359679266894
+      ],
+      "per_class": {
+        "Center": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "Donut": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "Edge_Loc": {
+          "precision": 0.11904761904761904,
+          "recall": 1.0,
+          "f1-score": 0.2127659574468085,
+          "support": 30.0
+        },
+        "Edge_Ring": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "Loc": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "Near_full": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 16.0
+        },
+        "Random": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "Scratch": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 30.0
+        },
+        "none": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1-score": 0.0,
+          "support": 26.0
+        }
+      },
+      "invalid_predictions": 0
+    },
+    "uniform_random": {
+      "seeds": [
+        3407,
+        1,
+        2,
+        3,
+        4
+      ],
+      "accuracy_mean": 0.12301587301587302,
+      "accuracy_std": 0.014417382638559486,
+      "macro_f1_mean": 0.12110586963604039,
+      "accuracy_95ci_across_seeds": [
+        0.10436507936507936,
+        0.14484126984126985
+      ]
+    }
+  },
+  "retrieval": {
+    "mAP@1": 0.05555555555555555,
+    "mAP@5": 0.03933333333333333,
+    "mAP@10": 0.033029982363315696,
+    "mAP@25": 0.025548488773567815,
+    "mAP@50": 0.036278031642276054,
+    "Recall@1": 0.0019906951286261633,
+    "Recall@5": 0.016617254322235167,
+    "Recall@10": 0.03940129970781312,
+    "Recall@25": 0.1107955654392436,
+    "Recall@50": 0.2119979671244039,
+    "nDCG@10": 0.059641900551091434,
+    "nDCG@50": 0.13744585442658658
+  },
+  "retrieval_note": "random ranking, scored with the benchmark's own qrels and metric code",
+  "note": "floors for reading the model scores, not model results"
+}

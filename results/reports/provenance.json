@@ -1,0 +1,125 @@
+{
+  "environment": {
+    "python": "3.12.3",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_total_mib": 48508,
+    "nvidia_smi": "580.105.08",
+    "transformers": "5.16.1",
+    "trl": "0.29.1",
+    "peft": "0.20.0",
+    "bitsandbytes": "0.50.2",
+    "datasets": "4.8.4",
+    "accelerate": "1.15.0",
+    "swift": "4.6.0.dev0",
+    "ms_swift_commit": "9d3d03dd35c8a60e519e3165962586837cea67ee",
+    "ms_swift_describe": "9d3d03d"
+  },
+  "artifacts": {
+    "data/prepared_v1/manifest.jsonl": {
+      "exists": true,
+      "bytes": 6992491,
+      "sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19"
+    },
+    "data/curated_v2/splits/train.jsonl": {
+      "exists": true,
+      "bytes": 8273496,
+      "sha256": "8dfb6b0f8660306b4db9ae05481ef7dfe5c95e49607030fa06b158882fb71898"
+    },
+    "data/curated_v2/splits/val.jsonl": {
+      "exists": true,
+      "bytes": 1039053,
+      "sha256": "d1ce6f864f85c8b8d649bf18f9c1beca0610bf808aec029f3786e7dc030c0198"
+    },
+    "data/curated_v2/curation_report.json": {
+      "exists": true,
+      "bytes": 333,
+      "sha256": "6f380222e4c723ab685a528fc208f073c0598f56c460e5c787acc811452e4c2a"
+    },
+    "benchmarks/wafer_bench_v1/all_requests.jsonl": {
+      "exists": true,
+      "bytes": 688464,
+      "sha256": "d51928409f4ee743c57dd79f63e7a046892cc93ef22ea72b600787fc4ddc549f"
+    },
+    "benchmarks/wafer_bench_v1/SHA256SUMS": {
+      "exists": true,
+      "bytes": 92188,
+      "sha256": "abb555c5b65140506c0772fd0e61aadec7c8b121deae01887703263e65d3d5a6"
+    }
+  },
+  "commands": {
+    "projects/wafer-defect-vlm/scripts/00_doctor.sh": {
+      "sha256": "edc51a623db97cdea3b71ef8a5896fb095443b155cbc324c4ae39de7532c42fc"
+    },
+    "projects/wafer-defect-vlm/scripts/01_download_model.sh": {
+      "sha256": "151eb1306edf7282b093f9fd0620e418d747741763f379b84703394487410349"
+    },
+    "projects/wafer-defect-vlm/scripts/10_train_qlora.sh": {
+      "sha256": "e3ca1258c564da25024055f2c1ed79796026f3ed3336dd8d7e315382ae8e9bd8"
+    },
+    "projects/wafer-defect-vlm/scripts/11_train_lora_bf16.sh": {
+      "sha256": "93019f988a4727841e375b62992ee745eb61b824845f60e955018c7b9d7c875c"
+    },
+    "projects/wafer-defect-vlm/scripts/12_train_vision_lora.sh": {
+      "sha256": "acfb781e57b1ac6f0d27125d78ae1517b8f58f49fb33816a723f1e86dcb29927"
+    },
+    "projects/wafer-defect-vlm/scripts/20_run_benchmark.sh": {
+      "sha256": "fc70fa59168cf6fd5ce5f18aae30cb03ab5334a9ad83a398e22ef9d51ba5581d"
+    },
+    "projects/wafer-defect-vlm/scripts/21_run_adapter_benchmark.sh": {
+      "sha256": "e537700d0b4d34dc5f5c37485d4f3b72745a305a10a304cf2d4dada5cac25882"
+    },
+    "projects/wafer-defect-vlm/scripts/22_eval_adapter.sh": {
+      "sha256": "e9a13f389bc31cf901142f6ffab56c4cc10c88dc53527b25facc00a986038354"
+    },
+    "projects/wafer-defect-vlm/scripts/23_merge_and_check.sh": {
+      "sha256": "ef50dca8fb4abf8092e208760ab8217b6be9b948c5d154bf4ebea59b4cf4df4d"
+    },
+    "projects/wafer-defect-vlm/scripts/24_train_grpo.sh": {
+      "sha256": "54278bc02e7d6b52c263cf0357a3deaea3955c1e55aff2ddab652a0204dc0c32"
+    },
+    "projects/wafer-defect-vlm/scripts/25_finalize.sh": {
+      "sha256": "d22ffddc1ea971ce42e0a5e5f2a40c38060a1c8cbe3bdeaaca059050b6c48396"
+    },
+    "projects/wafer-defect-vlm/scripts/26_after_training.sh": {
+      "sha256": "c9591e2c9cdae4f5e239bf71a89eca50aca4262a93ff2619e5058ffeb7dd7821"
+    },
+    "projects/wafer-defect-vlm/scripts/27_grpo_smoke.sh": {
+      "sha256": "26d27779e552181e8330fb46165d5a10a3c5a0fd7077790f0c9f4c3b522b6ad7"
+    },
+    "projects/wafer-defect-vlm/scripts/28_error_cases.sh": {
+      "sha256": "dddf13a1eda160a6fc8b0a9748a69bf90ccbf0eb524e764a41276e4dd5227998"
+    },
+    "logs/00_copy_prior_artifacts.sh": {
+      "sha256": "0b377224c9ca359b2493f64e452b337f7395d7529198241dea5b28ec712f3552"
+    },
+    "logs/01_env_setup.sh": {
+      "sha256": "412ae3ab76647232fb673ddac98696aaa11f22fb2970422429776f4d28bb4ace"
+    },
+    "logs/02_env_setup.sh": {
+      "sha256": "9646fb91dd93d2f3ed117466b2d277b6915ca47b2fc8c592758e4c60b6d57271"
+    },
+    "logs/04_annotate.sh": {
+      "sha256": "50a640d68b1b0106300a72499ba4199f464d7c37aef4ef340bbe58d8e51db8a3"
+    },
+    "logs/07_train.sh": {
+      "sha256": "5620ffbb0e80acc7f8a6a220d2e48cdb92888081c5e528fa0d2081cbab713216"
+    },
+    "logs/07b_sft_smoke.sh": {
+      "sha256": "221d0125d2d791b46617093903c75cf6515e21b217f5f6bb6e7db08ff3674ad9"
+    },
+    "logs/run_eval.sh": {
+      "sha256": "b4ef8c1358e51f80cfe9d7cfaf466b00c62c302fa352c88aac2ffd0f1c9a4522"
+    }
+  },
+  "manifest_documents": {},
+  "deviations_from_spec": [
+    "GRPO/GSPO: GSPO is not a separate rlhf_type in this ms-swift commit; it is GRPO with --importance_sampling_level sequence (swift/rlhf_trainers/args_mixin.py:425). An earlier revision of this record claimed GSPO was not offered at all, which was wrong; corrected in LIMITATIONS 5.2.1. GRPO runs without vLLM because vLLM is not installed.",
+    "Micro-batch 4 with gradient accumulation 8 replaces micro-batch 1 with accumulation 32; the effective batch of 32 is unchanged.",
+    "deepseek-v4.1-flash free quota was exhausted; part of the teacher pass was served by deepseek-v3.2, recorded per row.",
+    "venv and the ms-swift checkout live on the instance disk and are symlinked into autodl-fs, because FUSE file creation is ~850x slower.",
+    "CLOSED 2026-09-16 -- GRPO at lr 5e-5 was the missing control cell, and it has been run. Records: qwen35_9b_grpo_lr5e5_train_result.json (training), qwen35_9b_grpo_lr5e5__report.json (benchmark), paired_significance.json (tests). It degrades the same way GSPO does: macro-F1 0.6197 -> 0.5535, accuracy -0.0556 with paired McNemar p = 0.0436 over the same 252 rows. The 'learning rate, not algorithm' reading therefore now has cross-algorithm replication rather than resting on GSPO alone. What is still NOT resolved is a different and narrower claim: the paper's own proposition -- that sequence-level normalisation tolerates a higher learning rate -- is neither supported nor refuted, because every token-level run is G=4 and every sequence-level run is G=8, so IS level and group size move together and no contrast here separates them (cross-algorithm at lr 5e-5: p = 0.40). See LIMITATIONS 5.2.2."
+  ],
+  "note": "hashes are of the artefacts as they exist now; re-run after any regeneration TWO ENTRIES ARE HAND-EDITED AND WILL BE LOST IF provenance.py IS RE-RUN: the first deviation (26_after_training.sh still passes the retracted wording 'GSPO is not offered by this ms-swift commit', corrected in LIMITATIONS 5.2.1) and the GRPO lr 5e-5 entry above (26_after_training.sh does not pass it at all). Re-running that script restores a claim already proven false. Reapply both edits."
+}

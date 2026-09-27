@@ -1,0 +1,71 @@
+{
+  "requests": 252,
+  "scored": 252,
+  "classification_in_training_format": {
+    "samples": 252,
+    "accuracy": 0.8849206349206349,
+    "macro_f1": 0.8881772130254932,
+    "macro_f1_95ci": [
+      0.8491919719473382,
+      0.9223167617691912
+    ],
+    "per_class": {
+      "Center": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1-score": 0.9473684210526315,
+        "support": 30.0
+      },
+      "Donut": {
+        "precision": 0.9285714285714286,
+        "recall": 0.8666666666666667,
+        "f1-score": 0.896551724137931,
+        "support": 30.0
+      },
+      "Edge_Loc": {
+        "precision": 0.8214285714285714,
+        "recall": 0.7666666666666667,
+        "f1-score": 0.7931034482758621,
+        "support": 30.0
+      },
+      "Edge_Ring": {
+        "precision": 0.9090909090909091,
+        "recall": 1.0,
+        "f1-score": 0.9523809523809523,
+        "support": 30.0
+      },
+      "Loc": {
+        "precision": 0.7333333333333333,
+        "recall": 0.7333333333333333,
+        "f1-score": 0.7333333333333333,
+        "support": 30.0
+      },
+      "Near_full": {
+        "precision": 1.0,
+        "recall": 0.875,
+        "f1-score": 0.9333333333333333,
+        "support": 16.0
+      },
+      "Random": {
+        "precision": 0.875,
+        "recall": 0.9333333333333333,
+        "f1-score": 0.9032258064516129,
+        "support": 30.0
+      },
+      "Scratch": {
+        "precision": 0.8108108108108109,
+        "recall": 1.0,
+        "f1-score": 0.8955223880597015,
+        "support": 30.0
+      },
+      "none": {
+        "precision": 1.0,
+        "recall": 0.8846153846153846,
+        "f1-score": 0.9387755102040817,
+        "support": 26.0
+      }
+    },
+    "invalid_predictions": 0
+  },
+  "note": "diagnostic only; the frozen benchmark number is the one to quote"
+}

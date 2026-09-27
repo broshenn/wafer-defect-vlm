@@ -1,0 +1,16 @@
+logged steps: 150
+
+ step   reward  rew_std  zero_std      kl         class        radial         clock
+-----------------------------------------------------------------------------------
+    1      2.0      0.0       1.0   1.329       1.0/0.0       1.0/0.0       1.0/0.0
+   51      1.6      0.0       1.0  0.8995       1.0/0.0       0.0/0.0       1.0/0.0
+  101     1.35      0.5       0.0   1.013      0.75/0.5       1.0/0.0       0.0/0.0
+  150      1.8   0.2309       0.0  0.8077       1.0/0.0    0.5/0.5774       1.0/0.0
+
+mean/std per reward over all logged steps:
+  WaferClass     mean=0.9000  mean_of_std=0.0803  carries_group_signal=True
+  WaferFormat    mean=0.9998  mean_of_std=0.0005  carries_group_signal=True
+  WaferRadial    mean=0.8650  mean_of_std=0.1180  carries_group_signal=True
+  WaferClock     mean=0.6283  mean_of_std=0.2244  carries_group_signal=True
+
+fraction of steps whose groups ALL had identical rewards: 0.360

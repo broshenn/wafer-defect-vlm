@@ -1,0 +1,528 @@
+{
+  "description": "Is the lr 5e-5 drop real? A paired test, where the CI rule cannot answer.",
+  "alignment": {
+    "BASE_zero_shot": "1512/1512 rows aligned by image path",
+    "SFT": "1512/1512 rows aligned by image path",
+    "GRPO_G4_lr1e5": "1512/1512 rows aligned by image path",
+    "GRPO_G4_lr5e5": "1512/1512 rows aligned by image path",
+    "GSPO_G8_lr1e5": "1512/1512 rows aligned by image path",
+    "GSPO_G8_lr5e5": "1512/1512 rows aligned by image path",
+    "GSPO_G32_lr5e5": "1512/1512 rows aligned by image path",
+    "GSPO_G32_lr1e5": "1512/1512 rows aligned by image path",
+    "GSPO_G4_lr5e5": "1512/1512 rows aligned by image path",
+    "GSPO_G4_lr1e5": "1512/1512 rows aligned by image path"
+  },
+  "bootstrap_resamples": 20000,
+  "seed": 20260916,
+  "unit": "accuracy is paired per benchmark row; macro-F1 has no per-row decomposition so it stays a marginal estimate",
+  "positive_control": {
+    "pair": "BASE_zero_shot vs SFT",
+    "accuracy_delta": 0.40873,
+    "p_exact_two_sided": 2.83196e-26,
+    "requirement": "p <= 0.001 or the script exits",
+    "passed": true
+  },
+  "accuracy": {
+    "BASE_zero_shot": 0.214286,
+    "SFT": 0.623016,
+    "GRPO_G4_lr1e5": 0.623016,
+    "GRPO_G4_lr5e5": 0.56746,
+    "GSPO_G8_lr1e5": 0.615079,
+    "GSPO_G8_lr5e5": 0.539683,
+    "GSPO_G32_lr5e5": 0.56746,
+    "GSPO_G32_lr1e5": 0.619048,
+    "GSPO_G4_lr5e5": 0.535714,
+    "GSPO_G4_lr1e5": 0.626984
+  },
+  "runs_included": [
+    "BASE_zero_shot",
+    "SFT",
+    "GRPO_G4_lr1e5",
+    "GRPO_G4_lr5e5",
+    "GSPO_G8_lr1e5",
+    "GSPO_G8_lr5e5",
+    "GSPO_G32_lr5e5",
+    "GSPO_G32_lr1e5",
+    "GSPO_G4_lr5e5",
+    "GSPO_G4_lr1e5"
+  ],
+  "runs_optional_absent": [],
+  "comparisons_vs_SFT": {
+    "GRPO_G4_lr1e5": {
+      "accuracy": 0.623016,
+      "delta_vs_sft": 0.0,
+      "delta_ci95_rows": [
+        -0.031746,
+        0.031746
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "sft_wrong_run_right": 9,
+        "sft_right_run_wrong": 9,
+        "p_exact_two_sided": 1.0
+      }
+    },
+    "GRPO_G4_lr5e5": {
+      "accuracy": 0.56746,
+      "delta_vs_sft": -0.055556,
+      "delta_ci95_rows": [
+        -0.107143,
+        -0.003968
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "sft_wrong_run_right": 14,
+        "sft_right_run_wrong": 28,
+        "p_exact_two_sided": 0.0435585
+      }
+    },
+    "GSPO_G8_lr1e5": {
+      "accuracy": 0.615079,
+      "delta_vs_sft": -0.007937,
+      "delta_ci95_rows": [
+        -0.039683,
+        0.02381
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "sft_wrong_run_right": 8,
+        "sft_right_run_wrong": 10,
+        "p_exact_two_sided": 0.814529
+      }
+    },
+    "GSPO_G8_lr5e5": {
+      "accuracy": 0.539683,
+      "delta_vs_sft": -0.083333,
+      "delta_ci95_rows": [
+        -0.126984,
+        -0.039683
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "sft_wrong_run_right": 6,
+        "sft_right_run_wrong": 27,
+        "p_exact_two_sided": 0.000324063
+      }
+    },
+    "GSPO_G32_lr5e5": {
+      "accuracy": 0.56746,
+      "delta_vs_sft": -0.055556,
+      "delta_ci95_rows": [
+        -0.115079,
+        0.003968
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "sft_wrong_run_right": 22,
+        "sft_right_run_wrong": 36,
+        "p_exact_two_sided": 0.0869489
+      }
+    },
+    "GSPO_G32_lr1e5": {
+      "accuracy": 0.619048,
+      "delta_vs_sft": -0.003968,
+      "delta_ci95_rows": [
+        -0.039683,
+        0.031746
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "sft_wrong_run_right": 9,
+        "sft_right_run_wrong": 10,
+        "p_exact_two_sided": 1.0
+      }
+    },
+    "GSPO_G4_lr5e5": {
+      "accuracy": 0.535714,
+      "delta_vs_sft": -0.087302,
+      "delta_ci95_rows": [
+        -0.134921,
+        -0.043651
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "sft_wrong_run_right": 7,
+        "sft_right_run_wrong": 29,
+        "p_exact_two_sided": 0.000312551
+      }
+    },
+    "GSPO_G4_lr1e5": {
+      "accuracy": 0.626984,
+      "delta_vs_sft": 0.003968,
+      "delta_ci95_rows": [
+        -0.027778,
+        0.035714
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "sft_wrong_run_right": 9,
+        "sft_right_run_wrong": 8,
+        "p_exact_two_sided": 1.0
+      }
+    }
+  },
+  "lr_effect_paired": {
+    "GRPO G=4": {
+      "from": "GRPO_G4_lr1e5",
+      "to": "GRPO_G4_lr5e5",
+      "accuracy_delta": -0.055556,
+      "delta_ci95_rows": [
+        -0.099206,
+        -0.011905
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "lr1e5_wrong_lr5e5_right": 10,
+        "lr1e5_right_lr5e5_wrong": 24,
+        "p_exact_two_sided": 0.0243065
+      }
+    },
+    "GSPO G=4": {
+      "from": "GSPO_G4_lr1e5",
+      "to": "GSPO_G4_lr5e5",
+      "accuracy_delta": -0.09127,
+      "delta_ci95_rows": [
+        -0.134921,
+        -0.051587
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "lr1e5_wrong_lr5e5_right": 4,
+        "lr1e5_right_lr5e5_wrong": 27,
+        "p_exact_two_sided": 3.39532e-05
+      }
+    },
+    "GSPO G=8": {
+      "from": "GSPO_G8_lr1e5",
+      "to": "GSPO_G8_lr5e5",
+      "accuracy_delta": -0.075397,
+      "delta_ci95_rows": [
+        -0.119048,
+        -0.031746
+      ],
+      "excludes_zero": true,
+      "mcnemar": {
+        "lr1e5_wrong_lr5e5_right": 7,
+        "lr1e5_right_lr5e5_wrong": 26,
+        "p_exact_two_sided": 0.00131873
+      }
+    },
+    "GSPO G=32": {
+      "from": "GSPO_G32_lr1e5",
+      "to": "GSPO_G32_lr5e5",
+      "accuracy_delta": -0.051587,
+      "delta_ci95_rows": [
+        -0.107143,
+        0.003968
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "lr1e5_wrong_lr5e5_right": 20,
+        "lr1e5_right_lr5e5_wrong": 33,
+        "p_exact_two_sided": 0.0983706
+      }
+    }
+  },
+  "cross_algorithm_paired": {
+    "lr1e-5": {
+      "grpo_token": "GRPO_G4_lr1e5",
+      "gspo_sequence": "GSPO_G8_lr1e5",
+      "accuracy_delta_gspo_minus_grpo": -0.007937,
+      "delta_ci95_rows": [
+        -0.039683,
+        0.02381
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "grpo_wrong_gspo_right": 8,
+        "grpo_right_gspo_wrong": 10,
+        "p_exact_two_sided": 0.814529
+      },
+      "confound": "GRPO is G=4 and GSPO is G=8, so IS level and group size move together and this contrast cannot separate them"
+    },
+    "lr5e-5": {
+      "grpo_token": "GRPO_G4_lr5e5",
+      "gspo_sequence": "GSPO_G8_lr5e5",
+      "accuracy_delta_gspo_minus_grpo": -0.027778,
+      "delta_ci95_rows": [
+        -0.083333,
+        0.027778
+      ],
+      "excludes_zero": false,
+      "mcnemar": {
+        "grpo_wrong_gspo_right": 22,
+        "grpo_right_gspo_wrong": 29,
+        "p_exact_two_sided": 0.401062
+      },
+      "confound": "GRPO is G=4 and GSPO is G=8, so IS level and group size move together and this contrast cannot separate them"
+    }
+  },
+  "paper_setting_paired": {
+    "from": "GRPO_G4_lr5e5",
+    "to": "GSPO_G32_lr5e5",
+    "accuracy_delta_g32_minus_grpo4": 0.0,
+    "delta_ci95_rows": [
+      -0.063492,
+      0.063492
+    ],
+    "excludes_zero": false,
+    "mcnemar": {
+      "grpo_wrong_gspo_right": 32,
+      "grpo_right_gspo_wrong": 32,
+      "p_exact_two_sided": 1.0
+    },
+    "aggregate_accuracy_equal": true,
+    "note": "The two runs' aggregate accuracies are equal. Equality of aggregates does not imply equality of per-row predictions, so the paired test is not redundant here; this records it.",
+    "confound": "group size (4 vs 32), IS level (token vs sequence) and effective batch (16 vs 1024) all move together, so this contrast identifies none of the three"
+  },
+  "is_level_paired": {
+    "from": "GRPO_G4_lr5e5",
+    "to": "GSPO_G4_lr5e5",
+    "accuracy_delta_sequence_minus_token": -0.031746,
+    "delta_ci95_rows": [
+      -0.079365,
+      0.015873
+    ],
+    "excludes_zero": false,
+    "mcnemar": {
+      "token_wrong_sequence_right": 16,
+      "token_right_sequence_wrong": 24,
+      "p_exact_two_sided": 0.268187
+    },
+    "single_variable": true,
+    "held_fixed": "group size 4, accumulation 4 (effective batch 16), lr 5e-5, seed 3407, 150 steps, dataset, reward functions and weights",
+    "only_variable": "--importance_sampling_level (token vs sequence)",
+    "reading": "the two IS levels are not separable at G=4 / lr 5e-5",
+    "does_not_settle": "the proposition is about how the lr EFFECT differs by IS level. One lr cannot show a difference in tolerance; it shows only the levels' relative position at that lr."
+  },
+  "group_size_paired": {
+    "label": "GSPO lr5e-5: G=8 -> G=32",
+    "from": "GSPO_G8_lr5e5",
+    "to": "GSPO_G32_lr5e5",
+    "accuracy_delta_g32_minus_g8": 0.027778,
+    "delta_ci95_rows": [
+      -0.027778,
+      0.083333
+    ],
+    "excludes_zero": false,
+    "mcnemar": {
+      "g8_wrong_g32_right": 30,
+      "g8_right_g32_wrong": 23,
+      "p_exact_two_sided": 0.410103
+    },
+    "note": "G=32 is present at both learning rates in this record, so the lr contrast is available at two group sizes (see lr_effect_both_group_sizes). macro-F1 is not covered."
+  },
+  "lr_effect_both_group_sizes": {
+    "blocks": {
+      "G=4": {
+        "from": "GSPO_G4_lr1e5",
+        "to": "GSPO_G4_lr5e5",
+        "accuracy_delta": -0.09127,
+        "delta_ci95_rows": [
+          -0.134921,
+          -0.051587
+        ],
+        "excludes_zero": true,
+        "mcnemar": {
+          "lr1e5_wrong_lr5e5_right": 4,
+          "lr1e5_right_lr5e5_wrong": 27,
+          "p_exact_two_sided": 3.39532e-05
+        }
+      },
+      "G=8": {
+        "from": "GSPO_G8_lr1e5",
+        "to": "GSPO_G8_lr5e5",
+        "accuracy_delta": -0.075397,
+        "delta_ci95_rows": [
+          -0.119048,
+          -0.031746
+        ],
+        "excludes_zero": true,
+        "mcnemar": {
+          "lr1e5_wrong_lr5e5_right": 7,
+          "lr1e5_right_lr5e5_wrong": 26,
+          "p_exact_two_sided": 0.00131873
+        }
+      },
+      "G=32": {
+        "from": "GSPO_G32_lr1e5",
+        "to": "GSPO_G32_lr5e5",
+        "accuracy_delta": -0.051587,
+        "delta_ci95_rows": [
+          -0.107143,
+          0.003968
+        ],
+        "excludes_zero": false,
+        "mcnemar": {
+          "lr1e5_wrong_lr5e5_right": 20,
+          "lr1e5_right_lr5e5_wrong": 33,
+          "p_exact_two_sided": 0.0983706
+        }
+      }
+    },
+    "significant_at": [
+      "G=4",
+      "G=8"
+    ],
+    "reading": "the lr effect is not detected at every group size measured, so group size is not excluded as the cause",
+    "does_not_settle": "this removes group size as the cause of the lr effect. It does NOT test the paper's proposition, which needs a pair differing only in IS level."
+  },
+  "group_size_paired_lr1e5": {
+    "label": "GSPO lr 1e-5: G=8 -> G=32",
+    "from": "GSPO_G8_lr1e5",
+    "to": "GSPO_G32_lr1e5",
+    "accuracy_delta_g32_minus_g8": 0.003968,
+    "delta_ci95_rows": [
+      -0.019841,
+      0.027778
+    ],
+    "excludes_zero": false,
+    "mcnemar": {
+      "g8_wrong_g32_right": 5,
+      "g8_right_g32_wrong": 4,
+      "p_exact_two_sided": 1.0
+    }
+  },
+  "group_size_verdict": {
+    "contrasts": [
+      {
+        "label": "GSPO lr5e-5: G=8 -> G=32",
+        "delta": 0.027778,
+        "p": 0.410103
+      },
+      {
+        "label": "GSPO lr 1e-5: G=8 -> G=32",
+        "delta": 0.003968,
+        "p": 1.0
+      }
+    ],
+    "significant_count": 0,
+    "reading": "neither lr shows a group-size effect, so at lr 5e-5 and lr 1e-5 alike G=32 is not separable from G=8",
+    "caveat": "two group sizes (8, 32) and two lrs; a non-monotone effect between them would not be seen."
+  },
+  "paper_claim_status": {
+    "proposition": "sequence-level normalisation tolerates a higher learning rate than token-level",
+    "status": "the single-variable IS-level pair is in this record",
+    "single_variable_pair": "GRPO_G4_lr5e5 vs GSPO_G4_lr5e5",
+    "result": "the two IS levels are not separable at G=4 / lr 5e-5",
+    "what_this_pair_establishes": "at G=4 and lr 5e-5 the two IS levels are compared with group size and effective batch fixed, so the confound that limited every earlier contrast is absent here",
+    "missing_cell": "none: the 2x2 at G=4 is complete -- both IS levels at both learning rates -- so the lr effect is measured separately for each IS level at one group size, which is the form in which 'tolerates a higher learning rate' becomes a comparison rather than an impression. What is still NOT measured is whether the two effects differ in SIZE: this record holds each effect and its own test, not a test of the difference between them.",
+    "what_is_established": "the lr effect is significant in 3 of the 4 cells where both learning rates exist (GRPO G=4, GSPO G=4, GSPO G=8), so sequence-level does not visibly tolerate the higher learning rate better than token-level does at the group sizes measured"
+  },
+  "macro_f1_marginal": {
+    "note": "marginal estimates; macro-F1 is not a per-row average so the paired instruments above do not apply to it",
+    "values": {
+      "BASE_zero_shot": 0.134655,
+      "SFT": 0.611431,
+      "GRPO_G4_lr1e5": 0.619659,
+      "GRPO_G4_lr5e5": 0.553497,
+      "GSPO_G8_lr1e5": 0.608926,
+      "GSPO_G8_lr5e5": 0.501378,
+      "GSPO_G32_lr5e5": 0.540337,
+      "GSPO_G32_lr1e5": 0.614258,
+      "GSPO_G4_lr5e5": 0.490989,
+      "GSPO_G4_lr1e5": 0.625538
+    },
+    "lr_effect": {
+      "GRPO G=4": {
+        "lr1e-5": 0.619659,
+        "lr5e-5": 0.553497,
+        "delta": -0.066162
+      },
+      "GSPO G=4": {
+        "lr1e-5": 0.625538,
+        "lr5e-5": 0.490989,
+        "delta": -0.134549
+      },
+      "GSPO G=8": {
+        "lr1e-5": 0.608926,
+        "lr5e-5": 0.501378,
+        "delta": -0.107549
+      },
+      "GSPO G=32": {
+        "lr1e-5": 0.614258,
+        "lr5e-5": 0.540337,
+        "delta": -0.073921
+      }
+    },
+    "vs_sft": {
+      "GRPO G=4": {
+        "lr1e-5_delta": 0.008228,
+        "lr5e-5_delta": -0.057934
+      },
+      "GSPO G=4": {
+        "lr1e-5_delta": 0.014106,
+        "lr5e-5_delta": -0.120443
+      },
+      "GSPO G=8": {
+        "lr1e-5_delta": -0.002505,
+        "lr5e-5_delta": -0.110054
+      },
+      "GSPO G=32": {
+        "lr1e-5_delta": 0.002826,
+        "lr5e-5_delta": -0.071095
+      }
+    }
+  },
+  "reading": "The marginal-CI rule in final_report.py reports that every RL run's interval overlaps SFT's. Paired on the same 252 rows: 3 of the 4 runs at lr 5e-5 are significantly below SFT (GRPO_G4_lr5e5, GSPO_G4_lr5e5, GSPO_G8_lr5e5); the lr effect inside a fixed algorithm and group size is significant in 3 of the 4 cells where both learning rates exist (GRPO G=4, GSPO G=4, GSPO G=8); and no run at lr 1e-5 is separable from SFT (4 tested). The overlap rule is conservative for independent samples and these are paired, so it understates differences it should see; the paired test does not overturn the direction, it supplies the significance the other rule could not. macro-F1 is not covered by this test.",
+  "group_size_series_lr5e5": {
+    "series": "GSPO, sequence-level, lr 5e-5, group size 4 -> 8 -> 32",
+    "held_fixed": [
+      "algorithm",
+      "importance_sampling_level",
+      "learning_rate",
+      "data",
+      "rewards",
+      "reward_weights"
+    ],
+    "moves_with_group_size": [
+      "effective_batch_size"
+    ],
+    "rungs": {
+      "G=4 -> G=8": {
+        "from": "GSPO_G4_lr5e5",
+        "to": "GSPO_G8_lr5e5",
+        "accuracy_delta": 0.003968,
+        "delta_ci95_rows": [
+          -0.043651,
+          0.051587
+        ],
+        "excludes_zero": false,
+        "mcnemar": {
+          "lower_wrong_higher_right": 19,
+          "lower_right_higher_wrong": 18,
+          "p_exact_two_sided": 1.0
+        }
+      },
+      "G=8 -> G=32": {
+        "reused_from": "group_size_paired",
+        "from": "GSPO_G8_lr5e5",
+        "to": "GSPO_G32_lr5e5",
+        "accuracy_delta": 0.027778,
+        "delta_ci95_rows": [
+          -0.027778,
+          0.083333
+        ],
+        "excludes_zero": false,
+        "mcnemar": {
+          "g8_wrong_g32_right": 30,
+          "g8_right_g32_wrong": 23,
+          "p_exact_two_sided": 0.410103
+        }
+      }
+    },
+    "deltas": {
+      "G=4 -> G=8": 0.003968,
+      "G=8 -> G=32": 0.027778
+    },
+    "significant_rungs": [],
+    "reading": "no rung separates the two group sizes it spans, so along this series accuracy is flat in group size from 4 to 32",
+    "does_not_settle": "this is about group size, not IS level. The paper's proposition needs a pair differing only in IS level, which is is_level_paired; and effective batch moves with group size along this series, so it is a series in configuration space, not a controlled single-variable experiment.",
+    "effective_batch_by_G": {
+      "4": 16,
+      "8": 64,
+      "32": 1024
+    },
+    "confound_size": "gradient accumulation was set equal to the group size in every run of this series, so effective batch is group size squared: G=4 -> 16, G=8 -> 64, G=32 -> 1024. The series therefore moves group size 8x and effective batch 64x at the same time, and no contrast in it is single-variable."
+  }
+}

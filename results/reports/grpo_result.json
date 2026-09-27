@@ -1,0 +1,21 @@
+{
+  "outcome": "smoke_completed",
+  "reason": "2 steps finished without error",
+  "exit_status": 0,
+  "elapsed_seconds": 82,
+  "gpu_peak_mib": 10597,
+  "log": "/root/autodl-fs/wafer-vlm/logs/27_grpo_smoke.log",
+  "config": {
+    "rlhf_type": "grpo",
+    "use_vllm": false,
+    "note": "vLLM is not installed, so rollouts use ms-swift's TransformersEngine",
+    "reward_funcs": [
+      "wafer_class",
+      "wafer_format",
+      "wafer_radial",
+      "wafer_clock"
+    ],
+    "rewards_are_deterministic": true,
+    "gspo": "not offered by this ms-swift commit; rlhf_type choices exclude gspo"
+  }
+}

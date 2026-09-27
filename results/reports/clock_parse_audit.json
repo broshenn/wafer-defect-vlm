@@ -1,0 +1,61 @@
+{
+  "base": {
+    "parsed": 252,
+    "scored": 1,
+    "dropped": 251,
+    "dropped_values": {
+      "all": 208,
+      "none": 43
+    },
+    "dropped_defect_types": {
+      "Edge_Loc": 30,
+      "none": 26,
+      "Scratch": 30,
+      "Donut": 30,
+      "Edge_Ring": 30,
+      "Loc": 30,
+      "Center": 30,
+      "Random": 30,
+      "Near_full": 15
+    }
+  },
+  "sft": {
+    "parsed": 250,
+    "scored": 203,
+    "dropped": 47,
+    "dropped_values": {
+      "all": 24,
+      "none": 22,
+      "1": 1
+    },
+    "dropped_defect_types": {
+      "Edge_Ring": 18,
+      "Scratch": 1,
+      "Random": 24,
+      "Near_full": 2,
+      "Donut": 1,
+      "none": 1
+    }
+  },
+  "grpo": {
+    "parsed": 252,
+    "scored": 198,
+    "dropped": 54,
+    "dropped_values": {
+      "all": 33,
+      "none": 16,
+      "None": 4,
+      "1": 1
+    },
+    "dropped_defect_types": {
+      "Edge_Ring": 20,
+      "Scratch": 1,
+      "Random": 25,
+      "Near_full": 2,
+      "none": 3,
+      "Center": 1,
+      "Edge_Loc": 1,
+      "Donut": 1
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "source": "/autodl-fs/data/wafer-vlm/data/raw/wm811k/LSWMD.pkl",
+  "total_rows": 811457,
+  "labeled_rows": 172950,
+  "class_counts": {
+    "Center": 4294,
+    "Donut": 555,
+    "Edge_Loc": 5189,
+    "Edge_Ring": 9680,
+    "Loc": 3593,
+    "Near_full": 149,
+    "Random": 866,
+    "Scratch": 1193,
+    "none": 147431
+  },
+  "seed": 3407,
+  "per_class_limit": 800,
+  "none_limit": 400
+}

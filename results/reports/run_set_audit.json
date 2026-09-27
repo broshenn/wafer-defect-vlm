@@ -1,0 +1,70 @@
+{
+  "available": [
+    {
+      "name": "Base",
+      "tag": "qwen35_9b_zero_shot"
+    },
+    {
+      "name": "SFT",
+      "tag": "qwen35_9b_adapter"
+    },
+    {
+      "name": "GRPO_lr1e5",
+      "tag": "qwen35_9b_grpo"
+    },
+    {
+      "name": "GRPO_lr5e5",
+      "tag": "qwen35_9b_grpo_lr5e5"
+    },
+    {
+      "name": "GRPO_lr1e5_s2",
+      "tag": "qwen35_9b_grpo_lr1e5_seed3408"
+    },
+    {
+      "name": "GRPO_lr1e5_s3",
+      "tag": "qwen35_9b_grpo_lr1e5_seed3409"
+    },
+    {
+      "name": "GSPO_lr5e5",
+      "tag": "qwen35_9b_gspo_v1"
+    },
+    {
+      "name": "GSPO_lr1e5",
+      "tag": "gspo_lr1e5"
+    },
+    {
+      "name": "GSPO_G32",
+      "tag": "qwen35_9b_gspo_g32"
+    },
+    {
+      "name": "GSPO_G32_lr1e5",
+      "tag": "qwen35_9b_gspo_g32_lr1e5"
+    },
+    {
+      "name": "GSPO_G4_lr5e5",
+      "tag": "qwen35_9b_gspo_g4_lr5e5"
+    },
+    {
+      "name": "GSPO_G4_lr1e5",
+      "tag": "qwen35_9b_gspo_g4_lr1e5"
+    }
+  ],
+  "expected_but_absent": [],
+  "excluded_on_disk": {},
+  "reports_on_disk": [
+    "gspo_lr1e5",
+    "qwen35_9b_adapter",
+    "qwen35_9b_grpo",
+    "qwen35_9b_grpo_lr1e5_seed3408",
+    "qwen35_9b_grpo_lr1e5_seed3409",
+    "qwen35_9b_grpo_lr5e5",
+    "qwen35_9b_gspo_g32",
+    "qwen35_9b_gspo_g32_lr1e5",
+    "qwen35_9b_gspo_g4_lr1e5",
+    "qwen35_9b_gspo_g4_lr5e5",
+    "qwen35_9b_gspo_v1",
+    "qwen35_9b_zero_shot"
+  ],
+  "unaccounted_reports": [],
+  "note": "A report present on disk but named in neither NAMES nor EXCLUDE is listed in unaccounted_reports and fails this script: a run must be dropped by a decision that is printed, never by a list that went stale."
+}

@@ -1,0 +1,42 @@
+{
+  "per_file": [
+    {
+      "file": "primary_deepseek.jsonl",
+      "rows": 5423,
+      "ok": 5315,
+      "errors": 108,
+      "prompt_tokens": 3966889,
+      "completion_tokens": 756164,
+      "total_tokens": 4723053,
+      "models": {
+        "deepseek-v4.1-flash": 1532,
+        "deepseek-v3.2": 3891
+      },
+      "prompt_versions": {
+        "structured_teacher_v1": 5423
+      }
+    },
+    {
+      "file": "secondary_qwen.jsonl",
+      "rows": 5189,
+      "ok": 5189,
+      "errors": 0,
+      "prompt_tokens": 5907116,
+      "completion_tokens": 789122,
+      "total_tokens": 6696238,
+      "models": {
+        "qwen3.5-397b-a17b": 5189
+      },
+      "prompt_versions": {
+        "structured_teacher_v1": 5189
+      }
+    }
+  ],
+  "total": {
+    "files": 2,
+    "rows": 10612,
+    "total_tokens": 11419291,
+    "prompt_tokens": 9874005,
+    "completion_tokens": 1545286
+  }
+}
