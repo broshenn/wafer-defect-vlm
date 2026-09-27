@@ -65,7 +65,12 @@ mentor 提供的原始文档保存在 `参考文档/第一代方案复现文档_
 | 项 | 值 | 出处 |
 |---|---|---|
 | 基座零样本 | **0.2143**（54/252） | `results/reports/qwen35_9b_zero_shot__report.json` |
-| 教师标注 SFT | **0.6230**（157/252） | `results/reports/qwen35_9b_sft__report.json` |
+| 教师标注 SFT | **0.6230**（157/252） | `results/reports/qwen35_9b_adapter__report.json` |
+
+> ⚠️ **命名陷阱**：SFT 那一次的报告**不叫** `…sft__report.json` —— 仓库里**没有**这个文件。
+> 它叫 `qwen35_9b_adapter__report.json`（因为 SFT 的产物就是 LoRA adapter）。
+> 已核实该文件里 `classification.accuracy = 0.623015873015873`。
+> 另注：`comparison.md` 的 SFT 一列里，检索指标取自 `merged_rankings.jsonl` 而非 adapter（见第 6 节第 6 条）。
 | 12 个 run 的最高分 | 162/252（`GRPO_lr1e5_s3`，与 SFT 差 5 行，不显著） | `docs/comparison.md` |
 | 12 个 RL run | **没有一个显著超过 SFT**；lr 5e-5 档**显著更差** | `results/reports/paired_significance.json` |
 
@@ -80,7 +85,17 @@ mentor 提供的原始文档保存在 `参考文档/第一代方案复现文档_
 | 划分 | train 4721 / val 594 / test 589，按 `lot_name` 分组，种子 3407 | 同上 |
 | **跨划分 lot 泄漏** | **0** | `data/manifest_summary.json` → `lot_split_intersections` |
 | 标签来源 | `label_source` **100% `ground_truth`**，无 `predictDefectType` | `data/manifest.jsonl` |
-| SFT 训练 | QLoRA r16/α32/dropout0.05，冻结 ViT+Aligner，lr 1e-4；604 步、**实际 1.5 epoch**、eval_loss 0.4692→0.2800、峰值 32.92 GiB | `results/reports/sft_train_result.json` |
+| SFT 训练 | QLoRA r16/α32/dropout0.05，冻结 ViT+Aligner，lr 1e-4；604 步、**实际 1.5 epoch**、eval_loss 0.4692→0.2800、峰值 32.92 GiB | 见下 |
+
+> **SFT 那两个数的确切出处**（都已核实）：
+> - **步数 / epoch / 显存 / 总时长** → `results/reports/sft_train_result.json`
+>   （`global_step/max_steps = 604/604`、`epoch = 1.5`、`memory(GiB) = 32.92`、`elapsed_time = 2h 11m 32s`）
+> - **eval_loss 0.4692 → 0.2800** → `results/curves/qwen35_9b_qlora_v1.jsonl`，7 个评估点全部在内：
+>   step 100 = 0.4692、200 = 0.3528、300 = 0.3142、400 = 0.2948、500 = 0.2814、600 = 0.2802、
+>   **604 = 0.2800**（最后一步，`0.27999547`）。注意 600 与 604 两个数很接近，别引错那一个。
+> - ⚠️ `logs/08_train.log` 是原始日志，但 `*.log` 被 `.gitignore` 排除 —— **公开仓库里读不到**，
+>   所以上面两条都指向已提交的 JSON/JSONL，不要引用日志。
+>
 | 环境 | ms-swift `4.6.0.dev0 @ 9d3d03d`；RTX 4090 48G；torch 2.8.0+cu128；transformers 5.16.1 | `results/reports/` 环境记录 |
 
 ### 2.3 RL 为什么没效果 —— 机制已定位 **[事实]**
