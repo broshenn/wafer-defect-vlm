@@ -40,3 +40,6 @@ papers/
 # 14 MB of tarballs of superseded working states (2026-09-17). Binary, no delta
 # value in git; the current tree already supersedes them.
 archive/tarballs/
+
+# Claude Code runtime lock files (session id + pid), not project content.
+.claude/
