@@ -1,0 +1,46 @@
+{
+  "sample_id": "wafer_00016894_009",
+  "review_date": "2026-10-02",
+  "review_source": "model_review",
+  "reviewer": "Codex 主会话",
+  "reviewer_configuration": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "source": "user_declared",
+    "backend_independently_verified": false
+  },
+  "human_review_status": "not_performed",
+  "human_reviewer_count": 0,
+  "blind_review": false,
+  "context_disclosure": "主会话已接触原答案、先前诊断、ZCode 补充说明及公开原标签。",
+  "image_path": "data/images/wafer_00016894_009.png",
+  "image_sha256": "718e378616c2e86c6d43ac6c97bf3f2b4677b22d07e3cda74eacaf1ee4f4b93c",
+  "original_answer_path": "zcode_glm53flash_test/20261002-002240/raw_answer.json",
+  "original_answer_sha256": "2fa9ce88f98f062726511ea6e065f6f088e49f0104fcc80b187cca602dcb72d2",
+  "prompt_file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+  "decision": "candidate_requires_changes",
+  "approved_for_training": false,
+  "field_review": {
+    "defect_class": {"decision": "retain", "basis": "视觉判断与 data/manifest.jsonl:1635 的公开原标签一致；非盲复核。"},
+    "morphology": {"decision": "revise", "reason": "外围红点可见，但噪声归属未证实。"},
+    "radial_zone": {"decision": "retain_model_judgment", "basis": "主团簇位于中央附近，未验证定量分区阈值。"},
+    "clock_direction": {"decision": "retain_model_judgment", "basis": "中央主团簇暂不指定单一方向。"},
+    "extent_r": {"decision": "withhold_numeric_value", "reason": "主簇选择与测量规则未锁定，历史全体点轴向跨度不能直接作为主簇尺寸金标。"},
+    "caption_zh": {"decision": "revise", "reason": "删除尚未验证的尺寸数值。"},
+    "uncertainty": {"decision": "revise", "reason": "补充主簇边界、散点归属与尺寸不确定性。"}
+  },
+  "suggested_answer_source": "ZCode 原始模型标注 + Codex 模型复核修订候选",
+  "suggested_answer": {
+    "defect_class": "Center",
+    "morphology": "中央附近的致密不规则块状失效簇，外围可见零星红点",
+    "radial_zone": "center",
+    "clock_direction": null,
+    "extent_r": null,
+    "caption_zh": "晶圆中心附近有致密的不规则红色失效簇，其他区域可见零星红点。",
+    "uncertainty": "主要失效簇与外围散点的边界划分不确定，暂不能可靠给出最大跨度；外围红点是否属于噪声无法仅凭本图确认。"
+  },
+  "unverified": ["主簇定量尺寸与容差", "后端实际模型身份与完整视觉链路", "本次标注用量与额度", "教师总体质量"],
+  "external_api_requests_this_review": 0,
+  "new_zcode_annotation_requests_this_review": 0,
+  "codex_usage_this_review": "未提供"
+}

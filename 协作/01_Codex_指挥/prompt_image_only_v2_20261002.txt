@@ -1,0 +1,7 @@
+请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。不推测工艺根因。
+只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声，不把没有看到的模式写进答案。
+从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。
+本轮只做类别、定性形态与位置检查。extent_r 必须为 null，描述中也不写未经验证的数值尺寸、比例或覆盖率；这不代表缺陷尺寸为零。
+图片上方为12点钟，右方为3点钟。clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时填 null。
+仅输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下七字段：
+{"defect_class":"类别","morphology":"主要可见形态的简短中文描述","radial_zone":"center/middle/edge/global/unknown/none","clock_direction":null,"extent_r":null,"caption_zh":"一句话客观描述主要形态与位置","uncertainty":"不确定之处，无则空字符串"}
