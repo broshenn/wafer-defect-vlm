@@ -1,0 +1,61 @@
+{
+  "prepared_at": "2026-10-01T23:20:51.965680+08:00",
+  "purpose": "公开晶圆图五张积分小测,不是正式标注或准确率评测",
+  "api_credit_limit": 40,
+  "max_requests": 5,
+  "request": {
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0
+  },
+  "prompt_file": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\prompt-image-only.txt",
+  "prompt_file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+  "prompt_sent_text_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+  "images": [
+    {
+      "sample_id": "wafer_00000161_006",
+      "split": "train",
+      "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00000161_006.png",
+      "sha256": "7de640aa21eb596b9de41c53abdfdfc681711ba8f90ae88ea7c640c61c06445f",
+      "selection_observation": "全片以红色为主"
+    },
+    {
+      "sample_id": "wafer_00013751_005",
+      "split": "train",
+      "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00013751_005.png",
+      "sha256": "fb1bd4d0fc77728f69ad34bc5892781a21336ca1530e32b1a0f4a7e9d39f46da",
+      "selection_observation": "边缘连续红色带"
+    },
+    {
+      "sample_id": "wafer_00046291_009",
+      "split": "train",
+      "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00046291_009.png",
+      "sha256": "07a1afdb0d944222399028815a76c0980b28e6ce8ef9682d08465adb998a7b7a",
+      "selection_observation": "少量分散红点"
+    },
+    {
+      "sample_id": "wafer_00011320_018",
+      "split": "train",
+      "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00011320_018.png",
+      "sha256": "5487594b005968d30f1fe5074df7b7e8454ab71c3c09f140e64e22600ea351e0",
+      "selection_observation": "局部细线伴散点"
+    },
+    {
+      "sample_id": "wafer_00016894_009",
+      "split": "train",
+      "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00016894_009.png",
+      "sha256": "718e378616c2e86c6d43ac6c97bf3f2b4677b22d07e3cda74eacaf1ee4f4b93c",
+      "selection_observation": "中心团簇伴较多散点"
+    }
+  ],
+  "existing_result_dirs": [
+    "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\results"
+  ],
+  "balance_followup_delay_seconds": 30,
+  "benchmark_overlap_ids": [],
+  "labels_used_for_selection_or_model_input": false,
+  "selection_method": "确定性几何候选加本Agent视觉检查,未人工复核",
+  "budget_policy": "累计API返回积分达到40后不再发下一张;单次请求可导致越过阈值;费用缺失或任一失败立即停,无重试",
+  "account_cost_attribution": "账户余额区间变化单列,未归因到API或WorkBuddy整个任务"
+}

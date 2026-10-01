@@ -1,0 +1,12 @@
+[DRY-RUN] 模型=kimi-k3-1 max_tokens=8192 超时=300s 重试=0
+[DRY-RUN] 提示词文件=D:\pycode\workbuddy\wafer-cost-test\20261001-211719\prompt-image-only.txt sha256=8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1
+[DRY-RUN] 文件字节 sha256=8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62; CRLF/CR 转为 LF,沿用首轮 Python 通用换行读取
+[DRY-RUN] 提示词内容:
+请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。
+从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。
+仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：
+{"defect_class":"类别","morphology":"主要形态的简短中文描述","radial_zone":"center/middle/edge/global/unknown/none","clock_direction":"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null","extent_r":null,"caption_zh":"一句话客观描述形态、位置和大致范围","uncertainty":"不确定之处，无则空字符串"}。
+extent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。
+
+[DRY-RUN] 将处理: D:\pycode\晶圆图研究\data\images\wafer_00016894_009.png | 1883 bytes | 448x448 | sha256=718e378616c2e86c6d43ac6c97bf3f2b4677b22d07e3cda74eacaf1ee4f4b93c
+[DRY-RUN] 待调用 1 张;未读取密钥、未发起 API 调用、未写结果。

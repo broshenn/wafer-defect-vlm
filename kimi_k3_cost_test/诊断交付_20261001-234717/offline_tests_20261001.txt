@@ -1,0 +1,25 @@
+test_exact_threshold_stops_before_fifth_request (test_run_cost_batch.BatchTests.test_exact_threshold_stops_before_fifth_request) ... ok
+test_failure_retains_reported_cost_and_stops (test_run_cost_batch.BatchTests.test_failure_retains_reported_cost_and_stops) ... ok
+test_five_successes_keep_api_and_account_observations_separate (test_run_cost_batch.BatchTests.test_five_successes_keep_api_and_account_observations_separate) ... ok
+test_one_call_can_cross_threshold_but_no_following_call (test_run_cost_batch.BatchTests.test_one_call_can_cross_threshold_but_no_following_call) ... ok
+test_preview_does_not_load_key_or_create_results (test_run_cost_batch.BatchTests.test_preview_does_not_load_key_or_create_results) ... ok
+test_unknown_credit_stops_even_when_answer_successful (test_run_cost_batch.BatchTests.test_unknown_credit_stops_even_when_answer_successful) ... ok
+test_empty_truncated_array_and_missing_field_fail (test_run_kimi_k3_wafer.AnswerTests.test_empty_truncated_array_and_missing_field_fail) ... ok
+test_valid_unknown_answer (test_run_kimi_k3_wafer.AnswerTests.test_valid_unknown_answer) ... ok
+test_wrong_types_enums_and_nonfinite_values_fail (test_run_kimi_k3_wafer.AnswerTests.test_wrong_types_enums_and_nonfinite_values_fail) ... ok
+test_default_limit_does_not_inspect_later_invalid_image (test_run_kimi_k3_wafer.MainTests.test_default_limit_does_not_inspect_later_invalid_image) ... ok
+test_dry_run_does_not_read_key_call_model_or_write_results (test_run_kimi_k3_wafer.MainTests.test_dry_run_does_not_read_key_call_model_or_write_results) ... ok
+test_failure_stops_and_repeated_attempts_do_not_overwrite (test_run_kimi_k3_wafer.MainTests.test_failure_stops_and_repeated_attempts_do_not_overwrite) ... ok
+test_interrupt_keeps_unknown_attempt_and_stops (test_run_kimi_k3_wafer.MainTests.test_interrupt_keeps_unknown_attempt_and_stops) ... ok
+test_skip_happens_before_limit_and_preserves_legacy_result (test_run_kimi_k3_wafer.MainTests.test_skip_happens_before_limit_and_preserves_legacy_result) ... ok
+test_invalid_legacy_success_is_not_completed (test_run_kimi_k3_wafer.ResumeTests.test_invalid_legacy_success_is_not_completed) ... ok
+test_legacy_success_revalidated_and_identity_changes_not_skipped (test_run_kimi_k3_wafer.ResumeTests.test_legacy_success_revalidated_and_identity_changes_not_skipped) ... ok
+test_empty_length_missing_reason_or_wrong_model_fail (test_run_kimi_k3_wafer.TransportTests.test_empty_length_missing_reason_or_wrong_model_fail) ... ok
+test_malformed_and_missing_field_answers_fail_even_with_stop (test_run_kimi_k3_wafer.TransportTests.test_malformed_and_missing_field_answers_fail_even_with_stop) ... ok
+test_server_error_no_retry_and_key_redacted (test_run_kimi_k3_wafer.TransportTests.test_server_error_no_retry_and_key_redacted) ... ok
+test_success_preserves_bytes_prompt_usage_and_unknown_task_cost (test_run_kimi_k3_wafer.TransportTests.test_success_preserves_bytes_prompt_usage_and_unknown_task_cost) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.310s
+
+OK

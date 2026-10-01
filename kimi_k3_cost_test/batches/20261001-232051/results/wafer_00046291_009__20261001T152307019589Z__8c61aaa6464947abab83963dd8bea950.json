@@ -1,0 +1,135 @@
+{
+  "run_at": "2026-10-01T23:23:07.022270+08:00",
+  "image": {
+    "path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00046291_009.png",
+    "sha256": "07a1afdb0d944222399028815a76c0980b28e6ce8ef9682d08465adb998a7b7a",
+    "bytes": 1608,
+    "width_px": 448,
+    "height_px": 448
+  },
+  "request": {
+    "base_url": "http://127.0.0.1:8788",
+    "endpoint": "POST /v1/chat/completions",
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0,
+    "extra_params": "无(未添加未经验证的推理参数)",
+    "prompt_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "prompt_text": "请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。\n从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。\n仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：\n{\"defect_class\":\"类别\",\"morphology\":\"主要形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/unknown/none\",\"clock_direction\":\"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述形态、位置和大致范围\",\"uncertainty\":\"不确定之处，无则空字符串\"}。\nextent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。\n"
+  },
+  "response": {
+    "http_status": 200,
+    "elapsed_seconds": 25.266,
+    "actual_model": "kimi-k3-1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 586,
+      "total_tokens": 1200,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 466,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 466,
+      "credit": 1.57,
+      "cached_tokens": 0
+    },
+    "reasoning_tokens": 466,
+    "credits_this_call": 1.57,
+    "answer_raw": "{\"defect_class\":\"Random\",\"morphology\":\"稀疏孤立的红色失效点，随机散布，无连线、环带或明显簇团\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆几乎全为绿色合格 die，少量红色失效 die 稀疏散布于中心、边缘及中间各区域，未见主导局部结构。\",\"uncertainty\":\"失效点数量少且分散，可能接近散点噪声；无法据此判定存在结构性缺陷。\"}",
+    "answer_is_complete_json": true,
+    "answer_json_error": null,
+    "answer_schema_valid": true,
+    "answer_validation_error": null
+  },
+  "cost": {
+    "balance_before": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3663,
+        "queried_at": "2026-10-01T23:23:07.577313+08:00"
+      }
+    ],
+    "balance_after": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3661,
+        "queried_at": "2026-10-01T23:23:33.503089+08:00"
+      }
+    ],
+    "workbuddy_balance_delta": 2,
+    "workbuddy_task_credits": "未提供",
+    "balance_note": "余额差是查询区间的账户变化,可能包含其他任务或延迟扣费;不是本次 API 或整个 WorkBuddy 任务的已归因费用。"
+  },
+  "status": "success",
+  "error": null,
+  "raw_response_body": {
+    "id": "cmb-01413714bdac11f18cc10a3adffcfc96",
+    "object": "chat.completion",
+    "created": 1790868193,
+    "model": "kimi-k3-1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"defect_class\":\"Random\",\"morphology\":\"稀疏孤立的红色失效点，随机散布，无连线、环带或明显簇团\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆几乎全为绿色合格 die，少量红色失效 die 稀疏散布于中心、边缘及中间各区域，未见主导局部结构。\",\"uncertainty\":\"失效点数量少且分散，可能接近散点噪声；无法据此判定存在结构性缺陷。\"}",
+          "reasoning_content": "The user wants me to analyze a wafer bin map image. Let me look at the image carefully.\n\nThe image shows a circular wafer on black background. Green = good dies, red = failed dies. Black = outside wafer.\n\nLooking at the image: There's a circular wafer (green) with scattered red dots. The red dots appear randomly distributed across the wafer - some near edges, some in center, some in various locations. There's no clear structural pattern like a ring, donut, scratch, or localized cluster.\n\nThe red dots are sparse and scattered throughout: near top edge, left side, right side, center, bottom area. They appear to be randomly distributed without a dominant pattern.\n\nThe instruction says: scattered point noise doesn't necessarily represent structural defects; don't infer process root cause. Choose from Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none. If cannot reliably choose, fill unknown.\n\nThe red dots are sparse and randomly distributed across the whole wafer with no clustering, no ring, no scratch line. This best fits \"Random\".\n\nRadial zone: global (since scattered throughout).\nClock direction: null (global/random).\nExtent_r: null (defects dispersed, no main cluster).\nMorphology: 稀疏散点状失效，随机分布.\nCaption: 整片晶圆以合格 die 为主，红色失效 die 呈稀疏散点随机分布于各区域，无明显局部簇或环状/划痕结构.\nUncertainty: 散点数量少且分布稀疏，不能排除随机噪声；无主导结构.\n\nLet me make sure there's no edge ring. Looking at the edges: there are some red dots near the edge (top, left, right, bottom), but also plenty in the middle/center. It's not concentrated at the edge. No ring pattern. So Random is appropriate.\n\nActually, let me reconsider - \"none\" vs \"Random\". The wafer is mostly green with very few red dots. If the red dots are just noise, maybe \"none\"? But there are clearly multiple red failed dies scattered around. \"Random\" class is for random distribution of failures. Given there are visible red dies across the wafer with no pattern, Random is the best fit.\n\nI'll output JSON only."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 586,
+      "total_tokens": 1200,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 466,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 466,
+      "credit": 1.57,
+      "cached_tokens": 0
+    }
+  },
+  "prompt_source": {
+    "path": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\prompt-image-only.txt",
+    "file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+    "sent_text_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "newline_handling": "CRLF/CR 转 LF,沿用首轮文本读取"
+  },
+  "plan_sha256": "608c5eedde928f667c038b396429ef584e9e5217a9f4938c418c2377a0b419d6"
+}

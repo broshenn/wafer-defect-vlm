@@ -1,0 +1,80 @@
+{
+  "started_at": "2026-10-01T23:21:29.141248+08:00",
+  "status": "stopped",
+  "plan_sha256": "608c5eedde928f667c038b396429ef584e9e5217a9f4938c418c2377a0b419d6",
+  "code_sha256": {
+    "run_cost_batch.py": "d772b50932f8f879ae52949ce98bc78dfdc843f7ee40994617a6a86865f0cd9c",
+    "run_kimi_k3_wafer.py": "f939472a37a002e7fa0c27c4516da5a9e87094492d97099d8abfb3deb6f1d759"
+  },
+  "api_credit_limit": 40,
+  "maximum_requests": 5,
+  "api_credits_reported_total": 37.52,
+  "credits_complete": true,
+  "attempts": [
+    {
+      "sample_id": "wafer_00000161_006",
+      "result_path": "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00000161_006__20261001T152129141970Z__6db2492dca3a4472bfad8e03fb3c2658.json",
+      "status": "success",
+      "api_credit": 2.05,
+      "elapsed_seconds": 29.276
+    },
+    {
+      "sample_id": "wafer_00013751_005",
+      "result_path": "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00013751_005__20261001T152159768737Z__f116f3e345f541ef88330f5c9b733b70.json",
+      "status": "success",
+      "api_credit": 5.53,
+      "elapsed_seconds": 65.989
+    },
+    {
+      "sample_id": "wafer_00046291_009",
+      "result_path": "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00046291_009__20261001T152307019589Z__8c61aaa6464947abab83963dd8bea950.json",
+      "status": "success",
+      "api_credit": 1.57,
+      "elapsed_seconds": 25.266
+    },
+    {
+      "sample_id": "wafer_00011320_018",
+      "result_path": "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00011320_018__20261001T152333504554Z__9003dd959e674746b14a181f06b738df.json",
+      "status": "success",
+      "api_credit": 8.33,
+      "elapsed_seconds": 113.491
+    },
+    {
+      "sample_id": "wafer_00016894_009",
+      "result_path": "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00016894_009__20261001T152528256249Z__55adfdf758b2474eb6b4ca800bc70fcc.json",
+      "status": "failed",
+      "api_credit": 20.04,
+      "elapsed_seconds": 285.796
+    }
+  ],
+  "completed_json_count": 4,
+  "workbuddy_task_credits": "未提供",
+  "account_balance_delta": -182,
+  "balance_note": "账户区间变化可能包含其他任务或延迟扣费,未归因于本批 API。",
+  "stop_reason": "failed",
+  "balance_before": [
+    {
+      "site": "cn-cli",
+      "logged_in": true,
+      "remain": 3663,
+      "queried_at": "2026-10-01T23:21:29.852145+08:00"
+    }
+  ],
+  "balance_after_immediate": [
+    {
+      "site": "cn-cli",
+      "logged_in": true,
+      "remain": 3845,
+      "queried_at": "2026-10-01T23:30:15.352293+08:00"
+    }
+  ],
+  "finished_at": "2026-10-01T23:30:15.355931+08:00",
+  "balance_after_followup": [
+    {
+      "site": "cn-cli",
+      "logged_in": true,
+      "remain": 3845,
+      "queried_at": "2026-10-01T23:30:46.038267+08:00"
+    }
+  ]
+}

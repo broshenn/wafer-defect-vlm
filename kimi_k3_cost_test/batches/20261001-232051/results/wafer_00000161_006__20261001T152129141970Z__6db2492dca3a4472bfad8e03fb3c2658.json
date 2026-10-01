@@ -1,0 +1,135 @@
+{
+  "run_at": "2026-10-01T23:21:29.142759+08:00",
+  "image": {
+    "path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00000161_006.png",
+    "sha256": "7de640aa21eb596b9de41c53abdfdfc681711ba8f90ae88ea7c640c61c06445f",
+    "bytes": 1335,
+    "width_px": 448,
+    "height_px": 448
+  },
+  "request": {
+    "base_url": "http://127.0.0.1:8788",
+    "endpoint": "POST /v1/chat/completions",
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0,
+    "extra_params": "无(未添加未经验证的推理参数)",
+    "prompt_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "prompt_text": "请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。\n从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。\n仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：\n{\"defect_class\":\"类别\",\"morphology\":\"主要形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/unknown/none\",\"clock_direction\":\"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述形态、位置和大致范围\",\"uncertainty\":\"不确定之处，无则空字符串\"}。\nextent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。\n"
+  },
+  "response": {
+    "http_status": 200,
+    "elapsed_seconds": 29.276,
+    "actual_model": "kimi-k3-1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 722,
+      "total_tokens": 1336,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 638,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 614,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 638,
+      "credit": 2.05,
+      "cached_tokens": 0
+    },
+    "reasoning_tokens": 638,
+    "credits_this_call": 2.05,
+    "answer_raw": "{\"defect_class\":\"Near_full\",\"morphology\":\"整片均匀红色失效，几乎无绿色合格区\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":2,\"caption_zh\":\"晶圆内可见区域几乎全部为红色失效 die，覆盖从中心到边缘的全片范围。\",\"uncertainty\":\"\"}",
+    "answer_is_complete_json": true,
+    "answer_json_error": null,
+    "answer_schema_valid": true,
+    "answer_validation_error": null
+  },
+  "cost": {
+    "balance_before": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3663,
+        "queried_at": "2026-10-01T23:21:29.852145+08:00"
+      }
+    ],
+    "balance_after": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3663,
+        "queried_at": "2026-10-01T23:21:59.767433+08:00"
+      }
+    ],
+    "workbuddy_balance_delta": 0,
+    "workbuddy_task_credits": "未提供",
+    "balance_note": "余额差是查询区间的账户变化,可能包含其他任务或延迟扣费;不是本次 API 或整个 WorkBuddy 任务的已归因费用。"
+  },
+  "status": "success",
+  "error": null,
+  "raw_response_body": {
+    "id": "cmb-c73774d2bdab11f1a6030a12d2790065",
+    "object": "chat.completion",
+    "created": 1790868094,
+    "model": "kimi-k3-1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"defect_class\":\"Near_full\",\"morphology\":\"整片均匀红色失效，几乎无绿色合格区\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":2,\"caption_zh\":\"晶圆内可见区域几乎全部为红色失效 die，覆盖从中心到边缘的全片范围。\",\"uncertainty\":\"\"}",
+          "reasoning_content": "We need answer user in Chinese with only JSON object, no reasoning. Need analyze image. It shows wafer map: black outside, wafer circular area entirely red (failed dies), no green. They instruct choose from classes Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none; unknown if cannot reliably. Public wafer BIN map annotation. Since entire wafer area red, that corresponds Near_full? Let's inspect definitions: Near_full likely almost all dies failing across whole wafer (near full). None would be no defects/green. Here all dies red within wafer, complete failure. So defect_class likely Near_full. Morphology: 全片红色失效，几乎覆盖整个晶圆。 radial_zone: global. clock_direction null. extent_r: main defect cluster maximum span / R. The red area spans full diameter = 2R, max span = 2R, divided by R = 2. But extent_r maybe rough estimate of main defect cluster maximum span divided by wafer radius R; if cluster covers entire wafer, max span is diameter 2R -> 2. However maybe for radial extent from center? User says 最大跨度除以晶圆半径 R; complete wafer diameter 2R. So for full wafer, extent_r=2. But they also say fill null if not sure, defects scattered or no main defect. Here there is main defect (whole wafer) and extent is clear. Could use 2.0. But if expected values maybe 0-2. Yes. Caption_zh one sentence objective description morphology, location, approximate range: “整片晶圆几乎全部为红色失效 die，无可见绿色合格区，范围覆盖全片。” uncertainty: maybe empty string. But maybe uncertainty: “仅见整片红色，无法区分具体局部结构” but classification Near_full certain. They say uncertainty no then empty string. Need output JSON only. Ensure clock_direction null not string. extent_r number 2 or 2.0? JSON. radial_zone one of center/middle/edge/global/unknown/none; use global. defect_class exactly Near_full (capital N?). User listed Near_full. Use \"Near_full\". Morphology short Chinese. No markdown. Need not describe nonexistent things. Since all red, no scatter. Good.\n\nNeed be careful: Could class be \"none\" because no green? No, none means no defect. All fail = Near_full. \n\nLet's produce exactly one JSON object. Ensure no extra text. Chinese strings. \n\nNeed include fields in order specified. \n\nPotential issue: The image is a synthetic full red circle with black outside, jagged pixelated edges. It might not have individual die grid; but colors indicate bin. We can say die generally. \n\nShould morphology mention edge black is outside wafer? maybe not. \"整片均匀红色失效，覆盖晶圆内全部可见区域\".\n\nCaption: “晶圆内可见区域几乎全部为红色失效 die，覆盖从中心到边缘的全片范围。” Good.\n\nUncertainty: \"\". \n\nNeed final only JSON."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 722,
+      "total_tokens": 1336,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 638,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 614,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 638,
+      "credit": 2.05,
+      "cached_tokens": 0
+    }
+  },
+  "prompt_source": {
+    "path": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\prompt-image-only.txt",
+    "file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+    "sent_text_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "newline_handling": "CRLF/CR 转 LF,沿用首轮文本读取"
+  },
+  "plan_sha256": "608c5eedde928f667c038b396429ef584e9e5217a9f4938c418c2377a0b419d6"
+}

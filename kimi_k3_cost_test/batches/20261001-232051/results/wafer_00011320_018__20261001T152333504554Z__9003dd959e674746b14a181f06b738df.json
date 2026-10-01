@@ -1,0 +1,135 @@
+{
+  "run_at": "2026-10-01T23:23:33.505475+08:00",
+  "image": {
+    "path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00011320_018.png",
+    "sha256": "5487594b005968d30f1fe5074df7b7e8454ab71c3c09f140e64e22600ea351e0",
+    "bytes": 1753,
+    "width_px": 448,
+    "height_px": 448
+  },
+  "request": {
+    "base_url": "http://127.0.0.1:8788",
+    "endpoint": "POST /v1/chat/completions",
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0,
+    "extra_params": "无(未添加未经验证的推理参数)",
+    "prompt_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "prompt_text": "请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。\n从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。\n仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：\n{\"defect_class\":\"类别\",\"morphology\":\"主要形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/unknown/none\",\"clock_direction\":\"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述形态、位置和大致范围\",\"uncertainty\":\"不确定之处，无则空字符串\"}。\nextent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。\n"
+  },
+  "response": {
+    "http_status": 200,
+    "elapsed_seconds": 113.491,
+    "actual_model": "kimi-k3-1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 3370,
+      "total_tokens": 3984,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3259,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 3259,
+      "credit": 8.33,
+      "cached_tokens": 0
+    },
+    "reasoning_tokens": 3259,
+    "credits_this_call": 8.33,
+    "answer_raw": "{\"defect_class\":\"Scratch\",\"morphology\":\"右下边缘斜向线状失效链\",\"radial_zone\":\"edge\",\"clock_direction\":\"4-5点钟\",\"extent_r\":0.6,\"caption_zh\":\"右下约4—5点钟边缘有一条斜向线状失效链，跨度约0.6R，另见少量分散红点。\",\"uncertainty\":\"分散红点较多，线状链的精确起止和跨度为粗略估计。\"}",
+    "answer_is_complete_json": true,
+    "answer_json_error": null,
+    "answer_schema_valid": true,
+    "answer_validation_error": null
+  },
+  "cost": {
+    "balance_before": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3661,
+        "queried_at": "2026-10-01T23:23:34.093693+08:00"
+      }
+    ],
+    "balance_after": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3654,
+        "queried_at": "2026-10-01T23:25:28.255047+08:00"
+      }
+    ],
+    "workbuddy_balance_delta": 7,
+    "workbuddy_task_credits": "未提供",
+    "balance_note": "余额差是查询区间的账户变化,可能包含其他任务或延迟扣费;不是本次 API 或整个 WorkBuddy 任务的已归因费用。"
+  },
+  "status": "success",
+  "error": null,
+  "raw_response_body": {
+    "id": "cmb-1114ee5abdac11f1b84bd64dcc2dd0ed",
+    "object": "chat.completion",
+    "created": 1790868218,
+    "model": "kimi-k3-1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"defect_class\":\"Scratch\",\"morphology\":\"右下边缘斜向线状失效链\",\"radial_zone\":\"edge\",\"clock_direction\":\"4-5点钟\",\"extent_r\":0.6,\"caption_zh\":\"右下约4—5点钟边缘有一条斜向线状失效链，跨度约0.6R，另见少量分散红点。\",\"uncertainty\":\"分散红点较多，线状链的精确起止和跨度为粗略估计。\"}",
+          "reasoning_content": "We need answer only JSON object. Need inspect image. We can reason here. User Chinese wants classification among Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none, unknown. Need output fields exact. Need determine main pattern.\n\nLet's analyze image visually. Wafer map: black outside, green good die, red fail. Circular wafer with notch? There are scattered red points, plus a prominent diagonal chain/line of red dies near right-lower edge from around 4-5 o'clock edge inward toward center? Let's inspect coordinates.\n\nImage dimensions maybe 449x449? Wafer circle centered around (224,224), radius about 224? Black outside. Red fails: many single scattered around wafer (top edge at ~270,3?; left edge cluster at ~54,114; etc). Most salient is a line of red squares forming a diagonal scratch near lower-right edge. It starts at right edge around 3 o'clock? Actually there are multiple red dots along the right edge: at (447,220), (439,262), (437,293) near edge. Then a diagonal line of red from lower right edge around (424,251?) going inward/down-left to (342,351) maybe. Let's describe: The chain begins at the right edge near 3 o'clock? In image, on right side there are red squares at edge around x=447 y=219 and x=445 y=278, x=435 y=293; then a series at (428,244),(418,253),(410,262),(397,276),(386,291),(374,307),(360,326),(346,350). This is a curved/diagonal line along lower-right edge, from about 3 o'clock at the edge down toward 5 o'clock, maybe a scratch. There are also scattered single red dies across wafer, including near top center, left edge, bottom center. Need choose main pattern. The instruction: scatter noise not necessarily structural; don't infer root cause. Choose best main pattern. A localized linear cluster near edge = Scratch? In wafer bin map defect patterns classes: Scratch typically linear streak of fails, often arc/line. Edge_Loc is localized edge defects; Loc localized cluster not necessarily edge; Random scattered; none almost no fails. Here there is an obvious line of red dies near the edge at ~4-5 o'clock, plus scattered random singles. The main structural pattern likely Scratch. But need ensure not Edge_Loc. The line is at the edge and localized clock direction around 4-5 o'clock. It has linear morphology (scratch). In classification, Scratch is a class; use if there is a line. radial_zone edge; clock_direction maybe \"4-5点钟\"? Field wants main local defect clock direction; null for full circle/global/normal/uncertain. We can fill \"4-5点钟\"? They said clock_direction: \"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\". It likely accepts string. Need output JSON only. For Scratch, radial_zone edge. extent_r: main defect cluster max span divided by wafer radius R. Estimate line length. Wafer radius R ~224 px. The diagonal chain from near edge at right (around (438,251)?) to inner endpoint (342,351): length sqrt(96^2+100^2)=138.6, /224=0.62. But if include edge dots up to (447,220) to (342,351): dx=105, dy=131 length=168 /224=0.75. However main line maybe from (423,244) to (344,351) length sqrt(79^2+107^2)=133 /224=0.59. Extent_r rough maybe 0.6. Need consider cluster maximum span: the linear scratch spans radial? It's near edge from r~R at right-lower edge to r~0.72R? The max spatial span maybe ~0.6R. We can set 0.6. But user says extent_r is main defect cluster max span divided by radius R; if not sure fill null. We can estimate roughly; line clear enough. Use 0.6.\n\nNeed morphology short Chinese: \"右下边缘一条斜向线状失效链，伴少量散点\". caption_zh: one sentence objective description of morphology, location, rough range. Example: \"右下约4—5点钟边缘有一条斜向线状失效链，跨度约0.6R，另见少量分散红点。\" Good. uncertainty: \" scattered red dots may be noise; line endpoints exact range uncertain\"? Need if uncertainty no then empty. Here there is uncertainty because scattered红点 and classification between Scratch/Edge_Loc? We can mention: \"线状链与边缘局部缺陷类别相近，散乱红点不作主要图案。\" But uncertainty field should be uncertain points. Could be \"主要线状链清晰，但精确起止与是否源于单一划痕不确定。\" However user says don't speculate process root cause; saying 单一划痕 maybe okay morphology? Better avoid root. \"散点较多，线状链的精确起止范围估计粗略。\" That's fine. But output should be objective; uncertainty can mention estimate rough.\n\nNeed decide defect_class: \"Scratch\" vs \"Edge_Loc\". The list includes Edge_Loc (edge localized) and Scratch. The prominent pattern is a line of failed dies adjacent to edge, diagonal. In wafer defect pattern classification, scratch defects often appear as a line or arc of failing dies; Edge_Loc is a localized cluster at edge, not necessarily linear. Since morphology is a thin linear chain, Scratch seems best. Need maybe note red line begins at edge around 3 o'clock and extends to 5 o'clock? Let's inspect more carefully.\n\nDetailed image: black background with green circle. There is a notch? Actually circle has flat-ish top? The wafer is full circle but pixelated; no obvious orientation notch. The red fails: top near (269,3) just outside? At very top above circle maybe a red square at x=270 y=2 in black region? Wait user says black outside wafer; red are failed die. There is a red square at (270,3) above green area; but if black is outside wafer, red there could be an artifact/noise outside? The image shows a red pixel at top around x=270 y=3 in black background, not within green. We should not describe things not in wafer? It is red mark outside wafer; but classification based on wafer BIN map maybe red fail should be on wafer only; if outside, ignore as noise/artifact. There are red points at left edge outside? The left edge has red pixels at x=3 y=200 and x=4 y=228 in black/edge. Could be due to edge die? They are at boundary. But main pattern unaffected.\n\nThe diagonal line: I see red squares at (427,244) maybe just inside edge, then (418,253), (407,265), (397,276), (387,291), (375,307), (360,326), (344,350). There are also red at (386,279) maybe. The line is like a scratch from edge inward. It is in lower-right quadrant. Clock direction: If image top=12, right=3, bottom=6. The cluster is between 3 and 6 o'clock, centered around 4:30. Use \"4—5点钟\" or \"约4点半\". Field maybe should be a string. Could use \"4-5点钟\". If they expected null for scratch? No, local defect direction applicable. radial_zone \"edge\" because line is at edge. morphology \"右下边缘斜线状失效链\". extent_r 0.6.\n\nNeed ensure JSON valid; only one object, no Markdown. Use Chinese strings. Numeric extent_r not string. clock_direction maybe string; if null for normal etc. We choose \"4-5点钟\". Should we use \"约4:30\"? They said clock direction; JSON string can be \"4-5点钟\". caption_zh: one sentence. Need not include defect class maybe. It should objectively describe morphology location range. Use \"右下边缘约4—5点钟方向有一条斜向线状失效链，跨度约0.6R，另有少量分散红点。\" That's one sentence. uncertainty: \"散点噪声较多，线状链起止和跨度为粗略估计。\" Good.\n\nPotential issue: If class is Scratch, radial_zone maybe \"edge\" and clock_direction \"4-5点钟\". Good.\n\nLet's see if there is any center/donut etc: scattered red in center (193,101),(167,176),(155,203),(188,313),(230,386),(112,343),(134,337),(67,281),(51,252),(35,145),(49,118),(55,86),(386,28),(414,68),(416,98),(419,150),(391,176),(402,203),(338,274),(365,389),(356,412). These are random. The line is localized. It might be an edge loc cluster plus random. But the linear chain is strong. The instruction says scatter noise不一定代表 structural defects; don't just judge by one red point. It warns not to overcall random noise. We identify main pattern as line. Good.\n\nNeed maybe extent_r: If main defect cluster maximum span divided by wafer radius: line length ~ from edge at r=R (right side) to inner lower point. In clock direction, the cluster's maximum span maybe along the line, about 0.5R. Let's estimate with wafer geometry. Center of circle? Use image dimensions 449x449. The green wafer extends x from about 8 to 447? Actually leftmost green at x=8 y=200-247? rightmost x=446 y=218; top y=0? circle maybe cropped at top? There's green at top y=0 from x=185 to 267, with black corners; radius maybe 224, center (224,224). But the circle appears truncated by image boundaries at top? Wait top of wafer touches y=0 between x~185-268, because the image is cropped? The green circle extends to top edge y=0 and bottom y=447; left x=7, right x=447. It might be a full wafer diameter equal image height/width 448, radius 224, center (224,224). The circle is slightly larger than image? Black corners. The top of circle at y=0 (not negative), bottom at y=448; left at x=8? Hmm the leftmost green appears x=8 y=200 and x=8 y=247, but at y=224 leftmost maybe x=9? Rightmost x=447. So center x ~228, R ~220. Top y=0, bottom y=447 center y=224 R=224. Good enough.\n\nCoordinates of scratch: right edge near (444,218) red at edge? Then (439,262), (437,293), (424,244?) There is a vertical set near right edge too. Maybe the main linear defect starts at right edge around (447,219) (3 o'clock) and goes down-left to (345,350). Span length sqrt((447-345)^2 + (219-350)^2)=sqrt(10404+17161)=166.0; /224=0.74. If include only obvious diagonal chain from (426,244) to (344,351) length 134; /224=0.60. But there are red points at right edge around y=218, 262, 293; are they part of same cluster? The diagonal chain might connect to edge at (428,244) and there are separate edge red fails at (447,219),(437,278),(447,278). In the image, the cluster looks like a curved line along the edge from 3 o'clock to 5 o'clock: red points at the extreme right edge around y=219 and y=278, then diagonal line down-left. If the main cluster maximum span includes the edge points at (447,219) to (344,351), extent ~0.75R. However those edge points may be separate random single edge fails, not connected. The salient connected chain is diagonal of ~9 red dies. The chain itself maybe length ~0.55R. Need choose rough. extent_r can be 0.6 (rough). Accept.\n\nCould the class be \"Edge_Loc\" because the defects are localized at edge (right-lower) and not necessarily a scratch (the line follows along edge but is a cluster). The morphology: a short diagonal band of fails adjacent to edge. Scratch class in these wafer maps often is a long thin line across the wafer, not just edge. Here the line is near edge and length ~0.6R, curved/diagonal. Edge_Loc might be defined as localized defects at the edge, e.g. a cluster at edge; Scratch could be a linear pattern anywhere. The presence of a clear line suggests Scratch. Let's recall common wafer defect pattern labels (from WM-811K? Actually classes: Center, Donut, Edge-Loc, Edge-Ring, Loc, Near-Full, Random, Scratch, none). In that dataset, \"Scratch\" patterns are long thin lines often near edge or across wafer; \"Edge-Loc\" is a localized cluster at the edge. This image has an edge-localized line; if forced, the salient pattern is a scratch at edge. There are also scattered random. I'd pick Scratch. Need maybe uncertainty mention Edge_Loc相近? But the output should choose one. uncertainty can mention \"与边缘局部缺陷的区分依赖线状形态判断\" maybe too much. But if we say that, we reveal uncertainty. It is okay. However the user specifically says do not write推理过程; uncertainty field can state uncertain. Keep concise.\n\nNeed produce JSON only. Ensure no trailing comments. Use double quotes. For clock_direction field: If using Chinese string with dash. Could be \"4-5点钟\". They said clock_direction: main local defect's clock direction; if full circle/global/normal/uncertain null. For scratch maybe direction of local defect; use \"4-5点钟\". Some tasks might expect clock_direction values like \"5\" or null, but prompt didn't restrict exact values aside from null conditions. Fine.\n\nLet's formulate:\n{\"defect_class\":\"Scratch\",\"morphology\":\"右下边缘斜向线状失效链\",\"radial_zone\":\"edge\",\"clock_direction\":\"4-5点钟\",\"extent_r\":0.6,\"caption_zh\":\"右下约4—5点钟边缘有一条斜向线状失效链，跨度约0.6R，另见少量分散红点。\",\"uncertainty\":\"分散红点较多，线状链的精确起止和跨度为粗略估计。\"}\n\nNeed maybe use \"4—5点钟\" with em dash in clock; consistency. JSON can include unicode em dash. Fine. \"extent_r\":0.6.\n\nCheck \"不描述图中不存在的东西\": We describe only red line and scattered red dots. Good.\n\nShould caption mention \"大致范围\": yes span约0.6R. Good.\n\nOne possible problem: The red square at top outside the wafer in black region: If red fail outside black contradicts labels; we ignore as outside. No mention.\n\nNeed final only JSON. Ensure no Markdown fences. Done."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 3370,
+      "total_tokens": 3984,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 3259,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 3259,
+      "credit": 8.33,
+      "cached_tokens": 0
+    }
+  },
+  "prompt_source": {
+    "path": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\prompt-image-only.txt",
+    "file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+    "sent_text_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "newline_handling": "CRLF/CR 转 LF,沿用首轮文本读取"
+  },
+  "plan_sha256": "608c5eedde928f667c038b396429ef584e9e5217a9f4938c418c2377a0b419d6"
+}

@@ -1,0 +1,135 @@
+{
+  "run_at": "2026-10-01T23:21:59.769624+08:00",
+  "image": {
+    "path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00013751_005.png",
+    "sha256": "fb1bd4d0fc77728f69ad34bc5892781a21336ca1530e32b1a0f4a7e9d39f46da",
+    "bytes": 2125,
+    "width_px": 448,
+    "height_px": 448
+  },
+  "request": {
+    "base_url": "http://127.0.0.1:8788",
+    "endpoint": "POST /v1/chat/completions",
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0,
+    "extra_params": "无(未添加未经验证的推理参数)",
+    "prompt_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "prompt_text": "请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。\n从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。\n仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：\n{\"defect_class\":\"类别\",\"morphology\":\"主要形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/unknown/none\",\"clock_direction\":\"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述形态、位置和大致范围\",\"uncertainty\":\"不确定之处，无则空字符串\"}。\nextent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。\n"
+  },
+  "response": {
+    "http_status": 200,
+    "elapsed_seconds": 65.989,
+    "actual_model": "kimi-k3-1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 2217,
+      "total_tokens": 2831,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2075,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 2075,
+      "credit": 5.53,
+      "cached_tokens": 0
+    },
+    "reasoning_tokens": 2075,
+    "credits_this_call": 5.53,
+    "answer_raw": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"失效 die 沿晶圆最外缘连成完整闭合环带，内部以合格 die 为主并夹稀疏孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":2,\"caption_zh\":\"红色失效 die 构成贴合晶圆外缘的一整圈连续环带，横跨整个晶圆直径，内部绿色区域仅见零散随机红点。\",\"uncertainty\":\"内部零散红点按散点噪声处理，未识别出明确局部簇；环带宽度约一至两个 die，具体边界为像素级估计。\"}",
+    "answer_is_complete_json": true,
+    "answer_json_error": null,
+    "answer_schema_valid": true,
+    "answer_validation_error": null
+  },
+  "cost": {
+    "balance_before": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3663,
+        "queried_at": "2026-10-01T23:22:00.346493+08:00"
+      }
+    ],
+    "balance_after": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3663,
+        "queried_at": "2026-10-01T23:23:07.018432+08:00"
+      }
+    ],
+    "workbuddy_balance_delta": 0,
+    "workbuddy_task_credits": "未提供",
+    "balance_note": "余额差是查询区间的账户变化,可能包含其他任务或延迟扣费;不是本次 API 或整个 WorkBuddy 任务的已归因费用。"
+  },
+  "status": "success",
+  "error": null,
+  "raw_response_body": {
+    "id": "cmb-d92fa455bdab11f195a3924e7e1b38a5",
+    "object": "chat.completion",
+    "created": 1790868127,
+    "model": "kimi-k3-1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"失效 die 沿晶圆最外缘连成完整闭合环带，内部以合格 die 为主并夹稀疏孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":2,\"caption_zh\":\"红色失效 die 构成贴合晶圆外缘的一整圈连续环带，横跨整个晶圆直径，内部绿色区域仅见零散随机红点。\",\"uncertainty\":\"内部零散红点按散点噪声处理，未识别出明确局部簇；环带宽度约一至两个 die，具体边界为像素级估计。\"}",
+          "reasoning_content": "The user wants me to analyze a wafer bin map. Let me look at the image carefully.\n\nThe image shows a circular wafer with:\n- Black outside (wafer exterior)\n- Green = good dies\n- Red = failed dies\n\nLooking at the pattern:\n- The red dies form a ring around the outer edge of the wafer (the perimeter). This is the dominant pattern - a continuous ring of red at the edge.\n- There are also scattered red dots throughout the interior (random noise), but the instruction says scatter noise doesn't necessarily represent structural defect.\n- The most prominent structural pattern is the red ring at the wafer edge.\n\nThe edge ring is quite clear - red dies all around the circumference forming a continuous band at the outermost edge. This matches \"Edge_Ring\" pattern.\n\nLet me reconsider: The classes are Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none.\n\n- Edge_Ring: defects forming a ring at the edge. Yes, the red at the perimeter goes all around.\n- Donut: a ring but not at the very edge (middle radial zone). Here the red ring is at the very edge.\n- Random: scattered. There are scattered red dots inside but the dominant structural pattern is the edge ring.\n\nThe perimeter red ring is continuous around the full circle. So Edge_Ring.\n\nradial_zone: edge\nclock_direction: 整圈 (full circle) → null per instructions (整圈、全局、正常或不确定时填 null)\nextent_r: The main defect cluster max span divided by R. The edge ring spans the full diameter, so max span ≈ 2R, extent_r ≈ 2? But extent_r is \"主要缺陷簇最大跨度除以晶圆半径 R\". If the ring goes all around, the max span of the defect cluster is the diameter = 2R, so extent_r = 2. Hmm, but for an edge ring, maybe they want the width? Let me re-read.\n\n\"extent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。\"\n\nFor an edge ring that goes all around, the defect cluster (the ring) has max span = diameter = 2R, so extent_r ≈ 2.0. But that's a bit odd. Actually for Edge_Ring, the \"cluster\" is the ring around the whole wafer. The maximum span of that cluster is 2R (from one side to the other). So extent_r = 2.\n\nBut wait - maybe better to think: the ring is at the edge, the radial extent (width of the ring) is small. But \"最大跨度\" = maximum span. The ring's maximum span across is the full diameter. Hmm. For an edge ring, I think extent_r could be 2 (spanning full diameter) or maybe they intend null because it's the whole edge. Let me think about what's most useful.\n\nActually, for Edge_Ring and Near_full type patterns, extent_r is often not very meaningful or is ~2. The instruction says fill null if \"看不准、缺陷分散或无主要缺陷\". Here there IS a main defect (the edge ring). It's not dispersed (it's a coherent ring). So I should give an estimate. The ring spans the full wafer, so max span / R = 2. But that seems to just restate it's the whole wafer.\n\nHmm, let me reconsider. Maybe extent_r for an edge ring: the defective ring is at the periphery. The \"主要缺陷簇\" could be considered as the entire ring, max跨度 = 2R → extent_r = 2. I'll put 2.0? Or perhaps the ring thickness. The red ring appears to be about 1-2 die thick at the edge. But \"最大跨度\" strongly implies the largest dimension of the cluster, which for a full ring is the diameter = 2R. I'll estimate 2.0. Actually, let me reconsider whether to use null.\n\nGiven that the pattern is a full edge ring (global around circumference but radially at edge), the dominant defect covers the entire perimeter. I think extent_r ≈ 2.0 is defensible (cluster spans from one edge to opposite edge). But many wafer map annotation conventions for edge ring would set radial extent. Let me just provide a rough estimate. The red edge ring is continuous and at the boundary. I'll set extent_r to null? The prompt: \"看不准、缺陷分散或无主要缺陷时填 null\". We can see it clearly, there is a main defect. So not null. I'll estimate the ring spans full diameter → extent_r ≈ 2. Hmm but that's the max span. Actually, maybe a more meaningful estimate: the ring is at r ≈ R (edge), and the defect cluster's max span is across the wafer = 2R, so extent_r = 2.\n\nWait, but that would make extent_r always 2 for any edge ring that goes all around. That seems fine; it's just saying the affected region spans the full wafer diameter.\n\nLet me reconsider the morphology. Looking again: the outermost row of dies is red all around, forming a continuous ring. Inside that, green dominates with sparse random red single dies. There may be a slightly higher concentration of red dots in the lower portion (around 5-6 o'clock) but it's just scatter. The clear structural pattern = edge ring.\n\nSo:\n- defect_class: \"Edge_Ring\"\n- morphology: \"连续环形失效沿晶圆最外缘分布，内部仅见零散红点\"\n- radial_zone: \"edge\"\n- clock_direction: null (整圈)\n- extent_r: 2 (roughly). Actually, let me think again. If I say the main defect cluster is the edge ring, max span = diameter = 2R, extent_r = 2. But maybe they want the thickness of the ring relative to R? \"最大跨度\" = maximum span/width. For a ring, the maximum span (e.g., from leftmost red to rightmost red) = 2R. So extent_r = 2. I'll use 2.0. Hmm, but is that \"粗略估计\"? Yes. I'll put 2.\n\nActually, wait. Let me reconsider: an edge ring that is one die thick — the cluster (all red edge dies) has a maximum span equal to the wafer diameter (2R), so extent_r = 2. This is consistent. I'll set extent_r = 2.\n\nHmm, but if extent_r is meant to capture \"how big is the defect blob\", for a full ring it's the whole wafer, so 2 is right. But some might argue the radial width is ~0.1R. The phrase \"最大跨度\" (maximum span) settles it: the largest distance across the cluster = 2R. extent_r = 2.\n\nLet me reconsider once more if it could be \"none\" or \"Random\". The edge red is very systematic — every die on the outer boundary is red, forming a complete ring. That's clearly Edge_Ring, not random. Good.\n\ncaption_zh: \"失效 die 呈完整连续环带紧贴晶圆外缘一整圈，内部合格区仅有稀疏随机红点。\" \n\nuncertainty: \"内部散点似为随机噪声；边缘环带宽度约一至两个 die，未推测根因。\" But uncertainty should be about uncertainty. Maybe: \"环带为整圈边缘失效，内部散点不构成明显局部簇；extent_r 按整圈直径估计。\" Actually keep uncertainty to genuine uncertainty. There is some scatter inside that could be confused, but main pattern clear. I'll write: \"内部零散红点性质不明，按噪声处理；未据此判断局部簇。\" \n\nLet me finalize. For extent_r, I'm a little torn between 2 and null. Given the ring is coherent and spans the full wafer, I'll provide 2.0. Actually, re-reading: \"extent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计\". The edge ring cluster's maximum span = 2R → extent_r = 2. But that equals the full diameter which might be the intended answer for a full edge ring. However, I worry that for Edge_Ring the more informative number is the annulus position. But the field is specifically max span / R. So 2.\n\nHold on—maybe they intend extent_r to be like a normalized radius extent of the defect from center? No, it clearly says \"主要缺陷簇最大跨度\" (max span of the main defect cluster) divided by R. For a cluster, max span is its diameter. Edge ring cluster diameter ≈ 2R. extent_r ≈ 2. OK final: 2.\n\nWait, but consider: if the defect is a thin ring at the edge, the set of red points includes points on opposite sides, max distance = ~2R (slightly less, maybe 1.9R since the red is just inside the black). So extent_r ≈ 2 (or ~1.9). I'll say 2.\n\nLet me write the JSON only. Ensure no markdown. Use null for clock_direction and extent_r? No, extent_r = 2.\n\nActually, reconsider extent_r null vs value once more. The instruction lists null conditions: \"看不准、缺陷分散或无主要缺陷\". None apply (clear, coherent, has main defect). So give a number. Final extent_r: 2.\n\nHmm, I realize giving exactly 2 might be odd because max span cannot exceed 2R (so max extent_r = 2). A full edge ring reaching the boundary gives the maximum possible 2. That's fine and informative (it spans the whole wafer). Good.\n\nclock_direction: null (since 整圈). The JSON field says fill null for 整圈. So null.\n\nFinal JSON.\n"
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 2217,
+      "total_tokens": 2831,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2075,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 346
+      },
+      "prompt_cache_hit_tokens": 346,
+      "prompt_cache_miss_tokens": 268,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 2075,
+      "credit": 5.53,
+      "cached_tokens": 0
+    }
+  },
+  "prompt_source": {
+    "path": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\prompt-image-only.txt",
+    "file_sha256": "8a598eb0662b94c2ff903fee839c901d814eae4c409ba4731d9ac07109194a62",
+    "sent_text_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "newline_handling": "CRLF/CR 转 LF,沿用首轮文本读取"
+  },
+  "plan_sha256": "608c5eedde928f667c038b396429ef584e9e5217a9f4938c418c2377a0b419d6"
+}

@@ -1,0 +1,123 @@
+{
+  "run_at": "2026-10-01T22:23:41.589617+08:00",
+  "image": {
+    "path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00017178_007.png",
+    "sha256": "9b42c950f75fc046ff231966137cfd83d4ad410b3c233fcba3b123836b56365d",
+    "bytes": 2019,
+    "width_px": 448,
+    "height_px": 448
+  },
+  "request": {
+    "base_url": "http://127.0.0.1:8788",
+    "endpoint": "POST /v1/chat/completions",
+    "model": "kimi-k3-1",
+    "max_tokens": 8192,
+    "timeout_seconds": 300,
+    "client_max_retries": 0,
+    "extra_params": "无(未添加未经验证的推理参数)",
+    "prompt_sha256": "8ae4ec14d4ed57408937ca9c4052eddff7403622ebbc7a7fb47b8b05bbbe99b1",
+    "prompt_text": "请只根据这张公开晶圆 BIN 图标注：黑色为晶圆外，绿色为合格 die，红色为失效 die。散点噪声不一定代表有结构性缺陷；不要推测工艺根因。\n从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。不要只凭某个红点判断。\n仅输出一个 JSON 对象，不写推理过程或 Markdown，字段为：\n{\"defect_class\":\"类别\",\"morphology\":\"主要形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/unknown/none\",\"clock_direction\":\"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述形态、位置和大致范围\",\"uncertainty\":\"不确定之处，无则空字符串\"}。\nextent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计；看不准、缺陷分散或无主要缺陷时填 null。完整晶圆直径为 2R。图片上方为12点钟，右方为3点钟。不描述图中不存在的东西。\n"
+  },
+  "response": {
+    "http_status": 200,
+    "elapsed_seconds": 70.82,
+    "actual_model": "kimi-k3-1",
+    "finish_reason": "stop",
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 2528,
+      "total_tokens": 3142,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2405,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 614,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 2405,
+      "credit": 6.44,
+      "cached_tokens": 0
+    },
+    "reasoning_tokens": 2405,
+    "credits_this_call": 6.44,
+    "answer_raw": "{\"defect_class\":\"Center\",\"morphology\":\"中心偏左下的大片不规则致密失效团簇，边界参差不齐\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":1.5,\"caption_zh\":\"失效die集中在晶圆中心并向左下方扩展成一大片不规则团簇，左侧接近约9点钟边缘，其余区域以合格die为主并有零星红色噪声点\",\"uncertainty\":\"团簇较大且重心偏左下，与Loc类存在一定区分难度；extent_r为粗略目测估计\"}",
+    "answer_is_complete_json": true,
+    "answer_json_error": null
+  },
+  "cost": {
+    "balance_before": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3802
+      }
+    ],
+    "balance_after": [
+      {
+        "site": "cn-cli",
+        "logged_in": true,
+        "remain": 3782
+      }
+    ],
+    "workbuddy_balance_delta": 20,
+    "balance_note": "balance_after 首次查询因脚本bug失败,已修复;此值为调用结束后约3分钟补查,期间本任务无其他模型调用。API单次用量(usage.credit=6.44)与账户余额整数扣减(20)分别记录,口径不同不可互相推导。"
+  },
+  "status": "success",
+  "error": null,
+  "raw_response_body": {
+    "id": "cmb-b623e25abda311f183c162311a5f331a",
+    "object": "chat.completion",
+    "created": 1790864629,
+    "model": "kimi-k3-1",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "{\"defect_class\":\"Center\",\"morphology\":\"中心偏左下的大片不规则致密失效团簇，边界参差不齐\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":1.5,\"caption_zh\":\"失效die集中在晶圆中心并向左下方扩展成一大片不规则团簇，左侧接近约9点钟边缘，其余区域以合格die为主并有零星红色噪声点\",\"uncertainty\":\"团簇较大且重心偏左下，与Loc类存在一定区分难度；extent_r为粗略目测估计\"}",
+          "reasoning_content": "Let me analyze the wafer BIN map. The image shows a circular wafer with green (good dies), red (failed dies), black (outside wafer).\n\nLooking at the image: There's a large red cluster in the center-left/lower-left region. The red area appears to be concentrated in the center, extending toward the left edge (9 o'clock direction) and lower portion. It's a big blob covering roughly the center to left/lower-left area.\n\nThe main pattern: a large localized cluster of red dies in the center extending toward the left (around 9 o'clock) and somewhat downward (6-8 o'clock). The top and right areas are mostly green with scattered red noise.\n\nClassification options: Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none.\n\nThis looks like a \"Center\" pattern or \"Loc\" (localized) pattern. The defect is centered but extends toward the left edge. It covers a large area - maybe center to middle-left. The cluster spans from center toward the lower-left/left, roughly covering radius up to maybe 0.7-0.8 R in that direction.\n\nActually, looking more carefully: the red blob is centered around the middle-left, covering center and extending to lower left. It reaches the edge at around 8-9 o'clock (left side). The cluster is large - it spans from the center to the edge in the lower-left quadrant.\n\nThe main morphology: a large irregular localized red cluster occupying the central to lower-left region. The radial zone: center (and middle). But since it touches the edge on the left... The bulk is in the center/inner-middle.\n\nBetween Center and Loc: \"Center\" pattern is when defects are concentrated in the center. \"Loc\" is a localized cluster somewhere. The cluster here is roughly centered but biased to the left/lower-left. It seems most like a \"Center\" pattern with extension, or a large \"Loc\" cluster near center-left.\n\nGiven the cluster is centered in the middle of the wafer (covering center) and extends to lower-left, I think \"Center\" is most fitting as the primary pattern - it's a central defect region. But it also reaches toward the edge at 9 o'clock. Actually the classic \"Center\" defect class means defects concentrated at the wafer center. Here the big blob is centered slightly left of center and covers a large portion of the inner wafer.\n\nLet me reconsider: The red blob spans roughly from x=0 (left edge) to x~75% width, and y~30% to y~82% height. The wafer center is at (50%, 50%). The blob covers the center and extends left and down. It's a large localized cluster centered on the wafer center/lower-left.\n\nI think \"Center\" is the best classification - the fails are concentrated in the central region of the wafer. Some might call it \"Loc\" since it's one localized blob, but given it's centered and large, \"Center\" seems right. However, the cluster clearly extends beyond the center toward the lower-left edge. Hmm.\n\nThe wm-811k dataset classes: Center = defects clustered at center; Donut = ring around center; Edge_Loc = localized at edge; Edge_Ring = ring at edge; Loc = localized cluster (anywhere); Near_full = most of wafer; Random = random; Scratch = scratch lines.\n\nGiven the blob covers the center predominantly (central zone), I'll classify as \"Center\". But the blob's centroid appears slightly left/down of center. It reaches the left edge around 9 o'clock (there are red dies touching the left edge at mid-height to lower area). Actually yes, red touches the left boundary around 8-10 o'clock region.\n\nGiven ambiguity, the dominant pattern is a large central cluster: \"Center\" with radial zone center, clock direction maybe null (since it's central) or toward 8-9 o'clock for the extension. The instructions say clock_direction is for \"主要局部缺陷的钟点方向，整圈、全局、正常或不确定时填 null\". For a center pattern, the direction might be null since it's central. But the cluster is asymmetric, bulging toward lower-left. The main local defect spans center to lower-left; direction could be around 7-8 o'clock. But since the pattern class is Center, clock_direction null might be appropriate.\n\nextent_r: the cluster's maximum span divided by R. The cluster spans from center to lower-left edge ~1.0R in that direction? The max span of the cluster (diameter) could be ~1.4R (from left edge to right edge of the blob, roughly x=0 to x=0.78 of diameter, that's ~0.78*2R = 1.56R; but vertically y=0.3 to 0.82 of diameter ~0.52*2R=1.04R). The maximum span is horizontal ~1.5R. So extent_r ≈ 1.5? That seems too large. The rule: \"主要缺陷簇最大跨度除以晶圆半径R的粗略估计\". The cluster's max span (its own diameter) divided by R. If cluster spans ~0.75 of the full diameter, that's 1.5R. So extent_r ≈ 1.4-1.5.\n\nHmm, but if class is Center, the radial_zone = \"center\". The cluster is large though. Let me estimate more carefully from image: Wafer appears to span roughly x from 0 to ~100% (with black corners). The red blob: leftmost red at x≈0 (edge), rightmost red at x≈76%, top red around y≈31%, bottom red around y≈83%. Wafer center ≈ (50%, 49%), R ≈ 49% of image width. Cluster horizontal span = 76% of image = 1.55R. Vertical span = 52% = 1.06R. Max span ≈ 1.5R. So extent_r ≈ 1.5.\n\nActually, \"最大跨度\" might mean the maximum radial extent from center? \"主要缺陷簇最大跨度除以晶圆半径 R\" - the max span (extent) of the main defect cluster divided by R. I interpret as the cluster's size/diameter divided by R. So ~1.5.\n\nLet me settle: defect_class = \"Center\". morphology = \"中心偏左下的大片不规则失效团簇\". radial_zone = \"center\". clock_direction: since pattern is central, but the blob bulges toward 8-9 o'clock; the instruction says for 整圈、全局、正常或不确定 fill null. For center pattern, I'd fill null. But the asymmetry... I'll fill null since it's a central pattern, not a localized edge defect with a clear clock position. Actually maybe \"8点钟\" would describe the bulge. Hmm. The field says \"主要局部缺陷的钟点方向\" - the main local defect's clock direction. If the class is Center, the defect is at center, no clock direction → null.\n\ncaption_zh: \"晶圆中心至左下方有一大片不规则失效团簇，延伸至约9点钟边缘，其余区域多为合格die并散布噪声红点\".\n\nuncertainty: cluster is large and asymmetric, could be confused with Loc; mention \"团簇不对称并向左下延伸，Center与Loc之间可能存疑\" - but they asked to choose one. Uncertainty field can note that.\n\nActually, let me reconsider whether \"Loc\" is better. Loc pattern = localized cluster anywhere on wafer. Center = cluster at center. This blob is at center and extends out. In WM-811K, \"Center\" defects are typically small-ish clusters at the center. \"Loc\" is a larger localized blob often off-center. This blob is large and covers center+left. Many similar maps with a big blob at center-left get labeled \"Loc\". Hmm.\n\nLooking at the image again: the red blob is centered roughly at (35%, 55%) of the image, while wafer center is (50%, 50%). So the blob center is offset to the left of the wafer center. The blob is large (~1.3R across). It touches the left edge. I think \"Loc\" (localized cluster) might be more accurate since it's an off-center localized blob, even though it includes the center. But it does cover the wafer center too.\n\nThe distinction is subtle. Given the blob's center is left-of-center and it spans a big area including edge contact, \"Loc\" seems plausible. But classic examples: \"Center\" = fail cluster in middle. This cluster is in the middle (and lower-left). I'll go with \"Center\" since the central region is where the concentration is densest and it dominates the inner wafer. Hmm, but it touches the edge...\n\nLet me decide: The most prominent feature is a large localized cluster occupying the center and inner-left/lower-left. Among given classes, I'll choose \"Center\" because fails are concentrated in the central zone (radial_zone center). Note uncertainty about it extending to lower-left edge.\n\nWait, if it extends to the edge at ~9 o'clock, radial_zone might be \"middle\" or \"global\"? No, the dense part is center. radial_zone = \"center\".\n\nFinal JSON:\n{\n \"defect_class\": \"Center\",\n \"morphology\": \"中心偏左下的大片不规则致密失效团簇，边缘参差不齐\",\n \"radial_zone\": \"center\",\n \"clock_direction\": null,\n \"extent_r\": 1.5,\n \"caption_zh\": \"失效die集中在晶圆中心并向左下方扩展成一大片不规则团簇，左侧接近或触及约9点钟边缘，其余区域以合格die为主并有零星红点噪声\",\n \"uncertainty\": \"团簇较大且偏左下，与Loc类区分不完全确定； extent_r为粗略估计\"\n}\n\nextent_r: cluster max span ≈ 0.75 of diameter = 1.5R. I'll put 1.4 to be conservative? Let me estimate again: image width ~455px? Wafer left edge at x≈10, right edge at x≈448? Actually black corners. The wafer seems inscribed in the square image. Diameter ≈ image width. The red blob horizontally: leftmost red at image left edge area (x~0-5%?) There's red at the far left middle (9 o'clock) - yes red touches left edge around y 50-60%. Rightmost red ~76%. So horizontal span ~0.75 * diameter = 1.5R. Vertically ~0.3 to 0.83 = 0.53 diameter = 1.06R. Max span = 1.5R. OK extent_r ≈ 1.5.\n\nHmm, but \"最大跨度除以R\" - if they mean the radial distance from center to the farthest defect in the cluster, that's ~1.0R (reaches edge). \"跨度\" usually means span/width though. I'll keep ~1.4-1.5. Use 1.5.\n\nActually, re-reading: \"extent_r 是主要缺陷簇最大跨度除以晶圆半径 R 的粗略估计\" - \"最大跨度\" = maximum span/extent of the defect cluster, divided by R. So cluster width / R ≈ 1.5. Fine.\n\nI should output only JSON, no markdown. Ensure valid JSON."
+        },
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 614,
+      "completion_tokens": 2528,
+      "total_tokens": 3142,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 2405,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_tokens_details": {
+        "accepted_prediction_tokens": 0,
+        "audio_tokens": 0,
+        "reasoning_tokens": 0,
+        "rejected_prediction_tokens": 0,
+        "cached_tokens": 0
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 614,
+      "cache_read_input_tokens": 0,
+      "cache_creation_input_tokens": 0,
+      "prompt_cache_write_tokens": 0,
+      "completion_thinking_tokens": 2405,
+      "credit": 6.44,
+      "cached_tokens": 0
+    }
+  }
+}

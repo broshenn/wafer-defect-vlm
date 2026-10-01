@@ -1,0 +1,18 @@
+{
+  "validated_at": "2026-10-02 00:24:51 +0800",
+  "raw_answer_sha256": "2fa9ce88f98f062726511ea6e065f6f088e49f0104fcc80b187cca602dcb72d2",
+  "json_parse_ok": true,
+  "n_fields": 7,
+  "keys_exact_order": true,
+  "field_checks": {
+    "defect_class_enum": true,
+    "morphology_str": true,
+    "radial_zone_enum": true,
+    "clock_direction_null_or_str": true,
+    "extent_r_null_or_number": true,
+    "caption_zh_str": true,
+    "uncertainty_str": true
+  },
+  "all_pass": true,
+  "validator_note": "校验器为本任务自建，依据 prompt-image-only.txt (sha256 8ae4ec14...) 内声明字段与枚举；workbuddy 目录未找到独立校验脚本"
+}
