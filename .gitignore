@@ -43,3 +43,8 @@ archive/tarballs/
 
 # Claude Code runtime lock files (session id + pid), not project content.
 .claude/
+
+# WorkBuddy CLI's own memory directory. Tool runtime state, same category as
+# .claude/ above; not project content. Its notes are superseded by
+# kimi_k3_cost_test/, which is tracked.
+.workbuddy/
