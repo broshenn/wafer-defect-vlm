@@ -1,0 +1,713 @@
+{
+ "definitions_and_caveats": {
+  "radial_bins": "10 段等宽 r∈[0,1]，r 用椭圆归一（见模块 docstring）",
+  "denominator": "失效率分母 = 同一集合内值 >0 的格（有效 die）",
+  "banding_statistic": "逐列失效率序列自相关在周期 2..11 的最大值",
+  "banding_uses_raw_defects": "banding.defect_rate 用的是**未过滤**的失效 die（m==2）；而 defect_ratio_stored_in_manifest 用的是历史过滤后的口径（isolated_point_filter 之后）。两个数不同源，不要互相减。",
+  "banding_p95_is_marginal_when_close": "观测值只略高于 p95 时（差 <0.05）应视为不显著；本轮对照样本 item_006 就是这种边缘情形。",
+  "null_model": "在同样有效 die 位置随机置换同样多失效点，300 次，seed=3407",
+  "population_context_is_not_a_threshold": "下表是各标签在整个训练集里的 defect_ratio 分布，用作**背景参照**，不是 WM-811K 的官方判据，也不得反过来当成阈值使用。"
+ },
+ "population_defect_ratio_by_label": {
+  "Center": {
+   "n": 647,
+   "median": 0.2155,
+   "p10": 0.0471,
+   "p90": 0.3204
+  },
+  "Donut": {
+   "n": 428,
+   "median": 0.2343,
+   "p10": 0.1372,
+   "p90": 0.4388
+  },
+  "Edge_Loc": {
+   "n": 637,
+   "median": 0.1137,
+   "p10": 0.0453,
+   "p90": 0.2877
+  },
+  "Edge_Ring": {
+   "n": 636,
+   "median": 0.1193,
+   "p10": 0.08,
+   "p90": 0.1909
+  },
+  "Loc": {
+   "n": 622,
+   "median": 0.0945,
+   "p10": 0.0152,
+   "p90": 0.2156
+  },
+  "Near_full": {
+   "n": 127,
+   "median": 0.8839,
+   "p10": 0.7625,
+   "p90": 0.9977
+  },
+  "Random": {
+   "n": 634,
+   "median": 0.4686,
+   "p10": 0.3093,
+   "p90": 0.6195
+  },
+  "Scratch": {
+   "n": 653,
+   "median": 0.0559,
+   "p10": 0.0144,
+   "p90": 0.1548
+  },
+  "none": {
+   "n": 337,
+   "median": 0.0575,
+   "p10": 0.0132,
+   "p90": 0.137
+  }
+ },
+ "items": [
+  {
+   "item_id": "item_001",
+   "sample_id": "wafer_00044523_017",
+   "ground_truth_class": "none",
+   "glm_class": "Random",
+   "role": "分歧样本",
+   "matrix_HW": [
+    33,
+    29
+   ],
+   "defect_ratio_stored_in_manifest": 0.0729,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 9,
+      "defect_die": 2,
+      "defect_rate": 0.2222
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 22,
+      "defect_die": 0,
+      "defect_rate": 0.0
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 34,
+      "defect_die": 1,
+      "defect_rate": 0.0294
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 54,
+      "defect_die": 4,
+      "defect_rate": 0.0741
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 68,
+      "defect_die": 11,
+      "defect_rate": 0.1618
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 80,
+      "defect_die": 9,
+      "defect_rate": 0.1125
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 108,
+      "defect_die": 9,
+      "defect_rate": 0.0833
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 110,
+      "defect_die": 8,
+      "defect_rate": 0.0727
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 118,
+      "defect_die": 17,
+      "defect_rate": 0.1441
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 135,
+      "defect_die": 24,
+      "defect_rate": 0.1778
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.0645,
+    "peak_bin": 0.0,
+    "peak_rate": 0.2222,
+    "shape_note": "中心高 = 中心型"
+   },
+   "banding": {
+    "defect_die": 87,
+    "valid_die": 741,
+    "defect_rate": 0.1174,
+    "column_autocorr_peak_period_2_11": 0.2905,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.2088,
+     "p95": 0.3565,
+     "max": 0.4798
+    },
+    "observed_percentile_in_null": 84.7,
+    "banding_is_real_structure": false,
+    "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+   },
+   "defect_ratio_percentile_in_ground_truth_label": 61.7,
+   "defect_ratio_percentile_in_glm_class_label": 0.0
+  },
+  {
+   "item_id": "item_003",
+   "sample_id": "wafer_00025336_019",
+   "ground_truth_class": "Loc",
+   "glm_class": "Edge_Loc",
+   "role": "分歧样本",
+   "matrix_HW": [
+    64,
+    63
+   ],
+   "defect_ratio_stored_in_manifest": 0.0252,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 30,
+      "defect_die": 0,
+      "defect_rate": 0.0
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 98,
+      "defect_die": 0,
+      "defect_rate": 0.0
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 156,
+      "defect_die": 2,
+      "defect_rate": 0.0128
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 226,
+      "defect_die": 0,
+      "defect_rate": 0.0
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 274,
+      "defect_die": 5,
+      "defect_rate": 0.0182
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 354,
+      "defect_die": 2,
+      "defect_rate": 0.0056
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 402,
+      "defect_die": 3,
+      "defect_rate": 0.0075
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 492,
+      "defect_die": 20,
+      "defect_rate": 0.0407
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 538,
+      "defect_die": 23,
+      "defect_rate": 0.0428
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 551,
+      "defect_die": 70,
+      "defect_rate": 0.127
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.0,
+    "peak_bin": 0.9,
+    "peak_rate": 0.127,
+    "shape_note": "无明显环特征"
+   },
+   "banding": {
+    "defect_die": 132,
+    "valid_die": 3133,
+    "defect_rate": 0.0421,
+    "column_autocorr_peak_period_2_11": 0.1265,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.1582,
+     "p95": 0.2767,
+     "max": 0.4283
+    },
+    "observed_percentile_in_null": 33.0,
+    "banding_is_real_structure": false,
+    "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+   },
+   "defect_ratio_percentile_in_ground_truth_label": 17.7,
+   "defect_ratio_percentile_in_glm_class_label": 3.1
+  },
+  {
+   "item_id": "item_007",
+   "sample_id": "wafer_00018489_020",
+   "ground_truth_class": "Donut",
+   "glm_class": "Loc",
+   "role": "分歧样本",
+   "matrix_HW": [
+    72,
+    72
+   ],
+   "defect_ratio_stored_in_manifest": 0.1267,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 44,
+      "defect_die": 2,
+      "defect_rate": 0.0455
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 120,
+      "defect_die": 11,
+      "defect_rate": 0.0917
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 212,
+      "defect_die": 48,
+      "defect_rate": 0.2264
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 272,
+      "defect_die": 84,
+      "defect_rate": 0.3088
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 372,
+      "defect_die": 152,
+      "defect_rate": 0.4086
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 448,
+      "defect_die": 111,
+      "defect_rate": 0.2478
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 524,
+      "defect_die": 71,
+      "defect_rate": 0.1355
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 616,
+      "defect_die": 40,
+      "defect_rate": 0.0649
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 676,
+      "defect_die": 36,
+      "defect_rate": 0.0533
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 770,
+      "defect_die": 68,
+      "defect_rate": 0.0883
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.0793,
+    "peak_bin": 0.4,
+    "peak_rate": 0.4086,
+    "shape_note": "中心低 + 中径峰 = 环/甜甜圈特征"
+   },
+   "banding": {
+    "defect_die": 640,
+    "valid_die": 4096,
+    "defect_rate": 0.1562,
+    "column_autocorr_peak_period_2_11": 0.6269,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.1484,
+     "p95": 0.2499,
+     "max": 0.3519
+    },
+    "observed_percentile_in_null": 100.0,
+    "banding_is_real_structure": true,
+    "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+   },
+   "defect_ratio_percentile_in_ground_truth_label": 7.5,
+   "defect_ratio_percentile_in_glm_class_label": 62.7
+  },
+  {
+   "item_id": "item_008",
+   "sample_id": "wafer_00017102_001",
+   "ground_truth_class": "Random",
+   "glm_class": "Scratch",
+   "role": "分歧样本",
+   "matrix_HW": [
+    41,
+    42
+   ],
+   "defect_ratio_stored_in_manifest": 0.4385,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 12,
+      "defect_die": 8,
+      "defect_rate": 0.6667
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 44,
+      "defect_die": 21,
+      "defect_rate": 0.4773
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 64,
+      "defect_die": 27,
+      "defect_rate": 0.4219
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 96,
+      "defect_die": 56,
+      "defect_rate": 0.5833
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 124,
+      "defect_die": 95,
+      "defect_rate": 0.7661
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 154,
+      "defect_die": 93,
+      "defect_rate": 0.6039
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 168,
+      "defect_die": 71,
+      "defect_rate": 0.4226
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 208,
+      "defect_die": 81,
+      "defect_rate": 0.3894
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 216,
+      "defect_die": 71,
+      "defect_rate": 0.3287
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 248,
+      "defect_die": 78,
+      "defect_rate": 0.3145
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.5179,
+    "peak_bin": 0.4,
+    "peak_rate": 0.7661,
+    "shape_note": "中心高 = 中心型"
+   },
+   "banding": {
+    "defect_die": 601,
+    "valid_die": 1334,
+    "defect_rate": 0.4505,
+    "column_autocorr_peak_period_2_11": 0.7454,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.1813,
+     "p95": 0.317,
+     "max": 0.4721
+    },
+    "observed_percentile_in_null": 100.0,
+    "banding_is_real_structure": true,
+    "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+   },
+   "defect_ratio_percentile_in_ground_truth_label": 36.8,
+   "defect_ratio_percentile_in_glm_class_label": 100.0
+  },
+  {
+   "item_id": "item_006",
+   "sample_id": "wafer_00013704_014",
+   "ground_truth_class": null,
+   "glm_class": null,
+   "role": "对照（标签与模型一致）",
+   "matrix_HW": [
+    39,
+    39
+   ],
+   "defect_ratio_stored_in_manifest": 0.0804,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 9,
+      "defect_die": 0,
+      "defect_rate": 0.0
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 36,
+      "defect_die": 6,
+      "defect_rate": 0.1667
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 64,
+      "defect_die": 2,
+      "defect_rate": 0.0312
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 76,
+      "defect_die": 2,
+      "defect_rate": 0.0263
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 108,
+      "defect_die": 10,
+      "defect_rate": 0.0926
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 136,
+      "defect_die": 10,
+      "defect_rate": 0.0735
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 164,
+      "defect_die": 14,
+      "defect_rate": 0.0854
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 168,
+      "defect_die": 18,
+      "defect_rate": 0.1071
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 212,
+      "defect_die": 43,
+      "defect_rate": 0.2028
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 196,
+      "defect_die": 35,
+      "defect_rate": 0.1786
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.1333,
+    "peak_bin": 0.8,
+    "peak_rate": 0.2028,
+    "shape_note": "中心低 + 中径峰 = 环/甜甜圈特征"
+   },
+   "banding": {
+    "defect_die": 140,
+    "valid_die": 1169,
+    "defect_rate": 0.1198,
+    "column_autocorr_peak_period_2_11": 0.3042,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.1874,
+     "p95": 0.298,
+     "max": 0.5588
+    },
+    "observed_percentile_in_null": 95.3,
+    "banding_is_real_structure": true,
+    "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+   }
+  },
+  {
+   "item_id": "item_009",
+   "sample_id": "wafer_00011911_008",
+   "ground_truth_class": null,
+   "glm_class": null,
+   "role": "对照（标签与模型一致）",
+   "matrix_HW": [
+    30,
+    30
+   ],
+   "defect_ratio_stored_in_manifest": 0.1905,
+   "radial": {
+    "bins": [
+     {
+      "r_lo": 0.0,
+      "r_hi": 0.1,
+      "valid_die": 4,
+      "defect_die": 4,
+      "defect_rate": 1.0
+     },
+     {
+      "r_lo": 0.1,
+      "r_hi": 0.2,
+      "valid_die": 28,
+      "defect_die": 23,
+      "defect_rate": 0.8214
+     },
+     {
+      "r_lo": 0.2,
+      "r_hi": 0.3,
+      "valid_die": 28,
+      "defect_die": 10,
+      "defect_rate": 0.3571
+     },
+     {
+      "r_lo": 0.3,
+      "r_hi": 0.4,
+      "valid_die": 52,
+      "defect_die": 15,
+      "defect_rate": 0.2885
+     },
+     {
+      "r_lo": 0.4,
+      "r_hi": 0.5,
+      "valid_die": 60,
+      "defect_die": 9,
+      "defect_rate": 0.15
+     },
+     {
+      "r_lo": 0.5,
+      "r_hi": 0.6,
+      "valid_die": 84,
+      "defect_die": 14,
+      "defect_rate": 0.1667
+     },
+     {
+      "r_lo": 0.6,
+      "r_hi": 0.7,
+      "valid_die": 76,
+      "defect_die": 10,
+      "defect_rate": 0.1316
+     },
+     {
+      "r_lo": 0.7,
+      "r_hi": 0.8,
+      "valid_die": 116,
+      "defect_die": 13,
+      "defect_rate": 0.1121
+     },
+     {
+      "r_lo": 0.8,
+      "r_hi": 0.9,
+      "valid_die": 112,
+      "defect_die": 9,
+      "defect_rate": 0.0804
+     },
+     {
+      "r_lo": 0.9,
+      "r_hi": 1.0,
+      "valid_die": 131,
+      "defect_die": 54,
+      "defect_rate": 0.4122
+     }
+    ],
+    "center_rate_r_lt_0_2": 0.8438,
+    "peak_bin": 0.0,
+    "peak_rate": 1.0,
+    "shape_note": "中心高 = 中心型"
+   },
+   "banding": {
+    "defect_die": 161,
+    "valid_die": 693,
+    "defect_rate": 0.2323,
+    "column_autocorr_peak_period_2_11": 0.0706,
+    "null_model": {
+     "draws": 300,
+     "seed": 3407,
+     "mean": 0.1872,
+     "p95": 0.3217,
+     "max": 0.4779
+    },
+    "observed_percentile_in_null": 3.7,
+    "banding_is_real_structure": false,
+    "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+   }
+  }
+ ]
+}

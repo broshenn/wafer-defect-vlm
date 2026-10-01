@@ -1,0 +1,196 @@
+{
+ "version": "pattern-diagnostics-v2@2026-10-02",
+ "supersedes": "核查_20261002_四张分歧/图案诊断.json 的解释字段（不覆盖该文件）",
+ "corrections_vs_v1": [
+  "字段 banding_is_real_structure 删除，改名 departs_from_uniform_permutation_null",
+  "删除事后加入的“差<0.05 视为不显著”例外；只用 p95 一条规则",
+  "显式列出全部阳性样本（含环与局部簇），不再只挑 008",
+  "明确写出该统计量不能证明条带类别或 Scratch"
+ ],
+ "items": [
+  {
+   "item_id": "item_001",
+   "sample_id": "wafer_00044523_017",
+   "ground_truth_class": "none",
+   "glm_class": "Random",
+   "matrix_HW": [
+    33,
+    29
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 87,
+   "valid_die": 741,
+   "raw_defect_rate": 0.1174,
+   "observed": 0.2905,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.2088,
+    "p95": 0.3565,
+    "max": 0.4798
+   },
+   "exceeds_p95": false,
+   "margin_over_p95": -0.0659,
+   "observed_percentile_in_null": 84.7,
+   "departs_from_uniform_permutation_null": false,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  },
+  {
+   "item_id": "item_003",
+   "sample_id": "wafer_00025336_019",
+   "ground_truth_class": "Loc",
+   "glm_class": "Edge_Loc",
+   "matrix_HW": [
+    64,
+    63
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 132,
+   "valid_die": 3133,
+   "raw_defect_rate": 0.0421,
+   "observed": 0.1265,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.1582,
+    "p95": 0.2767,
+    "max": 0.4283
+   },
+   "exceeds_p95": false,
+   "margin_over_p95": -0.1502,
+   "observed_percentile_in_null": 33.0,
+   "departs_from_uniform_permutation_null": false,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  },
+  {
+   "item_id": "item_007",
+   "sample_id": "wafer_00018489_020",
+   "ground_truth_class": "Donut",
+   "glm_class": "Loc",
+   "matrix_HW": [
+    72,
+    72
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 640,
+   "valid_die": 4096,
+   "raw_defect_rate": 0.1562,
+   "observed": 0.6269,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.1484,
+    "p95": 0.2499,
+    "max": 0.3519
+   },
+   "exceeds_p95": true,
+   "margin_over_p95": 0.377,
+   "observed_percentile_in_null": 100.0,
+   "departs_from_uniform_permutation_null": true,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  },
+  {
+   "item_id": "item_008",
+   "sample_id": "wafer_00017102_001",
+   "ground_truth_class": "Random",
+   "glm_class": "Scratch",
+   "matrix_HW": [
+    41,
+    42
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 601,
+   "valid_die": 1334,
+   "raw_defect_rate": 0.4505,
+   "observed": 0.7454,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.1813,
+    "p95": 0.317,
+    "max": 0.4721
+   },
+   "exceeds_p95": true,
+   "margin_over_p95": 0.4284,
+   "observed_percentile_in_null": 100.0,
+   "departs_from_uniform_permutation_null": true,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  },
+  {
+   "item_id": "item_006",
+   "sample_id": "wafer_00013704_014",
+   "ground_truth_class": "Edge_Loc",
+   "glm_class": null,
+   "matrix_HW": [
+    39,
+    39
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 140,
+   "valid_die": 1169,
+   "raw_defect_rate": 0.1198,
+   "observed": 0.3042,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.1874,
+    "p95": 0.298,
+    "max": 0.5588
+   },
+   "exceeds_p95": true,
+   "margin_over_p95": 0.0062,
+   "observed_percentile_in_null": 95.3,
+   "departs_from_uniform_permutation_null": true,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  },
+  {
+   "item_id": "item_009",
+   "sample_id": "wafer_00011911_008",
+   "ground_truth_class": "Center",
+   "glm_class": null,
+   "matrix_HW": [
+    30,
+    30
+   ],
+   "statistic": "逐列失效率序列的自相关在周期 2..11 上的最大值",
+   "statistic_caveat": "该统计量对**环状分布与局部簇也会阳性**，不是条带判据，也不是类别判据。",
+   "defect_die": 161,
+   "valid_die": 693,
+   "raw_defect_rate": 0.2323,
+   "observed": 0.0706,
+   "null_model": {
+    "hypothesis": "同掩膜、同有效 die 位置、同失效数量、均匀随机置换",
+    "draws": 300,
+    "seed": 3407,
+    "mean": 0.1872,
+    "p95": 0.3217,
+    "max": 0.4779
+   },
+   "exceeds_p95": false,
+   "margin_over_p95": -0.2512,
+   "observed_percentile_in_null": 3.7,
+   "departs_from_uniform_permutation_null": false,
+   "what_this_does_not_show": "阳性只表示本图**偏离**“同掩膜、同有效 die 位置、同失效数量、均匀随机置换”这一个零假设。它**不**表示：该图不可能由别的随机机制生成；**不**表示存在条带；**不**表示类别是 Scratch；**不**说明原图或上游数据来源。"
+  }
+ ],
+ "statistic_specificity": {
+  "positive_items": [
+   "item_007",
+   "item_008",
+   "item_006"
+  ],
+  "n_positive": 3,
+  "n_total": 6,
+  "note": "阳性并不专属于 008；本批的 Donut（007）与 Edge_Loc 对照（006）同样阳性。"
+ }
+}

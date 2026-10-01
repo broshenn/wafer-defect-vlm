@@ -1,0 +1,3215 @@
+{
+ "raw_matrix_available_locally": false,
+ "raw_matrix_note": "data/raw/ 本机不存在（AGENTS.md §15）。本报告用的是从 PNG 逐格反解、并用往返像素证明无损的**反解矩阵**，不是原始 pkl 复验。",
+ "items": [
+  {
+   "item_id": "item_001",
+   "sample_id": "wafer_00044523_017",
+   "manifest_line": 4685,
+   "ground_truth_class": "none",
+   "glm_class": "Random",
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 737093,
+   "lot_name": "lot44523",
+   "wafer_index": 17,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    33,
+    29
+   ],
+   "png_sha256_actual": "3cc6a23a612070209bccab6d1817c8018f82314ed122dbe5b89ff4283c253108",
+   "png_sha256_in_blind_list": "3cc6a23a612070209bccab6d1817c8018f82314ed122dbe5b89ff4283c253108",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    33,
+    29
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1723,
+   "rerender_bytes": 1654,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 741,
+     "recomputed": 741,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 87,
+     "recomputed": 87,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 54,
+     "recomputed": 54,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 33,
+     "recomputed": 33,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.0728744939271255,
+     "recomputed": 0.0728744939271255,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      13.781781449148362,
+      16.1306352086832
+     ],
+     "recomputed": [
+      13.78178144914836,
+      16.130635208683195
+     ],
+     "max_rel_diff": 2.202463593552756e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 14.93646460918963,
+     "recomputed": 14.936464609189622,
+     "max_rel_diff": 4.757101190618697e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.050564548415560524,
+      -0.05696436841384816
+     ],
+     "recomputed": [
+      0.05056454841556067,
+      -0.05696436841384845
+     ],
+     "max_rel_diff": 5.116067325574946e-15,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.07616897547727806,
+     "recomputed": 0.07616897547727837,
+     "max_rel_diff": 4.008342371140257e-15,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 1,
+     "recomputed": 1,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.7726457690481415,
+     "recomputed": 0.7726457690481419,
+     "max_rel_diff": 4.310732301011206e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.26189204629255025,
+     "recomputed": 0.26189204629255036,
+     "max_rel_diff": 4.2392391840146437e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 2.0754576676014294,
+     "recomputed": 2.0754576676014302,
+     "max_rel_diff": 4.2794340427409314e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 1.0616301137027513,
+     "recomputed": 1.0616301137027522,
+     "max_rel_diff": 8.366175829379384e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.22163853,
+      0.07387951,
+      0.0,
+      0.06332529,
+      0.19701203,
+      0.10074479,
+      0.01704912,
+      0.04432771,
+      0.13037561,
+      0.15164742
+     ],
+     "recomputed": [
+      0.22163853,
+      0.07387951,
+      0.0,
+      0.06332529,
+      0.19701203,
+      0.10074479,
+      0.01704912,
+      0.04432771,
+      0.13037561,
+      0.15164742
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.16666667,
+      0.05555556,
+      0.0,
+      0.12962963,
+      0.12962963,
+      0.09259259,
+      0.09259259,
+      0.07407407,
+      0.07407407,
+      0.03703704,
+      0.09259259,
+      0.05555556
+     ],
+     "recomputed": [
+      0.16666667,
+      0.05555556,
+      0.0,
+      0.12962963,
+      0.12962963,
+      0.09259259,
+      0.09259259,
+      0.07407407,
+      0.07407407,
+      0.03703704,
+      0.09259259,
+      0.05555556
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.08731217406954286,
+     "recomputed": 0.08731217406954328,
+     "max_rel_diff": 4.768334297836039e-15,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.3443136068037527,
+     "recomputed": 3.3443136068037527,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.618581260232678,
+     "recomputed": 0.6185812602326786,
+     "max_rel_diff": 8.973946480431265e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 5.116067325574946e-15,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     33,
+     29
+    ],
+    "valid_count": 741,
+    "raw_defect_count": 87,
+    "filtered_defect_count": 54,
+    "removed_by_filter": 33,
+    "removed_fraction_of_raw": 0.3793,
+    "components_8conn": 54,
+    "component_sizes_top5": [
+     6,
+     5,
+     3,
+     3,
+     3
+    ],
+    "size1_components": 33,
+    "defect_cells_in_size1": 33,
+    "scatter_share_of_raw": 0.3793,
+    "largest_component_size": 6,
+    "largest_component_share_of_raw": 0.069,
+    "largest_component_bbox_rows": [
+     26,
+     28
+    ],
+    "largest_component_bbox_cols": [
+     21,
+     25
+    ],
+    "largest_component_bbox_hw": [
+     3,
+     5
+    ],
+    "largest_component_fill_ratio": 0.4,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     26,
+     25
+    ],
+    "wafer_radius_circle_fit_cells": 14.936,
+    "ellipse_semi_axes_cells": [
+     16.5,
+     14.5
+    ],
+    "grid_anisotropy_a_over_b": 1.1379,
+    "centroid_r_circle": 0.0879,
+    "centroid_r_ellipse": 0.0801,
+    "frac_defects_outside_r1_circle": 0.1494,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.2361,
+     0.0,
+     0.0472,
+     0.0506,
+     0.1443,
+     0.0966,
+     0.0817,
+     0.063,
+     0.125,
+     0.1554
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.22163853,
+     0.07387951,
+     0.0,
+     0.06332529,
+     0.19701203,
+     0.10074479,
+     0.01704912,
+     0.04432771,
+     0.13037561,
+     0.15164742
+    ],
+    "clock_sector_grid": 1,
+    "clock_sector_image_corrected": 5,
+    "clock_sector_manifest": 1,
+    "clock_sector_differs_grid_vs_image": true,
+    "angular_hist_grid": [
+     10,
+     5,
+     3,
+     9,
+     10,
+     9,
+     9,
+     8,
+     9,
+     2,
+     6,
+     7
+    ],
+    "angular_hist_image": [
+     10,
+     4,
+     4,
+     9,
+     12,
+     7,
+     9,
+     8,
+     9,
+     3,
+     7,
+     5
+    ],
+    "centroid_clock_grid": "0-30°(1扇区)",
+    "centroid_clock_image": "120-150°(5扇区)",
+    "centroid_clock_deg_grid": 167.9,
+    "centroid_clock_deg_image": 166.3,
+    "cloud_anisotropy_lambda_min_over_max": 0.6729,
+    "cloud_principal_axis_deg_from_vertical": 99.4,
+    "extents": {
+     "mask_row_span": 33,
+     "mask_col_span": 29,
+     "ellipse_semi_a_rows": 16.5,
+     "ellipse_semi_b_cols": 14.5,
+     "grid_aspect_rows_over_cols": 1.1379310344827587
+    }
+   }
+  },
+  {
+   "item_id": "item_003",
+   "sample_id": "wafer_00025336_019",
+   "manifest_line": 2627,
+   "ground_truth_class": "Loc",
+   "glm_class": "Edge_Loc",
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 422071,
+   "lot_name": "lot25336",
+   "wafer_index": 19,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    64,
+    63
+   ],
+   "png_sha256_actual": "37efe27766fcc5714c359913ec035c756ae70458f5cd0a8f1a451f8e604c9f52",
+   "png_sha256_in_blind_list": "37efe27766fcc5714c359913ec035c756ae70458f5cd0a8f1a451f8e604c9f52",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    64,
+    63
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1939,
+   "rerender_bytes": 1830,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 3133,
+     "recomputed": 3133,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 132,
+     "recomputed": 132,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 79,
+     "recomputed": 79,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 53,
+     "recomputed": 53,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.025215448451962975,
+     "recomputed": 0.025215448451962975,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      31.20026377540365,
+      31.918148307132927
+     ],
+     "recomputed": [
+      31.20026377540365,
+      31.918148307132924
+     ],
+     "max_rel_diff": 1.1130701081448875e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 31.133718461032235,
+     "recomputed": 31.13371846103223,
+     "max_rel_diff": 1.1411144747284746e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      -0.28453047247126717,
+      -0.15712797946922014
+     ],
+     "recomputed": [
+      -0.28453047247126717,
+      -0.15712797946922027
+     ],
+     "max_rel_diff": 8.832155708164611e-16,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.3250335239583791,
+     "recomputed": 0.32503352395837914,
+     "max_rel_diff": 1.7078592557229907e-16,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 8,
+     "recomputed": 8,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.92392498885156,
+     "recomputed": 0.9239249888515603,
+     "max_rel_diff": 2.403275239919996e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.09144023741047122,
+     "recomputed": 0.09144023741047118,
+     "max_rel_diff": 4.553068168070586e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 1.9914100552300171,
+     "recomputed": 1.9914100552300171,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 0.298988702121861,
+     "recomputed": 0.2989887021218609,
+     "max_rel_diff": 3.713260791281186e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.22866521,
+      0.31181619,
+      0.4595186
+     ],
+     "recomputed": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.22866521,
+      0.31181619,
+      0.4595186
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.07594937,
+      0.06329114,
+      0.03797468,
+      0.08860759,
+      0.01265823,
+      0.02531646,
+      0.0,
+      0.49367089,
+      0.10126582,
+      0.05063291,
+      0.0,
+      0.05063291
+     ],
+     "recomputed": [
+      0.07594937,
+      0.06329114,
+      0.03797468,
+      0.08860759,
+      0.01265823,
+      0.02531646,
+      0.0,
+      0.49367089,
+      0.10126582,
+      0.05063291,
+      0.0,
+      0.05063291
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.39731057345305026,
+     "recomputed": 0.3973105734530502,
+     "max_rel_diff": 1.3971727645908603e-16,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 2.5106608244940887,
+     "recomputed": 2.5106608244940887,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.3769249735209557,
+     "recomputed": 0.37692497352095594,
+     "max_rel_diff": 5.890949672314197e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 8.832155708164611e-16,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     64,
+     63
+    ],
+    "valid_count": 3133,
+    "raw_defect_count": 132,
+    "filtered_defect_count": 79,
+    "removed_by_filter": 53,
+    "removed_fraction_of_raw": 0.4015,
+    "components_8conn": 66,
+    "component_sizes_top5": [
+     44,
+     6,
+     5,
+     3,
+     3
+    ],
+    "size1_components": 53,
+    "defect_cells_in_size1": 53,
+    "scatter_share_of_raw": 0.4015,
+    "largest_component_size": 44,
+    "largest_component_share_of_raw": 0.3333,
+    "largest_component_bbox_rows": [
+     43,
+     52
+    ],
+    "largest_component_bbox_cols": [
+     4,
+     13
+    ],
+    "largest_component_bbox_hw": [
+     10,
+     10
+    ],
+    "largest_component_fill_ratio": 0.44,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     47,
+     4
+    ],
+    "wafer_radius_circle_fit_cells": 31.134,
+    "ellipse_semi_axes_cells": [
+     32.0,
+     31.5
+    ],
+    "grid_anisotropy_a_over_b": 1.0159,
+    "centroid_r_circle": 0.1503,
+    "centroid_r_ellipse": 0.1474,
+    "frac_defects_outside_r1_circle": 0.2955,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.0,
+     0.0,
+     0.0493,
+     0.0,
+     0.0685,
+     0.0224,
+     0.0285,
+     0.1645,
+     0.1669,
+     0.4999
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.0,
+     0.22866521,
+     0.31181619,
+     0.4595186
+    ],
+    "clock_sector_grid": 8,
+    "clock_sector_image_corrected": 8,
+    "clock_sector_manifest": 8,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     14,
+     9,
+     8,
+     12,
+     7,
+     6,
+     6,
+     42,
+     10,
+     5,
+     9,
+     4
+    ],
+    "angular_hist_image": [
+     13,
+     10,
+     8,
+     12,
+     7,
+     6,
+     6,
+     42,
+     10,
+     5,
+     9,
+     4
+    ],
+    "centroid_clock_grid": "210-240°(8扇区)",
+    "centroid_clock_image": "210-240°(8扇区)",
+    "centroid_clock_deg_grid": 226.2,
+    "centroid_clock_deg_image": 226.6,
+    "cloud_anisotropy_lambda_min_over_max": 0.5368,
+    "cloud_principal_axis_deg_from_vertical": -149.2,
+    "extents": {
+     "mask_row_span": 64,
+     "mask_col_span": 63,
+     "ellipse_semi_a_rows": 32.0,
+     "ellipse_semi_b_cols": 31.5,
+     "grid_aspect_rows_over_cols": 1.0158730158730158
+    }
+   }
+  },
+  {
+   "item_id": "item_007",
+   "sample_id": "wafer_00018489_020",
+   "manifest_line": 2030,
+   "ground_truth_class": "Donut",
+   "glm_class": "Loc",
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 302170,
+   "lot_name": "lot18489",
+   "wafer_index": 20,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    72,
+    72
+   ],
+   "png_sha256_actual": "5810e3183a240e3f252570adf9516237704667c18ad2569fee78df84ce9072cf",
+   "png_sha256_in_blind_list": "5810e3183a240e3f252570adf9516237704667c18ad2569fee78df84ce9072cf",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    72,
+    72
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 3052,
+   "rerender_bytes": 2872,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 4096,
+     "recomputed": 4096,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 640,
+     "recomputed": 640,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 519,
+     "recomputed": 519,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 121,
+     "recomputed": 121,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.126708984375,
+     "recomputed": 0.126708984375,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      35.55205036753749,
+      35.80305563754196
+     ],
+     "recomputed": [
+      35.55205036753748,
+      35.80305563754196
+     ],
+     "max_rel_diff": 1.9985984729839813e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 35.65694493601004,
+     "recomputed": 35.65694493601003,
+     "max_rel_diff": 3.985438107696777e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.16273064283041086,
+      -0.09992535818300886
+     ],
+     "recomputed": [
+      0.16273064283041114,
+      -0.09992535818300892
+     ],
+     "max_rel_diff": 1.705614574665832e-15,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.1909616174104141,
+     "recomputed": 0.19096161741041437,
+     "max_rel_diff": 1.4534635803789135e-15,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 6,
+     "recomputed": 6,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.531767473724035,
+     "recomputed": 0.5317674737240352,
+     "max_rel_diff": 4.1755958364663546e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.2004572635842981,
+     "recomputed": 0.20045726358429822,
+     "max_rel_diff": 5.538452460009137e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 1.9911969499186375,
+     "recomputed": 1.9911969499186382,
+     "max_rel_diff": 3.3453939089365957e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 0.8819637829452249,
+     "recomputed": 0.8819637829452253,
+     "max_rel_diff": 3.7764238603461136e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.0,
+      0.03600643,
+      0.14042508,
+      0.21089481,
+      0.29405252,
+      0.17184887,
+      0.08032204,
+      0.0252045,
+      0.01376716,
+      0.02747859
+     ],
+     "recomputed": [
+      0.0,
+      0.03600643,
+      0.14042508,
+      0.21089481,
+      0.29405252,
+      0.17184887,
+      0.08032204,
+      0.0252045,
+      0.01376716,
+      0.02747859
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.07707129,
+      0.08477842,
+      0.08477842,
+      0.12909441,
+      0.15414258,
+      0.16184971,
+      0.06936416,
+      0.06358382,
+      0.04238921,
+      0.03853565,
+      0.05009634,
+      0.04431599
+     ],
+     "recomputed": [
+      0.07707129,
+      0.08477842,
+      0.08477842,
+      0.12909441,
+      0.15414258,
+      0.16184971,
+      0.06936416,
+      0.06358382,
+      0.04238921,
+      0.03853565,
+      0.05009634,
+      0.04431599
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.30377280244094135,
+     "recomputed": 0.30377280244094157,
+     "max_rel_diff": 7.309561723130247e-16,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.420697251941403,
+     "recomputed": 3.420697251941403,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.7370635146527003,
+     "recomputed": 0.7370635146527004,
+     "max_rel_diff": 1.506278634817905e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 1.705614574665832e-15,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     72,
+     72
+    ],
+    "valid_count": 4096,
+    "raw_defect_count": 640,
+    "filtered_defect_count": 519,
+    "removed_by_filter": 121,
+    "removed_fraction_of_raw": 0.1891,
+    "components_8conn": 195,
+    "component_sizes_top5": [
+     97,
+     63,
+     32,
+     29,
+     22
+    ],
+    "size1_components": 121,
+    "defect_cells_in_size1": 121,
+    "scatter_share_of_raw": 0.1891,
+    "largest_component_size": 97,
+    "largest_component_share_of_raw": 0.1516,
+    "largest_component_bbox_rows": [
+     45,
+     59
+    ],
+    "largest_component_bbox_cols": [
+     33,
+     51
+    ],
+    "largest_component_bbox_hw": [
+     15,
+     19
+    ],
+    "largest_component_fill_ratio": 0.34,
+    "main_cluster_min_dist_to_wafer_edge_cells": 12,
+    "main_cluster_touches_edge": false,
+    "main_cluster_nearest_edge_cell": [
+     71,
+     35
+    ],
+    "wafer_radius_circle_fit_cells": 35.657,
+    "ellipse_semi_axes_cells": [
+     36.0,
+     36.0
+    ],
+    "grid_anisotropy_a_over_b": 1.0,
+    "centroid_r_circle": 0.1697,
+    "centroid_r_ellipse": 0.1681,
+    "frac_defects_outside_r1_circle": 0.0484,
+    "frac_defects_outside_r1_ellipse": 0.0094,
+    "radial_density_10_ellipse": [
+     0.0147,
+     0.0589,
+     0.1265,
+     0.1955,
+     0.2518,
+     0.1431,
+     0.077,
+     0.0402,
+     0.0303,
+     0.062
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.0,
+     0.03600643,
+     0.14042508,
+     0.21089481,
+     0.29405252,
+     0.17184887,
+     0.08032204,
+     0.0252045,
+     0.01376716,
+     0.02747859
+    ],
+    "clock_sector_grid": 6,
+    "clock_sector_image_corrected": 6,
+    "clock_sector_manifest": 6,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     49,
+     58,
+     57,
+     78,
+     89,
+     95,
+     47,
+     40,
+     34,
+     29,
+     31,
+     33
+    ],
+    "angular_hist_image": [
+     49,
+     58,
+     57,
+     78,
+     89,
+     95,
+     47,
+     40,
+     34,
+     29,
+     31,
+     33
+    ],
+    "centroid_clock_grid": "150-180°(6扇区)",
+    "centroid_clock_image": "150-180°(6扇区)",
+    "centroid_clock_deg_grid": 120.5,
+    "centroid_clock_deg_image": 120.5,
+    "cloud_anisotropy_lambda_min_over_max": 0.8195,
+    "cloud_principal_axis_deg_from_vertical": 106.0,
+    "extents": {
+     "mask_row_span": 72,
+     "mask_col_span": 72,
+     "ellipse_semi_a_rows": 36.0,
+     "ellipse_semi_b_cols": 36.0,
+     "grid_aspect_rows_over_cols": 1.0
+    }
+   }
+  },
+  {
+   "item_id": "item_008",
+   "sample_id": "wafer_00017102_001",
+   "manifest_line": 1649,
+   "ground_truth_class": "Random",
+   "glm_class": "Scratch",
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 278538,
+   "lot_name": "lot17102",
+   "wafer_index": 1,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    41,
+    42
+   ],
+   "png_sha256_actual": "ffb560d3369ebb0ecffbb47dc53c4ce5d5d03e4e416a4d94a6ec8199354c19a4",
+   "png_sha256_in_blind_list": "ffb560d3369ebb0ecffbb47dc53c4ce5d5d03e4e416a4d94a6ec8199354c19a4",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    41,
+    42
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 2164,
+   "rerender_bytes": 2088,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 1334,
+     "recomputed": 1334,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 601,
+     "recomputed": 601,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 585,
+     "recomputed": 585,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 16,
+     "recomputed": 16,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.43853073463268366,
+     "recomputed": 0.43853073463268366,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      20.436175790722913,
+      20.09866710130332
+     ],
+     "recomputed": [
+      20.436175790722917,
+      20.09866710130332
+     ],
+     "max_rel_diff": 1.73844349118061e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 20.160840015728922,
+     "recomputed": 20.160840015728922,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.021691977241036033,
+      -0.08057252676506951
+     ],
+     "recomputed": [
+      0.02169197724103585,
+      -0.08057252676506951
+     ],
+     "max_rel_diff": 8.47689845929228e-15,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.08344144021967423,
+     "recomputed": 0.08344144021967419,
+     "max_rel_diff": 4.989530779171145e-16,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 5,
+     "recomputed": 5,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.6197347321906046,
+     "recomputed": 0.6197347321906045,
+     "max_rel_diff": 1.7914487714780817e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.23464182404689962,
+     "recomputed": 0.2346418240468996,
+     "max_rel_diff": 1.1828912312785805e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 2.033645421917586,
+     "recomputed": 2.033645421917586,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 1.0030616122155152,
+     "recomputed": 1.0030616122155152,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.12716855,
+      0.10597379,
+      0.07630113,
+      0.11354335,
+      0.15189576,
+      0.14306462,
+      0.08926254,
+      0.07630113,
+      0.0654544,
+      0.05103475
+     ],
+     "recomputed": [
+      0.12716855,
+      0.10597379,
+      0.07630113,
+      0.11354335,
+      0.15189576,
+      0.14306462,
+      0.08926254,
+      0.07630113,
+      0.0654544,
+      0.05103475
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.07008547,
+      0.08376068,
+      0.08376068,
+      0.08034188,
+      0.12649573,
+      0.07179487,
+      0.08547009,
+      0.1025641,
+      0.08717949,
+      0.09230769,
+      0.06495726,
+      0.05128205
+     ],
+     "recomputed": [
+      0.07008547,
+      0.08376068,
+      0.08376068,
+      0.08034188,
+      0.12649573,
+      0.07179487,
+      0.08547009,
+      0.1025641,
+      0.08717949,
+      0.09230769,
+      0.06495726,
+      0.05128205
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.0991583229471398,
+     "recomputed": 0.09915832294713972,
+     "max_rel_diff": 8.397351263320105e-16,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.550864472733222,
+     "recomputed": 3.550864472733222,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.8784289052483553,
+     "recomputed": 0.8784289052483557,
+     "max_rel_diff": 5.055494043931836e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 8.47689845929228e-15,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     41,
+     42
+    ],
+    "valid_count": 1334,
+    "raw_defect_count": 601,
+    "filtered_defect_count": 585,
+    "removed_by_filter": 16,
+    "removed_fraction_of_raw": 0.0266,
+    "components_8conn": 44,
+    "component_sizes_top5": [
+     429,
+     28,
+     11,
+     11,
+     11
+    ],
+    "size1_components": 16,
+    "defect_cells_in_size1": 16,
+    "scatter_share_of_raw": 0.0266,
+    "largest_component_size": 429,
+    "largest_component_share_of_raw": 0.7138,
+    "largest_component_bbox_rows": [
+     6,
+     38
+    ],
+    "largest_component_bbox_cols": [
+     6,
+     34
+    ],
+    "largest_component_bbox_hw": [
+     33,
+     29
+    ],
+    "largest_component_fill_ratio": 0.448,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     34,
+     6
+    ],
+    "wafer_radius_circle_fit_cells": 20.161,
+    "ellipse_semi_axes_cells": [
+     20.5,
+     21.0
+    ],
+    "grid_anisotropy_a_over_b": 0.9762,
+    "centroid_r_circle": 0.0748,
+    "centroid_r_ellipse": 0.0734,
+    "frac_defects_outside_r1_circle": 0.0499,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.1201,
+     0.1051,
+     0.0841,
+     0.1158,
+     0.1602,
+     0.1242,
+     0.0866,
+     0.0791,
+     0.0654,
+     0.0593
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.12716855,
+     0.10597379,
+     0.07630113,
+     0.11354335,
+     0.15189576,
+     0.14306462,
+     0.08926254,
+     0.07630113,
+     0.0654544,
+     0.05103475
+    ],
+    "clock_sector_grid": 5,
+    "clock_sector_image_corrected": 5,
+    "clock_sector_manifest": 5,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     43,
+     51,
+     50,
+     49,
+     74,
+     43,
+     51,
+     60,
+     52,
+     56,
+     39,
+     33
+    ],
+    "angular_hist_image": [
+     45,
+     49,
+     50,
+     48,
+     73,
+     45,
+     51,
+     62,
+     50,
+     56,
+     39,
+     33
+    ],
+    "centroid_clock_grid": "120-150°(5扇区)",
+    "centroid_clock_image": "120-150°(5扇区)",
+    "centroid_clock_deg_grid": 163.1,
+    "centroid_clock_deg_image": 163.5,
+    "cloud_anisotropy_lambda_min_over_max": 0.8966,
+    "cloud_principal_axis_deg_from_vertical": -172.0,
+    "extents": {
+     "mask_row_span": 41,
+     "mask_col_span": 42,
+     "ellipse_semi_a_rows": 20.5,
+     "ellipse_semi_b_cols": 21.0,
+     "grid_aspect_rows_over_cols": 0.9761904761904762
+    }
+   }
+  },
+  {
+   "item_id": "item_002",
+   "sample_id": "wafer_00043922_015",
+   "manifest_line": 4425,
+   "ground_truth_class": "Near_full",
+   "glm_class": null,
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 722305,
+   "lot_name": "lot43922",
+   "wafer_index": 15,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    25,
+    26
+   ],
+   "png_sha256_actual": "6cbb3a5312cca7fbd6a52a9c306270ba0cec3294c7c58a250f431a950ce6b72c",
+   "png_sha256_in_blind_list": "6cbb3a5312cca7fbd6a52a9c306270ba0cec3294c7c58a250f431a950ce6b72c",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    25,
+    26
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1471,
+   "rerender_bytes": 1453,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 518,
+     "recomputed": 518,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 482,
+     "recomputed": 482,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 482,
+     "recomputed": 482,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 0,
+     "recomputed": 0,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.9305019305019305,
+     "recomputed": 0.9305019305019305,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      12.499999999999991,
+      11.999999999999995
+     ],
+     "recomputed": [
+      12.499999999999996,
+      11.999999999999996
+     ],
+     "max_rel_diff": 4.2632564145606024e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 12.399020698656564,
+     "recomputed": 12.399020698656573,
+     "max_rel_diff": 7.163294918899191e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.021585160737798537,
+      -0.03430199962208222
+     ],
+     "recomputed": [
+      0.02158516073779809,
+      -0.034301999622082066
+     ],
+     "max_rel_diff": 2.0734552882818263e-14,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.04052833998759298,
+     "recomputed": 0.040528339987592615,
+     "max_rel_diff": 9.074178143483463e-15,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 4,
+     "recomputed": 4,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.6723323741943457,
+     "recomputed": 0.6723323741943451,
+     "max_rel_diff": 8.256504277036594e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.2433931877425089,
+     "recomputed": 0.2433931877425087,
+     "max_rel_diff": 7.982517140740402e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 2.0162882704687117,
+     "recomputed": 2.01628827046871,
+     "max_rel_diff": 8.810034087969544e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 1.0181775686344778,
+     "recomputed": 1.0181775686344765,
+     "max_rel_diff": 1.3084825973301983e-15,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.12807609,
+      0.07115338,
+      0.11953768,
+      0.10368064,
+      0.10910185,
+      0.09702734,
+      0.09852007,
+      0.105307,
+      0.09794054,
+      0.06965542
+     ],
+     "recomputed": [
+      0.12807609,
+      0.07115338,
+      0.11953768,
+      0.10368064,
+      0.10910185,
+      0.09702734,
+      0.09852007,
+      0.105307,
+      0.09794054,
+      0.06965542
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.07676349,
+      0.07676349,
+      0.08091286,
+      0.10788382,
+      0.08713693,
+      0.08506224,
+      0.08298755,
+      0.08713693,
+      0.09958506,
+      0.07053942,
+      0.0746888,
+      0.07053942
+     ],
+     "recomputed": [
+      0.07676349,
+      0.07676349,
+      0.08091286,
+      0.10788382,
+      0.08713693,
+      0.08506224,
+      0.08298755,
+      0.08713693,
+      0.09128631,
+      0.07883817,
+      0.0746888,
+      0.07053942
+     ],
+     "max_rel_diff": 0.10526309781163101,
+     "match": false
+    },
+    "resultant_length": {
+     "manifest": 0.0434662095128734,
+     "recomputed": 0.04346620951287313,
+     "max_rel_diff": 6.225913538014701e-15,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.5732887268413296,
+     "recomputed": 3.5762258635762465,
+     "max_rel_diff": 0.0008212950878834477,
+     "match": false
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.8709441973000663,
+     "recomputed": 0.8709441973000683,
+     "max_rel_diff": 2.2945229447768718e-15,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 0.10526309781163101,
+     "match": false
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": false,
+   "geometry": {
+    "matrix_HW": [
+     25,
+     26
+    ],
+    "valid_count": 518,
+    "raw_defect_count": 482,
+    "filtered_defect_count": 482,
+    "removed_by_filter": 0,
+    "removed_fraction_of_raw": 0.0,
+    "components_8conn": 1,
+    "component_sizes_top5": [
+     482
+    ],
+    "size1_components": 0,
+    "defect_cells_in_size1": 0,
+    "scatter_share_of_raw": 0.0,
+    "largest_component_size": 482,
+    "largest_component_share_of_raw": 1.0,
+    "largest_component_bbox_rows": [
+     0,
+     24
+    ],
+    "largest_component_bbox_cols": [
+     0,
+     25
+    ],
+    "largest_component_bbox_hw": [
+     25,
+     26
+    ],
+    "largest_component_fill_ratio": 0.742,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     0,
+     11
+    ],
+    "wafer_radius_circle_fit_cells": 12.399,
+    "ellipse_semi_axes_cells": [
+     12.5,
+     13.0
+    ],
+    "grid_anisotropy_a_over_b": 0.9615,
+    "centroid_r_circle": 0.0405,
+    "centroid_r_ellipse": 0.0398,
+    "frac_defects_outside_r1_circle": 0.0705,
+    "frac_defects_outside_r1_ellipse": 0.0166,
+    "radial_density_10_ellipse": [
+     0.1207,
+     0.1073,
+     0.0885,
+     0.0977,
+     0.114,
+     0.1152,
+     0.0897,
+     0.0939,
+     0.0958,
+     0.0773
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.12807609,
+     0.07115338,
+     0.11953768,
+     0.10368064,
+     0.10910185,
+     0.09702734,
+     0.09852007,
+     0.105307,
+     0.09794054,
+     0.06965542
+    ],
+    "clock_sector_grid": 4,
+    "clock_sector_image_corrected": 4,
+    "clock_sector_manifest": 4,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     37,
+     37,
+     39,
+     52,
+     42,
+     41,
+     40,
+     42,
+     48,
+     34,
+     36,
+     34
+    ],
+    "angular_hist_image": [
+     38,
+     38,
+     37,
+     50,
+     43,
+     42,
+     41,
+     43,
+     46,
+     33,
+     36,
+     35
+    ],
+    "centroid_clock_grid": "90-120°(4扇区)",
+    "centroid_clock_image": "90-120°(4扇区)",
+    "centroid_clock_deg_grid": 147.8,
+    "centroid_clock_deg_image": 148.8,
+    "cloud_anisotropy_lambda_min_over_max": 0.8709,
+    "cloud_principal_axis_deg_from_vertical": -174.7,
+    "extents": {
+     "mask_row_span": 25,
+     "mask_col_span": 26,
+     "ellipse_semi_a_rows": 12.5,
+     "ellipse_semi_b_cols": 13.0,
+     "grid_aspect_rows_over_cols": 0.9615384615384616
+    }
+   }
+  },
+  {
+   "item_id": "item_004",
+   "sample_id": "wafer_00015139_006",
+   "manifest_line": 1398,
+   "ground_truth_class": "Edge_Ring",
+   "glm_class": null,
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 243359,
+   "lot_name": "lot15139",
+   "wafer_index": 6,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    72,
+    72
+   ],
+   "png_sha256_actual": "09c52a5710e6d0f98aade88d1ec6815bc94059796d3701c299d892a526062097",
+   "png_sha256_in_blind_list": "09c52a5710e6d0f98aade88d1ec6815bc94059796d3701c299d892a526062097",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    72,
+    72
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 2564,
+   "rerender_bytes": 2422,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 4096,
+     "recomputed": 4096,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 670,
+     "recomputed": 670,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 607,
+     "recomputed": 607,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 63,
+     "recomputed": 63,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.148193359375,
+     "recomputed": 0.148193359375,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      35.55205036753749,
+      35.80305563754196
+     ],
+     "recomputed": [
+      35.55205036753748,
+      35.80305563754196
+     ],
+     "max_rel_diff": 1.9985984729839813e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 35.65694493601004,
+     "recomputed": 35.65694493601003,
+     "max_rel_diff": 3.985438107696777e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.013810232136038563,
+      0.11903911835129513
+     ],
+     "recomputed": [
+      0.01381023213603875,
+      0.11903911835129519
+     ],
+     "max_rel_diff": 1.3566038105658783e-14,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.11983753255764623,
+     "recomputed": 0.11983753255764631,
+     "max_rel_diff": 6.94830117658108e-16,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 2,
+     "recomputed": 2,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.9399169155504826,
+     "recomputed": 0.9399169155504831,
+     "max_rel_diff": 4.724770907968732e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.1132283885167108,
+     "recomputed": 0.11322838851671083,
+     "max_rel_diff": 2.451291233517167e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 1.9911969499186375,
+     "recomputed": 1.9911969499186382,
+     "max_rel_diff": 3.3453939089365957e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 1.0028070878517688,
+     "recomputed": 1.002807087851769,
+     "max_rel_diff": 2.2142305096855585e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.09544805,
+      0.03181602,
+      0.0,
+      0.00909029,
+      0.00707023,
+      0.00289237,
+      0.00489477,
+      0.03181602,
+      0.15720855,
+      0.65976371
+     ],
+     "recomputed": [
+      0.09544805,
+      0.03181602,
+      0.0,
+      0.00909029,
+      0.00707023,
+      0.00289237,
+      0.00489477,
+      0.03181602,
+      0.15720855,
+      0.65976371
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.13344316,
+      0.13673806,
+      0.07578254,
+      0.0675453,
+      0.05271829,
+      0.05766063,
+      0.06425041,
+      0.10049423,
+      0.09060956,
+      0.06260297,
+      0.05766063,
+      0.10049423
+     ],
+     "recomputed": [
+      0.13344316,
+      0.13673806,
+      0.07578254,
+      0.0675453,
+      0.05271829,
+      0.05766063,
+      0.06425041,
+      0.10049423,
+      0.09060956,
+      0.06260297,
+      0.05766063,
+      0.10049423
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.1364757146157849,
+     "recomputed": 0.1364757146157849,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.5082774379483124,
+     "recomputed": 3.5082774379483124,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.7334369820299654,
+     "recomputed": 0.7334369820299653,
+     "max_rel_diff": 1.5137265393304058e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 1.3566038105658783e-14,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     72,
+     72
+    ],
+    "valid_count": 4096,
+    "raw_defect_count": 670,
+    "filtered_defect_count": 607,
+    "removed_by_filter": 63,
+    "removed_fraction_of_raw": 0.094,
+    "components_8conn": 85,
+    "component_sizes_top5": [
+     556,
+     4,
+     4,
+     3,
+     3
+    ],
+    "size1_components": 63,
+    "defect_cells_in_size1": 63,
+    "scatter_share_of_raw": 0.094,
+    "largest_component_size": 556,
+    "largest_component_share_of_raw": 0.8299,
+    "largest_component_bbox_rows": [
+     0,
+     71
+    ],
+    "largest_component_bbox_cols": [
+     0,
+     71
+    ],
+    "largest_component_bbox_hw": [
+     72,
+     72
+    ],
+    "largest_component_fill_ratio": 0.107,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     0,
+     30
+    ],
+    "wafer_radius_circle_fit_cells": 35.657,
+    "ellipse_semi_axes_cells": [
+     36.0,
+     36.0
+    ],
+    "grid_anisotropy_a_over_b": 1.0,
+    "centroid_r_circle": 0.104,
+    "centroid_r_ellipse": 0.103,
+    "frac_defects_outside_r1_circle": 0.1507,
+    "frac_defects_outside_r1_ellipse": 0.0284,
+    "radial_density_10_ellipse": [
+     0.1151,
+     0.0461,
+     0.0046,
+     0.0164,
+     0.0281,
+     0.0021,
+     0.0248,
+     0.0491,
+     0.1463,
+     0.5673
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.09544805,
+     0.03181602,
+     0.0,
+     0.00909029,
+     0.00707023,
+     0.00289237,
+     0.00489477,
+     0.03181602,
+     0.15720855,
+     0.65976371
+    ],
+    "clock_sector_grid": 2,
+    "clock_sector_image_corrected": 2,
+    "clock_sector_manifest": 2,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     85,
+     88,
+     51,
+     47,
+     35,
+     38,
+     47,
+     67,
+     63,
+     42,
+     41,
+     66
+    ],
+    "angular_hist_image": [
+     85,
+     88,
+     51,
+     47,
+     35,
+     38,
+     47,
+     67,
+     63,
+     42,
+     41,
+     66
+    ],
+    "centroid_clock_grid": "30-60°(2扇区)",
+    "centroid_clock_image": "30-60°(2扇区)",
+    "centroid_clock_deg_grid": 4.3,
+    "centroid_clock_deg_image": 4.3,
+    "cloud_anisotropy_lambda_min_over_max": 0.744,
+    "cloud_principal_axis_deg_from_vertical": 50.5,
+    "extents": {
+     "mask_row_span": 72,
+     "mask_col_span": 72,
+     "ellipse_semi_a_rows": 36.0,
+     "ellipse_semi_b_cols": 36.0,
+     "grid_aspect_rows_over_cols": 1.0
+    }
+   }
+  },
+  {
+   "item_id": "item_005",
+   "sample_id": "wafer_00047178_011",
+   "manifest_line": 5724,
+   "ground_truth_class": "Scratch",
+   "glm_class": null,
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 802531,
+   "lot_name": "lot47178",
+   "wafer_index": 11,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    29,
+    26
+   ],
+   "png_sha256_actual": "eea40316665a5ff785f6bc38713bd7b1d106fc31a57c45c72e85da2d14c8f06c",
+   "png_sha256_in_blind_list": "eea40316665a5ff785f6bc38713bd7b1d106fc31a57c45c72e85da2d14c8f06c",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    29,
+    26
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1562,
+   "rerender_bytes": 1523,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 562,
+     "recomputed": 562,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 45,
+     "recomputed": 45,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 24,
+     "recomputed": 24,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.037366548042704624,
+     "recomputed": 0.037366548042704624,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      12.377239239756511,
+      14.088818024173783
+     ],
+     "recomputed": [
+      12.377239239756513,
+      14.088818024173785
+     ],
+     "max_rel_diff": 1.4351801762823447e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 12.950758320086988,
+     "recomputed": 12.950758320086985,
+     "max_rel_diff": 2.743247608358302e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.10324078648393946,
+      0.6356133720960082
+     ],
+     "recomputed": [
+      0.10324078648393938,
+      0.6356133720960085
+     ],
+     "max_rel_diff": 8.06529373542113e-16,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.6439433350700052,
+     "recomputed": 0.6439433350700055,
+     "max_rel_diff": 3.4482009958359463e-16,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "middle",
+     "recomputed": "middle",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 1,
+     "recomputed": 1,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.751742477310763,
+     "recomputed": 0.7517424773107635,
+     "max_rel_diff": 5.907464633882598e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.23884830596889664,
+     "recomputed": 0.23884830596889667,
+     "max_rel_diff": 1.1620587176885107e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 1.3898800020135884,
+     "recomputed": 1.3898800020135886,
+     "max_rel_diff": 1.597581119257376e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 0.7553919899000676,
+     "recomputed": 0.7553919899000678,
+     "max_rel_diff": 2.9394619997811465e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.0,
+      0.0,
+      0.0,
+      0.10038835,
+      0.23423948,
+      0.25553398,
+      0.05405526,
+      0.0468479,
+      0.12400914,
+      0.1849259
+     ],
+     "recomputed": [
+      0.0,
+      0.0,
+      0.0,
+      0.10038835,
+      0.23423948,
+      0.25553398,
+      0.05405526,
+      0.0468479,
+      0.12400914,
+      0.1849259
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.71428571,
+      0.0952381,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0952381,
+      0.0952381,
+      0.0
+     ],
+     "recomputed": [
+      0.71428571,
+      0.0952381,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0952381,
+      0.0952381,
+      0.0
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.8531352039463928,
+     "recomputed": 0.8531352039463928,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 1.3159669973441042,
+     "recomputed": 1.3159669973441042,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.16721728037349198,
+     "recomputed": 0.16721728037349196,
+     "max_rel_diff": 1.6598509169408097e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 8.06529373542113e-16,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     29,
+     26
+    ],
+    "valid_count": 562,
+    "raw_defect_count": 45,
+    "filtered_defect_count": 21,
+    "removed_by_filter": 24,
+    "removed_fraction_of_raw": 0.5333,
+    "components_8conn": 29,
+    "component_sizes_top5": [
+     13,
+     2,
+     2,
+     2,
+     2
+    ],
+    "size1_components": 24,
+    "defect_cells_in_size1": 24,
+    "scatter_share_of_raw": 0.5333,
+    "largest_component_size": 13,
+    "largest_component_share_of_raw": 0.2889,
+    "largest_component_bbox_rows": [
+     1,
+     10
+    ],
+    "largest_component_bbox_cols": [
+     14,
+     17
+    ],
+    "largest_component_bbox_hw": [
+     10,
+     4
+    ],
+    "largest_component_fill_ratio": 0.325,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     1,
+     17
+    ],
+    "wafer_radius_circle_fit_cells": 12.951,
+    "ellipse_semi_axes_cells": [
+     14.5,
+     13.0
+    ],
+    "grid_anisotropy_a_over_b": 1.1154,
+    "centroid_r_circle": 0.2657,
+    "centroid_r_ellipse": 0.2376,
+    "frac_defects_outside_r1_circle": 0.1556,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.0,
+     0.0,
+     0.1559,
+     0.1485,
+     0.1444,
+     0.1418,
+     0.04,
+     0.0693,
+     0.1223,
+     0.1778
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.0,
+     0.0,
+     0.0,
+     0.10038835,
+     0.23423948,
+     0.25553398,
+     0.05405526,
+     0.0468479,
+     0.12400914,
+     0.1849259
+    ],
+    "clock_sector_grid": 1,
+    "clock_sector_image_corrected": 1,
+    "clock_sector_manifest": 1,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     15,
+     3,
+     3,
+     1,
+     4,
+     2,
+     1,
+     2,
+     3,
+     4,
+     7,
+     0
+    ],
+    "angular_hist_image": [
+     15,
+     3,
+     3,
+     2,
+     3,
+     2,
+     1,
+     2,
+     3,
+     5,
+     6,
+     0
+    ],
+    "centroid_clock_grid": "0-30°(1扇区)",
+    "centroid_clock_image": "0-30°(1扇区)",
+    "centroid_clock_deg_grid": 5.9,
+    "centroid_clock_deg_image": 6.6,
+    "cloud_anisotropy_lambda_min_over_max": 0.9165,
+    "cloud_principal_axis_deg_from_vertical": 65.1,
+    "extents": {
+     "mask_row_span": 29,
+     "mask_col_span": 26,
+     "ellipse_semi_a_rows": 14.5,
+     "ellipse_semi_b_cols": 13.0,
+     "grid_aspect_rows_over_cols": 1.1153846153846154
+    }
+   }
+  },
+  {
+   "item_id": "item_006",
+   "sample_id": "wafer_00013704_014",
+   "manifest_line": 1106,
+   "ground_truth_class": "Edge_Loc",
+   "glm_class": null,
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 215950,
+   "lot_name": "lot13704",
+   "wafer_index": 14,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    39,
+    39
+   ],
+   "png_sha256_actual": "98964451b6ebb64bd1c12b5c299a67eb31dbaaa783b8f2e548275fb255e4f122",
+   "png_sha256_in_blind_list": "98964451b6ebb64bd1c12b5c299a67eb31dbaaa783b8f2e548275fb255e4f122",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    39,
+    39
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1835,
+   "rerender_bytes": 1751,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 1169,
+     "recomputed": 1169,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 140,
+     "recomputed": 140,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 94,
+     "recomputed": 94,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 46,
+     "recomputed": 46,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.08041060735671514,
+     "recomputed": 0.08041060735671514,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      18.999999999999996,
+      19.291099289571353
+     ],
+     "recomputed": [
+      19.000000000000007,
+      19.29109928957135
+     ],
+     "max_rel_diff": 5.6095479138955255e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 18.851087244579986,
+     "recomputed": 18.85108724457999,
+     "max_rel_diff": 1.8846200395268804e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      -0.09537234203520269,
+      -0.365482992300052
+     ],
+     "recomputed": [
+      -0.0953723420352032,
+      -0.365482992300052
+     ],
+     "max_rel_diff": 5.383931420071485e-15,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.37772172466761766,
+     "recomputed": 0.3777217246676178,
+     "max_rel_diff": 2.939261768970569e-16,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "middle",
+     "recomputed": "middle",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 7,
+     "recomputed": 7,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.79699314971206,
+     "recomputed": 0.7969931497120601,
+     "max_rel_diff": 1.3930145133948276e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.21999702088033443,
+     "recomputed": 0.21999702088033446,
+     "max_rel_diff": 1.2616341577973607e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 1.9097041742433516,
+     "recomputed": 1.9097041742433514,
+     "max_rel_diff": 1.162717283230572e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 0.9139860509458563,
+     "recomputed": 0.9139860509458549,
+     "max_rel_diff": 1.457645473004172e-15,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.0,
+      0.23776047,
+      0.0,
+      0.04075894,
+      0.06340279,
+      0.03890626,
+      0.04389424,
+      0.1521667,
+      0.16783092,
+      0.25527967
+     ],
+     "recomputed": [
+      0.0,
+      0.23776047,
+      0.0,
+      0.04075894,
+      0.06340279,
+      0.03890626,
+      0.04389424,
+      0.1521667,
+      0.16783092,
+      0.25527967
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.09574468,
+      0.03191489,
+      0.09574468,
+      0.03191489,
+      0.04255319,
+      0.0212766,
+      0.46808511,
+      0.10638298,
+      0.04255319,
+      0.0212766,
+      0.0212766,
+      0.0212766
+     ],
+     "recomputed": [
+      0.07446809,
+      0.03191489,
+      0.09574468,
+      0.03191489,
+      0.04255319,
+      0.0106383,
+      0.4787234,
+      0.10638298,
+      0.04255319,
+      0.0212766,
+      0.0212766,
+      0.04255319
+     ],
+     "max_rel_diff": 0.5,
+     "match": false
+    },
+    "resultant_length": {
+     "manifest": 0.4370539007706886,
+     "recomputed": 0.4370539007706887,
+     "max_rel_diff": 1.2701213999776918e-16,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 2.682219732537177,
+     "recomputed": 2.6605116734284886,
+     "max_rel_diff": 0.00809331869621072,
+     "match": false
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.42069120017394923,
+     "recomputed": 0.42069120017394906,
+     "max_rel_diff": 3.9585675579834925e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 0.5,
+     "match": false
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": false,
+   "geometry": {
+    "matrix_HW": [
+     39,
+     39
+    ],
+    "valid_count": 1169,
+    "raw_defect_count": 140,
+    "filtered_defect_count": 94,
+    "removed_by_filter": 46,
+    "removed_fraction_of_raw": 0.3286,
+    "components_8conn": 65,
+    "component_sizes_top5": [
+     43,
+     6,
+     6,
+     4,
+     4
+    ],
+    "size1_components": 46,
+    "defect_cells_in_size1": 46,
+    "scatter_share_of_raw": 0.3286,
+    "largest_component_size": 43,
+    "largest_component_share_of_raw": 0.3071,
+    "largest_component_bbox_rows": [
+     32,
+     38
+    ],
+    "largest_component_bbox_cols": [
+     10,
+     19
+    ],
+    "largest_component_bbox_hw": [
+     7,
+     10
+    ],
+    "largest_component_fill_ratio": 0.614,
+    "main_cluster_min_dist_to_wafer_edge_cells": 0,
+    "main_cluster_touches_edge": true,
+    "main_cluster_nearest_edge_cell": [
+     36,
+     11
+    ],
+    "wafer_radius_circle_fit_cells": 18.851,
+    "ellipse_semi_axes_cells": [
+     19.5,
+     19.5
+    ],
+    "grid_anisotropy_a_over_b": 1.0,
+    "centroid_r_circle": 0.2031,
+    "centroid_r_ellipse": 0.1963,
+    "frac_defects_outside_r1_circle": 0.0929,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.0,
+     0.1766,
+     0.0177,
+     0.0505,
+     0.0981,
+     0.0722,
+     0.0815,
+     0.1295,
+     0.1974,
+     0.1766
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.0,
+     0.23776047,
+     0.0,
+     0.04075894,
+     0.06340279,
+     0.03890626,
+     0.04389424,
+     0.1521667,
+     0.16783092,
+     0.25527967
+    ],
+    "clock_sector_grid": 7,
+    "clock_sector_image_corrected": 7,
+    "clock_sector_manifest": 7,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     12,
+     10,
+     15,
+     5,
+     9,
+     4,
+     46,
+     13,
+     5,
+     5,
+     9,
+     7
+    ],
+    "angular_hist_image": [
+     12,
+     10,
+     15,
+     5,
+     9,
+     4,
+     46,
+     13,
+     5,
+     5,
+     9,
+     7
+    ],
+    "centroid_clock_grid": "180-210°(7扇区)",
+    "centroid_clock_image": "180-210°(7扇区)",
+    "centroid_clock_deg_grid": 188.4,
+    "centroid_clock_deg_image": 188.4,
+    "cloud_anisotropy_lambda_min_over_max": 0.5228,
+    "cloud_principal_axis_deg_from_vertical": 66.2,
+    "extents": {
+     "mask_row_span": 39,
+     "mask_col_span": 39,
+     "ellipse_semi_a_rows": 19.5,
+     "ellipse_semi_b_cols": 19.5,
+     "grid_aspect_rows_over_cols": 1.0
+    }
+   }
+  },
+  {
+   "item_id": "item_009",
+   "sample_id": "wafer_00011911_008",
+   "manifest_line": 974,
+   "ground_truth_class": "Center",
+   "glm_class": null,
+   "label_source": "ground_truth",
+   "split": "train",
+   "source_index": 187569,
+   "lot_name": "lot11911",
+   "wafer_index": 8,
+   "sample_id_matches_lot_and_wafer": true,
+   "manifest_matrix_shape": [
+    30,
+    30
+   ],
+   "png_sha256_actual": "55d53fa9c6d637476a51246d8fe2e6618d8083952df52e7b41fdf8a37fb36268",
+   "png_sha256_in_blind_list": "55d53fa9c6d637476a51246d8fe2e6618d8083952df52e7b41fdf8a37fb36268",
+   "png_sha256_matches_blind": true,
+   "png_sha256_in_codex_v2": null,
+   "recovered_HW": [
+    30,
+    30
+   ],
+   "recovered_matches_manifest_shape": true,
+   "edge_fit_score_H": 1.0,
+   "edge_fit_score_W": 1.0,
+   "unexpected_colors_in_png": [],
+   "roundtrip_pixels_differing": 0,
+   "roundtrip_pixels_identical": true,
+   "roundtrip_bytes_identical": false,
+   "original_bytes": 1789,
+   "rerender_bytes": 1707,
+   "feature_match_manifest_vs_recomputed": {
+    "status": {
+     "manifest": "ok",
+     "recomputed": "ok",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "valid_count": {
+     "manifest": 693,
+     "recomputed": 693,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "raw_defect_count": {
+     "manifest": 161,
+     "recomputed": 161,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_count": {
+     "manifest": 132,
+     "recomputed": 132,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "filtered_points_removed": {
+     "manifest": 29,
+     "recomputed": 29,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "defect_ratio": {
+     "manifest": 0.19047619047619047,
+     "recomputed": 0.19047619047619047,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "wafer_center_xy": {
+     "manifest": [
+      14.560015771118472,
+      14.302706944544507
+     ],
+     "recomputed": [
+      14.560015771118472,
+      14.3027069445445
+     ],
+     "max_rel_diff": 4.967889914231397e-16,
+     "match": true
+    },
+    "wafer_radius": {
+     "manifest": 14.409805298376165,
+     "recomputed": 14.409805298376158,
+     "max_rel_diff": 4.930966942628788e-16,
+     "match": true
+    },
+    "centroid_xy_r": {
+     "manifest": [
+      0.017390261998600873,
+      0.059385760588398985
+     ],
+     "recomputed": [
+      0.01739026199860088,
+      0.059385760588398555
+     ],
+     "max_rel_diff": 7.24435315435347e-15,
+     "match": true
+    },
+    "centroid_radius_r": {
+     "manifest": 0.06187963940621037,
+     "recomputed": 0.06187963940620996,
+     "max_rel_diff": 6.615984583281828e-15,
+     "match": true
+    },
+    "radial_zone": {
+     "manifest": "center",
+     "recomputed": "center",
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "clock_sector": {
+     "manifest": 3,
+     "recomputed": 3,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "mean_radius_r": {
+     "manifest": 0.601152609588273,
+     "recomputed": 0.6011526095882733,
+     "max_rel_diff": 5.540471788281232e-16,
+     "match": true
+    },
+    "std_radius_r": {
+     "manifest": 0.34607666950261573,
+     "recomputed": 0.3460766695026159,
+     "max_rel_diff": 4.812039307160366e-16,
+     "match": true
+    },
+    "defect_extent_r": {
+     "manifest": 2.012518517739306,
+     "recomputed": 2.0125185177393075,
+     "max_rel_diff": 6.619902464533565e-16,
+     "match": true
+    },
+    "radial_span_r": {
+     "manifest": 0.9922547907653334,
+     "recomputed": 0.9922547907653338,
+     "max_rel_diff": 4.47555621784938e-16,
+     "match": true
+    },
+    "radial_density": {
+     "manifest": [
+      0.29202641,
+      0.29202641,
+      0.11681057,
+      0.09734214,
+      0.04867107,
+      0.03539714,
+      0.02246357,
+      0.01946843,
+      0.01431502,
+      0.06147924
+     ],
+     "recomputed": [
+      0.29202641,
+      0.29202641,
+      0.11681057,
+      0.09734214,
+      0.04867107,
+      0.03539714,
+      0.02246357,
+      0.01946843,
+      0.01431502,
+      0.06147924
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "angular_probability": {
+     "manifest": [
+      0.09090909,
+      0.09848485,
+      0.13636364,
+      0.07575758,
+      0.0530303,
+      0.09090909,
+      0.0530303,
+      0.08333333,
+      0.03787879,
+      0.09848485,
+      0.09090909,
+      0.09090909
+     ],
+     "recomputed": [
+      0.09090909,
+      0.09848485,
+      0.13636364,
+      0.07575758,
+      0.0530303,
+      0.09090909,
+      0.0530303,
+      0.08333333,
+      0.03787879,
+      0.09848485,
+      0.09090909,
+      0.09090909
+     ],
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "resultant_length": {
+     "manifest": 0.12523526706653038,
+     "recomputed": 0.1252352670665297,
+     "max_rel_diff": 5.319059322333021e-15,
+     "match": true
+    },
+    "angle_entropy_bits": {
+     "manifest": 3.5176219915601754,
+     "recomputed": 3.5176219915601754,
+     "max_rel_diff": 0.0,
+     "match": true
+    },
+    "anisotropy_min_over_max": {
+     "manifest": 0.7882137947558842,
+     "recomputed": 0.7882137947558847,
+     "max_rel_diff": 7.042651575065369e-16,
+     "match": true
+    },
+    "__worst_relative_difference__": {
+     "manifest": null,
+     "recomputed": null,
+     "max_rel_diff": 7.24435315435347e-15,
+     "match": true
+    },
+    "__fields_compared__": {
+     "manifest": 21,
+     "recomputed": 21,
+     "max_rel_diff": 0.0,
+     "match": true
+    }
+   },
+   "all_features_match": true,
+   "geometry": {
+    "matrix_HW": [
+     30,
+     30
+    ],
+    "valid_count": 693,
+    "raw_defect_count": 161,
+    "filtered_defect_count": 132,
+    "removed_by_filter": 29,
+    "removed_fraction_of_raw": 0.1801,
+    "components_8conn": 51,
+    "component_sizes_top5": [
+     56,
+     11,
+     8,
+     5,
+     5
+    ],
+    "size1_components": 29,
+    "defect_cells_in_size1": 29,
+    "scatter_share_of_raw": 0.1801,
+    "largest_component_size": 56,
+    "largest_component_share_of_raw": 0.3478,
+    "largest_component_bbox_rows": [
+     7,
+     20
+    ],
+    "largest_component_bbox_cols": [
+     12,
+     21
+    ],
+    "largest_component_bbox_hw": [
+     14,
+     10
+    ],
+    "largest_component_fill_ratio": 0.4,
+    "main_cluster_min_dist_to_wafer_edge_cells": 7,
+    "main_cluster_touches_edge": false,
+    "main_cluster_nearest_edge_cell": [
+     0,
+     14
+    ],
+    "wafer_radius_circle_fit_cells": 14.41,
+    "ellipse_semi_axes_cells": [
+     15.0,
+     15.0
+    ],
+    "grid_anisotropy_a_over_b": 1.0,
+    "centroid_r_circle": 0.0444,
+    "centroid_r_ellipse": 0.0426,
+    "frac_defects_outside_r1_circle": 0.1801,
+    "frac_defects_outside_r1_ellipse": 0.0,
+    "radial_density_10_ellipse": [
+     0.2799,
+     0.2399,
+     0.112,
+     0.0743,
+     0.0489,
+     0.0436,
+     0.0308,
+     0.04,
+     0.0212,
+     0.1094
+    ],
+    "radial_density_10_circle_asrecorded": [
+     0.29202641,
+     0.29202641,
+     0.11681057,
+     0.09734214,
+     0.04867107,
+     0.03539714,
+     0.02246357,
+     0.01946843,
+     0.01431502,
+     0.06147924
+    ],
+    "clock_sector_grid": 3,
+    "clock_sector_image_corrected": 3,
+    "clock_sector_manifest": 3,
+    "clock_sector_differs_grid_vs_image": false,
+    "angular_hist_grid": [
+     15,
+     16,
+     18,
+     14,
+     13,
+     14,
+     9,
+     12,
+     8,
+     16,
+     13,
+     13
+    ],
+    "angular_hist_image": [
+     15,
+     16,
+     18,
+     14,
+     13,
+     14,
+     9,
+     12,
+     8,
+     16,
+     13,
+     13
+    ],
+    "centroid_clock_grid": "60-90°(3扇区)",
+    "centroid_clock_image": "60-90°(3扇区)",
+    "centroid_clock_deg_grid": 51.7,
+    "centroid_clock_deg_image": 51.7,
+    "cloud_anisotropy_lambda_min_over_max": 0.8504,
+    "cloud_principal_axis_deg_from_vertical": 172.1,
+    "extents": {
+     "mask_row_span": 30,
+     "mask_col_span": 30,
+     "ellipse_semi_a_rows": 15.0,
+     "ellipse_semi_b_cols": 15.0,
+     "grid_aspect_rows_over_cols": 1.0
+    }
+   }
+  }
+ ]
+}

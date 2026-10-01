@@ -1,0 +1,757 @@
+{
+  "task": "下一轮盲清单准备 v2（九类各两张）",
+  "task_book": "协作/01_Codex_指挥/任务书_20261002_ClaudeCode_口径修正与新样本准备.md",
+  "prepared_at": "2026-10-02T02:21:43.053046+08:00",
+  "sampling_rule_version": "prepare-v2@2026-10-02 (per_class=2; v1 方法不变)",
+  "supersedes_rule": "准备_20261002_九类试标/prepare_blind_set.py 的 prepare-v1（方法不变，只改每类数量与排除集合）",
+  "seed": 3407,
+  "per_class": 2,
+  "planned_count": 18,
+  "class_order_used": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Near_full",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "blind_order": [
+    "item_001:wafer_00043234_006",
+    "item_002:wafer_00012145_017",
+    "item_003:wafer_00043109_011",
+    "item_004:wafer_00017113_023",
+    "item_005:wafer_00042242_008",
+    "item_006:wafer_00046498_018",
+    "item_007:wafer_00045576_015",
+    "item_008:wafer_00044802_022",
+    "item_009:wafer_00043676_016",
+    "item_010:wafer_00044039_015",
+    "item_011:wafer_00040360_012",
+    "item_012:wafer_00037907_010",
+    "item_013:wafer_00014492_011",
+    "item_014:wafer_00017158_020",
+    "item_015:wafer_00043975_024",
+    "item_016:wafer_00026394_017",
+    "item_017:wafer_00044805_011",
+    "item_018:wafer_00036981_003"
+  ],
+  "data_files": {
+    "data/manifest.jsonl": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+    "manifest_rows": 5904
+  },
+  "prompt": {
+    "rel_path": "协作/01_Codex_指挥/prompt_image_only_v2_20261002.txt",
+    "byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+    "expected": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+    "unchanged": true
+  },
+  "exclusion_sources": {
+    "search_roots": [
+      "D:\\pycode\\晶圆图研究\\kimi_k3_cost_test",
+      "D:\\pycode\\晶圆图研究\\zcode_glm53flash_test",
+      "D:\\pycode\\晶圆图研究\\协作\\03_ZCode_标注",
+      "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719"
+    ],
+    "seen_ids_with_send_evidence": [
+      "wafer_00000161_006",
+      "wafer_00011320_018",
+      "wafer_00011910_009",
+      "wafer_00011911_008",
+      "wafer_00012836_003",
+      "wafer_00013704_014",
+      "wafer_00013751_005",
+      "wafer_00015000_006",
+      "wafer_00015139_006",
+      "wafer_00016894_009",
+      "wafer_00017102_001",
+      "wafer_00017178_007",
+      "wafer_00018489_020",
+      "wafer_00025247_021",
+      "wafer_00025336_019",
+      "wafer_00043922_015",
+      "wafer_00044523_017",
+      "wafer_00046291_009",
+      "wafer_00047178_011"
+    ],
+    "planned_only_ids_no_send_evidence": [
+      "wafer_00043893_019",
+      "wafer_00047160_025"
+    ],
+    "planned_only_source": "这些编号只出现在历史 plan.json 里（evidence_kind=planned），没有任何 call-*/started-* 记录。",
+    "this_round_verified_seen": [
+      "wafer_00011911_008",
+      "wafer_00013704_014",
+      "wafer_00015139_006",
+      "wafer_00017102_001",
+      "wafer_00018489_020",
+      "wafer_00025336_019",
+      "wafer_00043922_015",
+      "wafer_00044523_017",
+      "wafer_00047178_011"
+    ],
+    "excluded_total": [
+      "wafer_00000161_006",
+      "wafer_00011320_018",
+      "wafer_00011910_009",
+      "wafer_00011911_008",
+      "wafer_00012836_003",
+      "wafer_00013704_014",
+      "wafer_00013751_005",
+      "wafer_00015000_006",
+      "wafer_00015139_006",
+      "wafer_00016894_009",
+      "wafer_00017102_001",
+      "wafer_00017178_007",
+      "wafer_00018489_020",
+      "wafer_00025247_021",
+      "wafer_00025336_019",
+      "wafer_00043922_015",
+      "wafer_00044523_017",
+      "wafer_00046291_009",
+      "wafer_00047178_011"
+    ],
+    "never_sent_planned_kept_in_pool": {
+      "wafer_00043893_019": "Near_full",
+      "wafer_00047160_025": "Scratch"
+    },
+    "a_ruling_note": "A 裁决：没有发送证据的旧计划样本**不排除**，保留在池内并披露不确定性。本脚本按文件名区分：plan.json → 仅计划；call-*/started-*/结果文件 → 看过。",
+    "lot_policy": "排除 val ∪ test ∪ benchmark ∪ 已排除样本的 lot",
+    "banned_lots_total": 776,
+    "evidence_table": [
+      {
+        "sample_id": "wafer_00000161_006",
+        "kind": "seen",
+        "files": [
+          "kimi_k3_cost_test\\batches\\20261001-232051\\metrics.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00000161_006__20261001T152129141970Z__6db2492dca3a4472bfad8e03fb3c2658.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\summary.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\交付报告_五张积分小测.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00011320_018",
+        "kind": "seen",
+        "files": [
+          "kimi_k3_cost_test\\batches\\20261001-232051\\metrics.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00011320_018__20261001T152333504554Z__9003dd959e674746b14a181f06b738df.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\summary.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\交付报告_五张积分小测.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00011910_009",
+        "kind": "seen",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-01.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00011911_008",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00011911_008_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00012836_003",
+        "kind": "seen",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-03.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-03.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00013704_014",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00013704_014_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00013751_005",
+        "kind": "seen",
+        "files": [
+          "kimi_k3_cost_test\\batches\\20261001-232051\\metrics.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00013751_005__20261001T152159768737Z__f116f3e345f541ef88330f5c9b733b70.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\summary.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\交付报告_五张积分小测.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00015000_006",
+        "kind": "seen",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-04.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-04.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00015139_006",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00015139_006_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00016894_009",
+        "kind": "seen",
+        "files": [
+          "kimi_k3_cost_test\\batches\\20261001-232051\\metrics.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00016894_009__20261001T152528256249Z__55adfdf758b2474eb6b4ca800bc70fcc.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\summary.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\交付报告_五张积分小测.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md",
+          "kimi_k3_cost_test\\诊断交付_20261001-234717\\dryrun_失败图_20261001.txt",
+          "kimi_k3_cost_test\\诊断交付_20261001-234717\\诊断交付.md",
+          "zcode_glm53flash_test\\20261002-002240\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\README.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00017102_001",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00017102_001_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00017178_007",
+        "kind": "seen",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-02-geometry-01.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-02-retry-01.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\call-02.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-02.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-call-02-geometry-01.json",
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-call-02-retry-01.json",
+          "kimi_k3_cost_test\\results\\wafer_00017178_007.json",
+          "kimi_k3_cost_test\\下一轮多图测试_交付提示词.md",
+          "kimi_k3_cost_test\\交付报告_20261001.md",
+          "kimi_k3_cost_test\\原始任务提示词_20261001.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md",
+          "kimi_k3_cost_test\\诊断交付_20261001-234717\\诊断交付.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00018489_020",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00018489_020_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00025247_021",
+        "kind": "seen",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\started-05.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00025336_019",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00025336_019_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00043922_015",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00043922_015_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00044523_017",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00044523_017_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00046291_009",
+        "kind": "seen",
+        "files": [
+          "kimi_k3_cost_test\\batches\\20261001-232051\\metrics.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\results\\wafer_00046291_009__20261001T152307019589Z__8c61aaa6464947abab83963dd8bea950.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\summary.json",
+          "kimi_k3_cost_test\\batches\\20261001-232051\\交付报告_五张积分小测.md",
+          "kimi_k3_cost_test\\执行Agent交接_20261001.md"
+        ]
+      },
+      {
+        "sample_id": "wafer_00047178_011",
+        "kind": "seen",
+        "files": [
+          "协作\\03_ZCode_标注\\20261002-012138\\batch_log.json",
+          "协作\\03_ZCode_标注\\20261002-012138\\delivery_report.md",
+          "协作\\03_ZCode_标注\\20261002-012138\\wafer_00047178_011_check.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00043893_019",
+        "kind": "planned_only",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\plan.json"
+        ]
+      },
+      {
+        "sample_id": "wafer_00047160_025",
+        "kind": "planned_only",
+        "files": [
+          "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719\\plan.json"
+        ]
+      }
+    ]
+  },
+  "checks": {
+    "distinct_lots": true,
+    "sha256_unique": true,
+    "sample_id_unique": true,
+    "no_excluded_hit": true,
+    "all_images_ok": true,
+    "per_class": {
+      "Center": 2,
+      "Donut": 2,
+      "Edge_Loc": 2,
+      "Edge_Ring": 2,
+      "Loc": 2,
+      "Near_full": 2,
+      "Random": 2,
+      "Scratch": 2,
+      "none": 2
+    },
+    "problems": [],
+    "per_image": [
+      {
+        "item_id": "item_001",
+        "sample_id": "wafer_00043234_006",
+        "exists": true,
+        "ok": true,
+        "sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1829
+      },
+      {
+        "item_id": "item_002",
+        "sample_id": "wafer_00012145_017",
+        "exists": true,
+        "ok": true,
+        "sha256": "66752c02b355fec39125c51c43cbfa7f91241c59724ec1a06f85f0c9d4e3453d",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1688
+      },
+      {
+        "item_id": "item_003",
+        "sample_id": "wafer_00043109_011",
+        "exists": true,
+        "ok": true,
+        "sha256": "522321152ee483fcae6dc02bfb223cf0b84cdd23d48827d5ef4b223d887ac914",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1681
+      },
+      {
+        "item_id": "item_004",
+        "sample_id": "wafer_00017113_023",
+        "exists": true,
+        "ok": true,
+        "sha256": "1a2320a9d4a1bc94c8af532d567eb25d39646b48df66f9c7e8fd46dae8d47f55",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 2016
+      },
+      {
+        "item_id": "item_005",
+        "sample_id": "wafer_00042242_008",
+        "exists": true,
+        "ok": true,
+        "sha256": "d9df96ef2a036b5fe868a2d1713e9245abea1febb936c0469c2262e8502300e4",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1905
+      },
+      {
+        "item_id": "item_006",
+        "sample_id": "wafer_00046498_018",
+        "exists": true,
+        "ok": true,
+        "sha256": "eecfdbe3984633c66c699106207170639f90302aaf1af04eb8eeead8395b0e9c",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1505
+      },
+      {
+        "item_id": "item_007",
+        "sample_id": "wafer_00045576_015",
+        "exists": true,
+        "ok": true,
+        "sha256": "f7f4a9b79380b5c07ab4247fc713854a0840fa36ddcb0f894453e15b8cc93129",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1962
+      },
+      {
+        "item_id": "item_008",
+        "sample_id": "wafer_00044802_022",
+        "exists": true,
+        "ok": true,
+        "sha256": "8a84f657c593ba064358cce86273590e1bf36f0bf3381a1c73201ff222e0e6b0",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 2152
+      },
+      {
+        "item_id": "item_009",
+        "sample_id": "wafer_00043676_016",
+        "exists": true,
+        "ok": true,
+        "sha256": "0c081928f84f7ac3a79c52bbf869ffe9c7afbed52a7aca91584636a46f892737",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1793
+      },
+      {
+        "item_id": "item_010",
+        "sample_id": "wafer_00044039_015",
+        "exists": true,
+        "ok": true,
+        "sha256": "9ec332e912f1707547d1ae60d3d3bf39e138322dde4b1d448329a24a56028d6d",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 2281
+      },
+      {
+        "item_id": "item_011",
+        "sample_id": "wafer_00040360_012",
+        "exists": true,
+        "ok": true,
+        "sha256": "0c4865df99f01a5858dfbfeba72d4f8871edd3571ec2f5cdc8955bd7f3a28863",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1647
+      },
+      {
+        "item_id": "item_012",
+        "sample_id": "wafer_00037907_010",
+        "exists": true,
+        "ok": true,
+        "sha256": "7b4469e16da5e3c1ff95964d59be280ef9fc9c3bece562dac3d00582f38aecd1",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 2180
+      },
+      {
+        "item_id": "item_013",
+        "sample_id": "wafer_00014492_011",
+        "exists": true,
+        "ok": true,
+        "sha256": "cdebd1b08f90404a7cbcad32c5a4606a45e139ce3058534390f00fa0f31b0701",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1992
+      },
+      {
+        "item_id": "item_014",
+        "sample_id": "wafer_00017158_020",
+        "exists": true,
+        "ok": true,
+        "sha256": "cd56abc9d804e8f003280647b4e168c65cd1a616e9182d9423d7c093d2322bb4",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1930
+      },
+      {
+        "item_id": "item_015",
+        "sample_id": "wafer_00043975_024",
+        "exists": true,
+        "ok": true,
+        "sha256": "f4a80086b29c4125026b69cf233012d748e2c7bb331f74f78ca20a750bf577cf",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1639
+      },
+      {
+        "item_id": "item_016",
+        "sample_id": "wafer_00026394_017",
+        "exists": true,
+        "ok": true,
+        "sha256": "67426ca68ce9f20cbc29dc569a00e3e2161589040acf8366d895d5a84f500eb4",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1881
+      },
+      {
+        "item_id": "item_017",
+        "sample_id": "wafer_00044805_011",
+        "exists": true,
+        "ok": true,
+        "sha256": "6060863eb5ae412c3db9f189ba2cd12b4f4a4fc8895ef73b722b48f810b02657",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 2341
+      },
+      {
+        "item_id": "item_018",
+        "sample_id": "wafer_00036981_003",
+        "exists": true,
+        "ok": true,
+        "sha256": "ed061e5a734c3c03c38a8a4024dd4873d2852469559662d9e088ce635116f9bf",
+        "size": [
+          448,
+          448
+        ],
+        "format": "PNG",
+        "n_colors": 3,
+        "bytes": 1731
+      }
+    ]
+  },
+  "draw_log": [
+    {
+      "class": "Center",
+      "k": 1,
+      "eligible": 642,
+      "picked": "wafer_00012145_017",
+      "lot": "lot12145",
+      "index_into_eligible": 58
+    },
+    {
+      "class": "Center",
+      "k": 2,
+      "eligible": 641,
+      "picked": "wafer_00036981_003",
+      "lot": "lot36981",
+      "index_into_eligible": 429
+    },
+    {
+      "class": "Donut",
+      "k": 1,
+      "eligible": 418,
+      "picked": "wafer_00017113_023",
+      "lot": "lot17113",
+      "index_into_eligible": 67
+    },
+    {
+      "class": "Donut",
+      "k": 2,
+      "eligible": 412,
+      "picked": "wafer_00017158_020",
+      "lot": "lot17158",
+      "index_into_eligible": 169
+    },
+    {
+      "class": "Edge_Loc",
+      "k": 1,
+      "eligible": 634,
+      "picked": "wafer_00026394_017",
+      "lot": "lot26394",
+      "index_into_eligible": 220
+    },
+    {
+      "class": "Edge_Loc",
+      "k": 2,
+      "eligible": 633,
+      "picked": "wafer_00043975_024",
+      "lot": "lot43975",
+      "index_into_eligible": 412
+    },
+    {
+      "class": "Edge_Ring",
+      "k": 1,
+      "eligible": 631,
+      "picked": "wafer_00014492_011",
+      "lot": "lot14492",
+      "index_into_eligible": 312
+    },
+    {
+      "class": "Edge_Ring",
+      "k": 2,
+      "eligible": 627,
+      "picked": "wafer_00044802_022",
+      "lot": "lot44802",
+      "index_into_eligible": 601
+    },
+    {
+      "class": "Loc",
+      "k": 1,
+      "eligible": 620,
+      "picked": "wafer_00042242_008",
+      "lot": "lot42242",
+      "index_into_eligible": 364
+    },
+    {
+      "class": "Loc",
+      "k": 2,
+      "eligible": 619,
+      "picked": "wafer_00040360_012",
+      "lot": "lot40360",
+      "index_into_eligible": 250
+    },
+    {
+      "class": "Near_full",
+      "k": 1,
+      "eligible": 125,
+      "picked": "wafer_00045576_015",
+      "lot": "lot45576",
+      "index_into_eligible": 99
+    },
+    {
+      "class": "Near_full",
+      "k": 2,
+      "eligible": 124,
+      "picked": "wafer_00046498_018",
+      "lot": "lot46498",
+      "index_into_eligible": 108
+    },
+    {
+      "class": "Random",
+      "k": 1,
+      "eligible": 622,
+      "picked": "wafer_00043234_006",
+      "lot": "lot43234",
+      "index_into_eligible": 487
+    },
+    {
+      "class": "Random",
+      "k": 2,
+      "eligible": 621,
+      "picked": "wafer_00044805_011",
+      "lot": "lot44805",
+      "index_into_eligible": 527
+    },
+    {
+      "class": "Scratch",
+      "k": 1,
+      "eligible": 649,
+      "picked": "wafer_00044039_015",
+      "lot": "lot44039",
+      "index_into_eligible": 416
+    },
+    {
+      "class": "Scratch",
+      "k": 2,
+      "eligible": 647,
+      "picked": "wafer_00037907_010",
+      "lot": "lot37907",
+      "index_into_eligible": 267
+    },
+    {
+      "class": "none",
+      "k": 1,
+      "eligible": 335,
+      "picked": "wafer_00043676_016",
+      "lot": "lot43676",
+      "index_into_eligible": 139
+    },
+    {
+      "class": "none",
+      "k": 2,
+      "eligible": 334,
+      "picked": "wafer_00043109_011",
+      "lot": "lot43109",
+      "index_into_eligible": 114
+    }
+  ],
+  "notes": [
+    "blind_inputs.jsonl 只含 item_id/sample_id/image_path/image_sha256。",
+    "audit_selected.jsonl 与 plan.json 含答案，只给 Codex，严禁转 ZCode。",
+    "原图留在 data/images/，未搬动、未复制。",
+    "本批是开发测试，**不是**教师资格认证；十八张不足以保证任何质量结论。"
+  ],
+  "blind_inputs_sha256": "70d48e6f5a7ab3c14f4c3d675e94adc11a9cb518f814120fadb8b2e802120b20",
+  "audit_selected_sha256": "f8bd1ab770995b68d00539dc90677584f0418d02576fc39de2d92e4db8dbb999"
+}
