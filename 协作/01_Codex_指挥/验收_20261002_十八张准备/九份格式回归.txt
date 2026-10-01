@@ -1,0 +1,11 @@
+  ✓ wafer_00011911_008_raw.json        exit=0  
+  ✓ wafer_00013704_014_raw.json        exit=0  
+  ✓ wafer_00015139_006_raw.json        exit=0  
+  ✓ wafer_00017102_001_raw.json        exit=0  
+  ✓ wafer_00018489_020_raw.json        exit=0  
+  ✓ wafer_00025336_019_raw.json        exit=0  
+  ✓ wafer_00043922_015_raw.json        exit=0  
+  ✓ wafer_00044523_017_raw.json        exit=0  
+  ✓ wafer_00047178_011_raw.json        exit=0  
+
+9 个文件；最差退出码 0（全部通过）

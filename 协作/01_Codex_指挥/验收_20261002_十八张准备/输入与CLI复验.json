@@ -1,0 +1,58 @@
+{
+  "verified_by": "Codex",
+  "date": "2026-10-02",
+  "count": 18,
+  "classes": {
+    "Random": 2,
+    "Center": 2,
+    "none": 2,
+    "Donut": 2,
+    "Loc": 2,
+    "Near_full": 2,
+    "Edge_Ring": 2,
+    "Scratch": 2,
+    "Edge_Loc": 2
+  },
+  "distinct_lots": 18,
+  "sha256": {
+    "blind_inputs.jsonl": "70d48e6f5a7ab3c14f4c3d675e94adc11a9cb518f814120fadb8b2e802120b20",
+    "audit_selected.jsonl": "f8bd1ab770995b68d00539dc90677584f0418d02576fc39de2d92e4db8dbb999",
+    "plan.json": "aa870cc80b38685eb3178cc1a16a337c4779b2aa57769c1c307ba36208d27bea",
+    "check_answer_v3.py": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55",
+    "angles.py": "9902e70545f3a09ea23c590de9f8007ca89c29d395fb7dd8e226ea95bcd06a01",
+    "angle_config.json": "7b7909bee1ddb8c4bc8951e766a583565e4c5d39bdd926c0e2f4a5b4fbdacfe1",
+    "wafer_png_v2.py": "b8214c0ad1388bbf6c54f06db95aaccbcf0865c7ac6fe2df48b192562f286800"
+  },
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "banned_lots_plan": 776,
+  "excluded_total": 19,
+  "planned_only_pool_count": 2,
+  "cli_type_checks": [
+    {
+      "field": "defect_class",
+      "returncode": 5,
+      "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_十八张准备\\defect_class_错误类型.json: exit=5 (字段类型错误)\n  - defect_class 应为非空字符串，实为 list []\n",
+      "stderr": ""
+    },
+    {
+      "field": "radial_zone",
+      "returncode": 5,
+      "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_十八张准备\\radial_zone_错误类型.json: exit=5 (字段类型错误)\n  - radial_zone 应为非空字符串，实为 dict {}\n",
+      "stderr": ""
+    }
+  ],
+  "sequential_stop": [
+    {
+      "file": "a_ok_raw.json",
+      "returncode": 0,
+      "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_四张分歧\\停止验证输入\\a_ok_raw.json: exit=0 (通过)\n",
+      "stderr": ""
+    },
+    {
+      "file": "b_truncated_raw.json",
+      "returncode": 2,
+      "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_四张分歧\\停止验证输入\\b_truncated_raw.json: exit=2 (不是合法 JSON（含截断）)\n  - JSON 解析失败：Expecting ',' delimiter: line 1 column 25 (char 24)\n",
+      "stderr": ""
+    }
+  ]
+}

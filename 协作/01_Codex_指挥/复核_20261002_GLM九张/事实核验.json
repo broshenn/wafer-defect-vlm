@@ -1,0 +1,392 @@
+{
+  "recorded_by": "Codex",
+  "date": "2026-10-02",
+  "source_batch": "协作/03_ZCode_标注/20261002-012138/",
+  "sample_count": 9,
+  "independent_schema_pass_count": 7,
+  "original_label_match_count": 5,
+  "original_label_match_fraction": 0.5555555555555556,
+  "label_disagreements": [
+    "wafer_00044523_017",
+    "wafer_00025336_019",
+    "wafer_00018489_020",
+    "wafer_00017102_001"
+  ],
+  "individual_steps_total_seconds": 330.885,
+  "individual_steps_mean_seconds": 36.765,
+  "task_window_seconds": 417.0,
+  "not_pure_model_latency": true,
+  "fresh_session_required": true,
+  "previous_v1_context_disclosed": true,
+  "direct_batch_label_leak_proven": false,
+  "teacher_qualified": false,
+  "user_reported_number": 40000,
+  "user_reported_number_unit_and_scope": "pending_clarification",
+  "token_usage": "not_provided",
+  "account_debit": "not_provided",
+  "codex_review_type": "non_blind_model_review",
+  "human_review_status": "not_performed",
+  "external_api_requests_in_this_review": 0,
+  "entries": [
+    {
+      "item_id": "item_001",
+      "sample_id": "wafer_00044523_017",
+      "ground_truth_class": "none",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 4685,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Random",
+      "class_matches_original_label": false,
+      "raw_answer": {
+        "defect_class": "Random",
+        "morphology": "失效 die 呈孤立散点状遍布整个晶圆，未见成片簇、环状或条带结构",
+        "radial_zone": "global",
+        "clock_direction": null,
+        "extent_r": null,
+        "caption_zh": "红色失效 die 以孤立单点形式散布于整个晶圆，各区域密度大致相近，未见成片、成环或条状聚集。",
+        "uncertainty": "散点分布看似均匀，但无法完全排除未成形的局部聚集"
+      },
+      "raw_answer_sha256": "0e38d5d3743b70d5d5fb9c188a48b5006af628c7fa98bed2c0ffc042b0bd853f",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 26999
+    },
+    {
+      "item_id": "item_002",
+      "sample_id": "wafer_00043922_015",
+      "ground_truth_class": "Near_full",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 4425,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Near_full",
+      "class_matches_original_label": true,
+      "raw_answer": {
+        "defect_class": "Near_full",
+        "morphology": "几乎整个晶圆为红色失效区，仅边缘附近零星残留绿色合格 die",
+        "radial_zone": "global",
+        "clock_direction": null,
+        "extent_r": null,
+        "caption_zh": "晶圆绝大部分区域为红色失效 die，绿色合格 die 仅零星出现在边缘附近。",
+        "uncertainty": "边缘残留的合格 die 是否构成环带痕迹无法确认"
+      },
+      "raw_answer_sha256": "1975b41ff38e5a8e0671e4a4ed108556a41e51055185c6eab59cf1ba88ae15b4",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 20139
+    },
+    {
+      "item_id": "item_003",
+      "sample_id": "wafer_00025336_019",
+      "ground_truth_class": "Loc",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 2627,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Edge_Loc",
+      "class_matches_original_label": false,
+      "raw_answer": {
+        "defect_class": "Edge_Loc",
+        "morphology": "晶圆左下边缘一小块致密红色失效簇，紧贴边缘；其余区域散布稀疏孤立红点",
+        "radial_zone": "edge",
+        "clock_direction": "8点钟",
+        "extent_r": null,
+        "caption_zh": "晶圆左下边缘约8点钟方向有一小块致密红色失效簇，其余区域为稀疏散布的孤立红点。",
+        "uncertainty": "边缘小簇与外围散点是否属同一模式无法确认"
+      },
+      "raw_answer_sha256": "44081e3b776e913ca646289adf0963ab9b74f5d20089f994cdeffe08cb394446",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": false
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 33808
+    },
+    {
+      "item_id": "item_004",
+      "sample_id": "wafer_00015139_006",
+      "ground_truth_class": "Edge_Ring",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 1398,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Edge_Ring",
+      "class_matches_original_label": true,
+      "raw_answer": {
+        "defect_class": "Edge_Ring",
+        "morphology": "失效 die 沿晶圆边缘连成整圈红带，内部另散布稀疏孤立红点",
+        "radial_zone": "edge",
+        "clock_direction": null,
+        "extent_r": null,
+        "caption_zh": "红色失效 die 在晶圆边缘连成一圈红带，内部基本为绿色合格 die 并散布少量孤立红点。",
+        "uncertainty": "边缘红带宽窄不均、局部似有断续，右上侧更密集"
+      },
+      "raw_answer_sha256": "98d0b7329dafa913f0f0fd1887920cac366d404bce24cacb2dc4ea8852c3f5ac",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 33260
+    },
+    {
+      "item_id": "item_005",
+      "sample_id": "wafer_00047178_011",
+      "ground_truth_class": "Scratch",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 5724,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Scratch",
+      "class_matches_original_label": true,
+      "raw_answer": {
+        "defect_class": "Scratch",
+        "morphology": "一条近竖直的红色失效 die 链自顶部边缘向内延伸，另全图散布孤立红点",
+        "radial_zone": "edge",
+        "clock_direction": "12至1点钟",
+        "extent_r": null,
+        "caption_zh": "晶圆顶部偏右有一条近竖直的红色失效 die 链从边缘向内延伸，其余区域散布孤立红点。",
+        "uncertainty": "链条自边缘延伸入内部、跨越径向区域，单值区域归类不准；链条有局部断续，与散点是否同源无法确认"
+      },
+      "raw_answer_sha256": "a340a961014906f8f013b858d6585ff98e5c0c519df115aabec276fd060e2569",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 74020
+    },
+    {
+      "item_id": "item_006",
+      "sample_id": "wafer_00013704_014",
+      "ground_truth_class": "Edge_Loc",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 1106,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Edge_Loc",
+      "class_matches_original_label": true,
+      "raw_answer": {
+        "defect_class": "Edge_Loc",
+        "morphology": "晶圆底部边缘一块致密红色失效簇，紧贴边缘；其余区域散布孤立红点",
+        "radial_zone": "edge",
+        "clock_direction": "7点钟",
+        "extent_r": null,
+        "caption_zh": "晶圆底部偏左约7点钟方向的边缘处有一块致密红色失效簇，其余区域为稀疏散布的孤立红点。",
+        "uncertainty": "边缘簇与外围散点是否属同一模式无法确认"
+      },
+      "raw_answer_sha256": "29bdc71aade1ed49233e4a40e9fb32f56c5cd0f277c52bd5043096678ec97e28",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": false
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 31134
+    },
+    {
+      "item_id": "item_007",
+      "sample_id": "wafer_00018489_020",
+      "ground_truth_class": "Donut",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 2030,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Loc",
+      "class_matches_original_label": false,
+      "raw_answer": {
+        "defect_class": "Loc",
+        "morphology": "中部偏右下大片弥漫状红色聚集，边界不规则、密度不均，外围散布少量孤立红点",
+        "radial_zone": "middle",
+        "clock_direction": "5点钟",
+        "extent_r": null,
+        "caption_zh": "晶圆中部偏右下有一大片边界不规则的弥漫状红色失效聚集，其余区域为绿色并散布少量孤立红点。",
+        "uncertainty": "聚集范围大且弥漫、无明显致密核心，与 Center 类的界限不确定"
+      },
+      "raw_answer_sha256": "a31879b8ea5e616d2bda25c32325ed74790e1f12a6decabcee0c2142d772415d",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 35774
+    },
+    {
+      "item_id": "item_008",
+      "sample_id": "wafer_00017102_001",
+      "ground_truth_class": "Random",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 1649,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Scratch",
+      "class_matches_original_label": false,
+      "raw_answer": {
+        "defect_class": "Scratch",
+        "morphology": "多条近竖直红色条带纵贯晶圆上下，条带间夹杂绿色，另有片状红色密集区",
+        "radial_zone": "global",
+        "clock_direction": null,
+        "extent_r": null,
+        "caption_zh": "多条近竖直的红色失效条带纵贯整个晶圆，条带之间为绿色合格 die，中上部可见片状红色密集区。",
+        "uncertainty": "条带宽窄与连续性不一，片状密集区与竖直条带是否同一成因无法确认"
+      },
+      "raw_answer_sha256": "17dbfb229a033914efa47744efbc9239f2910ed708f9b1416be1cf1fca683225",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 27299
+    },
+    {
+      "item_id": "item_009",
+      "sample_id": "wafer_00011911_008",
+      "ground_truth_class": "Center",
+      "ground_truth_source": {
+        "path": "data/manifest.jsonl",
+        "line": 974,
+        "label_source": "ground_truth"
+      },
+      "predicted_class": "Center",
+      "class_matches_original_label": true,
+      "raw_answer": {
+        "defect_class": "Center",
+        "morphology": "圆心附近一块致密红色失效簇，向下方与右下方延伸出不规则枝杈，外围散布孤立红点",
+        "radial_zone": "center",
+        "clock_direction": null,
+        "extent_r": null,
+        "caption_zh": "晶圆中心附近有一块致密的红色失效簇，并有红色枝杈向下方和右下方延伸，其余区域散布孤立红点。",
+        "uncertainty": "簇带枝杈、形态不规则，与 Loc 类界限不确定"
+      },
+      "raw_answer_sha256": "a0e693e09eb7dac49f25052ef7110b629c8b4c4181877d97536f4b12ef0860f1",
+      "independent_schema": {
+        "answer_is_complete_json": true,
+        "answer_schema_valid": true,
+        "answer_json_error": null,
+        "answer_validation_error": null
+      },
+      "v2_extra_checks": {
+        "extent_r_is_null": true,
+        "no_numeric_dimensions_in_caption": true
+      },
+      "integrity": {
+        "raw_sha_matches_saved_check": true,
+        "image_sha_matches_blind": true,
+        "batch_order_matches": true,
+        "batch_image_sha_matches": true,
+        "duration_matches_epoch": true
+      },
+      "duration_ms_including_agent_steps": 48452
+    }
+  ]
+}

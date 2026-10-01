@@ -1,0 +1,27 @@
+[
+  {
+    "center_row_eps": 0.0,
+    "angle": 90.0,
+    "sector": 4
+  },
+  {
+    "center_row_eps": -1e-12,
+    "angle": 90.00000000000577,
+    "sector": 4
+  },
+  {
+    "center_row_eps": 1e-12,
+    "angle": 89.99999999999427,
+    "sector": 4
+  },
+  {
+    "center_row_eps": -1e-06,
+    "angle": 90.00000572957794,
+    "sector": 4
+  },
+  {
+    "center_row_eps": 1e-06,
+    "angle": 89.99999427042206,
+    "sector": 3
+  }
+]

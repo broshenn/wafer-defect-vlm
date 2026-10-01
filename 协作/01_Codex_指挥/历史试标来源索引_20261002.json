@@ -1,0 +1,120 @@
+{
+  "recorded_by": "Codex",
+  "date": "2026-10-02",
+  "source_root": "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719",
+  "source_preserved_in_place": true,
+  "method": "Only filename, SHA256, bytes, sample_id and http_status retained; no responses, endpoints or credentials copied.",
+  "files": [
+    {
+      "file": "call-01.json",
+      "sha256": "e2267b143218158cc27e6b1d7e2633b4dcb9718d5a990cc68d80119ed823c307",
+      "bytes": 2252,
+      "sample_id": "wafer_00011910_009",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "call-02-geometry-01.json",
+      "sha256": "c685596d339dc095a27b864d9feeb92ea9fe9d8a52d72d9c06bfbd5c54f06103",
+      "bytes": 4002,
+      "sample_id": "wafer_00017178_007",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "call-02-retry-01.json",
+      "sha256": "6d960c64f6aba9f0ffc76366b1b03ce4c288466850d895f8d5d3b5f416ac6383",
+      "bytes": 1470,
+      "sample_id": "wafer_00017178_007",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "call-02.json",
+      "sha256": "656eaab38bd38206c94a2cafc5d5486dda1805679651608ad7a1a6b3ca7b3c1f",
+      "bytes": 1431,
+      "sample_id": "wafer_00017178_007",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "call-03.json",
+      "sha256": "5eb5c3b3c19389b1e0b292f284734ccf4b46099b58ee67c5afecb9a8ae85246f",
+      "bytes": 1437,
+      "sample_id": "wafer_00012836_003",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "call-04.json",
+      "sha256": "de52bbe0a4ade645a268c7d7fe3748d8cf298091870942bb6d9ab8014058a1be",
+      "bytes": 2218,
+      "sample_id": "wafer_00015000_006",
+      "http_status": 200,
+      "evidence_kind": "response_record"
+    },
+    {
+      "file": "plan.json",
+      "sha256": "fcc88a2500bf936cbaec0725a0da0e75fb43f5297dc915a14243e7dbbe13bf23",
+      "bytes": 4334,
+      "sample_id": null,
+      "http_status": null,
+      "evidence_kind": "planned"
+    },
+    {
+      "file": "started-02.json",
+      "sha256": "2f2ae4f4972f2be4b398d51a3c6c04391fa224f2d5f18874d1798840247b816a",
+      "bytes": 142,
+      "sample_id": "wafer_00017178_007",
+      "http_status": null,
+      "evidence_kind": "started"
+    },
+    {
+      "file": "started-03.json",
+      "sha256": "09f691d6e055423b65e6ec984db86e0cdc3a9d93127287a959dc87185e509a23",
+      "bytes": 142,
+      "sample_id": "wafer_00012836_003",
+      "http_status": null,
+      "evidence_kind": "started"
+    },
+    {
+      "file": "started-04.json",
+      "sha256": "c4c70a037ef37926ae7b9709fc7ad5599bf740fe41ad59aaa781d5c1108c7607",
+      "bytes": 142,
+      "sample_id": "wafer_00015000_006",
+      "http_status": null,
+      "evidence_kind": "started"
+    },
+    {
+      "file": "started-05.json",
+      "sha256": "6d8628b4f9ac8fa3aa0de58fae2d49bfd6b17f2b1f2f1e5f03084badb6f47f07",
+      "bytes": 142,
+      "sample_id": "wafer_00025247_021",
+      "http_status": null,
+      "evidence_kind": "started"
+    },
+    {
+      "file": "started-call-02-geometry-01.json",
+      "sha256": "b7a64fc388b08fc06cddc98c6fe5cd8d05803aaca6d5dae440da001c3c142c61",
+      "bytes": 148,
+      "sample_id": "wafer_00017178_007",
+      "http_status": null,
+      "evidence_kind": "started"
+    },
+    {
+      "file": "started-call-02-retry-01.json",
+      "sha256": "7bae40dd27e2990a2397c446419c8d59f14149e8ca4ed70bbd27c654bbba66b1",
+      "bytes": 142,
+      "sample_id": "wafer_00017178_007",
+      "http_status": null,
+      "evidence_kind": "started"
+    }
+  ],
+  "not_seen_is_not_proven_never_sent": true,
+  "future_exclusion_search_roots": [
+    "kimi_k3_cost_test/",
+    "zcode_glm53flash_test/",
+    "协作/03_ZCode_标注/",
+    "D:\\pycode\\workbuddy\\wafer-cost-test\\20261001-211719"
+  ]
+}

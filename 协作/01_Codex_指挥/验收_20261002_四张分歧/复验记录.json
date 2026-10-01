@@ -1,0 +1,769 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "raw_pkl_verified": false,
+  "items": [
+    {
+      "item_id": "item_001",
+      "sample_id": "wafer_00044523_017",
+      "recovered_shape": [
+        33,
+        29
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_003",
+      "sample_id": "wafer_00025336_019",
+      "recovered_shape": [
+        64,
+        63
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_007",
+      "sample_id": "wafer_00018489_020",
+      "recovered_shape": [
+        72,
+        72
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_008",
+      "sample_id": "wafer_00017102_001",
+      "recovered_shape": [
+        41,
+        42
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_002",
+      "sample_id": "wafer_00043922_015",
+      "recovered_shape": [
+        25,
+        26
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": [
+        "angular_probability",
+        "angle_entropy_bits"
+      ]
+    },
+    {
+      "item_id": "item_004",
+      "sample_id": "wafer_00015139_006",
+      "recovered_shape": [
+        72,
+        72
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_005",
+      "sample_id": "wafer_00047178_011",
+      "recovered_shape": [
+        29,
+        26
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    },
+    {
+      "item_id": "item_006",
+      "sample_id": "wafer_00013704_014",
+      "recovered_shape": [
+        39,
+        39
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": [
+        "angular_probability",
+        "angle_entropy_bits"
+      ]
+    },
+    {
+      "item_id": "item_009",
+      "sample_id": "wafer_00011911_008",
+      "recovered_shape": [
+        30,
+        30
+      ],
+      "shape_matches_manifest": true,
+      "independent_sample_equals_recovery": true,
+      "roundtrip_pixels_differing": 0,
+      "png_sha256_matches_delivery": true,
+      "manifest_fields_differing": []
+    }
+  ],
+  "patterns": [
+    {
+      "item_id": "item_001",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 87,
+        "valid_die": 741,
+        "defect_rate": 0.1174,
+        "column_autocorr_peak_period_2_11": 0.2905,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.2088,
+          "p95": 0.3565,
+          "max": 0.4798
+        },
+        "observed_percentile_in_null": 84.7,
+        "banding_is_real_structure": false,
+        "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 9,
+            "defect_die": 2,
+            "defect_rate": 0.2222
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 22,
+            "defect_die": 0,
+            "defect_rate": 0.0
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 34,
+            "defect_die": 1,
+            "defect_rate": 0.0294
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 54,
+            "defect_die": 4,
+            "defect_rate": 0.0741
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 68,
+            "defect_die": 11,
+            "defect_rate": 0.1618
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 80,
+            "defect_die": 9,
+            "defect_rate": 0.1125
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 108,
+            "defect_die": 9,
+            "defect_rate": 0.0833
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 110,
+            "defect_die": 8,
+            "defect_rate": 0.0727
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 118,
+            "defect_die": 17,
+            "defect_rate": 0.1441
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 135,
+            "defect_die": 24,
+            "defect_rate": 0.1778
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.0645,
+        "peak_bin": 0.0,
+        "peak_rate": 0.2222,
+        "shape_note": "中心高 = 中心型"
+      }
+    },
+    {
+      "item_id": "item_003",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 132,
+        "valid_die": 3133,
+        "defect_rate": 0.0421,
+        "column_autocorr_peak_period_2_11": 0.1265,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.1582,
+          "p95": 0.2767,
+          "max": 0.4283
+        },
+        "observed_percentile_in_null": 33.0,
+        "banding_is_real_structure": false,
+        "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 30,
+            "defect_die": 0,
+            "defect_rate": 0.0
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 98,
+            "defect_die": 0,
+            "defect_rate": 0.0
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 156,
+            "defect_die": 2,
+            "defect_rate": 0.0128
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 226,
+            "defect_die": 0,
+            "defect_rate": 0.0
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 274,
+            "defect_die": 5,
+            "defect_rate": 0.0182
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 354,
+            "defect_die": 2,
+            "defect_rate": 0.0056
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 402,
+            "defect_die": 3,
+            "defect_rate": 0.0075
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 492,
+            "defect_die": 20,
+            "defect_rate": 0.0407
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 538,
+            "defect_die": 23,
+            "defect_rate": 0.0428
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 551,
+            "defect_die": 70,
+            "defect_rate": 0.127
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.0,
+        "peak_bin": 0.9,
+        "peak_rate": 0.127,
+        "shape_note": "无明显环特征"
+      }
+    },
+    {
+      "item_id": "item_007",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 640,
+        "valid_die": 4096,
+        "defect_rate": 0.1562,
+        "column_autocorr_peak_period_2_11": 0.6269,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.1484,
+          "p95": 0.2499,
+          "max": 0.3519
+        },
+        "observed_percentile_in_null": 100.0,
+        "banding_is_real_structure": true,
+        "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 44,
+            "defect_die": 2,
+            "defect_rate": 0.0455
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 120,
+            "defect_die": 11,
+            "defect_rate": 0.0917
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 212,
+            "defect_die": 48,
+            "defect_rate": 0.2264
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 272,
+            "defect_die": 84,
+            "defect_rate": 0.3088
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 372,
+            "defect_die": 152,
+            "defect_rate": 0.4086
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 448,
+            "defect_die": 111,
+            "defect_rate": 0.2478
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 524,
+            "defect_die": 71,
+            "defect_rate": 0.1355
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 616,
+            "defect_die": 40,
+            "defect_rate": 0.0649
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 676,
+            "defect_die": 36,
+            "defect_rate": 0.0533
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 770,
+            "defect_die": 68,
+            "defect_rate": 0.0883
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.0793,
+        "peak_bin": 0.4,
+        "peak_rate": 0.4086,
+        "shape_note": "中心低 + 中径峰 = 环/甜甜圈特征"
+      }
+    },
+    {
+      "item_id": "item_008",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 601,
+        "valid_die": 1334,
+        "defect_rate": 0.4505,
+        "column_autocorr_peak_period_2_11": 0.7454,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.1813,
+          "p95": 0.317,
+          "max": 0.4721
+        },
+        "observed_percentile_in_null": 100.0,
+        "banding_is_real_structure": true,
+        "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 12,
+            "defect_die": 8,
+            "defect_rate": 0.6667
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 44,
+            "defect_die": 21,
+            "defect_rate": 0.4773
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 64,
+            "defect_die": 27,
+            "defect_rate": 0.4219
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 96,
+            "defect_die": 56,
+            "defect_rate": 0.5833
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 124,
+            "defect_die": 95,
+            "defect_rate": 0.7661
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 154,
+            "defect_die": 93,
+            "defect_rate": 0.6039
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 168,
+            "defect_die": 71,
+            "defect_rate": 0.4226
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 208,
+            "defect_die": 81,
+            "defect_rate": 0.3894
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 216,
+            "defect_die": 71,
+            "defect_rate": 0.3287
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 248,
+            "defect_die": 78,
+            "defect_rate": 0.3145
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.5179,
+        "peak_bin": 0.4,
+        "peak_rate": 0.7661,
+        "shape_note": "中心高 = 中心型"
+      }
+    },
+    {
+      "item_id": "item_006",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 140,
+        "valid_die": 1169,
+        "defect_rate": 0.1198,
+        "column_autocorr_peak_period_2_11": 0.3042,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.1874,
+          "p95": 0.298,
+          "max": 0.5588
+        },
+        "observed_percentile_in_null": 95.3,
+        "banding_is_real_structure": true,
+        "verdict": "观测值高于零模型 95 分位 → 条带是真结构，不是致密连通造成的假象"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 9,
+            "defect_die": 0,
+            "defect_rate": 0.0
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 36,
+            "defect_die": 6,
+            "defect_rate": 0.1667
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 64,
+            "defect_die": 2,
+            "defect_rate": 0.0312
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 76,
+            "defect_die": 2,
+            "defect_rate": 0.0263
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 108,
+            "defect_die": 10,
+            "defect_rate": 0.0926
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 136,
+            "defect_die": 10,
+            "defect_rate": 0.0735
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 164,
+            "defect_die": 14,
+            "defect_rate": 0.0854
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 168,
+            "defect_die": 18,
+            "defect_rate": 0.1071
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 212,
+            "defect_die": 43,
+            "defect_rate": 0.2028
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 196,
+            "defect_die": 35,
+            "defect_rate": 0.1786
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.1333,
+        "peak_bin": 0.8,
+        "peak_rate": 0.2028,
+        "shape_note": "中心低 + 中径峰 = 环/甜甜圈特征"
+      }
+    },
+    {
+      "item_id": "item_009",
+      "banding_matches_delivery": true,
+      "radial_matches_delivery": true,
+      "banding": {
+        "defect_die": 161,
+        "valid_die": 693,
+        "defect_rate": 0.2323,
+        "column_autocorr_peak_period_2_11": 0.0706,
+        "null_model": {
+          "draws": 300,
+          "seed": 3407,
+          "mean": 0.1872,
+          "p95": 0.3217,
+          "max": 0.4779
+        },
+        "observed_percentile_in_null": 3.7,
+        "banding_is_real_structure": false,
+        "verdict": "观测值不高于零模型 95 分位 → 不能排除是致密连通造成的假条带"
+      },
+      "radial": {
+        "bins": [
+          {
+            "r_lo": 0.0,
+            "r_hi": 0.1,
+            "valid_die": 4,
+            "defect_die": 4,
+            "defect_rate": 1.0
+          },
+          {
+            "r_lo": 0.1,
+            "r_hi": 0.2,
+            "valid_die": 28,
+            "defect_die": 23,
+            "defect_rate": 0.8214
+          },
+          {
+            "r_lo": 0.2,
+            "r_hi": 0.3,
+            "valid_die": 28,
+            "defect_die": 10,
+            "defect_rate": 0.3571
+          },
+          {
+            "r_lo": 0.3,
+            "r_hi": 0.4,
+            "valid_die": 52,
+            "defect_die": 15,
+            "defect_rate": 0.2885
+          },
+          {
+            "r_lo": 0.4,
+            "r_hi": 0.5,
+            "valid_die": 60,
+            "defect_die": 9,
+            "defect_rate": 0.15
+          },
+          {
+            "r_lo": 0.5,
+            "r_hi": 0.6,
+            "valid_die": 84,
+            "defect_die": 14,
+            "defect_rate": 0.1667
+          },
+          {
+            "r_lo": 0.6,
+            "r_hi": 0.7,
+            "valid_die": 76,
+            "defect_die": 10,
+            "defect_rate": 0.1316
+          },
+          {
+            "r_lo": 0.7,
+            "r_hi": 0.8,
+            "valid_die": 116,
+            "defect_die": 13,
+            "defect_rate": 0.1121
+          },
+          {
+            "r_lo": 0.8,
+            "r_hi": 0.9,
+            "valid_die": 112,
+            "defect_die": 9,
+            "defect_rate": 0.0804
+          },
+          {
+            "r_lo": 0.9,
+            "r_hi": 1.0,
+            "valid_die": 131,
+            "defect_die": 54,
+            "defect_rate": 0.4122
+          }
+        ],
+        "center_rate_r_lt_0_2": 0.8438,
+        "peak_bin": 0.0,
+        "peak_rate": 1.0,
+        "shape_note": "中心高 = 中心型"
+      }
+    }
+  ],
+  "checker": {
+    "self_test": {
+      "returncode": 0,
+      "stdout": "==========================================================================\n格式检查器 v2 自测（21 条路径，不发任何模型请求）\n==========================================================================\n  ✓ 合法：unknown 类别应通过                             期望 0 实得 0\n  ✓ 合法：7点钟 描述应通过                                 期望 0 实得 0\n  ✓ 合法：7/8点钟 描述应通过                               期望 0 实得 0\n  ✓ 合法：字段顺序不同但集合完整（提示词只要求包含）                     期望 0 实得 0\n  ✓ 合法：uncertainty 为空串（提示词写明「无则空字符串」）            期望 0 实得 0\n  ✓ 失败：截断 JSON                                   期望 2 实得 2\n  ✓ 失败：非法 JSON（单引号）                              期望 2 实得 2\n  ✓ 失败：顶层是数组                                     期望 3 实得 3\n  ✓ 失败：顶层是字符串                                    期望 3 实得 3\n  ✓ 失败：缺字段                                       期望 4 实得 4\n  ✓ 失败：多字段（字段名集合不符）                              期望 4 实得 4\n  ✓ 失败：类型错误（defect_class 是数字）                    期望 5 实得 5\n  ✓ 失败：类型错误（morphology 为空串）                      期望 5 实得 5\n  ✓ 失败：类型错误（clock_direction 是数字）                 期望 5 实得 5\n  ✓ 失败：未知枚举（defect_class）                        期望 6 实得 6\n  ✓ 失败：未知枚举（radial_zone）                         期望 6 实得 6\n  ✓ 失败：extent_r 非 null（数值）                       期望 7 实得 7\n  ✓ 失败：extent_r 非 null（字符串）                      期望 7 实得 7\n  ✓ 失败：描述里写数值尺寸（0.65R）                           期望 8 实得 8\n  ✓ 失败：描述里写覆盖率百分比                                期望 8 实得 8\n  ✓ 边界：钟点 + 真实数值同时出现，仍要报失败                       期望 8 实得 8\n\n通过 21/21\n出现过的退出码集合 = [0, 2, 3, 4, 5, 6, 7, 8]  (可区分成功与失败)\n",
+      "stderr": ""
+    },
+    "nine_raw": {
+      "returncode": 0,
+      "stdout": "  ✓ wafer_00011911_008_raw.json        exit=0  \n  ✓ wafer_00013704_014_raw.json        exit=0  \n  ✓ wafer_00015139_006_raw.json        exit=0  \n  ✓ wafer_00017102_001_raw.json        exit=0  \n  ✓ wafer_00018489_020_raw.json        exit=0  \n  ✓ wafer_00025336_019_raw.json        exit=0  \n  ✓ wafer_00043922_015_raw.json        exit=0  \n  ✓ wafer_00044523_017_raw.json        exit=0  \n  ✓ wafer_00047178_011_raw.json        exit=0  \n\n9 个文件；最差退出码 0（全部通过）\n",
+      "stderr": ""
+    },
+    "list_type_probe": {
+      "exception": "TypeError",
+      "message": "unhashable type: 'list'"
+    },
+    "sequential_stop": {
+      "attempts": [
+        {
+          "file": "a_ok_raw.json",
+          "exit_code": 0,
+          "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_四张分歧\\停止验证输入\\a_ok_raw.json: exit=0 (通过)\n",
+          "stderr": ""
+        },
+        {
+          "file": "b_truncated_raw.json",
+          "exit_code": 2,
+          "stdout": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_四张分歧\\停止验证输入\\b_truncated_raw.json: exit=2 (不是合法 JSON（含截断）)\n  - JSON 解析失败：Expecting ',' delimiter: line 1 column 25 (char 24)\n",
+          "stderr": ""
+        }
+      ],
+      "third_checked": false
+    }
+  },
+  "source_sha256": {
+    "analyze_four.py": "180cd93daf1a2f781552c9da1d8678f2fbf106569bab18ef1bba7b20022740ba",
+    "check_answer_v2.py": "2b61ac4ca8925f825740600f39766e293130e384ee95e3a464b74b179a2231eb",
+    "patterns.py": "92689f73ba9b89f2fcf6f0891215c7c6b25894d80869924c44ef53c9ad119f31",
+    "wafer_png.py": "cd2242eacb7449c8590f4671dd2ed2d6ee2d0fd11316d18abd0003259e2bec66",
+    "图案诊断.json": "7b0bf2826b1c0a07c709a7ee9a457572b0e0dc5bf8ba6c825741a847fb15544e",
+    "核查报告.md": "c971362cfff3c6839c8abb259da81b65cea24f22c70d28a34b54ea19376e125e",
+    "核查结果.json": "8d099b24c45e28cce65edc8bbda1dc6abb84bd2313066065bb8c676103ea6182",
+    "给Codex的回复.md": "0ec4bca14add2b3f91b7ea8ac4d95f413a9584816b2651b550341d7254a8a5ce"
+  }
+}
