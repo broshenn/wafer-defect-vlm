@@ -1,0 +1,19 @@
+{
+  "sample_id": "wafer_00025336_019",
+  "raw_bytes": 418,
+  "raw_sha256": "44081e3b776e913ca646289adf0963ab9b74f5d20089f994cdeffe08cb394446",
+  "json_parse_ok": true,
+  "n_fields": 7,
+  "field_checks": {
+    "keys_exact_order": true,
+    "defect_class_enum": true,
+    "morphology_str_nonempty": true,
+    "radial_zone_enum": true,
+    "clock_direction_null_or_str": true,
+    "extent_r_is_null": true,
+    "caption_zh_str_nonempty": true,
+    "uncertainty_str": true
+  },
+  "format_pass": true,
+  "checked_at": "2026-10-02 01:23:19 +0800"
+}

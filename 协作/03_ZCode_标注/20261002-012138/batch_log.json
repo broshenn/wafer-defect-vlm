@@ -1,0 +1,30 @@
+{
+  "batch": "v2_small_batch_20261002",
+  "task_source": "Codex 任务书（用户转交），最多 9 张、每张一次标注尝试",
+  "created": "2026-10-02 01:21:39 +0800",
+  "finished": "2026-10-02 01:28:36 +0800",
+  "prompt_file": "D:/pycode/晶圆图研究/协作/01_Codex_指挥/prompt_image_only_v2_20261002.txt",
+  "prompt_sha256_bytes_and_lf": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "blind_list": "D:/pycode/晶圆图研究/协作/02_ClaudeCode_实操/准备_20261002_九类试标/blind_inputs.jsonl",
+  "blind_list_sha256": "fa44b215087c1a9ef0f3d42ec5ede6b93a5a96b3e239afe363f3a3e3c9687a03",
+  "visual_input_method": "ZCode 客户端内置文件读取工具逐张读取原位置 PNG 作为会话模型视觉输入；每张恰好一次视觉读取；无拼图、无中间模型解读、无几何程序预读；原始工具调用日志无法由会话内导出（未提供）",
+  "client": {
+    "app_version": "ZCode 3.14.4 (build 10bbcea5, production)",
+    "plan": "Start Plan（客户端会话配置声明）",
+    "model_display_name": "GLM-5.3-Flash",
+    "backend_model_identity": "未提供（无法独立核验）"
+  },
+  "items": [
+    {"item_id": "item_001", "sample_id": "wafer_00044523_017", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00044523_017.png", "image_sha256_expected": "3cc6a23a612070209bccab6d1817c8018f82314ed122dbe5b89ff4283c253108", "fingerprint_match": true, "t0": "2026-10-02 01:21:46 +0800 (1790875306628)", "t1": "2026-10-02 01:22:13 +0800 (1790875333627)", "duration_ms": 26999, "status": "success", "format_pass": true},
+    {"item_id": "item_002", "sample_id": "wafer_00043922_015", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00043922_015.png", "image_sha256_expected": "6cbb3a5312cca7fbd6a52a9c306270ba0cec3294c7c58a250f431a950ce6b72c", "fingerprint_match": true, "t0": "2026-10-02 01:22:19 +0800 (1790875339603)", "t1": "2026-10-02 01:22:39 +0800 (1790875359742)", "duration_ms": 20139, "status": "success", "format_pass": true},
+    {"item_id": "item_003", "sample_id": "wafer_00025336_019", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00025336_019.png", "image_sha256_expected": "37efe27766fcc5714c359913ec035c756ae70458f5cd0a8f1a451f8e604c9f52", "fingerprint_match": true, "t0": "2026-10-02 01:22:45 +0800 (1790875365792)", "t1": "2026-10-02 01:23:19 +0800 (1790875399600)", "duration_ms": 33808, "status": "success", "format_pass": true},
+    {"item_id": "item_004", "sample_id": "wafer_00015139_006", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00015139_006.png", "image_sha256_expected": "09c52a5710e6d0f98aade88d1ec6815bc94059796d3701c299d892a526062097", "fingerprint_match": true, "t0": "2026-10-02 01:23:29 +0800 (1790875409333)", "t1": "2026-10-02 01:24:02 +0800 (1790875442593)", "duration_ms": 33260, "status": "success", "format_pass": true},
+    {"item_id": "item_005", "sample_id": "wafer_00047178_011", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00047178_011.png", "image_sha256_expected": "eea40316665a5ff785f6bc38713bd7b1d106fc31a57c45c72e85da2d14c8f06c", "fingerprint_match": true, "t0": "2026-10-02 01:24:08 +0800 (1790875448670)", "t1": "2026-10-02 01:25:22 +0800 (1790875522690)", "duration_ms": 74020, "status": "success", "format_pass": true},
+    {"item_id": "item_006", "sample_id": "wafer_00013704_014", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00013704_014.png", "image_sha256_expected": "98964451b6ebb64bd1c12b5c299a67eb31dbaaa783b8f2e548275fb255e4f122", "fingerprint_match": true, "t0": "2026-10-02 01:25:28 +0800 (1790875528399)", "t1": "2026-10-02 01:25:59 +0800 (1790875559533)", "duration_ms": 31134, "status": "success", "format_pass": true},
+    {"item_id": "item_007", "sample_id": "wafer_00018489_020", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00018489_020.png", "image_sha256_expected": "5810e3183a240e3f252570adf9516237704667c18ad2569fee78df84ce9072cf", "fingerprint_match": true, "t0": "2026-10-02 01:26:05 +0800 (1790875565205)", "t1": "2026-10-02 01:26:40 +0800 (1790875600979)", "duration_ms": 35774, "status": "success", "format_pass": true},
+    {"item_id": "item_008", "sample_id": "wafer_00017102_001", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00017102_001.png", "image_sha256_expected": "ffb560d3369ebb0ecffbb47dc53c4ce5d5d03e4e416a4d94a6ec8199354c19a4", "fingerprint_match": true, "t0": "2026-10-02 01:26:53 +0800 (1790875613596)", "t1": "2026-10-02 01:27:20 +0800 (1790875640895)", "duration_ms": 27299, "status": "success", "format_pass": true},
+    {"item_id": "item_009", "sample_id": "wafer_00011911_008", "image_path": "D:/pycode/晶圆图研究/data/images/wafer_00011911_008.png", "image_sha256_expected": "55d53fa9c6d637476a51246d8fe2e6618d8083952df52e7b41fdf8a37fb36268", "fingerprint_match": true, "t0": "2026-10-02 01:27:48 +0800 (1790875668563)", "t1": "2026-10-02 01:28:36 +0800 (1790875717015)", "duration_ms": 48452, "status": "success", "format_pass": true}
+  ],
+  "timing_note": "duration_ms 为 T0(发出指纹核验与读图请求)至 T1(原答回答写盘并完成格式检查后的下一时点)，含客户端 Agent 的多个回合（读图、生成、写盘、校验），是上界估计，不是纯模型请求延迟",
+  "context_disclosure": "同一会话顺序处理 9 张：后续图片的模型上下文包含先前图片与此前的自身回答，不是相互独立的 API 调用；会话还包含首轮单张试标历史（v1 图 wafer_00016894_009 及其核验结论，与本批无重叠）、客户端注入的 AGENTS.md 与本任务书原文。后端请求数、自动重试情况未提供。"
+}
