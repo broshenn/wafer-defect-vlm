@@ -1,0 +1,9 @@
+{
+ "path": "wafer_00017158_020_raw.json",
+ "exit_code": 0,
+ "failures": [],
+ "detail": {
+  "clock_expressions_stripped": {},
+  "field_order_matches_prompt": true
+ }
+}
