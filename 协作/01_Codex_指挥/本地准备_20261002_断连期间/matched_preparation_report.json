@@ -1,0 +1,35 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "seed": 3407,
+  "source_script": "协作/02_ClaudeCode_实操/学校训练准备_20261002-025848/make_swift_dataset.py",
+  "source_script_sha256": "8298fcb73786576d17deee48067ed9dda4569ca158157368c34bd99d94a8483b",
+  "source_question_line": 36,
+  "question_sha256": "253553c7c3768ac72fe11536e09fe12b84f96dc2ef67e6d4b1ee0114d9126b71",
+  "input_sha256": {
+    "train_180.ms_swift.jsonl": "f22d386fe8d44744866a6d449fe96fc8f73802b59e1f43bdd26c9d30b6ba3fa7",
+    "dev_18.ms_swift.jsonl": "283544dc8bd0576e522817af18fabeb0c53c68c4188375750cc37f1a2ee5db2f",
+    "smoke_20.ms_swift.jsonl": "7de37ca47c50796294ae73035de3eed70076b1ff083a5a22b7b456ee4725f3d3"
+  },
+  "rows": {
+    "train_180": 180,
+    "dev_18": 18,
+    "smoke_20": 20
+  },
+  "output_sha256": {
+    "classification_prompt_server_v2.txt": "253553c7c3768ac72fe11536e09fe12b84f96dc2ef67e6d4b1ee0114d9126b71",
+    "train_180.matched.ms_swift.jsonl": "7b306f00b9d7da970655099512a8e05a6df32d31c134a942c207d197b89be861",
+    "dev_18.matched.ms_swift.jsonl": "5a96fe15321865c005370610aebf66e1cc8e5282bf9881e5f70351f36c9fa19c",
+    "smoke_20.matched.ms_swift.jsonl": "3d2d133b48807ed4483a29cb7a3b6133ef18c53ab2c408cecd42706be4a6e05e"
+  },
+  "message_roles": [
+    "user",
+    "assistant"
+  ],
+  "extra_system_message": false,
+  "user_prefix": "<image>",
+  "newline_after_image": false,
+  "selection_labels_splits_unchanged": true,
+  "server_baseline_prompt_verified": false,
+  "note": "沿用执行方修正源码题面；实际远端基座原答中的题面与模板仍待核对。"
+}

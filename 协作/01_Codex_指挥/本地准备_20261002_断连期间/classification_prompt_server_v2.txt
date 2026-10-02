@@ -1,0 +1,1 @@
+这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。请从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个最符合主要图案的类别。只输出一个 JSON 对象，形如 {"defect_class":"类别"}；无法可靠判断时填 {"defect_class":"unknown"}。

@@ -1,0 +1,95 @@
+{
+  "seed": 3407,
+  "selection_unchanged": true,
+  "source_manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "sets": {
+    "train_180": {
+      "rows": 180,
+      "unique_ids": 180,
+      "unique_lots": 180,
+      "unique_image_hashes": 180,
+      "per_class": {
+        "Random": 20,
+        "Loc": 20,
+        "Edge_Loc": 20,
+        "Near_full": 20,
+        "Donut": 20,
+        "Edge_Ring": 20,
+        "Scratch": 20,
+        "Center": 20,
+        "none": 20
+      },
+      "source_sha256": "04febd99674f70bf4619c3b529fe4c1313a5b8d739e89c69c390fe686324db47"
+    },
+    "dev_18": {
+      "rows": 18,
+      "unique_ids": 18,
+      "unique_lots": 18,
+      "unique_image_hashes": 18,
+      "per_class": {
+        "Edge_Ring": 2,
+        "Scratch": 2,
+        "Donut": 2,
+        "Center": 2,
+        "Random": 2,
+        "none": 2,
+        "Loc": 2,
+        "Near_full": 2,
+        "Edge_Loc": 2
+      },
+      "source_sha256": "08b267ea73def5b3119dbf6ca73d27630ef565bb4011f6e53b404d753f7972ac"
+    },
+    "smoke_20": {
+      "rows": 20,
+      "unique_ids": 20,
+      "unique_lots": 20,
+      "unique_image_hashes": 20,
+      "per_class": {
+        "Edge_Ring": 3,
+        "Edge_Loc": 2,
+        "Loc": 2,
+        "Donut": 2,
+        "Random": 2,
+        "Center": 2,
+        "Scratch": 3,
+        "none": 2,
+        "Near_full": 2
+      },
+      "source_sha256": "f59ae6ba5ba917fae410a9a82f6747c886abde20df189878093467242dd98eec"
+    }
+  },
+  "unique_train_dev_images": 198,
+  "smoke_is_train_subset": true,
+  "lot_intersections": {
+    "train_dev": 0,
+    "train_test": 0,
+    "dev_test": 0,
+    "train_benchmark": 0,
+    "dev_benchmark": 0,
+    "train_zcode": 0,
+    "dev_zcode": 0
+  },
+  "classification_prompt_sha256": "deb547111771e00c2a0e3a646697f48750702ae4d3aef19c7924c412dc440e14",
+  "source_prompt_missing_candidates": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Near_full",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "prompt_version": "classification_v3_codex_20261002",
+  "server_baseline_3_of_18_reusable": false,
+  "note": "服务器基座v2题面原件未取得，不能假定与新题面字节相同；新题面需同题基座输出后再比较。",
+  "output_sha256": {
+    "train_180.ms_swift.jsonl": "f22d386fe8d44744866a6d449fe96fc8f73802b59e1f43bdd26c9d30b6ba3fa7",
+    "dev_18.ms_swift.jsonl": "283544dc8bd0576e522817af18fabeb0c53c68c4188375750cc37f1a2ee5db2f",
+    "smoke_20.ms_swift.jsonl": "7de37ca47c50796294ae73035de3eed70076b1ff083a5a22b7b456ee4725f3d3",
+    "classification_prompt_v3.txt": "47b61493b0c990b9b584c5cfed7c561efcd04abdefb8ddbe3d282307c755593a",
+    "system_prompt.txt": "581dd40af496fe9d9a5faa89182b97358bcfb07aa8332c3e02d85d3a5ef2ace8",
+    "selected_image_fingerprints.jsonl": "9ce9f865d089112eef4af73f0d43daf37cca1183102124956aafaaa79c808910"
+  }
+}

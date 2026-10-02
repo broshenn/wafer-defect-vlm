@@ -1,0 +1,299 @@
+{
+  "summary": {
+    "planned": 18,
+    "blind_rows": 18,
+    "raw_files": 18,
+    "tsv_rows": 18,
+    "unique_ids": 18,
+    "input_hashes_pass": true,
+    "rows_pass": 18,
+    "unknown": 0,
+    "all_extent_null": true,
+    "prediction_counts": {
+      "Random": 7,
+      "Center": 2,
+      "Loc": 1,
+      "Near_full": 2,
+      "Edge_Loc": 2,
+      "Scratch": 3,
+      "Edge_Ring": 1
+    },
+    "batch_start": "2026-10-02 02:49:37 +0800",
+    "batch_end": "2026-10-02 02:56:51 +0800",
+    "backend_and_calls_verified": false,
+    "human_review": false,
+    "path_lexical_only_differences": 18,
+    "original_label_agreements": 9,
+    "original_label_agreement_rate": 0.5,
+    "original_label_counts": {
+      "Random": 2,
+      "Center": 2,
+      "none": 2,
+      "Donut": 2,
+      "Loc": 2,
+      "Near_full": 2,
+      "Edge_Ring": 2,
+      "Scratch": 2,
+      "Edge_Loc": 2
+    },
+    "label_agreement_is_visual_accuracy": false,
+    "review_kind": "nonblind_model_review"
+  },
+  "per_class_agreement": {
+    "Center": {
+      "total": 2,
+      "agree": 2
+    },
+    "Donut": {
+      "total": 2,
+      "agree": 0
+    },
+    "Edge_Loc": {
+      "total": 2,
+      "agree": 1
+    },
+    "Edge_Ring": {
+      "total": 2,
+      "agree": 1
+    },
+    "Loc": {
+      "total": 2,
+      "agree": 0
+    },
+    "Near_full": {
+      "total": 2,
+      "agree": 2
+    },
+    "Random": {
+      "total": 2,
+      "agree": 2
+    },
+    "Scratch": {
+      "total": 2,
+      "agree": 1
+    },
+    "none": {
+      "total": 2,
+      "agree": 0
+    }
+  },
+  "rows": [
+    {
+      "item_id": "item_001",
+      "sample_id": "wafer_00043234_006",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4197,
+      "original_class": "Random",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_002",
+      "sample_id": "wafer_00012145_017",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 999,
+      "original_class": "Center",
+      "label_source": "ground_truth",
+      "prediction": "Center",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_003",
+      "sample_id": "wafer_00043109_011",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4162,
+      "original_class": "none",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_004",
+      "sample_id": "wafer_00017113_023",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 1676,
+      "original_class": "Donut",
+      "label_source": "ground_truth",
+      "prediction": "Loc",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_005",
+      "sample_id": "wafer_00042242_008",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 3802,
+      "original_class": "Loc",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_006",
+      "sample_id": "wafer_00046498_018",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 5502,
+      "original_class": "Near_full",
+      "label_source": "ground_truth",
+      "prediction": "Near_full",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_007",
+      "sample_id": "wafer_00045576_015",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 5053,
+      "original_class": "Near_full",
+      "label_source": "ground_truth",
+      "prediction": "Near_full",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_008",
+      "sample_id": "wafer_00044802_022",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4758,
+      "original_class": "Edge_Ring",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_009",
+      "sample_id": "wafer_00043676_016",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4323,
+      "original_class": "none",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_010",
+      "sample_id": "wafer_00044039_015",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4478,
+      "original_class": "Scratch",
+      "label_source": "ground_truth",
+      "prediction": "Edge_Loc",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_011",
+      "sample_id": "wafer_00040360_012",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 3272,
+      "original_class": "Loc",
+      "label_source": "ground_truth",
+      "prediction": "Scratch",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_012",
+      "sample_id": "wafer_00037907_010",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 3122,
+      "original_class": "Scratch",
+      "label_source": "ground_truth",
+      "prediction": "Scratch",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_013",
+      "sample_id": "wafer_00014492_011",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 1250,
+      "original_class": "Edge_Ring",
+      "label_source": "ground_truth",
+      "prediction": "Edge_Ring",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_014",
+      "sample_id": "wafer_00017158_020",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 1828,
+      "original_class": "Donut",
+      "label_source": "ground_truth",
+      "prediction": "Scratch",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_015",
+      "sample_id": "wafer_00043975_024",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4449,
+      "original_class": "Edge_Loc",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": false
+    },
+    {
+      "item_id": "item_016",
+      "sample_id": "wafer_00026394_017",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 2654,
+      "original_class": "Edge_Loc",
+      "label_source": "ground_truth",
+      "prediction": "Edge_Loc",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_017",
+      "sample_id": "wafer_00044805_011",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 4765,
+      "original_class": "Random",
+      "label_source": "ground_truth",
+      "prediction": "Random",
+      "original_label_agreement": true
+    },
+    {
+      "item_id": "item_018",
+      "sample_id": "wafer_00036981_003",
+      "passed": true,
+      "checker_semantics_same": true,
+      "checker_paths_same_target": true,
+      "manifest_line": 3089,
+      "original_class": "Center",
+      "label_source": "ground_truth",
+      "prediction": "Center",
+      "original_label_agreement": true
+    }
+  ],
+  "note": "原始类标经 manifest 核对；一致率不是人审视觉准确率。首次0/18是路径字符串比较过严，18个格式检查退出码本来均为0。"
+}

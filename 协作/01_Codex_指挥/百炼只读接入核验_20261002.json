@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-02",
+  "operator": "Codex",
+  "endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1/models",
+  "method": "GET",
+  "credential_source": "用户在当前会话提供并明确授权使用；隐藏终端输入，进程内存读取；不在产物中保存其值或指纹",
+  "attempts": [
+    {"credential_present": false, "http_status": 401, "note": "首次无TTY stdin已关闭，读取为空；不能据此判定用户密钥无效"},
+    {"credential_present": true, "http_status": 200, "model_count": 261,
+     "selected_returned_model_ids": ["qwen3.8-max", "qwen3.8-max-0902", "kimi-k3", "kimi/kimi-k3"]}
+  ],
+  "inference_requests": 0,
+  "model_vision_success": "not run",
+  "teacher_qualification": "not run",
+  "token_usage": "未提供；未调用生成接口",
+  "account_cost": "未查询；不伪造为0",
+  "total_test_budget": "待用户回答既有预算问题",
+  "credential_written_to_repository": false,
+  "note": "模型列表记录不证明对应模型的视觉请求权限、套餐覆盖或可用余额。"
+}
