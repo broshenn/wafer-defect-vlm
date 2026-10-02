@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_003",
+ "sample_id": "wafer_00043109_011",
+ "image_sha256": "522321152ee483fcae6dc02bfb223cf0b84cdd23d48827d5ef4b223d887ac914",
+ "payload_sha256": "770dc23620425184d9ab42d9b500dbeeb97e9750bf4da13f4b2587e244054388",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:50:15.215080+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 17.947,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"离散红色小方块遍布全圆，边缘有零星散点，但无连续线状、环状或单一主簇\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以离散小方块随机分布在绿色晶圆全域，边缘仅见零星散点，未见明显环带、划痕或单一主簇。\\\",\\\"uncertainty\\\":\\\"边缘散点不足以可靠判定为Edge_Ring或Edge_Loc。\\\"}\",\"reasoning_content\":\"用户要求基于一张晶圆BIN图进行分类。需要只输出一个JSON对象，包含七字段。需要分析图像内容。\\n\\n图像：圆形绿色晶圆区域，黑色外部。绿色合格die，红色失效die。红色die分布看似随机散布在整个晶圆，但也有较明显的边缘集中？需要识别主要图案类别从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。不能推测根因，不凭散点断噪声，不写未见模式。需要选择最符合主要图案的一类；无法可靠选择填unknown。\\n\\n观察：红色失效die散布在很多位置，包括中心和边缘，整体数量较多但绿色仍占多数。似乎没有单一明显局部簇、没有中心聚集、没有环形 donut、没有整圈边缘环、没有 scratch 线。外围散点：在靠近边缘处有一些红色die，特别在右侧3点钟附近有若干红色die和外部黑边相邻？左下约7-8点钟边缘有一小簇红die沿着边缘/缺口，右下4-5点钟有几颗，顶部12点附近也有几颗。但这些并不构成明显 edge ring，只是随机散点 plus 少量外围散点。主要图案更像 Random：失效die随机分布于晶圆各处，无明确空间结构。radial_zone: global （遍布整个晶圆） 或 unknown? 既然随机整面分布，radial_zone=global。clock_direction null。extent_r null。morphology简短中文：红色失效die呈散点状遍布晶圆，未见连续线状/环状/单一大簇；边缘有零星散点。caption一句话客观描述主要形态与位置：绿色晶圆内红色失效die随机散布于中心、中部和边缘，边缘仅有零星散点，无明显主导局部图案。uncertainty: 外围散点不构成可可靠判定的边缘环或局部簇。 Should output JSON only.\\n\\nNeed ensure valid JSON, seven fields exactly. defect_class from list: Random. radial_zone one of center/middle/edge/global/unknown/none. Use global. clock_direction null. extent_r null. uncertainty string. No markdown.\\n\\nNeed be careful: If red fails are numerous and distributed across wafer, Near_full? Near_full means almost all die failing? Here green majority, so not Near_full. Random likely. Could there be Edge_Loc at lower-left edge? There is a visible cluster at edge around 7-8 o'clock and right side around 3 o'clock. But user asks major pattern and peripheral scattered points; cannot conclude scatter are noise; but also cannot write unseen patterns. The dominant visible pattern is random scattering with some edge points. There is no strong single localized defect. Random.\\n\\nNeed morphology \\\"主要可见形态的简短中文描述\\\" perhaps \\\"离散红色小方块遍布全圆，局部边缘有零星聚集但无连续结构\\\". Good.\\n\\nCaption_zh: \\\"红色失效die以离散小方块随机分布在绿色晶圆全域，边缘仅见零星散点，未见明显环带、划痕或单一主簇。\\\" This says no obvious ring etc. OK.\\n\\nUncertainty: \\\"边缘散点不足以可靠判定为Edge_Ring或Edge_Loc。\\\" Good.\\n\\nNeed final only JSON. Ensure Chinese strings escaped? can output raw UTF-8. JSON null for clock/extent. Done.\",\"role\":\"assistant\"}}],\"created\":1790930997,\"id\":\"chatcmpl-7770ffd2-7efb-91b3-ba66-88246423b336\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":804,\"completion_tokens_details\":{\"reasoning_tokens\":680,\"text_tokens\":124},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1414}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 804,
+  "completion_tokens_details": {
+   "reasoning_tokens": 680,
+   "text_tokens": 124
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1414
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"离散红色小方块遍布全圆，边缘有零星散点，但无连续线状、环状或单一主簇\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die以离散小方块随机分布在绿色晶圆全域，边缘仅见零星散点，未见明显环带、划痕或单一主簇。\",\"uncertainty\":\"边缘散点不足以可靠判定为Edge_Ring或Edge_Loc。\"}"
+}

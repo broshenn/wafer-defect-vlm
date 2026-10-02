@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_007",
+ "sample_id": "wafer_00045576_015",
+ "image_sha256": "f7f4a9b79380b5c07ab4247fc713854a0840fa36ddcb0f894453e15b8cc93129",
+ "payload_sha256": "197f9ef576ac8b9a1e07c5b84e39b7e2546410bedd5bc88bdf3bd61eb20de33a",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:06:54.826033+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 27.542,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Near_full\\\",\\\"morphology\\\":\\\"晶圆面几乎全部为红色失效die，仅外围与内部零星散布少量绿色合格die散点\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆全局近乎全部为红色失效die，绿色合格die仅以零星散点见于外围及内部局部。\\\",\\\"uncertainty\\\":\\\"外围绿色散点略多，但是否构成不完整边缘环状无法可靠确认\\\"}\",\"reasoning_content\":\"用户要求分析晶圆 BIN 图。图像内容：黑色背景（晶圆外），圆形晶圆区域大部分为红色（失效 die），绿色（合格 die）散布其中。观察图案：整体几乎全红，绿色散点分布于边缘部和内部各处。\\n\\n观察图像：晶圆整体几乎被红色覆盖，绿色 die 零散分布。边缘部分（外围）绿色较多？查看：边缘环状区域有部分绿色块：左侧（9点钟方向）、左上、右上、右侧、下侧等外围处可见绿色块。内部也有零星绿色散点（中心附近也有少量）。\\n\\n主要图案：几乎全红（失效），绿色散点随机分布？或者绿色集中在边缘？观察：边缘环状：左上（10-11点）、左（9点）、左下（7-8点）、下（6点）、右（3点）、右上（2点）等有绿色块。内部也有散点：中心附近（约中心）、中左、中右等有零星绿色。\\n\\n实际上红色占绝大多数，绿色为散点状。类别候选：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n此处\\\"合格 die\\\"为绿色，\\\"失效 die\\\"为红色。缺陷图案指失效（红色）的分布吗？通常 BIN 图的缺陷类指失效 die 的图案。但此处红色几乎覆盖整个晶圆，绿色为散点。即失效遍布全局＝Near_full？Near_full 指几乎整个晶圆失效。红色覆盖率极高，绿色仅为散点（边缘和内部零星）。\\n\\n主要图案：红色几乎满布＝Near_full？或者绿色散点视为噪声？但指示说\\\"不能仅凭散点断定其为噪声\\\"。此处散点是绿色（合格），而主要图案是红色（失效）的近全覆盖。\\n\\n类别定义推测：\\n- Center：中心集中失效\\n- Donut：环状失效（中心正常）\\n- Edge_Loc：边缘局部失效\\n- Edge_Ring：边缘环状失效\\n- Loc：局部集中失效\\n- Near_full：近乎全面失效\\n- Random：随机散布失效\\n- Scratch：划痕状失效\\n- none：无显著图案（正常）\\n\\n本图：红色（失效）几乎覆盖整个晶圆面，绿色（合格）仅为边缘和内部的零星散点。因此主要图案＝Near_full（近乎全面失效）。\\n\\nradial_zone：global（全局）。\\nclock_direction：null（全局图案）。\\nextent_r：null。\\nmorphology：简短中文描述：\\\"晶圆面几乎全部为红色失效die，仅外围与内部零星散布少量绿色合格die\\\"。\\ncaption_zh：\\\"晶圆全局近乎全部为红色失效die，绿色合格die仅呈零星散点分布于外围及内部。\\\"\\nuncertainty：绿色散点是否构成某种图案（如边缘环状的不完整绿环）不确定？但主要图案为近全红。不确定性可写：\\\"绿色合格die散点是否代表残留正常区域不确定\\\"或空字符串。考虑：指示要求\\\"只描述实际可见的主要图案和外围散点\\\"。主要图案＝近全红（Near_full）。外围散点＝绿色散点于边缘处稍多？实际边缘绿色块：左上、左、左下、下、右、右上等，呈不完整环状？但内部也有绿色散点。\\n\\n判断：红色几乎全覆盖→Near_full。绿色散点为次要元素。\\n\\nclock_direction：null（全局）。\\nradial_zone：global。\\nmorphology：\\\"整片近乎全红的失效覆盖，仅见零星绿色合格die散点（外围稍多）\\\"。\\ncaption_zh：\\\"晶圆呈近乎全红的失效覆盖，绿色合格die仅以零星散点见于外围与内部。\\\"\\nuncertainty：\\\"绿色散点在外围略多但是否构成边缘环状不确定\\\"或空。稳妥起见填写：\\\"外围绿色散点略多，但是否构成边缘环状不确定\\\"。\\n\\n但指示：\\\"不能仅凭散点就断定它们是噪声\\\"——此处散点为绿色合格die，主要图案为红色近全覆。Near_full 选择合理。\\n\\n再确认图像：红色确实占绝大多数。绿色块大小：边缘处有几个 die 大小的块，内部为单点或小块。整体红色覆盖率目视约90%以上。故 Near_full。\\n\\n输出JSON：\\n{\\\"defect_class\\\":\\\"Near_full\\\",\\\"morphology\\\":\\\"晶圆面几乎全部为红色失效die，仅外围与内部零星散布少量绿色合格die\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆全局近乎全部为红色失效die，绿色合格die仅呈零星散点分布于外围及内部。\\\",\\\"uncertainty\\\":\\\"外围绿色散点稍多，但是否构成不完整边缘环状不确定\\\"}\\n\\nclock_direction 字段说明：仅在可靠识别局部缺陷方向时填写；中央、整圈、全局、正常或不确定时为 null。本例为全局→null。\\n\\n仅输出一个JSON对象，不含Markdown代码块？\\\"仅输出一个 JSON 对象，不写推理过程或 Markdown\\\"。故直接输出JSON文本。\",\"role\":\"assistant\"}}],\"created\":1790931987,\"id\":\"chatcmpl-43823dd4-1982-9958-b6d3-77831f2fbc9f\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1186,\"completion_tokens_details\":{\"reasoning_tokens\":1084,\"text_tokens\":101},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1680}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1186,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1084,
+   "text_tokens": 101
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1680
+ },
+ "answer_text": "{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆面几乎全部为红色失效die，仅外围与内部零星散布少量绿色合格die散点\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆全局近乎全部为红色失效die，绿色合格die仅以零星散点见于外围及内部局部。\",\"uncertainty\":\"外围绿色散点略多，但是否构成不完整边缘环状无法可靠确认\"}"
+}

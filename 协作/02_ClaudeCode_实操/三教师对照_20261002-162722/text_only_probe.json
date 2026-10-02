@@ -1,0 +1,53 @@
+{
+ "prompt_bytes": 1187,
+ "prompt_chars": 597,
+ "note": "纯文本、不带图；用于与带图请求的 prompt_tokens 做差",
+ "results": [
+  {
+   "candidate": "deepseek",
+   "model": "deepseek-flash",
+   "http_status": 200,
+   "elapsed_seconds": 1.377,
+   "error": null,
+   "raw_text": "{\"id\":\"37cacd0a-1fb8-4071-b3ea-f791d31cf288\",\"object\":\"chat.completion\",\"created\":1790930420,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"\",\"reasoning_content\":\"我们需要回答用户。需要根据公开晶圆 BIN 图标注。但用户没有附图片？我们只能根据描述？ 他们要求只根据这张公开晶圆 BIN 图标注，但消息中无图。需要输出 JSON。需要从类别中选择最符合主要图案的一类：Center、\"},\"logprobs\":null,\"finish_reason\":\"length\"}],\"usage\":{\"prompt_tokens\":312,\"completion_tokens\":64,\"total_tokens\":376,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":64},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":312},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+   "usage": {
+    "prompt_tokens": 312,
+    "completion_tokens": 64,
+    "total_tokens": 376,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 64
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 312
+   },
+   "returned_model": "deepseek-flash",
+   "finish_reason": "length"
+  },
+  {
+   "candidate": "qwen",
+   "model": "qwen3.8-max",
+   "http_status": 200,
+   "elapsed_seconds": 11.804,
+   "error": null,
+   "raw_text": "{\"choices\":[{\"finish_reason\":\"length\",\"index\":0,\"message\":{\"content\":\"{\\n  \\\"defect_class\\\": \\\"unknown\\\",\\n  \\\"morphology\\\": \\\"无法确认主要可见图案\\\",\\n  \\\"radial_zone\\\": \\\"unknown\\\",\\n  \\\"clock_direction\\\": null,\\n  \\\"extent_r\\\": null,\\n  \\\"caption_zh\\\": \\\"当前可见信息不足以确认晶圆\",\"reasoning_content\":\"We need answer user's request. Need produce final JSON only. Need analyze image? There is no image attached in prompt? User says \\\"请只根据这张公开晶圆 BIN 图标注...\\\" but no image provided in this text. We need respond likely unknown? But must only output JSON. Need be careful: if no image visible to model, we can't inspect. But maybe in actual environment image omitted? We need produce conservative JSON with unknown? The instruction: only based on this public wafer BIN map. If cannot reliably choose fill unknown. Since we don't see image, all fields unknown. Need ensure no markdown, only JSON. defect_class from list choose unknown. morphology? Need describe actual visible? If no image, can't. Could say \\\"无法根据可见图像确认主要图案\\\" but must be objective? Maybe morphology should indicate no visible info? They want only actual visible. If no image, perhaps \\\"无法确认\\\". radial_zone unknown. clock_direction null. extent_r null. caption_zh one sentence objective: \\\"未提供可确认的图像内容，无法识别主要形态与位置。\\\" uncertainty: \\\"缺少可见图像或图像不可读。\\\" But user may expect if image exists hidden? In API maybe image not included in prompt? We need handle. Could there be an image in conversation but not accessible in text? In this interface, no image. So outpu",
+   "usage": {
+    "completion_tokens": 359,
+    "completion_tokens_details": {
+     "reasoning_tokens": 292,
+     "text_tokens": 359
+    },
+    "prompt_tokens": 334,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "text_tokens": 334
+    },
+    "total_tokens": 693
+   },
+   "returned_model": "qwen3.8-max",
+   "finish_reason": "length"
+  }
+ ]
+}

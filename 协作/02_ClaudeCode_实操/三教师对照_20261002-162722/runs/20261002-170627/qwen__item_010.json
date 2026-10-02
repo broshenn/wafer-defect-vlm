@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_010",
+ "sample_id": "wafer_00044039_015",
+ "image_sha256": "9ec332e912f1707547d1ae60d3d3bf39e138322dde4b1d448329a24a56028d6d",
+ "payload_sha256": "58ab9ce15758f56ccb7b5eca17e9f534da2b6b3b3a76cbb05b31b623bcda9558",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:07:46.933632+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 26.444,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"稀疏红色失效die以孤立散点形式分布于晶圆全体，无簇状、环状或线状聚集\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"合格绿色晶圆面上可见稀疏红色失效die散点遍布中心至边缘，无明确局部集中或环状图案\\\",\\\"uncertainty\\\":\\\"\\\"}\",\"reasoning_content\":\"用户要求分析晶圆BIN图。图像内容：绿色圆形晶圆（合格die），红色失效die以散点形式分布在整个晶圆面上。观察图案：红色点稀疏地散布于晶圆全体（中心部、中部、边缘部），没有明显的环状、边缘集中、局部簇状、划痕状图案。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n观察图像：红色点稀疏地散在于晶圆全体。呈散点状分布。是Random吗？还是none？\\n\\n需要判断：\\\"只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声\\\"——也就是说，散点本身可能是主要图案。红色点稀疏地分布于晶圆全体，没有明显的局部集中、环状、边缘集中。因此主要图案应为\\\"随机散点\\\"（Random）。\\n\\n但是否达到Random的程度？点数：目视计数约数十个（比如50〜100个左右）。分布于整个晶圆面（中心、中部、边缘均有）。没有簇状、没有环状、没有边缘集中、没有划痕线状。\\n\\n类别定义回顾：\\n- Center：中心部集中缺陷\\n- Donut：环状（中心空缺的环）\\n- Edge_Loc：边缘局部\\n- Edge_Ring：边缘环状\\n- Loc：局部簇状\\n- Near_full：全面性失效（几乎全红）\\n- Random：随机散点分布\\n- Scratch：划痕状（线状）\\n- none：无缺陷 pattern（正常）\\n\\n本图存在红色失效die，呈散点状分布于 toàn 面。因此不是none（存在失效die）。主要图案为随机散点→Random。\\n\\nmorphology：稀疏红色失效die散点分布于晶圆全体，无环状/局部簇状/线状图案。\\n\\nradial_zone：global（分布于全体）。\\n\\nclock_direction：null（无局部方向性）。\\n\\nextent_r：null（依据指示）。\\n\\ncaption_zh：合格绿色晶圆面上稀疏红色失效die散点分布于全体，无明确环状或局部集中。\\n\\nuncertainty：散点密度低，是否为随机噪声还是微弱pattern难以区分？但指示说\\\"不能仅凭散点就断定它们是噪声\\\"。即散点作为主要图案记述为Random。不确定性可写：\\\"散点稀疏，是否构成随机pattern还是仅为背景散点难以完全确定\\\"？实际上类别选择Random即为将散点视为pattern。不确定性可空字符串或简短记述。\\n\\n再确认图像：红色点位置：上部边缘附近有几个点，中心部也有点，左下、右下也有点。确实分布于全体。边缘环状？边缘圆周上也有红点（例如12点方向边缘、3点方向边缘、右下边缘等），但内部也有多数点。边缘环状集中不明显：内部点也很多。Donut？中心部也有点（中心附近也有红点）。因此随机散点最为合适。\\n\\n结论：defect_class = \\\"Random\\\"。\\n\\nmorphology：\\\"稀疏红色失效die以孤立散点形式分布于晶圆面全体，无簇状、环状或线状聚集\\\"。\\n\\nradial_zone：\\\"global\\\"。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\ncaption_zh：\\\"晶圆全体可见稀疏红色失效die散点，无明确局部集中或环状图案\\\"。\\n\\nuncertainty：\\\"\\\" 或简短记述。考虑：散点稀疏且分布均匀，与其他弱pattern的区分可靠吗？Random类本身即为散点pattern。不确定性可写空字符串。但为安全起见：\\\"散点密度低，个别点是否沿边缘略多难以确认\\\"？边缘点确实存在但内部也多。空字符串即可？指示：\\\"uncertainty\\\":\\\"不确定之处，无则空字符串\\\"。认为无特别不确定之处。但散点pattern判断本身可能有不确定性？要求说\\\"不能仅凭散点就断定它们是噪声\\\"，即散点视为pattern（Random）。因此不确定性为空。\\n\\n但是否应考虑\\\"none\\\"？none通常指无缺陷pattern（正常晶圆）。本图存在红色失效die，故不是none。Near_full？不是，几乎全绿。\\n\\n因此最终JSON：\\n\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"稀疏红色失效die以孤立散点形式分布于晶圆全体，无簇状、环状或线状聚集\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"合格绿色晶圆面上稀疏红色失效die散点分布于全体，无明确局部集中或环状图案\\\",\\\"uncertainty\\\":\\\"\\\"}\\n\\n确认字段顺序与名称：defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty。正确。\\n\\n仅输出JSON对象，不使用Markdown。\",\"role\":\"assistant\"}}],\"created\":1790932041,\"id\":\"chatcmpl-61676927-64e8-9641-8151-3e3c610b0d45\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1095,\"completion_tokens_details\":{\"reasoning_tokens\":1008,\"text_tokens\":86},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1589}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1095,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1008,
+   "text_tokens": 86
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1589
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"稀疏红色失效die以孤立散点形式分布于晶圆全体，无簇状、环状或线状聚集\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"合格绿色晶圆面上可见稀疏红色失效die散点遍布中心至边缘，无明确局部集中或环状图案\",\"uncertainty\":\"\"}"
+}

@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_008",
+ "sample_id": "wafer_00044802_022",
+ "image_sha256": "8a84f657c593ba064358cce86273590e1bf36f0bf3381a1c73201ff222e0e6b0",
+ "payload_sha256": "2eca95cc94f081dc8dff1a8d0bed89f500b84e7d82309ad37db594705f053ec3",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:07:30.964239+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 36.115,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die以孤立散点形式散布于全片，未见明显聚集、环状或线状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效die（红）呈孤立散点状散布于晶圆中心、中部与边缘各区域，合格die（绿）仍占主体\\\",\\\"uncertainty\\\":\\\"散点是否含微弱周期性或斜向排列倾向仅凭目视无法完全排除\\\"}\",\"reasoning_content\":\"用户要求分析晶圆 BIN 图。绿色为合格 die，红色为失效 die，黑色为晶圆外。\\n\\n观察图像：整个晶圆面上散布着红色 die。仔细看：红色点似乎遍布晶圆全体——中央、中部、边缘都有。是否存在某种模式？\\n\\n观察图像：红色像素块散布在整个晶圆内。是否有环状（边缘环）？边缘处红色似乎略多？但内部也有大量红色点。是否有 scratch（划痕）？_scratch 通常是线状或斜线状。观察：红色点似乎呈斜线状排列？看描述：图中红色块似乎沿对角线方向排列？实际上看起来像斜向的条纹状图案？让我想想。\\n\\n图像：圆形晶圆，绿色背景上有红色小块散布。看分布：红色点似乎形成斜向线状 pattern？例如从左上到右下的斜线？或者像是随机散布但密度较高。\\n\\n候选类别：Center（中心集中）、Donut（环状带）、Edge_Loc（边缘局部）、Edge_Ring（边缘环）、Loc（局部集中）、Near_full（近乎全失效）、Random（随机散布）、Scratch（划痕/线状）、none（无缺陷）、unknown。\\n\\n红色 die 数量：看起来散布于整个晶圆，密度中等。是否有线状结构？观察图像：红色块似乎形成斜向的链？例如中央有斜向排列的点列。实际上，许多 wafer map 的 \\\"scratch\\\" 表现为斜线或直线状的失效 die 列。此图中红色点似乎沿对角线方向排列？看坐标：红色块位置：(约150,20)、(约200,20)、(约250,20)…顶部边缘也有红色。内部：(约170,60)、(约230,60)、(约290,60)、(约350,60)…似乎呈网格状散布。\\n\\n实际上，红色点看起来像均匀随机散布于整个晶圆，包括边缘和中心。没有明显的环、中心集中或局部集中。因此类别为 \\\"Random\\\"。\\n\\n但需检查是否有斜线 pattern（scratch）。观察：从左上到右下？点列：(100,90)、(140,120)、(180,150)…不确定。\\n\\n看图的视觉印象：红色小块散布各处，似乎略有对角线趋势？例如从 (200,100) 到 (250,150)、(300,200) 的斜线？中央区域：(180,140)、(220,170)、(260,200)、(300,230)？可能有斜向链。\\n\\n但典型 scratch 是连续线状。此图红色点较分散，线状不明显。\\n\\n考虑密度：红色点数量约占全 die 的 10-20%？散布于全局。因此 \\\"Random\\\" 最合适。\\n\\nradial_zone：global（全局散布）。\\n\\nclock_direction：null（无局部方向）。\\n\\nextent_r：null（按指示）。\\n\\nmorphology：红色失效 die 以孤立散点形式稀疏且均匀地散布于整个晶圆面，未见明显的环状、中心集中或线状聚集。\\n\\ncaption_zh：失效 die（红）以孤立散点形式随机散布于晶圆中心、中部及边缘区域，未见明显的局部集中或环状图案。\\n\\nuncertainty：散点密度略高，但不能排除极轻微的斜向排列倾向？或者写空字符串？指示：\\\"不确定之处，无则空字符串\\\"。可写：红色散点是否含微弱斜向链状倾向难以完全排除，但整体以随机散布为主。不过要求\\\"不把没有看到的模式写进答案\\\"。斜向链是否看到？再观察图像。\\n\\n图像坐标概览（目视）：红色块位置：\\n顶部边缘：(140,10)、(190,10)、(240,10)、(290,10)\\n第2行：(110,40)、(160,40)、(210,40)、(260,40)、(310,40)、(360,40)\\n……\\n看起来像规则网格状散布？即每隔固定间隔出现红色 die？可能是系统性 pattern（如每隔 N 个 die 失效），但候选类别中无 \\\"systematic\\\"。Random 指随机散布。\\n\\n实际上红色点分布相当均匀，类似周期性 sampling pattern？但类别限定中，散布于全局且无聚集时为 Random。\\n\\n考虑 \\\"Near_full\\\"：近乎全失效？否，绿色为主。\\n\\n因此 defect_class = \\\"Random\\\"。\\n\\nradial_zone = \\\"global\\\"。\\n\\nclock_direction = null。\\n\\nextent_r = null。\\n\\nmorphology：\\\"红色失效 die 以孤立小散点形式散布于全片，无明显聚集、环状或线状结构\\\"。\\n\\ncaption_zh：\\\"晶圆面上红色失效 die 呈孤立散点状均匀散布于中心至边缘的各区域，绿色合格 die 仍占主体。\\\"\\n\\nuncertainty：\\\"散点分布较均匀，但是否存在极弱周期性或斜向倾向仅凭目视无法完全确认。\\\" 或者空字符串？指示要求填写不确定之处。可写：散点是否含微弱周期性排列无法确认。但\\\"不把没有看到的模式写进答案\\\"指描述中不写未看到的模式；uncertainty 字段可写不确定之处。\\n\\n简化：uncertainty：\\\"散点密度中等，是否含微弱周期性/斜向排列难以完全排除，但主图案判为随机散布。\\\" 或许过长。简短即可。\\n\\n最终 JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die以孤立散点形式散布于全片，无明显聚集、环状或线状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效die（红）呈孤立散点状散布于晶圆中心、中部与边缘各区域，合格die（绿）仍占主体\\\",\\\"uncertainty\\\":\\\"散点是否含微弱周期性或斜向排列倾向仅凭目视无法完全排除\\\"}\\n\\n检查：是否要求 clock_direction 始终为 null？示例中 clock_direction 为 null。本图无局部缺陷方向，故 null。\\n\\n输出仅一个 JSON 对象。\",\"role\":\"assistant\"}}],\"created\":1790932014,\"id\":\"chatcmpl-657f4558-0873-9432-9c42-a9b121d17866\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1487,\"completion_tokens_details\":{\"reasoning_tokens\":1377,\"text_tokens\":109},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1981}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1487,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1377,
+   "text_tokens": 109
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1981
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以孤立散点形式散布于全片，未见明显聚集、环状或线状结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die（红）呈孤立散点状散布于晶圆中心、中部与边缘各区域，合格die（绿）仍占主体\",\"uncertainty\":\"散点是否含微弱周期性或斜向排列倾向仅凭目视无法完全排除\"}"
+}

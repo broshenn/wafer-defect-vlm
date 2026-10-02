@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_003",
+ "sample_id": "wafer_00043109_011",
+ "image_sha256": "522321152ee483fcae6dc02bfb223cf0b84cdd23d48827d5ef4b223d887ac914",
+ "payload_sha256": "1eb63d466f6e3e5868c67512f775bfc798e6fb7a8291ca783596f28df543021c",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:09:56.707418+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 3.902,
+ "error": null,
+ "raw_text": "{\"id\":\"99ed03bf-1ecb-47c5-a45f-32e51710ecad\",\"object\":\"chat.completion\",\"created\":1790932192,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"绿色合格 die 背景上散布的红色失效 die 点，分布较零散，无明显环状、线状或边缘聚集带\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆上以绿色合格 die 为主，红色失效 die 呈稀疏散点分布于中心至边缘各区域，未见明显连续图案。\\\",\\\"uncertainty\\\":\\\"红色散点数量稀疏且彼此不连续，只能按随机散布形态归类；无法排除存在更弱、不明显的局部图案。\\\"}\",\"reasoning_content\":\"The user wants me to analyze a wafer BIN map image. The image shows a green circle (wafer) with red pixels scattered. Black is outside wafer.\\n\\nLet me look at the pattern: The wafer is mostly green (good die), with red pixels scattered fairly uniformly across the whole wafer - some in center, some middle, some edge. There's no obvious ring, no donut, no scratch line, no edge ring. The scattered red pixels appear random across the entire wafer.\\n\\nSo defect_class would be \\\"Random\\\" — random scattered failures across the wafer.\\n\\nmorphology: 散布的红色失效 die 点，分布较均匀，无明显的环状/线状/边缘聚集。\\n\\nradial_zone: global (spread across whole wafer).\\n\\nclock_direction: null (no reliable local direction).\\n\\nextent_r: null.\\n\\ncaption_zh: 一句话描述。\\n\\nuncertainty: 散点数量不多，可能部分为噪声/随机失效，无法确定是否与工艺相关 — but we shouldn't speculate on root cause. The uncertainty should mention that classification as Random is based on visual scatter distribution; no clear pattern; but can't rule out... Actually we should just state uncertainty: 红色点在多个区域稀疏分布，未见明显连续图案，类别判定基于视觉分布。\\n\\nLet me write JSON.\\n\\ndefect_class: \\\"Random\\\"\\n\\nmorphology: \\\"全片散布的红色失效 die 点，无明显环状、线状或边缘聚集形态\\\"\\n\\nradial_zone: \\\"global\\\"\\n\\nclock_direction: null\\n\\nextent_r: null\\n\\ncaption_zh: \\\"晶圆上绿色合格 die 中散布若干红色失效 die，分布遍及中心至边缘，未见明显聚集图案。\\\"\\n\\nuncertainty: \\\"红色失效点稀疏且零散，未观察到连续图案，因此仅能按随机散布归类；无法确认是否存在其它弱图案。\\\"\\n\\nThat's fine. No speculation on process root cause.\\n\\nLet me double check the image: red pixels scattered; some clusters on right edge around 2-3 o'clock? There are a few red pixels near the right edge. But overall it's scattered. The main pattern is random scatter.\\n\\nI'll output the JSON.\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":582,\"total_tokens\":1079,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":453},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 582,
+  "total_tokens": 1079,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 453
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"绿色合格 die 背景上散布的红色失效 die 点，分布较零散，无明显环状、线状或边缘聚集带\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上以绿色合格 die 为主，红色失效 die 呈稀疏散点分布于中心至边缘各区域，未见明显连续图案。\",\"uncertainty\":\"红色散点数量稀疏且彼此不连续，只能按随机散布形态归类；无法排除存在更弱、不明显的局部图案。\"}"
+}

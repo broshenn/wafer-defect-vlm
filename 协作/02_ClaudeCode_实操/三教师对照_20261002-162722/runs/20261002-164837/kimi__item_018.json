@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_018",
+ "sample_id": "wafer_00036981_003",
+ "image_sha256": "ed061e5a734c3c03c38a8a4024dd4873d2852469559662d9e088ce635116f9bf",
+ "payload_sha256": "ab39ce6962f01284a31a64f42f356d7189be3fe3fd3d39bb71a38087c795783a",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:01:15.954925+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 14.71,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die呈散点状散布于整片晶圆，无明显方向性条纹、整圈边缘环或单一中心区；中央偏右及左下边缘可见小簇聚集，但未主导整体分布。\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效die以随机散点形式遍布晶圆全局，绿色合格die占主体，未见明确中心、边缘环或划痕主图案。\\\",\\\"uncertainty\\\":\\\"中央偏右与左下边缘存在少量局部聚集，但规模有限，不足以可靠改判为Loc或Edge_Loc。\\\"}\",\"reasoning_content\":\"用户要求根据晶圆BIN图进行分类。让我仔细观察图像。\\n\\n图像描述：\\n- 黑色为晶圆外区域\\n- 绿色为合格die\\n- 红色为失效die\\n\\n观察图案：\\n- 晶圆整体呈圆形（边缘有缺口/不规则）\\n- 大部分die是绿色（合格）\\n- 红色失效die散布在整个晶圆上，看起来比较随机分布\\n- 没有明显的中心聚集、边缘环、划痕或局部集中图案\\n- 红色点分布在中心、中间、边缘各处，密度看起来相对均匀\\n- 有一些红色die在中央区域稍微密集一点，但整体看是散布的\\n- 左下边缘（约7-8点钟方向）有一小片红色聚集\\n- 中央偏右有一片较大的红色区域\\n\\n主要图案：红色失效die呈现随机散布状态，遍布整个晶圆，没有明确的空间模式。虽然中央偏右和左下边缘有少量聚集，但总体上最符合Random（随机）分布。\\n\\n让我再仔细看：\\n- 中央区域有一片较大的红色（连续几个die失效），在中心偏右下\\n- 左边缘中部有红色突出\\n- 右边缘有红色\\n- 左下7-8点钟方向有一簇红色\\n- 但整体红色分布遍布全图，密度相对均匀\\n\\n这种情况，虽然有局部小聚集，但主要图案是全局随机散布。应该选择Random。\\n\\nradial_zone: global（因为分布遍布整个晶圆）\\nclock_direction: null（全局/不确定）\\nextent_r: null（按要求）\\ndefect_class: Random\\n\\nmorphology: 红色失效die呈散点状随机分布于整片晶圆，无明显定向或环状结构；中央偏右及左下边缘可见小簇聚集，但不构成主导图案。\\n\\ncaption_zh: 失效die以散点形式遍布晶圆全局，整体呈随机分布，未见明确中心、边缘环或划痕主图案。\\n\\nuncertainty: 中央偏右与左下边缘存在少量局部聚集，但密度不足以判定为独立Loc/Edge_Loc主图案。\\n\\n类别选择：在Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none中，Random最符合。\\n\\n等等，我需要重新考虑。图像中红色失效die数量较多，遍布全图。Near_full是接近全失效？不，绿色占绝大多数，所以不是Near_full。Random是随机分布。\\n\\n主要图案：随机散布。选Random。\\n\\nradial_zone应该是global，因为缺陷遍布整个晶圆（中心、中间、边缘都有）。\\n\\n输出JSON，确保七字段齐全。\\n\",\"role\":\"assistant\"}}],\"created\":1790931661,\"id\":\"chatcmpl-5c7bb6f5-2229-9c71-87d5-e9cc07735ab1\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":687,\"completion_tokens_details\":{\"reasoning_tokens\":536,\"text_tokens\":151},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1297}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 687,
+  "completion_tokens_details": {
+   "reasoning_tokens": 536,
+   "text_tokens": 151
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1297
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die呈散点状散布于整片晶圆，无明显方向性条纹、整圈边缘环或单一中心区；中央偏右及左下边缘可见小簇聚集，但未主导整体分布。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die以随机散点形式遍布晶圆全局，绿色合格die占主体，未见明确中心、边缘环或划痕主图案。\",\"uncertainty\":\"中央偏右与左下边缘存在少量局部聚集，但规模有限，不足以可靠改判为Loc或Edge_Loc。\"}"
+}

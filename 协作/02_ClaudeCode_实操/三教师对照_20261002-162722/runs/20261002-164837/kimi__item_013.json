@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_013",
+ "sample_id": "wafer_00014492_011",
+ "image_sha256": "cdebd1b08f90404a7cbcad32c5a4606a45e139ce3058534390f00fa0f31b0701",
+ "payload_sha256": "ea9cc05cabe8399349c8985ae72bd8b4c98f336f198d7b7aee5e0f92b7ef76ef",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:59:00.772092+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 53.16,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Edge_Ring\\\",\\\"morphology\\\":\\\"外缘近整圈红色失效环，局部呈锯齿状断续，内部散布稀疏红点\\\",\\\"radial_zone\\\":\\\"edge\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效 die 主要沿晶圆外缘形成近整圈环带，内部另见稀疏散点。\\\",\\\"uncertainty\\\":\\\"内部稀疏红点与边缘环并存，是否构成可分辨的次要图案不可靠。\\\"}\",\"reasoning_content\":\"We need answer only JSON object. Need inspect image. We can reason about visible pattern.\\n\\nImage: circular wafer with black outside. Most of wafer green good dies. Red defective dies: strong red ring at outer edge? Actually perimeter of wafer appears red boundary pixels all around, likely edge ring of failed dies at outermost circumference. Also scattered red dots across interior, maybe random. Need choose main pattern among classes. User asks only based on public wafer BIN map: black outside, green pass, red fail. Do not speculate root cause. Describe actual visible main pattern and peripheral scattered points; cannot conclude scatter are noise merely because scattered; don't write unseen patterns. Choose most fitting main pattern from Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none; unknown if unreliable. This round only class, qualitative morphology and position check. extent_r null. clock_direction only when reliable local defect direction; central, whole ring, global, normal or uncertain -> null. Output JSON with seven fields.\\n\\nNeed determine main visible pattern. The most prominent is red ring around the wafer edge: at outer boundary nearly continuous red failed dies (jagged ring). There are also many isolated red dots throughout the interior, sparse. Main pattern likely Edge_Ring because red failures concentrated at periphery forming ring. However need consider if red edge is just outline? In wafer bin maps, red at edge could be edge dies failing. The image shows red pixels along the entire circumference, one or few dies thick, with some notches; also black outside. The circle boundary is red line, possibly because edge dies marked fail. It is visible major pattern: peripheral ring plus internal random sparse dots. Among choices, Edge_Ring. radial_zone: edge (for main pattern). morphology: 近整圈连续/断续的红色边缘环，伴随内部稀疏散点. caption_zh: 红色失效 die 主要沿晶圆外缘形成近整圈环带，内部另见稀疏散点。 uncertainty: 内部散点是否构成独立模式不可靠；边缘环在局部有断续/锯齿. Need maybe mention clock_direction null.\\n\\nNeed ensure JSON valid. Fields exactly seven: defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty. defect_class one of list. radial_zone one of allowed: center/middle/edge/global/unknown/none. extent_r null. clock_direction null. No Markdown.\\n\\nNeed be careful not to include unverified numerical sizes, proportions, coverage. Avoid \\\"one or few dies thick\\\"? That's a size/number maybe. Use qualitative \\\"窄\\\" maybe width? Better not write width. Morphology short Chinese: \\\"外缘近整圈红色失效环，局部锯齿状断续，内部散布稀疏红点\\\". This mentions no numeric. Good.\\n\\nCould defect_class be Random because many scattered red dots? But visually the red edge ring dominates due to continuous red outline. Need choose Edge_Ring. Let's evaluate: The entire outer perimeter is red, and green circle inside. The red border could be an artifact of drawing circle edge (red outline) rather than failed dies? But user states colors: black outside, green pass, red fail. We should accept red fails. The outermost ring of dies on wafer often fail (edge ring). There are also random fails. The primary visible main pattern: edge ring. radial_zone edge. clock_direction null because whole ring. uncertainty: mention coexisting sparse interior dots; local edge interruptions; cannot determine if interior dots form secondary random pattern from this single view? But Random is a class; we don't need choose. Maybe uncertainty: \\\"内部稀疏红点是否应归为伴随的随机成分不影响主图案判断；边缘环局部连续性有参差。\\\" But if we say \\\"不影响\\\" okay. They ask uncertainty, no then empty. We have uncertainty due to scattered points. Need not call them noise. Maybe: \\\"可见内部稀疏红点与边缘环并存，但是否构成次要图案不可靠。\\\" Good.\\n\\nNeed final only JSON object. Ensure Chinese quotes? Standard JSON double quotes. Null values lowercase. No trailing commas.\\n\\nLet's produce. 5 oververbose: just JSON. Ensure no extra text.\",\"role\":\"assistant\"}}],\"created\":1790931488,\"id\":\"chatcmpl-1e18ef3e-6880-9487-a4d7-70dca0ea4964\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":973,\"completion_tokens_details\":{\"reasoning_tokens\":860,\"text_tokens\":113},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1583}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 973,
+  "completion_tokens_details": {
+   "reasoning_tokens": 860,
+   "text_tokens": 113
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1583
+ },
+ "answer_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"外缘近整圈红色失效环，局部呈锯齿状断续，内部散布稀疏红点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效 die 主要沿晶圆外缘形成近整圈环带，内部另见稀疏散点。\",\"uncertainty\":\"内部稀疏红点与边缘环并存，是否构成可分辨的次要图案不可靠。\"}"
+}

@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_017",
+ "sample_id": "wafer_00044805_011",
+ "image_sha256": "6060863eb5ae412c3db9f189ba2cd12b4f4a4fc8895ef73b722b48f810b02657",
+ "payload_sha256": "645fc1636bdeab3a9ebed66c0b706bda2273b18e73cdb2e6b942eebe42591001",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:11:26.248380+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 2.359,
+ "error": null,
+ "raw_text": "{\"id\":\"0663dd2e-4563-42ee-871c-0d3fca224ae2\",\"object\":\"chat.completion\",\"created\":1790932283,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"绿色合格 die 背景上随机散布的红色失效 die 散点，无集中连片、无环状或线状图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆范围内红色失效 die 呈随机散点分布于绿色合格 die 之间，未见明显局部集中图案\\\",\\\"uncertainty\\\":\\\"散点分布看似随机，但无法仅凭此图判断其是否为噪声或与特定区域相关的弱聚集\\\"}\",\"reasoning_content\":\"The image shows a circle (wafer) green with red pixels scattered across it. The pattern is random scattered red dots across the entire wafer, no clear localized cluster. So defect_class likely \\\"Random\\\".\\n\\nLet me examine: red pixels distributed fairly uniformly across the green circle, with some slight clustering but mostly random. There's no donut, no edge ring, no scratch. So class = Random.\\n\\nmorphology: 随机散布的红色失效 die 点，遍布晶圆。\\n\\nradial_zone: global (spread across whole wafer). Could argue \\\"global\\\". Yes.\\n\\nclock_direction: null (no reliable localized defect direction).\\n\\nextent_r: null.\\n\\ncaption_zh: 整片晶圆上绿色合格 die 中随机散布红色失效 die 点，无集中图案。\\n\\nuncertainty: 散点是否为噪声无法判定；分布看似随机但无统计检验。\\n\\nOutput JSON only.\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":306,\"total_tokens\":803,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":188},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 306,
+  "total_tokens": 803,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 188
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"绿色合格 die 背景上随机散布的红色失效 die 散点，无集中连片、无环状或线状图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"整片晶圆范围内红色失效 die 呈随机散点分布于绿色合格 die 之间，未见明显局部集中图案\",\"uncertainty\":\"散点分布看似随机，但无法仅凭此图判断其是否为噪声或与特定区域相关的弱聚集\"}"
+}

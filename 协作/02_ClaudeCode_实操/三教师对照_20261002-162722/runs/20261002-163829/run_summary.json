@@ -1,0 +1,108 @@
+{
+ "sent": 3,
+ "total_planned": 3,
+ "budget_usd": 10.0,
+ "worst_case_total_usd": 0.020561,
+ "results": [
+  {
+   "candidate": "kimi",
+   "provider": "bailian",
+   "model_requested": "kimi/kimi-k3",
+   "item_id": "item_001",
+   "sample_id": "wafer_00043234_006",
+   "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+   "payload_sha256": "059d766a58a04c10c2bfde7f1929a61bcf14e93d09af7dcae6411e57afe9fc24",
+   "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+   "max_tokens": 16384,
+   "timeout_seconds": 600,
+   "client_retries": 0,
+   "sent_at": "2026-10-02T16:38:31.237913+08:00",
+   "http_status": 400,
+   "elapsed_seconds": 1.641,
+   "error": "HTTPError 400",
+   "credential_source": "仓库外私有文件（dashscope.key）",
+   "cost_estimate_worst_usd": null,
+   "token_estimate_worst": 19384,
+   "is_peak_now": null,
+   "returned_model": null,
+   "finish_reason": null,
+   "usage": null,
+   "answer_text": ""
+  },
+  {
+   "candidate": "qwen",
+   "provider": "bailian",
+   "model_requested": "qwen3.8-max",
+   "item_id": "item_001",
+   "sample_id": "wafer_00043234_006",
+   "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+   "payload_sha256": "257335bb4bc66c6292c6beaf2ad1f5401355d2393017d93937680487a8e445c1",
+   "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+   "max_tokens": 16384,
+   "timeout_seconds": 600,
+   "client_retries": 0,
+   "sent_at": "2026-10-02T16:39:01.811233+08:00",
+   "http_status": 200,
+   "elapsed_seconds": 30.556,
+   "error": null,
+   "credential_source": "仓库外私有文件（dashscope.key）",
+   "cost_estimate_worst_usd": null,
+   "token_estimate_worst": 19384,
+   "is_peak_now": null,
+   "returned_model": "qwen3.8-max",
+   "finish_reason": "stop",
+   "usage": {
+    "completion_tokens": 1058,
+    "completion_tokens_details": {
+     "reasoning_tokens": 961,
+     "text_tokens": 96
+    },
+    "prompt_tokens": 494,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "image_tokens": 198,
+     "text_tokens": 296
+    },
+    "total_tokens": 1552
+   },
+   "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"孤立红色失效die以散点形式分散于全片，无连续块状、线状或环状结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die呈散点状遍布整个晶圆面，未见中心、环状或边缘局部集中\",\"uncertainty\":\"散点密度较高，是否为纯随机分布无法进一步验证\"}"
+  },
+  {
+   "candidate": "deepseek",
+   "provider": "deepseek_official",
+   "model_requested": "deepseek-flash",
+   "item_id": "item_001",
+   "sample_id": "wafer_00043234_006",
+   "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+   "payload_sha256": "7a3144d4913485b69178b72f9dd5837f63b636ef8d2d5cffac18148c1fe0c796",
+   "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+   "max_tokens": 16384,
+   "timeout_seconds": 600,
+   "client_retries": 0,
+   "sent_at": "2026-10-02T16:39:10.778733+08:00",
+   "http_status": 200,
+   "elapsed_seconds": 8.945,
+   "error": null,
+   "credential_source": "仓库外私有文件（deepseek.key）",
+   "cost_estimate_worst_usd": 0.0205608,
+   "token_estimate_worst": null,
+   "is_peak_now": true,
+   "returned_model": "deepseek-flash",
+   "finish_reason": "stop",
+   "usage": {
+    "prompt_tokens": 497,
+    "completion_tokens": 1500,
+    "total_tokens": 1997,
+    "prompt_tokens_details": {
+     "cached_tokens": 0
+    },
+    "completion_tokens_details": {
+     "reasoning_tokens": 1399
+    },
+    "prompt_cache_hit_tokens": 0,
+    "prompt_cache_miss_tokens": 497
+   },
+   "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 呈零散、随机散布，无连续环状、线状或局部集中图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆图上红色失效 die 主要呈散点状随机分布于中心至边缘的多个区域。\",\"uncertainty\":\"红色散点是否存在轻微局部密度差异，仅凭图像难以可靠判定。\"}"
+  }
+ ]
+}

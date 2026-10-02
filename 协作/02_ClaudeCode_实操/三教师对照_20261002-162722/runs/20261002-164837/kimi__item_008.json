@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_008",
+ "sample_id": "wafer_00044802_022",
+ "image_sha256": "8a84f657c593ba064358cce86273590e1bf36f0bf3381a1c73201ff222e0e6b0",
+ "payload_sha256": "553b8c1ca07ba41dba6421c5ebae6bcc67960958b1f840a795db842833b96650",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:54:02.657308+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 18.584,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 以离散小方块散布全片，含靠近边缘的散点，无明确线状、环状或单点聚集主结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆以绿色合格 die 为主，红色失效 die 在整片范围内散布并可见于外围，但未形成可靠识别的环带、中心团或划痕。\\\",\\\"uncertainty\\\":\\\"散点较密，无法可靠排除轻微局部偏多；不据此推断工艺根因。\\\"}\",\"reasoning_content\":\"The user wants a JSON object only, no markdown. Need inspect image. Need choose class among Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none. We must only describe visible major pattern and peripheral scatter; cannot infer noise; no unverified numeric sizes/proportions/coverage; extent_r null; clock_direction only if reliable local defect direction; central/whole ring/global/normal/uncertain null.\\n\\nLet's analyze image. It is a wafer bin map with black outside, green good die, red fail die. Overall circular wafer with many red dies scattered across entire wafer, plus red at edge. Need identify main pattern. There is no clear center cluster, donut ring, edge ring, single localized cluster, scratch line. There are numerous red dies distributed throughout including edge; maybe random. But need be careful: image shows a high density of red fails across the wafer, not near full (most green). The red fails are scattered randomly across global area; peripheral red markers may be edge die failures but not a dominant ring. Class likely Random. Morphology: 红色失效die呈散点分布，遍布晶圆各区域，无明显线状/环状/中心聚集。 radial_zone: global (since distributed across wafer). clock_direction null. extent_r null. caption_zh: 一句话客观描述主要形态与位置: 绿色合格die为主，红色失效die在整片晶圆范围内散布，未见明确局部聚集、环带或划痕。 uncertainty: 图像分辨率/散点密集，无法排除弱局部聚集或边缘影响；不做工艺根因判断. Need include exact seven fields. defect_class value in English exactly one of list. radial_zone one of center/middle/edge/global/unknown/none. clock_direction null. extent_r null. \\n\\nNeed ensure JSON valid with Chinese strings. No markdown. Use null not \\\"null\\\". Uncertainty can be string. Must not write unverified numeric sizes. \\\"高密度\\\" maybe qualitative but could be perceived as coverage? It says description not write unverified values/proportions/coverage. High density qualitative maybe okay but safer avoid. Say 多处散点. Need mention peripheral scatter? \\\"包括靠近边缘处也有红色散点，但不构成连续环带\\\". Good.\\n\\nCould the main pattern be \\\"Near_full\\\"? No, green dominates. Random fits scattered dies. Edge_Loc? There are red at edge but also all over. Not Edge_Ring. There may be some edge red clustering at lower-right/edge but not dominant. Random.\\n\\nNeed final only JSON object. Ensure no code block. \\n\\nLet's craft with seven fields exactly. Field order as requested. morphology short Chinese description. caption one sentence. uncertainty no empty if there is uncertainty. There is uncertainty: 散点分布较密，不能可靠排除轻微边缘偏多或局部小聚集. But if we say cannot rule out, okay. It says don't write patterns not seen; saying cannot exclude is uncertainty not asserting. Fine.\\n\\nNeed ensure clock_direction null (JSON null). extent_r null.\\n\\nFinal only JSON.\",\"role\":\"assistant\"}}],\"created\":1790931223,\"id\":\"chatcmpl-7d2b100c-7a53-987b-856d-7d04f4eefac5\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":773,\"completion_tokens_details\":{\"reasoning_tokens\":636,\"text_tokens\":137},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1383}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 773,
+  "completion_tokens_details": {
+   "reasoning_tokens": 636,
+   "text_tokens": 137
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1383
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 以离散小方块散布全片，含靠近边缘的散点，无明确线状、环状或单点聚集主结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆以绿色合格 die 为主，红色失效 die 在整片范围内散布并可见于外围，但未形成可靠识别的环带、中心团或划痕。\",\"uncertainty\":\"散点较密，无法可靠排除轻微局部偏多；不据此推断工艺根因。\"}"
+}

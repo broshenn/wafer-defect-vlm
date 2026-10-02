@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_004",
+ "sample_id": "wafer_00017113_023",
+ "image_sha256": "1a2320a9d4a1bc94c8af532d567eb25d39646b48df66f9c7e8fd46dae8d47f55",
+ "payload_sha256": "5457db6c2535886dd987c0cb225d618e880776e11772ada4293d750af0a54fd3",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:50:40.721856+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 25.479,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Edge_Loc\\\",\\\"morphology\\\":\\\"右侧近边缘大块状红色失效聚集，伴全图散在红色失效点\\\",\\\"radial_zone\\\":\\\"edge\\\",\\\"clock_direction\\\":\\\"3点钟\\\",\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"主要可见缺陷为右侧约3点钟近边缘处的大片红色失效die聚集，晶圆其余区域另有零散红色失效点。\\\",\\\"uncertainty\\\":\\\"上方及左上方亦见若干红色斑块，散点未作噪声判定；聚集区与边缘的精确范围未量化。\\\"}\",\"reasoning_content\":\"用户要求我分析一张晶圆BIN图。让我仔细观察图像。\\n\\n图像描述：\\n- 黑色背景是晶圆外\\n- 绿色是合格die\\n- 红色是失效die\\n\\n观察图案：\\n- 整体是一个圆形晶圆，绿色为主\\n- 红色失效die分布：\\n  - 右侧（3点钟方向）有一大块红色区域，集中在右边缘附近，形成一个较大的红色块状区域\\n  - 上方和左上方也有一些红色斑块\\n  - 中央偏上有一些红色图案\\n  - 外围有一些散点红色\\n\\n主要图案：最明显的特征是在右侧（3点钟方向）有一个较大的红色聚集区域，靠近边缘。这看起来像是一个局部缺陷（Loc）或者边缘局部缺陷（Edge_Loc）。\\n\\n让我再仔细看：\\n- 右侧大红色块：位于晶圆右部，从中间偏右延伸到边缘，大致在2点到4点钟方向，是一个明显的局部聚集。\\n- 这个红色块不完全在边缘，但靠近右侧边缘，也延伸到内部。\\n\\n分类选项：\\n- Center: 中心缺陷\\n- Donut: 环形\\n- Edge_Loc: 边缘局部\\n- Edge_Ring: 边缘环\\n- Loc: 局部（非边缘）\\n- Near_full: 几乎全部\\n- Random: 随机\\n- Scratch: 划痕\\n- none: 无\\n- unknown: 无法确定\\n\\n主要图案是右侧的大块红色聚集，靠近3点钟边缘。这最符合 Edge_Loc（边缘局部缺陷），因为它位于晶圆边缘附近的一个局部区域。\\n\\n不过，红色区域也有点大，从右侧中部延伸到边缘。让我判断radial_zone：这个大块主要在middle到edge之间，但明显偏向edge。由于它接触/靠近右边缘，radial_zone可以是edge。但还有其他散点分布global。\\n\\n题目说\\\"只描述实际可见的主要图案和外围散点\\\"。主要图案是右侧的大红色块，位置在3点钟方向附近，靠近边缘。\\n\\ndefect_class: Edge_Loc 还是 Loc？\\n- Edge_Loc通常是靠近边缘的局部缺陷。这个大红块位于右侧，明显接触右边缘（3点钟方向）。所以Edge_Loc比较合适。\\n\\n但是，让我再看看。红色大块在右边，从晶圆右侧边缘向内延伸。它确实贴着边缘。所以是Edge_Loc。\\n\\nmorphology: 右侧大块状红色失效聚集，伴有全图散在红色点。\\n\\nradial_zone: 主要缺陷在edge（右侧边缘）。但也有散点global。主要图案是edge。填\\\"edge\\\"。\\n\\nclock_direction: 右侧大块在3点钟方向。可以填\\\"3点钟\\\"或简短。题目说clock_direction仅在可靠识别局部缺陷方向时写简短钟点方向。这里是可靠的局部缺陷方向（右侧），填\\\"3\\\"或\\\"3点钟\\\"。字段要求简短钟点方向。我填\\\"3点钟\\\"或\\\"3\\\"。示例是null。我用\\\"3点钟\\\"。\\n\\n不过格式上，clock_direction应该是什么类型？题目说\\\"写简短钟点方向\\\"。我填\\\"3点钟\\\"。\\n\\nextent_r: null（必须）\\n\\ncaption_zh: 一句话客观描述：右侧近边缘（约3点钟方向）见大块红色失效die聚集，其余区域散布少量红色失效点。\\n\\nuncertainty: 上方及左上方另有红色斑块，全图有散点，主导图案以右侧边缘大块聚集为准；散点性质未判定。\\n\\n让我再考虑一下分类。主要可见形态：\\n- 最显眼的是右下方/右侧的大红块。它位于3点钟方向，靠近边缘。这是一个局部缺陷，且靠边缘。Edge_Loc。\\n\\n但是红色块是不是太大了，接近\\\"Near_full\\\"？不，绿色还是占大部分，红色只是部分。不是Near_full。\\n\\n有没有可能是Scratch？没有看到明显的线状划痕。红色图案是块状的，不是线性的。不是Scratch。\\n\\n有没有可能是Center？中央偏上有些红色，但最大的块在右侧。不是Center。\\n\\n所以最终：Edge_Loc，radial_zone: edge，clock_direction: \\\"3点钟\\\"。\\n\\n再想想 radial_zone，题目允许 center/middle/edge/global/unknown/none。因为有大块在edge，同时全图有散点。但主要图案（最大块）在edge。填 edge。\\n\\n但是会不会因为散点遍布全图，应该填 global？题目说\\\"只描述实际可见的主要图案和外围散点\\\"，类别选最符合主要图案的一类。主要图案是右侧边缘大块，所以radial_zone反映主要缺陷位置：edge。\\n\\nclock_direction: 题目说\\\"中央、整圈、全局、正常或不确定时填 null\\\"。这里是局部缺陷，方向明确（右侧/3点），所以填\\\"3点钟\\\"。\\n\\n输出JSON，七个字段。注意字段顺序按题目要求。\\n\\n让我写 morphology 简短中文：\\\"右侧近边缘大块状红色失效聚集，伴全图散在红点\\\"。\\n\\ncaption_zh 一句话：\\\"主要缺陷为右侧约3点钟近边缘处的大片红色失效die聚集，晶圆其余区域可见零散红色失效点。\\\"\\n\\nuncertainty: \\\"上方及左上方另有若干红色斑块，全图散点未判定为噪声；主要聚集区与边缘的精确关系未量化。\\\" \\n\\n不过题目说\\\"不能仅凭散点就断定它们是噪声\\\"，所以uncertainty里不要断定噪声。可以说散点存在但未归类。\\n\\n最终JSON。\",\"role\":\"assistant\"}}],\"created\":1790931016,\"id\":\"chatcmpl-133d6600-9f2b-91ef-9582-042d4da4b7c0\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1233,\"completion_tokens_details\":{\"reasoning_tokens\":1107,\"text_tokens\":126},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1843}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1233,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1107,
+   "text_tokens": 126
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1843
+ },
+ "answer_text": "{\"defect_class\":\"Edge_Loc\",\"morphology\":\"右侧近边缘大块状红色失效聚集，伴全图散在红色失效点\",\"radial_zone\":\"edge\",\"clock_direction\":\"3点钟\",\"extent_r\":null,\"caption_zh\":\"主要可见缺陷为右侧约3点钟近边缘处的大片红色失效die聚集，晶圆其余区域另有零散红色失效点。\",\"uncertainty\":\"上方及左上方亦见若干红色斑块，散点未作噪声判定；聚集区与边缘的精确范围未量化。\"}"
+}

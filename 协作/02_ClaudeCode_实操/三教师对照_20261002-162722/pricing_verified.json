@@ -1,0 +1,74 @@
+{
+  "version": "pricing-v1@2026-10-02",
+  "purpose": "三教师对照的费用守卫用价目表。**只收已核验的价**；未核验的条目让守卫失败关闭。",
+  "rule": "任何 candidate 的 price_verified 不为 true 时，守卫必须拒绝为它发送计费请求。",
+  "currency_note": "各平台按**自己的计价币种**报数；跨币种换算必须显式声明汇率与来源，不得默认。",
+
+  "candidates": {
+    "deepseek": {
+      "provider": "deepseek_official",
+      "model_id_locked": "deepseek-flash",
+      "model_version_declared": "DeepSeek-V4.1-Flash",
+      "vision_supported": true,
+      "price_verified": true,
+      "currency": "USD",
+      "unit": "per_1M_tokens",
+      "source": {
+        "url": "https://api-docs.deepseek.com/quick_start/pricing",
+        "title": "Models & Pricing | DeepSeek API Docs",
+        "fetched_at": "2026-10-02",
+        "http_status": 200,
+        "verbatim_excerpt": "MODEL deepseek-flash ... Vision ✓ ... PRICING (2) 1M INPUT TOKENS (CACHE HIT) OFF-PEAK $0.003 PEAK $0.006 ; 1M INPUT TOKENS (CACHE MISS) OFF-PEAK $0.15 PEAK $0.3 ; 1M OUTPUT TOKENS OFF-PEAK $0.6 PEAK $1.2",
+        "verbatim_note_2": "Off-peak rates are half of the peak rates. Peak hours are 01:00 - 04:00 and 06:00 - 10:00 UTC, Monday through Friday, excluding Chinese public holidays. All other hours are off-peak, including weekends and Chinese public holidays in full."
+      },
+      "price_per_mtok": {
+        "input_cache_hit":  { "peak": 0.006, "off_peak": 0.003 },
+        "input_cache_miss": { "peak": 0.3,   "off_peak": 0.15 },
+        "output":           { "peak": 1.2,   "off_peak": 0.6 }
+      },
+      "peak_windows_utc": [["01:00", "04:00"], ["06:00", "10:00"]],
+      "peak_days": "Mon-Fri, excluding Chinese public holidays",
+      "conservative_assumption": "守卫按 **peak + cache_miss** 计价（最坏情况），不假设缓存命中或低峰。"
+    },
+
+    "kimi": {
+      "provider": "bailian",
+      "model_id_candidates": ["kimi/kimi-k3", "kimi-k3"],
+      "model_id_locked": null,
+      "vision_supported": null,
+      "price_verified": false,
+      "budget_mode": "tokens",
+      "free_quota_tokens": 1000000,
+      "free_quota_source": "用户说明（2026-10-02：阿里百炼有百万 token 免费额度）——**用户说明，非我方核验**",
+      "blockers": [
+        "百炼计价页是动态加载的，正文取不到（实测 https://help.aliyun.com/zh/model-studio/models 的 content 字段为空）",
+        "模型 ID 用 kimi/kimi-k3 还是 kimi-k3 尚未按官方调用示例锁定",
+        "服务地域、账号授权、免费额度的适用范围（是每模型还是整账号、是否含图像 token）均未核实"
+      ],
+      "action": "**按 token 额度放行**（见 cost_guard.admit_tokens）；额度耗尽即停。单价未核验，**不按金额结算**。"
+    },
+
+    "qwen": {
+      "provider": "bailian",
+      "model_id_candidates": ["qwen3.8-max", "qwen3.8-max-0902"],
+      "model_id_locked": null,
+      "vision_supported": null,
+      "price_verified": false,
+      "budget_mode": "tokens",
+      "free_quota_tokens": 1000000,
+      "free_quota_source": "同 kimi：用户说明，非我方核验",
+      "blockers": [
+        "同 kimi：百炼计价正文取不到",
+        "模型 ID 是否带 -0902 版本后缀尚未锁定（任务书要求事前锁定，不自动换版本）",
+        "enable_thinking 默认开启，但只适用于 Qwen 系列，不得套到 Kimi"
+      ],
+      "action": "**按 token 额度放行**；额度耗尽即停。"
+    }
+  },
+
+  "fx": {
+    "USD_to_CNY": null,
+    "status": "未取得",
+    "note": "没有核验过的汇率。若要按人民币预算，必须由用户/指挥会话给出汇率与来源，否则守卫按 USD 结算。"
+  }
+}

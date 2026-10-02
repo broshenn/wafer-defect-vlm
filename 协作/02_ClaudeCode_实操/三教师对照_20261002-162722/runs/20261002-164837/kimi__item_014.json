@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_014",
+ "sample_id": "wafer_00017158_020",
+ "image_sha256": "cd56abc9d804e8f003280647b4e168c65cd1a616e9182d9423d7c093d2322bb4",
+ "payload_sha256": "ad60d80b14022720e921cbbfec9a4ecac1500d14f6cf2dab0ffc987a7230ed20",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:59:50.058609+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 49.258,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Loc\\\",\\\"morphology\\\":\\\"不规则块状失效聚集，边缘不整，伴稀疏散在红点\\\",\\\"radial_zone\\\":\\\"middle\\\",\\\"clock_direction\\\":\\\"3点\\\",\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"主要失效为晶圆右半部中部偏外的一块不规则红色聚集，周围可见稀疏红色散点。\\\",\\\"uncertainty\\\":\\\"聚集靠右但未清晰贴合最外边缘，Loc 与 Edge_Loc 间有轻微不确定；散点性质不判定。\\\"}\",\"reasoning_content\":\"用户要求根据晶圆 BIN 图进行标注。需要输出一个 JSON 对象，包含七个字段。不能推测工艺根因。只描述实际可见的主要图案和外围散点。不能仅凭散点断定噪声，不写没有看到的模式。从给定类别选择最符合主要图案的一类；无法可靠选择填 unknown。本轮只做类别、定性形态与位置检查。extent_r 必须为 null，描述中不写未经验证的数值尺寸、比例或覆盖率。图片上方12点，右方3点。clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时 null。仅输出 JSON，不写推理过程或 Markdown。\\n\\n我需要分析图像。图像为圆形晶圆，黑色外部，绿色合格 die，红色失效 die。主要图案：在晶圆右侧偏中上到中部，有一片明显的红色聚集区域，形状像局部分簇/斑块，位于大约1点到4点之间，更靠右半部和中间偏内，不完全贴边？观察：红色大簇从靠近中心偏右（约中心右上方）延伸到右侧中间，形成一个不规则块状/带状的聚集，边缘与绿色混合，周围有散点。其最右端接近但未形成完整环；在3点钟方向附近也有不少红 die 靠近边缘，但主要簇似乎位于右中区域，不在正中心，也不是整圈。类别选项：Center（中心集中）、Donut（环状）、Edge_Loc（边缘局部）、Edge_Ring（边缘整环）、Loc（局部集中非边缘？）、Near_full（几乎全片）、Random（随机）、Scratch（划痕）、none。主要图案是局部聚集，位于右半部，可能靠近边缘但不一定在边缘。需要区分 Edge_Loc vs Loc。Edge_Loc 是缺陷集中在晶圆边缘某一局部；Loc 是局部缺陷（非特定边缘）? 在常见 wafer bin map pattern 分类中，\\\"Loc\\\" 可能表示 localized cluster (not necessarily edge), \\\"Edge_Loc\\\" edge localized, \\\"Center\\\", \\\"Donut\\\", \\\"Edge_Ring\\\", \\\"Near_full\\\", \\\"Random\\\", \\\"Scratch\\\". 图中大红簇位于右中部，内界接近中心右上方，外界接近右侧边缘但没有完全沿边；还有很多外围散点。主要缺陷是一个局部集群，偏向晶圆右侧/边缘。是否算 Edge_Loc？如果缺陷主要位于边缘某一弧段并附边，则 Edge_Loc。观察图：大簇主体在右半部，靠近右侧边缘，红色集中在从约1:30到4:00方向，距离边缘有一定绿色边界？在3点钟附近，红色大簇的最右部分接近圆形边界，似乎有红色 die 到达或接近边缘；同时边缘周围也散布红色小点。主体不完全沿圆周呈弧，而像一个伸向右侧的块状/舌状区域，中心在右中。它可能更贴合 \\\"Loc\\\"（局部），radial_zone=middle（或 edge?）。指令要求 morphology 简短，radial_zone center/middle/edge/global/unknown/none。主要图案在右中至右缘，可能 radial_zone 选 middle 还是 edge? 由于大簇靠近右侧边缘，但不限最外圈，覆盖中部并向边缘延伸。题目说只描述主要图案和外围散点。主要图案：右半部中至外周的不规则红色聚集块，伴随全局稀疏红色散点。位置：右侧（约1-4点），中部偏外。类别最符合 Loc（局部簇）还是 Edge_Loc？\\n\\n需要谨慎。缺陷类别定义未知，但名字提示。主要可见形态为一个局部集中的失效簇，不是随机（因为明显集中），不是中心（不在中心），不是整圈，不是近满，不是划痕（不是线状）。若该簇在边缘局部，则 Edge_Loc。图中大簇位于右边缘附近，可能紧贴边缘。检查像素：晶圆圆心约(224,224)，半径约213。大红簇范围 x 约192-359， y 约75-319? 其中心约(285,200)，半径距圆心约66，处于内中；但向右延伸 x=350 距圆心 126? wait 圆心? 图像尺寸448，圆形从 x=9 to439, y=0 to446? center ~224,223, radius~216. 大簇右上角 x~310,y77，距中心 sqrt(86^2+(-146)^2)=169; 右下 x~345,y302，距中心 sqrt(121^2+79^2)=144. 最右 x~386? y242? 距中心162. 这并不非常接近半径216；边缘散点接近边界。主体大簇其实位于 middle zone（半径约0.6-0.8），不是最外边缘。右侧中部有大簇，靠外但不是沿边环形。Edge_Loc 通常缺陷集中在边缘，比如靠近圆周的一段；这里大簇从中间偏右开始，不到边缘？虽然图像中红色区域右侧有绿色 die 间隔到黑色边缘，可能不贴边。更准确：主要聚集位于晶圆右中/内中部，靠右，局部。类别选 Loc，radial_zone=middle（或 global?）。clock_direction：是否可靠识别局部缺陷方向？局部缺陷在右侧偏上到中，方向大致2-3点钟？要求 clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定填 null。这里能可靠识别局部缺陷在右侧，主要集中在约1点到4点。可以写 \\\"3点\\\" 或 \\\"1-3点\\\"? 字段名 clock_direction 应简短钟点方向。示例类型是 null 或字符串。可以填 \\\"3点钟\\\" 或 \\\"2-4点钟\\\"。但指令说中央、整圈、全局、正常或不确定时填 null。局部缺陷方向可靠识别时写简短钟点方向。大簇偏向右侧，中心约2-3点，可从1点到4点。若填范围也许不符合 \\\"简短钟点方向\\\"，但可以填 \\\"3点\\\"。需要不做未经验证数值尺寸比例覆盖率；钟点方向允许。extent_r null。\\n\\nuncertainty：需要说明不确定之处。因为大簇接近右侧但未形成清晰贴边缘弧，且有许多外围散点，难以区分 Edge_Loc 与 Loc/是否含随机散点；可写 \\\"主要簇偏右中，未清晰贴合成边缘弧段；外围散点性质不判定。\\\" 但不能写推断。可以说 \\\"与 Edge_Loc 的边界不够明确；散点未判定。\\\" 不过字段 uncertainty 要求不确定之处，无则空。可以写\\\"主要簇靠右但未明确贴合最外边缘，Loc 与 Edge_Loc 存在轻微不确定。\\\" 这是类别不确定，可接受。\\n\\ncaption_zh：一句话客观描述主要形态与位置：\\\"右半部中至偏外区域有一不规则红色失效聚集块，周围伴稀疏红色散点。\\\" 这没写比例覆盖率。OK。\\n\\nmorphology：\\\"右侧不规则块状/簇状聚集，伴稀疏散点\\\"。\\n\\nradial_zone：middle vs edge. 大簇在右中部偏外，且不沿最外圈。radial_zone 可选 middle。但 caption 说中至偏外。如果 radial_zone=middle，是否忽略偏外？可选 middle because主体在中部。若选 edge，则可能强调靠近边缘。字段允许 one of center/middle/edge/global/unknown/none。由于缺陷主体位于右半部，距中心中等半径且向外延伸，未构成整圈；在三分区 center/middle/edge 中，最符合 middle（中部偏外）。写 middle。\\n\\ndefect_class：Loc。若主簇靠右中局部聚集，Loc 最合适。Edge_Loc 若明确沿边缘；不明确，所以 Loc。 \\n\\nPotential issue: The class list includes \\\"Random\\\" and there are many random red speckles across wafer; but the dominant pattern is a cluster. User warns not to dismiss scatter as noise, and not to write unseen patterns. We can mention peripheral sparse red dots. Class still based on main pattern. \\n\\nNeed output only JSON object. Ensure valid JSON, no markdown. Fields exactly seven. clock_direction maybe \\\"3点钟\\\". If using Chinese string for clock direction OK. They said clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央...填 null. Could set \\\"3点\\\". The field in the template is null; output can be string. It must include seven fields; OK.\\n\\nShould \\\"radial_zone\\\" be \\\"middle\\\" and \\\"clock_direction\\\" \\\"3点\\\". Good.\\n\\nNeed final only JSON. No extra text. Ensure no trailing comments.\\n\\nLet's craft:\\n{\\n  \\\"defect_class\\\":\\\"Loc\\\",\\n  \\\"morphology\\\":\\\"不规则块状失效聚集，边缘不整，伴稀疏散在红点\\\",\\n  \\\"radial_zone\\\":\\\"middle\\\",\\n  \\\"clock_direction\\\":\\\"3点\\\",\\n  \\\"extent_r\\\":null,\\n  \\\"caption_zh\\\":\\\"主要失效为晶圆右半部中部偏外的一块不规则红色聚集，周围可见稀疏红色散点。\\\",\\n  \\\"uncertainty\\\":\\\"聚集靠右但未清晰贴合最外边缘，Loc 与 Edge_Loc 间有轻微不确定；散点性质不判定。\\\"\\n}\\n\\nCheck instruction: \\\"描述中也不写未经验证的数值尺寸、比例或覆盖率\\\" - we don't. \\\"不能把没有看到的模式写进答案\\\" - we mention sparse scatter visible. \\\"不推测工艺根因\\\" OK.\\n\\nMaybe \\\"中部偏外\\\" could be interpreted as radial extent; okay qualitative. extent_r null. Good.\\n\\nNeed output JSON only. Done.\",\"role\":\"assistant\"}}],\"created\":1790931541,\"id\":\"chatcmpl-6a095127-a000-9454-b96b-60099a319112\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":2156,\"completion_tokens_details\":{\"reasoning_tokens\":2039,\"text_tokens\":117},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":2766}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 2156,
+  "completion_tokens_details": {
+   "reasoning_tokens": 2039,
+   "text_tokens": 117
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 2766
+ },
+ "answer_text": "{\"defect_class\":\"Loc\",\"morphology\":\"不规则块状失效聚集，边缘不整，伴稀疏散在红点\",\"radial_zone\":\"middle\",\"clock_direction\":\"3点\",\"extent_r\":null,\"caption_zh\":\"主要失效为晶圆右半部中部偏外的一块不规则红色聚集，周围可见稀疏红色散点。\",\"uncertainty\":\"聚集靠右但未清晰贴合最外边缘，Loc 与 Edge_Loc 间有轻微不确定；散点性质不判定。\"}"
+}

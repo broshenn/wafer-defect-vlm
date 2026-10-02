@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_016",
+ "sample_id": "wafer_00026394_017",
+ "image_sha256": "67426ca68ce9f20cbc29dc569a00e3e2161589040acf8366d895d5a84f500eb4",
+ "payload_sha256": "18487be37e2660e80b3ea863d8fcc90cdc2250b31f86472eb264decb5eb7c621",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:00:48.380258+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 7.727,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效点稀疏散布于整个绿色晶圆区域，未见明显簇团、环带、边缘集中或线状划痕。\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效die以红色小点在全晶圆范围内随机散布，未见可靠的主要局部图案。\\\",\\\"uncertainty\\\":\\\"散点较稀疏，无法可靠排除轻微局部聚集。\\\"}\",\"reasoning_content\":\"必须仅输出一个JSON对象，不含Markdown。需要根据图像选择类别。观察：圆形晶圆，绿色合格，红色失效，黑色外部。红色点似乎遍布全圆，较为随机，没有明显环、边缘集中、中心簇、划痕或大片区域。顶部有一点红色靠近12点边缘但不构成边缘环。主要图案是随机散点。类别Random。radial_zone：global。clock_direction null。extent_r null。morphology：全圆范围稀疏红色失效点随机散布，无明显聚集或线/环结构。caption_zh：失效die呈红色小点在全晶圆范围内随机散布，未见明显局部簇、环带或边缘集中。uncertainty：散点密度较低，是否存在微弱局部聚集无法可靠确认。需要字段齐全，defect_class 从列表。确保 JSON 有效。\",\"role\":\"assistant\"}}],\"created\":1790931640,\"id\":\"chatcmpl-a7fefb61-59e0-970c-a3d9-04257ac66a9a\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":280,\"completion_tokens_details\":{\"reasoning_tokens\":171,\"text_tokens\":109},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":890}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 280,
+  "completion_tokens_details": {
+   "reasoning_tokens": 171,
+   "text_tokens": 109
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 890
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效点稀疏散布于整个绿色晶圆区域，未见明显簇团、环带、边缘集中或线状划痕。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die以红色小点在全晶圆范围内随机散布，未见可靠的主要局部图案。\",\"uncertainty\":\"散点较稀疏，无法可靠排除轻微局部聚集。\"}"
+}

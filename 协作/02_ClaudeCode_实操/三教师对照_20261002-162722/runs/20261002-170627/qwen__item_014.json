@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_014",
+ "sample_id": "wafer_00017158_020",
+ "image_sha256": "cd56abc9d804e8f003280647b4e168c65cd1a616e9182d9423d7c093d2322bb4",
+ "payload_sha256": "7ad39efb0b5ff009b41500927e40d00a3d53ec3ddb2d618a38e9a363ba51a05f",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:08:50.509643+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 32.47,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Loc\\\",\\\"morphology\\\":\\\"东侧中部一块不规则红色失效die聚集区，向北略延伸成短带，其余区域散布零星红色散点\\\",\\\"radial_zone\\\":\\\"middle\\\",\\\"clock_direction\\\":\\\"3点\\\",\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆右侧约3点钟方向的中段半径处可见一块不规则红色失效die聚集区，其余区域散布少量红色散点\\\",\\\"uncertainty\\\":\\\"聚集区北侧短带与外围散点是否属于同一缺陷形态无法仅凭本图确认\\\"}\",\"reasoning_content\":\"分析这张晶圆 BIN 图。图像为圆形晶圆，绿色为合格 die，红色为失效 die。\\n\\n观察图案：大部分为绿色。红色 die 的分布情况：在晶圆右中部（偏右、略偏中心右侧）有一块较明显的红色聚集区。具体来看：从约12点～1点方向往内侧延伸出一条红色带状/块状区域，右侧中部（约2点～4点方向、靠内侧而非最边缘）有一块较大的红色聚集块。此外，整个晶圆上还散布着零星的红色散点。\\n\\n主要图案：右侧中部偏东区域有一块不规则的红色聚集块（loc？），以及从中心偏北向东延伸的带状区域？观察坐标：图像尺寸约380x380。红色聚集块：横坐标约200-320、纵坐标约90-260的区域，即右中部（偏东、中段半径处）。另有约(160-260, 90-120)附近的红色带状区，即中北偏东区域。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n主要图案判断：右侧中部有一块局部聚集块（Loc），还是随机散点（Random）？红色散点遍布晶圆各处（外围散点较多），但右侧有一块明显的连续红色聚集块（blob）。因此主要图案为局部聚集块 → \\\"Loc\\\"。\\n\\n位置：红色聚集块位于晶圆右中部，即半径中段（middle）偏东。clock_direction：局部缺陷方向可靠识别时为钟点方向。聚集块中心大约在东侧（3点方向）略偏北？聚集块范围：x约230-320，y约90-260。晶圆中心约(190,190)。聚集块中心约(270,170)，即东侧略偏北 → 约2-3点方向。可写\\\"3点\\\"或\\\"2-3点\\\"。指令：clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向。此处局部聚集块在右侧（东），即3点方向较为可靠。\\n\\nradial_zone：聚集块位于中心与边缘之间的中段半径 → \\\"middle\\\"。\\n\\nmorphology：简短中文描述：右侧中部一块不规则红色失效die聚集块，另全图散布零星红色散点。\\n\\ncaption_zh：一句话客观描述：晶圆右侧中部可见一块不规则红色失效die聚集区，其余区域散布少量红色散点。\\n\\nuncertainty：聚集块与散点的关系、散点是否构成随机图案不确定？或：主聚集块边界不规则，与散点区分存在一定不确定？填写简短内容。\\n\\nextent_r：null。\\n\\nclock_direction：\\\"3点\\\"或\\\"2-3点\\\"。聚集块纵跨y约90至260，中心y约175，接近中心高度；x约230-320，中心x约275。中心(190,190)。方向为东略偏北 → 约2-3点。写\\\"3点\\\"较稳妥？或\\\"2-3点\\\"。简短钟点方向即可。选\\\"3点\\\"？再确认：聚集块上端y=90对应角度：点(250,100)相对中心(190,190)：dx=60, dy=-90 → 角度 atan2(-(-90)? ) 时钟方向：12点为上。dx=60, dy=-90（向上）→ 方向为北偏东约34度 → 约1点方向。下端(280,250)：dx=90, dy=60（向下）→ 南偏东约56度 → 约4-5点方向。因此聚集块纵跨约1点至4点方向，中心约3点。写\\\"3点\\\"合适。\\n\\nradial_zone：聚集块距中心距离：dx约60-130，半径约190。即中段半径 → \\\"middle\\\"。\\n\\ndefect_class：\\\"Loc\\\"。\\n\\n但需考虑：红色散点遍布全图，是否应归为 Random？指令：选择最符合主要图案的一类。主要图案为右侧的局部聚集块（连续红色区域），散点为外围散点。因此 Loc 合适。\\n\\n再确认聚集块是否为 Scratch？Scratch 通常为细长线状。此处为块状/带状聚集，非细线。北侧有一条横向带状（x约160-260, y约90-120），与东侧聚集块相连，整体呈不规则块状或弯曲带状？观察：红色区域包括：(200-260, 60-90) 附近一小块；(160-260, 90-120) 横向带；(230-320, 120-260) 大块。整体呈从北向东延伸的弯曲带状？也可能视为 Scratch（划痕呈线状/曲线状）。但宽度较宽（多个die宽），更像局部聚集块。\\n\\n形态描述：右侧中部至北部的不规则块状/带状红色聚集区。\\n\\n类别候选：Loc（局部聚集）。Edge_Loc 为边缘局部；此处聚集块位于中段半径偏东，未贴最外边缘 → Loc。\\n\\n最终JSON：\\n{\\\"defect_class\\\":\\\"Loc\\\",\\\"morphology\\\":\\\"晶圆东侧中部一块不规则红色失效die聚集区，向北延伸成短带，其余区域散布零星红色散点\\\",\\\"radial_zone\\\":\\\"middle\\\",\\\"clock_direction\\\":\\\"3点\\\",\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆右侧（约3点钟方向）中段半径处可见一块不规则红色失效die聚集区，其余区域散布少量红色散点\\\",\\\"uncertainty\\\":\\\"聚集区北侧短带与散点是否属于同一缺陷形态不确定\\\"}\\n\\nclock_direction 格式：简短钟点方向，如\\\"3点\\\"或\\\"3\\\"。写\\\"3点\\\"。\\n\\n确认仅输出JSON对象一处。\",\"role\":\"assistant\"}}],\"created\":1790932097,\"id\":\"chatcmpl-cf6eca3f-5de3-99e9-8387-b6ff66bb8902\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1435,\"completion_tokens_details\":{\"reasoning_tokens\":1324,\"text_tokens\":110},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1929}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1435,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1324,
+   "text_tokens": 110
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1929
+ },
+ "answer_text": "{\"defect_class\":\"Loc\",\"morphology\":\"东侧中部一块不规则红色失效die聚集区，向北略延伸成短带，其余区域散布零星红色散点\",\"radial_zone\":\"middle\",\"clock_direction\":\"3点\",\"extent_r\":null,\"caption_zh\":\"晶圆右侧约3点钟方向的中段半径处可见一块不规则红色失效die聚集区，其余区域散布少量红色散点\",\"uncertainty\":\"聚集区北侧短带与外围散点是否属于同一缺陷形态无法仅凭本图确认\"}"
+}

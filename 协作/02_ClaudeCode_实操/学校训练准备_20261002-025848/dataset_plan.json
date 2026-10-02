@@ -1,0 +1,127 @@
+{
+  "task": "SFT-A 标签监督技术基线：数据集",
+  "prepared_at": "2026-10-02T02:59:12.456826+08:00",
+  "seed": 3407,
+  "question": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。请判断主要图案属于哪一类，只输出一个 JSON 对象，形如 {\"defect_class\":\"类别\"}；无法可靠判断时填 {\"defect_class\":\"unknown\"}。",
+  "question_note": "固定分类题面；与 GLM 七字段试标题面不同，本训练不做 GLM 同题能力对照。",
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "excluded_zcode_samples": [
+    "wafer_00012145_017",
+    "wafer_00014492_011",
+    "wafer_00017113_023",
+    "wafer_00017158_020",
+    "wafer_00026394_017",
+    "wafer_00036981_003",
+    "wafer_00037907_010",
+    "wafer_00040360_012",
+    "wafer_00042242_008",
+    "wafer_00043109_011",
+    "wafer_00043234_006",
+    "wafer_00043676_016",
+    "wafer_00043975_024",
+    "wafer_00044039_015",
+    "wafer_00044802_022",
+    "wafer_00044805_011",
+    "wafer_00045576_015",
+    "wafer_00046498_018"
+  ],
+  "excluded_zcode_lots": [
+    "lot12145",
+    "lot14492",
+    "lot17113",
+    "lot17158",
+    "lot26394",
+    "lot36981",
+    "lot37907",
+    "lot40360",
+    "lot42242",
+    "lot43109",
+    "lot43234",
+    "lot43676",
+    "lot43975",
+    "lot44039",
+    "lot44802",
+    "lot44805",
+    "lot45576",
+    "lot46498"
+  ],
+  "benchmark_lots": 202,
+  "lot_intersections": {
+    "train∩val": 0,
+    "train∩test": 0,
+    "val∩test": 0,
+    "train∩benchmark": 0,
+    "val∩benchmark": 0
+  },
+  "stats": [
+    {
+      "name": "train_180",
+      "n": 180,
+      "unique_sample_ids": 180,
+      "unique_lots": 180,
+      "unique_png_sha256": 180,
+      "missing_images": [],
+      "per_class": {
+        "Center": 20,
+        "Donut": 20,
+        "Edge_Loc": 20,
+        "Edge_Ring": 20,
+        "Loc": 20,
+        "Near_full": 20,
+        "Random": 20,
+        "Scratch": 20,
+        "none": 20
+      }
+    },
+    {
+      "name": "dev_18",
+      "n": 18,
+      "unique_sample_ids": 18,
+      "unique_lots": 18,
+      "unique_png_sha256": 18,
+      "missing_images": [],
+      "per_class": {
+        "Center": 2,
+        "Donut": 2,
+        "Edge_Loc": 2,
+        "Edge_Ring": 2,
+        "Loc": 2,
+        "Near_full": 2,
+        "Random": 2,
+        "Scratch": 2,
+        "none": 2
+      }
+    },
+    {
+      "name": "smoke_20",
+      "n": 20,
+      "unique_sample_ids": 20,
+      "unique_lots": 20,
+      "unique_png_sha256": 20,
+      "missing_images": [],
+      "per_class": {
+        "Center": 2,
+        "Donut": 2,
+        "Edge_Loc": 2,
+        "Edge_Ring": 3,
+        "Loc": 2,
+        "Near_full": 2,
+        "Random": 2,
+        "Scratch": 3,
+        "none": 2
+      }
+    }
+  ],
+  "problems": [],
+  "counts": {
+    "train": 20,
+    "dev": 2,
+    "smoke": 2,
+    "smoke_extra": 2
+  },
+  "files": {
+    "train_180.jsonl": "04febd99674f70bf4619c3b529fe4c1313a5b8d739e89c69c390fe686324db47",
+    "dev_18.jsonl": "08b267ea73def5b3119dbf6ca73d27630ef565bb4011f6e53b404d753f7972ac",
+    "smoke_20.jsonl": "f59ae6ba5ba917fae410a9a82f6747c886abde20df189878093467242dd98eec"
+  }
+}

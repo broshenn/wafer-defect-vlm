@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_006",
+ "sample_id": "wafer_00046498_018",
+ "image_sha256": "eecfdbe3984633c66c699106207170639f90302aaf1af04eb8eeead8395b0e9c",
+ "payload_sha256": "3e9384c1b0c8dec5fa0f44beaa467dc1242541d154bcca4ebdb9fb3886cd3a71",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:06:59.229305+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 31.96,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Near_full\\\",\\\"morphology\\\":\\\"整片大面积连续红色失效区，仅右上边缘存一小块绿色合格die聚集及外围零星绿点\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆几乎整面为红色失效die，仅右上边缘见一小块绿色合格die聚集和外围零星绿点\\\",\\\"uncertainty\\\":\\\"外围绿色散点稀少且分散，无法确认其是否构成独立模式\\\"}\",\"reasoning_content\":\"用户要求分析晶圆BIN图。图像内容：黑色背景（晶圆外），主体为红色（失效die）占据几乎整个晶圆面，绿色（合格die）仅零星分布：右上方（约2-3点钟方向）有一小块绿色聚集区，此外边缘附近有零星散点（左上约10-11点、左下约7-8点、下方约6点、右下约4-5点等）。\\n\\n观察：几乎 Entire wafer 为红色（失效），绿色极少。主要图案是什么？类别候选：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n\\\"Near_full\\\" 应该指几乎整片失效（接近全失效）的情况。红色覆盖几乎整个晶圆，绿色仅零星。因此主要图案为 Near_full（接近整面失效）。\\n\\n morphological 描述：整面几乎全为红色失效die，仅边缘局部（右上约2-3点）有少量绿色合格die聚集及外围零散绿点。\\n\\nradial_zone：global（整面）。\\n\\nclock_direction：仅在可靠识别局部缺陷方向时填写。缺陷（红色）为全局，绿色聚集在右上约2-3点方向，但绿色是合格die而非缺陷。缺陷方向？缺陷为全局红色，故 clock_direction 为 null。规则：\\\"clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时填 null。\\\" 此处缺陷为全局，故 null。\\n\\nextent_r：必须为 null。\\n\\ncaption_zh：一句话客观描述主要形态与位置：晶圆面几乎全部为红色失效die，仅右上边缘有一小块绿色合格die聚集及外围零星绿点。\\n\\nuncertainty：不确定之处：绿色散点是否算噪声无法判断；但主要图案清晰为近全失效。或许应写：右上绿色聚集区为合格die聚集，非缺陷；缺陷类别判定为 Near_full 较可靠。uncertainty 可写空字符串或简短说明。考虑：类别选择 Near_full 是否可靠？红色覆盖几乎整面，绿色极少。Near_full 意为接近全部失效。符合。\\n\\n但需注意：类别定义中 Near_full 指几乎整片为同一 bin（失效）的情况。是的。\\n\\nmorphology：\\\"整面几乎全为红色失效die，仅右上方边缘处见一小块绿色合格die聚集，其余外围零星绿色散点\\\"——但 morphology 应为主要可见形态的简短描述：接近整面均匀红色失效覆盖。\\n\\nradial_zone：global。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\ncaption_zh：\\\"晶圆几乎整面为红色失效die，仅右上约2-3点钟边缘处有一小块绿色合格die聚集及外围零星绿点。\\\" 但 clock_direction 为 null 时 caption 中写钟点是否矛盾？caption 可写位置描述。规则仅限制 clock_direction 字段。caption 中写\\\"右上边缘\\\"即可，不必写钟点。但写钟点也算客观描述？为安全，写\\\"右上边缘\\\"。\\n\\nuncertainty：可写：\\\"绿色散点稀少，无法判断其是否为噪声；主要图案为近全失效较明确。\\\" 或空字符串。题目要求\\\"不确定之处，无则空字符串\\\"。存在不确定之处吗？右上绿色聚集区是否影响类别判定？Near_full 仍成立。或许 uncertainty 写：\\\"外围绿色散点极少，其性质不明；但不影响近全失效的主要判定。\\\" 但要求只描述可见，不推测。uncertainty 可写：\\\"绿色合格die极少且分散，无法确认其是否构成局部合格区模式。\\\" 嗯。\\n\\n简单起见：uncertainty 写 \\\"\\\"？但右上绿色聚集是可见的局部合格区，是否应归类为 Edge_Loc（边缘局部合格）？注意：类别是针对缺陷图案（失效die分布）。失效die为整面，故 Near_full。绿色聚集只是其余部分。\\n\\n再确认类别定义（常见 wafer bin map 分类）：Center（中心缺陷）、Donut（环状中心好边缘坏或反之）、Edge_Loc（边缘局部缺陷）、Edge_Ring（边缘环状）、Loc（局部缺陷）、Near_full（近全片缺陷）、Random（随机分散）、Scratch（划痕线状）、none（正常）。本图红色几乎整面 => Near_full。\\n\\n因此输出：\\n\\n{\\\"defect_class\\\":\\\"Near_full\\\",\\\"morphology\\\":\\\"整面几乎全为红色失效die，仅右上边缘一小块绿色合格die聚集及外围零星绿点\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆几乎整面为红色失效die，仅右上边缘见一小块绿色合格die聚集和外围零星绿点\\\",\\\"uncertainty\\\":\\\"外围绿色散点稀少且分散，无法确认其是否构成独立模式\\\"}\\n\\n检查：描述中不写未验证数值尺寸、比例、覆盖率。\\\"几乎整面\\\" 算比例描述吗？\\\"几乎整面\\\" 是定性描述，允许？要求：\\\"描述中也不写未经验证的数值尺寸、比例或覆盖率\\\"。数值比例如\\\"90%\\\"不可写。\\\"几乎整面\\\" 为定性，应允许。但为安全用\\\"大面积连续红色\\\"？morphology 简短中文描述：\\\"整片大面积连续红色失效区，仅右上边缘存一小块绿色合格die聚集及外围零星绿点\\\"。可。\\n\\nradial_zone：global。\\n\\nclock_direction：null（缺陷为全局）。\\n\\n最终 JSON 仅一个对象。\",\"role\":\"assistant\"}}],\"created\":1790931987,\"id\":\"chatcmpl-d2d75df2-4a81-9111-a71f-25cf06c057f6\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1291,\"completion_tokens_details\":{\"reasoning_tokens\":1188,\"text_tokens\":102},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1785}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1291,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1188,
+   "text_tokens": 102
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1785
+ },
+ "answer_text": "{\"defect_class\":\"Near_full\",\"morphology\":\"整片大面积连续红色失效区，仅右上边缘存一小块绿色合格die聚集及外围零星绿点\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆几乎整面为红色失效die，仅右上边缘见一小块绿色合格die聚集和外围零星绿点\",\"uncertainty\":\"外围绿色散点稀少且分散，无法确认其是否构成独立模式\"}"
+}

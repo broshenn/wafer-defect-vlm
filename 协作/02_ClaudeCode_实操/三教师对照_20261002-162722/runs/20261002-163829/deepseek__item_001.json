@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_001",
+ "sample_id": "wafer_00043234_006",
+ "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+ "payload_sha256": "7a3144d4913485b69178b72f9dd5837f63b636ef8d2d5cffac18148c1fe0c796",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:39:10.778733+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 8.945,
+ "error": null,
+ "raw_text": "{\"id\":\"b2b2e29f-2ef3-4dd2-8dd2-8ae6c80f1df2\",\"object\":\"chat.completion\",\"created\":1790930341,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 呈零散、随机散布，无连续环状、线状或局部集中图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆图上红色失效 die 主要呈散点状随机分布于中心至边缘的多个区域。\\\",\\\"uncertainty\\\":\\\"红色散点是否存在轻微局部密度差异，仅凭图像难以可靠判定。\\\"}\",\"reasoning_content\":\"我们需要回答用户。用户要求只根据公开晶圆 BIN 图标注：黑色为晶圆外，绿色合格 die，红色失效 die。不推测工艺根因。只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声，不把没有看到的模式写进答案。从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。本轮只做类别、定性形态与位置检查。extent_r 必须为 null，描述中也不写未经验证的数值尺寸、比例或覆盖率；这不代表缺陷尺寸为零。图片上方为12点钟，右方为3点钟。clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时填 null。仅输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下七字段：\\n{\\\"defect_class\\\":\\\"类别\\\",\\\"morphology\\\":\\\"主要可见形态的简短中文描述\\\",\\\"radial_zone\\\":\\\"center/middle/edge/global/unknown/none\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"一句话客观描述主要形态与位置\\\",\\\"uncertainty\\\":\\\"不确定之处，无则空字符串\\\"}\\n\\n需要分析图像。图像是像素化晶圆图，黑色背景，圆形区域含绿色和红色 die。主要图案？有很多红色失效 die 散布在绿色中，整体呈随机分布？需要从给定类别选择：Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none。观察：红色斑点遍布整个晶圆，无明显局部集中，边缘也有，中心也有。可能属于 Random？但注意红色不是均匀随机？有很多红色小块分散，看起来随机。是否有外围散点？边缘红色较多？需要判断。\\n\\n我们需要严格只根据图像。让我仔细观察：晶圆圆形，绿色为主，红色失效 die 呈小簇/单 die 分布，整体散乱。没有明显环状、中心团、边缘环、局部区域、划痕线、几乎全红等。因此最符合 Random？也可能 Donut？不，red 不形成环。Edge_Ring？边缘红色不连续，不是整圈。Edge_Loc？边缘局部？有若干边缘红色，但全局也有。Near_full？大部分绿色，不是。Scratch？没有线状。none？不是无缺陷。所以 defect_class 应为 Random。但注意类别里有 \\\"Random\\\"，应该选择。morphology 描述主要可见形态：红色失效 die 呈零散、散点状分布，遍布晶圆多个区域，无显著连续图案。radial_zone：global？因为遍布全局？ 或者 unknown？中心、中间、边缘都有，所以 global。clock_direction null。extent_r null。caption_zh：晶圆图上红色失效 die 呈零散随机散布，遍布中心到边缘，无局部集中。uncertainty：因为红色散点可能包含边缘较多？是否需要提及？ \\\"不能仅凭散点就断定它们是噪声\\\" 所以不要把散点当噪声，描述为散点。可能不确定类别是 Random 还是 unknown？根据主要图案，Random 合理。但要求 \\\"只描述实际可见的主要图案和外围散点\\\" 可以描述。图片中红色点子很多但随机。类别 Random 是 \\\"Random\\\" 对应随机缺陷。可以。\\n\\n需要输出 JSON 对象，只有 JSON，不写 Markdown。字段固定。extent_r 必须 null。clock_direction null（中央/全局/正常/不确定）。radial_zone 是 center/middle/edge/global/unknown/none。这里 global 合适。\\n\\n但需要小心：晶圆 BIN 图可能黑色为晶圆外，绿色为合格 die，红色失效 die。红色分布全局，但边缘也许有较多？检查边缘区域：最外圈绿色也有红色，但红色在边缘不是整圈连续。如果主要图案是Random，radial_zone global。morphology 简短中文：红色失效 die 呈零散、随机散布，无连续环状/线状或局部聚集。但 \\\"无局部聚集\\\" 可能不完全，有些小簇相邻，但可视为散点。可以。\\n\\nuncertainty：是否存在局部小范围略密集？无法量化，类别可能接近 Random 但不确定。但若选 unknown？需要从给定选择最符合主要图案一类。我认为 Random。\\n\\n需注意 JSON 字段名应为 defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty。不能有额外解释。必须双引号。extent_r:null 不是字符串。clock_direction:null。radial_zone:\\\"global\\\"。defect_class:\\\"Random\\\"。morphology: \\\"红色失效 die 零散随机分布，无明显连续图案或局部集中\\\" 但包含 \\\"无明显连续图案\\\" 可能可。caption_zh:\\\"晶圆上红色失效 die 主要呈零散随机散布，分布在中心至边缘的多个区域。\\\" uncertainty:\\\"红色散点是否完全随机、是否有轻微局部密度差异，仅凭图像难以可靠判定。\\\"\\n\\n但 \\\"不把没有看到的模式写进答案\\\" 我们没写。 \\\"不推测工艺根因\\\" 没写。 \\\"只描述实际可见的主要图案和外围散点\\\" 可以。\\n\\n然而，如果图像中被标注为红色随机不是 \\\"Random\\\" 类别吗？ Random 是可选类别，可能正确。\\n\\n再仔细看图像：红色失效 die 确实非常多，几乎占差不多一半？但图形较小，红色散点密集。有中心区域也有一个较大的红色块？中心偏上？可能 Random。但类别 \\\"Near_full\\\" 可能？ Near_full 意味着几乎全失效？绿色还是多数，红色可能接近 40%，但绿色仍占多数，所以 Random。 \\\"Donut\\\" 是环状；没有。 \\\"Scratch\\\" 是线状；没有。 \\\"Loc\\\" 局部；没有。 \\\"Edge_Loc\\\" 边缘局部；有边缘红色但全局更多。 \\\"Edge_Ring\\\" 边缘环；红色不只在边缘。 \\\"none\\\" 不适用。\\n\\n需要回答仅 JSON。确保没有 markdown code block。直接 JSON。\\n\\nPotential issue: \\\"extent_r 必须为 null，描述中也不写未经验证的数值尺寸、比例或覆盖率\\\" 我没写。caption 中 \\\"中心至边缘的多个区域\\\" 可以。 \\\"零散随机散布\\\" 定性。 \\\"主要可见形态\\\" 可以。\\n\\n最终输出。\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":1500,\"total_tokens\":1997,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":1399},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 1500,
+  "total_tokens": 1997,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 1399
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 呈零散、随机散布，无连续环状、线状或局部集中图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆图上红色失效 die 主要呈散点状随机分布于中心至边缘的多个区域。\",\"uncertainty\":\"红色散点是否存在轻微局部密度差异，仅凭图像难以可靠判定。\"}"
+}

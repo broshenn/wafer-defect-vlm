@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_018",
+ "sample_id": "wafer_00036981_003",
+ "image_sha256": "ed061e5a734c3c03c38a8a4024dd4873d2852469559662d9e088ce635116f9bf",
+ "payload_sha256": "e5e9ebf0ce516e2c88729e02d3ce0d89f2ebf066504db588f293ce53e0d71029",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:10:29.939583+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 44.329,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die呈无规则散点状分布于全圆面，夹少量小连续失效块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以无规则散点形式遍及整个晶圆面，中央附近另见一处较小的连续失效块。\\\",\\\"uncertainty\\\":\\\"中央连续失效块与全圆散点并存，其是否应视为主图案存在一定不确定\\\"}\",\"reasoning_content\":\"用户要求分析晶圆 BIN 图。图像：圆形晶圆，绿色为合格die，红色为失效die，黑色为晶圆外。\\n\\n观察图像：红色die分散在整个晶圆面上。看起来是随机散布的点状模式。是否有主要图案？检查：红色点散布于整个晶圆面，包括中心、中部、边缘。是否有局部聚集？中心附近（略偏中心）似乎有一块红色块：坐标约(180-220, 160-240)附近有一块红色聚集块？观察：图像中央偏右处有一块红色块（约x=170-230, y=140-240）。此外边缘也有散点。\\n\\n重新审视图像：尺寸约360x360。红色像素分布：上部有散点，中部有一块较大的红色聚集（约x=150-230, y=140-240），其余为遍及全圆的散点。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n主要图案：红色die随机散布于整个晶圆面 → Random。但中心附近有一块聚集？该聚集是否足以称为Loc或Center？中心块：约(160-230, 140-240)，确实存在连续的红色区域（约60x80像素的块）。但其余部分也有大量散点遍布全网面。\\n\\n判断：主要图案是全网面的随机散点，还是局部聚集？散点数量较多，分布遍及全网面。中央块只是稍大的聚集之一。其他位置也有小聚集（如左下、右中等）。\\n\\n考虑典型晶圆缺陷模式定义：\\n- Random：失效die随机分布，无位置偏好。\\n- Loc：局部聚集缺陷。\\n- Center：中心集中。\\n- Edge_Ring：边缘环状。\\n- Edge_Loc：边缘局部。\\n- Donut：中心空、环状。\\n- Scratch：划痕状线形。\\n- Near_full：几乎全灭。\\n- none：无缺陷。\\n\\n本图：红色散点遍及全网面（中心、中部、边缘均有），无明确环状、中心集中或边缘集中。中央有一块聚集，但其余散点也很多。整体看更像Random＋局部聚集？但题目要求选最符合主要图案的一类。\\n\\n观察散点分布：上部、下部、左部、右部、中心均有红色点。密度大致均匀？中央块较显眼（约x=150-235, y=140-240区域的连续红色）。但其余区域散点密度也不低。\\n\\n若主要图案为\\\"全网面随机散点＋中央局部聚集\\\"，则选Random还是Loc？题目指示：\\\"只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声\\\"。即散点也是图案的一部分。\\n\\n考虑：Random类的特征正是失效die随机散布于全网面。本图红色die确实散布于全网面，且包含若干小聚集（随机分布中也可能出现聚集）。中央块是否过大而不像随机？中央块约8x8 die程度的连续红色？实际像素块约70x90像素，1 die约12像素，故约6x7 die的连续红色块。随机分布中出现如此聚集的概率较低，但也可能属于Loc。\\n\\n但Loc类通常指缺陷集中于某一局部区域，其余区域基本干净。本图其余区域有大量散点，故不符合Loc的\\\"局部\\\"定义。\\n\\n因此主要图案＝全网面随机散布（含若干小聚集）→ Random。\\n\\nradial_zone：global（遍及全网面）。\\n\\nclock_direction：null（无可靠局部方向）。\\n\\nextent_r：null（本轮要求）。\\n\\nmorphology：简短中文描述：\\\"失效die呈散点状分布于整个晶圆面，中央偏右可见一小块连续红色聚集\\\"—但morphology应为主要可见形态的简短描述。例如：\\\"全圆面散布红色失效die，含少量小聚集块\\\"。\\n\\ncaption_zh：一句话客观描述主要形态与位置：\\\"红色失效die以散点形式分布于整个晶圆面，中央附近可见一处较小的连续失效块。\\\"\\n\\nuncertainty：中央块是否算局部聚集存疑？可写：\\\"中央连续红色块是否归为局部聚集不确定\\\"或空字符串。题目要求写不确定之处，无则空。我认为可写：\\\"散点与中央小聚集并存，主类判定存在一定不确定\\\"。但保持简短。\\n\\n再确认中央块位置：坐标估计：图像宽360。红色块大致位于x=150-235, y=140-240？观察图像：中部有较大的红色区域：约(150,140)到(235,240)。晶圆中心约(180,180)。故该块位于中心附近，略偏右下？实际块中心约(195,190)，接近晶圆中心。故若选Center类？Center类指缺陷集中于晶圆中心区域。但本图散点遍及全网面，中心块只是其中之一。中心集中度是否足够高？中心块面积约6x7 die，散点总数约80-100 die。中心块占比不算压倒性。\\n\\n典型BIN图分类中，Random指无规则散布。本图散点确实无规则。中央块可能是随机聚集或局部缺陷。但题目要求\\\"最符合主要图案的一类\\\"。主要图案＝全网面散点→Random。\\n\\n考虑是否有Scratch可能：Scratch为线状/弧状排列的失效die。本图散点中是否有线状？未见明显线状或弧状排列。\\n\\nDonut：中心空、环状集中：不符合，中心有块且环状不明显。\\n\\nEdge_Ring：边缘一圈：不符合，边缘散点不构成完整环。\\n\\nEdge_Loc：边缘局部集中：不符合。\\n\\nNear_full：几乎全红：不符合。\\n\\nnone：全绿：不符合。\\n\\n故Random最合适。\\n\\nradial_zone：global。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\nmorphology：\\\"红色失效die呈无规则散点状分布于全圆面，并夹有少量小尺寸连续失效块\\\"——简短版：\\\"全圆面无规则散点状失效，含少量小连续块\\\"。\\n\\ncaption_zh：\\\"红色失效die以无规则散点形式遍及整个晶圆面，中央附近另见一处小连续失效块。\\\"\\n\\nuncertainty：\\\"中央小连续块是否应视为主图案（局部聚集）存在不确定\\\" 或空。题目允许不确定则写。我认为写较稳妥：\\\"中央连续红色块与全网面散点并存，主类归属存在一定不确定\\\"。但保持简短。\\n\\n最终JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"全圆面无规则散点状红色失效die，夹少量小连续块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以无规则散点形式分布于整个晶圆面，中央附近可见一处较小的连续失效块。\\\",\\\"uncertainty\\\":\\\"中央连续失效块是否构成局部聚集主图案存在不确定\\\"}\\n\\n检查字段顺序与要求：七字段：defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty。是。\\n\\n仅输出JSON对象，不写推理或Markdown。\",\"role\":\"assistant\"}}],\"created\":1790932185,\"id\":\"chatcmpl-a05437ef-fbaa-9995-b091-396b0cf83200\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1701,\"completion_tokens_details\":{\"reasoning_tokens\":1597,\"text_tokens\":103},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":2195}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1701,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1597,
+   "text_tokens": 103
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 2195
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die呈无规则散点状分布于全圆面，夹少量小连续失效块\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die以无规则散点形式遍及整个晶圆面，中央附近另见一处较小的连续失效块。\",\"uncertainty\":\"中央连续失效块与全圆散点并存，其是否应视为主图案存在一定不确定\"}"
+}

@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_013",
+ "sample_id": "wafer_00014492_011",
+ "image_sha256": "cdebd1b08f90404a7cbcad32c5a4606a45e139ce3058534390f00fa0f31b0701",
+ "payload_sha256": "4f20f60c5870744168bbb668f247d9586161be3af2e84bb3b2ec2537418d2fe3",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:08:18.008571+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 21.355,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Edge_Ring\\\",\\\"morphology\\\":\\\"沿晶圆外周连续一圈红色失效环，环内绿色区域散布稀疏孤立红点\\\",\\\"radial_zone\\\":\\\"edge\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效 die 沿晶圆最外周形成连续红环，环内绿色区域散见少量孤立红点\\\",\\\"uncertainty\\\":\\\"环内稀疏散点与边缘环是否相关无法仅凭本图确认\\\"}\",\"reasoning_content\":\"用户要求分析晶圆 BIN 图。图像内容：黑色背景（晶圆外），绿色圆形（合格 die），红色边界环（晶圆边缘一圈失效 die），以及圆内散在的红色点（散点状失效）。\\n\\n观察图像：晶圆边缘有一圈连续的红色环（edge ring），内部则有稀疏的红色散点随机分布。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n主要图案：边缘一圈红色环（Edge_Ring）。内部散点为稀疏随机点。主要图案应为边缘环（Edge_Ring），因为边界处红色连续成环。内部散点较少。\\n\\n判断：Edge_Ring 指边缘环状缺陷。Donut 指中心空白、中间环状缺陷。此处红色集中在最外周轮廓，呈完整一圈，符合 Edge_Ring。内部散点为次要（外围散点？题目要求\\\"只描述实际可见的主要图案和外围散点\\\"）。\\n\\n实际上散点分布于整个晶圆内部，并非仅外围。但主要图案是边缘环。\\n\\nradial_zone：edge（边缘环为主）。但散点全局分布？主要图案为边缘环，故 radial_zone 为 edge。\\n\\nclock_direction：边缘环为整圈，故 null。\\n\\nextent_r：null。\\n\\nmorphology：晶圆最外周连续红色失效环，环内绿色区域散布稀疏红色散点。\\n\\ncaption_zh：晶圆边缘呈连续红色失效环，环内绿色区域散布少量随机红色散点。\\n\\nuncertainty：内部散点是否为随机噪声无法确认；或：边缘环与内部散点何者为主？但主要图案明显是边缘环（连续、量大）。散点数量约几十个点，边缘环为整圈连续。故主类为 Edge_Ring。\\n\\n再确认图像：红色边界沿晶圆轮廓连续一周，厚度约数像素（die 单位约1-2格）。内部散点为孤立单点。\\n\\n因此 defect_class = \\\"Edge_Ring\\\"。\\n\\nradial_zone = \\\"edge\\\"。\\n\\nclock_direction = null（整圈）。\\n\\nextent_r = null。\\n\\nmorphology：沿晶圆外周连续分布的红色失效环，内部另见稀疏孤立红点。\\n\\ncaption_zh：失效 die 主要沿晶圆外周形成连续红环，环内绿色区域散见孤立红点。\\n\\nuncertainty：内部散点与边缘环是否同源无法判断；或空字符串？题目要求\\\"不确定之处，无则空字符串\\\"。可写：内部稀疏散点是否计入主要图案存在不确定性。但要求只描述可见内容。uncertainty 可写：\\\"内部散点数量少且分散，其归类不确定\\\" 或空。\\n\\n考虑：主要图案明确为边缘环。散点为次要。不确定之处：无明显不确定。但为稳妥可写空字符串。不过内部散点是否算\\\"随机\\\"伴随？分类只选一类，选 Edge_Ring。uncertainty 可写：\\\"环内散点是否为独立随机缺陷无法仅凭本图确认\\\"。这符合\\\"不能仅凭散点就断定它们是噪声\\\"。\\n\\n最终 JSON：\\n\\n{\\\"defect_class\\\":\\\"Edge_Ring\\\",\\\"morphology\\\":\\\"沿晶圆外周连续一圈红色失效环，环内绿色区域散布稀疏孤立红点\\\",\\\"radial_zone\\\":\\\"edge\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"失效 die 沿晶圆最外周形成连续红环，环内绿色区域散见少量孤立红点\\\",\\\"uncertainty\\\":\\\"环内稀疏散点与边缘环是否相关无法仅凭本图确认\\\"}\\n\\n检查字段：七字段齐全。clock_direction 为 null（整圈）。extent_r 为 null。描述中无数值。\\n\\n输出仅一个 JSON 对象，不含 Markdown。\",\"role\":\"assistant\"}}],\"created\":1790932076,\"id\":\"chatcmpl-eb7a0314-4bec-9b03-8d5d-45d4fb99080f\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":909,\"completion_tokens_details\":{\"reasoning_tokens\":809,\"text_tokens\":99},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1403}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 909,
+  "completion_tokens_details": {
+   "reasoning_tokens": 809,
+   "text_tokens": 99
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1403
+ },
+ "answer_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"沿晶圆外周连续一圈红色失效环，环内绿色区域散布稀疏孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效 die 沿晶圆最外周形成连续红环，环内绿色区域散见少量孤立红点\",\"uncertainty\":\"环内稀疏散点与边缘环是否相关无法仅凭本图确认\"}"
+}

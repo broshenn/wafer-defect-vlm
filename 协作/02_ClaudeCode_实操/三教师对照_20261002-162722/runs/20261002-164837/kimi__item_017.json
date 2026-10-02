@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_017",
+ "sample_id": "wafer_00044805_011",
+ "image_sha256": "6060863eb5ae412c3db9f189ba2cd12b4f4a4fc8895ef73b722b48f810b02657",
+ "payload_sha256": "0f226e0c9f3b43a9b90e49fc4ab18812faa2fb1da07c6491f7361fecff05987c",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:01:01.213609+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 12.803,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 以离散小方块/散点状遍布整个晶圆，绿色合格 die 仍占主体，未见明显团簇、环带、中心集中或线状划痕。\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效 die 随机散布于中心、中部与边缘区域，整体无明确主导空间图案。\\\",\\\"uncertainty\\\":\\\"散点密度存在轻微局部起伏，但不足以可靠判定为局部聚集或其他系统性图案。\\\"}\",\"reasoning_content\":\"The user wants me to analyze a wafer BIN map image. Black is outside wafer, green is good die, red is failed die. I need to classify from Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none, or unknown.\\n\\nLooking at the image: It's a circular wafer with green dies and scattered red dies throughout. The red dies appear randomly distributed across the entire wafer surface - center, middle, and edge areas all have red fails scattered around. There's no clear concentration at the center, no donut ring, no edge ring, no specific localized cluster, no scratch line. The red fails are spread fairly uniformly across the whole wafer.\\n\\nThe pattern looks like Random - red dies scattered throughout without obvious spatial pattern. There are many red dies distributed globally across the wafer. The density seems moderate - not near_full (which would be mostly red). Green is still dominant.\\n\\nRadial zone: global (red fails throughout center, middle, edge).\\n\\nclock_direction: null (no reliable local defect direction).\\n\\nextent_r: null as required.\\n\\ndefect_class: Random seems most fitting. The red dies are scattered randomly across the wafer with no discernible pattern. However, I should consider if there's any subtle pattern. Looking again - red pixels are spread throughout, maybe slightly more in some areas but no clear systematic pattern. Random is the best fit.\\n\\nmorphology: 红色失效 die 呈离散小方块/散点状遍布全晶圆，无明显聚集、环带或线条。\\n\\nradial_zone: global\\n\\ncaption_zh: 合格绿色 die 上随机散布红色失效 die，覆盖中心、中部与边缘，未见明显环带、局部团簇或划痕。\\n\\nuncertainty: 散点分布整体较均匀，无法完全排除轻微局部密度差异，但无可靠主导图案。 Or keep it shorter.\\n\\nActually, the instruction says \\\"无法可靠选择时填 unknown\\\". I think Random is reliable enough here. The fails are distributed across the whole wafer without pattern. So Random with radial_zone global.\\n\\nLet me make sure about \\\"Near_full\\\" - that would be when almost all dies are failing. Here green is clearly dominant (majority), so not Near_full.\\n\\n\\\"Random\\\" - scattered random fails. Yes.\\n\\nFinal JSON only.\",\"role\":\"assistant\"}}],\"created\":1790931648,\"id\":\"chatcmpl-6bc89c8e-8838-972c-9163-9116e7fc6eb8\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":605,\"completion_tokens_details\":{\"reasoning_tokens\":474,\"text_tokens\":131},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1215}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 605,
+  "completion_tokens_details": {
+   "reasoning_tokens": 474,
+   "text_tokens": 131
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1215
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 以离散小方块/散点状遍布整个晶圆，绿色合格 die 仍占主体，未见明显团簇、环带、中心集中或线状划痕。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效 die 随机散布于中心、中部与边缘区域，整体无明确主导空间图案。\",\"uncertainty\":\"散点密度存在轻微局部起伏，但不足以可靠判定为局部聚集或其他系统性图案。\"}"
+}

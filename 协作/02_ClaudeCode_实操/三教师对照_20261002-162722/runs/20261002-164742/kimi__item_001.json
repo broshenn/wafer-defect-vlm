@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_001",
+ "sample_id": "wafer_00043234_006",
+ "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+ "payload_sha256": "021e0ce6d656c6537ec85098366f1ff3c597fccf218f1c248f0eb07112576751",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:48:03.079689+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 20.749,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 呈离散方块散布于全片，中心、中部与边缘均可见；外围红点为零散分布，未连成连续环带或线痕。\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"全片范围内红色失效 die 离散散布，未见明确中心团块、连续环带、单一边缘聚集或线状划痕。\\\",\\\"uncertainty\\\":\\\"局部密度有起伏，但不足以判定为环带、中心缺陷或可靠方向性缺陷。\\\"}\",\"reasoning_content\":\"We need answer only JSON object with seven fields. Need classify wafer BIN map. Let's inspect image mentally. It is circular wafer on black background. Green pass, red fail. Need choose among Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none. We only describe visible major pattern and peripheral scatter; don't infer root cause; don't call scatter noise solely; no unseen patterns. extent_r null, no numbers. clock_direction null unless reliable local defect direction. Need determine class.\\n\\nImage: circular wafer with many red dies scattered throughout. I see high density red across whole wafer, but green still majority? It looks like random distribution of failing dies across entire wafer, maybe with some clustering? Need identify major pattern. There are red dies at edge all around? The wafer boundary is irregular due to dies; black outside. Red fail dies appear numerous spread across center, middle, edge. No clear center cluster, no donut ring, no edge ring, no single localized cluster, no scratch line. It might be Random: scattered red dies across wafer without spatial structure. Need be careful: At edges, especially left-lower/right? There are many red at periphery but also throughout. The prompt says only describe actual visible major pattern and peripheral scatter. Main visible pattern: red failed dies are dispersed over entire wafer with no obvious ring/line/single cluster; density maybe high and fairly uniform. radial_zone global. defect_class Random. morphology short Chinese: 红色失效 die 呈离散点状遍布全片，分布较均匀，无明显环带/中心团块/划痕。 caption one sentence objective. uncertainty maybe \\\"局部密度有起伏，但未见可靠的方向性或环状结构\\\". clock_direction null. extent_r null.\\n\\nNeed output JSON only. Ensure fields exactly seven. defect_class string among options: \\\"Random\\\". radial_zone one of allowed? \\\"global\\\". clock_direction null. extent_r null. uncertainty string. Need no markdown. \\n\\nDouble-check classification definitions: Center = central cluster; Donut = ring around center; Edge_Loc = localized edge; Edge_Ring = ring at edge; Loc = localized cluster (not necessarily edge); Near_full = almost all die failing? Random = random defects. Here green dominant with many red scattered; not near_full. So Random.\\n\\nNeed mention peripheral scatter? The prompt says describe actual visible major pattern and peripheral scatter. In morphology maybe mention peripheral red dies are part of same scattered distribution rather than continuous edge ring. Caption objective. Good.\\n\\nNeed final with JSON only. Ensure valid JSON with null not quoted. Chinese strings. No extra fields.\\n\\nLet's craft concise. morphology: \\\"红色失效 die 以离散小方块散布全片，中心、中部与边缘均可见；边缘仅有零散红点，未连成连续环带或线痕。\\\" Good. radial_zone global. caption: \\\"全片范围内红 die 随机散布，绿 die 仍占多数，未见明确中心团块、环带、局部边缘聚集或划痕。\\\" uncertainty: \\\"红 die 数量较多且局部密度不均，但不足以判定为环带或单一方向缺陷。\\\" That is okay. It says uncertainty no then empty. We have uncertainty.\\n\\nNeed avoid unverified数值比例覆盖率. Saying 绿 die 仍占多数 is a qualitative assessment visible; is that okay? They said no unverified numerical size/proportion/coverage. \\\"占多数\\\" is qualitative proportion. Might be risky. Better avoid proportion/coverage entirely. Caption: \\\"全片范围内可见大量离散红色失效 die，未见明确中心团块、连续环带、单一边缘聚集或线状划痕。\\\" Good. morphology similar.\\n\\nDoes \\\"大量\\\" imply quantity? It's qualitative but okay? Maybe avoid amount too: \\\"红色失效 die 呈离散方块分布于全片\\\". Good.\\n\\nFinal JSON only. Ensure no Markdown fences. \\n\\nNeed final answer only JSON object. Done.\",\"role\":\"assistant\"}}],\"created\":1790930862,\"id\":\"chatcmpl-1231553d-9e63-93b6-b672-3eafceb57ae5\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":942,\"completion_tokens_details\":{\"reasoning_tokens\":807,\"text_tokens\":135},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1552}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 942,
+  "completion_tokens_details": {
+   "reasoning_tokens": 807,
+   "text_tokens": 135
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1552
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 呈离散方块散布于全片，中心、中部与边缘均可见；外围红点为零散分布，未连成连续环带或线痕。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"全片范围内红色失效 die 离散散布，未见明确中心团块、连续环带、单一边缘聚集或线状划痕。\",\"uncertainty\":\"局部密度有起伏，但不足以判定为环带、中心缺陷或可靠方向性缺陷。\"}"
+}

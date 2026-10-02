@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_005",
+ "sample_id": "wafer_00042242_008",
+ "image_sha256": "d9df96ef2a036b5fe868a2d1713e9245abea1febb936c0469c2262e8502300e4",
+ "payload_sha256": "9212987f3ca9e6a3c4047cfc096d97f2689343e0a334c3927fe5f5998ab1576d",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:50:58.065485+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 17.32,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die以散点为主并夹杂若干小团簇，遍布晶圆，未见明确环状、线状或单边集中结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆以绿色合格die为主，红色失效die散布于中心、中间与边缘区域，含若干小簇但无主导几何图案。\\\",\\\"uncertainty\\\":\\\"散布点中存在若干小簇，不足以可靠判定为独立局部缺陷或方向性缺陷；个别红点贴近边缘但不构成连续边环。\\\"}\",\"reasoning_content\":\"The user wants me to analyze a wafer BIN map image. Let me look at it carefully.\\n\\nThe image shows a circular wafer with:\\n- Black background outside the wafer\\n- Green = good dies\\n- Red = failed dies\\n\\nLooking at the pattern:\\n- The wafer is mostly green (good)\\n- There are red dies scattered throughout\\n- I need to identify the main pattern\\n\\nLet me examine more carefully:\\n- There are red dies scattered across the wafer\\n- There seem to be some clustered red areas\\n- On the left edge (around 9 o'clock), there appear to be some red dies at the edge\\n- There are some red clusters in the central area\\n\\nLooking at the distribution:\\n- Red dies appear scattered randomly throughout the wafer\\n- There are some small clusters but no clear dominant pattern like a ring, donut, or scratch\\n- There's a notable cluster around the center-left area and some in the middle\\n\\nLet me think about the categories:\\n- Center: defects concentrated in center\\n- Donut: ring-shaped pattern\\n- Edge_Loc: localized edge defects\\n- Edge_Ring: ring around edge\\n- Loc: localized cluster\\n- Near_full: almost full wafer affected\\n- Random: randomly scattered\\n- Scratch: scratch line pattern\\n- none: no defects\\n\\nThe red dies appear to be scattered throughout the wafer without a clear concentrated pattern. There are many individual red dies and small clusters distributed across the whole wafer. This looks most like \\\"Random\\\" - scattered failing dies across the wafer.\\n\\nHowever, I should look more carefully. There seems to be a higher concentration in some areas. Looking at the image:\\n- Left edge around 9 o'clock has some red at the very edge\\n- There are red dies throughout\\n- No clear ring or donut\\n- No clear scratch\\n\\nThe density of red is relatively low overall, with dies scattered across the entire wafer. This is most consistent with Random.\\n\\nWait, let me reconsider. There appear to be some regions with more clustering:\\n- Around the center there are several red dies clustered\\n- But also scattered elsewhere\\n\\nThe main visible pattern: red failed dies are scattered across the wafer, with some small local clusters, but no dominant geometric pattern. The distribution spans center, middle, and edge areas.\\n\\nGiven the instructions to choose the most fitting class for the MAIN pattern, and the red dies appear distributed across the whole wafer without strong localization, \\\"Random\\\" seems most appropriate.\\n\\nradial_zone: global (since scattered across the wafer)\\nclock_direction: null (no reliable local defect direction)\\nextent_r: null (as required)\\n\\nActually, looking again - there are quite a few red dies but they're sparse. The pattern is scattered/random across the wafer. Some edge areas have red dies touching the edge (left side around 9 o'clock has red at the perimeter, and right edge around 3 o'clock).\\n\\nI'll go with Random as the defect class since the failures are distributed across the wafer without a clear center/edge/ring/scratch pattern.\\n\\nmorphology: 红色失效die呈散点状分布于整片晶圆，伴若干小团簇，无明确环状/线状结构\\nradial_zone: global\\ncaption_zh: 绿色合格die为主，红色失效die散布于整片晶圆并含若干小簇，未见明确主导几何图案。\\nuncertainty: 散点中夹杂若干小簇，无法确认是否构成独立局部缺陷；整体更接近随机分布。\\n\\nLet me finalize the JSON.\",\"role\":\"assistant\"}}],\"created\":1790931041,\"id\":\"chatcmpl-3bfd23d9-ee23-9303-b4f1-70b7bd43cb89\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":870,\"completion_tokens_details\":{\"reasoning_tokens\":729,\"text_tokens\":141},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1480}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 870,
+  "completion_tokens_details": {
+   "reasoning_tokens": 729,
+   "text_tokens": 141
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1480
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以散点为主并夹杂若干小团簇，遍布晶圆，未见明确环状、线状或单边集中结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"整片晶圆以绿色合格die为主，红色失效die散布于中心、中间与边缘区域，含若干小簇但无主导几何图案。\",\"uncertainty\":\"散布点中存在若干小簇，不足以可靠判定为独立局部缺陷或方向性缺陷；个别红点贴近边缘但不构成连续边环。\"}"
+}

@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_001",
+ "sample_id": "wafer_00043234_006",
+ "image_sha256": "907dd20c4ed7f79ae486455223b79f2bff41ca3d06e2e5996337b52840557233",
+ "payload_sha256": "257335bb4bc66c6292c6beaf2ad1f5401355d2393017d93937680487a8e445c1",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:39:01.811233+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 30.556,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"孤立红色失效die以散点形式分散于全片，无连续块状、线状或环状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die呈散点状遍布整个晶圆面，未见中心、环状或边缘局部集中\\\",\\\"uncertainty\\\":\\\"散点密度较高，是否为纯随机分布无法进一步验证\\\"}\",\"reasoning_content\":\"用户要求分析晶圆 BIN 图。图像内容：黑色背景（晶圆外），绿色（合格 die），红色（失效 die）。观察图案：红色 die 散布在整个晶圆面上，看起来像是随机分布的点状 pattern。仔细看：红色像素块遍布整个晶圆，没有明显的中心集中、环状、边缘集中等特点。看起来像是随机散布的红色点（散点），密度中等，遍布全局。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n主要图案：红色失效 die 以散点形式遍布整个晶圆面，没有明显的局部集中、环状、 scratch 线状等。因此最符合的是 Random。\\n\\n但需注意指示：\\\"只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声\\\"。也就是说，主要图案是随机散布的红色点。形态：点状失效 die 分散于整个晶圆面，无方向性、无环状、无中心集中。\\n\\nradial_zone：global（遍布全局）。\\n\\nclock_direction：null（无局部方向）。\\n\\nextent_r：null。\\n\\ncaption_zh：一句话客观描述：红色失效 die 以散点形式分布于整个晶圆面，无明显的中心、环状或边缘集中。\\n\\nuncertainty：散点密度是否足以判定为 Random 而非其他？或者写\\\"\\\"？考虑：主要图案为随机散点，类别选 Random。不确定性：散点分布是否隐含某种周期性/网格状？观察图像：红色点似乎有一定间隔，像是棋盘格状或规律间隔？仔细看：红色块大约每 2-3 个 die 出现一次，遍布全局。也可能是某种规律 pattern（如 checkerboard），但候选中没有 checkerboard。Random 类指随机散布的失效。但这里的红点分布看起来相当均匀分散，像是随机散布。\\n\\n再看图像细节：360x360 图，die 尺寸约 12px？红色块大小约 12-24px 见方。分布：从中心到边缘遍布。没有明显的 ring 或 edge 集中。中心附近也有红色。故 Random 合适。\\n\\nmorphology：\\\"点状/散点状红色失效 die 分散于全片，无连续块状或线状\\\"。\\n\\nradial_zone：\\\"global\\\"。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\ncaption_zh：\\\"红色失效 die 以孤立散点形式遍布整个晶圆面，未见明显的中心、环状或边缘局部集中。\\\"\\n\\nuncertainty：可写\\\"\\\"或写\\\"散点较密，是否隐含弱周期性无法确认\\\"。指示要求\\\"不确定之处，无则空字符串\\\"。可写：\\\"散点分布较均匀，是否为纯随机还是弱pattern无法完全确认\\\"？但不应过度推测。其实 Random 类本身就是散点为主图案。不确定性可写空字符串？但为安全，写一点：\\\"\\\"也行。考虑：题目要求\\\"不能仅凭散点就断定它们是噪声\\\"，即散点本身可能就是主要图案（Random 类）。故类别 Random 合理。不确定性：无特别？但散点密度较高，是否接近 Near_full？绿色仍占多数，红色约占 30-40%？Near_full 指几乎全片失效（大面积红）。本图绿色为主，红色散点约占三成左右，不算 Near_full。故 Random。\\n\\nuncertainty 写\\\"\\\"？或写\\\"红色散点密度较高，与弱全局pattern的区分存在一定不确定\\\"。我觉得写一点更稳妥：\\\"\\\"也行。但字段要求\\\"不确定之处，无则空字符串\\\"。我可写：\\\"红色散点密度较高，是否属于随机类而非弱全局pattern存在轻微不确定\\\"。但这样可能违反\\\"不推测\\\"？不算推测根因，只是描述不确定。可接受。\\n\\n最终 JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"孤立红色失效die以散点形式分散于全片，无连续块、线或环状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die呈散点状遍布整个晶圆面，未见中心、环状或边缘局部集中\\\",\\\"uncertainty\\\":\\\"散点密度较高，是否为纯随机分布无法进一步验证\\\"}\\n\\n检查：clock_direction 仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时填 null。此处全局散点，故 null。正确。\\n\\n输出仅一个 JSON 对象，无 Markdown。\",\"role\":\"assistant\"}}],\"created\":1790930311,\"id\":\"chatcmpl-046cb052-7f81-9c03-9fba-0b40409fd1c3\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1058,\"completion_tokens_details\":{\"reasoning_tokens\":961,\"text_tokens\":96},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1552}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1058,
+  "completion_tokens_details": {
+   "reasoning_tokens": 961,
+   "text_tokens": 96
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1552
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"孤立红色失效die以散点形式分散于全片，无连续块状、线状或环状结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die呈散点状遍布整个晶圆面，未见中心、环状或边缘局部集中\",\"uncertainty\":\"散点密度较高，是否为纯随机分布无法进一步验证\"}"
+}

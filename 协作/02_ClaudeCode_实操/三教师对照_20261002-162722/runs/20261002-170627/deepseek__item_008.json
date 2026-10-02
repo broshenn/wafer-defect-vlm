@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_008",
+ "sample_id": "wafer_00044802_022",
+ "image_sha256": "8a84f657c593ba064358cce86273590e1bf36f0bf3381a1c73201ff222e0e6b0",
+ "payload_sha256": "6430d2519a91d88e7a2ca8dc341e4bddee4b08ecdbbf4c22a4f2f57056f2acab",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:10:40.960057+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 3.949,
+ "error": null,
+ "raw_text": "{\"id\":\"0edde99b-1955-4276-bfe1-b2764362667a\",\"object\":\"chat.completion\",\"created\":1790932236,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Edge_Ring\\\",\\\"morphology\\\":\\\"红色失效 die 主要沿晶圆边缘呈不连续环状分布，内部另有零星红色散点\\\",\\\"radial_zone\\\":\\\"edge\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效 die 主要沿晶圆边缘呈环状分布，晶圆内部散布少量红色 die，其余为绿色合格 die。\\\",\\\"uncertainty\\\":\\\"边缘红色环存在间断，内部散点是否与边缘环属同一图案无法仅凭此图可靠判断。\\\"}\",\"reasoning_content\":\"用户要求只根据这张公开晶圆 BIN 图标注。黑色为晶圆外，绿色为合格 die，红色为失效 die。不推测工艺根因。只描述实际可见的主要图案和外围散点。从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。\\n\\n看图：一个圆形晶圆，大部分是绿色（合格 die），红色失效 die 主要分布在边缘（圆周附近），呈环状/边缘分布。中心区域也有零星红色散点，但主要图案是边缘红色环状。也有外围散点。\\n\\n类别选择：Edge_Ring 比较合适（边缘环状失效）。也有零星散点，但主要图案是边缘环。Edge_Loc 是局部边缘？Edge_Ring 是沿边缘一圈的环。图中红色主要沿边缘一圈分布，符合 Edge_Ring。\\n\\nradial_zone: edge。\\n\\nclock_direction: 整圈，不确定方向，填 null。\\n\\nextent_r: null（要求必须为 null）。\\n\\nmorphology: 主要可见形态：红色失效 die 沿晶圆边缘呈环状分布，内部有零星红色散点。\\n\\ncaption_zh: 一句话客观描述主要形态与位置。\\n\\nuncertainty: 内部散点是否与边缘环属同一图案不确定？但要求不推测。可以写“边缘红色并非完全连续，存在间断；内部散点是否构成独立图案无法可靠判断”。\\n\\n需要仅输出 JSON。\\n\\ndefect_class 从给定选项选：Edge_Ring。\\n\\nmorphology：主要可见形态简短中文描述：红色失效die沿晶圆边缘呈不连续环状分布，内部散在少量红色die。\\n\\nradial_zone: edge。\\n\\nclock_direction: null。\\n\\nextent_r: null。\\n\\ncaption_zh: 红色失效 die 主要沿晶圆边缘呈环状分布，晶圆内部散布少量红色 die，其余为绿色合格 die。\\n\\nuncertainty: 边缘红色环有间断，内部散点是否属于同一图案无法仅凭此图可靠判断。\\n\\n注意不写数值尺寸、比例、覆盖率。好。\\n\\nJSON 有效。\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":583,\"total_tokens\":1080,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":465},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 583,
+  "total_tokens": 1080,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 465
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色失效 die 主要沿晶圆边缘呈不连续环状分布，内部另有零星红色散点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效 die 主要沿晶圆边缘呈环状分布，晶圆内部散布少量红色 die，其余为绿色合格 die。\",\"uncertainty\":\"边缘红色环存在间断，内部散点是否与边缘环属同一图案无法仅凭此图可靠判断。\"}"
+}

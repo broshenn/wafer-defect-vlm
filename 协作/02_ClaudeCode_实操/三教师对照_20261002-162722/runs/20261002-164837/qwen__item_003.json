@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_003",
+ "sample_id": "wafer_00043109_011",
+ "image_sha256": "522321152ee483fcae6dc02bfb223cf0b84cdd23d48827d5ef4b223d887ac914",
+ "payload_sha256": "bc58623261700dad391720d18a6f02888f7e0b0e5d1cc19b6a4524a0d4c97f5a",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:03:07.357007+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 27.658,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die以孤立散点形式散布于晶圆面各处，边缘伴有个别连续小块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die呈散点状分布于整个晶圆面，12、3、9点钟等边缘处可见少量连续红色小块\\\",\\\"uncertainty\\\":\\\"边缘处的连续红色小块是否应归为局部边缘缺陷不确定，但整体以全域散点为主\\\"}\",\"reasoning_content\":\"用户要求分析晶圆BIN图。绿色为合格die，红色为失效die，黑色为晶圆外。\\n\\n观察图像：红色die分散在整个晶圆面上。是否有主要图案？观察：红色点散布于晶圆全体（中央、中部、边缘均有）。是否存在局部集群？看看坐标。\\n\\n图像为约380x380像素的网格。红色像素块分布：上部中央附近有若干块（12点方向边缘附近）、中央部有多个散点、右侧边缘（3点方向）有一块较大的红色区域（右边缘中部附近，约(350-380, 170-200)），左边缘也有少量（约(0-30, 200-240)），左下（约(30-70, 290-330)）等。\\n\\n整体来看，红色散点遍布晶圆全体，呈随机散布状，无明显的环状、中心状、边缘状集中。但右边缘（3点方向）有一块较大的红色块，左边缘也有小块。不过边缘局部块是否足以判定为Edge_Loc？指示说：\\\"只描述实际可见的主要图案和外围散点；不能仅凭散点就断定其为噪声\\\"。\\n\\n候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n观察分布：红色die散布于晶圆全体各处，包括中央、中部、边缘。密度不算极高（大部分为绿色）。散点图案看起来是随机散布：Random。\\n\\n但需确认是否存在局部集群：右边缘3点方向有一块连续的红色块（约2x3格以上），左边缘9点方向附近也有小块，左下7-8点方向也有块。上部12点方向边缘也有块。这些边缘块可能是边缘局部缺陷？但Edge_Loc通常指边缘局部区域的集中缺陷。此处边缘块存在于多个方向（12点、3点、7-8点、9点），并非单一局部。\\n\\n整体主要图案：散点遍布全体→Random。\\n\\nmorphology：分散于晶圆面全体的孤立红色die点群，边缘伴有若干小块。\\n\\nradial_zone：global（遍布全体）。\\n\\nclock_direction：null（因为全局散布）。\\n\\nextent_r：null。\\n\\ncaption_zh：一句话客观描述：红色失效die以散点形式分布于晶圆全体，边缘（如3点、9点、12点方向）可见若干连续小块。\\n\\nuncertainty：散点与边缘小块并存，难以区分是Random还是Edge_Loc；但主要图案为全域散布。可记载：\\\"红色散点遍布全体，边缘小块是否构成局部缺陷不确定\\\"或空字符串？指示说：\\\"不确定之处，无则空字符串\\\"。可写：\\\"边缘若干连续红块是否应视为局部缺陷不确定，但整体以全域散点为主\\\"。\\n\\n再确认图像：红色块位置（大致格坐标）：\\n- 上部中央（12点边缘）：(170-210, 0-15)块。\\n- 上部：(160-190, 30-45)、(195-210, 45-60)等。\\n- 中央部多个散点。\\n- 右边缘：(350-380, 165-200)较大块。\\n- 左边缘：(0-30, 195-240)块。\\n- 左下：(30-70, 290-330)。\\n- 右下：(300-340, 290-320)。\\n- 下部中央：(140-180, 360-380)。\\n\\n即边缘多处有块，内部有大量散点。整体为随机散布＋边缘若干块。主要图案判定：Random。\\n\\nradial_zone：global。\\n\\nclock_direction：null（因为全局）。\\n\\n最终JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die以孤立散点形式散布于晶圆面全体，边缘伴有个别连续小块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以散点形式分布于晶圆全体，12、3、9点方向边缘可见若干连续红块\\\",\\\"uncertainty\\\":\\\"边缘连续小块是否构成局部边缘缺陷不确定，但整体以全域散点为主\\\"}\\n\\n等等，clock_direction仅在可靠识别出局部缺陷方向时填写；此处为全局散布，故为null。\\n\\nmorphology简短中文描述即可。\\n\\n确认输出仅为一个JSON对象，不含Markdown。\\n\",\"role\":\"assistant\"}}],\"created\":1790931759,\"id\":\"chatcmpl-63f17158-ada5-98f4-a84c-5164b2c197b6\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1121,\"completion_tokens_details\":{\"reasoning_tokens\":1014,\"text_tokens\":106},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1615}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1121,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1014,
+   "text_tokens": 106
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1615
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以孤立散点形式散布于晶圆面各处，边缘伴有个别连续小块\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die呈散点状分布于整个晶圆面，12、3、9点钟等边缘处可见少量连续红色小块\",\"uncertainty\":\"边缘处的连续红色小块是否应归为局部边缘缺陷不确定，但整体以全域散点为主\"}"
+}

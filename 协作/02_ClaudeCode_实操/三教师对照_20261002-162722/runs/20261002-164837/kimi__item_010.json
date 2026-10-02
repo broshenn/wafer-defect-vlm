@@ -1,0 +1,39 @@
+{
+ "candidate": "kimi",
+ "provider": "bailian",
+ "model_requested": "kimi-k3",
+ "item_id": "item_010",
+ "sample_id": "wafer_00044039_015",
+ "image_sha256": "9ec332e912f1707547d1ae60d3d3bf39e138322dde4b1d448329a24a56028d6d",
+ "payload_sha256": "f2447394932f8840badbe6617f251c071317b39fcdc1279c05bba9b69566ef47",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T16:55:17.292030+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 22.039,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"全片散布稀疏红色失效点，外围亦见散点，无连续线、环带或明显团块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以稀疏散点分布于晶圆全局及边缘附近，未见明确局部主图案。\\\",\\\"uncertainty\\\":\\\"散点密度低，不能排除存在很弱的局部聚集，但图中不足以判定方向或位置。\\\"}\",\"reasoning_content\":\"We need answer user in JSON only. Need inspect image. Need classify from Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none. Need describe only visible main pattern and peripheral scatter; cannot infer root cause; cannot call scatter noise solely; no unseen patterns. extent_r null. clock_direction only if reliable local defect direction else null. Need output seven fields exactly.\\n\\nLet's analyze image. Wafer map: black outside, green good die, red fail die. Large circular wafer with mostly green. Red dies: numerous scattered red points across wafer, low density, no clear center cluster, no donut ring, no edge ring, no scratch line. There is maybe a small local cluster near upper-left around 10-11 o'clock? Let's inspect. Red spots are distributed throughout, somewhat more near edges? There are many red points near edge/periphery but also inside. The predominant pattern appears random sparse failures across entire wafer. radial_zone global. defect_class Random. morphology: 稀疏红色失效die散点分布于全片，无明显连续线/环/团块. Need mention peripheral scatter? User specifically says only describe actual visible main pattern and peripheral scatter; cannot judge noise. We can say 外围也见散在红点 but no ring. caption_zh one sentence objective. uncertainty: 红点密度低且分布近似均匀，无法区分是否有微弱局部聚集；未见明确方向性. But must avoid saying cannot reliably choose? We choose Random. Could uncertainty mention 散点较多但无主导局部图案. Need field clock_direction null. radial_zone global. extent_r null. morphology short Chinese. defect_class must be one of options exactly maybe \\\"Random\\\". caption_zh one sentence. Need JSON object only no markdown.\\n\\nNeed ensure no extra fields. The JSON must contain seven fields: defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty. Use null for clock_direction/extent_r. uncertainty string no empty? Could be \\\"红色失效点稀疏且分布广，未见可靠的方向性或环状结构。\\\" This is an uncertainty? It's more observation. User asks uncertainty; no then empty. But maybe include \\\"低密度散点下不排除存在弱局部聚集，但图中不足以判定。\\\" Good.\\n\\nNeed decide if Edge_Loc? Let's scrutinize. At right edge around 3 o'clock, several red points aligned near perimeter? There is also bottom edge around 6 o'clock some red points near edge, top edge red spots. But no concentrated edge-loc. There are many red around outermost edge because circular boundary and scattered points. Main pattern random. \\n\\nPotential classification definitions: Center = cluster at center; Donut = ring around center; Edge_Loc = localized edge defects; Edge_Ring = ring at edge; Loc = localized cluster not edge; Near_full = most die failing; Random = random distributed; Scratch = linear; none = no defects. Here red fails sparse across whole wafer -> Random. radial_zone global. clock_direction null. \\n\\nNeed be careful: \\\"Near_full\\\" maybe because green wafer nearly full? No, red fail sparse. Random.\\n\\nNeed output JSON valid. Chinese strings. Ensure no Markdown. Could include escaped? Simple.\\n\\nLet's formulate:\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"全片散布稀疏红色失效点，外围亦见散点，无连续线、环带或明显团块\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die以低密度散在分布于晶圆全局及边缘附近，未见明确局部主图案。\\\",\\\"uncertainty\\\":\\\"散点密度低，不能排除存在很弱的局部聚集，但图中不足以判定方向或位置。\\\"}\\n\\nCheck \\\"不能仅凭散点就断定它们是噪声\\\" — we are not calling noise. Good. \\\"描述中也不写未经验证的数值尺寸、比例或覆盖率\\\" — low density? Is \\\"低密度\\\" qualitative okay. They said qualitative morphology. Should be fine. \\\"稀疏\\\" qualitative. No numerical. \\\"global\\\" allowed.\\n\\nNeed final only JSON. Done.\",\"role\":\"assistant\"}}],\"created\":1790931295,\"id\":\"chatcmpl-a7cd8af7-d613-9ed0-8b77-f0ede6f5a1ab\",\"model\":\"kimi-k3\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":960,\"completion_tokens_details\":{\"reasoning_tokens\":843,\"text_tokens\":117},\"prompt_tokens\":610,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":259,\"text_tokens\":351},\"total_tokens\":1570}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "kimi-k3",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 960,
+  "completion_tokens_details": {
+   "reasoning_tokens": 843,
+   "text_tokens": 117
+  },
+  "prompt_tokens": 610,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 259,
+   "text_tokens": 351
+  },
+  "total_tokens": 1570
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"全片散布稀疏红色失效点，外围亦见散点，无连续线、环带或明显团块\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die以稀疏散点分布于晶圆全局及边缘附近，未见明确局部主图案。\",\"uncertainty\":\"散点密度低，不能排除存在很弱的局部聚集，但图中不足以判定方向或位置。\"}"
+}

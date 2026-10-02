@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_015",
+ "sample_id": "wafer_00043975_024",
+ "image_sha256": "f4a80086b29c4125026b69cf233012d748e2c7bb331f74f78ca20a750bf577cf",
+ "payload_sha256": "42dbccd5c9aa481f2c3c6f2ad19756f1e1bf45ed2841adee082e994825b19bb6",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:09:26.599100+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 36.063,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"绿色晶圆内红色失效die呈全域散点分布，夹有零星小块状聚集，未见环状、线状或中心集中形态\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die散布于晶圆中心、中部与边缘各区域，并见若干零散小块状聚集，无明显环状或划痕图案\\\",\\\"uncertainty\\\":\\\"散点中混有数个小块状聚集，不能完全排除轻微局部聚集倾向，但整体以全域随机散布为主\\\"}\",\"reasoning_content\":\"用户要求分析晶圆BIN图。图像：黑色背景（晶圆外），绿色圆形晶圆，红色失效die散布各处。\\n\\n观察图案：红色die在整个晶圆内分散出现，包括中心部、中部、边缘部。是否有明显的环状（Edge_Ring）？观察：边缘附近也有红色点，但并未形成完整的环。是否有局部聚集（Loc）？中心附近似乎有几个红点聚集（中心偏右：坐标约(210,160)-(220,190)附近有块状红点）。此外左边缘（9点钟方向）也有纵向连续的红点块：(0,120)-(10,160)、(0,170)-(10,240)等左边缘区域。左下也有聚集：(20,250)-(60,290)附近。\\n\\n逐像素观察（图像尺寸约380x380）：\\n\\n红点分布：\\n- 上部：(170,0),(220,0),(110,15),(150,15)? 实际坐标为概算。\\n- 散点遍布全体。\\n- 左边缘：x=0-10, y=120-240 附近有连续红色块（边缘局部）。\\n- 左下：(20,250)-(60,290) 块状。\\n- 中心偏右：(200,150)-(220,190) 块状。\\n- 右边缘：(340,130)-(360,160)、(360,180)-(370,200)、(360,220)-(380,250) 等。\\n- 下部：(160,270)-(170,330) 纵向连续、(220,270)-(240,300) 块状。\\n\\n整体来看，红色die散布于晶圆全体，同时存在若干小聚集块。主要图案是随机散点还是局部聚集？选项：Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none。\\n\\n散点遍布全体（中心、中部、边缘均有），且存在若干小块状聚集。但\\\"主要图案\\\"应为随机散布（Random）。不过需注意：不能仅凭散点就断定为噪声，但Random类本身指随机分布的失效die。题目要求\\\"只描述实际可见的主要图案和外围散点\\\"。\\n\\n观察分布密度：红色die数量中等，遍布晶圆全体，无明显的环、中心集中、单一局部聚集、划痕线状等特征。左边缘的纵向连续块可能是Edge_Loc？但左边缘块：(0,120)-(10,160)和(0,170)-(10,240)，以及(10,180)-(60,190)？实际左中部有横向块：(10,180)-(50,190)。左下也有块。\\n\\n但整体来看，红色遍及全体：上、下、左、右、中心均有。因此主要图案为Random（随机散布）较合适。是否存在Scratch（划痕）？划痕通常为线状连续失效。观察：中心偏右的(200,150)-(220,190)为块状而非线状。下部(160,270)-(170,330)为纵向线状？宽约10px、长约60px的纵向连续红色，可能是短线状。左边缘的纵向连续也是边缘沿线。\\n\\n考虑典型晶圆缺陷模式分类：Random = 失效die随机散布；Scratch = 线状/弧状划痕；Loc = 局部聚集；Edge_Ring = 边缘环状；Edge_Loc = 边缘局部；Center = 中心集中；Donut = 环状（中心空）；Near_full = 几乎全灭。\\n\\n本图红色die散布于全体，且有几个小聚集块。但聚集块规模小且位置分散（左边缘、左下、中心偏右、右下等），不构成单一Loc。因此主要图案为Random。\\n\\n但需注意：\\\"不能仅凭散点就断定它们是噪声\\\"——意思是不能因为散点就说是噪声，但Random类本身是缺陷类别之一，表示随机分布的失效图案。此处红色die确实随机散布于晶圆全体，故选择Random。\\n\\nradial_zone：global（遍布全体）。\\n\\nclock_direction：null（无可靠局部方向）。\\n\\nextent_r：null。\\n\\nmorphology：晶圆内全域散布的红色失效die，兼有若干小块状聚集，无环状/线状/中心集中特征。\\n\\ncaption_zh：红色失效die散布于晶圆全体（中心、中部、边缘均有），并见若干小块状聚集，无明显环状或线状图案。\\n\\nuncertainty：存在若干小聚集块，难以完全排除局部聚集倾向；或：散点中混有小块状聚集，归类为Random存在一定不确定性。\\n\\n最终JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"合格绿色晶圆内全域散布红色失效die，兼有若干小块状聚集，无环状、线状或中心集中特征\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"红色失效die随机散布于晶圆中心、中部与边缘各区域，并见零散小块状聚集，无明显环状或划痕图案\\\",\\\"uncertainty\\\":\\\"散点中混有若干小块状聚集，不能完全排除局部聚集倾向，但整体以全域散布为主\\\"}\\n\\n确认字段：defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty。共7个。\\n\\nclock_direction要求：仅在可靠识别局部缺陷方向时填写；中央、整圈、全局、正常或不确定时为null。此处为全局散布，故null。\\n\\n输出仅一个JSON对象，不使用Markdown代码块。\",\"role\":\"assistant\"}}],\"created\":1790932132,\"id\":\"chatcmpl-6e21c716-a7c8-9243-84cb-5f340d24b6fd\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":1445,\"completion_tokens_details\":{\"reasoning_tokens\":1320,\"text_tokens\":124},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1939}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 1445,
+  "completion_tokens_details": {
+   "reasoning_tokens": 1320,
+   "text_tokens": 124
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1939
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"绿色晶圆内红色失效die呈全域散点分布，夹有零星小块状聚集，未见环状、线状或中心集中形态\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die散布于晶圆中心、中部与边缘各区域，并见若干零散小块状聚集，无明显环状或划痕图案\",\"uncertainty\":\"散点中混有数个小块状聚集，不能完全排除轻微局部聚集倾向，但整体以全域随机散布为主\"}"
+}

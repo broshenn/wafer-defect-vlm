@@ -1,0 +1,39 @@
+{
+ "candidate": "qwen",
+ "provider": "bailian",
+ "model_requested": "qwen3.8-max",
+ "item_id": "item_009",
+ "sample_id": "wafer_00043676_016",
+ "image_sha256": "0c081928f84f7ac3a79c52bbf869ffe9c7afbed52a7aca91584636a46f892737",
+ "payload_sha256": "d47f0333a79536f427bc76706c328f0fd3d6a833cf64a8ba3a1f547bb91f33ff",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:07:20.460629+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 21.204,
+ "error": null,
+ "raw_text": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"稀疏孤立红色失效die散点，散布于整片晶圆，未见聚集、环状或线状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"绿色合格背景上可见稀疏红色失效die散点，分布于中心、中部与边缘各区域，无明显聚集或环状图案\\\",\\\"uncertainty\\\":\\\"散点稀疏且分散，是否存在极弱局部聚集无法仅凭本图可靠确认\\\"}\",\"reasoning_content\":\"用户给出一张晶圆 BIN 图：黑色为晶圆外，绿色为合格 die，红色为失效 die。要求只描述实际可见的主要图案和外围散点。候选类别：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n观察图像：整个晶圆大致为圆形（绿色背景），红色失效 die 以稀疏、分散的点状分布在整个晶圆面上，没有明显的聚集、环状、中心集中、边缘集中或划痕线状图案。红色点散布于中心、中部、边缘各处，呈随机散点状。\\n\\n需要判断：是 Random 还是 none？\\\"none\\\" 通常指没有缺陷图案（即晶圆基本全绿、无失效die或极少？）。但这里有数十个红色散点，分散在全局，没有聚集模式。因此主要图案为\\\"随机散点\\\"，类别选 Random。\\n\\n形态描述：红色失效 die 呈稀疏、孤立的点状，散布于晶圆整个面（中心、中部、边缘均有），未见聚集、环状、线状或局部集中。\\n\\nradial_zone：global（散点遍布全片）。\\n\\nclock_direction：null（无局部方向性）。\\n\\nextent_r：null（按要求）。\\n\\ncaption_zh：一句话客观描述：晶圆面上可见稀疏红色失效die散点，分布于中心至边缘各区域，无明显聚集或环状图案。\\n\\nuncertainty：散点稀疏，是否属随机噪声无法仅凭本图断定；但要求\\\"不能仅凭散点就断定它们是噪声\\\"。不确定之处可写：红色散点数量较少且分散，是否存在极弱的局部聚集难以可靠确认。或者空字符串？要求填写不确定之处，无则空字符串。这里可以写：散点分布稀疏，无法排除极弱局部聚集的可能。但主要类别选 Random 是合理的。\\n\\n再检查图像：红色点位置：顶部边缘有一些（12点附近边缘）、左上、中部、右下等。确实遍布全局，无环状集中（边缘虽有点但内部也有许多点），无中心集中，无划痕线。因此 Random。\\n\\nmorphology：\\\"稀疏孤立红色散点，遍布晶圆面，无聚集、环状或线状结构\\\"。\\n\\nradial_zone：\\\"global\\\"。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\ncaption_zh：\\\"绿色合格背景上可见稀疏红色失效die散点，分布于中心、中部与边缘各区域，未见明显聚集、环状或线状图案。\\\"\\n\\nuncertainty：\\\"散点较稀疏，是否存在未被识别的微弱局部聚集无法完全排除。\\\" 或空字符串。我觉得写一点较稳妥。\\n\\n输出仅一个 JSON 对象，不含 Markdown。\\n\\n字段顺序：defect_class, morphology, radial_zone, clock_direction, extent_r, caption_zh, uncertainty。\\n\\ndefect_class: \\\"Random\\\"。\\n\\n确认：候选中有 \\\"none\\\"，指无缺陷图案？但存在失效die散点，图案类别为 Random（随机分布）。符合。\\n\\n最终 JSON：\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"稀疏孤立红色失效die散点，散布于整片晶圆，未见聚集、环状或线状结构\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"绿色合格背景上可见稀疏红色失效die散点，分布于中心、中部与边缘各区域，无明显聚集或环状图案\\\",\\\"uncertainty\\\":\\\"散点稀疏且分散，是否存在极弱局部聚集无法仅凭本图可靠确认\\\"}\",\"role\":\"assistant\"}}],\"created\":1790932019,\"id\":\"chatcmpl-39cbbe59-76c7-97cc-9918-4a7189083f38\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":853,\"completion_tokens_details\":{\"reasoning_tokens\":745,\"text_tokens\":107},\"prompt_tokens\":494,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":198,\"text_tokens\":296},\"total_tokens\":1347}}",
+ "credential_source": "仓库外私有文件（dashscope.key）",
+ "cost_estimate_worst_usd": null,
+ "token_estimate_worst": 19384,
+ "is_peak_now": null,
+ "returned_model": "qwen3.8-max",
+ "finish_reason": "stop",
+ "usage": {
+  "completion_tokens": 853,
+  "completion_tokens_details": {
+   "reasoning_tokens": 745,
+   "text_tokens": 107
+  },
+  "prompt_tokens": 494,
+  "prompt_tokens_details": {
+   "cached_tokens": 0,
+   "image_tokens": 198,
+   "text_tokens": 296
+  },
+  "total_tokens": 1347
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"稀疏孤立红色失效die散点，散布于整片晶圆，未见聚集、环状或线状结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"绿色合格背景上可见稀疏红色失效die散点，分布于中心、中部与边缘各区域，无明显聚集或环状图案\",\"uncertainty\":\"散点稀疏且分散，是否存在极弱局部聚集无法仅凭本图可靠确认\"}"
+}

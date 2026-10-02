@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_009",
+ "sample_id": "wafer_00043676_016",
+ "image_sha256": "0c081928f84f7ac3a79c52bbf869ffe9c7afbed52a7aca91584636a46f892737",
+ "payload_sha256": "aaf3010d55640fc621215912a330e440d04884a4f58a7518f648bf6a347fad80",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:10:42.899030+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 4.977,
+ "error": null,
+ "raw_text": "{\"id\":\"6b184597-c5f4-4049-b6fe-0d1ce8dc7144\",\"object\":\"chat.completion\",\"created\":1790932237,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die稀疏、随机散布于整片晶圆，无明显环状、放射状或集中局部图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆在绿色合格die之间散布少量红色失效die，位置分散且无可见规律性图案\\\",\\\"uncertainty\\\":\\\"个别红点相邻成对出现，但数量少且彼此分散，不足以构成独立图案；仅凭本图无法对散布是否完全随机做统计判断\\\"}\",\"reasoning_content\":\"The user wants me to analyze a wafer BIN map image. Black = outside wafer, green = good die, red = failed die. I need to describe the visible pattern.\\n\\nLet me look at the image: a roughly circular green wafer region with scattered red pixels distributed fairly randomly across the whole wafer. There's no obvious ring, scratch, donut, or localized cluster. The red die are scattered across the entire wafer — random distribution.\\n\\nCount-wise, red pixels appear scattered, some small clusters (e.g., a couple adjacent reds at top edge, some near upper-left edge, a vertical pair near top center, a vertical pair at bottom), but overall it's a sparse random scatter across the whole wafer.\\n\\nClassification options: Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none.\\n\\nThe main pattern is scattered red die across the whole wafer — Random seems most fitting. Near_full would be when nearly all die are defective; here most are green, so not near_full. Loc would be a localized cluster; there are small local clusters but the overall pattern is random scatter. Edge_Ring would be a ring at the edge; not present. So Random.\\n\\nradial_zone: global (scattered across the whole wafer). Actually, the options are center/middle/edge/global/unknown/none. Since scatter covers the whole wafer, \\\"global\\\" fits.\\n\\nclock_direction: null (global scatter, no reliable local direction).\\n\\nextent_r: null as required.\\n\\nmorphology: \\\"红色失效die随机散布于整片晶圆，无明显的环状、放射状或局部聚集形态\\\" — brief Chinese description.\\n\\ncaption_zh: one-sentence objective description.\\n\\nuncertainty: maybe note that small adjacent red pairs exist but insufficient to form a distinct pattern; also note that randomness cannot be fully confirmed without statistical testing.\\n\\nLet me carefully check the image once more. The wafer is a green circle with pixelated edges. Red pixels: scattered throughout, roughly a few dozen. Some form adjacent pairs (e.g., a horizontal pair near center-left, a vertical pair at top). There's a red pixel at the very top edge (12 o'clock) and some at the bottom edge. Distribution seems fairly uniform random.\\n\\nSo defect_class: \\\"Random\\\".\\n\\nLet me write the JSON.\\n\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效die稀疏、随机散布于整片晶圆，无环状、放射状或明显局部聚集\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆上绿色合格die中散布少量红色失效die，分布无明显规律\\\",\\\"uncertainty\\\":\\\"个别红点相邻成对，但数量少且分散，不足以构成独立图案；仅凭本图无法排除统计上的随机性\\\"}\\n\\nCheck requirements: only JSON object, seven fields, no markdown. Done.\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":728,\"total_tokens\":1225,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":607},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 728,
+  "total_tokens": 1225,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 607
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die稀疏、随机散布于整片晶圆，无明显环状、放射状或集中局部图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"整片晶圆在绿色合格die之间散布少量红色失效die，位置分散且无可见规律性图案\",\"uncertainty\":\"个别红点相邻成对出现，但数量少且彼此分散，不足以构成独立图案；仅凭本图无法对散布是否完全随机做统计判断\"}"
+}

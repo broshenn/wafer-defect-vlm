@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_005",
+ "sample_id": "wafer_00042242_008",
+ "image_sha256": "d9df96ef2a036b5fe868a2d1713e9245abea1febb936c0469c2262e8502300e4",
+ "payload_sha256": "f23a793c7f931fa19c949509045c23b0104a3a222fe65f8a282970bc564e6930",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:10:22.747980+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 6.286,
+ "error": null,
+ "raw_text": "{\"id\":\"e7f7d061-5516-4bcc-86b3-d1cb4eb0c685\",\"object\":\"chat.completion\",\"created\":1790932215,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 呈分散点状散布，中部略多，无明显环形、线状或局部集中图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆上红色失效 die 呈随机分散的点状分布，中心到边缘均有出现，中部略多，未见明显边缘环或线状聚集。\\\",\\\"uncertainty\\\":\\\"散点是否代表真实缺陷或图像标注噪声无法仅凭该图判定；中部轻微聚集是否构成独立图案不明确。\\\"}\",\"reasoning_content\":\"用户希望我仅根据公开晶圆 BIN 图进行标注：黑色在晶圆外，绿色为合格 die，红色为失效 die。不要推测工艺根因。只描述实际可见的主要图案和外围散点；不能仅凭散点就断定它们是噪声，不要把没有看到的模式写进答案。从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选择最符合主要图案的一类；无法可靠选择时填 unknown。只做类别、定性形态与位置检查。extent_r 必须为 null，描述中不写未经验证的数值尺寸、比例或覆盖率。钟点方向仅在可靠识别局部缺陷方向时写简短钟点方向；中央、整圈、全局、正常或不确定时填 null。只输出一个 JSON 对象，包含七个字段：defect_class、morphology、radial_zone、clock_direction、extent_r、caption_zh、uncertainty。\\n\\n观察图像：一个圆形晶圆（绿色die），其上散布着红色失效die。红色die看起来是散布的、分散的，有点随机，也有一点聚集，但主要图案看起来像是整片晶圆上的随机散布。中间有一个略微聚集的区域，但整体来看属于随机散布。那么，类别是 Random 吗？还是 Loc？看选项：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none。\\n\\n主要图案看起来是随机散布的红色die，并没有明显的系统性图案，比如环或局部集群。不过，中偏左区域有一个轻微的团块，但整体上算是随机散布。所以 defect_class 是 Random。\\n\\nradial_zone：红色die既出现在中心附近，也出现在边缘附近；属于全局分布？图案是全局散布的。所以 radial_zone 是 global。\\n\\nclock_direction：null。\\n\\nextent_r：null。\\n\\nmorphology：简短的中文描述，例如 \\\"红色失效 die 分散散布，中部略有聚集，无明显环形或线状图案\\\"。\\n\\ncaption_zh：一句话客观描述，例如 \\\"晶圆上红色失效 die 呈随机散点分布，中部略多，无明确边缘环或线状聚集。\\\"\\n\\nuncertainty：\\\"散点是否属于噪声无法仅凭图像判定；中部轻微聚集是否为真实图案不够明确。\\\" 但注意：不能仅凭散点就断定它们是噪声——所以不确定性可以提到这一点。\\n\\n让我仔细检查一下图像描述：圆形晶圆，绿色区域上红色像素散布。红色像素分布在整个晶圆上，有些不均匀，中间略多一些。没有明显的环形、线状或局部聚集图案。所以类别是 Random。\\n\\n等等，会不会是 Near_full？Near_full 是指几乎整片晶圆都失效，也就是红色占绝大部分。但这里绿色是主体，红色只是散布的散点。所以不是。\\n\\nLoc 是指局部聚集（在某一特定位置的一个集中簇）。这里没有明显的单一集中簇；虽然有些聚集，但分布很广。所以是 Random。\\n\\n因此 JSON 为：\\n\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"红色失效 die 呈分散散点分布，中部略有聚集，无环形或线状图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"晶圆上红色失效 die 呈随机分散的点状分布，整体均有出现，中部略多，未见明显边缘环或线状聚集。\\\",\\\"uncertainty\\\":\\\"散点是否为噪声无法仅凭图像判定；中部轻微聚集是否构成真实图案不明确。\\\"}\\n\\n但要求是\\\"只描述实际可见的主要图案和外围散点\\\"——外围散点？红色die也出现在边缘附近。可见散点分布在整个晶圆上。\\n\\n关于 morphology 字段：简短的中文描述。可以。\\n\\nradial_zone：global（散布在整个晶圆上）。可以。\\n\\n不确定之处：\\\"无法确定散点是否代表噪声或真实缺陷；中部轻微聚集不明显。\\\" 但不应把没有看到的模式写进去。这没问题。\\n\\n让我再确认一下 defect_class 的选择：Random 是最合适的。\\n\\n另外，注意\\\"不能仅凭散点就断定它们是噪声\\\"——所以不要写噪声。\\n\\n最终输出仅包含 JSON，不要 Markdown。\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":1018,\"total_tokens\":1515,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":893},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 1018,
+  "total_tokens": 1515,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 893
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 呈分散点状散布，中部略多，无明显环形、线状或局部集中图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上红色失效 die 呈随机分散的点状分布，中心到边缘均有出现，中部略多，未见明显边缘环或线状聚集。\",\"uncertainty\":\"散点是否代表真实缺陷或图像标注噪声无法仅凭该图判定；中部轻微聚集是否构成独立图案不明确。\"}"
+}

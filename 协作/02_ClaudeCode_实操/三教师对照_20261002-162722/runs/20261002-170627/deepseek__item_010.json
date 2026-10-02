@@ -1,0 +1,38 @@
+{
+ "candidate": "deepseek",
+ "provider": "deepseek_official",
+ "model_requested": "deepseek-flash",
+ "item_id": "item_010",
+ "sample_id": "wafer_00044039_015",
+ "image_sha256": "9ec332e912f1707547d1ae60d3d3bf39e138322dde4b1d448329a24a56028d6d",
+ "payload_sha256": "dc30c44569a7ffdef8e1e9dbde46def31c0166ba5b76000c452e966139c47671",
+ "prompt_byte_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+ "max_tokens": 16384,
+ "timeout_seconds": 600,
+ "client_retries": 0,
+ "sent_at": "2026-10-02T17:10:45.706373+08:00",
+ "http_status": 200,
+ "elapsed_seconds": 4.722,
+ "error": null,
+ "raw_text": "{\"id\":\"54fa82d9-4df3-416b-a5f7-6c20c9f77f0a\",\"object\":\"chat.completion\",\"created\":1790932240,\"model\":\"deepseek-flash\",\"choices\":[{\"index\":0,\"message\":{\"role\":\"assistant\",\"content\":\"{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"全片散布红色失效 die 点，无集中簇、线状或环形图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆上散布红色失效点，边缘略多，未见集中或环状图案\\\",\\\"uncertainty\\\":\\\"散点是否代表随机失效无法确认；边缘密度略高但未形成完整环状图案。\\\"}\",\"reasoning_content\":\"The user wants me to analyze a wafer BIN map image. Black is outside wafer, green is good die, red is failed die. I need to describe the main visible pattern and peripheral scatter points, choose the most fitting class from Center, Donut, Edge_Loc, Edge_Ring, Loc, Near_full, Random, Scratch, none. Only do class, qualitative morphology and position check. extent_r must be null. Don't write unverified numerical sizes.\\n\\nLet me look at the image: A green circle (wafer) on black background. There are many red dots scattered, some concentrated near the edge (periphery). The main pattern: red dots scattered throughout the die, with slightly more near the edge. Is this \\\"Random\\\"? Let me think.\\n\\nThe image shows a large green circle with red scattered dots. There's no clear localized cluster, no ring pattern, no scratch line. The red dots appear randomly distributed across the wafer, with a slight concentration near the edge. The class \\\"Random\\\" seems most fitting.\\n\\nBut let me check: is there an edge ring? Looking at the image, red dots near the boundary are somewhat denser, but not a continuous ring. Class \\\"Edge_Ring\\\" would be a ring around the edge. Here it's scattered points, not a ring. So \\\"Random\\\" is best.\\n\\nLet me observe more carefully: the red dots are distributed across the entire wafer, some aligned along the edge arc. There's no clear donut or center cluster. So Random.\\n\\nDescription: scattered red failure die points distributed across the wafer, no clear local clustering or ring shape, relatively more near the edge. But careful: \\\"no unverified numerical values\\\" - avoid numbers.\\n\\ndefect_class: \\\"Random\\\"\\nmorphology: \\\"散布的红色失效 die 点，无明显局部聚集或环形\\\"\\nradial_zone: \\\"global\\\"\\nclock_direction: null\\nextent_r: null\\ncaption_zh: \\\"整片晶圆上散布红色失效点，边缘略多，无集中图案\\\"\\nuncertainty: \\\"散点是否代表随机缺陷无法确认；边缘稍密但未形成完整环。\\\"\\n\\nNeed to output only JSON. Let me make sure fields are correct.\\n\\nThe question says \\\"不能仅凭散点就断定它们是噪声\\\" - so in uncertainty I should note that scatter could be something else, not necessarily noise. Actually the instruction says don't conclude they are noise just from scatter; don't write patterns not seen. So in morphology I just describe scattered points.\\n\\nLet me finalize.\\n\\nuncertainty: \\\"散点分布是否属随机失效无法确认；边缘密度略高但未构成完整环状图案。\\\"\\n\\nThat's fine.\\n\\nJSON:\\n{\\\"defect_class\\\":\\\"Random\\\",\\\"morphology\\\":\\\"全片散布红色失效 die 点，无集中簇、线状或环形图案\\\",\\\"radial_zone\\\":\\\"global\\\",\\\"clock_direction\\\":null,\\\"extent_r\\\":null,\\\"caption_zh\\\":\\\"整片晶圆上散布红色失效点，边缘略多，未见集中或环状图案\\\",\\\"uncertainty\\\":\\\"散点是否代表随机失效无法确认；边缘密度略高但未形成完整环状图案。\\\"}\\n\\nWait, the morphology should be a short Chinese description of the main visible form. Good.\\n\\nradial_zone: options center/middle/edge/global/unknown/none. Since scatter is global, \\\"global\\\".\\n\\nLet me output the JSON.\"},\"logprobs\":null,\"finish_reason\":\"stop\"}],\"usage\":{\"prompt_tokens\":497,\"completion_tokens\":807,\"total_tokens\":1304,\"prompt_tokens_details\":{\"cached_tokens\":0},\"completion_tokens_details\":{\"reasoning_tokens\":706},\"prompt_cache_hit_tokens\":0,\"prompt_cache_miss_tokens\":497},\"system_fingerprint\":\"aeb56401ca74e127821c4f9126dcb669\"}",
+ "credential_source": "仓库外私有文件（deepseek.key）",
+ "cost_estimate_worst_usd": 0.0205608,
+ "token_estimate_worst": null,
+ "is_peak_now": true,
+ "returned_model": "deepseek-flash",
+ "finish_reason": "stop",
+ "usage": {
+  "prompt_tokens": 497,
+  "completion_tokens": 807,
+  "total_tokens": 1304,
+  "prompt_tokens_details": {
+   "cached_tokens": 0
+  },
+  "completion_tokens_details": {
+   "reasoning_tokens": 706
+  },
+  "prompt_cache_hit_tokens": 0,
+  "prompt_cache_miss_tokens": 497
+ },
+ "answer_text": "{\"defect_class\":\"Random\",\"morphology\":\"全片散布红色失效 die 点，无集中簇、线状或环形图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"整片晶圆上散布红色失效点，边缘略多，未见集中或环状图案\",\"uncertainty\":\"散点是否代表随机失效无法确认；边缘密度略高但未形成完整环状图案。\"}"
+}
