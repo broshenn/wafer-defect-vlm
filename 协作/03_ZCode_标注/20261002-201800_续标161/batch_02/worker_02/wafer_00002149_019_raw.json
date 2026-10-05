@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"失效 die 在晶圆外围连成一整圈红色边缘环带，环内以绿色合格 die 为主并散布零星红色失效点","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"晶圆四周边缘形成连续一整圈的红色失效环，内部主要为绿色合格 die 并夹有散在红色失效点。","uncertainty":"内部散布的红色失效点无法进一步归类"}

@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效 die 与绿色合格 die 在整张晶圆范围内高密度交错混布，看不到局部聚集、环带或其他有序结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效 die 大致占一半并与合格 die 在全晶圆随机交错分布，未形成明显的局部聚集或边缘环带。",
+  "uncertainty": "外围红色略偏密，无法确定是随机波动还是另有边缘环带成分"
+}

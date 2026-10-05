@@ -1,0 +1,126 @@
+{
+  "n": 18,
+  "correct": 13,
+  "accuracy": 0.7222,
+  "macro_f1": 0.7,
+  "per_class": {
+    "Center": {
+      "n": 2,
+      "tp": 2,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6667
+    },
+    "Donut": {
+      "n": 2,
+      "tp": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "Edge_Loc": {
+      "n": 2,
+      "tp": 2,
+      "precision": 0.6667,
+      "recall": 1.0,
+      "f1": 0.8
+    },
+    "Edge_Ring": {
+      "n": 2,
+      "tp": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Loc": {
+      "n": 2,
+      "tp": 0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
+    },
+    "Near_full": {
+      "n": 2,
+      "tp": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Random": {
+      "n": 2,
+      "tp": 2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0
+    },
+    "Scratch": {
+      "n": 2,
+      "tp": 1,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1": 0.5
+    },
+    "none": {
+      "n": 2,
+      "tp": 1,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    }
+  },
+  "confusion": {
+    "Center": {
+      "Center": 2
+    },
+    "Donut": {
+      "Donut": 1,
+      "Loc": 1
+    },
+    "Edge_Loc": {
+      "Edge_Loc": 2
+    },
+    "Edge_Ring": {
+      "Edge_Ring": 2
+    },
+    "Loc": {
+      "Center": 2
+    },
+    "Near_full": {
+      "Near_full": 2
+    },
+    "Random": {
+      "Random": 2
+    },
+    "Scratch": {
+      "Edge_Loc": 1,
+      "Scratch": 1
+    },
+    "none": {
+      "Scratch": 1,
+      "none": 1
+    }
+  },
+  "pred_distribution": {
+    "Edge_Ring": 2,
+    "Edge_Loc": 3,
+    "Donut": 1,
+    "Center": 4,
+    "Random": 2,
+    "Scratch": 2,
+    "Near_full": 2,
+    "none": 1,
+    "Loc": 1
+  },
+  "parse_how": {
+    "ok": 18
+  },
+  "tag": "a2_dev18",
+  "adapters": "/WS/checkpoints/sft_a_seed3408_a2/v0-20261006-021625/checkpoint-60",
+  "data": "/WS/datasets/dev_18.server.jsonl",
+  "load_seconds": 9.2,
+  "infer_seconds": 16.7,
+  "peak_allocated_GiB_own_process": 17.85,
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "cuda_visible_devices": "GPU-09230fea-e022-fa3e-7a98-fab1f0b645be",
+  "finished_at": "2026-10-06T02:23:33.422767"
+}

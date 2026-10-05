@@ -1,0 +1,225 @@
+{
+ "files": [
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_01\\wafer_00012763_005_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整圈"
+    ],
+    "caption_zh": [
+     "整圈"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_01\\wafer_00013900_022_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "caption_zh": [
+     "一簇"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_01\\wafer_00016541_008_raw.json",
+   "clock_expressions_excluded": {
+    "caption_zh": [
+     "4-5点钟方向"
+    ]
+   },
+   "shape_extent_terms": {
+    "morphology": [
+     "一片"
+    ],
+    "caption_zh": [
+     "一片"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_01\\wafer_00017109_010_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "caption_zh": [
+     "一圈"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_01\\wafer_00018231_019_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {},
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_02\\wafer_00018378_014_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "caption_zh": [
+     "一圈"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_02\\wafer_00019243_014_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "一团"
+    ],
+    "caption_zh": [
+     "一团"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_02\\wafer_00021646_024_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {},
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_02\\wafer_00036952_025_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "一团"
+    ],
+    "caption_zh": [
+     "一团"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_02\\wafer_00040599_022_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "一条"
+    ],
+    "caption_zh": [
+     "一条"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_03\\wafer_00040927_016_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整片"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_03\\wafer_00040967_025_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整片",
+     "一小簇"
+    ],
+    "caption_zh": [
+     "整片",
+     "一小簇"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_03\\wafer_00042289_023_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整片"
+    ],
+    "caption_zh": [
+     "整片"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_03\\wafer_00042308_024_raw.json",
+   "clock_expressions_excluded": {
+    "uncertainty": [
+     "7~10点钟方向",
+     "8点钟"
+    ]
+   },
+   "shape_extent_terms": {
+    "morphology": [
+     "一条"
+    ]
+   },
+   "**unverified_count_claims**": {
+    "uncertainty": [
+     "一枚"
+    ]
+   }
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_03\\wafer_00043570_016_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整片"
+    ],
+    "caption_zh": [
+     "整片"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_04\\wafer_00044801_015_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {},
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_04\\wafer_00044955_014_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {},
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_04\\wafer_00045455_011_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "一圈"
+    ]
+   },
+   "**unverified_count_claims**": {}
+  },
+  {
+   "path": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\worker_04\\wafer_00046030_024_raw.json",
+   "clock_expressions_excluded": {},
+   "shape_extent_terms": {
+    "morphology": [
+     "整片"
+    ]
+   },
+   "**unverified_count_claims**": {
+    "morphology": [
+     "十几颗"
+    ]
+   }
+  }
+ ],
+ "n_with_count_claims": 2,
+ "n_with_clock": 2,
+ "n_with_shape": 15,
+ "note": "只提示，未修改任何原答；命中不等于答案错误。"
+}

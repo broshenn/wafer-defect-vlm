@@ -1,0 +1,36 @@
+{
+  "source": "..\\..\\03_ZCode_标注\\20261002-192902_batch01_并行20\\batch_log.json",
+  "source_sha256": "d50b46a00ac2c621a1bfda49d645df2f51a81470844492fc78597c652d9dcca7",
+  "output": "batch_log_no_dupkey.json",
+  "output_sha256": "4441c61fb99eebbd37652c3719358800497217f3f06677daaf9e6eb2a1fdce61",
+  "duplicates_found_in_source": [
+    {
+      "key": "failed",
+      "n_occurrences": 2,
+      "occurrences": [
+        {
+          "index": 4,
+          "type": "int",
+          "preview": "1"
+        },
+        {
+          "index": 7,
+          "type": "dict",
+          "preview": "{\"sample_id\": \"wafer_00046030_024\", \"reason\": \"检查器退出码6：defect_class 写作 \\\"Near-full\\\"，合法枚举为 \\\"Near_full\\\"；按协议保留失败原件（worker_04/wafer_00046030_024_raw.json），写 STOP"
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "path": "counts.failed",
+      "action": "split_duplicate",
+      "count_key": "failure_count",
+      "details_key": "failure_details",
+      "count_value": 1,
+      "n_values": 2
+    }
+  ],
+  "duplicates_remaining_in_output": [],
+  "note": "原文件未修改；本文件只记录差异。失败数量与失败详情已分成两个字段。"
+}

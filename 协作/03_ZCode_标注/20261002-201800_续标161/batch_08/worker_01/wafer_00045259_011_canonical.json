@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die散布全图，多为孤立点和数格相连的小簇，上半部中部聚集略密，下半部以孤立散点为主",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die散布整个晶圆并连成零散小簇，上半部中部密度略高，未见成片、环状或长条主图案。",
+  "uncertainty": "上半部中部有轻度疏松聚集，是否构成独立局部图案存疑，整体仍以全图散点为主"
+}

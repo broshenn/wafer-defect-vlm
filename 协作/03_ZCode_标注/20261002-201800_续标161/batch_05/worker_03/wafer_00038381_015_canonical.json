@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Loc",
+  "morphology": "晶圆右侧边缘出现大片贴边的红色失效聚集并向内延伸，其余区域散布红色失效点，未形成完整边缘环",
+  "radial_zone": "edge",
+  "clock_direction": "约3点钟",
+  "extent_r": null,
+  "caption_zh": "晶圆右边缘约3点钟方向出现贴边的红色失效聚集区，全图另散布红色失效点。",
+  "uncertainty": "右侧聚集区与周边散点的界限不规则；散点是否属于同一模式不确定"
+}

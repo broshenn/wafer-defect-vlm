@@ -1,0 +1,35 @@
+==============================================================================
+类别别名规范化器 · 离线边界验证
+被测：协作\01_Codex_指挥\验收_20261002_GLM首批20\normalize_label_alias.py
+  指纹 01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c
+==============================================================================
+
+[0] 规范化器声明的别名白名单（3 条）
+      'Edge-Loc' -> 'Edge_Loc'
+      'Edge-Ring' -> 'Edge_Ring'
+      'Near-full' -> 'Near_full'
+
+[1] 严格白名单
+
+[2] 不修未知词（模糊纠错一律不做）
+      'near-full' → 保持原样
+      'NEAR-FULL' → 保持原样
+      'Near_Full ' → 保持原样
+      'Edge Loc' → 保持原样
+
+[3] 拒绝重复键 / 坏 JSON
+      重复 defect_class  → ValueError
+      重复其它字段           → ValueError
+      截断 JSON          → JSONDecodeError
+      顶层是数组            → ValueError
+      顶层是字符串           → ValueError
+      空内容              → JSONDecodeError
+      非法字符             → JSONDecodeError
+
+[4] 副本除被规范化字段外，其余内容不变
+
+[5] raw 不覆盖（结构上不可能覆盖）
+
+
+通过 18/18
+结论：全部通过

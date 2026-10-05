@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "晶圆中央出现一大片致密相连的近圆形红色失效区；中央红区外围以绿色die为主，散布少量孤立红色die",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die集中在晶圆中心形成一大片近圆形致密红色区域，外围以绿色合格die为主并散布零星红色die。",
+  "uncertainty": "红色区域内部夹有极少数绿色die，红区边界不完全规则。"
+}

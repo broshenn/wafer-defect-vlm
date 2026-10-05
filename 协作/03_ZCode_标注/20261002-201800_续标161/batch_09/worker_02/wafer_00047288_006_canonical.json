@@ -1,0 +1,9 @@
+{
+  "defect_class": "Scratch",
+  "morphology": "右上部一条由红色失效die相连的斜向短链自边缘向内延伸，中部另见小簇相连红点，全域散布零散红点",
+  "radial_zone": "edge",
+  "clock_direction": "1点钟",
+  "extent_r": null,
+  "caption_zh": "一条由失效die相连的斜向短链自晶圆右上部边缘向内延伸，晶圆其余区域散布零散红点。",
+  "uncertainty": "短链自边缘延伸至中部区域，径向归属介于边缘与中部之间；全域散点亦较明显。"
+}

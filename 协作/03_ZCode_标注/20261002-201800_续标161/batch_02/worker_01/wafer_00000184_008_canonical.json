@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "红色失效die沿晶圆最外圈连续分布，形成紧贴边缘的环形红带，环带疏密不均且个别方位夹有绿色die；内部以绿色die为主，散布少量孤立红色die",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die沿晶圆外围分布形成边缘红环，晶圆内部以绿色合格die为主并偶见零散红色die。",
+  "uncertainty": "边缘红带疏密不均并存在局部缺口，是否完全连续未能确认。"
+}

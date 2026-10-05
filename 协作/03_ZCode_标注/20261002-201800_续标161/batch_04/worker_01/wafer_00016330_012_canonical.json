@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die与绿色合格die在全晶圆范围内大致均匀随机混杂，无明显局部聚集、环形或中心结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die以较高比例随机散布于整个晶圆，与合格die均匀混杂，无可见空间模式",
+  "uncertainty": "红色占比接近一半但未达几乎全部失效，归为Random基于全局随机分布形态"
+}

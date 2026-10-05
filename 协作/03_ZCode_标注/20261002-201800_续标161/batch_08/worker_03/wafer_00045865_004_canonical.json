@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die以孤立单点零散散布于整个晶圆，无可见聚集簇、环形或线条结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die零散分布在整个晶圆各处，主要图案为全片范围的孤立散点。",
+  "uncertainty": "散点密度较低，与正常晶圆少量零星失效的界限存在模糊"
+}

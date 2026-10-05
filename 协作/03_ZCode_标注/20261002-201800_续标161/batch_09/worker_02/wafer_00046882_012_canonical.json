@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die以孤立散点形式分布于晶圆全域，内部与圆周边缘均可见零散红点，无聚簇、连续环带或线状结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆内红色失效die呈随机散点分布，散布于中心至边缘各处，无明显局部聚集。",
+  "uncertainty": "边缘散点数量略多但未连成完整环带，与轻度边缘散点叠加的随机分布难以进一步区分。"
+}

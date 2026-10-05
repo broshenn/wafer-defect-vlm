@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "红色失效die沿晶圆边缘一圈分布，密度不均，内部伴散在失效点",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "红色失效die主要沿晶圆边缘一圈分布且密度不均，晶圆内部另散在少量失效点。",
+  "uncertainty": "边缘环不完整、各处疏密不一，与局部边缘失效的界限不易确定"
+}

@@ -1,0 +1,14 @@
+{
+  "version": "class_alias_v1_20261002",
+  "raw_sha256": "3ef909dda4788147f425a9a6ce06503771622de8f299dad6385a6970037439f4",
+  "normalized_sha256": "00b5477e0fbd9f55fa7c454e6d3ef4695e1a49489b53c5de521c142708adef0f",
+  "changes": [
+    {
+      "field": "defect_class",
+      "before": "Near-full",
+      "after": "Near_full"
+    }
+  ],
+  "content_review_warnings": [],
+  "note": "仅类别字符串规范化；副本格式通过不代表事实通过，未经验证的中文数值另行审核。"
+}

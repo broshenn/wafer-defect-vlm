@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "红色失效die在晶圆中上部至右中部形成不规则密集连通簇，簇内含竖向与横向短线段；其余区域零星散布红色失效die，左下方另有一短横线段",
+  "radial_zone": "middle",
+  "clock_direction": "约1至4点钟",
+  "extent_r": null,
+  "caption_zh": "晶圆中上部至右中部出现不规则连通的红色失效密集簇，其余区域零星散布失效点",
+  "uncertainty": "簇内含线状分支，Loc与Scratch归类存在不确定性；簇体基本位于晶圆内部，未明显贴边"
+}

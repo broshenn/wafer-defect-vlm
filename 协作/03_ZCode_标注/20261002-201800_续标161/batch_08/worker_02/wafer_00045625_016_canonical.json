@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效 die 以孤立单点形式散布于整个晶圆，从中心到边缘均有分布，无可见的致密簇、环形或条带等聚集结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "全晶圆范围散布孤立失效点，无集中聚集区域。",
+  "uncertainty": "散点密度较低且无聚集，无法排除属于正常散失；按主要可见分布整体判为散布型"
+}

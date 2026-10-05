@@ -1,0 +1,43 @@
+{
+  "batch": "batch_01_并行20",
+  "task_source": "Codex 任务书《给ZCode：首批20张GLM并行标注，已放行》（用户转交本父会话）",
+  "batch_dir": "D:/pycode/晶圆图研究/协作/03_ZCode_标注/20261002-192902_batch01_并行20",
+  "parent_session_disclosure": "父会话为此前执行过首轮单张与九张批试标、读过十八张批盲清单（仅ID/指纹）、接收过Codex反馈的同一会话；开工污染比对确认本批20张与其已见10张（ID+SHA256）及十八张清单18个ID均零重叠，未接触本批任何标签/答案。父会话全程未读取任何PNG视觉内容，仅调度与只读汇总。",
+  "inputs_verified": {
+    "index_sha256": "641f75212839e5c847edf0d7bb53225460b03f99f4e16c10a1343f47cd97ffe7",
+    "manifest_sha256": "0c2f476d3f099eccee62e3c927b3621757d69bced95a3421bab0db4d9c681db2",
+    "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+    "checker_sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55",
+    "worker_shards": "4份分片哈希全部与索引一致；行键仅 item_id/sample_id/image_path/image_sha256；分片无重叠、并集等于主清单（ID与SHA256双重验证）；主清单20条无重复ID"
+  },
+  "execution": {
+    "mode": "4子agent经ZCode客户端原生Agent工具创建；worker_01/02/03 并行执行，worker_04 首次spawn因客户端并发上限失败（user concurrency limit exceeded），按任务书降级为三子完成后串行补跑；未换模型",
+    "worker_model_declaration": "各子agent运行于父会话同一模型配置（客户端声明 account:zai-start-plan/GLM-5.3-Flash / Start Plan）；子agent内无法独立核验后端标识",
+    "subagent_context": "子agent为全新启动（Agent工具契约：新调用不继承父会话对话），仅收到父会话写入其提示词的分片/提示词/检查器路径与规则；客户端层自动注入内容无法从子agent内枚举（未提供）",
+    "window": "2026-10-02 19:27:58 – 19:39:50 +0800（父会话总窗；批次目录创建 19:29:02）"
+  },
+  "counts": {
+    "planned": 20, "attempted": 19, "format_pass": 18, "unknown": 0,
+    "failed": 1, "not_executed": 1,
+    "not_executed_ids": ["wafer_00047003_005"],
+    "failed": {
+      "sample_id": "wafer_00046030_024",
+      "reason": "检查器退出码6：defect_class 写作 \"Near-full\"，合法枚举为 \"Near_full\"；按协议保留失败原件（worker_04/wafer_00046030_024_raw.json），写 STOPPED_CHECK_FAIL.txt 后停止，第5张未执行；父会话重跑复现退出码6"
+    }
+  },
+  "per_worker": {
+    "worker_01": {"attempted": 5, "pass": 5, "fail": 0, "not_run": 0, "duration_ms": 307951, "client_tool_uses": 25, "client_reported_subagent_tokens": 986264, "notes": "第3张检查器输出提示 caption 中时钟表述被剥离（仅提示，退出码0，原件未改写）——worker自述，父会话重跑确认退出码0"},
+    "worker_02": {"attempted": 5, "pass": 5, "fail": 0, "not_run": 0, "duration_ms": 318901, "client_tool_uses": 34, "client_reported_subagent_tokens": 1310608, "notes": "worker自述：第1张 worker_log.jsonl 行的 duration_ms 曾写成未求值表达式，后修正为实际差值62149（时间戳原始值未变，raw答案未动）——已披露的日志自修，父会话未深究修正历史"},
+    "worker_03": {"attempted": 5, "pass": 5, "fail": 0, "not_run": 0, "duration_ms": 308901, "client_tool_uses": 32, "client_reported_subagent_tokens": 1337915, "notes": ""},
+    "worker_04": {"attempted": 4, "pass": 3, "fail": 1, "not_run": 1, "duration_ms": 223116, "client_tool_uses": 23, "client_reported_subagent_tokens": 851787, "notes": "首次spawn并发受限；串行补跑完成"}
+  },
+  "class_distribution_19": {"Random": 7, "Edge_Ring": 2, "Edge_Loc": 2, "Loc": 2, "Center": 2, "Donut": 1, "Scratch": 1, "Near_full": 1, "Near-full(非法枚举,失败件)": 1},
+  "parent_recheck": {
+    "structure": "4个worker目录：raw/check.log数量与尝试数一致，ids与各自分片前缀一致，worker_log.jsonl与worker_report.md齐全",
+    "checker_rerun_exit_codes": {"worker_01": [0,0,0,0,0], "worker_02": [0,0,0,0,0], "worker_03": [0,0,0,0,0], "worker_04": [0,0,0,6]},
+    "inputs_unmodified": "git status 确认输入目录与提示词文件无修改（仅有准备目录本身未入库的 ?? 状态）",
+    "recheck_at": "2026-10-02 19:39:50 +0800 (1790941190185)"
+  },
+  "not_provided": "后端实际模型标识、实际后端请求数、自动重试、逐张token、套餐余额、finish_reason、生成参数：均未提供（客户端不向会话暴露）；client_reported_subagent_tokens 为客户端Agent工具回报值，口径与套餐分账关系未知，不得当成本账",
+  "annotation_nature": "全部回答为 GLM-5.3-Flash 模型标注；格式通过≠事实正确；未作人工审核"
+}

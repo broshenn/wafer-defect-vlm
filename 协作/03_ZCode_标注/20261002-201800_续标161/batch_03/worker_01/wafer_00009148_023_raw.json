@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"红色失效die沿晶圆边缘连续一圈分布，同时晶圆内部散布较多孤立的红色失效die，整体呈边缘环状为主、随机散点并存的形态","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"失效die沿晶圆边缘连成一圈，且晶圆内部另散布较多孤立的红色失效die。","uncertainty":"边缘环与内部随机散点两种模式并存，主类别在 Edge_Ring 与 Random 之间存在不确定性"}

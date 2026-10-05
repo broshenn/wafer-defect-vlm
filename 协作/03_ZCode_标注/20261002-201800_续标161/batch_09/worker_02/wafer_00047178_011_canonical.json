@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Loc",
+  "morphology": "顶部偏右边缘红色失效die密集相连并向内延伸成短链，右上边缘亦见聚集；全域另有零散红点分布",
+  "radial_zone": "edge",
+  "clock_direction": "1点钟",
+  "extent_r": null,
+  "caption_zh": "失效die集中于晶圆顶部偏右边缘并向内延伸成短链，晶圆其余区域见零散红点。",
+  "uncertainty": "顶部相连短链规模小，介于边缘局部聚集与短划痕之间，类别归属不够确定。"
+}

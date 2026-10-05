@@ -1,0 +1,9 @@
+{
+  "defect_class": "Near_full",
+  "morphology": "失效区域近乎遍布整个晶圆，其间散布小块状合格 die 群，未见环形、中心团或条状图案",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "红色失效区域覆盖整个晶圆，右上、下方中部与左缘附近散布少量绿色合格小块，无环状或局部集中图案",
+  "uncertainty": "失效覆盖接近全图，与 Random 的边界判断存在不确定；散布绿块的性质无法进一步判定"
+}

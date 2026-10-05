@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "红色失效 die 沿晶圆边缘连成一整圈，圈内大部分为绿色合格 die，内部另见少量零散红点",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆边缘一整圈红色失效，主体为绿色合格 die，内部有零散红点",
+  "uncertainty": "内部散点稀疏，是否属于另一图案未判定"
+}

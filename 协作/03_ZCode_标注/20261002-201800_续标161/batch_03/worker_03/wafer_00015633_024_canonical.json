@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "晶圆中部近中心处有一片致密不规则红色团块，旁侧另有较小团块，全图散布零散红点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中部近中心处出现致密不规则红色团块，周围散布零散红点",
+  "uncertainty": "团块位于中心与中部之间，径向区域归属存在不确定性"
+}

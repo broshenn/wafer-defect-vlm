@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die以散点形式遍布晶圆全域，中偏右部见少量相邻红点连成小簇与一条短竖链，其余区域零散分布",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die散布于晶圆全域，中偏右部有少量相邻聚集形成短链状小簇，整体无连续环带或长线结构。",
+  "uncertainty": "中右部短链聚集规模小，难以判断是否构成划痕类线状缺陷。"
+}

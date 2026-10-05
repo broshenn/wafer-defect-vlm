@@ -1,0 +1,562 @@
+{
+  "item_020": {
+    "decision": "full_with_model_revision",
+    "scene": "红色全域占较大部分，右上/下方/左缘有绿色块群",
+    "note": "近乎全片与少量绿色说法过强，修订程度措辞；类别沿原预测保留"
+  },
+  "item_021": {
+    "decision": "full_candidate",
+    "scene": "红绿高密度交错混杂，全域分布",
+    "note": "主要描述有依据，类别与原标签一致"
+  },
+  "item_022": {
+    "decision": "caption_only",
+    "scene": "顶部近边缘致密红簇，其他区域零星红点",
+    "note": "Loc/Edge_Loc类别分歧；形态、12点钟位置有依据，不接收完整类别答案"
+  },
+  "item_023": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "外围多段红色区域，顶部/下部较密，内部散点",
+    "note": "Edge_Loc/Edge_Ring分歧；不支持整圈连续，改成不连续多段外围分布"
+  },
+  "item_024": {
+    "decision": "full_with_model_revision",
+    "scene": "红色大片与绿色小块在全域交错，绿色残留明显",
+    "note": "删除几乎全为红色/仅零星少量的过强程度断言，保留全域混杂事实与原类别"
+  },
+  "item_025": {
+    "decision": "quarantine_full",
+    "scene": "中部明显红色环带，中心清楚的绿色孔，外围散点",
+    "note": "把中心绿孔说成极少绿die并改判Center，关键环状结构遗漏"
+  },
+  "item_026": {
+    "decision": "caption_only",
+    "scene": "中部偏下弯曲新月/不完整环，外围散点",
+    "note": "Loc/Donut分歧但描述有依据，位置跨center/middle不作数值gold"
+  },
+  "item_027": {
+    "decision": "full_candidate",
+    "scene": "清楚的最外缘红环，内部稀疏散点",
+    "note": "类别、边缘环形与null方向有依据"
+  },
+  "item_028": {
+    "decision": "full_candidate",
+    "scene": "外围一圈红带，内部稀疏红点",
+    "note": "边缘环、全圈无唯一方向有依据"
+  },
+  "item_029": {
+    "decision": "full_with_model_revision",
+    "scene": "全域高密度红绿交错，外围略偏红",
+    "note": "删除未经核验的大致一半比例说法"
+  },
+  "item_030": {
+    "decision": "full_candidate",
+    "scene": "红色占较大部分，绿块全域交错",
+    "note": "全域混杂与散在绿色有依据"
+  },
+  "item_031": {
+    "decision": "full_candidate",
+    "scene": "外围较薄红环，内部零星散点",
+    "note": "环形与边缘位置有依据，局部断续已披露"
+  },
+  "item_032": {
+    "decision": "full_candidate",
+    "scene": "右下边缘较密红簇向内略伸，其他散点",
+    "note": "4-5点方向和局部边缘图案有依据"
+  },
+  "item_033": {
+    "decision": "full_candidate",
+    "scene": "较厚外围红环并有中等密度内部红点",
+    "note": "主要边缘环及内部散点有依据"
+  },
+  "item_034": {
+    "decision": "caption_only",
+    "scene": "全域散点/小簇，下缘明显偏密",
+    "note": "原Edge_Loc/模型Random，描述捕获下缘增强但未作为主类"
+  },
+  "item_035": {
+    "decision": "full_candidate",
+    "scene": "多条细红线从中部向多个方向延伸，周围散点",
+    "note": "多线Scratch与方向null合理"
+  },
+  "item_036": {
+    "decision": "quarantine_full",
+    "scene": "中部不规则红块和弯曲段，外围散点",
+    "note": "没有多条近乎平行纵向贯穿条带，Scratch描述有关键虚构/误读"
+  },
+  "item_037": {
+    "decision": "full_candidate",
+    "scene": "下缘明显红片聚集，全图散点",
+    "note": "局部边缘与6点方向有依据"
+  },
+  "item_038": {
+    "decision": "caption_only",
+    "scene": "多段外围红带，顶部更密，内部散点",
+    "note": "Edge_Loc/Edge_Ring分歧，已披露环不完整；仅描述保留"
+  },
+  "item_039": {
+    "decision": "full_with_model_revision",
+    "scene": "左侧中部偏下不规则大片红区，向左缘延伸",
+    "note": "原9点与局部偏下分布不完全吻合，改为左侧偏下并用宽方向范围/不强定精确钟点"
+  },
+  "item_040": {
+    "decision": "full_candidate",
+    "scene": "中部偏左不规则大片红簇，外围散点",
+    "note": "Loc与middle有依据，原方向约9点涵盖左侧主簇"
+  },
+  "item_041": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "左下近边缘小红簇，右上孤立小红点，其余绿色",
+    "note": "原Loc/模型none；不能称均为微小单点，改中性描述小簇与散点，不接类别none"
+  },
+  "item_042": {
+    "decision": "full_candidate",
+    "scene": "明显外缘红环，内域较多散点",
+    "note": "环主结构、边缘位置及内部散点均有依据"
+  },
+  "item_043": {
+    "decision": "full_candidate",
+    "scene": "全图粗格红绿交错混杂",
+    "note": "Random描述有依据"
+  },
+  "item_044": {
+    "decision": "caption_only",
+    "scene": "左缘较大红色聚集伴全图孤立点",
+    "note": "原Edge_Loc/模型Random，已看到左缘主簇，主次判断不同"
+  },
+  "item_045": {
+    "decision": "full_candidate",
+    "scene": "清楚的外缘红环和内部散点",
+    "note": "与046同文但两幅原图不同，描述均有依据，不按答案文本去重"
+  },
+  "item_046": {
+    "decision": "full_candidate",
+    "scene": "清楚的外缘红环和内部散点",
+    "note": "与045同文可成立，仍保留独立图像与来源"
+  },
+  "item_047": {
+    "decision": "full_candidate",
+    "scene": "中央致密红块，周围散点",
+    "note": "中央主簇描述有依据"
+  },
+  "item_048": {
+    "decision": "full_with_model_revision",
+    "scene": "细窄外缘红环，内部散点",
+    "note": "删除约一个die宽的未经验证数值尺寸说法"
+  },
+  "item_049": {
+    "decision": "full_candidate",
+    "scene": "外围粗细不均红带，内部稀疏点",
+    "note": "边缘带及宽窄不均有依据"
+  },
+  "item_050": {
+    "decision": "full_with_model_revision",
+    "scene": "薄外缘红环有断续，内部点及微簇",
+    "note": "两三点未逐格核验，改为小型相邻簇，主要描述有依据"
+  },
+  "item_051": {
+    "decision": "full_candidate",
+    "scene": "红绿粗格高密度全域交错",
+    "note": "全域混杂有依据，不给精确比例"
+  },
+  "item_052": {
+    "decision": "full_with_model_revision",
+    "scene": "粗细不均外围红环，内部散点",
+    "note": "顶部明显较厚欠稳妥，删定向加厚断言"
+  },
+  "item_053": {
+    "decision": "full_with_model_revision",
+    "scene": "连续外围红环，内部少量散点",
+    "note": "不称较厚，保留红色环带的事实"
+  },
+  "item_054": {
+    "decision": "full_with_model_revision",
+    "scene": "上部偏左弧状细线朝上部中间延伸，其他散点",
+    "note": "程序钟点误判已恢复；原10至11只覆盖部分线，主方向不唯一，改上部弧线及不强定钟点"
+  },
+  "item_055": {
+    "decision": "full_candidate",
+    "scene": "明显细外缘红环，主体绿色，内部少量点",
+    "note": "边缘环结构有依据"
+  },
+  "item_056": {
+    "decision": "full_with_model_revision",
+    "scene": "上部边缘与中部各有不规则红簇，其余散点",
+    "note": "多主簇跨区，不强定唯一12点，改方向null及区域unknown"
+  },
+  "item_057": {
+    "decision": "full_candidate",
+    "scene": "大面积红色主体，左缘窄绿色残留带，少量其他绿点",
+    "note": "近全片及左缘残留形态有依据"
+  },
+  "item_058": {
+    "decision": "full_candidate",
+    "scene": "全域密集红绿混杂，无单一主簇",
+    "note": "Random整体描述有依据"
+  },
+  "item_059": {
+    "decision": "full_candidate",
+    "scene": "中心偏下不规则致密红团旁有小团，全图零散红点",
+    "note": "主要团块有依据，center/middle边界不确定已披露"
+  },
+  "item_060": {
+    "decision": "full_candidate",
+    "scene": "右上近边缘小红团，其他稀疏散点",
+    "note": "Loc及近边缘约2点位置有依据，区域非严格几何gold"
+  },
+  "item_061": {
+    "decision": "full_with_model_revision",
+    "scene": "全域红绿高密度交错",
+    "note": "删除接近一半的未核验比例；保留全域混杂"
+  },
+  "item_062": {
+    "decision": "caption_only",
+    "scene": "右侧至下方大片散点密度增强，其他区域稀疏",
+    "note": "原Random/模型Edge_Loc，密度梯度真实但类别分歧；不强接分类"
+  },
+  "item_063": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "中部广泛不规则红块/短带与明显绿色间隙",
+    "note": "原Donut/模型Loc，避免把有间隙的聚集说成一片连续实心块"
+  },
+  "item_064": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "中部红弧与短带包绕绿色区域，右侧不规则相连",
+    "note": "原Donut/模型Scratch；组成部分描述有依据，但整体围绕结构弱化，改中性形态"
+  },
+  "item_065": {
+    "decision": "caption_only",
+    "scene": "左上大红片从边缘延伸至中部，右下散点和分支",
+    "note": "原Donut/模型Loc，描述有图像依据但类别归属未定"
+  },
+  "item_066": {
+    "decision": "caption_only",
+    "scene": "中部右侧弧形红带包绕中心绿色区域，外围散点",
+    "note": "原Donut/模型Scratch，弧形包绕描述成立，不接受Scratch类"
+  },
+  "item_067": {
+    "decision": "caption_only",
+    "scene": "中上至右中不规则红簇与短线分支，左下横段",
+    "note": "原Donut/模型Loc，事实描述有依据，类别分歧"
+  },
+  "item_068": {
+    "decision": "full_candidate",
+    "scene": "中部不规则厚红环，中心绿色孔，外围散点",
+    "note": "Donut主环与绿孔正确识别"
+  },
+  "item_069": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "中上至中部不规则红簇/弧带，内侧绿色间隙，外围少点",
+    "note": "原Donut/模型Loc，保留聚集但补中性绿色间隙，不接分类"
+  },
+  "item_070": {
+    "decision": "quarantine_full",
+    "scene": "极细外围红环和内部大量细散点",
+    "note": "否定环形导致细边环遗漏"
+  },
+  "item_071": {
+    "decision": "caption_only",
+    "scene": "中右至右下红色增强，部分纵向列，左侧较绿",
+    "note": "原Random/模型Loc，聚集与纵列描述有依据"
+  },
+  "item_072": {
+    "decision": "caption_only",
+    "scene": "中右多条宽窄不一纵列，左侧/下方较绿",
+    "note": "原Random/模型Scratch；确有纵列，但不把它当可靠Scratch分类"
+  },
+  "item_073": {
+    "decision": "caption_only",
+    "scene": "中部纵向红条/连块，外围散点",
+    "note": "原Random/模型Scratch；线列有依据，类型边界未定"
+  },
+  "item_074": {
+    "decision": "full_candidate",
+    "scene": "外围细红环略断续，内部稀疏点",
+    "note": "环形和边缘位置有依据"
+  },
+  "item_075": {
+    "decision": "full_candidate",
+    "scene": "外缘红环粗细不均，内部红点",
+    "note": "Edge_Ring主要描述有依据"
+  },
+  "item_076": {
+    "decision": "full_candidate",
+    "scene": "中央红色致密团，外围绿色与散点",
+    "note": "中心主簇有依据"
+  },
+  "item_077": {
+    "decision": "full_with_model_revision",
+    "scene": "顶部贴边红色块带向内延伸，其他散点",
+    "note": "删数行的未验证格点宽度；12点方向有依据"
+  },
+  "item_078": {
+    "decision": "quarantine_full",
+    "scene": "外围红环，右侧/右下较厚",
+    "note": "把全环只说成右侧局部带，主环遗漏"
+  },
+  "item_079": {
+    "decision": "full_with_model_revision",
+    "scene": "大面积红色主体，周缘零散绿色点，左上较多",
+    "note": "删仅左上残留的过强限定，其他边缘也有绿点"
+  },
+  "item_080": {
+    "decision": "quarantine_full",
+    "scene": "中下部斜向连续红带，周围散点",
+    "note": "否定条状几何结构，划痕主结构遗漏"
+  },
+  "item_081": {
+    "decision": "caption_only",
+    "scene": "中部纵向不规则红色带与散点",
+    "note": "原Scratch/模型Loc，带状描述有依据"
+  },
+  "item_082": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "中部偏下红团及下部/周围散点",
+    "note": "原Center/模型Random，改描述突出中部主簇"
+  },
+  "item_083": {
+    "decision": "full_with_model_revision",
+    "scene": "中央附近相邻红块与短簇，周围散点较多",
+    "note": "致密单斑表述过强，改小型相邻红块"
+  },
+  "item_084": {
+    "decision": "caption_only",
+    "scene": "中央小红簇与全图散点",
+    "note": "原Center/Random，已见中央簇，主次分歧"
+  },
+  "item_085": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_086": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_087": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_088": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_090": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_091": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_092": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_094": {
+    "decision": "full_candidate",
+    "scene": "中央不规则红簇，周围散点",
+    "note": "中心聚集及位置有图像依据"
+  },
+  "item_089": {
+    "decision": "caption_only",
+    "scene": "中央偏右相连红块及散点",
+    "note": "原Center/Random，描述有依据，类型分歧"
+  },
+  "item_093": {
+    "decision": "caption_only",
+    "scene": "中央偏右相连红块及散点",
+    "note": "原Center/Random，描述有依据，类型分歧"
+  },
+  "item_095": {
+    "decision": "caption_only",
+    "scene": "右侧边缘红簇朝内延伸",
+    "note": "Loc/Edge_Loc，形态与右侧位置有依据"
+  },
+  "item_096": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "下半部尤其边缘小簇与全图散点",
+    "note": "无任何边缘/局部结构过强，改中性分布"
+  },
+  "item_097": {
+    "decision": "full_candidate",
+    "scene": "右缘大片红簇向内延伸，其他散点",
+    "note": "Edge_Loc与约3点方向有依据"
+  },
+  "item_098": {
+    "decision": "full_candidate",
+    "scene": "中下部不规则红簇伸向底缘",
+    "note": "Loc与约6点有依据，跨middle/edge已披露"
+  },
+  "item_099": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "右上较密相邻红块与散点",
+    "note": "原Loc/Random，不能否定主聚集，突出右上"
+  },
+  "item_100": {
+    "decision": "full_with_model_revision",
+    "scene": "几乎全红，左缘附近小绿残留",
+    "note": "删除单个die的未核数量"
+  },
+  "item_101": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_104": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_110": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_117": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_123": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_125": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_129": {
+    "decision": "caption_only",
+    "scene": "绿色主体内红色散点和小型相邻块",
+    "note": "原none/Random；中性描述可保留，原类别独立保留，黑色区域不臆测为die"
+  },
+  "item_102": {
+    "decision": "quarantine_full",
+    "scene": "多条斜向/曲折红线与散点",
+    "note": "原描述一条12至6贯穿线，方向和数量错误"
+  },
+  "item_103": {
+    "decision": "full_with_model_revision",
+    "scene": "右上至下部斜向弯曲红线及散点",
+    "note": "端点约1点过于精确，改右上至下部，方向null"
+  },
+  "item_105": {
+    "decision": "full_candidate",
+    "scene": "全域高密度红绿混杂",
+    "note": "Random描述有依据"
+  },
+  "item_106": {
+    "decision": "caption_only",
+    "scene": "中央偏右小红簇，其他散点",
+    "note": "原Center/Random，已见小主簇，取舍分歧"
+  },
+  "item_107": {
+    "decision": "caption_only",
+    "scene": "中部偏下红点密集区，外围散点",
+    "note": "原Loc/Center；位置与聚集有依据，类型未定"
+  },
+  "item_108": {
+    "decision": "full_candidate",
+    "scene": "中部不完整红环，中心绿孔，右侧较密",
+    "note": "Donut环及中心绿区正确识别"
+  },
+  "item_109": {
+    "decision": "full_candidate",
+    "scene": "大面积红色主体，顶部偏右和右上绿块",
+    "note": "Near_full与绿色残留位置有依据"
+  },
+  "item_111": {
+    "decision": "quarantine_full",
+    "scene": "中部弧形/围绕红簇与明显绿色间隙",
+    "note": "原Donut/Center，实体中央大簇的说法弱化或遗漏中心绿色/包绕结构"
+  },
+  "item_112": {
+    "decision": "quarantine_full",
+    "scene": "中部弧形/围绕红簇与明显绿色间隙",
+    "note": "原Donut/Center，实体中央大簇的说法弱化或遗漏中心绿色/包绕结构"
+  },
+  "item_113": {
+    "decision": "quarantine_full",
+    "scene": "中部弧形/围绕红簇与明显绿色间隙",
+    "note": "原Donut/Center，实体中央大簇的说法弱化或遗漏中心绿色/包绕结构"
+  },
+  "item_114": {
+    "decision": "quarantine_full",
+    "scene": "中部弧形/围绕红簇与明显绿色间隙",
+    "note": "原Donut/Center，实体中央大簇的说法弱化或遗漏中心绿色/包绕结构"
+  },
+  "item_116": {
+    "decision": "quarantine_full",
+    "scene": "中部弧形/围绕红簇与明显绿色间隙",
+    "note": "原Donut/Center，实体中央大簇的说法弱化或遗漏中心绿色/包绕结构"
+  },
+  "item_115": {
+    "decision": "quarantine_full",
+    "scene": "中部碎红弧和部分包绕绿色的结构",
+    "note": "全图散点且无环带的否定遗漏主结构"
+  },
+  "item_118": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "左侧/下缘相邻红块较密，内域散点",
+    "note": "原Edge_Loc/Random，不能否定所有主聚集，改中性边缘增强"
+  },
+  "item_119": {
+    "decision": "caption_only",
+    "scene": "左上短斜红带与左缘/内域散点",
+    "note": "原Scratch/Edge_Loc；短带有依据但范围7至11弧带过宽，只保留中性描述"
+  },
+  "item_120": {
+    "decision": "caption_only",
+    "scene": "下缘不规则红簇向内伸，其他散点",
+    "note": "Loc/Edge_Loc，5至7方位有依据"
+  },
+  "item_121": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "中部偏右上相邻红块，小簇及散点",
+    "note": "原Loc/Random，无主导结构过强，改中性聚集"
+  },
+  "item_122": {
+    "decision": "full_with_model_revision",
+    "scene": "几乎全红，下方偏右少量绿残留",
+    "note": "删除三个的未核计数"
+  },
+  "item_124": {
+    "decision": "full_candidate",
+    "scene": "右下致密红簇并散点",
+    "note": "Loc及4至5区间有依据"
+  },
+  "item_126": {
+    "decision": "caption_only",
+    "scene": "红色全域占较多，绿色广泛夹杂",
+    "note": "原Near_full/Random，事实描述可保留"
+  },
+  "item_127": {
+    "decision": "caption_only_with_model_revision",
+    "scene": "左缘局部增强及全域稀疏散点",
+    "note": "原Edge_Loc/Random，左缘增强不是不存在，改中性描述"
+  },
+  "item_128": {
+    "decision": "full_with_model_revision",
+    "scene": "红绿全域交错，无主导几何结构",
+    "note": "删接近一半的未核比例"
+  },
+  "item_130": {
+    "decision": "full_with_model_revision",
+    "scene": "红色多数与绿块全域交错",
+    "note": "删约三分之二的未核比例"
+  },
+  "item_131": {
+    "decision": "full_candidate",
+    "scene": "中心偏下紧凑红簇，底缘小簇及散点",
+    "note": "主次聚集有依据"
+  }
+}

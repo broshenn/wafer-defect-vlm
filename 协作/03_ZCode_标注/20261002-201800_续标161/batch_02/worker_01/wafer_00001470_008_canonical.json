@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "晶圆中部偏下出现一条弯曲的新月形红色密集带，开口朝上、环绕中心下方；其余晶圆面以绿色die为主，散布低密度红色die",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "主要失效为晶圆中心偏下方的一条弯曲新月形红色密集带，其余晶圆面以绿色合格die为主并散布零星红色die。",
+  "uncertainty": "新月形密集带也可视为围绕中心的不完整环带，类别判定在局部型与不完整环形之间有模糊；其径向位置介于中心与中间区域之间。"
+}

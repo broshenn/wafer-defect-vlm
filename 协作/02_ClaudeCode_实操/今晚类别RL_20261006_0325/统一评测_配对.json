@@ -1,0 +1,67 @@
+{
+  "f2-f0/dev18": {
+    "gained": 0,
+    "lost": 0,
+    "net": 0,
+    "gained_ids": [],
+    "lost_ids": []
+  },
+  "f2-f1/dev18": {
+    "gained": 1,
+    "lost": 0,
+    "net": 1,
+    "gained_ids": [
+      "wafer_00040556_007"
+    ],
+    "lost_ids": []
+  },
+  "f1-f0/dev18": {
+    "gained": 0,
+    "lost": 1,
+    "net": -1,
+    "gained_ids": [],
+    "lost_ids": [
+      "wafer_00040556_007"
+    ]
+  },
+  "f2-f0/val90": {
+    "gained": 1,
+    "lost": 2,
+    "net": -1,
+    "gained_ids": [
+      "wafer_00039556_022"
+    ],
+    "lost_ids": [
+      "wafer_00042241_025",
+      "wafer_00044402_021"
+    ]
+  },
+  "f2-f1/val90": {
+    "gained": 5,
+    "lost": 1,
+    "net": 4,
+    "gained_ids": [
+      "wafer_00039556_022",
+      "wafer_00044050_019",
+      "wafer_00042159_013",
+      "wafer_00026714_009",
+      "wafer_00022388_005"
+    ],
+    "lost_ids": [
+      "wafer_00042241_025"
+    ]
+  },
+  "f1-f0/val90": {
+    "gained": 0,
+    "lost": 5,
+    "net": -5,
+    "gained_ids": [],
+    "lost_ids": [
+      "wafer_00044050_019",
+      "wafer_00042159_013",
+      "wafer_00026714_009",
+      "wafer_00022388_005",
+      "wafer_00044402_021"
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "batch": "GLM续标161（原180候选清单剩余部分）",
+  "task_source": "Codex 任务书《给ZCode：继续原180候选清单，剩余最多161张》（2026-10-02，用户转交本父会话）",
+  "batch_dir": "D:/pycode/晶圆图研究/协作/03_ZCode_标注/20261002-201800_续标161",
+  "window": "2026-10-02 20:16 (+0800) 开始；10-02 晚用户指示暂停（batch_05 启动前取消，零消耗）；10-03 用户指示继续；01:33 完成",
+  "inputs_verified": {
+    "index_sha256": "60762f2ee9c1018cc83e5d1ebb167832e0534e2eb57c5cc3b2ac482da59f55e0",
+    "groups": "pending_020(1) + batch_02..09(各20) = 161；9组清单哈希全部吻合；行键仅 item_id/sample_id/image_path/image_sha256；161 ID 与 SHA256 均唯一、跨组零重叠",
+    "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+    "checker_sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55",
+    "normalizer_sha256": "01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c",
+    "scope_check": "未回头标注 batch_01 已完成的 19 张（161 与其零交集）；pending_020 即 batch_01 未执行的 wafer_00047003_005，此前从无答案"
+  },
+  "execution": {
+    "mode": "每组3个新子agent（分片1–7/8–14/15–20，父会话派生、哈希已记录于 shards/），组间不继承；pending_020 单worker；实际并发3，无并发受限事件",
+    "worker_model_declaration": "各子agent运行于父会话同一模型配置（客户端声明 account:zai-start-plan/GLM-5.3-Flash / Start Plan）；后端标识未提供",
+    "subagent_context": "子agent全新启动（不继承父会话对话），仅收入口提示词+通用规则书(worker_instructions.md)；分片内顺序处理，后图上下文含前图与前答，非独立API调用",
+    "parent_disclosure": "父会话为此前试标会话（已知10+19张自身作答与若干ID）；开工污染比对：161张中仅 wafer_00047178_011 与九张试标重叠（batch_09/worker_02 第6条），该图由全新worker标注，父会话知识未进入worker输入；stage_index 与本文件均保留披露标记",
+    "rules_file": "worker_instructions.md（父会话一次性写入，全部worker相同）",
+    "stage_indexes": "每组 stage_index.json 由 parent_stage_index.py 只读汇总生成"
+  },
+  "counts": {
+    "planned": 161,
+    "attempted": 161,
+    "raw_pass": 153,
+    "raw_fail_canonical_pass": 0,
+    "raw_fail": 8,
+    "isolated_bad_json": 0,
+    "unknown": 0,
+    "not_executed": 0,
+    "pending_review": 0,
+    "alias_changes": 0,
+    "failure_count": 8
+  },
+  "failure_details": [
+    {"sample_id": "wafer_00014245_022", "group": "batch_03", "worker": "worker_02", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "caption_zh『约10至11点钟方向』剔除钟点表达式后残留数字['1','0']"},
+    {"sample_id": "wafer_00016997_017", "group": "batch_04", "worker": "worker_01", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "caption_zh 剔除钟点表达式后残留数字['4']"},
+    {"sample_id": "wafer_00037596_010", "group": "batch_05", "worker": "worker_03", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "morphology 剔除钟点表达式后残留数字['2']"},
+    {"sample_id": "wafer_00042724_003", "group": "batch_06", "worker": "worker_03", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "『约7至11点钟方向』剔除后残留数字7"},
+    {"sample_id": "wafer_00042865_024", "group": "batch_06", "worker": "worker_03", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "『约5至7点钟方向』剔除后残留数字5"},
+    {"sample_id": "wafer_00043247_019", "group": "batch_07", "worker": "worker_01", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "caption_zh 剔除钟点词后残留数字4"},
+    {"sample_id": "wafer_00045738_008", "group": "batch_08", "worker": "worker_02", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "morphology 剔除钟点后残留数字6"},
+    {"sample_id": "wafer_00046997_025", "group": "batch_09", "worker": "worker_02", "checker1_exit": 8, "normalizer_exit": 0, "checker2_exit": 8, "reason": "caption_zh『约4至5点钟方向』剔除后残留数字4"}
+  ],
+  "failure_pattern_note": "8件失败全部为同一模式：模型在 morphology/caption_zh 写『约X至Y点钟方向』类区间表述，原检查器的钟点表达式剥离规则只识别部分形式，剔除后残留阿拉伯数字→退出码8；全部按协议隔离保留原件，未改写未重试。是否将区间钟点表述纳入剥离规则或提示词，由Codex决定；规范化器不做此类改写。",
+  "parent_final_recheck": {
+    "checker_rerun_on_161_raws": "退出码与worker记录100%一致（153个0 + 8个8）",
+    "isolated_canonical_rerun": "8件canonical重跑均为退出码8（与worker记录一致，0件副本补救）",
+    "global_duplicate_raw_sha": {"eca0739f677a…": ["wafer_00011630_025", "wafer_00011856_003"]},
+    "duplicate_note": "唯一一对字节相同原答（batch_03/worker_01，worker自述两图形态相同作答文字一致）；文件不含sample_id，两图若确为同形态则字节相同可能成立，提请Codex内容验收时核对该两图",
+    "coverage": "161 ID 与9组清单逐一对应，无重复无缺项；STOPPED* 标记：全批无（8件失败均为条目级隔离，非系统停止）",
+    "recheck_at": "2026-10-03 01:33 (+0800)"
+  },
+  "class_distribution_161": {"Random": 61, "Center": 21, "Near_full": 18, "Edge_Ring": 17, "Edge_Loc": 15, "Loc": 14, "Scratch": 12, "Donut": 2, "none": 1},
+  "worker_runs": {
+    "pending_020/worker_01": {"duration_ms": 158536, "tool_uses": 12, "client_reported_subagent_tokens": 425947},
+    "batch_02": {"worker_01": {"duration_ms": 723331, "tool_uses": 35, "client_reported_subagent_tokens": 1916540}, "worker_02": {"duration_ms": 422395, "tool_uses": 41, "client_reported_subagent_tokens": 1813666}, "worker_03": {"duration_ms": 406437, "tool_uses": 32, "client_reported_subagent_tokens": 1377239}},
+    "batch_03": {"worker_01": {"duration_ms": 729715, "tool_uses": 34, "client_reported_subagent_tokens": 1930724}, "worker_02": {"duration_ms": 672539, "tool_uses": 41, "client_reported_subagent_tokens": 1938234}, "worker_03": {"duration_ms": 579540, "tool_uses": 31, "client_reported_subagent_tokens": 1509265}},
+    "batch_04": {"worker_01": {"duration_ms": 558987, "tool_uses": 44, "client_reported_subagent_tokens": 1963897}, "worker_02": {"duration_ms": 514923, "tool_uses": 51, "client_reported_subagent_tokens": 2178496}, "worker_03": {"duration_ms": 408354, "tool_uses": 39, "client_reported_subagent_tokens": 1712440}},
+    "batch_05": {"worker_01": {"duration_ms": 566740, "tool_uses": 34, "client_reported_subagent_tokens": 1620832}, "worker_02": {"duration_ms": 517890, "tool_uses": 42, "client_reported_subagent_tokens": 1664348}, "worker_03": {"duration_ms": 482812, "tool_uses": 33, "client_reported_subagent_tokens": 1401505}},
+    "batch_06": {"worker_01": {"duration_ms": 547317, "tool_uses": 48, "client_reported_subagent_tokens": 2266630}, "worker_02": {"duration_ms": 850320, "tool_uses": 36, "client_reported_subagent_tokens": 2062854}, "worker_03": {"duration_ms": 394758, "tool_uses": 40, "client_reported_subagent_tokens": 1597305}},
+    "batch_07": {"worker_01": {"duration_ms": 467732, "tool_uses": 38, "client_reported_subagent_tokens": 1687165}, "worker_02": {"duration_ms": 473836, "tool_uses": 41, "client_reported_subagent_tokens": 1985838}, "worker_03": {"duration_ms": 334647, "tool_uses": 39, "client_reported_subagent_tokens": 1577492}},
+    "batch_08": {"worker_01": {"duration_ms": 690388, "tool_uses": 38, "client_reported_subagent_tokens": 1999291}, "worker_02": {"duration_ms": 435818, "tool_uses": 43, "client_reported_subagent_tokens": 1907814}, "worker_03": {"duration_ms": 479892, "tool_uses": 47, "client_reported_subagent_tokens": 2008102}},
+    "batch_09": {"worker_01": {"duration_ms": 573005, "tool_uses": 44, "client_reported_subagent_tokens": 2256334}, "worker_02": {"duration_ms": 680552, "tool_uses": 36, "client_reported_subagent_tokens": 1714573}, "worker_03": {"duration_ms": 506022, "tool_uses": 48, "client_reported_subagent_tokens": 2314544}}
+  },
+  "worker_process_disclosures": [
+    "batch_02/worker_03：worker_log.jsonl 首写因 shell 引号产生非法JSON，按原值重写为合法行（raw/canonical/check.log/normalization 未动，父会话哈希核验一致）",
+    "batch_03/worker_02：worker_log.jsonl 一处 canonical_sha256 漏引号机械修正（7/7校验合法，raw哈希与磁盘一致）",
+    "batch_03/worker_01：自述两图作答文字一致导致 raw 字节相同（父会话查重确认，见 global_duplicate_raw_sha）",
+    "batch_07/worker_02、batch_08/worker_02、batch_09/worker_03：个别图 checker detail 含 clock_expressions_stripped 信息性记录（退出码0，仅参考）"
+  ],
+  "not_provided": "后端实际模型标识、实际后端请求数、自动重试、逐张token、套餐余额、finish_reason、生成参数：均未提供（客户端不向会话暴露）；client_reported_subagent_tokens 为客户端Agent工具回报值，口径未知，不推套餐扣量",
+  "annotation_nature": "全部161份回答为 GLM-5.3-Flash 模型标注；原始通过153份+隔离8份（副本同因失败）；格式通过≠事实正确；未作人工审核；不自动宣布可进训练集"
+}

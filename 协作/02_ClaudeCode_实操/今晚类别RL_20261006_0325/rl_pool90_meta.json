@@ -1,0 +1,41 @@
+{
+  "n": 90,
+  "n_lots": 90,
+  "seed": 3407,
+  "classes": {
+    "Center": 10,
+    "Donut": 10,
+    "Edge_Loc": 10,
+    "Edge_Ring": 10,
+    "Loc": 10,
+    "Near_full": 10,
+    "Random": 10,
+    "Scratch": 10,
+    "none": 10
+  },
+  "shortfall": {},
+  "checks": {
+    "与 train180 无重叠": true,
+    "与 dev18 无重叠": true,
+    "与 val90 无重叠": true,
+    "与 benchmark 根晶圆无重叠": true,
+    "与所有被排除 lot 无重叠": true,
+    "全部来自 train 划分": true,
+    "全部 ground_truth": true,
+    "lot 互不相同": true
+  },
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "pool_sha256": "0569a20bb9967966f56234ffec6837d2fd03a840a05012757c09e3a33d59e0af",
+  "excluded_lots": 484,
+  "监督计量": {
+    "本轮新增唯一类别监督": 90,
+    "累计唯一类别监督（train180∪dev18∪val90∪pool，去重）": 372,
+    "明细": {
+      "train180": 180,
+      "dev18": 18,
+      "val90": 84,
+      "rl_pool90": 90
+    }
+  },
+  "note": "公开原类别标签；不是专家标注，也不是零标签 RL。不足如实减量，未从 val/test/benchmark 补数。"
+}

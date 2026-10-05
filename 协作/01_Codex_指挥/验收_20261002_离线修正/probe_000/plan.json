@@ -1,0 +1,103 @@
+{
+  "task": "GLM 训练标注的数据准备",
+  "task_book": "协作/01_Codex_指挥/任务书_20261002_ClaudeCode_GLM训练标注准备.md",
+  "prepared_at": "2026-10-02T20:47:29.029512+08:00",
+  "seed": 3407,
+  "source_files_sha256": {
+    "train_180.jsonl": "04febd99674f70bf4619c3b529fe4c1313a5b8d739e89c69c390fe686324db47",
+    "smoke_20.jsonl": "f59ae6ba5ba917fae410a9a82f6747c886abde20df189878093467242dd98eec",
+    "dev_18.jsonl": "08b267ea73def5b3119dbf6ca73d27630ef565bb4011f6e53b404d753f7972ac"
+  },
+  "prompt": {
+    "path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+    "sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a"
+  },
+  "checker": {
+    "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\口径修正与准备_20261002-021207\\check_answer_v3.py",
+    "sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55"
+  },
+  "batching": {
+    "rule": "首批=smoke_20 原顺序；其余=train_180 原顺序剔除首批后按 20 切",
+    "n_batches": 9,
+    "batch_size": 20,
+    "global_item_ids": "item_001..item_180，按批次顺序连续编号",
+    "not_resampled": true,
+    "not_adjusted_by_teacher": true
+  },
+  "isolation": {
+    "problems": [],
+    "lot_intersections": {
+      "train∩val": 0,
+      "train∩test": 0,
+      "val∩test": 0,
+      "train∩benchmark": 0,
+      "val∩benchmark": 0
+    },
+    "manifest_rows": 5904,
+    "benchmark_lots": 202
+  },
+  "image_problems": [],
+  "batch_first_item": {
+    "batch_01": "wafer_00012763_005",
+    "batch_02": "wafer_00000025_003",
+    "batch_03": "wafer_00007846_004",
+    "batch_04": "wafer_00016330_012",
+    "batch_05": "wafer_00033012_002",
+    "batch_06": "wafer_00040514_015",
+    "batch_07": "wafer_00042967_019",
+    "batch_08": "wafer_00044503_007",
+    "batch_09": "wafer_00046315_003"
+  },
+  "worker_split": {
+    "batch_01_worker_01": [
+      "item_001",
+      "item_002",
+      "item_003",
+      "item_004",
+      "item_005"
+    ],
+    "batch_01_worker_02": [
+      "item_006",
+      "item_007",
+      "item_008",
+      "item_009",
+      "item_010"
+    ],
+    "batch_01_worker_03": [
+      "item_011",
+      "item_012",
+      "item_013",
+      "item_014",
+      "item_015"
+    ],
+    "batch_01_worker_04": [
+      "item_016",
+      "item_017",
+      "item_018",
+      "item_019",
+      "item_020"
+    ]
+  },
+  "file_sha256": {
+    "blind_inputs_all_180.jsonl": "600dbbed0b04e9b068ce7b5fc053e346a01a151bc77684e818ce8266854996af",
+    "audit_selected.jsonl": "bb6b9222aa6acbf6405138bd560554701a2538286252441df0c78064284f4f54",
+    "batch_01_blind.jsonl": "0c2f476d3f099eccee62e3c927b3621757d69bced95a3421bab0db4d9c681db2",
+    "batch_02_blind.jsonl": "130053911f596d17bebd3154824d4dd32879ad7a41187eb66caa81ec84cc5b9f",
+    "batch_03_blind.jsonl": "2d98bc8f7aee88a89aaec9887596affbd2f13ca43022e965a406cb8f7efbbbbf",
+    "batch_04_blind.jsonl": "fcf1639b97ed34742d441e7b4d5e464e008e81b78df1217ceb55823fb36076f0",
+    "batch_05_blind.jsonl": "e337161b5d4b96757c8bc716641d5fb6af03d611c6649d2adf7274163f7f2d72",
+    "batch_06_blind.jsonl": "392f5b8e66c22ff319f48d1160b3719771095f40c8d5688a646879987ed0d5d4",
+    "batch_07_blind.jsonl": "19c5471a572fe0becda6ddfde09eaabe8f03392e2c060aa8b6ce1e3d4bfa4e3d",
+    "batch_08_blind.jsonl": "0299cc54d91b6e3519392045039b69b1d0630184732a51001c17cfd71308f68e",
+    "batch_09_blind.jsonl": "732d6f0db98a77fb4b033c45926cc0ea61509f480f766aa91c2b2871e6c78539",
+    "batch_01_worker_01.jsonl": "c9a5603ee5b2feb446b7d23bb8d9721eaabe3dbfbe3de855b986a593bb257f2e",
+    "batch_01_worker_02.jsonl": "543600f8e2e3c19229c79b0194d817ac652f54cd6d1972aa66451b60f5fb0c1e",
+    "batch_01_worker_03.jsonl": "b41c97590325f3352f427e146500abcb52a1289d61fbc59970aa5b08cb6f8b27",
+    "batch_01_worker_04.jsonl": "126f2e35063a5c3a85c9434c0ab2c17da87ebfa3e7e5853d88379e4bbc7085f1"
+  },
+  "notes": [
+    "盲清单只含 item_id/sample_id/image_path/image_sha256。",
+    "audit_selected.jsonl 与 plan.json 含答案，只给 Codex/Claude，禁止给 ZCode。",
+    "本轮未生成任何 GLM 答案，未启动标注子 agent。"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die与绿色合格die大范围交错混杂，遍布整个晶圆，无明显局部聚集或几何图案",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆内红色失效die与绿色合格die大面积交错分布，覆盖整个晶圆，看不出局部聚集的几何结构。",
+  "uncertainty": "失效比例很高且红绿成片交错，与稀疏散点形态不同，类别判断存在不确定性"
+}

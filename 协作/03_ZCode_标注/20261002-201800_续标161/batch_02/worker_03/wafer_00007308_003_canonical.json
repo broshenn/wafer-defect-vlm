@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "晶圆中部偏左出现大面积成片红色失效区，边界不规则，其余区域散在红色失效点",
+  "radial_zone": "middle",
+  "clock_direction": "9点钟",
+  "extent_r": null,
+  "caption_zh": "晶圆中部偏左约9点钟方向有大片成片红色失效区，其余区域伴散在红色失效点。",
+  "uncertainty": "失效区贴近圆心，径向归属介于 center 与 middle 之间；外围散点与主区关系不确定"
+}

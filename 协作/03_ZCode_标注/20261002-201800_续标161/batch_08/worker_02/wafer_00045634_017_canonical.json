@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效 die 大范围散布于整个晶圆，左缘、中部与下部成片较密，右侧相对稀疏，整体红绿混杂、无单一聚集结构",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效 die 覆盖全晶圆，中部与左下部成片较密，右缘相对较少。",
+  "uncertainty": "失效面积占比较高，介于大范围散布失效与 Near-full 之间，类别界限难以可靠区分"
+}

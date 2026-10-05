@@ -1,0 +1,9 @@
+{
+  "defect_class": "Near_full",
+  "morphology": "晶圆几乎全部die为红色失效，红色覆盖整个圆面，仅左上方及边缘零星散布少量绿色合格die",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆绝大部分区域为红色失效die，失效覆盖接近整片，仅左上方散见少量绿色合格die",
+  "uncertainty": "残余绿色die分布不均，偏于左上方；失效覆盖率接近全满与完全失效之间的界限难以精确判断"
+}

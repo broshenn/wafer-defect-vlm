@@ -1,0 +1,205 @@
+{
+  "日期": "2026-10-06",
+  "阶段": [
+    "smoke 20 条 / 20 步",
+    "主训练 180 条 / 60 步（SFT-A）"
+  ],
+  "基座模型": "Qwen/Qwen3.5-9B（本地权重，revision 仅 master）",
+  "训练框架": "ms-swift 4.5.3；torch 2.6.0+cu124；transformers 5.16.1",
+  "LoRA": {
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "target_modules_effective": "^(model\\.language_model(?=\\.).*\\.(o_proj|k_proj|q_proj|in_proj_b|down_proj|out_proj|v_proj|in_proj_qkv|in_proj_a|in_proj_z|up_proj|gate_proj))$",
+    "freeze_vit": true,
+    "freeze_aligner": true,
+    "trainable_params": "43.2783M / 9453.0921M (0.4578%)",
+    "vision_trainable_tensors": 0
+  },
+  "smoke": {
+    "max_steps": 20,
+    "ga": 1,
+    "有效batch": 1,
+    "train_loss": 0.3213,
+    "eval_loss_10": 0.2525,
+    "eval_loss_20": 0.2372,
+    "eval_token_acc_10": 0.9239,
+    "eval_token_acc_20": 0.9492,
+    "耗时秒": 57.6,
+    "显存GiB": 4.33,
+    "checkpoint": "checkpoint-20"
+  },
+  "main": {
+    "max_steps": 60,
+    "ga": 4,
+    "有效batch": 4,
+    "train_loss": 0.1613,
+    "eval_loss": 0.07726,
+    "eval_token_acc": 0.9797,
+    "耗时秒": 405.5,
+    "显存GiB": 4.35,
+    "选定checkpoint": "checkpoint-60（规则：最终步，不挑最好）"
+  },
+  "dev18": {
+    "n": 18,
+    "基座正确": 3,
+    "基座准确率": 0.1667,
+    "adapter正确": 13,
+    "adapter准确率": 0.7222,
+    "绝对提升": 0.5556
+  },
+  "配对明细": [
+    {
+      "sample_id": "wafer_00003298_021",
+      "label": "Edge_Ring",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Edge_Ring",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00003822_012",
+      "label": "Scratch",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Edge_Loc",
+      "adapter_correct": false
+    },
+    {
+      "sample_id": "wafer_00018023_017",
+      "label": "Edge_Ring",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Edge_Ring",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00029697_025",
+      "label": "Donut",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Donut",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00032899_015",
+      "label": "Center",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Center",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00039578_021",
+      "label": "Center",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Center",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00040556_007",
+      "label": "Random",
+      "base_parsed": "Random",
+      "base_correct": true,
+      "adapter_parsed": "Random",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00041108_014",
+      "label": "none",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "none",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00042202_013",
+      "label": "Loc",
+      "base_parsed": "Loc",
+      "base_correct": true,
+      "adapter_parsed": "Center",
+      "adapter_correct": false
+    },
+    {
+      "sample_id": "wafer_00042778_024",
+      "label": "Near_full",
+      "base_parsed": "none",
+      "base_correct": false,
+      "adapter_parsed": "Near_full",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00043183_023",
+      "label": "Near_full",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Near_full",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00043921_007",
+      "label": "none",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "none",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00043980_001",
+      "label": "Random",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Scratch",
+      "adapter_correct": false
+    },
+    {
+      "sample_id": "wafer_00044300_025",
+      "label": "Scratch",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Scratch",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00045337_006",
+      "label": "Edge_Loc",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Edge_Loc",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00045589_021",
+      "label": "Donut",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Loc",
+      "adapter_correct": false
+    },
+    {
+      "sample_id": "wafer_00046667_020",
+      "label": "Edge_Loc",
+      "base_parsed": "Loc",
+      "base_correct": false,
+      "adapter_parsed": "Edge_Loc",
+      "adapter_correct": true
+    },
+    {
+      "sample_id": "wafer_00047246_025",
+      "label": "Loc",
+      "base_parsed": "Loc",
+      "base_correct": true,
+      "adapter_parsed": "Center",
+      "adapter_correct": false
+    }
+  ],
+  "未做": [
+    "未合并权重（merge）",
+    "未跑独立类别/事实一致性/幻觉检查",
+    "未做人审",
+    "未在正式 Benchmark 上评测",
+    "未跑多随机种子"
+  ],
+  "说明": "同题面、同解码参数（max_tokens 64, temperature 0.0, seed 3407）、同解析规则；旧基座 dev18 原答经逐字节核对题面后直接复用，未重跑。"
+}

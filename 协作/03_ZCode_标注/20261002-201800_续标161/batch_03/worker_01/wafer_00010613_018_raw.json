@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die以孤立单点为主散布于整个晶圆，左侧边缘附近有一小簇红色聚集，边缘各处另见零星红色die","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"失效die以孤立单点形式散布在整片晶圆上，左侧边缘附近有一小簇红色聚集。","uncertainty":"左侧边缘存在小簇聚集，整体并非纯随机散点，Random 与 Edge_Loc 之间有一定不确定性"}

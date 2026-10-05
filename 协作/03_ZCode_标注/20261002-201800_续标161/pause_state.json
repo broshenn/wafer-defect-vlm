@@ -1,0 +1,30 @@
+{
+  "paused_at": "2026-10-02 20:57:15 +0800",
+  "pause_reason": "用户指示暂停（等会接着标）；batch_05 三个worker在启动前被取消，零消耗",
+  "batch": "续标161",
+  "root": "D:\\pycode\\晶圆图研究\\协作\\03_ZCode_标注\\20261002-201800_续标161",
+  "completed_groups": {
+    "pending_020": "1/1 raw_pass（wafer_00047003_005）",
+    "batch_02": "20/20 raw_pass",
+    "batch_03": "19 raw_pass + 1 隔离（wafer_00014245_022，checker退出码8）",
+    "batch_04": "19 raw_pass + 1 隔离（wafer_00016997_017，checker退出码8）"
+  },
+  "attempts_consumed": 61,
+  "remaining": {
+    "groups": [
+      "batch_05",
+      "batch_06",
+      "batch_07",
+      "batch_08",
+      "batch_09"
+    ],
+    "images": 100
+  },
+  "next_action_on_resume": "按原任务书继续：batch_05 起，每组 3 worker（分片文件已在 shards/ 备好，哈希见生成记录），组间自动接续；不重派任何已尝试图片",
+  "disclosures_so_far": [
+    "wafer_00047178_011（batch_09内）与九张试标重叠——父会话曾作答，worker为全新会话，阶段索引已标记",
+    "batch_03 worker_01 两张不同图 raw 字节相同（wafer_00011630_025 / wafer_00011856_003，sha eca0739f…），父会话查重确认，待Codex内容验收关注",
+    "batch_02 worker_03 / batch_03 worker_02 各有一次worker_log.jsonl引号机械修正（已披露，raw哈希经父会话核验一致）",
+    "隔离2张均为checker退出码8（caption剔除钟点后残留数字），原件保留"
+  ]
+}

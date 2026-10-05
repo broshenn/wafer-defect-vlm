@@ -1,0 +1,604 @@
+{
+  "adapter": "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-60",
+  "adapter_config_sha256": "bfffa94a1b66b66703442eb8dea9cc1694b9d0671ed19cd5f73157d6178134e6",
+  "device_name": "NVIDIA A100 80GB PCIe",
+  "cuda_visible_devices": "GPU-79d88a4e-1177-c800-f554-c4084bf5a096",
+  "total_seconds": 216.4,
+  "peak_allocated_GiB_own_process": 17.858,
+  "results": {
+    "base_dev18": {
+      "n": 18,
+      "correct": 3,
+      "accuracy": 0.1667,
+      "macro_f1": 0.0988,
+      "per_class": {
+        "Center": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Donut": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Edge_Ring": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Loc": {
+          "n": 2,
+          "tp": 2,
+          "precision": 0.125,
+          "recall": 1.0,
+          "f1": 0.2222
+        },
+        "Near_full": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Random": {
+          "n": 2,
+          "tp": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "Scratch": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "none": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion": {
+        "Center": {
+          "Loc": 2
+        },
+        "Donut": {
+          "Loc": 2
+        },
+        "Edge_Loc": {
+          "Loc": 2
+        },
+        "Edge_Ring": {
+          "Loc": 2
+        },
+        "Loc": {
+          "Loc": 2
+        },
+        "Near_full": {
+          "none": 1,
+          "Loc": 1
+        },
+        "Random": {
+          "Random": 1,
+          "Loc": 1
+        },
+        "Scratch": {
+          "Loc": 2
+        },
+        "none": {
+          "Loc": 2
+        }
+      },
+      "pred_distribution": {
+        "Loc": 16,
+        "Random": 1,
+        "none": 1
+      },
+      "parse_how": {
+        "ok": 18
+      },
+      "seconds": 19.0,
+      "out": "/WS/checkpoints/v_suite/base_dev18.jsonl"
+    },
+    "base_val90": {
+      "n": 84,
+      "correct": 17,
+      "accuracy": 0.2024,
+      "macro_f1": 0.1248,
+      "per_class": {
+        "Center": {
+          "n": 10,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Donut": {
+          "n": 10,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "n": 10,
+          "tp": 1,
+          "precision": 1.0,
+          "recall": 0.1,
+          "f1": 0.1818
+        },
+        "Edge_Ring": {
+          "n": 10,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Loc": {
+          "n": 10,
+          "tp": 10,
+          "precision": 0.1333,
+          "recall": 1.0,
+          "f1": 0.2353
+        },
+        "Near_full": {
+          "n": 4,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Random": {
+          "n": 10,
+          "tp": 6,
+          "precision": 0.8571,
+          "recall": 0.6,
+          "f1": 0.7059
+        },
+        "Scratch": {
+          "n": 10,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "none": {
+          "n": 10,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        }
+      },
+      "confusion": {
+        "Center": {
+          "Loc": 10
+        },
+        "Donut": {
+          "Loc": 10
+        },
+        "Edge_Loc": {
+          "Loc": 9,
+          "Edge_Loc": 1
+        },
+        "Edge_Ring": {
+          "Loc": 10
+        },
+        "Loc": {
+          "Loc": 10
+        },
+        "Near_full": {
+          "Loc": 4
+        },
+        "Random": {
+          "Random": 6,
+          "Loc": 3,
+          "none": 1
+        },
+        "Scratch": {
+          "Loc": 10
+        },
+        "none": {
+          "Loc": 9,
+          "Random": 1
+        }
+      },
+      "pred_distribution": {
+        "Loc": 75,
+        "Edge_Loc": 1,
+        "Random": 7,
+        "none": 1
+      },
+      "parse_how": {
+        "ok": 84
+      },
+      "seconds": 73.7,
+      "out": "/WS/checkpoints/v_suite/base_val90.jsonl"
+    },
+    "oldadapter_dev18": {
+      "n": 18,
+      "correct": 13,
+      "accuracy": 0.7222,
+      "macro_f1": 0.7,
+      "per_class": {
+        "Center": {
+          "n": 2,
+          "tp": 2,
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6667
+        },
+        "Donut": {
+          "n": 2,
+          "tp": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "Edge_Loc": {
+          "n": 2,
+          "tp": 2,
+          "precision": 0.6667,
+          "recall": 1.0,
+          "f1": 0.8
+        },
+        "Edge_Ring": {
+          "n": 2,
+          "tp": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Loc": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Near_full": {
+          "n": 2,
+          "tp": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        },
+        "Random": {
+          "n": 2,
+          "tp": 1,
+          "precision": 1.0,
+          "recall": 0.5,
+          "f1": 0.6667
+        },
+        "Scratch": {
+          "n": 2,
+          "tp": 1,
+          "precision": 0.5,
+          "recall": 0.5,
+          "f1": 0.5
+        },
+        "none": {
+          "n": 2,
+          "tp": 2,
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0
+        }
+      },
+      "confusion": {
+        "Center": {
+          "Center": 2
+        },
+        "Donut": {
+          "Donut": 1,
+          "Loc": 1
+        },
+        "Edge_Loc": {
+          "Edge_Loc": 2
+        },
+        "Edge_Ring": {
+          "Edge_Ring": 2
+        },
+        "Loc": {
+          "Center": 2
+        },
+        "Near_full": {
+          "Near_full": 2
+        },
+        "Random": {
+          "Random": 1,
+          "Scratch": 1
+        },
+        "Scratch": {
+          "Edge_Loc": 1,
+          "Scratch": 1
+        },
+        "none": {
+          "none": 2
+        }
+      },
+      "pred_distribution": {
+        "Edge_Ring": 2,
+        "Edge_Loc": 3,
+        "Donut": 1,
+        "Center": 4,
+        "Random": 1,
+        "none": 2,
+        "Near_full": 2,
+        "Scratch": 2,
+        "Loc": 1
+      },
+      "parse_how": {
+        "ok": 18
+      },
+      "seconds": 16.4,
+      "out": "/WS/checkpoints/v_suite/oldadapter_dev18.jsonl"
+    },
+    "oldadapter_val90": {
+      "n": 84,
+      "correct": 60,
+      "accuracy": 0.7143,
+      "macro_f1": 0.7278,
+      "per_class": {
+        "Center": {
+          "n": 10,
+          "tp": 9,
+          "precision": 0.6429,
+          "recall": 0.9,
+          "f1": 0.75
+        },
+        "Donut": {
+          "n": 10,
+          "tp": 9,
+          "precision": 0.8182,
+          "recall": 0.9,
+          "f1": 0.8571
+        },
+        "Edge_Loc": {
+          "n": 10,
+          "tp": 6,
+          "precision": 0.5455,
+          "recall": 0.6,
+          "f1": 0.5714
+        },
+        "Edge_Ring": {
+          "n": 10,
+          "tp": 8,
+          "precision": 0.8889,
+          "recall": 0.8,
+          "f1": 0.8421
+        },
+        "Loc": {
+          "n": 10,
+          "tp": 6,
+          "precision": 0.8571,
+          "recall": 0.6,
+          "f1": 0.7059
+        },
+        "Near_full": {
+          "n": 4,
+          "tp": 4,
+          "precision": 0.8,
+          "recall": 1.0,
+          "f1": 0.8889
+        },
+        "Random": {
+          "n": 10,
+          "tp": 5,
+          "precision": 0.8333,
+          "recall": 0.5,
+          "f1": 0.625
+        },
+        "Scratch": {
+          "n": 10,
+          "tp": 7,
+          "precision": 0.4667,
+          "recall": 0.7,
+          "f1": 0.56
+        },
+        "none": {
+          "n": 10,
+          "tp": 6,
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75
+        }
+      },
+      "confusion": {
+        "Center": {
+          "Center": 9,
+          "Scratch": 1
+        },
+        "Donut": {
+          "Donut": 9,
+          "Center": 1
+        },
+        "Edge_Loc": {
+          "Edge_Loc": 6,
+          "Center": 1,
+          "Edge_Ring": 1,
+          "Donut": 1,
+          "Random": 1
+        },
+        "Edge_Ring": {
+          "Edge_Ring": 8,
+          "Edge_Loc": 2
+        },
+        "Loc": {
+          "Loc": 6,
+          "Scratch": 3,
+          "Center": 1
+        },
+        "Near_full": {
+          "Near_full": 4
+        },
+        "Random": {
+          "Random": 5,
+          "Scratch": 1,
+          "Center": 2,
+          "Donut": 1,
+          "Near_full": 1
+        },
+        "Scratch": {
+          "Scratch": 7,
+          "Edge_Loc": 2,
+          "Loc": 1
+        },
+        "none": {
+          "none": 6,
+          "Edge_Loc": 1,
+          "Scratch": 3
+        }
+      },
+      "pred_distribution": {
+        "Center": 14,
+        "Scratch": 15,
+        "Donut": 11,
+        "Edge_Loc": 11,
+        "Edge_Ring": 9,
+        "Random": 6,
+        "Loc": 7,
+        "Near_full": 5,
+        "none": 6
+      },
+      "parse_how": {
+        "ok": 84
+      },
+      "seconds": 73.0,
+      "out": "/WS/checkpoints/v_suite/oldadapter_val90.jsonl"
+    },
+    "oldadapter_dev18_red2green": {
+      "n": 18,
+      "correct": 3,
+      "accuracy": 0.1667,
+      "macro_f1": 0.0706,
+      "per_class": {
+        "Center": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Donut": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Edge_Ring": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Loc": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Near_full": {
+          "n": 2,
+          "tp": 2,
+          "precision": 0.1333,
+          "recall": 1.0,
+          "f1": 0.2353
+        },
+        "Random": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "Scratch": {
+          "n": 2,
+          "tp": 0,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0
+        },
+        "none": {
+          "n": 2,
+          "tp": 1,
+          "precision": 0.3333,
+          "recall": 0.5,
+          "f1": 0.4
+        }
+      },
+      "confusion": {
+        "Center": {
+          "Near_full": 2
+        },
+        "Donut": {
+          "Near_full": 2
+        },
+        "Edge_Loc": {
+          "Near_full": 1,
+          "none": 1
+        },
+        "Edge_Ring": {
+          "Near_full": 2
+        },
+        "Loc": {
+          "none": 1,
+          "Near_full": 1
+        },
+        "Near_full": {
+          "Near_full": 2
+        },
+        "Random": {
+          "Near_full": 2
+        },
+        "Scratch": {
+          "Near_full": 2
+        },
+        "none": {
+          "none": 1,
+          "Near_full": 1
+        }
+      },
+      "pred_distribution": {
+        "Near_full": 15,
+        "none": 3
+      },
+      "parse_how": {
+        "ok": 18
+      },
+      "seconds": 16.4,
+      "out": "/WS/checkpoints/v_suite/oldadapter_dev18_red2green.jsonl"
+    }
+  },
+  "dev18_n": 18,
+  "val90_n": 84,
+  "finished_at": "2026-10-06T02:20:01.309788"
+}

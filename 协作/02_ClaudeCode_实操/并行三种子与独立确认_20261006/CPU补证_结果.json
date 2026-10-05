@@ -1,0 +1,102 @@
+{
+  "note": "CPU 补证；旧『冻结检查_result』是字符串失败的对照，不是成功证据",
+  "lora_B": {
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/checkpoint-10/adapter_model.safetensors": {
+      "sha256": "3c0e11038a59ebe6043ff81fe6abaf38",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.000771,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    },
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/checkpoint-20/adapter_model.safetensors": {
+      "sha256": "a9dfe390585585c85bacc5c8c7c118c8",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.000958,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    },
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/last-checkpoint/adapter_model.safetensors": {
+      "sha256": "a9dfe390585585c85bacc5c8c7c118c8",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.000958,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    },
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-30/adapter_model.safetensors": {
+      "sha256": "0b5345318c1179ca46816b5e3e02c17f",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.002079,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    },
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-60/adapter_model.safetensors": {
+      "sha256": "a27096f5fbefd1ffe114108298565dfe",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.002339,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    },
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/last-checkpoint/adapter_model.safetensors": {
+      "sha256": "a27096f5fbefd1ffe114108298565dfe",
+      "n_lora_A": 248,
+      "n_lora_B": 248,
+      "n_B_nonzero": 248,
+      "max_abs_B": 0.002339,
+      "all_B_zero": false,
+      "n_visual_keys": 0
+    }
+  },
+  "list_config": {
+    "target_modules_arg": [
+      "all-linear"
+    ],
+    "trainable_M": 43.2783,
+    "total_M": 9453.09,
+    "n_trainable_tensors": 496,
+    "n_lora_tensors": 496,
+    "vis_trainable": 0,
+    "vis_frozen": true,
+    "sample_trainable_names": [
+      "base_model.model.model.language_model.layers.0.linear_attn.out_proj.lora_A.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.out_proj.lora_B.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_qkv.lora_A.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_qkv.lora_B.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_z.lora_A.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_z.lora_B.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_b.lora_A.default.weight",
+      "base_model.model.model.language_model.layers.0.linear_attn.in_proj_b.lora_B.default.weight"
+    ]
+  },
+  "mask": {
+    "n_bad": 0,
+    "n_image_all_masked": 20,
+    "supervised_token_counts": [
+      9,
+      10,
+      11
+    ],
+    "first": {
+      "supervised_text": "{\"defect_class\":\"Edge_Ring\"}<|im_end|>\n",
+      "answer": "{\"defect_class\":\"Edge_Ring\"}",
+      "seq_len": 309,
+      "n_image_tokens": 196,
+      "span": [
+        298,
+        308
+      ]
+    }
+  },
+  "cli_parse": {
+    "error": "ValueError: Please set --model <model_id_or_path>, model: None"
+  }
+}

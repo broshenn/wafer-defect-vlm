@@ -1,0 +1,53 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "status": "PASS",
+  "rows": 180,
+  "first_batch": 20,
+  "workers": [
+    5,
+    5,
+    5,
+    5
+  ],
+  "source_selection_unchanged": true,
+  "source_hashes": {
+    "train_180.jsonl": "04febd99674f70bf4619c3b529fe4c1313a5b8d739e89c69c390fe686324db47",
+    "smoke_20.jsonl": "f59ae6ba5ba917fae410a9a82f6747c886abde20df189878093467242dd98eec",
+    "dev_18.jsonl": "08b267ea73def5b3119dbf6ca73d27630ef565bb4011f6e53b404d753f7972ac"
+  },
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "index_sha256": "641f75212839e5c847edf0d7bb53225460b03f99f4e16c10a1343f47cd97ffe7",
+  "plan_sha256": "beefec7644c6da372ef797eb6d671bb8d65a699a866b207ffff8d9b701af630a",
+  "output_hashes": {
+    "blind_inputs_all_180.jsonl": "600dbbed0b04e9b068ce7b5fc053e346a01a151bc77684e818ce8266854996af",
+    "audit_selected.jsonl": "bb6b9222aa6acbf6405138bd560554701a2538286252441df0c78064284f4f54",
+    "batch_01_blind.jsonl": "0c2f476d3f099eccee62e3c927b3621757d69bced95a3421bab0db4d9c681db2",
+    "batch_02_blind.jsonl": "130053911f596d17bebd3154824d4dd32879ad7a41187eb66caa81ec84cc5b9f",
+    "batch_03_blind.jsonl": "2d98bc8f7aee88a89aaec9887596affbd2f13ca43022e965a406cb8f7efbbbbf",
+    "batch_04_blind.jsonl": "fcf1639b97ed34742d441e7b4d5e464e008e81b78df1217ceb55823fb36076f0",
+    "batch_05_blind.jsonl": "e337161b5d4b96757c8bc716641d5fb6af03d611c6649d2adf7274163f7f2d72",
+    "batch_06_blind.jsonl": "392f5b8e66c22ff319f48d1160b3719771095f40c8d5688a646879987ed0d5d4",
+    "batch_07_blind.jsonl": "19c5471a572fe0becda6ddfde09eaabe8f03392e2c060aa8b6ce1e3d4bfa4e3d",
+    "batch_08_blind.jsonl": "0299cc54d91b6e3519392045039b69b1d0630184732a51001c17cfd71308f68e",
+    "batch_09_blind.jsonl": "732d6f0db98a77fb4b033c45926cc0ea61509f480f766aa91c2b2871e6c78539",
+    "batch_01_worker_01.jsonl": "c9a5603ee5b2feb446b7d23bb8d9721eaabe3dbfbe3de855b986a593bb257f2e",
+    "batch_01_worker_02.jsonl": "543600f8e2e3c19229c79b0194d817ac652f54cd6d1972aa66451b60f5fb0c1e",
+    "batch_01_worker_03.jsonl": "b41c97590325f3352f427e146500abcb52a1289d61fbc59970aa5b08cb6f8b27",
+    "batch_01_worker_04.jsonl": "126f2e35063a5c3a85c9434c0ab2c17da87ebfa3e7e5853d88379e4bbc7085f1"
+  },
+  "lot_intersections": {
+    "train_full_val": 0,
+    "train_full_test": 0,
+    "train_dev18": 0,
+    "train_benchmark": 0,
+    "dev18_test": 0,
+    "dev18_benchmark": 0
+  },
+  "verified_holdout_lots": {
+    "full_val": 372,
+    "full_test": 385,
+    "benchmark": 202
+  },
+  "annotation_calls": 0
+}

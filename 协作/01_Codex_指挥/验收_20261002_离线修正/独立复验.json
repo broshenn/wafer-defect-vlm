@@ -1,0 +1,103 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "status": "PASS",
+  "probe_directory": "协作/01_Codex_指挥/验收_20261002_离线修正/probe_000",
+  "prepare_write_then_refuse_then_resume": [
+    0,
+    3,
+    0
+  ],
+  "all_17_prepared_outputs_byte_stable": true,
+  "raw_path_overwrite_refused": true,
+  "existing_copy_overwrite_refused": true,
+  "schema_values_preserved": true,
+  "quantity_files_scanned": 19,
+  "quantity_files_flagged": 2,
+  "quantity_truth_not_checked": true,
+  "frozen_hashes_before": {
+    "old_checker": "6d49f11094817711305e0d81acbcf31197e8fd3e3fc6976ea00c1933992a20c3",
+    "old_preparer": "dac6d7b5cb2af2805d834ca144c458cd0d93c886764193c9311e0e163ebe9e3c",
+    "old_batch_log": "d50b46a00ac2c621a1bfda49d645df2f51a81470844492fc78597c652d9dcca7",
+    "normalizer": "01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c",
+    "first_index": "641f75212839e5c847edf0d7bb53225460b03f99f4e16c10a1343f47cd97ffe7",
+    "running_remaining_index": "60762f2ee9c1018cc83e5d1ebb167832e0534e2eb57c5cc3b2ac482da59f55e0"
+  },
+  "frozen_hashes_after": {
+    "old_checker": "6d49f11094817711305e0d81acbcf31197e8fd3e3fc6976ea00c1933992a20c3",
+    "old_preparer": "dac6d7b5cb2af2805d834ca144c458cd0d93c886764193c9311e0e163ebe9e3c",
+    "old_batch_log": "d50b46a00ac2c621a1bfda49d645df2f51a81470844492fc78597c652d9dcca7",
+    "normalizer": "01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c",
+    "first_index": "641f75212839e5c847edf0d7bb53225460b03f99f4e16c10a1343f47cd97ffe7",
+    "running_remaining_index": "60762f2ee9c1018cc83e5d1ebb167832e0534e2eb57c5cc3b2ac482da59f55e0"
+  },
+  "commands": [
+    {
+      "script": "prepare_glm_annotation_v2.py",
+      "args": [
+        "--write",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000"
+      ],
+      "exit_code": 0
+    },
+    {
+      "script": "prepare_glm_annotation_v2.py",
+      "args": [
+        "--write",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000"
+      ],
+      "exit_code": 3
+    },
+    {
+      "script": "prepare_glm_annotation_v2.py",
+      "args": [
+        "--write",
+        "--resume",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000"
+      ],
+      "exit_code": 0
+    },
+    {
+      "script": "normalize_label_alias.py",
+      "args": [
+        "--raw",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_raw.json",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_raw.json",
+        "--report",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\refused.json"
+      ],
+      "exit_code": 1
+    },
+    {
+      "script": "normalize_label_alias.py",
+      "args": [
+        "--raw",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_raw.json",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_canonical.json",
+        "--report",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_normalization.json"
+      ],
+      "exit_code": 0
+    },
+    {
+      "script": "normalize_label_alias.py",
+      "args": [
+        "--raw",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_raw.json",
+        "--out",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\synthetic_canonical.json",
+        "--report",
+        "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_离线修正\\probe_000\\refused2.json"
+      ],
+      "exit_code": 1
+    }
+  ],
+  "annotation_api_calls": 0,
+  "gpu_use": 0,
+  "note": "探针是合成/元数据测试，不是新模型标注；提醒不是答案判错。"
+}

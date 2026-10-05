@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "晶圆外围边缘一圈稀疏断续的红色失效 die 构成细环，晶圆内部基本为绿色并散布少量孤立红点",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆边缘一圈稀疏断续的红色失效 die 形成细环，内部基本保持绿色，仅散布少量孤立红点。",
+  "uncertainty": "边缘红环稀疏断续、密度低，属于 Edge_Ring 还是接近正常的 none 不易确定；内部散点与边缘环的关系不确定"
+}

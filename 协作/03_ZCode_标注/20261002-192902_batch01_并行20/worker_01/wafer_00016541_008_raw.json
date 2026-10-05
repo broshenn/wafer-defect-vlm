@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"晶圆右下方区域可见一片不规则聚集的密集红色失效 die 簇，自中部向外缘方向延伸，其余绿色合格区域稀疏散布孤立红色失效点","radial_zone":"edge","clock_direction":"4-5点钟","extent_r":null,"caption_zh":"晶圆右下方（约4-5点钟方向）中至边缘区域聚集一片不规则密集红色失效 die 簇，其余绿色区域稀疏散布孤立红色失效点。","uncertainty":"红簇与右下外缘是否接触不易判断，Loc 与 Edge_Loc 的界限不确定；钟点方向为目测估计"}

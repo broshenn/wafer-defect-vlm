@@ -1,0 +1,42 @@
+{
+  "author": "Codex",
+  "date": "2026-10-03",
+  "classification_train": 180,
+  "classification_dev": 18,
+  "classification_smoke": 20,
+  "caption_candidates": 158,
+  "structured_candidates": 90,
+  "caption_quarantined": 22,
+  "multitask_rows": 338,
+  "unique_train_images": 180,
+  "new_human_annotator_count": 0,
+  "teacher_prediction_used_as_class_gold": false,
+  "review_scope": "180张全部逐图模型复核；原19复用上轮结论，续161原图逐页复核并逐图记依据",
+  "caption_source": "GLM+Codex模型审核/重写，不称纯GLM或人工金标",
+  "training_status": "not run",
+  "primary_authorized_training": "原20步/60步标签SFT-A",
+  "other_datasets": "描述/多任务/结构化仅就绪候选，不自动新增训练预算",
+  "remote_paths": "当前images为本地路径；到服务器后需仅重映射并校验图片hash",
+  "per_class_train": {
+    "Edge_Ring": 20,
+    "Edge_Loc": 20,
+    "Loc": 20,
+    "Donut": 20,
+    "Random": 20,
+    "Center": 20,
+    "Scratch": 20,
+    "none": 20,
+    "Near_full": 20
+  },
+  "files_sha256": {
+    "sft_a_train_180.jsonl": "7b306f00b9d7da970655099512a8e05a6df32d31c134a942c207d197b89be861",
+    "sft_a_dev_18.jsonl": "5a96fe15321865c005370610aebf66e1cc8e5282bf9881e5f70351f36c9fa19c",
+    "sft_a_smoke_20.jsonl": "3d2d133b48807ed4483a29cb7a3b6133ef18c53ab2c408cecd42706be4a6e05e",
+    "caption_train_158.jsonl": "84720043ecfa366302030f0f49a02e34092571519e473a92bc24b9e1fc140804",
+    "multitask_candidate_338.jsonl": "c7d759f8bbd4492c8dc7cce415ac0396c73927d13d1bd6bea125a72ed7788d80",
+    "structured_candidates_90.jsonl": "7d8c222bab0ac4c8968fe479e83142f1563b99abc34a905befa81b596ef6a353",
+    "provenance_180.jsonl": "eb7d08c937be666abcbf329db5e4cb7e6f841ac27d6856ce716570fac458d9b1",
+    "caption_quarantine_22.jsonl": "5333d1585a43939bcb46487e7ab743d33f6b7ef0523ba9fca9630ea8c50c136b",
+    "caption_prompt_zh_v1.txt": "9433b3ad13227ceaa2b399be5612a602194122701bddbcf22931aacc18c1d9de"
+  }
+}

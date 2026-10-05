@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "绿色合格die为主体，红色失效die呈稀疏单个或短条状散点，随机分布在整个晶圆各处，无聚集簇、环形或明显条带",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die以稀疏随机散点形式遍布整个晶圆，无空间聚集模式",
+  "uncertainty": "散点密度较低，Random与正常晶圆带少量散点的界限不易确定；散点未显示任何可见几何结构"
+}

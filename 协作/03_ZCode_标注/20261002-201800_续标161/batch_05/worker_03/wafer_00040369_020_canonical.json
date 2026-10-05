@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "晶圆中下部出现大片不规则的红色失效聚集并向底部边缘延伸，聚集密度较高，全图另散布红色失效点",
+  "radial_zone": "middle",
+  "clock_direction": "约6点钟",
+  "extent_r": null,
+  "caption_zh": "晶圆中下部约6点钟方向出现大片不规则红色失效聚集并触及底部边缘，全图另散布红色失效点。",
+  "uncertainty": "聚集深入内部同时接触底边，与 Edge_Loc 的界限不确定；径向区域按聚集主体填写"
+}

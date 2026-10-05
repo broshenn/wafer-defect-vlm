@@ -1,0 +1,9 @@
+{
+  "defect_class": "none",
+  "morphology": "晶圆主体为绿色合格die，仅见两处孤立的微小红色失效点，分别位于右上方边缘附近与左下方近边缘处，无成片、成环或线条图案",
+  "radial_zone": "none",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆几乎全为合格die，仅右上方与左下方边缘附近各有一处孤立的微小红色失效点，无主要缺陷图案。",
+  "uncertainty": "红色失效点极少，none 与 Random 的类别边界存在不确定性"
+}

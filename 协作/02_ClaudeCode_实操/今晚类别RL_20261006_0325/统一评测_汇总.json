@@ -1,0 +1,564 @@
+{
+  "date": "2026-10-06",
+  "dev18_n": 18,
+  "val90_n": 84,
+  "results": {
+    "f1/dev18": {
+      "strict": {
+        "n": 18,
+        "correct": 12,
+        "accuracy": 0.6667,
+        "macro_f1_fixed9": 0.604233,
+        "per_class": {
+          "Center": {
+            "n": 2,
+            "tp": 2,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714
+          },
+          "Donut": {
+            "n": 2,
+            "tp": 1,
+            "precision": 0.3333,
+            "recall": 0.5,
+            "f1": 0.4
+          },
+          "Edge_Loc": {
+            "n": 2,
+            "tp": 2,
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 2,
+            "tp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Near_full": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "n": 2,
+            "tp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Scratch": {
+            "n": 2,
+            "tp": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          },
+          "none": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 2
+          },
+          "Donut": {
+            "Donut": 1,
+            "Center": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Center": 2
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Donut": 2
+          },
+          "Scratch": {
+            "Edge_Loc": 1,
+            "Scratch": 1
+          },
+          "none": {
+            "none": 2
+          }
+        },
+        "pred_distribution": {
+          "Edge_Ring": 2,
+          "Edge_Loc": 3,
+          "Donut": 3,
+          "Center": 5,
+          "none": 2,
+          "Near_full": 2,
+          "Scratch": 1
+        }
+      },
+      "old_bridge": {
+        "accuracy": 0.6667,
+        "macro_f1_fixed9": 0.604233
+      },
+      "strict_reject_reasons": {},
+      "strict_rejected": 0,
+      "unknown_count": 0,
+      "model_path": "/WS/checkpoints/Qwen3.5-9B-f0a1merged::/WS/checkpoints/f1_sft20/v0-20261006-030653/checkpoint-20",
+      "n": 18,
+      "load_seconds": 11.323391437530518
+    },
+    "f1/val90": {
+      "strict": {
+        "n": 84,
+        "correct": 54,
+        "accuracy": 0.6429,
+        "macro_f1_fixed9": 0.653289,
+        "per_class": {
+          "Center": {
+            "n": 10,
+            "tp": 8,
+            "precision": 0.4706,
+            "recall": 0.8,
+            "f1": 0.5926
+          },
+          "Donut": {
+            "n": 10,
+            "tp": 10,
+            "precision": 0.5263,
+            "recall": 1.0,
+            "f1": 0.6897
+          },
+          "Edge_Loc": {
+            "n": 10,
+            "tp": 6,
+            "precision": 0.5455,
+            "recall": 0.6,
+            "f1": 0.5714
+          },
+          "Edge_Ring": {
+            "n": 10,
+            "tp": 8,
+            "precision": 0.8889,
+            "recall": 0.8,
+            "f1": 0.8421
+          },
+          "Loc": {
+            "n": 10,
+            "tp": 3,
+            "precision": 1.0,
+            "recall": 0.3,
+            "f1": 0.4615
+          },
+          "Near_full": {
+            "n": 4,
+            "tp": 4,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889
+          },
+          "Random": {
+            "n": 10,
+            "tp": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          },
+          "Scratch": {
+            "n": 10,
+            "tp": 5,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "none": {
+            "n": 10,
+            "tp": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Donut": 2,
+            "Center": 8
+          },
+          "Donut": {
+            "Donut": 10
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 6,
+            "Center": 1,
+            "Edge_Ring": 1,
+            "Donut": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 8,
+            "Edge_Loc": 2
+          },
+          "Loc": {
+            "Loc": 3,
+            "Donut": 2,
+            "Center": 2,
+            "Scratch": 3
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 5,
+            "Donut": 3,
+            "Center": 1,
+            "Near_full": 1
+          },
+          "Scratch": {
+            "Scratch": 5,
+            "Edge_Loc": 2,
+            "Center": 3
+          },
+          "none": {
+            "none": 5,
+            "Edge_Loc": 1,
+            "Scratch": 2,
+            "Center": 2
+          }
+        },
+        "pred_distribution": {
+          "Donut": 19,
+          "Center": 17,
+          "Edge_Loc": 11,
+          "Edge_Ring": 9,
+          "Loc": 3,
+          "Scratch": 10,
+          "Near_full": 5,
+          "Random": 5,
+          "none": 5
+        }
+      },
+      "old_bridge": {
+        "accuracy": 0.6429,
+        "macro_f1_fixed9": 0.653289
+      },
+      "strict_reject_reasons": {},
+      "strict_rejected": 0,
+      "unknown_count": 0,
+      "model_path": "/WS/checkpoints/Qwen3.5-9B-f0a1merged::/WS/checkpoints/f1_sft20/v0-20261006-030653/checkpoint-20",
+      "n": 84,
+      "load_seconds": 10.739062309265137
+    },
+    "f2/dev18": {
+      "strict": {
+        "n": 18,
+        "correct": 13,
+        "accuracy": 0.7222,
+        "macro_f1_fixed9": 0.700011,
+        "per_class": {
+          "Center": {
+            "n": 2,
+            "tp": 2,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6667
+          },
+          "Donut": {
+            "n": 2,
+            "tp": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          },
+          "Edge_Loc": {
+            "n": 2,
+            "tp": 2,
+            "precision": 0.6667,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 2,
+            "tp": 0,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Near_full": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "n": 2,
+            "tp": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          },
+          "Scratch": {
+            "n": 2,
+            "tp": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "none": {
+            "n": 2,
+            "tp": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 2
+          },
+          "Donut": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Center": 2
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Random": 1,
+            "Scratch": 1
+          },
+          "Scratch": {
+            "Edge_Loc": 1,
+            "Scratch": 1
+          },
+          "none": {
+            "none": 2
+          }
+        },
+        "pred_distribution": {
+          "Edge_Ring": 2,
+          "Edge_Loc": 3,
+          "Donut": 1,
+          "Center": 4,
+          "Random": 1,
+          "none": 2,
+          "Near_full": 2,
+          "Scratch": 2,
+          "Loc": 1
+        }
+      },
+      "old_bridge": {
+        "accuracy": 0.7222,
+        "macro_f1_fixed9": 0.700011
+      },
+      "strict_reject_reasons": {},
+      "strict_rejected": 0,
+      "unknown_count": 0,
+      "model_path": "/WS/checkpoints/Qwen3.5-9B-f0a1merged::/WS/checkpoints/f2_run20/v0-20261006-030521/checkpoint-20",
+      "n": 18,
+      "load_seconds": 11.028291702270508
+    },
+    "f2/val90": {
+      "strict": {
+        "n": 84,
+        "correct": 58,
+        "accuracy": 0.6905,
+        "macro_f1_fixed9": 0.704111,
+        "per_class": {
+          "Center": {
+            "n": 10,
+            "tp": 9,
+            "precision": 0.5294,
+            "recall": 0.9,
+            "f1": 0.6667
+          },
+          "Donut": {
+            "n": 10,
+            "tp": 9,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "Edge_Loc": {
+            "n": 10,
+            "tp": 6,
+            "precision": 0.5455,
+            "recall": 0.6,
+            "f1": 0.5714
+          },
+          "Edge_Ring": {
+            "n": 10,
+            "tp": 8,
+            "precision": 0.8889,
+            "recall": 0.8,
+            "f1": 0.8421
+          },
+          "Loc": {
+            "n": 10,
+            "tp": 7,
+            "precision": 0.7,
+            "recall": 0.7,
+            "f1": 0.7
+          },
+          "Near_full": {
+            "n": 4,
+            "tp": 4,
+            "precision": 0.8,
+            "recall": 1.0,
+            "f1": 0.8889
+          },
+          "Random": {
+            "n": 10,
+            "tp": 5,
+            "precision": 0.8333,
+            "recall": 0.5,
+            "f1": 0.625
+          },
+          "Scratch": {
+            "n": 10,
+            "tp": 5,
+            "precision": 0.4545,
+            "recall": 0.5,
+            "f1": 0.4762
+          },
+          "none": {
+            "n": 10,
+            "tp": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6667
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 9,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 9,
+            "Center": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 6,
+            "Center": 1,
+            "Edge_Ring": 1,
+            "Donut": 1,
+            "Random": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 8,
+            "Edge_Loc": 2
+          },
+          "Loc": {
+            "Loc": 7,
+            "Center": 1,
+            "Scratch": 2
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 5,
+            "Scratch": 2,
+            "Center": 2,
+            "Near_full": 1
+          },
+          "Scratch": {
+            "Scratch": 5,
+            "Edge_Loc": 2,
+            "Center": 1,
+            "Loc": 2
+          },
+          "none": {
+            "none": 5,
+            "Edge_Loc": 1,
+            "Scratch": 2,
+            "Center": 2
+          }
+        },
+        "pred_distribution": {
+          "Center": 17,
+          "Loc": 10,
+          "Donut": 10,
+          "Edge_Loc": 11,
+          "Edge_Ring": 9,
+          "Random": 6,
+          "Scratch": 11,
+          "Near_full": 5,
+          "none": 5
+        }
+      },
+      "old_bridge": {
+        "accuracy": 0.6905,
+        "macro_f1_fixed9": 0.704111
+      },
+      "strict_reject_reasons": {},
+      "strict_rejected": 0,
+      "unknown_count": 0,
+      "model_path": "/WS/checkpoints/Qwen3.5-9B-f0a1merged::/WS/checkpoints/f2_run20/v0-20261006-030521/checkpoint-20",
+      "n": 84,
+      "load_seconds": 10.714460611343384
+    }
+  },
+  "paired": {
+    "f2-f1/dev18": {
+      "gained": 1,
+      "lost": 0,
+      "net": 1,
+      "gained_ids": [
+        "wafer_00040556_007"
+      ],
+      "lost_ids": []
+    },
+    "f2-f1/val90": {
+      "gained": 5,
+      "lost": 1,
+      "net": 4,
+      "gained_ids": [
+        "wafer_00039556_022",
+        "wafer_00044050_019",
+        "wafer_00042159_013",
+        "wafer_00026714_009",
+        "wafer_00022388_005"
+      ],
+      "lost_ids": [
+        "wafer_00042241_025"
+      ]
+    }
+  },
+  "note": "严格解析为主结果；旧解析仅作桥接对照。val90 是开发确认集，非冻结 Benchmark。",
+  "finished_at": "2026-10-06T03:19:05.782569"
+}

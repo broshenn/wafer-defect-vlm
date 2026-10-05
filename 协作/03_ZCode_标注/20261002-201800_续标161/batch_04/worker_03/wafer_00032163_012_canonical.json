@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die在全片范围内随机散布，密度较高，无中心聚集、环形、条状或边缘带等明显几何图案",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆全片绿色合格die与红色失效die随机混杂，失效点遍布各区，未见明显几何分布图案",
+  "uncertainty": "失效密度较高且局部疏密略有差异，不能完全排除未成形的局部聚集"
+}

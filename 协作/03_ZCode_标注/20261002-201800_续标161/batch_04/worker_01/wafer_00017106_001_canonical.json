@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "大片连续红色失效区域呈不规则块状，覆盖晶圆中部并越过中心向右侧扩展，其余区域以绿色为主并散布少量红色失效die",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中部出现大片不规则连续红色失效块并越过中心向右扩展，其余区域绿色为主、零星散布失效",
+  "uncertainty": "红色块范围较大且形状不规则，越过中心，与Center类的归类边界存在不确定性"
+}

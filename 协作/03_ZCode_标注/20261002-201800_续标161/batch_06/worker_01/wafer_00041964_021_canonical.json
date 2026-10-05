@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "红色失效die在晶圆中央偏下位置聚集成不规则团块，向四周密度逐渐降低，全图另散布少量孤立散点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "失效die在晶圆中部偏下聚集成一个不规则团块，周围伴少量孤立散点",
+  "uncertainty": "聚集中心略偏离几何中心（偏下），团块边界不规则"
+}

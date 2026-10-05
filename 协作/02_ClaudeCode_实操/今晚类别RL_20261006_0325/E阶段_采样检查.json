@@ -1,0 +1,713 @@
+{
+  "model": "/WS/checkpoints/Qwen3.5-9B-f0a1merged",
+  "data": "/WS/datasets/rl_pool90/rl_pool90_grpo.server.jsonl",
+  "g": 4,
+  "n_groups": 18,
+  "n_responses": 72,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "max_tokens": 64,
+  "reward_mean": 0.4861,
+  "n_groups_with_variance": 11,
+  "n_groups_same": 7,
+  "same_group_ratio": 0.3889,
+  "n_parse_fail": 5,
+  "parse_tag_dist": {
+    "ok_think": 67,
+    "bad_enum:None": 4,
+    "bad_enum:near-full": 1
+  },
+  "load_seconds": 10.3,
+  "total_generation_seconds": 48.6,
+  "device_name": "NVIDIA A100 80GB PCIe",
+  "cuda_visible_devices": "GPU-79d88a4e-1177-c800-f554-c4084bf5a096",
+  "peak_allocated_GiB_own_process": 17.674,
+  "groups": [
+    {
+      "sample_id": "wafer_00045899_008",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.5,
+      "std": 0.5,
+      "same_group": false,
+      "preds": [
+        "Center",
+        "Center",
+        "Loc",
+        null
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "bad_enum:None"
+      ],
+      "n_parse_fail": 1,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"None\"}"
+      ],
+      "char_lens": [
+        44,
+        44,
+        41,
+        42
+      ]
+    },
+    {
+      "sample_id": "wafer_00042347_021",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Donut",
+        "Donut",
+        "Center",
+        "Donut"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}"
+      ],
+      "char_lens": [
+        43,
+        43,
+        44,
+        43
+      ]
+    },
+    {
+      "sample_id": "wafer_00004397_009",
+      "gold": "Donut",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Center",
+        "Donut",
+        "Center",
+        "Scratch"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}"
+      ],
+      "char_lens": [
+        44,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "sample_id": "wafer_00017127_015",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Donut",
+        "Donut",
+        "Donut",
+        "Donut"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}"
+      ],
+      "char_lens": [
+        43,
+        43,
+        43,
+        43
+      ]
+    },
+    {
+      "sample_id": "wafer_00042136_016",
+      "gold": "Edge_Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Scratch",
+        "Near_full",
+        "Near_full",
+        "Edge_Loc"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}"
+      ],
+      "char_lens": [
+        45,
+        47,
+        47,
+        46
+      ]
+    },
+    {
+      "sample_id": "wafer_00042845_020",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Edge_Loc",
+        "none",
+        "Scratch",
+        "Scratch"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}"
+      ],
+      "char_lens": [
+        46,
+        42,
+        45,
+        45
+      ]
+    },
+    {
+      "sample_id": "wafer_00044783_013",
+      "gold": "Edge_Ring",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Edge_Loc",
+        "Edge_Loc",
+        "Edge_Loc",
+        "Edge_Loc"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}"
+      ],
+      "char_lens": [
+        46,
+        46,
+        46,
+        46
+      ]
+    },
+    {
+      "sample_id": "wafer_00014150_014",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Edge_Ring",
+        "Edge_Ring",
+        "Edge_Ring",
+        "Edge_Ring"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+        "<think>\n\n</think>\n\n{\n  \"defect_class\": \"Edge_Ring\"\n}"
+      ],
+      "char_lens": [
+        47,
+        47,
+        47,
+        52
+      ]
+    },
+    {
+      "sample_id": "wafer_00040978_014",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Scratch",
+        "Edge_Loc",
+        "Edge_Loc",
+        "Scratch"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}"
+      ],
+      "char_lens": [
+        45,
+        46,
+        46,
+        45
+      ]
+    },
+    {
+      "sample_id": "wafer_00019923_001",
+      "gold": "Loc",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "mean": 0.75,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Loc",
+        null,
+        "Loc",
+        "Loc"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "bad_enum:None",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 1,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"None\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}"
+      ],
+      "char_lens": [
+        41,
+        42,
+        41,
+        41
+      ]
+    },
+    {
+      "sample_id": "wafer_00045574_019",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "mean": 0.75,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Near_full",
+        "Edge_Ring",
+        "Near_full",
+        "Near_full"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}"
+      ],
+      "char_lens": [
+        47,
+        47,
+        47,
+        47
+      ]
+    },
+    {
+      "sample_id": "wafer_00044858_009",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "mean": 0.75,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Near_full",
+        "Near_full",
+        null,
+        "Near_full"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "bad_enum:near-full",
+        "ok_think"
+      ],
+      "n_parse_fail": 1,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"near-full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}"
+      ],
+      "char_lens": [
+        47,
+        47,
+        47,
+        47
+      ]
+    },
+    {
+      "sample_id": "wafer_00008220_006",
+      "gold": "Random",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        "Near_full",
+        "none",
+        "Random",
+        null
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "bad_enum:None"
+      ],
+      "n_parse_fail": 1,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Random\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"None\"}"
+      ],
+      "char_lens": [
+        47,
+        42,
+        44,
+        42
+      ]
+    },
+    {
+      "sample_id": "wafer_00043477_006",
+      "gold": "Random",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean": 0.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Near_full",
+        "Edge_Ring",
+        "Donut",
+        "Near_full"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}"
+      ],
+      "char_lens": [
+        47,
+        47,
+        43,
+        47
+      ]
+    },
+    {
+      "sample_id": "wafer_00009870_007",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "Scratch",
+        "Scratch",
+        "Scratch",
+        "Scratch"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}"
+      ],
+      "char_lens": [
+        45,
+        45,
+        45,
+        45
+      ]
+    },
+    {
+      "sample_id": "wafer_00001625_018",
+      "gold": "Scratch",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "mean": 0.25,
+      "std": 0.433,
+      "same_group": false,
+      "preds": [
+        null,
+        "Edge_Loc",
+        "Scratch",
+        "Edge_Loc"
+      ],
+      "parse_tags": [
+        "bad_enum:None",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 1,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"None\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}"
+      ],
+      "char_lens": [
+        42,
+        46,
+        45,
+        46
+      ]
+    },
+    {
+      "sample_id": "wafer_00045951_014",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "mean": 0.5,
+      "std": 0.5,
+      "same_group": false,
+      "preds": [
+        "Loc",
+        "none",
+        "none",
+        "Edge_Loc"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}"
+      ],
+      "char_lens": [
+        41,
+        42,
+        42,
+        46
+      ]
+    },
+    {
+      "sample_id": "wafer_00046481_011",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "mean": 1.0,
+      "std": 0.0,
+      "same_group": true,
+      "preds": [
+        "none",
+        "none",
+        "none",
+        "none"
+      ],
+      "parse_tags": [
+        "ok_think",
+        "ok_think",
+        "ok_think",
+        "ok_think"
+      ],
+      "n_parse_fail": 0,
+      "completions": [
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+        "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}"
+      ],
+      "char_lens": [
+        42,
+        42,
+        42,
+        42
+      ]
+    }
+  ],
+  "verdict": "有类别奖励差异信号，可进 RL 小测试",
+  "finished_at": "2026-10-06T03:02:31.891107"
+}

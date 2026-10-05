@@ -1,0 +1,36 @@
+{
+  "stage": "main",
+  "gpu": "0",
+  "train_file": "/WS/datasets/sft_a/sft_a_train_180.jsonl",
+  "train_sha256": "42c999487d5c11f29c04ba315825a49839be260a9b1f02f637ca8a154ae99bc3",
+  "max_steps": 60,
+  "ga": 4,
+  "effective_batch": 4,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lr": 0.0001,
+  "max_length": 2048,
+  "seed": 3407,
+  "target_modules_arg": [
+    "all-linear"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "started_at": "2026-10-06T01:29:39.182439",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "seconds": 415.550835,
+  "finished_at": "2026-10-06T01:36:34.733771",
+  "adapter_configs": [
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-30/adapter_config.json",
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-60/adapter_config.json",
+    "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/last-checkpoint/adapter_config.json"
+  ],
+  "target_modules_effective": [
+    "^(model\\.language_model(?=\\.).*\\.(o_proj|k_proj|q_proj|in_proj_b|down_proj|out_proj|v_proj|in_proj_qkv|in_proj_a|in_proj_z|up_proj|gate_proj))$",
+    "^(model\\.language_model(?=\\.).*\\.(o_proj|k_proj|q_proj|in_proj_b|down_proj|out_proj|v_proj|in_proj_qkv|in_proj_a|in_proj_z|up_proj|gate_proj))$",
+    "^(model\\.language_model(?=\\.).*\\.(o_proj|k_proj|q_proj|in_proj_b|down_proj|out_proj|v_proj|in_proj_qkv|in_proj_a|in_proj_z|up_proj|gate_proj))$"
+  ],
+  "visual_in_targets": false
+}

@@ -1,0 +1,9 @@
+{
+  "defect_class": "Loc",
+  "morphology": "大片连续实心红色失效区域位于左上方，从边缘延伸至晶圆中部并接近中心，边界不规则；右侧与下方绿色区域散布零星红色失效die",
+  "radial_zone": "middle",
+  "clock_direction": "约10至11点钟",
+  "extent_r": null,
+  "caption_zh": "晶圆左上方出现大片实心红色失效块，自边缘延伸至中部，其余区域以绿色为主并零星散布失效",
+  "uncertainty": "红色块同时触及边缘并接近中心，radial_zone与类别归类（Loc、Edge_Loc、Center之间）存在模糊"
+}

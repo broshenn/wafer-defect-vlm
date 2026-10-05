@@ -1,0 +1,473 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "kind": "development_selection_not_teacher_certification",
+  "successful_image_records": 54,
+  "format_pass": 54,
+  "finish_stop": 54,
+  "image_attempt_records": 55,
+  "failure_records": [
+    {
+      "file": "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-163829/kimi__item_001.json",
+      "candidate": "kimi",
+      "item_id": "item_001",
+      "http_status": 400
+    }
+  ],
+  "text_probe_records": 2,
+  "minimum_evidenced_requests": 57,
+  "report_claimed_requests": 59,
+  "unreconciled_claimed_requests": 2,
+  "candidates": {
+    "deepseek": {
+      "correct": 7,
+      "n": 18,
+      "agreement": 0.3888888888888889,
+      "macro_f1": 0.3148148148148148,
+      "per_class": {
+        "Center": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Donut": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Edge_Ring": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Loc": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Near_full": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Random": {
+          "support": 2,
+          "correct": 2,
+          "f1": 0.3333333333333333
+        },
+        "Scratch": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.5
+        },
+        "none": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        }
+      },
+      "prediction_counts": {
+        "Random": 10,
+        "Loc": 2,
+        "Near_full": 2,
+        "Edge_Ring": 2,
+        "Scratch": 2
+      },
+      "wilson_95_descriptive": [
+        0.2030524657216362,
+        0.613809583977621
+      ],
+      "usage": {
+        "prompt_tokens": 8946,
+        "completion_tokens": 62326,
+        "total_tokens": 71272,
+        "reasoning_tokens": 60112
+      },
+      "median_seconds": 10.338000000000001,
+      "completion_min": 306,
+      "completion_max": 15917,
+      "completion_over_8192": [
+        "item_002",
+        "item_011"
+      ],
+      "returned_models": [
+        "deepseek-flash"
+      ],
+      "image_tokens_reported": []
+    },
+    "kimi": {
+      "correct": 9,
+      "n": 18,
+      "agreement": 0.5,
+      "macro_f1": 0.48484848484848486,
+      "per_class": {
+        "Center": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "Donut": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.5
+        },
+        "Edge_Ring": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "Loc": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.5
+        },
+        "Near_full": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Random": {
+          "support": 2,
+          "correct": 2,
+          "f1": 0.36363636363636365
+        },
+        "Scratch": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "none": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        }
+      },
+      "prediction_counts": {
+        "Random": 9,
+        "Center": 1,
+        "Edge_Loc": 2,
+        "Near_full": 2,
+        "Loc": 2,
+        "Scratch": 1,
+        "Edge_Ring": 1
+      },
+      "wilson_95_descriptive": [
+        0.29031021505169974,
+        0.7096897849483003
+      ],
+      "usage": {
+        "prompt_tokens": 10980,
+        "completion_tokens": 35746,
+        "total_tokens": 46726,
+        "reasoning_tokens": 33426
+      },
+      "median_seconds": 33.805499999999995,
+      "completion_min": 280,
+      "completion_max": 5740,
+      "completion_over_8192": [],
+      "returned_models": [
+        "kimi-k3"
+      ],
+      "image_tokens_reported": [
+        259
+      ]
+    },
+    "qwen": {
+      "correct": 8,
+      "n": 18,
+      "agreement": 0.4444444444444444,
+      "macro_f1": 0.39966329966329966,
+      "per_class": {
+        "Center": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "Donut": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "Edge_Ring": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.5
+        },
+        "Loc": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.4
+        },
+        "Near_full": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Random": {
+          "support": 2,
+          "correct": 2,
+          "f1": 0.36363636363636365
+        },
+        "Scratch": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "none": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        }
+      },
+      "prediction_counts": {
+        "Random": 9,
+        "Center": 1,
+        "Loc": 3,
+        "Near_full": 2,
+        "Edge_Ring": 2,
+        "Edge_Loc": 1
+      },
+      "wilson_95_descriptive": [
+        0.24559518127005633,
+        0.6628358435795723
+      ],
+      "usage": {
+        "prompt_tokens": 8892,
+        "completion_tokens": 42955,
+        "total_tokens": 51847,
+        "reasoning_tokens": 41073
+      },
+      "median_seconds": 34.2665,
+      "completion_min": 853,
+      "completion_max": 5715,
+      "completion_over_8192": [],
+      "returned_models": [
+        "qwen3.8-max"
+      ],
+      "image_tokens_reported": [
+        198
+      ]
+    },
+    "glm": {
+      "correct": 9,
+      "n": 18,
+      "agreement": 0.5,
+      "macro_f1": 0.445679012345679,
+      "per_class": {
+        "Center": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Donut": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Edge_Loc": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.5
+        },
+        "Edge_Ring": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.6666666666666666
+        },
+        "Loc": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        },
+        "Near_full": {
+          "support": 2,
+          "correct": 2,
+          "f1": 1.0
+        },
+        "Random": {
+          "support": 2,
+          "correct": 2,
+          "f1": 0.4444444444444444
+        },
+        "Scratch": {
+          "support": 2,
+          "correct": 1,
+          "f1": 0.4
+        },
+        "none": {
+          "support": 2,
+          "correct": 0,
+          "f1": 0.0
+        }
+      },
+      "prediction_counts": {
+        "Random": 7,
+        "Center": 2,
+        "Loc": 1,
+        "Near_full": 2,
+        "Edge_Loc": 2,
+        "Scratch": 3,
+        "Edge_Ring": 1
+      },
+      "wilson_95_descriptive": [
+        0.29031021505169974,
+        0.7096897849483003
+      ]
+    }
+  },
+  "pairwise_descriptive": {
+    "deepseek_vs_kimi": {
+      "a_only_correct": 1,
+      "b_only_correct": 3,
+      "exact_mcnemar_p_descriptive": 0.625
+    },
+    "deepseek_vs_qwen": {
+      "a_only_correct": 2,
+      "b_only_correct": 3,
+      "exact_mcnemar_p_descriptive": 1.0
+    },
+    "deepseek_vs_glm": {
+      "a_only_correct": 1,
+      "b_only_correct": 3,
+      "exact_mcnemar_p_descriptive": 0.625
+    },
+    "kimi_vs_qwen": {
+      "a_only_correct": 3,
+      "b_only_correct": 2,
+      "exact_mcnemar_p_descriptive": 1.0
+    },
+    "kimi_vs_glm": {
+      "a_only_correct": 2,
+      "b_only_correct": 2,
+      "exact_mcnemar_p_descriptive": 1.0
+    },
+    "qwen_vs_glm": {
+      "a_only_correct": 1,
+      "b_only_correct": 2,
+      "exact_mcnemar_p_descriptive": 1.0
+    }
+  },
+  "three_unanimous": 10,
+  "three_disagree": 8,
+  "three_unanimous_wrong_items": [
+    "item_003",
+    "item_009",
+    "item_010",
+    "item_014",
+    "item_018"
+  ],
+  "three_teacher_total_tokens": 169845,
+  "three_teacher_reasoning_tokens": 134611,
+  "reasoning_share_of_total": 0.7925520327357296,
+  "probe_usage": {
+    "deepseek": {
+      "records": 1,
+      "total_tokens": 376
+    },
+    "qwen": {
+      "records": 1,
+      "total_tokens": 693
+    }
+  },
+  "minimum_evidenced_total_tokens": 170914,
+  "deepseek_main_peak_cache_miss_estimate_usd": 0.077475,
+  "actual_billed_cost": "not provided",
+  "qwen_image_share_of_main_total_tokens": 0.06874071788145891,
+  "billing_free_quota_remaining": "not independently verified",
+  "image_token_difference_mechanism": "not established",
+  "note": "一致率是与原类别标签一致，不是人审视觉准确率；Wilson区间/配对检验仅为本开发集描述，不能外推。GLM是客户端累积上下文，与独立API有协议差异。payload指纹验证的是规范化对象，不是实际发送字节。",
+  "source_sha256": {
+    "协作\\02_ClaudeCode_实操\\口径修正与准备_20261002-021207\\blind_inputs.jsonl": "70d48e6f5a7ab3c14f4c3d675e94adc11a9cb518f814120fadb8b2e802120b20",
+    "协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+    "协作\\02_ClaudeCode_实操\\口径修正与准备_20261002-021207\\check_answer_v3.py": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-163829/deepseek__item_001.json": "a1621af53076f45fb7b700878f84d45371c94ca1b345bc694a9cef9857710ff9",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-163829/kimi__item_001.json": "0e19d1f65d6576d60759cb391611120777c62a344b669a42349e8c8b43c22b3a",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-163829/qwen__item_001.json": "6129e39373fe76227f051772de3ca35926faa803701638def20aae1800764501",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164742/kimi__item_001.json": "7c2f26de1b37a6cf2eab7141b6bb9e88e18cdffcc65a43d45c7f2b6d659914a1",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_002.json": "8ddc0f09c8203e648244a9166a8b891460f8a5df34ab122fa0c06c1cb3e9a175",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_003.json": "fc3836cf159ff4cbddefee14212399566f6dd6b41aeab080b8e9322244f2a952",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_004.json": "c539e5eddafc8d8bd3bf50073646778b5d76e9f9efd543ba4df696ad15866237",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_005.json": "0ee9276ea8fdb594abac0327ddf6e5f01b42be64b1f7ad34a4fb24275f7402b1",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_006.json": "493a45c59ecff55de9ec9ddd81adef40f7ebdafc950c68c4f446c4138ad8b56f",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_007.json": "abf22878a6ccd08f079219cc54044188102a4cdd045c7fdabc59fe782061c24f",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_008.json": "f93f1863c7eb5f5a4c6b3994aaccf684b98d083f3db777b41ea0a185379309fc",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_009.json": "9e7bd669970ba6f1aaaf64cf023c3a9e56b679d526bc7224dd0f612b4ba9cb8e",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_010.json": "e6fe1c95c8df5d5f518f83534d8a5007697b15058a03b121211ba8188f6f7828",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_011.json": "ca5a045f7091ed418d818bbb2a3bac143cda352ea519f628e64acbbc32528c49",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_012.json": "918abc94011fa2561110e05b64ef4fadcb60f488ece7385ace646507fbe0b6de",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_013.json": "d2f741aa2a111b7938253eef1e18ebd5ff9aeed5aedb9b8f2927392908a93007",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_014.json": "c8e40dac6066af57225f616785e3566534f12724ec4735cc2d9374363a0e915e",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_015.json": "087ee1eba6758438815d3fec41e2f0500205f2be443c237ac3d9534b39b62eef",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_016.json": "4006c4381e35b5b9f376b24e32566eb3c9f005ca5dbacf2ad5f02f76143e321b",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_017.json": "59f3faeba8a9340b1cb46d9fb150532586335ef7c15d6898a8d4050582a728c3",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/kimi__item_018.json": "ad3807f2e87fb5baf45a9730cefed30a95083b100843e6970a063bad1f03495f",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/qwen__item_002.json": "01409dffc8b0296259fc7a2b6b16663ac870f7574047678b6381e48ef831bd18",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-164837/qwen__item_003.json": "f33f5bfe9205e74c635ae4bbcacce4b76977e4357ce6f2401b65411a277d3c1c",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_002.json": "702be4eecd91c78e0afa96a06784e0c11ba44ea3d2765e0a6d54a4879dc39e27",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_003.json": "b9c78905023b7a2d31249d4ed593df57988e13f52d2f8f9b6972e9cadcfc959b",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_004.json": "7ebb4c0aaafa90f1d9b7011ca6c1c98ecee8f93ee3e2c89146f2a968f281f70d",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_005.json": "baf523a968174231e7210041469697a3a1c8254a611441875ff5bd7ca9b8d81b",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_006.json": "7a72729f98ffdaec6c4357becf9a81bd996d1056dadf149291328268781ac899",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_007.json": "461964f744793576dcf8749753515939e7022a94b77226d0ea97c20845c00376",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_008.json": "49a34853cf8eb8cd7fcd44df9058a53845fbc2f9121a6f011cf6a42b5e971dd0",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_009.json": "8082d3d93870e0813607fd33fb0114acdec53226cf2125ae340c3b95e23b8dfe",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_010.json": "75bbc3b7ea1faff19aff78e853112142e4e6168ff9bf0f09e66625c5c887d2bc",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_011.json": "6b31bea899a3d5dc786ddd1becc9a3cd25617f9e936fd8cd984227e9c2c5b294",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_012.json": "48f8667783bdcf08213a5f487f46a5a63e988b4f613a2ff614aafd33cd6cf297",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_013.json": "11d0ad3350e16d19dec1141a7a5d7e5b70e91821b22e237b987d2634d7b15593",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_014.json": "ea3e82a5da640fd9f036d84d534a72102e8658a8dcaea1943446bb72994b6577",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_015.json": "92231d4f556859bf4d329cd790a38cb84e34b33eec172f2a77d0836676fb2ce0",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_016.json": "26c59b9eec4b2983cb6be1519b5a69d1e437425693c0505de59dc8985dc27c90",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_017.json": "365fa8a93ed47bf3637944721c326c031731e8f12d01063c764a6e1144ea7d82",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/deepseek__item_018.json": "9d55ef1fb899eaa7c16933fa78325f9212dffae200db0ca50d65a1c421987a2b",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_004.json": "94a9d67c82241a16070119603945367c6a14b1e51e631a2ad7a0ada11cb5767c",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_005.json": "613fc72d182712a613c855c1c9aa3aae8daf3dbc435593ddaf49d4fe8e53b6e0",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_006.json": "4ff2f754873354498d3cd99c08ce8ab08ec3b0d1c10d5d7aa0ca6a3e5447e7b0",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_007.json": "524e00beae168f8cd71e71ee9504d1c0a6aa01d276caac4634f00b67372f4020",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_008.json": "689db7670dca447c03c261625a396c716241a2bac9f7cc9207b421c85a79ebb3",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_009.json": "f737ccd7327f3e95d01a1578233661bb897bd6e9bf42575a5691ec6ace6166ca",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_010.json": "fb9807b0487d8d6148c4090d700520ab409d5aca806cc3fd9a6886ffaf711db5",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_011.json": "889bfe929deacbe67ae872dfff18f9430be38ad7b6284c1da4ed73ab2bc2951e",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_012.json": "943558c058809e3d6dc1e8bf425c9192913d1c6df99dff05ce6d2340a1d39c73",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_013.json": "2de22169a77ac274001b88fe8b0db7a0652e5c53a77750f21aee5f726e103ae9",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_014.json": "cf4bca5e7123389aa80abd7a94453f10affefcca88b141f5fa5c05845f1f74cd",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_015.json": "3f45dfd2813360c269d7561337b62dbddc25c3f678319ba841318e946b372abb",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_016.json": "f43645d2a27890c61240f73e0430fbbcfa4d9bfb07e8c574c673a39ff8a7c9fe",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_017.json": "505a8d77e0ffce61d69130c78cd6197bbb9f7cc02a12fb9345dfcad042fa086b",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/runs/20261002-170627/qwen__item_018.json": "5c7ef95ec87003feccec3b7b60a812dbd22a8e99e92cf112d7c50d730fc980b0",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00043234_006_raw.json": "2e5e0e720b4144e68344caf1dd49dfc57528aa068cd35891f4fd38e9bd993333",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00012145_017_raw.json": "c2b7275f9051bf513f50aac9cebe0176448b1403c52897089b24e4897d90b547",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00043109_011_raw.json": "fd87f13d20eab01d00d1563a5bb4b748b07b30a47c812105b4ed673cc4212f6a",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00017113_023_raw.json": "650d92639c5e7c9ddc9c0bda1a2bc66378da7b473c19b0500f39a11d9e4e22dd",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00042242_008_raw.json": "d309a5390fcc82cf725d285273aad6517794701e46fde03c5e054a557f0bd098",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00046498_018_raw.json": "22ff261b9013f0d1511232422a94e7bb942f203b9dbe2a41faacd1910e0deddd",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00045576_015_raw.json": "ffc8a474dd8e93ca60a0d10a0c8906d5f074fa2bba71fd5d271a2f6877e6b3ca",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00044802_022_raw.json": "da94b6c914c283fa420c65f983c40ab1dac99728977ab6f556a5535444d42f6d",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00043676_016_raw.json": "8dae8054924242a9a451ec00d06f9ad9dba0f1174b5e1481945cd243d3103819",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00044039_015_raw.json": "369ead3215b9ec12ed9c735f019c10fdb7c43835f8877ab0f10a9a6a58a55be0",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00040360_012_raw.json": "dcf651ea4765cabb62396d5cd3fa472e1a56502d6d3dd8b245c39ae341258423",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00037907_010_raw.json": "5162dd897e1bbfa403f24d317c4044ab7985a0c7493c7e736987364d5aa135da",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00014492_011_raw.json": "8d81dff4ec3bd1b57758a092fc56324220051bfa33a8e9680ad8f1ea2fa08377",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00017158_020_raw.json": "634dfc0348a83c497be8008bfc7ce06b08b68a11937ba4036e5d2654be8a2241",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00043975_024_raw.json": "0ebec7c116a1999ff33c940e97fb3d0df40c37ee77bef15b800be63d16b4cdc5",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00026394_017_raw.json": "4be6f0d101470b2c1f442d14d92347fa853d2a742d8a756afcb82b8fbf1cf5b9",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00044805_011_raw.json": "3ba17110ff721703177942c34570639ef48474f10b5f9b5c3d187a2f90e5130e",
+    "协作/03_ZCode_标注/20261002-024921_十八张开发试标/wafer_00036981_003_raw.json": "a7891da1e8da5b23455649e41bd9e18cf5a753588d96a7e1a2b32ce7b67de282",
+    "协作/02_ClaudeCode_实操/三教师对照_20261002-162722/text_only_probe.json": "bac00970dc21da81ba199e4d8e5191f845b7ec7e4b2c3ead4df73c07ffe4c1cc"
+  }
+}

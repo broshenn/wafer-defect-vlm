@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "以晶圆中心为核的致密红色失效簇，簇体不规则并向四周延伸，外围散布零星红色失效点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "主要失效集中在晶圆中央并形成致密簇，簇形不规则向周边延伸，整圆另散见零星失效点。",
+  "uncertainty": "中央簇向右侧延伸略明显，外围散点与中央簇是否属同一模式不确定"
+}

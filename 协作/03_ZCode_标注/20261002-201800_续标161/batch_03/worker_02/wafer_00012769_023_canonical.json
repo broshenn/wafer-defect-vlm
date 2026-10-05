@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "晶圆外缘一圈细窄、局部断续的红色失效环，内部以绿色为主并散布稀疏的红色单点及个别相邻两三点的微簇",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆外缘有一圈细窄、局部断续的红色失效环，晶圆内部散布少量孤立的红色失效点和微小的相邻簇。",
+  "uncertainty": "边缘环较细且可能不连续；内部个别相邻小簇与边缘环是否同源无法确定"
+}

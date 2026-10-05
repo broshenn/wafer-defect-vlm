@@ -1,0 +1,36 @@
+{
+  "stage": "smoke",
+  "gpu": "0",
+  "train_file": "/WS/datasets/sft_a/sft_a_smoke_20.jsonl",
+  "train_sha256": "f061f0ffa6198680b4475f58fd7037aaeb359b49b041592f0d1ef5be40c2d7af",
+  "max_steps": 20,
+  "ga": 1,
+  "effective_batch": 1,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "lr": 0.0001,
+  "max_length": 2048,
+  "seed": 3407,
+  "target_modules_arg": [
+    "all-linear"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "started_at": "2026-10-06T01:27:07.383131",
+  "torch": "2.6.0+cu124",
+  "cuda": "12.4",
+  "seconds": 68.987449,
+  "finished_at": "2026-10-06T01:28:16.371097",
+  "adapter_configs": [
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/checkpoint-10/adapter_config.json",
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/checkpoint-20/adapter_config.json",
+    "/WS/checkpoints/sft_a_smoke20_20step/v0-20261006-012707/last-checkpoint/adapter_config.json"
+  ],
+  "target_modules_effective": [
+    "^(model\\.language_model(?=\\.).*\\.(in_proj_z|out_proj|in_proj_b|up_proj|gate_proj|k_proj|v_proj|o_proj|in_proj_a|q_proj|in_proj_qkv|down_proj))$",
+    "^(model\\.language_model(?=\\.).*\\.(in_proj_z|out_proj|in_proj_b|up_proj|gate_proj|k_proj|v_proj|o_proj|in_proj_a|q_proj|in_proj_qkv|down_proj))$",
+    "^(model\\.language_model(?=\\.).*\\.(in_proj_z|out_proj|in_proj_b|up_proj|gate_proj|k_proj|v_proj|o_proj|in_proj_a|q_proj|in_proj_qkv|down_proj))$"
+  ],
+  "visual_in_targets": false
+}

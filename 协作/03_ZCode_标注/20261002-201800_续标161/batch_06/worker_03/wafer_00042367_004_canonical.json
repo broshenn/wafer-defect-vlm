@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "中央区域大片不规则相连的红色失效die密集簇，占据中部较大范围并向中间区域延伸，晶圆外围另有少量零散失效点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中部出现大片不规则相连的失效die密集簇，外围散布少量零星失效点。",
+  "uncertainty": "密集簇略偏中右并延伸至中间区域，与Loc类局部聚集的界限存在歧义"
+}

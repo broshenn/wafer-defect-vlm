@@ -1,0 +1,21 @@
+{
+  "base_model": "/WS/models/Qwen3.5-9B",
+  "adapter": "/WS/checkpoints/sft_a_seed3407_a1/v0-20261006-021625/checkpoint-60",
+  "outdir": "/WS/checkpoints/f0_a1_merged",
+  "loader": "dtype+device_map",
+  "device": "cpu",
+  "ran_on_gpu": false,
+  "adapter_config_sha256": "cde424e128cd9937eae2b561ca4d70e4d5f15e5faf58a4731bfd00efd31c4a0e",
+  "adapter_model_sha256": "9741a64e1ec21ba162d65de962c508da320ca94092f3c169f924dda315f1f5e3",
+  "seconds": 33.9,
+  "files": {
+    "config.json": "91cd4f87224902681d6922dfd9c414f67574a7ee7d4d3cbf1a0c0ca74543df61",
+    "generation_config.json": "e4b598e9544d7567b3ae288efd8417e5b1646c957609b614c639163139336d12",
+    "model.safetensors": "57fc096754bd766efed9f3325e7f94e6533b91a4075a6781d9c610746d9098d6",
+    "processor_config.json": "bfbc24af59a3e73a9cd0653b8d4ae758dfaec4e3e6c15dfb1c6c8ee8d5683c85",
+    "tokenizer.json": "06b9509352d2af50381ab2247e083b80d32d5c0aba91c272ca9ff729b6a0e523",
+    "tokenizer_config.json": "792fa3f0cb88b111e54ef3134c873531008c4df471d108da17903426e308aa7b"
+  },
+  "note": "纯 CPU 合并，不占 GPU 分钟；未覆盖基座与 A1 LoRA。",
+  "finished_at": "2026-10-06T02:55:30.508375"
+}

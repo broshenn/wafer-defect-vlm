@@ -1,0 +1,8 @@
+{
+  "version": "class_alias_v1_20261002",
+  "raw_sha256": "08df8840b7c64185cf42f8f9221176433dd762e5738b3c13e3b0eb3e384e0729",
+  "normalized_sha256": "933d0bfed18f22f47ae6193f1784da9f672a986e406bf86f6180581135a0d56c",
+  "changes": [],
+  "content_review_warnings": [],
+  "note": "仅类别字符串规范化；副本格式通过不代表事实通过，未经验证的中文数值另行审核。"
+}

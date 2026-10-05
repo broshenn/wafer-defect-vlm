@@ -1,0 +1,73 @@
+{
+  "version": "GLM_remaining_161_v1_20261002",
+  "total_limit": 161,
+  "max_concurrency": 3,
+  "groups": [
+    {
+      "group_id": "pending_020",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GLM续标_20261002_无答案输入\\pending_item_020.jsonl",
+      "input_sha256": "261a02f4fca3db8e28269283e6e9e70e1212b449a2828dfb361135f9de1cf7c1",
+      "count": 1
+    },
+    {
+      "group_id": "batch_02",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_02_blind.jsonl",
+      "input_sha256": "130053911f596d17bebd3154824d4dd32879ad7a41187eb66caa81ec84cc5b9f",
+      "count": 20
+    },
+    {
+      "group_id": "batch_03",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_03_blind.jsonl",
+      "input_sha256": "2d98bc8f7aee88a89aaec9887596affbd2f13ca43022e965a406cb8f7efbbbbf",
+      "count": 20
+    },
+    {
+      "group_id": "batch_04",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_04_blind.jsonl",
+      "input_sha256": "fcf1639b97ed34742d441e7b4d5e464e008e81b78df1217ceb55823fb36076f0",
+      "count": 20
+    },
+    {
+      "group_id": "batch_05",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_05_blind.jsonl",
+      "input_sha256": "e337161b5d4b96757c8bc716641d5fb6af03d611c6649d2adf7274163f7f2d72",
+      "count": 20
+    },
+    {
+      "group_id": "batch_06",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_06_blind.jsonl",
+      "input_sha256": "392f5b8e66c22ff319f48d1160b3719771095f40c8d5688a646879987ed0d5d4",
+      "count": 20
+    },
+    {
+      "group_id": "batch_07",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_07_blind.jsonl",
+      "input_sha256": "19c5471a572fe0becda6ddfde09eaabe8f03392e2c060aa8b6ce1e3d4bfa4e3d",
+      "count": 20
+    },
+    {
+      "group_id": "batch_08",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_08_blind.jsonl",
+      "input_sha256": "0299cc54d91b6e3519392045039b69b1d0630184732a51001c17cfd71308f68e",
+      "count": 20
+    },
+    {
+      "group_id": "batch_09",
+      "input_path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\GLM训练标注准备_20261002\\batch_09_blind.jsonl",
+      "input_sha256": "732d6f0db98a77fb4b033c45926cc0ea61509f480f766aa91c2b2871e6c78539",
+      "count": 20
+    }
+  ],
+  "prompt": {
+    "path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+    "sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a"
+  },
+  "checker": {
+    "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\口径修正与准备_20261002-021207\\check_answer_v3.py",
+    "sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55"
+  },
+  "normalizer": {
+    "path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261002_GLM首批20\\normalize_label_alias.py",
+    "sha256": "01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c"
+  }
+}

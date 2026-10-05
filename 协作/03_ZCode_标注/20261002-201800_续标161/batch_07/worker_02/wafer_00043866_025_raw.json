@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die占多数并随机遍布整个晶圆，其间夹杂成片与零星绿色die，无环形、条状或局部聚集结构","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"失效die以高密度随机方式覆盖全晶圆约三分之二区域，剩余合格die散布其间，无空间模式","uncertainty":"失效比例较高，与Near-full的界限取决于覆盖率标准；按可见图案未接近整片失效，故未选Near-full"}

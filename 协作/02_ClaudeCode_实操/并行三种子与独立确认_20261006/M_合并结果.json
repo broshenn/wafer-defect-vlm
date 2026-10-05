@@ -1,0 +1,175 @@
+{
+  "model": "/WS/models/Qwen3.5-9B",
+  "adapter": "/WS/checkpoints/sft_a_train180_60step/v0-20261006-012939/checkpoint-60",
+  "outdir": "/WS/checkpoints/merged_oldadapter",
+  "adapter_config_sha256": "bfffa94a1b66b66703442eb8dea9cc1694b9d0671ed19cd5f73157d6178134e6",
+  "merged_output_files": [
+    "args.json",
+    "chat_template.jinja",
+    "config.json",
+    "generation_config.json",
+    "model-00001-of-00004.safetensors",
+    "model-00002-of-00004.safetensors",
+    "model-00003-of-00004.safetensors",
+    "model-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "processor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json"
+  ],
+  "has_config_json": true,
+  "merge_seconds": 32.9,
+  "dev18": {
+    "n": 18,
+    "correct": 13,
+    "accuracy": 0.7222
+  },
+  "peak_allocated_GiB_own_process": 18.071,
+  "answers": [
+    {
+      "sample_id": "wafer_00003298_021",
+      "label": "Edge_Ring",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+      "parsed": "Edge_Ring",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00003822_012",
+      "label": "Scratch",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+      "parsed": "Edge_Loc",
+      "parse_how": "ok",
+      "correct": false
+    },
+    {
+      "sample_id": "wafer_00018023_017",
+      "label": "Edge_Ring",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\"}",
+      "parsed": "Edge_Ring",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00029697_025",
+      "label": "Donut",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\"}",
+      "parsed": "Donut",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00032899_015",
+      "label": "Center",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+      "parsed": "Center",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00039578_021",
+      "label": "Center",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+      "parsed": "Center",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00040556_007",
+      "label": "Random",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\"}",
+      "parsed": "Random",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00041108_014",
+      "label": "none",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+      "parsed": "none",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00042202_013",
+      "label": "Loc",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+      "parsed": "Center",
+      "parse_how": "ok",
+      "correct": false
+    },
+    {
+      "sample_id": "wafer_00042778_024",
+      "label": "Near_full",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+      "parsed": "Near_full",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00043183_023",
+      "label": "Near_full",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\"}",
+      "parsed": "Near_full",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00043921_007",
+      "label": "none",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\"}",
+      "parsed": "none",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00043980_001",
+      "label": "Random",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+      "parsed": "Scratch",
+      "parse_how": "ok",
+      "correct": false
+    },
+    {
+      "sample_id": "wafer_00044300_025",
+      "label": "Scratch",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\"}",
+      "parsed": "Scratch",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00045337_006",
+      "label": "Edge_Loc",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+      "parsed": "Edge_Loc",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00045589_021",
+      "label": "Donut",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\"}",
+      "parsed": "Loc",
+      "parse_how": "ok",
+      "correct": false
+    },
+    {
+      "sample_id": "wafer_00046667_020",
+      "label": "Edge_Loc",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\"}",
+      "parsed": "Edge_Loc",
+      "parse_how": "ok",
+      "correct": true
+    },
+    {
+      "sample_id": "wafer_00047246_025",
+      "label": "Loc",
+      "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\"}",
+      "parsed": "Center",
+      "parse_how": "ok",
+      "correct": false
+    }
+  ]
+}

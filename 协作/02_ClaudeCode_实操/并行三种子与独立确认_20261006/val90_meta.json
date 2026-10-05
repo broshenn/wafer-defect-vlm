@@ -1,0 +1,31 @@
+{
+  "n": 84,
+  "n_lots": 84,
+  "seed": 3407,
+  "classes": {
+    "Center": 10,
+    "Donut": 10,
+    "Edge_Loc": 10,
+    "Edge_Ring": 10,
+    "Loc": 10,
+    "Near_full": 4,
+    "Random": 10,
+    "Scratch": 10,
+    "none": 10
+  },
+  "shortfall": {
+    "Near_full": "只有 4/10（候选 4 条、4 个 lot）"
+  },
+  "checks": {
+    "与 train180 无重叠": true,
+    "与 dev18 无重叠": true,
+    "与 benchmark 根晶圆无重叠": true,
+    "与所有被排除 lot 无重叠": true,
+    "全部来自 val 划分": true,
+    "全部 ground_truth": true
+  },
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "val90_sha256": "ae5dbc77a9b5b60a7dac750e46db951c1d8f0df3005fe8ac3e43a265b0589b9c",
+  "excluded_lots": 400,
+  "note": "开发确认集。保留最终 test 与冻结 Benchmark 不动；不回流训练。"
+}

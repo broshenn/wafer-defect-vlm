@@ -1,0 +1,24 @@
+[
+  {
+    "item_id": "item_013",
+    "sample_id": "wafer_00042289_023",
+    "source_raw": "协作/03_ZCode_标注/20261002-192902_batch01_并行20/worker_03/wafer_00042289_023_raw.json",
+    "source_raw_sha256": "c8ebf8725619f9f37654b94b8aea2873407a2708b4067fc5791abe029082930c",
+    "caption_zh": "绿色晶圆区域中散布红色失效点和少量相邻小块，未见明显的连续环带、主导团簇或长条状结构。",
+    "source": "GLM原答与图像经Codex模型复核改写",
+    "status": "caption_only_candidate",
+    "class_supervision_source": "原类别独立保留；不接收GLM完整类别答案",
+    "human_review": "not run"
+  },
+  {
+    "item_id": "item_017",
+    "sample_id": "wafer_00044955_014",
+    "source_raw": "协作/03_ZCode_标注/20261002-192902_batch01_并行20/worker_04/wafer_00044955_014_raw.json",
+    "source_raw_sha256": "cdc751c39bfb8ebe748ce2327df2b14780eef0cebb833dbfa95d94d3b2bfaea0",
+    "caption_zh": "绿色晶圆区域中散布红色失效点和少量相邻小块，未见明显的连续环带、主导团簇或长条状结构。",
+    "source": "GLM原答与图像经Codex模型复核改写",
+    "status": "caption_only_candidate",
+    "class_supervision_source": "原类别独立保留；不接收GLM完整类别答案",
+    "human_review": "not run"
+  }
+]

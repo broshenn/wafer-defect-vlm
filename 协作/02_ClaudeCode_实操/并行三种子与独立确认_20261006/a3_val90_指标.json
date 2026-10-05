@@ -1,0 +1,138 @@
+{
+  "n": 84,
+  "correct": 57,
+  "accuracy": 0.6786,
+  "macro_f1": 0.6936,
+  "per_class": {
+    "Center": {
+      "n": 10,
+      "tp": 8,
+      "precision": 0.5714,
+      "recall": 0.8,
+      "f1": 0.6667
+    },
+    "Donut": {
+      "n": 10,
+      "tp": 10,
+      "precision": 0.7692,
+      "recall": 1.0,
+      "f1": 0.8696
+    },
+    "Edge_Loc": {
+      "n": 10,
+      "tp": 7,
+      "precision": 0.5385,
+      "recall": 0.7,
+      "f1": 0.6087
+    },
+    "Edge_Ring": {
+      "n": 10,
+      "tp": 8,
+      "precision": 0.8889,
+      "recall": 0.8,
+      "f1": 0.8421
+    },
+    "Loc": {
+      "n": 10,
+      "tp": 5,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "Near_full": {
+      "n": 4,
+      "tp": 4,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889
+    },
+    "Random": {
+      "n": 10,
+      "tp": 5,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "Scratch": {
+      "n": 10,
+      "tp": 6,
+      "precision": 0.375,
+      "recall": 0.6,
+      "f1": 0.4615
+    },
+    "none": {
+      "n": 10,
+      "tp": 4,
+      "precision": 1.0,
+      "recall": 0.4,
+      "f1": 0.5714
+    }
+  },
+  "confusion": {
+    "Center": {
+      "Donut": 1,
+      "Center": 8,
+      "Scratch": 1
+    },
+    "Donut": {
+      "Donut": 10
+    },
+    "Edge_Loc": {
+      "Edge_Loc": 7,
+      "Edge_Ring": 1,
+      "Donut": 2
+    },
+    "Edge_Ring": {
+      "Edge_Ring": 8,
+      "Edge_Loc": 2
+    },
+    "Loc": {
+      "Loc": 5,
+      "Scratch": 4,
+      "Center": 1
+    },
+    "Near_full": {
+      "Near_full": 4
+    },
+    "Random": {
+      "Random": 5,
+      "Scratch": 2,
+      "Center": 2,
+      "Near_full": 1
+    },
+    "Scratch": {
+      "Scratch": 6,
+      "Edge_Loc": 2,
+      "Center": 2
+    },
+    "none": {
+      "none": 4,
+      "Edge_Loc": 2,
+      "Scratch": 3,
+      "Center": 1
+    }
+  },
+  "pred_distribution": {
+    "Donut": 13,
+    "Center": 14,
+    "Scratch": 16,
+    "Edge_Loc": 13,
+    "Edge_Ring": 9,
+    "Loc": 5,
+    "Near_full": 5,
+    "Random": 5,
+    "none": 4
+  },
+  "parse_how": {
+    "ok": 84
+  },
+  "tag": "a3_val90",
+  "adapters": "/WS/checkpoints/sft_a_seed3409_a3/v0-20261006-022226/checkpoint-60",
+  "data": "/WS/datasets/val90/val90.server.jsonl",
+  "load_seconds": 10.0,
+  "infer_seconds": 80.5,
+  "peak_allocated_GiB_own_process": 17.85,
+  "device_name": "NVIDIA A100 80GB PCIe",
+  "cuda_visible_devices": "GPU-79d88a4e-1177-c800-f554-c4084bf5a096",
+  "finished_at": "2026-10-06T02:33:41.355912"
+}

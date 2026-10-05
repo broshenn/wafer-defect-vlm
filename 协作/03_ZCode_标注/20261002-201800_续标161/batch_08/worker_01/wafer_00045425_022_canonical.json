@@ -1,0 +1,9 @@
+{
+  "defect_class": "Scratch",
+  "morphology": "左侧一条由连续红色失效die排成的横向长线自边缘向中部延伸，呈划痕状，另全图散布孤立红点",
+  "radial_zone": "middle",
+  "clock_direction": "9点钟",
+  "extent_r": null,
+  "caption_zh": "左侧一条横向连续失效die构成的长划痕自边缘延伸至中部，其余区域另散布孤立失效点。",
+  "uncertainty": "划痕自左侧边缘延伸至近中心，径向上介于edge与middle之间；散点与划痕并存，主图案取划痕"
+}

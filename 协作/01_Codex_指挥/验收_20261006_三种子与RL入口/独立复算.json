@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-06",
+  "reviewer": "Codex",
+  "scope": "offline output audit, not training or human review",
+  "runs": [
+    {
+      "file": "V_基座_val90_原答.jsonl",
+      "sha256": "94402d058afb0369eb7b42c1f01c3b7c8f7d4c1fbc1652009a6b9b21779ac4ec",
+      "n": 84,
+      "strict_correct": 17,
+      "strict_invalid": 0,
+      "strict_matches_recorded_parser": 84,
+      "macro_f1_fixed9": 0.12477718360071302
+    },
+    {
+      "file": "a1_val90_原答.jsonl",
+      "sha256": "c4e8583bb6aba4f57de6e5e61a12d533c26fd68c41780cd43616ded3497cc5cb",
+      "n": 84,
+      "strict_correct": 58,
+      "strict_invalid": 0,
+      "strict_matches_recorded_parser": 84,
+      "macro_f1_fixed9": 0.7011606108669419
+    },
+    {
+      "file": "a2_val90_原答.jsonl",
+      "sha256": "cd872fcbfeccf70586f3b3f4a3fa5375fb9731ba68815d24209c137ff178a68c",
+      "n": 84,
+      "strict_correct": 58,
+      "strict_invalid": 0,
+      "strict_matches_recorded_parser": 84,
+      "macro_f1_fixed9": 0.7046493494191703
+    },
+    {
+      "file": "a3_val90_原答.jsonl",
+      "sha256": "5cbfc7141c9cd2f10629d5fa40c6256c3842bedcdb4cdd1854d8b5a250a05578",
+      "n": 84,
+      "strict_correct": 57,
+      "strict_invalid": 0,
+      "strict_matches_recorded_parser": 84,
+      "macro_f1_fixed9": 0.6935802282865593
+    }
+  ],
+  "budget_conflict": {
+    "report_round": 29.4,
+    "json_round": 35.2,
+    "old_training_inference": 71.2,
+    "old_occupancy_approx": 22,
+    "remaining_19_4_accepted": false,
+    "needs_unified_ledger": true
+  }
+}

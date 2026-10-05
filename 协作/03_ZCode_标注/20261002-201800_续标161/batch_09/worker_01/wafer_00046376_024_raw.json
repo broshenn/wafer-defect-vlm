@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Loc","morphology":"晶圆上部边缘有一致密红色失效簇，集中于约12点钟方向，未形成完整环形；其余内部与边缘散布零星红色单die","radial_zone":"edge","clock_direction":"约12点钟","extent_r":null,"caption_zh":"主要失效为晶圆顶部边缘约12点钟方向的致密红色簇，其余区域另有零星散点","uncertainty":"簇沿边缘方向有一定延展，但未构成整圈，故判为Edge_Loc而非Edge_Ring"}

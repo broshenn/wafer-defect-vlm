@@ -1,0 +1,9 @@
+{
+  "defect_class": "Scratch",
+  "morphology": "右上区域有一条自边缘向内延伸的斜向红色失效条带，左中部另有一条自左边缘向内的横向红色短条带，其余区域散布零星红色die",
+  "radial_zone": "middle",
+  "clock_direction": "约1/2点钟",
+  "extent_r": null,
+  "caption_zh": "主要失效为右上约1/2点钟处自边缘伸向中部的斜向红色条带，左边缘约9点钟处另有一条横向短条带，其余区域散布红色散点",
+  "uncertainty": "条带整体近似直线；斜向条带径向范围跨边缘与中部，主区域按条带主体取middle"
+}

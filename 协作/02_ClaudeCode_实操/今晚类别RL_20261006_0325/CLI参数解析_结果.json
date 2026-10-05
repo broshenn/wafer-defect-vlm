@@ -1,0 +1,26 @@
+{
+  "argv": [
+    "--model",
+    "/WS/models/Qwen3.5-9B",
+    "--dataset",
+    "/WS/datasets/sft_a/sft_a_smoke_20.jsonl",
+    "--target_modules",
+    "all-linear",
+    "--freeze_vit",
+    "true",
+    "--freeze_aligner",
+    "true",
+    "--output_dir",
+    "/WS/tmp/cli_parse_check"
+  ],
+  "result": {
+    "value": [
+      "all-linear"
+    ],
+    "type": "list",
+    "is_list": true,
+    "freeze_vit": true,
+    "freeze_aligner": true
+  },
+  "note": "只针对 --target_modules all-linear 这一种写法，不外推"
+}

@@ -1,0 +1,222 @@
+{
+  "author": "Codex",
+  "date": "2026-10-03",
+  "source_counts": {
+    "20261002-192902_batch01_并行20": 19,
+    "20261002-201800_续标161": 161
+  },
+  "all_ids": 180,
+  "format_counts": {
+    "old_raw_0": 171,
+    "v4_raw_0": 179,
+    "v4_canonical_0": 180,
+    "old_raw_6": 1,
+    "v4_raw_6": 1,
+    "old_raw_8": 8
+  },
+  "recovered_clock_false_failures": [
+    "wafer_00014245_022",
+    "wafer_00016997_017",
+    "wafer_00037596_010",
+    "wafer_00042724_003",
+    "wafer_00042865_024",
+    "wafer_00043247_019",
+    "wafer_00045738_008",
+    "wafer_00046997_025"
+  ],
+  "class_matches_raw": 90,
+  "class_matches_canonical": 91,
+  "per_class": {
+    "Center": {
+      "n": 20,
+      "label_matches": 14
+    },
+    "Donut": {
+      "n": 20,
+      "label_matches": 3
+    },
+    "Edge_Loc": {
+      "n": 20,
+      "label_matches": 7
+    },
+    "Edge_Ring": {
+      "n": 20,
+      "label_matches": 17
+    },
+    "Loc": {
+      "n": 20,
+      "label_matches": 8
+    },
+    "Near_full": {
+      "n": 20,
+      "label_matches": 19
+    },
+    "Random": {
+      "n": 20,
+      "label_matches": 15
+    },
+    "Scratch": {
+      "n": 20,
+      "label_matches": 8
+    },
+    "none": {
+      "n": 20,
+      "label_matches": 0
+    }
+  },
+  "predictions_continuation": {
+    "Near_full": 18,
+    "Random": 61,
+    "Edge_Loc": 15,
+    "Edge_Ring": 17,
+    "Center": 21,
+    "Loc": 14,
+    "Scratch": 12,
+    "none": 1,
+    "Donut": 2
+  },
+  "identical_raw_pairs": {
+    "eca0739f677ae8d22f9df7adc06c1bb23c9c88a5934056e6b663d579c01464ab": [
+      "wafer_00011630_025",
+      "wafer_00011856_003"
+    ]
+  },
+  "quantity_flags": [
+    {
+      "sample_id": "wafer_00042308_024",
+      "flags": {
+        "uncertainty": [
+          "一枚"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00046030_024",
+      "flags": {
+        "morphology": [
+          "十几颗"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00007846_004",
+      "flags": {
+        "morphology": [
+          "两处"
+        ],
+        "caption_zh": [
+          "一处"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00011966_017",
+      "flags": {
+        "uncertainty": [
+          "一个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00036565_008",
+      "flags": {
+        "caption_zh": [
+          "一个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00040737_002",
+      "flags": {
+        "morphology": [
+          "一处"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00040753_014",
+      "flags": {
+        "uncertainty": [
+          "两个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00040919_025",
+      "flags": {
+        "morphology": [
+          "一处"
+        ],
+        "caption_zh": [
+          "一处"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00041964_021",
+      "flags": {
+        "caption_zh": [
+          "一个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00042967_019",
+      "flags": {
+        "morphology": [
+          "两三个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00043046_016",
+      "flags": {
+        "morphology": [
+          "三个"
+        ],
+        "caption_zh": [
+          "三个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00043973_022",
+      "flags": {
+        "morphology": [
+          "两三个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00045635_023",
+      "flags": {
+        "morphology": [
+          "一处"
+        ],
+        "caption_zh": [
+          "一处"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00047316_011",
+      "flags": {
+        "morphology": [
+          "两三个"
+        ]
+      }
+    },
+    {
+      "sample_id": "wafer_00047327_010",
+      "flags": {
+        "morphology": [
+          "两三个"
+        ]
+      }
+    }
+  ],
+  "old_prompt_checker_input_unchanged": true,
+  "teacher_api_requests_added": 0,
+  "gpu_added": 0,
+  "note": "格式和原类别一致率不是人工内容准确率；内容接收仍须逐图模型复核。"
+}

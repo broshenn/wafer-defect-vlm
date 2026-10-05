@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效die在全晶圆范围内零散随机分布，多为单个或两三个相邻，无密集簇、环带或条状结构；左缘散点略多",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆内红色失效die呈全图随机散在分布，无集中区域，左缘9点钟附近散点略密。",
+  "uncertainty": "左缘散点略密于其他区域，不排除轻度边缘聚集，但主要图案仍为全图随机散布"
+}

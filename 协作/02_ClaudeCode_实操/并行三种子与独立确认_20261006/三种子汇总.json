@@ -1,0 +1,147 @@
+{
+  "日期": "2026-10-06（第二轮：并行三种子 + 独立确认）",
+  "本轮 GPU 设备分钟（实测）": {
+    "V_验证与信息移除": 3.6,
+    "M_合并": 2.0,
+    "A1_seed3407": 7.0,
+    "A2_seed3408": 7.2,
+    "A3_seed3409": 7.0,
+    "A1推理": 2.8,
+    "A2推理": 2.8,
+    "A3推理": 2.8,
+    "合计": 35.2,
+    "说明": "每个任务一张卡；含模型加载与推理。不计没做的事。"
+  },
+  "结果表": {
+    "base": {
+      "dev18": {
+        "n": 18,
+        "correct": 3,
+        "accuracy": 0.1667
+      },
+      "dev18_macro_f1": null,
+      "val90": {
+        "n": 84,
+        "correct": 17,
+        "accuracy": 0.2024
+      },
+      "val90_macro_f1": null
+    },
+    "old6gpu_seed3407": {
+      "dev18": {
+        "n": 18,
+        "correct": 13,
+        "accuracy": 0.7222
+      },
+      "dev18_macro_f1": null,
+      "val90": "not run"
+    },
+    "A1_single_seed3407": {
+      "dev18": {
+        "n": 18,
+        "correct": 12,
+        "accuracy": 0.6667
+      },
+      "dev18_macro_f1": 0.6704,
+      "val90": {
+        "n": 84,
+        "correct": 58,
+        "accuracy": 0.6905
+      },
+      "val90_macro_f1": 0.7012
+    },
+    "A2_single_seed3408": {
+      "dev18": {
+        "n": 18,
+        "correct": 13,
+        "accuracy": 0.7222
+      },
+      "dev18_macro_f1": 0.7,
+      "val90": {
+        "n": 84,
+        "correct": 58,
+        "accuracy": 0.6905
+      },
+      "val90_macro_f1": 0.7047
+    },
+    "A3_single_seed3409": {
+      "dev18": {
+        "n": 18,
+        "correct": 14,
+        "accuracy": 0.7778
+      },
+      "dev18_macro_f1": 0.7556,
+      "val90": {
+        "n": 84,
+        "correct": 57,
+        "accuracy": 0.6786
+      },
+      "val90_macro_f1": 0.6936
+    }
+  },
+  "三种子波动": {
+    "val90_三个准确率": [
+      0.6905,
+      0.6905,
+      0.6786
+    ],
+    "val90_极差": 0.0119,
+    "dev18_三个准确率": [
+      0.6667,
+      0.7222,
+      0.7778
+    ],
+    "dev18_极差": 0.1111,
+    "注": "dev18 只有 18 条，1 条 = 5.6 个百分点，分辨不出种子。"
+  },
+  "信息移除诊断": {
+    "原图准确率": 0.7222,
+    "改图准确率": 0.1667,
+    "预测变化条数": 15,
+    "n": 18
+  },
+  "合并等价": {
+    "类别一致": "18/18",
+    "原始回答逐字节一致": "18/18"
+  },
+  "val90": {
+    "n": 84,
+    "n_lots": 84,
+    "seed": 3407,
+    "classes": {
+      "Center": 10,
+      "Donut": 10,
+      "Edge_Loc": 10,
+      "Edge_Ring": 10,
+      "Loc": 10,
+      "Near_full": 4,
+      "Random": 10,
+      "Scratch": 10,
+      "none": 10
+    },
+    "shortfall": {
+      "Near_full": "只有 4/10（候选 4 条、4 个 lot）"
+    },
+    "checks": {
+      "与 train180 无重叠": true,
+      "与 dev18 无重叠": true,
+      "与 benchmark 根晶圆无重叠": true,
+      "与所有被排除 lot 无重叠": true,
+      "全部来自 val 划分": true,
+      "全部 ground_truth": true
+    },
+    "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+    "val90_sha256": "ae5dbc77a9b5b60a7dac750e46db951c1d8f0df3005fe8ac3e43a265b0589b9c",
+    "excluded_lots": 400,
+    "note": "开发确认集。保留最终 test 与冻结 Benchmark 不动；不回流训练。"
+  },
+  "未做": [
+    "旧六卡 seed3407 的 val90（not run，无法与单卡同题比）",
+    "人审",
+    "正式 Benchmark / test",
+    "Caption/位置/尺寸评测",
+    "多步学习曲线",
+    "SFT-B/C 比较"
+  ],
+  "口径": "本轮新单卡 3407 与旧六卡 3407 **分别标识**；硬件/协议差异不能全算种子波动。"
+}

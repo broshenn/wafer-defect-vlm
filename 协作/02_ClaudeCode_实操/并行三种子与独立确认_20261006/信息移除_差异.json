@@ -1,0 +1,98 @@
+{
+  "changed": [
+    {
+      "sample_id": "wafer_00003298_021",
+      "label": "Edge_Ring",
+      "orig_pred": "Edge_Ring",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00003822_012",
+      "label": "Scratch",
+      "orig_pred": "Edge_Loc",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00018023_017",
+      "label": "Edge_Ring",
+      "orig_pred": "Edge_Ring",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00029697_025",
+      "label": "Donut",
+      "orig_pred": "Donut",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00032899_015",
+      "label": "Center",
+      "orig_pred": "Center",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00039578_021",
+      "label": "Center",
+      "orig_pred": "Center",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00040556_007",
+      "label": "Random",
+      "orig_pred": "Random",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00042202_013",
+      "label": "Loc",
+      "orig_pred": "Center",
+      "red2green_pred": "none"
+    },
+    {
+      "sample_id": "wafer_00043921_007",
+      "label": "none",
+      "orig_pred": "none",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00043980_001",
+      "label": "Random",
+      "orig_pred": "Scratch",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00044300_025",
+      "label": "Scratch",
+      "orig_pred": "Scratch",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00045337_006",
+      "label": "Edge_Loc",
+      "orig_pred": "Edge_Loc",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00045589_021",
+      "label": "Donut",
+      "orig_pred": "Loc",
+      "red2green_pred": "Near_full"
+    },
+    {
+      "sample_id": "wafer_00046667_020",
+      "label": "Edge_Loc",
+      "orig_pred": "Edge_Loc",
+      "red2green_pred": "none"
+    },
+    {
+      "sample_id": "wafer_00047246_025",
+      "label": "Loc",
+      "orig_pred": "Center",
+      "red2green_pred": "Near_full"
+    }
+  ],
+  "n_changed": 15,
+  "acc_orig": 0.7222,
+  "acc_red2green": 0.1667,
+  "note": "原标签不冒称改图后的 gold；下降只是视觉信息依赖线索，不称能力充分证明"
+}

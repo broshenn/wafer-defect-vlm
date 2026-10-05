@@ -1,0 +1,42 @@
+{
+  "group_id": "pending_020",
+  "generated_at": "2026-10-02 20:34:26 +0800",
+  "group_input_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GLM续标_20261002_无答案输入\\pending_item_020.jsonl",
+  "group_input_sha256_expected": "261a02f4fca3db8e28269283e6e9e70e1212b449a2828dfb361135f9de1cf7c1",
+  "counts": {
+    "planned": 1,
+    "attempted": 1,
+    "raw_pass": 1,
+    "raw_fail_canonical_pass": 0,
+    "raw_fail": 0,
+    "isolated_bad_json": 0,
+    "not_run": 0,
+    "unknown": 0,
+    "pending_review": 0,
+    "raw_sha_mismatch": 0,
+    "image_sha_mismatch": 0
+  },
+  "not_run_ids": [],
+  "stopped_markers": {
+    "worker_01": []
+  },
+  "anomalies": [],
+  "items": [
+    {
+      "sample_id": "wafer_00047003_005",
+      "worker": "worker_01",
+      "status": "raw_pass",
+      "checker1_exit": 0,
+      "normalizer_exit": 0,
+      "checker2_exit": 0,
+      "pending_review": false,
+      "alias_changes": 0,
+      "duration_ms": 60793,
+      "raw_sha256": "ed26cd7177b492f3b8de2ee8e3968b3b220aa82d12ee56bc08dc422f4022963f",
+      "raw_sha_match": true,
+      "image_sha_match": true,
+      "defect_class_raw": "Near_full"
+    }
+  ],
+  "note": "父会话只读汇总；raw_pass/raw_fail等以worker_log.jsonl自报status为准，父会话另核验raw文件存在与哈希一致"
+}

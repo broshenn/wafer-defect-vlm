@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "晶圆中央有一小片不规则相连的红色失效die聚集，其余区域红色失效die零散分布，外围也可见少量散点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中心区域可见一小块不规则红色失效聚集，周边绿色合格die之间散布零星红色失效点。",
+  "uncertainty": "中央聚集范围较小且全图散点较多，Center与Random的归属存在不确定"
+}

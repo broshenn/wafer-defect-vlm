@@ -1,0 +1,139 @@
+{
+  "n": 84,
+  "correct": 58,
+  "accuracy": 0.6905,
+  "macro_f1": 0.7047,
+  "per_class": {
+    "Center": {
+      "n": 10,
+      "tp": 9,
+      "precision": 0.6923,
+      "recall": 0.9,
+      "f1": 0.7826
+    },
+    "Donut": {
+      "n": 10,
+      "tp": 10,
+      "precision": 0.7692,
+      "recall": 1.0,
+      "f1": 0.8696
+    },
+    "Edge_Loc": {
+      "n": 10,
+      "tp": 6,
+      "precision": 0.5,
+      "recall": 0.6,
+      "f1": 0.5455
+    },
+    "Edge_Ring": {
+      "n": 10,
+      "tp": 7,
+      "precision": 0.875,
+      "recall": 0.7,
+      "f1": 0.7778
+    },
+    "Loc": {
+      "n": 10,
+      "tp": 5,
+      "precision": 0.8333,
+      "recall": 0.5,
+      "f1": 0.625
+    },
+    "Near_full": {
+      "n": 4,
+      "tp": 4,
+      "precision": 0.8,
+      "recall": 1.0,
+      "f1": 0.8889
+    },
+    "Random": {
+      "n": 10,
+      "tp": 6,
+      "precision": 0.8571,
+      "recall": 0.6,
+      "f1": 0.7059
+    },
+    "Scratch": {
+      "n": 10,
+      "tp": 6,
+      "precision": 0.4,
+      "recall": 0.6,
+      "f1": 0.48
+    },
+    "none": {
+      "n": 10,
+      "tp": 5,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6667
+    }
+  },
+  "confusion": {
+    "Center": {
+      "Center": 9,
+      "Scratch": 1
+    },
+    "Donut": {
+      "Donut": 10
+    },
+    "Edge_Loc": {
+      "Edge_Loc": 6,
+      "Center": 1,
+      "Edge_Ring": 1,
+      "Donut": 1,
+      "Random": 1
+    },
+    "Edge_Ring": {
+      "Edge_Ring": 7,
+      "Edge_Loc": 3
+    },
+    "Loc": {
+      "Loc": 5,
+      "Scratch": 4,
+      "Center": 1
+    },
+    "Near_full": {
+      "Near_full": 4
+    },
+    "Random": {
+      "Random": 6,
+      "Donut": 2,
+      "Center": 1,
+      "Near_full": 1
+    },
+    "Scratch": {
+      "Scratch": 6,
+      "Edge_Loc": 2,
+      "Center": 1,
+      "Loc": 1
+    },
+    "none": {
+      "none": 5,
+      "Edge_Loc": 1,
+      "Scratch": 4
+    }
+  },
+  "pred_distribution": {
+    "Center": 13,
+    "Scratch": 15,
+    "Donut": 13,
+    "Edge_Loc": 12,
+    "Edge_Ring": 8,
+    "Random": 7,
+    "Loc": 6,
+    "Near_full": 5,
+    "none": 5
+  },
+  "parse_how": {
+    "ok": 84
+  },
+  "tag": "a2_val90",
+  "adapters": "/WS/checkpoints/sft_a_seed3408_a2/v0-20261006-021625/checkpoint-60",
+  "data": "/WS/datasets/val90/val90.server.jsonl",
+  "load_seconds": 8.6,
+  "infer_seconds": 79.6,
+  "peak_allocated_GiB_own_process": 17.85,
+  "device_name": "NVIDIA A100-SXM4-80GB",
+  "cuda_visible_devices": "GPU-09230fea-e022-fa3e-7a98-fab1f0b645be",
+  "finished_at": "2026-10-06T02:25:08.798135"
+}

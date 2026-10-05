@@ -1,0 +1,196 @@
+{
+  "author": "Codex",
+  "date": "2026-10-06",
+  "base_correct": 3,
+  "adapter_correct": 13,
+  "paired_new_correct": 12,
+  "paired_lost_correct": 2,
+  "paired_p_exploratory_only": 0.012939453125,
+  "actual_visible_device_maps": {
+    "smoke": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "main": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "in_training_eval_dataset": "sft_a_smoke_20 (subset of train, not dev18)",
+  "corrected_training_resource_classification": "single process model sharding across six visible GPUs; not verified single GPU or DDP",
+  "freeze_json_is_success_evidence": false,
+  "freeze_json_role": "string-target negative/control case: vision trainable 220, not final list-target success state",
+  "paired_samples": [
+    {
+      "sample_id": "wafer_00003298_021",
+      "label": "Edge_Ring",
+      "base": "Loc",
+      "adapter": "Edge_Ring",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00003822_012",
+      "label": "Scratch",
+      "base": "Loc",
+      "adapter": "Edge_Loc",
+      "base_ok": false,
+      "adapter_ok": false
+    },
+    {
+      "sample_id": "wafer_00018023_017",
+      "label": "Edge_Ring",
+      "base": "Loc",
+      "adapter": "Edge_Ring",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00029697_025",
+      "label": "Donut",
+      "base": "Loc",
+      "adapter": "Donut",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00032899_015",
+      "label": "Center",
+      "base": "Loc",
+      "adapter": "Center",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00039578_021",
+      "label": "Center",
+      "base": "Loc",
+      "adapter": "Center",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00040556_007",
+      "label": "Random",
+      "base": "Random",
+      "adapter": "Random",
+      "base_ok": true,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00041108_014",
+      "label": "none",
+      "base": "Loc",
+      "adapter": "none",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00042202_013",
+      "label": "Loc",
+      "base": "Loc",
+      "adapter": "Center",
+      "base_ok": true,
+      "adapter_ok": false
+    },
+    {
+      "sample_id": "wafer_00042778_024",
+      "label": "Near_full",
+      "base": "none",
+      "adapter": "Near_full",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00043183_023",
+      "label": "Near_full",
+      "base": "Loc",
+      "adapter": "Near_full",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00043921_007",
+      "label": "none",
+      "base": "Loc",
+      "adapter": "none",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00043980_001",
+      "label": "Random",
+      "base": "Loc",
+      "adapter": "Scratch",
+      "base_ok": false,
+      "adapter_ok": false
+    },
+    {
+      "sample_id": "wafer_00044300_025",
+      "label": "Scratch",
+      "base": "Loc",
+      "adapter": "Scratch",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00045337_006",
+      "label": "Edge_Loc",
+      "base": "Loc",
+      "adapter": "Edge_Loc",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00045589_021",
+      "label": "Donut",
+      "base": "Loc",
+      "adapter": "Loc",
+      "base_ok": false,
+      "adapter_ok": false
+    },
+    {
+      "sample_id": "wafer_00046667_020",
+      "label": "Edge_Loc",
+      "base": "Loc",
+      "adapter": "Edge_Loc",
+      "base_ok": false,
+      "adapter_ok": true
+    },
+    {
+      "sample_id": "wafer_00047246_025",
+      "label": "Loc",
+      "base": "Loc",
+      "adapter": "Center",
+      "base_ok": true,
+      "adapter_ok": false
+    }
+  ],
+  "source_sha256": {
+    "adapter_dev18_原答.jsonl": "50cc96e0126fcf96ab63e8d47d98f06db8b3198c1d4b81b877e5cdc30991308c",
+    "base_dev18_原答.jsonl": "fd84d7903d894759f7b83b89b084b018b451de981b16b663f1b359409a2dfab6",
+    "logging_main.jsonl": "0e0b4c3cfcea7f5793dfb2bb97ca5af153e204ba1d7481649ba2983a508c955e",
+    "logging_smoke.jsonl": "105eef117ac028ea80aa390d0d3a0e3eca863c10b2bb2c244cd03c3c0f7b6202",
+    "LoRA目标正则_adapter_config.json": "99106617fac0c2f8dee14c02a0ac0b07b9e0ce0f5be54b2388a046aef19f339a",
+    "train_sft_a.py": "ddbd318fd94995bc8f08a360a99fb688de369637a9821a7533b4422b2b5cfff2",
+    "交付报告.md": "9ee4389b481eef23dbcdec2ed55dc6b13be8353c5e379a5479eb56bb17a6eea8",
+    "冻结检查_result.json": "f9557610f07fa28bf85cf2ffc35912a83b1be8f2f0f8d7ffa4c8e7b2bc61c771",
+    "日志_adapter推理.log": "9ea5a64803f01da3620c05d2ecacbe8a6595fffdd7d3059bc49632eb7ffba6f2",
+    "日志_main_60步.log": "9c032d09ef2af138b7c39096ccc902e0be981d07ac8707b7c5f82ecef9561874",
+    "日志_smoke_成功.log": "88aca86599c6577b7de0cea1e66f597d840900864007268b19ba5eea1176e63a",
+    "日志_smoke_首次失败.log": "d2e31e2aeb2589a470380ece686343b1bef9849a228382c9072cb6a7b83efe60",
+    "训练结果汇总.json": "1dcedb09494031b86c61d61bee331f5c2b1b0c093d782e3aecedb9bc79c4b481",
+    "训练配置_main.json": "7f2278fc5c4d58a5d96c53731e1f0083a5b5e14f3a4af283e7fb0fd5e917f4ba",
+    "训练配置_smoke.json": "24d7a4a7f267a7439b4d4cfa3501d09c47489f8444902099dfe0820648586492"
+  },
+  "teacher_api_added": 0,
+  "gpu_added": 0
+}

@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Loc",
+  "morphology": "顶部边缘12点钟方向出现一片致密相连的红色失效die区，紧贴晶圆上边缘；其余区域以绿色die为主，散布少量孤立红色die",
+  "radial_zone": "edge",
+  "clock_direction": "12点钟",
+  "extent_r": null,
+  "caption_zh": "主要失效集中在晶圆顶部边缘约12点钟方向的一片致密红色区域，其余晶圆面以绿色合格die为主并伴有零散红色die。",
+  "uncertainty": "顶部红区向晶圆内部延伸的深度处于边缘型与局部型判定的边界；外围散点分布略不均匀。"
+}

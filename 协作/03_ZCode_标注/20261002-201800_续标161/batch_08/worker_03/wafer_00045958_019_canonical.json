@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Loc",
+  "morphology": "右下边缘有一片致密相连的红色失效聚集区并接触晶圆边界，其余区域散布孤立红点",
+  "radial_zone": "edge",
+  "clock_direction": "4-5点钟",
+  "extent_r": null,
+  "caption_zh": "主要图案为右下边缘一片致密红色失效聚集，全片另见零散孤立失效点。",
+  "uncertainty": "聚集区宽度与局部边缘带形态的界限不确定"
+}

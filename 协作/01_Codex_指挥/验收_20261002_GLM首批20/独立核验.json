@@ -1,0 +1,58 @@
+{
+  "author": "Codex",
+  "date": "2026-10-02",
+  "planned": 20,
+  "attempted": 19,
+  "raw_format_pass": 18,
+  "raw_format_fail": 1,
+  "raw_check_exit_counts": {
+    "0": 18,
+    "6": 1
+  },
+  "canonical_check_exit_counts": {
+    "0": 19
+  },
+  "raw_class_matches_all_attempts": 9,
+  "canonical_class_matches_all_attempts": 10,
+  "full_answer_candidates_accepted": 10,
+  "full_answer_quarantined": 9,
+  "neutral_caption_only_candidates": 2,
+  "not_run": [
+    {
+      "item_id": "item_020",
+      "sample_id": "wafer_00047003_005"
+    }
+  ],
+  "duplicate_keys_in_parent_log": [
+    "failed"
+  ],
+  "parent_fresh_session_requirement_met": false,
+  "child_fresh_context": "client_tool_contract_declared_not_independently_verified",
+  "reported_subagent_tokens_unknown_unit": 4486574,
+  "rendered_color_checks": {
+    "wafer_00018231_019": {
+      "red_pixels": 92936,
+      "green_pixels": 66142,
+      "red_share": 0.5842165478570261,
+      "kind": "rendered_pixel_ratio_not_matrix_die_ratio"
+    },
+    "wafer_00043570_016": {
+      "red_pixels": 110193,
+      "green_pixels": 43069,
+      "red_share": 0.7189844840860748,
+      "kind": "rendered_pixel_ratio_not_matrix_die_ratio"
+    },
+    "wafer_00046030_024": {
+      "red_pixels": 154897,
+      "green_pixels": 1849,
+      "red_share": 0.9882038457121712,
+      "kind": "rendered_pixel_ratio_not_matrix_die_ratio"
+    }
+  },
+  "input_index_sha256": "641f75212839e5c847edf0d7bb53225460b03f99f4e16c10a1343f47cd97ffe7",
+  "normalizer_sha256": "01e02d587648d41618329908de8376851293551773d62140ecc610963f828f2c",
+  "teacher_api_requests_added": 0,
+  "gpu_training_added": 0,
+  "actual_annotation_cost": "not provided; current Codex review use not separately provided",
+  "note": "类别一致不是人工视觉准确率；原始格式失败保留，规范化仅改变明确别名；接收为模型辅助草稿，不解除真人审核。"
+}

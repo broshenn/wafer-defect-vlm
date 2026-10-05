@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "晶圆中央有一大片近圆形的密集红色失效区域，边界较清晰，外围红色失效die零散分布",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中心被一大块近圆形的红色失效密集区域占据，周围绿色合格die之间散布少量红色失效点。",
+  "uncertainty": "中央红色区域略偏离几何中心且边界不规则，向外散点过渡，Center与Donut的边界存在不确定"
+}

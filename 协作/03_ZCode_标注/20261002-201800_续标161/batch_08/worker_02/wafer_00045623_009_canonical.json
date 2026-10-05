@@ -1,0 +1,9 @@
+{
+  "defect_class": "Center",
+  "morphology": "近中心区域可见多个致密红色失效簇，中上部有一条横向条带，中心偏下有大块不规则密集簇，边缘零星散布少量红色失效点",
+  "radial_zone": "center",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆中心附近分布多个致密失效簇，中心偏下最密集，边缘有少量散点。",
+  "uncertainty": "中上部横向条带与中心偏下大簇是否属于同一模式不确定；边缘散点是否为噪声不确定"
+}

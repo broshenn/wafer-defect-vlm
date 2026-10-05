@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die与绿色合格die在全晶圆范围内交错分布，红色散点随机出现，无明显聚集簇、环形或条状结构","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"失效die呈高密度随机散点状分布于整个晶圆，无特定空间模式","uncertainty":"红色占比接近一半且散布较均匀，Random判断基于缺乏可见空间结构；无法排除散点下掩盖的系统性模式"}

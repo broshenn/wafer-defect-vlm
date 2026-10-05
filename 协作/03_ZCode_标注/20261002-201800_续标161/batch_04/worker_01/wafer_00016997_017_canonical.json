@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Loc",
+  "morphology": "红色失效die零散分布于全晶圆，右下方边缘区域密度显著增高，形成贴边的局部聚集区",
+  "radial_zone": "edge",
+  "clock_direction": "约4至5点钟",
+  "extent_r": null,
+  "caption_zh": "主要可见形态为右下边缘（约4至5点钟方向）的红色失效die密集聚集，其余区域仅零散分布",
+  "uncertainty": "聚集区向晶圆内部延伸的范围不易界定，与Loc类局部聚集的边界难以严格区分"
+}

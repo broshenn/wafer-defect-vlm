@@ -1,0 +1,8 @@
+{
+  "n": 90,
+  "user_prompt_sha256": "c46c5d917e0e05660ca4bbdc23b3aad80f25c5e97a4975145c0e98a239514cac",
+  "user_prompt_from": "sft_a_train_180.jsonl",
+  "rl_sha256": "5426014d1bc18195a12c8cc51ead07e5f8f751f49baaa39f09e9b504561a69bc",
+  "sft_sha256": "94f0a0e3a12f997ad4a1363325bf1af5b68cd519ac3a171b47b6b61904474213",
+  "note": "RL 数据删去 assistant；gold 只在 ground_truth 列，reward 可见、prompt 不可见。"
+}

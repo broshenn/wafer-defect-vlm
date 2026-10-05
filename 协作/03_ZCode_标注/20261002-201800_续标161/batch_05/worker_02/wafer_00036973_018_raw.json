@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die以单点和小块形式散布整个晶圆，密度大致均匀；中心略偏右处有一小片相连红色聚集，右侧边缘另有少量相邻失效","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die零散分布在整个晶圆，中心偏右可见一小块不规则红色聚集，整体以随机散点为主。","uncertainty":"中心偏右存在局部相连聚集，使Random与Center的区分存在不确定"}

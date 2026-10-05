@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Loc","morphology":"失效die散布于整张晶圆，其中左侧边缘自约7至11点钟方向形成不连续的弧带状聚集，为最集中的局部特征；其余为全图零散单点","radial_zone":"edge","clock_direction":"9点钟","extent_r":null,"caption_zh":"失效die散布于整张晶圆，左侧边缘约7至11点钟方向有不连续的弧带状聚集。","uncertainty":"左侧弧带不连续且密度不均，与全局散布混合，Edge_Loc与Random的归类存在歧义"}

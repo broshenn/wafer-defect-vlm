@@ -1,0 +1,9 @@
+{
+  "defect_class": "Edge_Ring",
+  "morphology": "晶圆外缘整圈连续但粗细不均的红色失效带，内部以绿色为主并散布稀疏的红色单点失效",
+  "radial_zone": "edge",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "晶圆外缘整圈出现粗细不均的红色失效带，晶圆内部绿色为主并散布少量孤立的红色失效点。",
+  "uncertainty": "边缘红带宽窄不一、局部较厚，是否构成规则失效环难以确定；内部散点与边缘带的关系不明"
+}

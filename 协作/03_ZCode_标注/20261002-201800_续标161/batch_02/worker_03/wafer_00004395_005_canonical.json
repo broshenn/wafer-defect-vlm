@@ -1,0 +1,9 @@
+{
+  "defect_class": "Scratch",
+  "morphology": "多条纵向红色失效条带贯穿晶圆，近乎平行排列，分布范围覆盖全图",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "多条近乎平行的纵向红色失效条带贯穿整个晶圆，伴散在失效点。",
+  "uncertainty": "条带较密集且部分相连，与整片区域失效的界限不易确定"
+}

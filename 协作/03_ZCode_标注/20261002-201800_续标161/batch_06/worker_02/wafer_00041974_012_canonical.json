@@ -1,0 +1,9 @@
+{
+  "defect_class": "Donut",
+  "morphology": "不完整的环形失效带，环内中心大部分为绿色合格die，环体疏密不均，右侧局部致密并延至边缘附近，外围散布红色失效点",
+  "radial_zone": "middle",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "主要失效围绕中心形成不完整的中半径环带，中心基本合格，右侧带体密集并接近边缘，其余区域散见零星红点。",
+  "uncertainty": "环体不闭合，右侧密集区与边缘相连，环与局部边缘簇的类别边界不确定"
+}

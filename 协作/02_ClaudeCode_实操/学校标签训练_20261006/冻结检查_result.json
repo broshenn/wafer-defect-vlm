@@ -1,0 +1,25 @@
+{
+  "model": "/WS/models/Qwen3.5-9B",
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "tuner_type": "lora",
+  "target_modules": "all-linear",
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "max_length": 2048,
+  "seed": 3407,
+  "total_params_M": 9461.08,
+  "trainable_params_M": 51.265,
+  "trainable_pct": 0.54185,
+  "n_trainable_tensors": 716,
+  "n_lora_tensors": 716,
+  "vis_tensors_total": 553,
+  "vis_tensors_trainable": 220,
+  "trainable_kinds": {
+    "lora": 716
+  },
+  "non_lora_trainable": [],
+  "mask_bad": 0,
+  "supervised_tokens": []
+}

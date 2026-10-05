@@ -1,0 +1,114 @@
+{
+  "transform": "仅把红色(2)失效像素改为绿色(1)；轮廓/分辨率/其他像素不变",
+  "note": "原标签不冒称改图后的 gold；下降只是视觉信息依赖线索",
+  "images": [
+    {
+      "sample_id": "wafer_00003298_021",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00003298_021.png",
+      "derived_sha256": "5ac42268988e3f1a9f88a39272b76a58c747f1a862981e6c86665ad822813286"
+    },
+    {
+      "sample_id": "wafer_00003822_012",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00003822_012.png",
+      "derived_sha256": "e5e84e1c7034fe5d828269f147921b823fca81e07c10ab64b3c557da91e9e4fb"
+    },
+    {
+      "sample_id": "wafer_00018023_017",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00018023_017.png",
+      "derived_sha256": "5f1e74ca48884fdc45dafab1957d1d4ce21a95b89460fbe63270611fc8618295"
+    },
+    {
+      "sample_id": "wafer_00029697_025",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00029697_025.png",
+      "derived_sha256": "5cd4cdb1d2feb9c7916c73425d906e2ef4a001c757ebd30ff01dc5b7eb555c46"
+    },
+    {
+      "sample_id": "wafer_00032899_015",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00032899_015.png",
+      "derived_sha256": "6317b7db585cb343a5734a51efa68b33dc9561e7f12057cca59acd863252f013"
+    },
+    {
+      "sample_id": "wafer_00039578_021",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00039578_021.png",
+      "derived_sha256": "6317b7db585cb343a5734a51efa68b33dc9561e7f12057cca59acd863252f013"
+    },
+    {
+      "sample_id": "wafer_00040556_007",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00040556_007.png",
+      "derived_sha256": "7a2816bddf8d4a492455d6c321ec0d42f661e101cb693712997b63a21bc9e0df"
+    },
+    {
+      "sample_id": "wafer_00041108_014",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00041108_014.png",
+      "derived_sha256": "c801250f452dfa9d160e607d2d1815c729ac6d38cb7105b4609b2bbc1bab257c"
+    },
+    {
+      "sample_id": "wafer_00042202_013",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00042202_013.png",
+      "derived_sha256": "b36ec874bdd13cfafaaf45576e36f3214fa1f1432c239e087faee84371604add"
+    },
+    {
+      "sample_id": "wafer_00042778_024",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00042778_024.png",
+      "derived_sha256": "6aaedd3d32422bd096765d2331809d62ca02117dba6210faa65d4719b58acb5b"
+    },
+    {
+      "sample_id": "wafer_00043183_023",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00043183_023.png",
+      "derived_sha256": "281301438919872fce2f208ef8a27f0faabc0ae2d5c51e30c5c4ca8ae6718905"
+    },
+    {
+      "sample_id": "wafer_00043921_007",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00043921_007.png",
+      "derived_sha256": "bf4ffac5ed3c79bbe4ee660094e05cdf6c3db45ddaeef1cb2f43f540e3330300"
+    },
+    {
+      "sample_id": "wafer_00043980_001",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00043980_001.png",
+      "derived_sha256": "bf4ffac5ed3c79bbe4ee660094e05cdf6c3db45ddaeef1cb2f43f540e3330300"
+    },
+    {
+      "sample_id": "wafer_00044300_025",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00044300_025.png",
+      "derived_sha256": "f908bd21f386e2f37d09ec24ae7777dac63716c6c7a6b561f2ebbee232daf2b6"
+    },
+    {
+      "sample_id": "wafer_00045337_006",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00045337_006.png",
+      "derived_sha256": "7d2320bd210ea4eadd183c3bace1d7ce95165c213aceca22bd2be6c44b142350"
+    },
+    {
+      "sample_id": "wafer_00045589_021",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00045589_021.png",
+      "derived_sha256": "7d2320bd210ea4eadd183c3bace1d7ce95165c213aceca22bd2be6c44b142350"
+    },
+    {
+      "sample_id": "wafer_00046667_020",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00046667_020.png",
+      "derived_sha256": "c57c7ccb3b0af5daa790d44e10a66ecd18a9beb9f9f5fc766017586564eed722"
+    },
+    {
+      "sample_id": "wafer_00047246_025",
+      "red_pixels_before": 0,
+      "derived": "/WS/datasets/dev18_red2green/wafer_00047246_025.png",
+      "derived_sha256": "b8c9a7c6fb253c77eabedd148d6725d4717cd34aa39677aef765442299ba5043"
+    }
+  ]
+}

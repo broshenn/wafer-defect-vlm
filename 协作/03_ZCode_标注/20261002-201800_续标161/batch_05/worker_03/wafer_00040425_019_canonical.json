@@ -1,0 +1,9 @@
+{
+  "defect_class": "Random",
+  "morphology": "红色失效点与小型簇散布整个晶圆，分布较均匀，无明显主导聚集、边缘环或条状图案",
+  "radial_zone": "global",
+  "clock_direction": null,
+  "extent_r": null,
+  "caption_zh": "红色失效点与小型簇随机散布整个晶圆，无明显主导结构。",
+  "uncertainty": "右上方散点略密，但未形成清晰独立图案"
+}
