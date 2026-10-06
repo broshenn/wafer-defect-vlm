@@ -1,0 +1,74 @@
+{
+  "school_dirs": {
+    "datasets/images": 198,
+    "datasets/pkg_20261003/images": 198,
+    "datasets/val90/images": 84,
+    "datasets/rl_pool90/images": 90,
+    "datasets/expand/images": 0
+  },
+  "school_unique_png": 372,
+  "upload_need": {
+    "360": {
+      "level": 360,
+      "total": 360,
+      "already_on_school": 180,
+      "need_upload": 180,
+      "bytes": 380221,
+      "MiB": 0.36
+    },
+    "720": {
+      "level": 720,
+      "total": 720,
+      "already_on_school": 180,
+      "need_upload": 540,
+      "bytes": 1075514,
+      "MiB": 1.03
+    },
+    "1440": {
+      "level": 1440,
+      "total": 1440,
+      "already_on_school": 180,
+      "need_upload": 1260,
+      "bytes": 2441565,
+      "MiB": 2.33
+    }
+  },
+  "upload_1440_need_png": 1260,
+  "step_sec": 5.357,
+  "load_min": 1.5,
+  "eval_min": 2.6,
+  "estimates": {
+    "180": {
+      "epoch_steps": 45,
+      "train_min": 4.0,
+      "load_min": 1.5,
+      "eval_min": 2.6,
+      "total_min": 8.1
+    },
+    "360": {
+      "epoch_steps": 90,
+      "train_min": 8.0,
+      "load_min": 1.5,
+      "eval_min": 2.6,
+      "total_min": 12.1
+    },
+    "720": {
+      "epoch_steps": 180,
+      "train_min": 16.1,
+      "load_min": 1.5,
+      "eval_min": 2.6,
+      "total_min": 20.2
+    },
+    "1440": {
+      "epoch_steps": 360,
+      "train_min": 32.1,
+      "load_min": 1.5,
+      "eval_min": 2.6,
+      "total_min": 36.2
+    }
+  },
+  "方案A_固定60步_每档分钟": 9.5,
+  "方案B_充分1epoch_合计分钟": 76.6,
+  "本任务GPU授权": 0,
+  "边界": "估算是**基于单卡实测步速的外推**，不是成绩；当前累计账 157.70/180、剩 22.30 需在执行后写入 ledger 并保留区间依据。"
+}

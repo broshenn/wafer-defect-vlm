@@ -1,0 +1,89 @@
+{
+  "方法": "用真实的 swift.dataloader.BatchSamplerShard（不是 accelerate 同名类）在 CPU 上重建",
+  "参数": {
+    "N": 80,
+    "batch_size": 1,
+    "data_seed": 3407,
+    "drop_last": false,
+    "tp_size": 1
+  },
+  "shuffle_True_前12批索引": [
+    [
+      59
+    ],
+    [
+      49
+    ],
+    [
+      51
+    ],
+    [
+      7
+    ],
+    [
+      63
+    ],
+    [
+      65
+    ],
+    [
+      74
+    ],
+    [
+      36
+    ],
+    [
+      48
+    ],
+    [
+      77
+    ],
+    [
+      43
+    ],
+    [
+      50
+    ]
+  ],
+  "shuffle_False_前12批索引": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ],
+    [
+      3
+    ],
+    [
+      4
+    ],
+    [
+      5
+    ],
+    [
+      6
+    ],
+    [
+      7
+    ],
+    [
+      8
+    ],
+    [
+      9
+    ],
+    [
+      10
+    ],
+    [
+      11
+    ]
+  ],
+  "结论": "若文件按每 4 行一组同图，shuffle=True 时 **20 个优化步里只有 0 步的 4 个微批来自同一张图**",
+  "现场证据": "f1_sft20 与 f2_run20 的 args.json 实测 dataset_shuffle=True、train_dataloader_shuffle=True",
+  "边界": "这是**重建**（按已固定版本与种子），不是现场记录；现场没有落盘 sampler 顺序。dataset 层打乱叠加后只会更散，未逐行重建。"
+}

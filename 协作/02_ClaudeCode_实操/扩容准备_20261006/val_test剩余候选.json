@@ -1,0 +1,39 @@
+{
+  "说明": "排除集（624 ID / 574 lot）之后，val 与 test 的剩余可用候选",
+  "排除集": "train180 + dev18 + val90 + rl_pool90(冻结) + provenance180 + benchmark根晶圆",
+  "val": {
+    "原有": 594,
+    "可用": 345,
+    "lot": 270,
+    "逐类": {
+      "Center": 42,
+      "Donut": 12,
+      "Edge_Loc": 62,
+      "Edge_Ring": 56,
+      "Loc": 69,
+      "Near_full": 0,
+      "Random": 23,
+      "Scratch": 56,
+      "none": 25
+    }
+  },
+  "test": {
+    "原有": 589,
+    "可用": 218,
+    "lot": 183,
+    "逐类": {
+      "Center": 44,
+      "Donut": 14,
+      "Edge_Loc": 40,
+      "Edge_Ring": 27,
+      "Loc": 36,
+      "Near_full": 0,
+      "Random": 22,
+      "Scratch": 35,
+      "none": 0
+    }
+  },
+  "结论": "Near_full 在 val 与 test 都剩 0 条；none 在 test 剩 0。**当前库存无法凑出九类齐全的新的独立最终考卷。**",
+  "处置": "需获取更多公开原始数据或经审核的补充来源；不得靠重命名旧集/复用已分析样本解除污染。",
+  "未做": "未修改原 split、未修改旧 benchmark、未把已分析样本称全新盲测。"
+}

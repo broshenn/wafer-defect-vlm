@@ -1,0 +1,9 @@
+{
+  "n_lora_B": 248,
+  "all_B_zero": true,
+  "max_abs_B": 0.0,
+  "n_lora_A": 248,
+  "n_A_nonzero": 248,
+  "argument": "ΔW = B·A，B 初始为 0 ⇒ ΔW = 0 ⇒ 与 F0 逐条相同的输出（精确等价，非抽样）",
+  "note": "CPU 证明，不占 GPU 分钟。"
+}

@@ -1,0 +1,23 @@
+{
+  "model": "/WS/checkpoints/Qwen3.5-9B-f0a1merged",
+  "data": "/WS/datasets/rl_pool90/f1_replay_f2order.server.jsonl",
+  "data_sha256": "14502d9f891f868302d9e1d674b64b49ffa8dce65f009ed8d1e0a52495aade0b",
+  "lr": 1e-05,
+  "lr_scheduler_type": "cosine",
+  "max_steps": 20,
+  "ga": 4,
+  "pdb": 1,
+  "effective_batch": 4,
+  "dataset_shuffle": false,
+  "train_dataloader_shuffle": false,
+  "note": "按 F2 真实 20 组 ID 与顺序 replay；关闭两层打乱；从 F0 重新开始。",
+  "seconds": 133.731764,
+  "peak_allocated_GiB": 18.616,
+  "checkpoints": [
+    "/WS/checkpoints/f1fix_sft20/v0-20261006-131213/checkpoint-10",
+    "/WS/checkpoints/f1fix_sft20/v0-20261006-131213/checkpoint-20"
+  ],
+  "cuda_visible_devices": "GPU-79d88a4e-1177-c800-f554-c4084bf5a096",
+  "device": "NVIDIA A100 80GB PCIe",
+  "finished_at": "2026-10-06T13:14:27.251300"
+}

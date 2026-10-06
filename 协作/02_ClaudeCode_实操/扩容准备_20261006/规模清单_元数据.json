@@ -1,0 +1,139 @@
+{
+  "seed": 3407,
+  "target": 1440,
+  "规则": "每类≤160；不足的类取全部可用 lot；差额按剩余 lot 比例补到其余类；每 lot 至多一张",
+  "可用盘点": {
+    "Center": {
+      "n": 580,
+      "lots": 424
+    },
+    "Donut": {
+      "n": 258,
+      "lots": 147
+    },
+    "Edge_Loc": {
+      "n": 591,
+      "lots": 520
+    },
+    "Edge_Ring": {
+      "n": 547,
+      "lots": 292
+    },
+    "Loc": {
+      "n": 565,
+      "lots": 505
+    },
+    "Near_full": {
+      "n": 82,
+      "lots": 81
+    },
+    "Random": {
+      "n": 474,
+      "lots": 301
+    },
+    "Scratch": {
+      "n": 605,
+      "lots": 547
+    },
+    "none": {
+      "n": 297,
+      "lots": 292
+    }
+  },
+  "配额": {
+    "Center": 174,
+    "Donut": 147,
+    "Edge_Loc": 179,
+    "Edge_Ring": 167,
+    "Loc": 179,
+    "Near_full": 81,
+    "Random": 167,
+    "Scratch": 180,
+    "none": 166
+  },
+  "配额受限的类": {
+    "Donut": 147,
+    "Near_full": 81
+  },
+  "levels": {
+    "180": {
+      "n": 180,
+      "lots": 180,
+      "classes": {
+        "Random": 20,
+        "Loc": 20,
+        "Edge_Loc": 20,
+        "Near_full": 20,
+        "Donut": 20,
+        "Edge_Ring": 20,
+        "Scratch": 20,
+        "Center": 20,
+        "none": 20
+      },
+      "sha256": "7a84f4d7ba64dce680a183aa99c14a899de6f9d4051f7173e67cf18a99be9db3",
+      "source": "旧 train180（规模曲线起点，未改）"
+    },
+    "360": {
+      "n": 360,
+      "lots": 360,
+      "classes": {
+        "Random": 40,
+        "Loc": 40,
+        "Edge_Loc": 40,
+        "Near_full": 40,
+        "Donut": 40,
+        "Edge_Ring": 40,
+        "Scratch": 40,
+        "Center": 40,
+        "none": 40
+      },
+      "sha256": "f097dbc4914aab7eced2d2e3fa9eec21c62ebf48009fd1528968f6738f928a3c",
+      "source": "train180 + 新 180（1440 池前缀）"
+    },
+    "720": {
+      "n": 720,
+      "lots": 720,
+      "classes": {
+        "Random": 80,
+        "Loc": 80,
+        "Edge_Loc": 80,
+        "Near_full": 80,
+        "Donut": 80,
+        "Edge_Ring": 80,
+        "Scratch": 80,
+        "Center": 80,
+        "none": 80
+      },
+      "sha256": "89e866c5db8c28dc37ce09641c63ca64e8355e214b1275f65894852369fdd131",
+      "source": "train180 + 新 540（1440 池前缀）"
+    },
+    "1440": {
+      "n": 1440,
+      "lots": 1440,
+      "classes": {
+        "Random": 168,
+        "Loc": 169,
+        "Edge_Loc": 169,
+        "Near_full": 99,
+        "Donut": 161,
+        "Edge_Ring": 169,
+        "Scratch": 168,
+        "Center": 169,
+        "none": 168
+      },
+      "sha256": "ab17aac71ce2f563841ae1c22ef4a16df60ff12ca97caafe3ab6094257531b83",
+      "source": "train180 + 新 1260（1440 池前缀）"
+    }
+  },
+  "排除": {
+    "train180": 180,
+    "dev18": 18,
+    "val90": 84,
+    "rl_pool90": 90,
+    "provenance180": 180,
+    "benchmark根": 252
+  },
+  "题面_sha256": "253553c7c3768ac72fe11536e09fe12b84f96dc2ef67e6d4b1ee0114d9126b71",
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "边界": "这是**准备**清单；不代表已训练、也不代表学校已传齐这些图。"
+}

@@ -1,0 +1,289 @@
+{
+  "来源": "F2 reward_audit.jsonl 的真实 20 组 ID 与顺序",
+  "audit_sha256": "59621454da474e8f1fb49e6dcde57ea3e38b08155014ecaed1268888c19b1275",
+  "n_groups": 20,
+  "n_rows": 80,
+  "groups": [
+    {
+      "idx": 0,
+      "sample_id": "wafer_00044175_004",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 1,
+      "sample_id": "wafer_00036600_025",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 2,
+      "sample_id": "wafer_00040541_010",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 3,
+      "sample_id": "wafer_00017169_018",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 4,
+      "sample_id": "wafer_00003108_006",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 5,
+      "sample_id": "wafer_00001625_018",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 6,
+      "sample_id": "wafer_00036882_022",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 7,
+      "sample_id": "wafer_00040978_014",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 8,
+      "sample_id": "wafer_00000489_009",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 9,
+      "sample_id": "wafer_00035905_008",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 10,
+      "sample_id": "wafer_00042234_016",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 11,
+      "sample_id": "wafer_00040876_015",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 12,
+      "sample_id": "wafer_00007747_006",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 13,
+      "sample_id": "wafer_00015492_018",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 14,
+      "sample_id": "wafer_00016298_006",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 15,
+      "sample_id": "wafer_00015094_025",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 16,
+      "sample_id": "wafer_00044798_015",
+      "gold": "Edge_Ring",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 17,
+      "sample_id": "wafer_00045411_014",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same_group": true
+    },
+    {
+      "idx": 18,
+      "sample_id": "wafer_00008220_006",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same_group": false
+    },
+    {
+      "idx": 19,
+      "sample_id": "wafer_00047495_004",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same_group": false
+    }
+  ],
+  "pool_first20": [
+    "wafer_00045899_008",
+    "wafer_00042347_021",
+    "wafer_00036993_015",
+    "wafer_00045349_007",
+    "wafer_00036600_025",
+    "wafer_00036882_022",
+    "wafer_00036829_023",
+    "wafer_00040876_015",
+    "wafer_00035905_008",
+    "wafer_00000489_009",
+    "wafer_00004397_009",
+    "wafer_00017127_015",
+    "wafer_00000490_013",
+    "wafer_00017154_019",
+    "wafer_00017159_022",
+    "wafer_00042291_021",
+    "wafer_00003108_006",
+    "wafer_00007747_006",
+    "wafer_00017143_025",
+    "wafer_00017169_018"
+  ],
+  "pool_first20_class_dist": {
+    "Center": 10,
+    "Donut": 10
+  },
+  "f2_actual_class_dist": {
+    "Near_full": 3,
+    "Center": 5,
+    "none": 2,
+    "Donut": 3,
+    "Scratch": 3,
+    "Loc": 2,
+    "Edge_Ring": 1,
+    "Random": 1
+  },
+  "overlap_with_pool_first20": 8,
+  "mean_reward_all": 0.5625,
+  "n_same_group": 9,
+  "replay_sha256": "b00f3687e27c168b105b999c324b8ec770a89685938480b0b30f0de5d5d886fd",
+  "note": "replay 按 F2 顺序每 ID 连续 4 次；训练时**显式关闭 dataset/dataloader 打乱**，否则 4 份会被拆开、每步不再是同一张图。"
+}

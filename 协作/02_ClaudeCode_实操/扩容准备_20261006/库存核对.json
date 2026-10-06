@@ -1,0 +1,64 @@
+{
+  "manifest_rows": 5904,
+  "manifest_unique": 5904,
+  "png": 5904,
+  "missing_png": 0,
+  "extra_png": 0,
+  "splits": {
+    "train": 4721,
+    "val": 594,
+    "test": 589
+  },
+  "manifest_sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+  "exclusions": {
+    "train180": 180,
+    "dev18": 18,
+    "val90": 84,
+    "rl_pool90": 90,
+    "provenance180": 180,
+    "benchmark根": 252
+  },
+  "excl_ids": 624,
+  "excl_lots": 574,
+  "train_available": 3999,
+  "train_available_lots": 2795,
+  "per_class": {
+    "Center": {
+      "n": 580,
+      "lots": 424
+    },
+    "Donut": {
+      "n": 258,
+      "lots": 147
+    },
+    "Edge_Loc": {
+      "n": 591,
+      "lots": 520
+    },
+    "Edge_Ring": {
+      "n": 547,
+      "lots": 292
+    },
+    "Loc": {
+      "n": 565,
+      "lots": 505
+    },
+    "Near_full": {
+      "n": 82,
+      "lots": 81
+    },
+    "Random": {
+      "n": 474,
+      "lots": 301
+    },
+    "Scratch": {
+      "n": 605,
+      "lots": 547
+    },
+    "none": {
+      "n": 297,
+      "lots": 292
+    }
+  },
+  "max_unique_at_one_per_lot": 3109
+}

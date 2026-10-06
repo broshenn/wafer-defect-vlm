@@ -1,0 +1,25 @@
+{
+  "n": 90,
+  "seed": 3407,
+  "order_sha256": "7f084d155375a0d015f248d59a9c42eac45b7ee159b2d17283b1d10e805f34e4",
+  "pool_sha256": "0569a20bb9967966f56234ffec6837d2fd03a840a05012757c09e3a33d59e0af",
+  "lot_intersection_with_1440": 0,
+  "classes": {
+    "Center": 10,
+    "Donut": 10,
+    "Edge_Loc": 10,
+    "Edge_Ring": 10,
+    "Loc": 10,
+    "Near_full": 10,
+    "Random": 10,
+    "Scratch": 10,
+    "none": 10
+  },
+  "rl_sha256": "8ba04079bcf4f8d801ff67a47d3fa6471934ed8169b888fb0a37e13d9b501a64",
+  "sft_sha256": "c1ab487c9d3a280596f4caa6304285183c8ae51f4790b7bcc8dc2bc7b61033bc",
+  "展示计划": {
+    "R2": "每优化步 1 张唯一图 × G=4，90 步 = 全池 90 图各一次",
+    "R1": "每图正确答案连续 4 行，batch1/GA4 → 每步 4 行同图，90 步 = 全池各一次",
+    "打乱": "两者均**关闭** dataset/train_dataloader 打乱"
+  }
+}

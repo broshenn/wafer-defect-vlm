@@ -1,0 +1,999 @@
+{
+  "n_groups": 90,
+  "same_group": 64,
+  "same_ratio": 0.7111,
+  "mean_reward": 0.775,
+  "order_matches": true,
+  "groups": [
+    {
+      "id": "wafer_00000489_009",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00017159_022",
+      "gold": "Donut",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00046120_018",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00012767_010",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00019923_001",
+      "gold": "Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042885_019",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015352_001",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00017331_008",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045951_014",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00036882_022",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00017169_018",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045316_006",
+      "gold": "Edge_Loc",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00002494_021",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00040978_014",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044858_009",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015753_009",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00001625_018",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042929_020",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00036600_025",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00004397_009",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00043209_015",
+      "gold": "Edge_Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00019852_002",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00043766_008",
+      "gold": "Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00015516_024",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00008270_024",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045960_021",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00043315_010",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00035905_008",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00017127_015",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00005894_001",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00016473_004",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042234_016",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045574_019",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044032_002",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00046201_006",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042968_014",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045349_007",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00017143_025",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045741_025",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00014150_014",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00007238_007",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00045022_005",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015121_011",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00019205_005",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015094_025",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042347_021",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00000490_013",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00008894_004",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044798_015",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00038054_010",
+      "gold": "Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00045411_014",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015128_020",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00047495_004",
+      "gold": "Scratch",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00046481_011",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00040876_015",
+      "gold": "Center",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00042291_021",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042136_016",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00002502_008",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00006693_003",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00015492_018",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00008269_004",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00002548_001",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00000021_003",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00036993_015",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00003108_006",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00042845_020",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044783_013",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00022673_022",
+      "gold": "Loc",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00045243_017",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00015289_017",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00009870_007",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00040541_010",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00036829_023",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00007747_006",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00024499_014",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044025_006",
+      "gold": "Edge_Ring",
+      "rewards": [
+        0.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00013821_013",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044175_004",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00008220_006",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00043379_009",
+      "gold": "Scratch",
+      "rewards": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00040552_006",
+      "gold": "none",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00045899_008",
+      "gold": "Center",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00017154_019",
+      "gold": "Donut",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00003580_010",
+      "gold": "Edge_Loc",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00013719_006",
+      "gold": "Edge_Ring",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00038630_004",
+      "gold": "Loc",
+      "rewards": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00044184_008",
+      "gold": "Near_full",
+      "rewards": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "same": true
+    },
+    {
+      "id": "wafer_00043477_006",
+      "gold": "Random",
+      "rewards": [
+        1.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00016298_006",
+      "gold": "Scratch",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      "same": false
+    },
+    {
+      "id": "wafer_00045489_005",
+      "gold": "none",
+      "rewards": [
+        1.0,
+        0.0,
+        1.0,
+        1.0
+      ],
+      "same": false
+    }
+  ]
+}

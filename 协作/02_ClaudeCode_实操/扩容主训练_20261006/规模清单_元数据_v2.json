@@ -1,0 +1,104 @@
+{
+  "v1_excl": 624,
+  "v1_lots": 574,
+  "hist_ids": 206,
+  "hist_lots": 206,
+  "hist_lots_outside_t180": 26,
+  "v2_excl": 650,
+  "v2_lots": 600,
+  "quota": {
+    "Center": 175,
+    "Donut": 143,
+    "Edge_Loc": 181,
+    "Edge_Ring": 168,
+    "Loc": 180,
+    "Near_full": 78,
+    "Random": 167,
+    "Scratch": 181,
+    "none": 167
+  },
+  "taken": {
+    "Center": 175,
+    "Donut": 137,
+    "Edge_Loc": 181,
+    "Edge_Ring": 168,
+    "Loc": 180,
+    "Near_full": 77,
+    "Random": 167,
+    "Scratch": 181,
+    "none": 167
+  },
+  "pool": 1433,
+  "levels": {
+    "180": {
+      "n": 180,
+      "lots": 180,
+      "classes": {
+        "Random": 20,
+        "Loc": 20,
+        "Edge_Loc": 20,
+        "Near_full": 20,
+        "Donut": 20,
+        "Edge_Ring": 20,
+        "Scratch": 20,
+        "Center": 20,
+        "none": 20
+      },
+      "sha256": "7a84f4d7ba64dce680a183aa99c14a899de6f9d4051f7173e67cf18a99be9db3",
+      "source": "旧 train180（保留，未改）"
+    },
+    "360": {
+      "n": 360,
+      "lots": 360,
+      "classes": {
+        "Random": 40,
+        "Loc": 40,
+        "Edge_Loc": 40,
+        "Near_full": 40,
+        "Donut": 40,
+        "Edge_Ring": 40,
+        "Scratch": 40,
+        "Center": 40,
+        "none": 40
+      },
+      "sha256": "ed14fe93b499056e4d0bc5f372a4fe46ee9279795c7e1c1b333e605dcec3dad5",
+      "source": "train180 + 新 180（v2 池前缀）"
+    },
+    "720": {
+      "n": 720,
+      "lots": 720,
+      "classes": {
+        "Random": 80,
+        "Loc": 80,
+        "Edge_Loc": 80,
+        "Near_full": 80,
+        "Donut": 80,
+        "Edge_Ring": 80,
+        "Scratch": 80,
+        "Center": 80,
+        "none": 80
+      },
+      "sha256": "615dd9db59d8ee45460f2eed4dcee69324bde266726b7f91c2d1f54efb2c77b1",
+      "source": "train180 + 新 540（v2 池前缀）"
+    },
+    "1440": {
+      "n": 1440,
+      "lots": 1440,
+      "classes": {
+        "Random": 169,
+        "Loc": 169,
+        "Edge_Loc": 170,
+        "Near_full": 97,
+        "Donut": 157,
+        "Edge_Ring": 170,
+        "Scratch": 169,
+        "Center": 170,
+        "none": 169
+      },
+      "sha256": "bd2e225f71c1dd4354ec1384eb999c72eafb3149fbc6221dc55601f0cf359058",
+      "source": "train180 + 新 1260（v2 池前缀）"
+    }
+  },
+  "seed": 3407,
+  "规则": "v1 排除 ∪ 历史接触；历史 lot 中**非 train180 的**排除；原 train180 保留可复用"
+}

@@ -1,0 +1,66 @@
+{
+  "passed": 9,
+  "total": 9,
+  "fails": [],
+  "checks": [
+    [
+      "item_id 唯一",
+      true,
+      "198"
+    ],
+    [
+      "sample_id 唯一",
+      true,
+      ""
+    ],
+    [
+      "每行恰好四字段",
+      true,
+      ""
+    ],
+    [
+      "全部指向本地原图且 sha256 一致",
+      true,
+      "核了 198 张"
+    ],
+    [
+      "分片并集 == 全量清单",
+      true,
+      ""
+    ],
+    [
+      "分片之间无重复",
+      true,
+      ""
+    ],
+    [
+      "每份分片 ≤7 张（首批 20 除外）",
+      true,
+      ""
+    ],
+    [
+      "与已有标注零重叠",
+      true,
+      "（按分账口径）"
+    ],
+    [
+      "真正未标集合与三类已有互斥",
+      true,
+      ""
+    ]
+  ],
+  "锁定指纹": {
+    "prompt": {
+      "path": "协作/01_Codex_指挥/prompt_image_only_v2_20261002.txt",
+      "sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a"
+    },
+    "checker_v4": {
+      "path": "协作/01_Codex_指挥/验收_20261003_GLM180/check_answer_v4.py",
+      "sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2"
+    },
+    "checker_v3_依赖": {
+      "path": "协作/02_ClaudeCode_实操/口径修正与准备_20261002-021207/check_answer_v3.py",
+      "sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55"
+    }
+  }
+}

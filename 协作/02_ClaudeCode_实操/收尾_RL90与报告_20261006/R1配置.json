@@ -1,0 +1,19 @@
+{
+  "mode": "sft",
+  "steps": 90,
+  "model_R0": "/WS/checkpoints/Qwen3.5-9B-R0merged",
+  "data": "/WS/datasets/rl90/rl90_sft_repeat4.server.jsonl",
+  "data_sha256": "06d6ee2b173aaf616e5e642017f57c9b22ed2553a79530a12d56a6004b6b98aa",
+  "n_rows": 360,
+  "seconds": 470.103583,
+  "peak_allocated_GiB": 18.613,
+  "checkpoints": [
+    "/WS/checkpoints/rl90_R1/v0-20261006-190329/checkpoint-90"
+  ],
+  "final_checkpoint": "/WS/checkpoints/rl90_R1/v0-20261006-190329/checkpoint-90",
+  "selection": "末步预选",
+  "cuda_visible_devices": "GPU-867325ef-84ee-6ed6-f5ff-abfdab35b71b",
+  "device": "NVIDIA A100-SXM4-80GB",
+  "world_size": 1,
+  "finished_at": "2026-10-06T19:11:15.376503"
+}
