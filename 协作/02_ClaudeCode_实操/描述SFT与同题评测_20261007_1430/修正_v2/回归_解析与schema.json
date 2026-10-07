@@ -1,0 +1,230 @@
+{
+  "通过": "19/19",
+  "用例": [
+    {
+      "用例": "合法完整对象（带空think前缀）",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": true,
+      "期望合法": true,
+      "判定码": "ok",
+      "问题": []
+    },
+    {
+      "用例": "合法完整对象（无前缀）",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": true,
+      "期望合法": true,
+      "判定码": "ok",
+      "问题": []
+    },
+    {
+      "用例": "仅有 </think> 残留",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "not_json",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "空对象",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "缺字段:defect_class,morphology,radial_zone,clock_direction,extent_r,caption_zh,uncertainty"
+      ]
+    },
+    {
+      "用例": "仅 defect_class",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "缺字段:morphology,radial_zone,clock_direction,extent_r,caption_zh,uncertainty"
+      ]
+    },
+    {
+      "用例": "重复键",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "duplicate_key",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "extent_r 是字符串 null",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "extent_r非null:null"
+      ]
+    },
+    {
+      "用例": "defect_class 是 bool",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "defect_class非字符串"
+      ]
+    },
+    {
+      "用例": "defect_class 越界",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "defect_class越界:Foo"
+      ]
+    },
+    {
+      "用例": "radial_zone 为 null",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "radial_zone非字符串"
+      ]
+    },
+    {
+      "用例": "radial_zone 越界",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "radial_zone越界:top"
+      ]
+    },
+    {
+      "用例": "clock_direction 是数字",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "clock_direction类型错"
+      ]
+    },
+    {
+      "用例": "morphology 是数字",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "morphology非字符串"
+      ]
+    },
+    {
+      "用例": "多字段",
+      "通过": true,
+      "可解析": true,
+      "期望可解析": true,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "ok",
+      "问题": [
+        "多字段:extra"
+      ]
+    },
+    {
+      "用例": "截断",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "truncated",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "尾随文本",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "trailing_text",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "两个对象",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "trailing_text",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "空字符串",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "empty",
+      "问题": [
+        "JSON未解析"
+      ]
+    },
+    {
+      "用例": "非 JSON 散文",
+      "通过": true,
+      "可解析": false,
+      "期望可解析": false,
+      "七字段合法": false,
+      "期望合法": false,
+      "判定码": "not_json",
+      "问题": [
+        "JSON未解析"
+      ]
+    }
+  ],
+  "note": "离线回归，未发任何模型请求。"
+}

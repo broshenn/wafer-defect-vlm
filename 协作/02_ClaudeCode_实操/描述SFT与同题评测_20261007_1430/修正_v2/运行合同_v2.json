@@ -1,0 +1,119 @@
+{
+  "本文件": "获准空卡到位后直接执行的运行合同（修正版 v2）；GPU 部分当前一律 not run",
+  "裁据": {
+    "任务书": "协作/01_Codex_指挥/任务书_20261007_ClaudeCode_描述SFT与同题评测_已放行.md",
+    "验收": "协作/01_Codex_指挥/验收_20261007_描述准备.md",
+    "启动前补充": "协作/01_Codex_指挥/验收补充_20261007_描述SFT启动前.md",
+    "修正说明": "本文件取代 v1 运行合同.json 的「裁据」一节；v1 误引了不存在的任务书名"
+  },
+  "用户资源答复": "2026-10-07 用户选择「还没有，等获准空卡」；不借占用卡、不建占位进程、不切 5090/QLoRA",
+  "执行顺序": ["CPU 修副本与脚本", "获准单卡", "一轮描述训练", "基座/描述模型同题评测", "交付"],
+
+  "D0_D1定义": {
+    "D0": "未经本项目微调的 Qwen/Qwen3.5-9B 原基座",
+    "D1": "从**同一基座**新建语言侧 LoRA，用新描述副本训练",
+    "禁止": "不得从类别 RL 检查点（R0/R1/R2）或 L1440 接着训"
+  },
+
+  "模型": {
+    "路径别名": "/WS/models/Qwen3.5-9B",
+    "模型类型": "qwen3_5",
+    "模板": "qwen3_5",
+    "模板模式": "train（labels 只在 train 模式下由 encode 产出，已实测）",
+    "thinking": "enable_thinking=False（模板默认，已实测）",
+    "IMAGE_MAX_TOKEN_NUM": 256
+  },
+
+  "环境": {
+    "ms_swift": "4.5.3",
+    "torch": "2.6.0+cu124",
+    "transformers": "5.16.1",
+    "peft": "0.20.0",
+    "python": "3.10"
+  },
+
+  "训练": {
+    "脚本": "修正_v2/train_desc_v2.py",
+    "tuner_type": "lora",
+    "target_modules": ["all-linear"],
+    "target_modules_说明": "必须是列表；传字符串会让 freeze_vit/freeze_aligner 静默失效",
+    "freeze_vit": true,
+    "freeze_aligner": true,
+    "视觉侧可训练张量": 0,
+    "lora_rank": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "实测可训练参数": 43278336,
+    "实测可训练张量": 496,
+    "torch_dtype": "bfloat16",
+    "learning_rate": 1e-4,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.05,
+    "max_length": 2048,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 4,
+    "gradient_checkpointing": true,
+    "seed": 3407,
+    "data_seed": 3407,
+    "strict": true,
+    "strict_说明": "编码失败即报错；否则 LazyLLMDataset 会静默换样本顶替（n_try_fetch=10）",
+    "dataset_shuffle": true,
+    "train_dataloader_shuffle": true,
+    "shuffle_理由": "68 条辅助任务集中在文件位置 4–179，不打乱会让任务分布非平稳",
+    "步数": 89,
+    "数据呈现": "356 张各 1 次 = 1 epoch（89 × 4）",
+    "checkpoint选择": "末步预选，不按 val 挑最佳"
+  },
+
+  "运行内门槛": {
+    "时机": "同一正式 run，第 2 步的 loss 日志取得之后（由 on_log 触发，不在 on_step_end 预设日志已存在）",
+    "硬门槛": ["vision 侧完全冻结", "全部可训练张量都是 LoRA", "device_count==1",
+              "已取得第 2 步 loss 日志", "loss 全部有限", "lora_B 权重确有更新",
+              "记录到 2 次优化器 step 的梯度", "存在非零 LoRA 梯度", "梯度只落在 LoRA 上",
+              "视觉模块确被调用（图像前向有效）", "模型参数只在单卡"],
+    "不算硬门槛": ["第 2 步 loss 比第 1 步低 —— 两个不同小批次的 loss 本就无需单调"],
+    "lora_B_说明": "LoRA 的 B 零初始化，第 1 步 dL/dA 经 B 回传为 0；只看 lora_A 会误报「未更新」。硬判定用 lora_B，lora_A 另行如实记录。",
+    "失败处理": "保存 gate_report.json 诊断并**抛 GateFailure 终止**，不再只打印 FAIL 继续",
+    "结束断言": "训练结束后断言门槛**确实执行过且通过**（gate.ran 且无 failed），否则返回非 0，本轮不成立",
+    "loss记录": "全程记录趋势；**不用两步判断收敛**",
+    "插桩": "临时替换 transformers.Trainer.__init__ 存实例、优化器 step 前记录梯度范数、视觉模块挂 forward hook（只读不改行为）"
+  },
+
+  "评测": {
+    "脚本": "修正_v2/eval_desc_v2.py",
+    "题面": "描述评测协议.json 的七字段题面（591 字符，sha256 8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda）",
+    "题面说明": "与训练用的分型题面**不同源**，分类成绩不能套用旧的类别-only 结果",
+    "数据集": "dev18 18 + val90 84 = 102 张",
+    "max_tokens": 256,
+    "temperature": 0.0,
+    "seed": 3407,
+    "重试": "无；不临时扩额",
+    "落盘": "**每条推理完成即写 JSONL 并 flush**；保留原答、解析结果、schema 结果、finish_reason",
+    "两个通过率": "**JSON可解析率 与 七字段合法率 分开计，不可互相替代或混名**",
+    "schema判据": ["七键集合齐全且无多余键", "defect_class 为九类或 unknown 的字符串",
+                  "radial_zone 为六值枚举字符串", "clock_direction 为 string 或 null",
+                  "extent_r 必须是真 JSON null（字符串 \"null\" 不算）",
+                  "morphology / caption_zh / uncertainty 为 string", "空 Caption 另计"],
+    "分类辅助": "从**可解析且类别枚举有效**的 JSON 抽取，**明确不要求七字段齐全**；缺答案按答错计入",
+    "对照": "D0 与 D1 同题同解码",
+    "交付": "dev18 全部 18 张 D0/D1 配对展示，不挑图"
+  },
+
+  "设备": {
+    "要求": "父进程在 Python 启动前按 GPU UUID 设 CUDA_VISIBLE_DEVICES",
+    "断言": ["device_count == 1", "world_size == 1", "保存实际设备映射"],
+    "当前": "两台机器均无获准空闲卡，GPU 部分 not run；不启动 GPU 探针，不常驻占卡",
+    "许可": "他人进程退出后仍须符合学校分配规则；**「真活占卡」不是绕过许可的理由**"
+  },
+
+  "预算": {
+    "累计上限": 360,
+    "累计已用": 312.58,
+    "累计余额": 47.42,
+    "本阶段硬上限": 40,
+    "已包含": "误探预留 4.5 设备分钟",
+    "训练与评测可用": 35.5,
+    "本轮已用": 0,
+    "口径": "按每张卡的占用区间并集；模型加载到释放均入账；失败尝试也计入；预算估计不是实耗也不是严格上界"
+  }
+}
