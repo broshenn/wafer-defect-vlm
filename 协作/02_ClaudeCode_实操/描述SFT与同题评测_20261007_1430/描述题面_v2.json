@@ -1,0 +1,25 @@
+{
+  "说明": "训练题面按行的字段证据分型；评测仍用 描述评测协议.json 的七字段题面。",
+  "题面": {
+    "结构化_无不确定": {
+      "文本": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请**只根据图中实际可见的内容**描述主要缺陷图案。不要推测工艺根因，不要把没有看到的模式写进答案，不要给出未经验证的数值尺寸、比例或覆盖率。\n只输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下六个字段：\n{\"defect_class\":\"九类之一或 unknown\",\"morphology\":\"主要可见形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/none/unknown\",\"clock_direction\":\"可靠识别局部缺陷方向时写简短钟点方向，否则 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述主要形态与位置\"}\ndefect_class 从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个；无法可靠判断时填 \"unknown\"。\n图片上方为 12 点钟，右方为 3 点钟。中央、整圈、全局、正常或不确定时 clock_direction 填 null。extent_r 固定为 null（本轮不提供尺寸依据）。",
+      "字符数": 562,
+      "sha256": "ecc910c757476d45a587fae5fecd7b75d6f5bf743c667a88280b58ea86195c56"
+    },
+    "结构化_含不确定": {
+      "文本": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请**只根据图中实际可见的内容**描述主要缺陷图案。不要推测工艺根因，不要把没有看到的模式写进答案，不要给出未经验证的数值尺寸、比例或覆盖率。\n只输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下七个字段：\n{\"defect_class\":\"九类之一或 unknown\",\"morphology\":\"主要可见形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/none/unknown\",\"clock_direction\":\"可靠识别局部缺陷方向时写简短钟点方向，否则 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述主要形态与位置\",\"uncertainty\":\"不确定之处，无则空字符串\"}\ndefect_class 从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个；无法可靠判断时填 \"unknown\"。\n图片上方为 12 点钟，右方为 3 点钟。中央、整圈、全局、正常或不确定时 clock_direction 填 null。extent_r 固定为 null（本轮不提供尺寸依据）。",
+      "字符数": 591,
+      "sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda"
+    },
+    "类别Caption辅助": {
+      "文本": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请**只根据图中实际可见的内容**描述主要缺陷图案。不要推测工艺根因，不要把没有看到的模式写进答案，不要给出未经验证的数值尺寸、比例或覆盖率。\n只输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下两个字段：\n{\"defect_class\":\"九类之一或 unknown\",\"caption_zh\":\"一句话客观描述主要形态与位置\"}\ndefect_class 从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个；无法可靠判断时填 \"unknown\"。\n",
+      "字符数": 325,
+      "sha256": "044880b1a8d6dcc4e627c10fc97b8e56e27dcdd499ae8deb93cc0a0af349a41e"
+    }
+  },
+  "与实际使用对应": {
+    "结构化_无不确定": 44,
+    "结构化_含不确定": 244,
+    "类别Caption辅助": 68
+  }
+}
