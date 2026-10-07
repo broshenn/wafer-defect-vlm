@@ -1,0 +1,29 @@
+{
+  "A": {
+    "n": 356,
+    "prompt_tok_med": 133,
+    "target_tok_med": 8,
+    "target_tok_max": 9,
+    "target_tok_mean": 7.8,
+    "sup_total_approx": 2767,
+    "prompt_total_approx": 47348
+  },
+  "B": {
+    "n": 356,
+    "prompt_tok_med": 133,
+    "target_tok_med": 37,
+    "target_tok_max": 38,
+    "target_tok_mean": 36.7,
+    "sup_total_approx": 13049,
+    "prompt_total_approx": 47348
+  },
+  "C": {
+    "n": 356,
+    "prompt_tok_med": 133,
+    "target_tok_med": 34,
+    "target_tok_max": 52,
+    "target_tok_mean": 33.9,
+    "sup_total_approx": 12085,
+    "prompt_total_approx": 47348
+  }
+}

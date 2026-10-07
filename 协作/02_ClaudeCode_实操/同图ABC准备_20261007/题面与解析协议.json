@@ -1,0 +1,45 @@
+{
+  "统一题面": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请判断图中**主要缺陷图案**的类别，从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个。\n只输出一个 JSON 对象，不写推理过程或 Markdown。\n`defect_class` 为必填，取值为上述九类之一；无法可靠判断时填 \"unknown\"。\n可以在同一个对象里附加你**从图中实际看到**的判读依据字段；没有把握就不要写。",
+  "题面_sha256": "6f710f5a63ed6f646ea5a16b9d7e1111392b671c2859c8a571c19d6e98c4ae6b",
+  "几何字段定义": {
+    "radial_zone": {
+      "定义": "主要缺陷相对晶圆半径所处区域",
+      "取值": [
+        "center",
+        "middle",
+        "edge",
+        "global",
+        "none",
+        "unknown"
+      ],
+      "来源": "manifest.features.radial_zone",
+      "分母/坐标": "以拟合圆心的归一化半径 r/R 划分；不涉及渲染像素"
+    },
+    "defect_ratio": {
+      "定义": "失效 die 占**晶圆内有效 die** 的比例",
+      "公式": "defect_count / valid_count（不是整个矩阵面积）",
+      "来源": "manifest.features.defect_count / valid_count",
+      "单位": "无量纲，保留 4 位小数"
+    },
+    "extent_r": {
+      "值": null,
+      "原因": "尺寸无可靠 gold，本轮不下发数值"
+    },
+    "clock_direction": {
+      "值": null,
+      "原因": "扇区边界数值敏感，未修复前不下发"
+    }
+  },
+  "解析规则": {
+    "主答案": "只从**唯一** defect_class 字段取类别",
+    "允许": "对象可含附加字段（geometry / caption_zh / morphology / radial_zone 等）",
+    "拒绝": [
+      "重复键",
+      "截断",
+      "多对象",
+      "尾随文本",
+      "非九类且非 unknown 的取值"
+    ],
+    "重要": "**不能**复用「对象只能有一个字段」的旧严格解析器 —— 那会把 C 的附加描述全部判错"
+  }
+}

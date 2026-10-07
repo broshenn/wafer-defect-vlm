@@ -1,0 +1,17 @@
+{
+  "n_sample": 40,
+  "n_total": 356,
+  "image_tokens": 196,
+  "prompt_med": 468,
+  "seq_min": 513,
+  "seq_med": 540,
+  "seq_max": 602,
+  "sup_min": 45,
+  "sup_med": 72,
+  "sup_max": 134,
+  "sup_total_est": 25632,
+  "seq_total_est": 192240,
+  "ratio_vs_class_anchor": 1.688,
+  "方法": "真实 Qwen3.5-9B tokenizer（服务器 CPU）；同一行把 assistant 清空再编码得 prompt 长度，其后即被监督区间",
+  "样验": "第 1 条 prompt 468 + 监督 93 = 561 token，监督段与目标逐字匹配 ✓"
+}

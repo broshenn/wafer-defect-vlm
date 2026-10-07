@@ -1,0 +1,42 @@
+{
+  "题面": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请**只根据图中实际可见的内容**描述主要缺陷图案。不要推测工艺根因，不要把没有看到的模式写进答案，不要给出未经验证的数值尺寸、比例或覆盖率。\n只输出一个 JSON 对象，不写推理过程或 Markdown，必须包含以下七个字段：\n{\"defect_class\":\"九类之一或 unknown\",\"morphology\":\"主要可见形态的简短中文描述\",\"radial_zone\":\"center/middle/edge/global/none/unknown\",\"clock_direction\":\"可靠识别局部缺陷方向时写简短钟点方向，否则 null\",\"extent_r\":null,\"caption_zh\":\"一句话客观描述主要形态与位置\",\"uncertainty\":\"不确定之处，无则空字符串\"}\ndefect_class 从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个；无法可靠判断时填 \"unknown\"。\n图片上方为 12 点钟，右方为 3 点钟。中央、整圈、全局、正常或不确定时 clock_direction 填 null。extent_r 固定为 null（本轮不提供尺寸依据）。",
+  "题面_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "主验收": [
+    "形态/位置/方向的事实一致性",
+    "无依据断言",
+    "空答率",
+    "截断率"
+  ],
+  "分类": "辅助指标（九类 Macro-F1）",
+  "解析": {
+    "字段": [
+      "defect_class",
+      "morphology",
+      "radial_zone",
+      "clock_direction",
+      "extent_r",
+      "caption_zh",
+      "uncertainty"
+    ],
+    "defect_class": "九类之一或 unknown；从 JSON 对象取",
+    "未知位置不硬填": "radial_zone 不在枚举内 → 记 null 并计为缺失",
+    "extent_r": "必须为 null；若模型给出数值 → 计为**无依据数值断言**",
+    "拒绝": [
+      "重复键",
+      "截断",
+      "多对象",
+      "尾随文本"
+    ]
+  },
+  "生成上限": {
+    "max_tokens": 256,
+    "理由": "七字段目标中位约 246 字符，最长约 336；**不能沿分类的 64**，否则必然截断。640 步实测分类目标只需 8-9 token，描述目标要两个数量级。"
+  },
+  "评分口径": {
+    "有独立 gold 的字段": "才参与自动评分",
+    "无独立 gold 的字段": "**只展示输出与模型复核草稿**，不把训练教师文本当唯一评测真值",
+    "自由文本事实性": "未获独立依据 → **列未测**",
+    "训练规则合规分": "**不能**用来证明总体描述正确"
+  },
+  "尺寸": "无可靠 gold，extent_r 固定 null，**不改写为 0**"
+}
