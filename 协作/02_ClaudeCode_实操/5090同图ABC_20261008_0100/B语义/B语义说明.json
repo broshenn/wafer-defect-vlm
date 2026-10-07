@@ -1,0 +1,25 @@
+{
+  "字段改名": {
+    "radial_zone": "filtered_defect_centroid_radial_zone",
+    "defect_ratio": "filtered_defect_die_ratio"
+  },
+  "为什么改": "原 B 的 radial_zone 是**滤孤点后全部红点质心**所处径向区，不是主要缺陷簇的位置；defect_ratio 的分子是**滤后计数**，不是原始红点数。沿用旧名会被读成「主要簇在中心/边缘」，属于把结论说过头。",
+  "滤孤点规则": {
+    "实现": "wafer_vlm.utils.isolated_point_filter",
+    "规则": "3×3 邻域内除自身外无其它失效点（卷积和 ≤ 1）的失效点，改判为合格 die(1)",
+    "代码位置": "code/projects/wafer-defect-vlm/src/wafer_vlm/utils.py:105-112"
+  },
+  "质心与径向区": {
+    "圆心/半径": "对晶圆有效掩膜边界做最小二乘圆拟合 fit_wafer_circle（utils.py:115-134）",
+    "质心": "**滤后**全部失效点的像素质心 centroid_xy_r，按拟合半径归一化的 centroid_radius_r",
+    "径向分区": "_zone(centroid_radius_r)：<0.35 center · <0.72 middle · 其余 edge（utils.py:137-142）",
+    "已核": "356/356 条 B 的 radial_zone 与 _zone(manifest.features.centroid_radius_r) 完全吻合"
+  },
+  "分母": {
+    "defect_ratio": "defect_count(滤后) / max(valid_count,1)，valid_count 为晶圆内有效 die 数",
+    "不是": "整个矩阵面积，也不是 raw_defect_count"
+  },
+  "来源": "data/manifest.jsonl 的 features（status/valid_count/defect_count/centroid_radius_r 等）",
+  "取值不变": "本次只改字段名，数值与类型逐条保持原样；ratio 仍为 JSON 数字",
+  "不能解释为": "「缺陷一定在中心」或「主要簇占比 = 该 ratio」"
+}

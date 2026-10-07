@@ -1,0 +1,43 @@
+{
+  "比对对象": {
+    "A100": "原基座（本项目训练一直用它）",
+    "5090": "hf-mirror 下载的同名仓库"
+  },
+  "结论": "**实际加载的权重/tokenizer/processor 逐字节一致**",
+  "一致文件数": 14,
+  "一致文件": [
+    "README.md",
+    "chat_template.jinja",
+    "config.json",
+    "merges.txt",
+    "model.safetensors-00001-of-00004.safetensors",
+    "model.safetensors-00002-of-00004.safetensors",
+    "model.safetensors-00003-of-00004.safetensors",
+    "model.safetensors-00004-of-00004.safetensors",
+    "model.safetensors.index.json",
+    "preprocessor_config.json",
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "video_preprocessor_config.json",
+    "vocab.json"
+  ],
+  "不符文件": [
+    "LICENSE"
+  ],
+  "不符说明": {
+    "LICENSE": "只是许可文本长度不同（11343 vs 11544 B），不参与加载"
+  },
+  "仅A100有": [
+    "configuration.json"
+  ],
+  "仅A100有说明": "configuration.json 是 ModelScope 包装文件，transformers 不加载",
+  "总字节": {
+    "A100": 19329391941,
+    "5090": 19329392091
+  },
+  "来源": {
+    "5090": "HF_ENDPOINT=https://hf-mirror.com + HF_HUB_DISABLE_XET=1",
+    "revision": "未显式固定 revision（镜像默认 main）；一致性以逐文件 SHA256 为准"
+  },
+  "口径": "镜像与 ModelScope 的**包装附加文件**可以不同；**实际加载内容**未默默变更。"
+}
