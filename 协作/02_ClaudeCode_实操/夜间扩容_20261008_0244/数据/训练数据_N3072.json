@@ -1,0 +1,31 @@
+{
+  "N": 3072,
+  "题面": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请判断图中**主要缺陷图案**的类别，从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个。\n只输出一个 JSON 对象，不写推理过程或 Markdown。\n`defect_class` 为必填，取值为上述九类之一；无法可靠判断时填 \"unknown\"。\n可以在同一个对象里附加你**从图中实际看到**的判读依据字段；没有把握就不要写。",
+  "题面_sha256": "6f710f5a63ed6f646ea5a16b9d7e1111392b671c2859c8a571c19d6e98c4ae6b",
+  "来源": "旧 curated_v2/splits/train.jsonl 的 structured 任务（4292 晶圆，训练划分）",
+  "隔离": "旧train 与当前 val/test/评测102/benchmark 的样本与 lot 交集均为 0（已核）",
+  "字段取舍": {
+    "用": [
+      "defect_class ← 公开 failure_type（ground_truth）",
+      "morphology ← teacher.shape（不在 features 中，是视觉判断）",
+      "caption_zh ← teacher.caption_zh（视觉描述）"
+    ],
+    "不用": [
+      "radial_zone",
+      "clock_direction",
+      "size_r"
+    ],
+    "不用的理由": "实测 4291/4291（100%）与给教师的几何特征逐位相同——teacher 是抄输入不是看图；且 radial_zone 是已知算错的质心定义。"
+  },
+  "D": {
+    "行数": 3072,
+    "本地sha256": "6a518cb0f10afadd81c15ac190f5934ee3bad08844e66f5709960d1c23ce2ee9",
+    "服务器版sha256": "98cbede967d32f3e88712bacb284cf7882e8650e1b79d4bc50a9430e6bb22030"
+  },
+  "L": {
+    "行数": 3072,
+    "本地sha256": "13e5d00b0e81f04f87df949f66599040c51ad9b1f4f2ba67bc9c5a0092e8a3d3",
+    "服务器版sha256": "284e0870fa51d4bff03d36bc2a397da705108c3add0e2efbceaac3ed64a99d6b"
+  },
+  "D_L输入相同": true
+}

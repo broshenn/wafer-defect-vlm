@@ -1,0 +1,20 @@
+{
+  "D": {
+    "行数": 356,
+    "唯一图": 356,
+    "本地sha256": "b49932b1b74c4ba7633f6bcc499191a8c6dae9301a1f259f41d4576dbdcc0b57",
+    "服务器版sha256": "2b6da02e2041af2ed467a49fdad09bda6492f340944ddf0831d4a80edcef4962"
+  },
+  "L": {
+    "行数": 356,
+    "唯一图": 356,
+    "本地sha256": "35311e7dd100a2f689e146757562bdb6b7875bf90a87d1b7047bf8fdfa2063f6",
+    "服务器版sha256": "db83ba601fcad9e8e7ad4571c71d603b44ad064d04ff06898deab233db41ac71"
+  },
+  "题面": "这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。\n请判断图中**主要缺陷图案**的类别，从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个。\n只输出一个 JSON 对象，不写推理过程或 Markdown。\n`defect_class` 为必填，取值为上述九类之一；无法可靠判断时填 \"unknown\"。\n可以在同一个对象里附加你**从图中实际看到**的判读依据字段；没有把握就不要写。",
+  "题面_sha256": "6f710f5a63ed6f646ea5a16b9d7e1111392b671c2859c8a571c19d6e98c4ae6b",
+  "题面_含image_sha256": "a9eddba0bddd1c1cd23c79b8ef6d80745112e98c5ab5ea09be98c4230036b1df",
+  "D_L输入相同": true,
+  "N": 356,
+  "口径": "N=356，低于 1000 门槛；旧 4292 描述在已关机的 AutoDL 实例上、本人无接入资料，未能恢复；按小规模对照执行并如实标注，不冒充扩容。"
+}
