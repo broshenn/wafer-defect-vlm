@@ -21,6 +21,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import functools
 import glob
 import hashlib
 import io
@@ -49,8 +50,17 @@ _ORIG = transformers.Trainer.__init__
 def _patched(self, *a, **kw):
     _ORIG(self, *a, **kw)
     _CAP["trainer"] = self
+    # ms-swift 的 args.callbacks 只接受**字符串名**（内部走 callbacks_map 查表），
+    # 传实例会 KeyError。因此改用 transformers 原生的 add_callback 注册。
+    g = _CAP.get("gate")
+    if g is not None and g not in self.callback_handler.callbacks:
+        self.add_callback(g)
 
 
+# 必须保留原签名：ms-swift 用 inspect.signature(Trainer.__init__) 判断该传
+# processing_class 还是 tokenizer（trainers/mixin.py:124）。不包 wraps 的话签名变成
+# (*a, **kw)，它会退回传 tokenizer，在 transformers 5.x 上直接 TypeError。
+functools.wraps(_ORIG)(_patched)
 transformers.Trainer.__init__ = _patched
 
 
@@ -250,6 +260,7 @@ def main() -> int:
 
     os.makedirs(a.out, exist_ok=True)
     gate = DescGate(a.out)
+    _CAP["gate"] = gate     # 由 Trainer.__init__ 钩子以 add_callback 注册（不是 args.callbacks）
     args = SftArguments(
         model=BASE, model_type=a.model_type, template=a.template_type,
         dataset=a.data, val_dataset=a.data,
@@ -265,7 +276,6 @@ def main() -> int:
         strict=True,          # 编码失败即报错，禁止 LazyLLMDataset 换样本顶替
         logging_steps=1, save_strategy="steps", save_steps=a.steps, save_total_limit=2,
         eval_strategy="no", output_dir=a.out, report_to=[],
-        callbacks=[gate],
     )
     print("\n=== 冻结配置 ===")
     for k in ("learning_rate", "warmup_ratio", "lr_scheduler_type", "max_steps",
