@@ -1,0 +1,18 @@
+{
+  "问题": "B 组的 radial_zone 是**质心**的径向区，不是缺陷所在位置；对称图案的质心落在圆心。",
+  "本项目自己的记录": "archive/local-skeleton/tools/radial_zone_audit.py 开头已写明此缺陷（冻结基准里 Edge_Ring 中位质心半径 0.063、83.7% 落进 center 桶）。",
+  "在本次 356 张上的复算": {
+    "B_radial_zone_分布": {
+      "center": 313,
+      "middle": 39,
+      "edge": 4
+    },
+    "center 占比": 0.8792,
+    "Edge_Ring_全部判 center": "39/39",
+    "Edge_Ring 的 mean_radius_r 中位": 0.9421,
+    "Edge_Ring 的 defect_extent_r 中位": 2.032,
+    "判 edge 的阈值": 0.72
+  },
+  "对 B 组结果的解释力": "B 的辅助字段 88% 塌缩为 center、对 Edge_Ring 100% 标错，几乎没有可用的空间信息，可能因此无助于甚至拖累类别学习。",
+  "边界": "**这是解释，不是已证明的机制。** A/B/C 同时改变了监督内容，本轮无法把「字段误导」与「监督 token 变多」分开；单种子开发集。"
+}
