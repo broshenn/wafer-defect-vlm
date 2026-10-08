@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "[fake] start $$ $(date +%s)"
+if [ -n "${FAKE_SPAWN_CHILD:-}" ]; then
+  ( sleep "${FAKE_SLEEP:-600}"; echo "[fake-child] done" ) &
+  echo "[fake] spawned child $!"
+fi
+sleep "${FAKE_SLEEP:-600}"
+exit "${FAKE_RC:-0}"
