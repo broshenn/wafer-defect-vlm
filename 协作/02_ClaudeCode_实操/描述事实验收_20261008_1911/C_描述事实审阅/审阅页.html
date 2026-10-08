@@ -1,0 +1,261 @@
+<!doctype html><html lang='zh'><meta charset='utf-8'>
+<title>描述事实审阅集（匿名）</title>
+<style>body{font-family:system-ui,sans-serif;max-width:1180px;margin:24px auto;line-height:1.6}img{width:300px;image-rendering:pixelated;border:1px solid #ccc;float:left;margin-right:18px}.blk{clear:both;border-top:2px solid #333;padding:16px 0}.sets{display:flex;gap:14px;flex-wrap:wrap}.s{flex:1;min-width:260px;background:#f7f7f7;border:1px solid #ddd;border-radius:6px;padding:10px}.s h4{margin:0 0 6px}.f{color:#555;font-size:12px}.na{color:#b00}</style>
+<h1>描述事实审阅集（匿名配对）</h1>
+<p><b>本页不显示模型名称、不显示公开类别</b>——它们的对照留在<code>盲号对照_另表.md</code>，<b>审阅时不得作为依据</b>。</p>
+<p>每张图下面有三个答案集（甲/乙/丙），**顺序已按图打乱**。请就每个答案集分别回答六个问题：</p>
+<ol><li>主要形态是否有图像支持？</li><li>位置是否吻合？</li><li>方向是否适用／吻合？（不适用时写「不适用」）</li><li>主要结构是否有遗漏？</li><li>是否有无依据的断言？</li><li>格式约定问题？（如 <code>clock_direction</code> 写成字符串 <code>"null"</code> 而非 JSON null）</li></ol>
+<p>案例属<b>开发审阅</b>，不是新盲测，也不是专家考卷。</p>
+<div class='blk'><h3>图 1　<code>wafer_00045633_013</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00045633_013.png' alt='wafer_00045633_013'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>中心区域有一块红色矩形块状缺陷</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心位置有一块红色矩形缺陷</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>局部团簇状缺陷，主要分布在晶圆中心偏右下方区域，呈不规则块状分布，周围散布少量孤立红点。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>4点钟方向</div><div class='f'>caption_zh</div><div>晶圆中心偏右下方存在局部红色缺陷团簇，周围散布少量孤立红点。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 2　<code>wafer_00036756_010</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00036756_010.png' alt='wafer_00036756_010'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>中心区域红色块状聚集</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心区域存在红色块状聚集缺陷</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在晶圆中心附近，径向分布范围较小，无明显方向性。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在中心附近，无明显方向性。</div></div>
+</div></div>
+<div class='blk'><h3>图 3　<code>wafer_00019331_006</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00019331_006.png' alt='wafer_00019331_006'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>红色缺陷die在全晶圆范围内随机散布，无明确连续图形，局部有聚集</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色缺陷die在全晶圆范围内随机散布，局部有聚集，无明确连续图形</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>环形分布的红色失效区域，中间有绿色间隙</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色失效区域呈环形分布在晶圆中部，中间有绿色区域</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色像素呈不规则块状和条状分布</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红色失效点以不规则块状和条状形态随机分布于晶圆全局区域</div></div>
+</div></div>
+<div class='blk'><h3>图 4　<code>wafer_00045384_019</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00045384_019.png' alt='wafer_00045384_019'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>环形缺陷图案，由红色像素组成，环绕中心区域</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心区域呈现环形红色缺陷图案</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>环形</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆中部存在断续环形分布的红色缺陷，中心区域缺陷较少，边缘也有少量散在缺陷。</div></div>
+</div></div>
+<div class='blk'><h3>图 5　<code>wafer_00047411_016</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00047411_016.png' alt='wafer_00047411_016'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>左侧大面积红色区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆左侧呈现大面积红色失效区域，右侧为绿色合格区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>红绿像素随机交错分布</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红绿像素在晶圆全局范围内随机交错分布</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色缺陷die与绿色正常die在全晶圆范围内随机散布，缺陷比例约46.5%，无明确连续图形</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>全晶圆范围内红色缺陷die与绿色正常die随机混合分布，缺陷比例约46.5%，无明确连续图形</div></div>
+</div></div>
+<div class='blk'><h3>图 6　<code>wafer_00047511_013</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00047511_013.png' alt='wafer_00047511_013'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>底部横向红色条带</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>底部边缘存在横向红色失效区域</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 7　<code>wafer_00019814_014</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00019814_014.png' alt='wafer_00019814_014'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>红色环状缺陷沿晶圆边缘分布</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色环状缺陷沿晶圆边缘分布</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘存在连续红色缺陷环，内部有少量孤立红点</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘有连续红色缺陷环，内部散布少量孤立红点</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>绿色背景上随机分布的红色小方块</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>绿色合格区域中随机散布着红色失效点</div></div>
+</div></div>
+<div class='blk'><h3>图 8　<code>wafer_00011690_007</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00011690_007.png' alt='wafer_00011690_007'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>红色环状轮廓包围绿色区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色环状轮廓包围绿色区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘存在连续红色缺陷环，内部有少量孤立红点</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘有连续红色缺陷环，内部散布少量孤立红点</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>分散的红色像素点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>绿色背景上随机分布着红色像素点</div></div>
+</div></div>
+<div class='blk'><h3>图 9　<code>wafer_00026714_009</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00026714_009.png' alt='wafer_00026714_009'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>6点钟方向</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>底部中央的红色块状区域</div><div class='f'>radial_zone</div><div>bottom</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>底部中央存在红色块状失效区域</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 10　<code>wafer_00022388_005</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00022388_005.png' alt='wafer_00022388_005'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>左上角有一块红色区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>左上角有一块红色失效区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>12</div><div class='f'>caption_zh</div><div>晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 11　<code>wafer_00040406_017</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00040406_017.png' alt='wafer_00040406_017'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>大面积红色区域覆盖整个晶圆</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色区域几乎覆盖整个晶圆，仅有少量绿色合格die分散其中</div></div>
+</div></div>
+<div class='blk'><h3>图 12　<code>wafer_00043050_009</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00043050_009.png' alt='wafer_00043050_009'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>大面积红色区域覆盖左侧及中部，右侧边缘有绿色斑块</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色区域占据绝大部分，右侧边缘分布绿色合格区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆左侧（约9点钟方向）存在大面积连续的红色缺陷区域，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>9点钟方向</div><div class='f'>caption_zh</div><div>晶圆左侧（约9点钟方向）存在大面积连续红色缺陷，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 13　<code>wafer_00045360_022</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00045360_022.png' alt='wafer_00045360_022'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>随机点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆全图随机分布稀疏红色缺陷点，无明确局部聚集或连续图形</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色像素随机散布在绿色背景中，形成斑驳的随机图案</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色像素随机散布在绿色背景中，形成斑驳的随机图案</div></div>
+</div></div>
+<div class='blk'><h3>图 14　<code>wafer_00040378_016</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00040378_016.png' alt='wafer_00040378_016'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>随机点状缺陷，分布广泛且无明确聚集形态</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆内红色缺陷die呈随机散布，覆盖中心至边缘多个区域，绿色正常die占多数。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>红色与绿色像素随机交错分布，形成斑驳图案</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色与绿色像素随机交错分布，形成斑驳图案</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 15　<code>wafer_00019033_001</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00019033_001.png' alt='wafer_00019033_001'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>线状划痕</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>2点钟</div><div class='f'>caption_zh</div><div>晶圆边缘2点钟方向存在一条断续线状划痕，其余区域分布少量孤立红点。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>一条从右上方向左下方延伸的红色裂纹</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>1点钟方向</div><div class='f'>caption_zh</div><div>晶圆边缘有一条明显的红色裂纹</div></div>
+</div></div>
+<div class='blk'><h3>图 16　<code>wafer_00043705_021</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00043705_021.png' alt='wafer_00043705_021'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>稀疏断续线状划痕，主要沿1点钟方向延伸，伴有少量孤立红点</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>1点钟方向</div><div class='f'>caption_zh</div><div>晶圆中部存在一条稀疏、断续的线状划痕，主要指向1点钟方向，并伴有少量随机分布的孤立缺陷点。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>一条垂直的红色短线</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>12点</div><div class='f'>caption_zh</div><div>晶圆中心偏上位置有一条垂直红色短线缺陷</div></div>
+</div></div>
+<div class='blk'><h3>图 17　<code>wafer_00045191_016</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00045191_016.png' alt='wafer_00045191_016'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>分散的红色像素点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红色失效点随机分散分布于整个晶圆区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>无可见缺陷图案</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>无明显缺陷图案，仅有零星红黑像素点</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>绿色背景上分布少量红黑像素点，无集中缺陷</div></div>
+</div></div>
+<div class='blk'><h3>图 18　<code>wafer_00043329_001</code>　<span class='f'>来源 val84每类2图</span></h3>
+<img src='图/wafer_00043329_001.png' alt='wafer_00043329_001'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>无显著缺陷图案，仅有零星红色像素点</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>绿色背景上分布着零星的红色像素点，无明显缺陷形态</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>随机分布的孤立缺陷点，无明显空间模式</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆内随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 19　<code>wafer_00003298_021</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00003298_021.png' alt='wafer_00003298_021'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>绿色背景上随机分布的红色像素点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红色失效点随机散布于整个晶圆区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色环状缺陷包围绿色区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色环状缺陷包围绿色区域</div></div>
+</div></div>
+<div class='blk'><h3>图 20　<code>wafer_00003822_012</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00003822_012.png' alt='wafer_00003822_012'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>红色裂纹贯穿晶圆，呈不规则分支状</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色裂纹从左侧延伸至右侧，贯穿整个晶圆区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>6点钟方向</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色像素呈随机离散分布，无特定几何形状或方向性</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红色失效点随机散布于整个晶圆区域</div></div>
+</div></div>
+<div class='blk'><h3>图 21　<code>wafer_00018023_017</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00018023_017.png' alt='wafer_00018023_017'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>分散的红色像素点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>绿色背景上随机分布着红色像素点</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘存在断续的红色缺陷环，内部有少量孤立红点</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘区域存在断续分布的红色缺陷环，内部有少量孤立红点</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>红色环状缺陷沿晶圆边缘分布</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色环状缺陷沿晶圆边缘分布</div></div>
+</div></div>
+<div class='blk'><h3>图 22　<code>wafer_00029697_025</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00029697_025.png' alt='wafer_00029697_025'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>环形红色失效区域，主要分布在晶圆上半部分及右侧边缘</div><div class='f'>radial_zone</div><div>upper/middle/edge/global/none/unknown</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色失效区域呈环形分布，主要集中在晶圆上半部和右侧</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>红绿像素随机分布，无连续线条或环形结构</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>红绿像素在晶圆全局范围内随机分布，未见明显集中区域或特定形态</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>环形</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>12点</div><div class='f'>caption_zh</div><div>晶圆中部存在断续环形红色缺陷分布，12点钟方向较密集，中心区域缺陷较少。</div></div>
+</div></div>
+<div class='blk'><h3>图 23　<code>wafer_00032899_015</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00032899_015.png' alt='wafer_00032899_015'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>中心区域红色块状缺陷</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心位置存在明显的红色块状失效区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>致密团簇状</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密、连续的团簇状缺陷区域，缺陷点主要聚集在中心附近，向四周辐射密度逐渐降低，无明显方向性。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 24　<code>wafer_00039578_021</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00039578_021.png' alt='wafer_00039578_021'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>中心区域有一个红色方块状缺陷</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心位置有一个红色方块状缺陷</div></div>
+</div></div>
+<div class='blk'><h3>图 25　<code>wafer_00040556_007</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00040556_007.png' alt='wafer_00040556_007'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>随机点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆内红色缺陷die与绿色正常die呈随机散布，缺陷覆盖中心至边缘全半径区域，整体密度较高。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>红绿像素随机交错分布</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红绿像素随机交错分布覆盖整个晶圆区域</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 26　<code>wafer_00041108_014</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00041108_014.png' alt='wafer_00041108_014'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>无可见缺陷图案</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>无明显缺陷图案，仅有零星红色像素点</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>绿色背景上分布着零星的红色像素点，无集中缺陷</div></div>
+</div></div>
+<div class='blk'><h3>图 27　<code>wafer_00042202_013</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00042202_013.png' alt='wafer_00042202_013'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>中心区域呈环形分布的红色失效区，内部包含不规则红色块状结构</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>中心区域呈现环形红色失效图案，内部包含不规则红色块状结构</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>环形</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆中部存在断续环形红色缺陷分布，中心区域缺陷较少，边缘区域缺陷稀疏。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 28　<code>wafer_00042778_024</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00042778_024.png' alt='wafer_00042778_024'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>大面积红色区域覆盖晶圆大部分</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色区域占据晶圆绝大部分，底部边缘有少量绿色区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 29　<code>wafer_00043183_023</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00043183_023.png' alt='wafer_00043183_023'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>大面积红色区域覆盖晶圆大部分，仅边缘和中心有少量绿色像素</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红色区域占据绝大部分晶圆面积，绿色区域呈零星分布</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 30　<code>wafer_00043921_007</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00043921_007.png' alt='wafer_00043921_007'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>无可见缺陷图案</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>无明显缺陷图案，仅有零星红色像素点</div><div class='f'>radial_zone</div><div>none</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>绿色背景上分布着少量红色像素点，无集中缺陷</div></div>
+</div></div>
+<div class='blk'><h3>图 31　<code>wafer_00043980_001</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00043980_001.png' alt='wafer_00043980_001'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>随机点</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆内红色缺陷die呈随机散布，覆盖中心至边缘，无明确连续图形。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>红绿像素随机交错分布</div><div class='f'>radial_zone</div><div>global</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>红绿像素随机交错分布</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 32　<code>wafer_00044300_025</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00044300_025.png' alt='wafer_00044300_025'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>边缘局部红色像素块</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘存在局部红色失效区域</div></div>
+</div></div>
+<div class='blk'><h3>图 33　<code>wafer_00045337_006</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00045337_006.png' alt='wafer_00045337_006'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>左侧边缘有红色块状区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>左侧边缘存在红色失效区域</div></div>
+</div></div>
+<div class='blk'><h3>图 34　<code>wafer_00045589_021</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00045589_021.png' alt='wafer_00045589_021'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>右下象限的红色块状区域</div><div class='f'>radial_zone</div><div>middle</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>右下象限存在红色块状失效区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>团簇状</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>4点钟</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密的红色缺陷团簇，主要分布在4点钟方向附近。</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 35　<code>wafer_00046667_020</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00046667_020.png' alt='wafer_00046667_020'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>边缘局部聚集</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>4点钟</div><div class='f'>caption_zh</div><div>晶圆边缘4点钟方向存在局部红色缺陷聚集，其余区域以绿色正常die为主并散布少量红色缺陷点。</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>右下角红色块状区域</div><div class='f'>radial_zone</div><div>edge</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>右下角存在明显的红色失效区域</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div><span class='na'>None</span></div><div class='f'>radial_zone</div><div><span class='na'>None</span></div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div><span class='na'>None</span></div></div>
+</div></div>
+<div class='blk'><h3>图 36　<code>wafer_00047246_025</code>　<span class='f'>来源 完整dev18</span></h3>
+<img src='图/wafer_00047246_025.png' alt='wafer_00047246_025'>
+<div class='sets'>
+<div class='s'><h4>答案集 甲</h4><div class='f'>morphology</div><div>红色矩形块状区域</div><div class='f'>radial_zone</div><div>upper-middle</div><div class='f'>clock_direction</div><div>null</div><div class='f'>caption_zh</div><div>晶圆上方中部存在一个红色矩形块状失效区域</div></div>
+<div class='s'><h4>答案集 乙</h4><div class='f'>morphology</div><div>中央区域存在不规则聚集的红色像素块</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div><span class='na'>None</span></div><div class='f'>caption_zh</div><div>中央区域可见聚集的红色失效点</div></div>
+<div class='s'><h4>答案集 丙</h4><div class='f'>morphology</div><div>晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。</div><div class='f'>radial_zone</div><div>center</div><div class='f'>clock_direction</div><div>12</div><div class='f'>caption_zh</div><div>晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。</div></div>
+</div></div>
+</html>
