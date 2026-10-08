@@ -17,9 +17,14 @@ echo "=== $TAG 等任意卡**完全**空出 $(date '+%F %T') ===" >> "$L"
 CLAIM=""
 for i in $(seq 1 720); do          # 720 × 30s = 6 小时
   for I in 0 1 2 3 4 5 6 7; do
+    # 先确认 nvidia-smi 本身**成功**：它失败时输出为空，`grep -c` 会得 0，
+    # 看着像「卡是空的」—— 那是会直接导致 OOM 的误判。
+    if ! nvidia-smi -i "$I" --query-gpu=uuid --format=csv,noheader >/dev/null 2>&1; then
+      continue
+    fi
     n=$(nvidia-smi -i "$I" --query-compute-apps=pid --format=csv,noheader 2>/dev/null | grep -c . )
     [ "$n" = "0" ] || continue
-    # 故障卡（UUID 查不到）跳过
+    # 故障卡（UUID 查不到，如 2026-10-08 的 ERR!/ECC 状态）跳过
     UUID=$(nvidia-smi -i "$I" --query-gpu=uuid --format=csv,noheader 2>/dev/null | tr -d ' ')
     case "$UUID" in GPU-*) : ;; *) continue ;; esac
     if mkdir "$R/existence/locks/gpu$I" 2>/dev/null; then
