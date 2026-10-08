@@ -1,0 +1,21 @@
+{
+  "scope": "冻结36图开发回放；不是新盲测，非人工gold，不把功能通过当描述事实通过",
+  "n": 36,
+  "health": {
+    "status": "ready",
+    "model_tag": "D-N3072-3407",
+    "gpu_count": 1,
+    "load_seconds": 9.927884057164192
+  },
+  "http_200": 36,
+  "schema_result_available": 36,
+  "needs_review": 19,
+  "correct_class": 25,
+  "macro_f1_fixed9": 0.6756206756206756,
+  "latency_scope": "同客户端HTTP提交至完整响应；首条单列，全部是实际请求",
+  "first_request_seconds": 3.943434463813901,
+  "p50_seconds_all": 4.17719957139343,
+  "p95_seconds_all": 5.376325212419033,
+  "max_peak_allocated_gib": 17.876939296722412,
+  "morphology_position_direction_fact_accuracy": "本脚本未测，需对真实原图和实际response做逐图模型自查"
+}

@@ -1,0 +1,17 @@
+{
+  "wafer_service.py": "04368d8ffc78017ff1909c7eba680f6d4445104e798c5b4db03c463d927a9c79",
+  "demo.html": "12c99e2945b964f70a21cd35127f4a5a48173774f1a6ce57149ff4a1587a91a5",
+  "replay_selftest.py": "b35eee4e6ca3afb3fc4dbd7af5c66f74a5929fcd5c74ea7c3ac9be173efc0520",
+  "test_cpu_contract.py": "3b99944fbcc707c33c53c8cab2c9d47840006b07a186e5c5596e4b42ecfa6c1d",
+  "prompt_7f.txt": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "schema_check.py": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "样本清单.json": "e662082e77755ead6d4dd76ad4b58be623762e007e8d01ef90f7a472a2cfd64b",
+  "启动包_说明.md": "9aa3d06149d80f3fb2706cfe1440ccc01df98f8e3afa64c16ddf21ba95a9f2b7",
+  "部署报告.md": "6ef8ecc69828ee4392c693e9e330b1ddf8759d5e764029bda50ce917adf067b6",
+  "访问说明.md": "85fedf0dfca778aeb188d8652fc0ec68f380d8c8fb5de68beea13b6042c4c8d5",
+  "简历事实句_部署原型.md": "de24e0bb7994567f238b4d1a4a188caff52622ea76cff286b1f77706cd8feb56",
+  "图/": {
+    "张数": 36,
+    "合并sha256": "997a534eef316d5a820d3782433ca6194731a97cd41a7b8ecffe749851ba34bc"
+  }
+}
