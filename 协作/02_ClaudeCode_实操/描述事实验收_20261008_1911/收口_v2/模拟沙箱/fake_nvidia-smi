@@ -1,0 +1,18 @@
+#!/bin/bash
+# 假 nvidia-smi。必须**正确解析 `-i <卡号>`** —— 早先版本误把 $4 当卡号，
+# 而 $4 其实是 `--format=csv,noheader`，于是所有卡都被当成「有进程占着」。
+IDX=""; prev=""
+for a in "$@"; do [ "$prev" = "-i" ] && IDX="$a"; prev="$a"; done
+case "$*" in
+  *"--query-gpu=uuid"*) echo "GPU-fake-${IDX:-?}"; exit 0 ;;
+esac
+case "$FAKE_SCENARIO" in
+  no_card)          echo "12345, 1024 MiB"; exit 0 ;;
+  query_fail)       exit 1 ;;
+  locked_occupied)  # 全局第 1 次查是空的（卡看着空闲），之后全是有进程
+    k=$(cat "$FAKE_COUNT" 2>/dev/null || echo 0); k=$((k+1)); echo "$k" > "$FAKE_COUNT"
+    if [ "$k" -le 1 ]; then echo ""; else echo "999, 2048 MiB"; fi; exit 0 ;;
+  ok)               # 卡 0 空闲，其余被占
+    [ "$IDX" = "0" ] && echo "" || echo "777, 1024 MiB"; exit 0 ;;
+  *) exit 1 ;;
+esac

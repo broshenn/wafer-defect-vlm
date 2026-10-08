@@ -1,0 +1,378 @@
+{
+  "说明": "描述事实复核材料（只含描述性字段；无类别、无模型名、无标签）",
+  "图数": 12,
+  "条目": [
+    {
+      "图号": 13,
+      "sample_id": "wafer_00045360_022",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00045360_022.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "随机点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆全图随机分布稀疏红色缺陷点，无明确局部聚集或连续图形"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "红色像素随机散布在绿色背景中，形成斑驳的随机图案",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色像素随机散布在绿色背景中，形成斑驳的随机图案"
+        }
+      ]
+    },
+    {
+      "图号": 14,
+      "sample_id": "wafer_00040378_016",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00040378_016.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "随机点状缺陷，分布广泛且无明确聚集形态",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆内红色缺陷die呈随机散布，覆盖中心至边缘多个区域，绿色正常die占多数。"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "红色与绿色像素随机交错分布，形成斑驳图案",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色与绿色像素随机交错分布，形成斑驳图案"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "红色像素呈随机、无规则分布",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点呈随机分布，遍布整个晶圆区域"
+        }
+      ]
+    },
+    {
+      "图号": 15,
+      "sample_id": "wafer_00019033_001",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00019033_001.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "线状划痕",
+          "radial_zone": "edge",
+          "clock_direction": "2点钟",
+          "caption_zh": "晶圆边缘2点钟方向存在一条断续线状划痕，其余区域分布少量孤立红点。"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "一条从右上方向左下方延伸的红色裂纹",
+          "radial_zone": "edge",
+          "clock_direction": "1点钟方向",
+          "caption_zh": "晶圆边缘有一条明显的红色裂纹"
+        }
+      ]
+    },
+    {
+      "图号": 16,
+      "sample_id": "wafer_00043705_021",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00043705_021.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "稀疏断续线状划痕，主要沿1点钟方向延伸，伴有少量孤立红点",
+          "radial_zone": "middle",
+          "clock_direction": "1点钟方向",
+          "caption_zh": "晶圆中部存在一条稀疏、断续的线状划痕，主要指向1点钟方向，并伴有少量随机分布的孤立缺陷点。"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "一条垂直的红色短线",
+          "radial_zone": "center",
+          "clock_direction": "12点",
+          "caption_zh": "晶圆中心偏上位置有一条垂直红色短线缺陷"
+        }
+      ]
+    },
+    {
+      "图号": 17,
+      "sample_id": "wafer_00045191_016",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00045191_016.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机分散分布于整个晶圆区域"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "无可见缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": null,
+          "caption_zh": "晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "无明显缺陷图案，仅有零星红黑像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布少量红黑像素点，无集中缺陷"
+        }
+      ]
+    },
+    {
+      "图号": 18,
+      "sample_id": "wafer_00043329_001",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00043329_001.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "无显著缺陷图案，仅有零星红色像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布着零星的红色像素点，无明显缺陷形态"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "随机分布的孤立缺陷点，无明显空间模式",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆内随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        }
+      ]
+    },
+    {
+      "图号": 19,
+      "sample_id": "wafer_00003298_021",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00003298_021.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "绿色背景上随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "红色环状缺陷包围绿色区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状缺陷包围绿色区域"
+        }
+      ]
+    },
+    {
+      "图号": 20,
+      "sample_id": "wafer_00003822_012",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00003822_012.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "红色裂纹贯穿晶圆，呈不规则分支状",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色裂纹从左侧延伸至右侧，贯穿整个晶圆区域"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。",
+          "radial_zone": "center",
+          "clock_direction": "6点钟方向",
+          "caption_zh": "晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "红色像素呈随机离散分布，无特定几何形状或方向性",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        }
+      ]
+    },
+    {
+      "图号": 21,
+      "sample_id": "wafer_00018023_017",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00018023_017.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色背景上随机分布着红色像素点"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "晶圆边缘存在断续的红色缺陷环，内部有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘区域存在断续分布的红色缺陷环，内部有少量孤立红点"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "红色环状缺陷沿晶圆边缘分布",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状缺陷沿晶圆边缘分布"
+        }
+      ]
+    },
+    {
+      "图号": 22,
+      "sample_id": "wafer_00029697_025",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00029697_025.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "环形红色失效区域，主要分布在晶圆上半部分及右侧边缘",
+          "radial_zone": "upper/middle/edge/global/none/unknown",
+          "clock_direction": "null",
+          "caption_zh": "红色失效区域呈环形分布，主要集中在晶圆上半部和右侧"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "红绿像素随机分布，无连续线条或环形结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红绿像素在晶圆全局范围内随机分布，未见明显集中区域或特定形态"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "环形",
+          "radial_zone": "middle",
+          "clock_direction": "12点",
+          "caption_zh": "晶圆中部存在断续环形红色缺陷分布，12点钟方向较密集，中心区域缺陷较少。"
+        }
+      ]
+    },
+    {
+      "图号": 23,
+      "sample_id": "wafer_00032899_015",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00032899_015.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原严格可解析",
+          "morphology": "中心区域红色块状缺陷",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心位置存在明显的红色块状失效区域"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "致密团簇状",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中心区域存在一个致密、连续的团簇状缺陷区域，缺陷点主要聚集在中心附近，向四周辐射密度逐渐降低，无明显方向性。"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "中心区域存在大面积不规则红色聚集",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "晶圆中心区域存在大面积红色失效聚集"
+        }
+      ]
+    },
+    {
+      "图号": 24,
+      "sample_id": "wafer_00039578_021",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261008_描述事实收口\\审阅副本_v2\\图\\wafer_00039578_021.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "展示口径": "原格式失败；仅展示时剥完整围栏",
+          "morphology": "红色像素呈随机分布的离散点状和块状，无特定几何规律",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        {
+          "盲号": "乙",
+          "展示口径": "原严格可解析",
+          "morphology": "晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。"
+        },
+        {
+          "盲号": "丙",
+          "展示口径": "原严格可解析",
+          "morphology": "中心区域有一个红色方块状缺陷",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心位置有一个红色方块状缺陷"
+        }
+      ]
+    }
+  ]
+}

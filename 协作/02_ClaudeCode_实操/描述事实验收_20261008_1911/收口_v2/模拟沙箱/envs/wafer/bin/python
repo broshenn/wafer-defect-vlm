@@ -1,0 +1,3 @@
+#!/bin/bash
+sleep "${FAKE_PY_SLEEP:-0}"
+exit "${FAKE_PY_RC:-0}"
