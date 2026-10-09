@@ -1,0 +1,384 @@
+{
+  "说明": "两个以上匿名答案集的描述事实复核材料。每项含图号、图片路径与若干答案集；每个答案集只有盲号与四个描述字段。",
+  "枚举口径": "每项六维只接受 SUPPORTED/PARTIAL/CONTRADICTED/UNCERTAIN；方向另填 applicable(true/false/unknown) 与 verdict(含 NO_ANSWER)；判不了填 UNCERTAIN，缺值填 MISSING，**不得默认放行**",
+  "条目": [
+    {
+      "图号": "wafer_00040556_007",
+      "sample_id": "wafer_00040556_007",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00040556_007.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": null,
+          "radial_zone": null,
+          "clock_direction": null,
+          "caption_zh": null
+        },
+        {
+          "盲号": "乙",
+          "morphology": "红绿像素块交错分布，无明显规则排列或连续线状特征",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die（红色）与合格die（绿色）呈像素级混杂分布，覆盖晶圆全域，未见集中环带、径向条带或边缘聚集现象"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "红绿像素在整个晶圆区域内呈高度交错、无明显聚集或方向性的散乱分布",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die（红色）与合格die（绿色）在全晶圆范围内呈现随机散布，未见明显的局部聚集、环状或边缘特征。"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "红色失效die覆盖晶圆绝大部分区域，绿色合格die呈小块散布其中",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效die覆盖晶圆绝大部分，仅少量绿色合格die散布其间。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "红色失效点呈随机离散分布，无特定几何排列",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于晶圆全局区域"
+        },
+        {
+          "盲号": "己",
+          "morphology": "红绿像素随机交错分布",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红绿像素随机交错分布覆盖整个晶圆区域"
+        },
+        {
+          "盲号": "庚",
+          "morphology": null,
+          "radial_zone": null,
+          "clock_direction": null,
+          "caption_zh": null
+        },
+        {
+          "盲号": "辛",
+          "morphology": "随机分布的红色缺陷die，无明确空间聚集或方向性，覆盖整个晶圆区域",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆上随机分布着稀疏的红色缺陷die，无明显空间模式，覆盖整个晶圆区域"
+        }
+      ]
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "sample_id": "wafer_00041108_014",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00041108_014.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": "无显著缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "晶圆表面仅有零星红色点状缺陷，无明显聚集或形态"
+        },
+        {
+          "盲号": "乙",
+          "morphology": "分散的红色方块状点缺陷",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆全局范围内随机分布着大量红色方块状失效点"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "红色失效点呈离散状随机散布于晶圆表面，无明显聚集或特定几何形状。",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆表面呈现全局性的随机分布缺陷图案。"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "红色失效die呈离散点状散布于绿色合格区域中，边缘处有少量局部聚集",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die以随机散点形式分布于整个晶圆表面，边缘区域可见少量相邻失效点。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "随机分布的孤立缺陷点，无明显空间模式",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆上随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性"
+        },
+        {
+          "盲号": "己",
+          "morphology": "孤立红色失效 die 散布全片，右下边缘及左侧边缘各见小簇，无连续线状或环状结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效 die 主要为全片离散分布，右下边缘可见一小簇，未见明确中心团块、整圈环带或划痕。"
+        },
+        {
+          "盲号": "庚",
+          "morphology": "红色失效die零散散布于整个晶圆，无明显聚集、条带或环形结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die以孤立单点形式随机散布在整个晶圆各区域，无可见集中模式"
+        },
+        {
+          "盲号": "辛",
+          "morphology": "离散分布的红色小方块状失效die",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效die以离散小方块形态遍布整个绿色合格区域，无明显聚集或方向性"
+        }
+      ]
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "sample_id": "wafer_00042202_013",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00042202_013.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": "晶圆中心区域存在明显的红色失效die聚集，并向四周呈不规则放射状散布，边缘伴有零星随机失效点",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "晶圆中心呈现显著的红色失效die团簇，同时伴随全图范围内的零星随机失效分布。"
+        },
+        {
+          "盲号": "乙",
+          "morphology": "多个离散的红色块状缺陷，分布不均，集中在晶圆中左区域",
+          "radial_zone": "middle",
+          "clock_direction": "9点钟方向附近较密集",
+          "caption_zh": "红色失效die呈局部块状聚集，主要位于晶圆中左部（约9点钟方向中径区域），其余区域零星分布"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "分散的红色像素点，无连续线条或规则几何形状",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机分布在整个晶圆区域，未见明显聚集或特定方向性"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "中心附近不规则团块状红色失效聚集，周围伴散在红点",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "红色失效 die 主要在晶圆中心附近呈不规则团块聚集，其余区域为散在红点。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "红色失效点呈散乱分布，无明显的几何形状或特定聚集区域。",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆表面呈现全局性的随机散点状缺陷分布。"
+        },
+        {
+          "盲号": "己",
+          "morphology": "环形分布的红色缺陷区域，中心有密集聚集",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心区域呈现环形红色缺陷，内部有密集聚集"
+        },
+        {
+          "盲号": "庚",
+          "morphology": "环形",
+          "radial_zone": "middle",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中部存在断续环形红色缺陷分布，中心区域缺陷较少，边缘有少量孤立红点。"
+        },
+        {
+          "盲号": "辛",
+          "morphology": "晶圆中央区域可见连片红色失效die聚集，周围伴有零散红点分布",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "主要失效集中在晶圆中心附近呈连片聚集，全图另有零散失效点"
+        }
+      ]
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "sample_id": "wafer_00042778_024",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00042778_024.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": "底部边缘局部绿色合格die带，其余区域几乎全为红色失效die",
+          "radial_zone": "edge",
+          "clock_direction": "6点钟方向附近",
+          "caption_zh": "晶圆底部边缘（约6点钟方向）存在一条窄带绿色合格die，其余绝大部分区域为红色失效die"
+        },
+        {
+          "盲号": "乙",
+          "morphology": "晶圆绝大部分die为红色失效，仅底部边缘及左侧边缘可见少量绿色合格die",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "整个晶圆几乎全部失效呈红色，仅底部边缘残存少量绿色die"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "红色失效 die 几乎覆盖整片晶圆，仅底部边缘附近见连续绿色合格区，左侧边缘另有很小绿色块",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效 die 呈近全片分布，合格 die 主要集中在约 6 点钟方向的底部边缘局部区域。"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "晶圆绝大部分区域呈现红色失效，仅在底部边缘及左侧边缘极小局部可见少量绿色合格die",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆几乎全部为红色失效die，仅在底部和左侧边缘有极少量绿色合格die。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。"
+        },
+        {
+          "盲号": "己",
+          "morphology": "晶圆底部边缘出现局部绿色合格区域，其余大部分为红色失效区域",
+          "radial_zone": "edge",
+          "clock_direction": "6点钟方向",
+          "caption_zh": "晶圆主体呈现大面积失效（红色），仅在底部边缘（约6点钟位置）存在局部的合格芯片（绿色）。"
+        },
+        {
+          "盲号": "庚",
+          "morphology": "边缘局部聚集的块状绿色区域",
+          "radial_zone": "edge",
+          "clock_direction": null,
+          "caption_zh": "晶圆边缘（约7点至10点方向）存在明显的局部绿色合格die聚集区"
+        },
+        {
+          "盲号": "辛",
+          "morphology": "大面积红色区域覆盖晶圆大部分",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域占据晶圆绝大部分，仅底部边缘有少量绿色区域"
+        }
+      ]
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "sample_id": "wafer_00043183_023",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00043183_023.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": null,
+          "radial_zone": null,
+          "clock_direction": null,
+          "caption_zh": null
+        },
+        {
+          "盲号": "乙",
+          "morphology": "分散的像素级斑点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点呈随机分散状分布于晶圆全局区域"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "红色失效 die 连成大片并遍布晶圆各径向区域；绿色合格 die 主要残留在左侧、左下和底部边缘，另有少量散在簇。",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效 die 呈大面积连续分布并覆盖晶圆广泛区域，合格 die 主要残留在边缘局部。"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "晶圆绝大部分区域呈现红色失效，仅在中心及边缘零星散布少量绿色合格die",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆整体几乎全为红色失效die，仅中心和边缘局部有极少数绿色合格die散布。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "不连续的局部绿色合格区嵌在红色失效区中，主要沿晶圆边缘呈块状分布",
+          "radial_zone": "edge",
+          "clock_direction": null,
+          "caption_zh": "晶圆边缘区域存在多处不连续的局部合格die（绿色），其余大部分为失效die（红色）"
+        },
+        {
+          "盲号": "己",
+          "morphology": "晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖从中心到边缘的整个径向区域，无明显方向性。",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖从中心到边缘的整个径向区域，无明显方向性。"
+        },
+        {
+          "盲号": "庚",
+          "morphology": "大面积红色区域覆盖晶圆大部分区域，仅中心及边缘有少量绿色区域",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域占据晶圆绝大部分，绿色区域呈分散状分布在中心和边缘"
+        },
+        {
+          "盲号": "辛",
+          "morphology": "晶圆绝大部分die为红色失效，绿色合格die主要残留在边缘一圈及零星散布于中部",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "整圆近全失效呈红色，绿色合格die沿边缘环带分布并在中部零星出现"
+        }
+      ]
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "sample_id": "wafer_00043921_007",
+      "图片": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\部署原型_20261009_0120\\图\\wafer_00043921_007.png",
+      "答案集": [
+        {
+          "盲号": "甲",
+          "morphology": "红色失效 die 呈散在点状和小簇状，遍布晶圆；下部近边缘有相对密集的小簇，但无连续环带或长直线。",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效 die 全局散在分布，下部近边缘的小簇相对显眼，未见明确中心、环状或单一方向图案。"
+        },
+        {
+          "盲号": "乙",
+          "morphology": "离散分布的红色小方块状失效die",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效die以孤立小块形式散布于整个绿色合格区域，无明显聚集或方向性"
+        },
+        {
+          "盲号": "丙",
+          "morphology": "红色失效die以孤立单点及小簇形式零散散布于整个晶圆，无明显聚集或结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die随机散布在全晶圆各区域，无可见集中模式"
+        },
+        {
+          "盲号": "丁",
+          "morphology": "红色失效die呈离散点状及小簇状散布于绿色合格区域内，边缘处亦有零星分布，无明显连续环状或线状结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "失效die以随机散点和小聚集形态分布于晶圆全局区域，未见明显的边缘环或中心集中特征。"
+        },
+        {
+          "盲号": "戊",
+          "morphology": "随机分布的孤立缺陷点，无明显聚集或方向性",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆图显示随机分布的少量孤立缺陷点，覆盖整个径向区域，无明确方向性。"
+        },
+        {
+          "盲号": "己",
+          "morphology": "无显著缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "晶圆表面仅有零星红色小点，无明显缺陷图案"
+        },
+        {
+          "盲号": "庚",
+          "morphology": "分散的红色矩形块状缺陷",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色矩形缺陷随机分散分布于晶圆全局区域"
+        },
+        {
+          "盲号": "辛",
+          "morphology": null,
+          "radial_zone": null,
+          "clock_direction": null,
+          "caption_zh": null
+        }
+      ]
+    }
+  ]
+}

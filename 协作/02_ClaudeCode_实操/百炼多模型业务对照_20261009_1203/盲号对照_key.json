@@ -1,0 +1,506 @@
+[
+  {
+    "sample_id": "wafer_00045633_013",
+    "公开类别": "Center",
+    "盲号对照": {
+      "甲": "L-N3072-3407",
+      "乙": "qwen3.5-397b-a17b",
+      "丙": "GLM-WorkBuddy",
+      "丁": "qwen3.8-max-0902",
+      "戊": "kimi-k3",
+      "己": "qwen3-vl-plus",
+      "庚": "D-N3072-3407",
+      "辛": "Base"
+    }
+  },
+  {
+    "sample_id": "wafer_00036756_010",
+    "公开类别": "Center",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "GLM-WorkBuddy",
+      "丙": "qwen3.8-max-0902",
+      "丁": "qwen3-vl-plus",
+      "戊": "Base",
+      "己": "L-N3072-3407",
+      "庚": "kimi-k3",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00019331_006",
+    "公开类别": "Donut",
+    "盲号对照": {
+      "甲": "kimi-k3",
+      "乙": "qwen3-vl-plus",
+      "丙": "Base",
+      "丁": "D-N3072-3407",
+      "戊": "qwen3.8-max-0902",
+      "己": "L-N3072-3407",
+      "庚": "qwen3.5-397b-a17b",
+      "辛": "GLM-WorkBuddy"
+    }
+  },
+  {
+    "sample_id": "wafer_00045384_019",
+    "公开类别": "Donut",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "Base",
+      "丙": "kimi-k3",
+      "丁": "L-N3072-3407",
+      "戊": "GLM-WorkBuddy",
+      "己": "qwen3-vl-plus",
+      "庚": "qwen3.8-max-0902",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00047411_016",
+    "公开类别": "Edge_Loc",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "kimi-k3",
+      "丙": "qwen3.5-397b-a17b",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "GLM-WorkBuddy",
+      "庚": "qwen3-vl-plus",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00047511_013",
+    "公开类别": "Edge_Loc",
+    "盲号对照": {
+      "甲": "D-N3072-3407",
+      "乙": "qwen3.5-397b-a17b",
+      "丙": "qwen3-vl-plus",
+      "丁": "kimi-k3",
+      "戊": "Base",
+      "己": "GLM-WorkBuddy",
+      "庚": "qwen3.8-max-0902",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00019814_014",
+    "公开类别": "Edge_Ring",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "L-N3072-3407",
+      "丙": "D-N3072-3407",
+      "丁": "kimi-k3",
+      "戊": "qwen3-vl-plus",
+      "己": "GLM-WorkBuddy",
+      "庚": "qwen3.8-max-0902",
+      "辛": "Base"
+    }
+  },
+  {
+    "sample_id": "wafer_00011690_007",
+    "公开类别": "Edge_Ring",
+    "盲号对照": {
+      "甲": "qwen3.8-max-0902",
+      "乙": "kimi-k3",
+      "丙": "qwen3.5-397b-a17b",
+      "丁": "qwen3-vl-plus",
+      "戊": "GLM-WorkBuddy",
+      "己": "L-N3072-3407",
+      "庚": "Base",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00026714_009",
+    "公开类别": "Loc",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "D-N3072-3407",
+      "丙": "Base",
+      "丁": "qwen3-vl-plus",
+      "戊": "kimi-k3",
+      "己": "qwen3.8-max-0902",
+      "庚": "GLM-WorkBuddy",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00022388_005",
+    "公开类别": "Loc",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "qwen3.8-max-0902",
+      "丙": "qwen3-vl-plus",
+      "丁": "L-N3072-3407",
+      "戊": "kimi-k3",
+      "己": "GLM-WorkBuddy",
+      "庚": "Base",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00040406_017",
+    "公开类别": "Near_full",
+    "盲号对照": {
+      "甲": "L-N3072-3407",
+      "乙": "qwen3-vl-plus",
+      "丙": "kimi-k3",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "Base",
+      "庚": "GLM-WorkBuddy",
+      "辛": "qwen3.5-397b-a17b"
+    }
+  },
+  {
+    "sample_id": "wafer_00043050_009",
+    "公开类别": "Near_full",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "qwen3-vl-plus",
+      "丙": "L-N3072-3407",
+      "丁": "kimi-k3",
+      "戊": "GLM-WorkBuddy",
+      "己": "qwen3.8-max-0902",
+      "庚": "qwen3.5-397b-a17b",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00045360_022",
+    "公开类别": "Random",
+    "盲号对照": {
+      "甲": "D-N3072-3407",
+      "乙": "qwen3.5-397b-a17b",
+      "丙": "qwen3.8-max-0902",
+      "丁": "kimi-k3",
+      "戊": "L-N3072-3407",
+      "己": "GLM-WorkBuddy",
+      "庚": "Base",
+      "辛": "qwen3-vl-plus"
+    }
+  },
+  {
+    "sample_id": "wafer_00040378_016",
+    "公开类别": "Random",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "GLM-WorkBuddy",
+      "丙": "D-N3072-3407",
+      "丁": "qwen3.8-max-0902",
+      "戊": "qwen3-vl-plus",
+      "己": "kimi-k3",
+      "庚": "qwen3.5-397b-a17b",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00019033_001",
+    "公开类别": "Scratch",
+    "盲号对照": {
+      "甲": "GLM-WorkBuddy",
+      "乙": "D-N3072-3407",
+      "丙": "Base",
+      "丁": "L-N3072-3407",
+      "戊": "qwen3-vl-plus",
+      "己": "qwen3.5-397b-a17b",
+      "庚": "qwen3.8-max-0902",
+      "辛": "kimi-k3"
+    }
+  },
+  {
+    "sample_id": "wafer_00043705_021",
+    "公开类别": "Scratch",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "qwen3.8-max-0902",
+      "丙": "GLM-WorkBuddy",
+      "丁": "L-N3072-3407",
+      "戊": "D-N3072-3407",
+      "己": "kimi-k3",
+      "庚": "qwen3.5-397b-a17b",
+      "辛": "qwen3-vl-plus"
+    }
+  },
+  {
+    "sample_id": "wafer_00045191_016",
+    "公开类别": "none",
+    "盲号对照": {
+      "甲": "D-N3072-3407",
+      "乙": "kimi-k3",
+      "丙": "Base",
+      "丁": "qwen3.8-max-0902",
+      "戊": "L-N3072-3407",
+      "己": "GLM-WorkBuddy",
+      "庚": "qwen3-vl-plus",
+      "辛": "qwen3.5-397b-a17b"
+    }
+  },
+  {
+    "sample_id": "wafer_00043329_001",
+    "公开类别": "none",
+    "盲号对照": {
+      "甲": "qwen3.8-max-0902",
+      "乙": "kimi-k3",
+      "丙": "qwen3-vl-plus",
+      "丁": "L-N3072-3407",
+      "戊": "Base",
+      "己": "D-N3072-3407",
+      "庚": "qwen3.5-397b-a17b",
+      "辛": "GLM-WorkBuddy"
+    }
+  },
+  {
+    "sample_id": "wafer_00003298_021",
+    "公开类别": "Edge_Ring",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "Base",
+      "丙": "D-N3072-3407",
+      "丁": "qwen3-vl-plus",
+      "戊": "GLM-WorkBuddy",
+      "己": "L-N3072-3407",
+      "庚": "qwen3.8-max-0902",
+      "辛": "kimi-k3"
+    }
+  },
+  {
+    "sample_id": "wafer_00003822_012",
+    "公开类别": "Scratch",
+    "盲号对照": {
+      "甲": "qwen3-vl-plus",
+      "乙": "qwen3.8-max-0902",
+      "丙": "GLM-WorkBuddy",
+      "丁": "Base",
+      "戊": "kimi-k3",
+      "己": "qwen3.5-397b-a17b",
+      "庚": "D-N3072-3407",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00018023_017",
+    "公开类别": "Edge_Ring",
+    "盲号对照": {
+      "甲": "L-N3072-3407",
+      "乙": "D-N3072-3407",
+      "丙": "Base",
+      "丁": "qwen3.8-max-0902",
+      "戊": "qwen3-vl-plus",
+      "己": "qwen3.5-397b-a17b",
+      "庚": "GLM-WorkBuddy",
+      "辛": "kimi-k3"
+    }
+  },
+  {
+    "sample_id": "wafer_00029697_025",
+    "公开类别": "Donut",
+    "盲号对照": {
+      "甲": "qwen3-vl-plus",
+      "乙": "qwen3.5-397b-a17b",
+      "丙": "qwen3.8-max-0902",
+      "丁": "GLM-WorkBuddy",
+      "戊": "Base",
+      "己": "L-N3072-3407",
+      "庚": "kimi-k3",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00032899_015",
+    "公开类别": "Center",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "qwen3.8-max-0902",
+      "丙": "kimi-k3",
+      "丁": "L-N3072-3407",
+      "戊": "qwen3-vl-plus",
+      "己": "GLM-WorkBuddy",
+      "庚": "D-N3072-3407",
+      "辛": "Base"
+    }
+  },
+  {
+    "sample_id": "wafer_00039578_021",
+    "公开类别": "Center",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "qwen3.8-max-0902",
+      "丙": "qwen3-vl-plus",
+      "丁": "Base",
+      "戊": "GLM-WorkBuddy",
+      "己": "D-N3072-3407",
+      "庚": "L-N3072-3407",
+      "辛": "kimi-k3"
+    }
+  },
+  {
+    "sample_id": "wafer_00040556_007",
+    "公开类别": "Random",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "qwen3-vl-plus",
+      "丙": "qwen3.8-max-0902",
+      "丁": "GLM-WorkBuddy",
+      "戊": "Base",
+      "己": "L-N3072-3407",
+      "庚": "kimi-k3",
+      "辛": "D-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00041108_014",
+    "公开类别": "none",
+    "盲号对照": {
+      "甲": "L-N3072-3407",
+      "乙": "Base",
+      "丙": "qwen3.5-397b-a17b",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "kimi-k3",
+      "庚": "GLM-WorkBuddy",
+      "辛": "qwen3-vl-plus"
+    }
+  },
+  {
+    "sample_id": "wafer_00042202_013",
+    "公开类别": "Loc",
+    "盲号对照": {
+      "甲": "qwen3.8-max-0902",
+      "乙": "qwen3-vl-plus",
+      "丙": "Base",
+      "丁": "kimi-k3",
+      "戊": "qwen3.5-397b-a17b",
+      "己": "L-N3072-3407",
+      "庚": "D-N3072-3407",
+      "辛": "GLM-WorkBuddy"
+    }
+  },
+  {
+    "sample_id": "wafer_00042778_024",
+    "公开类别": "Near_full",
+    "盲号对照": {
+      "甲": "qwen3-vl-plus",
+      "乙": "GLM-WorkBuddy",
+      "丙": "kimi-k3",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "qwen3.5-397b-a17b",
+      "庚": "Base",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00043183_023",
+    "公开类别": "Near_full",
+    "盲号对照": {
+      "甲": "qwen3.5-397b-a17b",
+      "乙": "Base",
+      "丙": "kimi-k3",
+      "丁": "qwen3.8-max-0902",
+      "戊": "qwen3-vl-plus",
+      "己": "D-N3072-3407",
+      "庚": "L-N3072-3407",
+      "辛": "GLM-WorkBuddy"
+    }
+  },
+  {
+    "sample_id": "wafer_00043921_007",
+    "公开类别": "none",
+    "盲号对照": {
+      "甲": "kimi-k3",
+      "乙": "qwen3-vl-plus",
+      "丙": "GLM-WorkBuddy",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "L-N3072-3407",
+      "庚": "Base",
+      "辛": "qwen3.5-397b-a17b"
+    }
+  },
+  {
+    "sample_id": "wafer_00043980_001",
+    "公开类别": "Random",
+    "盲号对照": {
+      "甲": "qwen3-vl-plus",
+      "乙": "kimi-k3",
+      "丙": "qwen3.5-397b-a17b",
+      "丁": "qwen3.8-max-0902",
+      "戊": "D-N3072-3407",
+      "己": "Base",
+      "庚": "GLM-WorkBuddy",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00044300_025",
+    "公开类别": "Scratch",
+    "盲号对照": {
+      "甲": "D-N3072-3407",
+      "乙": "Base",
+      "丙": "qwen3.8-max-0902",
+      "丁": "L-N3072-3407",
+      "戊": "GLM-WorkBuddy",
+      "己": "qwen3.5-397b-a17b",
+      "庚": "kimi-k3",
+      "辛": "qwen3-vl-plus"
+    }
+  },
+  {
+    "sample_id": "wafer_00045337_006",
+    "公开类别": "Edge_Loc",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "D-N3072-3407",
+      "丙": "kimi-k3",
+      "丁": "qwen3.8-max-0902",
+      "戊": "GLM-WorkBuddy",
+      "己": "L-N3072-3407",
+      "庚": "qwen3-vl-plus",
+      "辛": "qwen3.5-397b-a17b"
+    }
+  },
+  {
+    "sample_id": "wafer_00045589_021",
+    "公开类别": "Donut",
+    "盲号对照": {
+      "甲": "D-N3072-3407",
+      "乙": "qwen3.5-397b-a17b",
+      "丙": "GLM-WorkBuddy",
+      "丁": "qwen3-vl-plus",
+      "戊": "kimi-k3",
+      "己": "qwen3.8-max-0902",
+      "庚": "Base",
+      "辛": "L-N3072-3407"
+    }
+  },
+  {
+    "sample_id": "wafer_00046667_020",
+    "公开类别": "Edge_Loc",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "D-N3072-3407",
+      "丙": "qwen3.5-397b-a17b",
+      "丁": "L-N3072-3407",
+      "戊": "qwen3.8-max-0902",
+      "己": "qwen3-vl-plus",
+      "庚": "kimi-k3",
+      "辛": "GLM-WorkBuddy"
+    }
+  },
+  {
+    "sample_id": "wafer_00047246_025",
+    "公开类别": "Loc",
+    "盲号对照": {
+      "甲": "Base",
+      "乙": "qwen3.8-max-0902",
+      "丙": "kimi-k3",
+      "丁": "qwen3-vl-plus",
+      "戊": "qwen3.5-397b-a17b",
+      "己": "GLM-WorkBuddy",
+      "庚": "L-N3072-3407",
+      "辛": "D-N3072-3407"
+    }
+  }
+]
