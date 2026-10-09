@@ -1,0 +1,4924 @@
+{
+  "口径": {
+    "真值": "公开 manifest.failure_type (ground_truth)，只在本离线脚本读，未下发模型",
+    "未解析处理": "按类别错误计（不计入任何类别的 TP/FP，只压该图 recall）",
+    "围栏诊断": "统一去掉一层 ```json 围栏后按同一冻结检查器再判，对全部候选实施",
+    "解析器": "schema_check.py（冻结，SHA 7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff）",
+    "种子": 3407,
+    "bootstrap": 10000,
+    "边界": "56 图仅覆盖七类；Near_full/none 缺候选，九类 Macro-F1 以缺类计 0 呈现，不代表九类全面覆盖"
+  },
+  "模型": {
+    "Base": {
+      "N": 56,
+      "缺图": [],
+      "逐图": {
+        "wafer_00012865_003": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.22,
+          "finish": "stop",
+          "raw_sha256前缀": "4796f8acdf22eba6"
+        },
+        "wafer_00032939_024": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.53,
+          "finish": "stop",
+          "raw_sha256前缀": "bee5cccbf272535c"
+        },
+        "wafer_00015807_003": {
+          "真值": "Center",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.05,
+          "finish": "stop",
+          "raw_sha256前缀": "5a18699feee137f6"
+        },
+        "wafer_00006178_006": {
+          "真值": "Center",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.46,
+          "finish": "stop",
+          "raw_sha256前缀": "c3fb1d3172760363"
+        },
+        "wafer_00044359_013": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.45,
+          "finish": "stop",
+          "raw_sha256前缀": "9e8786b646dcc2d0"
+        },
+        "wafer_00036642_025": {
+          "真值": "Center",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.36,
+          "finish": "stop",
+          "raw_sha256前缀": "64f0f89885ade58d"
+        },
+        "wafer_00011313_001": {
+          "真值": "Center",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.21,
+          "finish": "stop",
+          "raw_sha256前缀": "7b7d6f259f50c8f0"
+        },
+        "wafer_00044018_004": {
+          "真值": "Center",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.02,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00017121_002": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.35,
+          "finish": "stop",
+          "raw_sha256前缀": "60272d1285f8010b"
+        },
+        "wafer_00002971_011": {
+          "真值": "Donut",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.27,
+          "finish": "stop",
+          "raw_sha256前缀": "e748a84ac93eea53"
+        },
+        "wafer_00042336_005": {
+          "真值": "Donut",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.03,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00017133_023": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.45,
+          "finish": "stop",
+          "raw_sha256前缀": "b10d0ce97f40e472"
+        },
+        "wafer_00017122_020": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.41,
+          "finish": "stop",
+          "raw_sha256前缀": "4505dc4daf2fd1f3"
+        },
+        "wafer_00005159_018": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.18,
+          "finish": "stop",
+          "raw_sha256前缀": "0f8955afa68a54ea"
+        },
+        "wafer_00001827_002": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.57,
+          "finish": "stop",
+          "raw_sha256前缀": "f48ae3fc1955d1f2"
+        },
+        "wafer_00045598_001": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "78404846e5529a0e"
+        },
+        "wafer_00041172_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.03,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00043677_006": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.32,
+          "finish": "stop",
+          "raw_sha256前缀": "356eb214cab6b3bd"
+        },
+        "wafer_00044911_011": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.07,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00006428_021": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.05,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00043351_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.46,
+          "finish": "stop",
+          "raw_sha256前缀": "671b9fda3760e2b1"
+        },
+        "wafer_00042951_012": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.45,
+          "finish": "stop",
+          "raw_sha256前缀": "ff7e36787191d23e"
+        },
+        "wafer_00042851_008": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.03,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00047101_017": {
+          "真值": "Edge_Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.11,
+          "finish": "stop",
+          "raw_sha256前缀": "b8c390e51192a446"
+        },
+        "wafer_00022480_007": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.07,
+          "finish": "stop",
+          "raw_sha256前缀": "31a252c52dc711ea"
+        },
+        "wafer_00001466_011": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.29,
+          "finish": "stop",
+          "raw_sha256前缀": "f3269ef1bc407e29"
+        },
+        "wafer_00022477_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.03,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00011878_020": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.08,
+          "finish": "stop",
+          "raw_sha256前缀": "7f15ef0f0bc6eac9"
+        },
+        "wafer_00016606_013": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.1,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00022478_015": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.31,
+          "finish": "stop",
+          "raw_sha256前缀": "f184a9564bb9cd38"
+        },
+        "wafer_00016472_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.21,
+          "finish": "stop",
+          "raw_sha256前缀": "0c89b1e8da0d758f"
+        },
+        "wafer_00038058_017": {
+          "真值": "Edge_Ring",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.05,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00003802_016": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.34,
+          "finish": "stop",
+          "raw_sha256前缀": "620ca08d42c7e552"
+        },
+        "wafer_00011982_024": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.65,
+          "finish": "stop",
+          "raw_sha256前缀": "f173328763aa0ef4"
+        },
+        "wafer_00043177_018": {
+          "真值": "Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.44,
+          "finish": "stop",
+          "raw_sha256前缀": "98040cb81d108e35"
+        },
+        "wafer_00011003_015": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.61,
+          "finish": "stop",
+          "raw_sha256前缀": "f40a35fbc94106c2"
+        },
+        "wafer_00040584_010": {
+          "真值": "Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.4,
+          "finish": "stop",
+          "raw_sha256前缀": "7b7d6f259f50c8f0"
+        },
+        "wafer_00044415_001": {
+          "真值": "Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.5,
+          "finish": "stop",
+          "raw_sha256前缀": "196f13cea7b721f0"
+        },
+        "wafer_00042317_025": {
+          "真值": "Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.52,
+          "finish": "stop",
+          "raw_sha256前缀": "196f13cea7b721f0"
+        },
+        "wafer_00017808_022": {
+          "真值": "Loc",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.4,
+          "finish": "stop",
+          "raw_sha256前缀": "f68d863ece667ef8"
+        },
+        "wafer_00008303_005": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.28,
+          "finish": "stop",
+          "raw_sha256前缀": "0ff910615a49e0e7"
+        },
+        "wafer_00007840_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.18,
+          "finish": "stop",
+          "raw_sha256前缀": "f3269ef1bc407e29"
+        },
+        "wafer_00002312_003": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.33,
+          "finish": "stop",
+          "raw_sha256前缀": "7df283c3e90db0b7"
+        },
+        "wafer_00045436_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.24,
+          "finish": "stop",
+          "raw_sha256前缀": "ba99a584cac156fb"
+        },
+        "wafer_00007880_019": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.22,
+          "finish": "stop",
+          "raw_sha256前缀": "c0e4790ac1d40251"
+        },
+        "wafer_00040998_018": {
+          "真值": "Random",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.38,
+          "finish": "stop",
+          "raw_sha256前缀": "c055d4dd5ad5f11e"
+        },
+        "wafer_00046095_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.11,
+          "finish": "stop",
+          "raw_sha256前缀": "a68ffd6e55664aab"
+        },
+        "wafer_00040767_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.25,
+          "finish": "stop",
+          "raw_sha256前缀": "c0e4790ac1d40251"
+        },
+        "wafer_00044629_001": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.16,
+          "finish": "stop",
+          "raw_sha256前缀": "234dc62aa3be6a88"
+        },
+        "wafer_00014289_002": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.18,
+          "finish": "stop",
+          "raw_sha256前缀": "fbba6c3874ca34a1"
+        },
+        "wafer_00044825_004": {
+          "真值": "Scratch",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.36,
+          "finish": "stop",
+          "raw_sha256前缀": "7a9440fbcb8197a4"
+        },
+        "wafer_00045875_025": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.07,
+          "finish": "stop",
+          "raw_sha256前缀": "f66146f0689e1cad"
+        },
+        "wafer_00040578_014": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.38,
+          "finish": "stop",
+          "raw_sha256前缀": "9cb8f3115ecfb80e"
+        },
+        "wafer_00019107_003": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.14,
+          "finish": "stop",
+          "raw_sha256前缀": "e99a7753142d8e64"
+        },
+        "wafer_00043612_019": {
+          "真值": "Scratch",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.05,
+          "finish": "stop",
+          "raw_sha256前缀": "0eed375080e32090"
+        },
+        "wafer_00046212_020": {
+          "真值": "Scratch",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.75,
+          "finish": "stop",
+          "raw_sha256前缀": "8d91fe417341afae"
+        }
+      },
+      "格式": {
+        "严格JSON通过": 56,
+        "schema全合法": 56,
+        "围栏诊断通过": 56,
+        "仅围栏补救成功": 0,
+        "parse_status分布": {
+          "ok": 56
+        },
+        "缺字段计数": {},
+        "约定警告计数": {},
+        "七字段出现计数": {}
+      },
+      "类别": {
+        "N": 56,
+        "严格Acc": 0.2679,
+        "严格MacroF1_七类": 0.2294,
+        "严格每类": {
+          "Center": {
+            "n": 8,
+            "tp": 1,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 2,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 2,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.6667,
+            "recall": 0.25,
+            "f1": 0.3636
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 0,
+            "fp": 1,
+            "fn": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 3,
+            "fp": 8,
+            "fn": 5,
+            "precision": 0.2727,
+            "recall": 0.375,
+            "f1": 0.3158
+          },
+          "Random": {
+            "n": 8,
+            "tp": 7,
+            "fp": 31,
+            "fn": 1,
+            "precision": 0.1842,
+            "recall": 0.875,
+            "f1": 0.3043
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 0,
+            "fp": 0,
+            "fn": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "围栏Acc": 0.2679,
+        "围栏MacroF1_七类": 0.2294,
+        "围栏每类": {
+          "Center": {
+            "n": 8,
+            "tp": 1,
+            "fp": 0,
+            "fn": 7,
+            "precision": 1.0,
+            "recall": 0.125,
+            "f1": 0.2222
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 2,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.25,
+            "f1": 0.4
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 2,
+            "fp": 1,
+            "fn": 6,
+            "precision": 0.6667,
+            "recall": 0.25,
+            "f1": 0.3636
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 0,
+            "fp": 1,
+            "fn": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 3,
+            "fp": 8,
+            "fn": 5,
+            "precision": 0.2727,
+            "recall": 0.375,
+            "f1": 0.3158
+          },
+          "Random": {
+            "n": 8,
+            "tp": 7,
+            "fp": 31,
+            "fn": 1,
+            "precision": 0.1842,
+            "recall": 0.875,
+            "f1": 0.3043
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 0,
+            "fp": 0,
+            "fn": 8,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "九类口径": {
+          "MacroF1": 0.1784,
+          "每类": {
+            "Center": {
+              "n": 8,
+              "tp": 1,
+              "fp": 0,
+              "fn": 7,
+              "precision": 1.0,
+              "recall": 0.125,
+              "f1": 0.2222
+            },
+            "Donut": {
+              "n": 8,
+              "tp": 2,
+              "fp": 0,
+              "fn": 6,
+              "precision": 1.0,
+              "recall": 0.25,
+              "f1": 0.4
+            },
+            "Edge_Loc": {
+              "n": 8,
+              "tp": 2,
+              "fp": 1,
+              "fn": 6,
+              "precision": 0.6667,
+              "recall": 0.25,
+              "f1": 0.3636
+            },
+            "Edge_Ring": {
+              "n": 8,
+              "tp": 0,
+              "fp": 1,
+              "fn": 8,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Loc": {
+              "n": 8,
+              "tp": 3,
+              "fp": 8,
+              "fn": 5,
+              "precision": 0.2727,
+              "recall": 0.375,
+              "f1": 0.3158
+            },
+            "Random": {
+              "n": 8,
+              "tp": 7,
+              "fp": 31,
+              "fn": 1,
+              "precision": 0.1842,
+              "recall": 0.875,
+              "f1": 0.3043
+            },
+            "Scratch": {
+              "n": 8,
+              "tp": 0,
+              "fp": 0,
+              "fn": 8,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "Near_full": {
+              "n": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "none": {
+              "n": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "说明": "固定九类 Macro-F1 把缺席的 Near_full / none 按各自 n=0、F1=0 计入分母；**仅表示本 56 图七类覆盖下的口径**，不构成九类全面覆盖，也不与旧 36 / 84 图的成绩换分母比较。"
+        },
+        "混淆矩阵": {
+          "Center": {
+            "Center": 1,
+            "Edge_Ring": 1,
+            "Loc": 2,
+            "Random": 4
+          },
+          "Donut": {
+            "Donut": 2,
+            "Loc": 4,
+            "Random": 2
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2,
+            "Random": 6
+          },
+          "Edge_Ring": {
+            "Random": 8
+          },
+          "Loc": {
+            "Loc": 3,
+            "Random": 5
+          },
+          "Random": {
+            "Loc": 1,
+            "Random": 7
+          },
+          "Scratch": {
+            "Edge_Loc": 1,
+            "Loc": 1,
+            "Random": 6
+          }
+        },
+        "Acc_bootstrap95": [
+          0.1607,
+          0.3929
+        ],
+        "围栏Acc_bootstrap95": [
+          0.1607,
+          0.3929
+        ]
+      }
+    },
+    "L-N3072-3407": {
+      "N": 56,
+      "缺图": [],
+      "逐图": {
+        "wafer_00012865_003": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.21,
+          "finish": "stop",
+          "raw_sha256前缀": "81421aec2f3ee7dd"
+        },
+        "wafer_00032939_024": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.63,
+          "finish": "stop",
+          "raw_sha256前缀": "b4cd83192d28f095"
+        },
+        "wafer_00015807_003": {
+          "真值": "Center",
+          "严格类别": "Near_full",
+          "围栏类别": "Near_full",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.27,
+          "finish": "stop",
+          "raw_sha256前缀": "9c5712b3fb22e43d"
+        },
+        "wafer_00006178_006": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.46,
+          "finish": "stop",
+          "raw_sha256前缀": "e062ee2c83ba8c32"
+        },
+        "wafer_00044359_013": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.49,
+          "finish": "stop",
+          "raw_sha256前缀": "1c78d76b639dc4fc"
+        },
+        "wafer_00036642_025": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "809cfd0c4e2d56bf"
+        },
+        "wafer_00011313_001": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.51,
+          "finish": "stop",
+          "raw_sha256前缀": "99e954f46b25cbbc"
+        },
+        "wafer_00044018_004": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.47,
+          "finish": "stop",
+          "raw_sha256前缀": "27d45ba962823a04"
+        },
+        "wafer_00017121_002": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.53,
+          "finish": "stop",
+          "raw_sha256前缀": "50479c020748b978"
+        },
+        "wafer_00002971_011": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.56,
+          "finish": "stop",
+          "raw_sha256前缀": "bfe11adb09794d6f"
+        },
+        "wafer_00042336_005": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.23,
+          "finish": "stop",
+          "raw_sha256前缀": "0c3507d9b18886cc"
+        },
+        "wafer_00017133_023": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.93,
+          "finish": "stop",
+          "raw_sha256前缀": "2824ef9c267ca2d1"
+        },
+        "wafer_00017122_020": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.83,
+          "finish": "stop",
+          "raw_sha256前缀": "a06ad7ee453dbffd"
+        },
+        "wafer_00005159_018": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.34,
+          "finish": "stop",
+          "raw_sha256前缀": "c23497a57e934e19"
+        },
+        "wafer_00001827_002": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.31,
+          "finish": "stop",
+          "raw_sha256前缀": "64eda3d13f26c154"
+        },
+        "wafer_00045598_001": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.69,
+          "finish": "stop",
+          "raw_sha256前缀": "e0f6b12373c182f7"
+        },
+        "wafer_00041172_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.71,
+          "finish": "stop",
+          "raw_sha256前缀": "9b49babb182a0cc5"
+        },
+        "wafer_00043677_006": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.55,
+          "finish": "stop",
+          "raw_sha256前缀": "38a9e8fca5f1fafa"
+        },
+        "wafer_00044911_011": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.49,
+          "finish": "stop",
+          "raw_sha256前缀": "16344d67d9f8b423"
+        },
+        "wafer_00006428_021": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.3,
+          "finish": "stop",
+          "raw_sha256前缀": "f99633311cca80d6"
+        },
+        "wafer_00043351_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.38,
+          "finish": "stop",
+          "raw_sha256前缀": "45d5b7e10c24242e"
+        },
+        "wafer_00042951_012": {
+          "真值": "Edge_Loc",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.7,
+          "finish": "stop",
+          "raw_sha256前缀": "fa3f5de75117b426"
+        },
+        "wafer_00042851_008": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.43,
+          "finish": "stop",
+          "raw_sha256前缀": "9c0c26597a8ec6d5"
+        },
+        "wafer_00047101_017": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.75,
+          "finish": "stop",
+          "raw_sha256前缀": "a54c0708015c5994"
+        },
+        "wafer_00022480_007": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.71,
+          "finish": "stop",
+          "raw_sha256前缀": "d7e4e0e7ba0c34a2"
+        },
+        "wafer_00001466_011": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.8,
+          "finish": "stop",
+          "raw_sha256前缀": "d644c18820adcab4"
+        },
+        "wafer_00022477_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.84,
+          "finish": "stop",
+          "raw_sha256前缀": "ead31aa4ab6933e2"
+        },
+        "wafer_00011878_020": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.57,
+          "finish": "stop",
+          "raw_sha256前缀": "ce060bafaefe3427"
+        },
+        "wafer_00016606_013": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.72,
+          "finish": "stop",
+          "raw_sha256前缀": "ead31aa4ab6933e2"
+        },
+        "wafer_00022478_015": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.65,
+          "finish": "stop",
+          "raw_sha256前缀": "ce060bafaefe3427"
+        },
+        "wafer_00016472_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.72,
+          "finish": "stop",
+          "raw_sha256前缀": "ce060bafaefe3427"
+        },
+        "wafer_00038058_017": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "e4469992d7887d9c"
+        },
+        "wafer_00003802_016": {
+          "真值": "Loc",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "3b612be3b161769f"
+        },
+        "wafer_00011982_024": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "41239259d8461431"
+        },
+        "wafer_00043177_018": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.61,
+          "finish": "stop",
+          "raw_sha256前缀": "f899323652da8f0b"
+        },
+        "wafer_00011003_015": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.5,
+          "finish": "stop",
+          "raw_sha256前缀": "6ab6746ae5628259"
+        },
+        "wafer_00040584_010": {
+          "真值": "Loc",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.63,
+          "finish": "stop",
+          "raw_sha256前缀": "9a0350f81135d568"
+        },
+        "wafer_00044415_001": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.72,
+          "finish": "stop",
+          "raw_sha256前缀": "a22199bb6aa18a83"
+        },
+        "wafer_00042317_025": {
+          "真值": "Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.38,
+          "finish": "stop",
+          "raw_sha256前缀": "38a9e8fca5f1fafa"
+        },
+        "wafer_00017808_022": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.58,
+          "finish": "stop",
+          "raw_sha256前缀": "c4142bdc3fadbbc8"
+        },
+        "wafer_00008303_005": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.67,
+          "finish": "stop",
+          "raw_sha256前缀": "6e9e2e2409c8432e"
+        },
+        "wafer_00007840_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.55,
+          "finish": "stop",
+          "raw_sha256前缀": "82c2d10d0130be50"
+        },
+        "wafer_00002312_003": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.64,
+          "finish": "stop",
+          "raw_sha256前缀": "6e9e2e2409c8432e"
+        },
+        "wafer_00045436_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.59,
+          "finish": "stop",
+          "raw_sha256前缀": "b344343dfb6c376e"
+        },
+        "wafer_00007880_019": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.8,
+          "finish": "stop",
+          "raw_sha256前缀": "3083ac699aacc2ba"
+        },
+        "wafer_00040998_018": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.83,
+          "finish": "stop",
+          "raw_sha256前缀": "e08a09d04019a66b"
+        },
+        "wafer_00046095_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.56,
+          "finish": "stop",
+          "raw_sha256前缀": "6e9e2e2409c8432e"
+        },
+        "wafer_00040767_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.64,
+          "finish": "stop",
+          "raw_sha256前缀": "6e9e2e2409c8432e"
+        },
+        "wafer_00044629_001": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.34,
+          "finish": "stop",
+          "raw_sha256前缀": "d356bfa5ff121849"
+        },
+        "wafer_00014289_002": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.61,
+          "finish": "stop",
+          "raw_sha256前缀": "a826411b1f6c7075"
+        },
+        "wafer_00044825_004": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.52,
+          "finish": "stop",
+          "raw_sha256前缀": "f850ca5a45910944"
+        },
+        "wafer_00045875_025": {
+          "真值": "Scratch",
+          "严格类别": null,
+          "围栏类别": null,
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": false,
+          "schema问题": [
+            "radial_zone越界"
+          ],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.43,
+          "finish": "stop",
+          "raw_sha256前缀": "6a83e006ff39d9e3"
+        },
+        "wafer_00040578_014": {
+          "真值": "Scratch",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.47,
+          "finish": "stop",
+          "raw_sha256前缀": "773381e0fe738d91"
+        },
+        "wafer_00019107_003": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.98,
+          "finish": "stop",
+          "raw_sha256前缀": "cb614ac41589c984"
+        },
+        "wafer_00043612_019": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.68,
+          "finish": "stop",
+          "raw_sha256前缀": "a824371d5db65e91"
+        },
+        "wafer_00046212_020": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.74,
+          "finish": "stop",
+          "raw_sha256前缀": "f90228b16bea6a69"
+        }
+      },
+      "格式": {
+        "严格JSON通过": 56,
+        "schema全合法": 55,
+        "围栏诊断通过": 55,
+        "仅围栏补救成功": 0,
+        "parse_status分布": {
+          "ok": 56
+        },
+        "缺字段计数": {},
+        "约定警告计数": {
+          "clock_direction_string_null": 51
+        },
+        "七字段出现计数": {}
+      },
+      "类别": {
+        "N": 56,
+        "严格Acc": 0.8214,
+        "严格MacroF1_七类": 0.8386,
+        "严格每类": {
+          "Center": {
+            "n": 8,
+            "tp": 6,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.8571,
+            "recall": 0.75,
+            "f1": 0.8
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 6,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 7,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1": 0.875
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 5,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.5556,
+            "recall": 0.625,
+            "f1": 0.5882
+          },
+          "Random": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 6,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75
+          }
+        },
+        "围栏Acc": 0.8214,
+        "围栏MacroF1_七类": 0.8386,
+        "围栏每类": {
+          "Center": {
+            "n": 8,
+            "tp": 6,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.8571,
+            "recall": 0.75,
+            "f1": 0.8
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 6,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.75,
+            "f1": 0.8571
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 7,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.875,
+            "recall": 0.875,
+            "f1": 0.875
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 5,
+            "fp": 4,
+            "fn": 3,
+            "precision": 0.5556,
+            "recall": 0.625,
+            "f1": 0.5882
+          },
+          "Random": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 6,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75
+          }
+        },
+        "九类口径": {
+          "MacroF1": 0.6523,
+          "每类": {
+            "Center": {
+              "n": 8,
+              "tp": 6,
+              "fp": 1,
+              "fn": 2,
+              "precision": 0.8571,
+              "recall": 0.75,
+              "f1": 0.8
+            },
+            "Donut": {
+              "n": 8,
+              "tp": 6,
+              "fp": 0,
+              "fn": 2,
+              "precision": 1.0,
+              "recall": 0.75,
+              "f1": 0.8571
+            },
+            "Edge_Loc": {
+              "n": 8,
+              "tp": 7,
+              "fp": 1,
+              "fn": 1,
+              "precision": 0.875,
+              "recall": 0.875,
+              "f1": 0.875
+            },
+            "Edge_Ring": {
+              "n": 8,
+              "tp": 8,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "Loc": {
+              "n": 8,
+              "tp": 5,
+              "fp": 4,
+              "fn": 3,
+              "precision": 0.5556,
+              "recall": 0.625,
+              "f1": 0.5882
+            },
+            "Random": {
+              "n": 8,
+              "tp": 8,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "Scratch": {
+              "n": 8,
+              "tp": 6,
+              "fp": 2,
+              "fn": 2,
+              "precision": 0.75,
+              "recall": 0.75,
+              "f1": 0.75
+            },
+            "Near_full": {
+              "n": 0,
+              "tp": 0,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "none": {
+              "n": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "说明": "固定九类 Macro-F1 把缺席的 Near_full / none 按各自 n=0、F1=0 计入分母；**仅表示本 56 图七类覆盖下的口径**，不构成九类全面覆盖，也不与旧 36 / 84 图的成绩换分母比较。"
+        },
+        "混淆矩阵": {
+          "Center": {
+            "Center": 6,
+            "Loc": 1,
+            "Near_full": 1
+          },
+          "Donut": {
+            "Donut": 6,
+            "Loc": 2
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 7,
+            "Scratch": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 8
+          },
+          "Loc": {
+            "Center": 1,
+            "Edge_Loc": 1,
+            "Loc": 5,
+            "Scratch": 1
+          },
+          "Random": {
+            "Random": 8
+          },
+          "Scratch": {
+            "Loc": 1,
+            "(未解析)": 1,
+            "Scratch": 6
+          }
+        },
+        "Acc_bootstrap95": [
+          0.7143,
+          0.9107
+        ],
+        "围栏Acc_bootstrap95": [
+          0.7143,
+          0.9107
+        ]
+      }
+    },
+    "D-N3072-3407": {
+      "N": 56,
+      "缺图": [],
+      "逐图": {
+        "wafer_00012865_003": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.73,
+          "finish": "stop",
+          "raw_sha256前缀": "1c43bed99d5c18d4"
+        },
+        "wafer_00032939_024": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.34,
+          "finish": "stop",
+          "raw_sha256前缀": "b6e46d3596b60d54"
+        },
+        "wafer_00015807_003": {
+          "真值": "Center",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.27,
+          "finish": "stop",
+          "raw_sha256前缀": "d4776f916172922d"
+        },
+        "wafer_00006178_006": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.55,
+          "finish": "stop",
+          "raw_sha256前缀": "0cc91eafffc32e02"
+        },
+        "wafer_00044359_013": {
+          "真值": "Center",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.53,
+          "finish": "stop",
+          "raw_sha256前缀": "ff3be34922410ec8"
+        },
+        "wafer_00036642_025": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.89,
+          "finish": "stop",
+          "raw_sha256前缀": "5f7f8bd45dbc22b1"
+        },
+        "wafer_00011313_001": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.45,
+          "finish": "stop",
+          "raw_sha256前缀": "91ac02cdcb065e0e"
+        },
+        "wafer_00044018_004": {
+          "真值": "Center",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 5.03,
+          "finish": "stop",
+          "raw_sha256前缀": "e406bcc8d889d389"
+        },
+        "wafer_00017121_002": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.84,
+          "finish": "stop",
+          "raw_sha256前缀": "53eebeaf6fcca049"
+        },
+        "wafer_00002971_011": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.8,
+          "finish": "stop",
+          "raw_sha256前缀": "9fe9790817c61c6b"
+        },
+        "wafer_00042336_005": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.98,
+          "finish": "stop",
+          "raw_sha256前缀": "9d253cd7a8d4a59f"
+        },
+        "wafer_00017133_023": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.77,
+          "finish": "stop",
+          "raw_sha256前缀": "8ab8307ef2a76898"
+        },
+        "wafer_00017122_020": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.67,
+          "finish": "stop",
+          "raw_sha256前缀": "8ab8307ef2a76898"
+        },
+        "wafer_00005159_018": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.66,
+          "finish": "stop",
+          "raw_sha256前缀": "d6f2a54e4683d72a"
+        },
+        "wafer_00001827_002": {
+          "真值": "Donut",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.5,
+          "finish": "stop",
+          "raw_sha256前缀": "1ee3f724d6ad21bc"
+        },
+        "wafer_00045598_001": {
+          "真值": "Donut",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.74,
+          "finish": "stop",
+          "raw_sha256前缀": "e7e9e4ab7a8bba94"
+        },
+        "wafer_00041172_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.85,
+          "finish": "stop",
+          "raw_sha256前缀": "e98990fa72cefffe"
+        },
+        "wafer_00043677_006": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.38,
+          "finish": "stop",
+          "raw_sha256前缀": "2ae370452e7280b4"
+        },
+        "wafer_00044911_011": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 2.96,
+          "finish": "stop",
+          "raw_sha256前缀": "9e031118157754bc"
+        },
+        "wafer_00006428_021": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.34,
+          "finish": "stop",
+          "raw_sha256前缀": "d6d04e7a6b1e2f16"
+        },
+        "wafer_00043351_005": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.17,
+          "finish": "stop",
+          "raw_sha256前缀": "fa51f69e6760218a"
+        },
+        "wafer_00042951_012": {
+          "真值": "Edge_Loc",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.43,
+          "finish": "stop",
+          "raw_sha256前缀": "652c74ebebae4934"
+        },
+        "wafer_00042851_008": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.44,
+          "finish": "stop",
+          "raw_sha256前缀": "d6d04e7a6b1e2f16"
+        },
+        "wafer_00047101_017": {
+          "真值": "Edge_Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.05,
+          "finish": "stop",
+          "raw_sha256前缀": "ec4c040bfd972406"
+        },
+        "wafer_00022480_007": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.17,
+          "finish": "stop",
+          "raw_sha256前缀": "d896291f2aaced48"
+        },
+        "wafer_00001466_011": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.68,
+          "finish": "stop",
+          "raw_sha256前缀": "ec10c4afa398eb63"
+        },
+        "wafer_00022477_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.36,
+          "finish": "stop",
+          "raw_sha256前缀": "901338ec5f981e63"
+        },
+        "wafer_00011878_020": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.38,
+          "finish": "stop",
+          "raw_sha256前缀": "be83d65f334dd638"
+        },
+        "wafer_00016606_013": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.17,
+          "finish": "stop",
+          "raw_sha256前缀": "d896291f2aaced48"
+        },
+        "wafer_00022478_015": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.55,
+          "finish": "stop",
+          "raw_sha256前缀": "2d08a2f8251b06d8"
+        },
+        "wafer_00016472_023": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.4,
+          "finish": "stop",
+          "raw_sha256前缀": "d896291f2aaced48"
+        },
+        "wafer_00038058_017": {
+          "真值": "Edge_Ring",
+          "严格类别": "Edge_Ring",
+          "围栏类别": "Edge_Ring",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.5,
+          "finish": "stop",
+          "raw_sha256前缀": "b5e4d51b3f9d0bee"
+        },
+        "wafer_00003802_016": {
+          "真值": "Loc",
+          "严格类别": "Center",
+          "围栏类别": "Center",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.83,
+          "finish": "stop",
+          "raw_sha256前缀": "ff3be34922410ec8"
+        },
+        "wafer_00011982_024": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.96,
+          "finish": "stop",
+          "raw_sha256前缀": "4c3c4671af45e03f"
+        },
+        "wafer_00043177_018": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 5.04,
+          "finish": "stop",
+          "raw_sha256前缀": "09b5c86900b6e1c5"
+        },
+        "wafer_00011003_015": {
+          "真值": "Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.64,
+          "finish": "stop",
+          "raw_sha256前缀": "e9a83098af0cc1b9"
+        },
+        "wafer_00040584_010": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 5.06,
+          "finish": "stop",
+          "raw_sha256前缀": "6849eaedece919bd"
+        },
+        "wafer_00044415_001": {
+          "真值": "Loc",
+          "严格类别": "Donut",
+          "围栏类别": "Donut",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.43,
+          "finish": "stop",
+          "raw_sha256前缀": "df16d90e26255ca4"
+        },
+        "wafer_00042317_025": {
+          "真值": "Loc",
+          "严格类别": "Edge_Loc",
+          "围栏类别": "Edge_Loc",
+          "严格对": 0,
+          "围栏对": 0,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.3,
+          "finish": "stop",
+          "raw_sha256前缀": "922886c7211fcd4b"
+        },
+        "wafer_00017808_022": {
+          "真值": "Loc",
+          "严格类别": "Loc",
+          "围栏类别": "Loc",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.62,
+          "finish": "stop",
+          "raw_sha256前缀": "a7939b108de76c47"
+        },
+        "wafer_00008303_005": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.64,
+          "finish": "stop",
+          "raw_sha256前缀": "b800b8a4c3cdadaa"
+        },
+        "wafer_00007840_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.96,
+          "finish": "stop",
+          "raw_sha256前缀": "4d9cf370b6cb4385"
+        },
+        "wafer_00002312_003": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.53,
+          "finish": "stop",
+          "raw_sha256前缀": "4fede91cb3664157"
+        },
+        "wafer_00045436_022": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.22,
+          "finish": "stop",
+          "raw_sha256前缀": "a1a7bc14f7d272c1"
+        },
+        "wafer_00007880_019": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [
+            "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+          ],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.66,
+          "finish": "stop",
+          "raw_sha256前缀": "673d1b2b2bf5e76c"
+        },
+        "wafer_00040998_018": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.78,
+          "finish": "stop",
+          "raw_sha256前缀": "d1dc9b7375d34027"
+        },
+        "wafer_00046095_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.32,
+          "finish": "stop",
+          "raw_sha256前缀": "a4a40b0ada84f7fb"
+        },
+        "wafer_00040767_010": {
+          "真值": "Random",
+          "严格类别": "Random",
+          "围栏类别": "Random",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.03,
+          "finish": "stop",
+          "raw_sha256前缀": "d2c3e531bd232eb0"
+        },
+        "wafer_00044629_001": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.58,
+          "finish": "stop",
+          "raw_sha256前缀": "5c9de2ec8cf0a080"
+        },
+        "wafer_00014289_002": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.18,
+          "finish": "stop",
+          "raw_sha256前缀": "9d95890e8b105570"
+        },
+        "wafer_00044825_004": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.38,
+          "finish": "stop",
+          "raw_sha256前缀": "aca718ac431419d7"
+        },
+        "wafer_00045875_025": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.72,
+          "finish": "stop",
+          "raw_sha256前缀": "98a1866e5e549628"
+        },
+        "wafer_00040578_014": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.77,
+          "finish": "stop",
+          "raw_sha256前缀": "d10870cb1c43b790"
+        },
+        "wafer_00019107_003": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.76,
+          "finish": "stop",
+          "raw_sha256前缀": "2d0a9675cc180a98"
+        },
+        "wafer_00043612_019": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 3.85,
+          "finish": "stop",
+          "raw_sha256前缀": "c8882f0f353bef1e"
+        },
+        "wafer_00046212_020": {
+          "真值": "Scratch",
+          "严格类别": "Scratch",
+          "围栏类别": "Scratch",
+          "严格对": 1,
+          "围栏对": 1,
+          "parse_status": "ok",
+          "schema_ok": true,
+          "schema问题": [],
+          "警告": [],
+          "是否输出七字段": [
+            "caption_zh",
+            "clock_direction",
+            "defect_class",
+            "extent_r",
+            "morphology",
+            "radial_zone",
+            "uncertainty"
+          ],
+          "秒": 4.03,
+          "finish": "stop",
+          "raw_sha256前缀": "238b87545f14aa22"
+        }
+      },
+      "格式": {
+        "严格JSON通过": 56,
+        "schema全合法": 56,
+        "围栏诊断通过": 56,
+        "仅围栏补救成功": 0,
+        "parse_status分布": {
+          "ok": 56
+        },
+        "缺字段计数": {},
+        "约定警告计数": {
+          "clock_direction_string_null": 28
+        },
+        "七字段出现计数": {}
+      },
+      "类别": {
+        "N": 56,
+        "严格Acc": 0.7679,
+        "严格MacroF1_七类": 0.7646,
+        "严格每类": {
+          "Center": {
+            "n": 8,
+            "tp": 3,
+            "fp": 1,
+            "fn": 5,
+            "precision": 0.75,
+            "recall": 0.375,
+            "f1": 0.5
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 5,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.7143,
+            "recall": 0.625,
+            "f1": 0.6667
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 7,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.7778,
+            "recall": 0.875,
+            "f1": 0.8235
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 4,
+            "fp": 7,
+            "fn": 4,
+            "precision": 0.3636,
+            "recall": 0.5,
+            "f1": 0.4211
+          },
+          "Random": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 8,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8889,
+            "recall": 1.0,
+            "f1": 0.9412
+          }
+        },
+        "围栏Acc": 0.7679,
+        "围栏MacroF1_七类": 0.7646,
+        "围栏每类": {
+          "Center": {
+            "n": 8,
+            "tp": 3,
+            "fp": 1,
+            "fn": 5,
+            "precision": 0.75,
+            "recall": 0.375,
+            "f1": 0.5
+          },
+          "Donut": {
+            "n": 8,
+            "tp": 5,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.7143,
+            "recall": 0.625,
+            "f1": 0.6667
+          },
+          "Edge_Loc": {
+            "n": 8,
+            "tp": 7,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.7778,
+            "recall": 0.875,
+            "f1": 0.8235
+          },
+          "Edge_Ring": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "n": 8,
+            "tp": 4,
+            "fp": 7,
+            "fn": 4,
+            "precision": 0.3636,
+            "recall": 0.5,
+            "f1": 0.4211
+          },
+          "Random": {
+            "n": 8,
+            "tp": 8,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "n": 8,
+            "tp": 8,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.8889,
+            "recall": 1.0,
+            "f1": 0.9412
+          }
+        },
+        "九类口径": {
+          "MacroF1": 0.5947,
+          "每类": {
+            "Center": {
+              "n": 8,
+              "tp": 3,
+              "fp": 1,
+              "fn": 5,
+              "precision": 0.75,
+              "recall": 0.375,
+              "f1": 0.5
+            },
+            "Donut": {
+              "n": 8,
+              "tp": 5,
+              "fp": 2,
+              "fn": 3,
+              "precision": 0.7143,
+              "recall": 0.625,
+              "f1": 0.6667
+            },
+            "Edge_Loc": {
+              "n": 8,
+              "tp": 7,
+              "fp": 2,
+              "fn": 1,
+              "precision": 0.7778,
+              "recall": 0.875,
+              "f1": 0.8235
+            },
+            "Edge_Ring": {
+              "n": 8,
+              "tp": 8,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "Loc": {
+              "n": 8,
+              "tp": 4,
+              "fp": 7,
+              "fn": 4,
+              "precision": 0.3636,
+              "recall": 0.5,
+              "f1": 0.4211
+            },
+            "Random": {
+              "n": 8,
+              "tp": 8,
+              "fp": 0,
+              "fn": 0,
+              "precision": 1.0,
+              "recall": 1.0,
+              "f1": 1.0
+            },
+            "Scratch": {
+              "n": 8,
+              "tp": 8,
+              "fp": 1,
+              "fn": 0,
+              "precision": 0.8889,
+              "recall": 1.0,
+              "f1": 0.9412
+            },
+            "Near_full": {
+              "n": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            },
+            "none": {
+              "n": 0,
+              "tp": 0,
+              "fp": 0,
+              "fn": 0,
+              "precision": 0.0,
+              "recall": 0.0,
+              "f1": 0.0
+            }
+          },
+          "说明": "固定九类 Macro-F1 把缺席的 Near_full / none 按各自 n=0、F1=0 计入分母；**仅表示本 56 图七类覆盖下的口径**，不构成九类全面覆盖，也不与旧 36 / 84 图的成绩换分母比较。"
+        },
+        "混淆矩阵": {
+          "Center": {
+            "Center": 3,
+            "Donut": 1,
+            "Loc": 4
+          },
+          "Donut": {
+            "Donut": 5,
+            "Loc": 3
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 7,
+            "Scratch": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 8
+          },
+          "Loc": {
+            "Center": 1,
+            "Donut": 1,
+            "Edge_Loc": 2,
+            "Loc": 4
+          },
+          "Random": {
+            "Random": 8
+          },
+          "Scratch": {
+            "Scratch": 8
+          }
+        },
+        "Acc_bootstrap95": [
+          0.6429,
+          0.875
+        ],
+        "围栏Acc_bootstrap95": [
+          0.6429,
+          0.875
+        ]
+      }
+    }
+  },
+  "同图配对差": {
+    "L-N3072-3407 − D-N3072-3407": {
+      "配对N": 56,
+      "均值差(严格Acc)": 0.0536,
+      "bootstrap95": [
+        -0.0536,
+        0.1607
+      ],
+      "同对同错": 7,
+      "同对同对": 40,
+      "x优": 6,
+      "y优": 3
+    },
+    "L-N3072-3407 − Base": {
+      "配对N": 56,
+      "均值差(严格Acc)": 0.5536,
+      "bootstrap95": [
+        0.4107,
+        0.6964
+      ],
+      "同对同错": 8,
+      "同对同对": 13,
+      "x优": 33,
+      "y优": 2
+    },
+    "D-N3072-3407 − Base": {
+      "配对N": 56,
+      "均值差(严格Acc)": 0.5,
+      "bootstrap95": [
+        0.3393,
+        0.6607
+      ],
+      "同对同错": 10,
+      "同对同对": 12,
+      "x优": 31,
+      "y优": 3
+    }
+  }
+}

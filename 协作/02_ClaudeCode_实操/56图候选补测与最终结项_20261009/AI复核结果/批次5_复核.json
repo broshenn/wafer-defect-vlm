@@ -1,0 +1,345 @@
+{
+ "批次": 5,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED；其它合法字符串不加格式分（方向另列）。",
+ "方向规则": "applicable=true：单个偏离中心 ≳0.15R 的局部团块、贴边团块、限于约 120° 以内的弧带；整圈环、全局散点 → false。",
+ "逐条": [
+  {
+   "item_id": "H033",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：中央偏上一块致密红团 + 全片不少散点。回答的中央团成立；「径向分布范围较小」低估了散点的铺开程度。"
+  },
+  {
+   "item_id": "H033",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大面积不规则聚集」——中央团是中等的，「大面积」夸大；周围散点其实不少，非「少量」。"
+  },
+  {
+   "item_id": "H033",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心大面积红色块状缺陷」——同上，「大面积」夸大。"
+  },
+  {
+   "item_id": "H034",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "PARTIAL",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：中央偏右下的大块连通红（约 3–5 点扇区）。回答「右下象限大面积红」成立；但结构化字段 radial_zone 写 edge，而红块主体在中半径，分区不精确。"
+  },
+  {
+   "item_id": "H034",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「5 点钟方向中半径的局部团簇 + 少量孤立点」——与图相符，方位准确。"
+  },
+  {
+   "item_id": "H034",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「右下象限大面积不规则聚集 + 其余少量孤立红点」——与图相符。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H035",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "图：中央偏左下（约 8 点）连片团 + 往左下的延伸。回答方位准确；向下延伸段未提，且主动标注了不确定。"
+  },
+  {
+   "item_id": "H035",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心偏下的大块红」——与图相符；延伸段与其余散点未提。"
+  },
+  {
+   "item_id": "H035",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分布、未见特定聚集」——图中中央偏左下有明显连片团，此说与图相反。"
+  },
+  {
+   "item_id": "H036",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "PARTIAL",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：红带自中央向下到底缘（约 6 点，略偏左）。回答「右下角」——下对、右偏，实际偏中。"
+  },
+  {
+   "item_id": "H036",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「边缘 6 点钟局部致密团簇 + 其余绿底少量红点」——与图相符，方位准确。"
+  },
+  {
+   "item_id": "H036",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「底部中心大面积不规则聚集 + 少量分散点」——与图相符。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H037",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：红点在中右至右下、底中连成带。回答「右下象限块状区域」大致对；「块状」略简，带的全貌与其余散点未提。"
+  },
+  {
+   "item_id": "H037",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散全局」——右下那条明显更密的带未提。"
+  },
+  {
+   "item_id": "H037",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「5 点钟中半径局部团簇 + 其余绿底少量孤立点」——与图相符（带的走向与 5 点方向一致）。"
+  },
+  {
+   "item_id": "H038",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：全片较密散点，其中底中偏右有明显更密的团。回答「随机分散、未见明显聚集」漏了那团。"
+  },
+  {
+   "item_id": "H038",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「右下象限明显块状」——确有该团；但下半片的大范围散点未提。"
+  },
+  {
+   "item_id": "H038",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「断续环形、外围连续」——图是散点 + 一团，没有环状结构；「外围连续」无据（但其不确定声明属实）。"
+  },
+  {
+   "item_id": "H039",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：红点连成横跨上半的断续弧带。回答只写「边缘稀疏断续点」，弧带未述。"
+  },
+  {
+   "item_id": "H039",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散全局」——散点确实多，但上半那条弧带没提。"
+  },
+  {
+   "item_id": "H039",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘存在局部红色失效区域」——过简且没抓住上半弧带。"
+  },
+  {
+   "item_id": "H040",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "图：红点铺满全片，中右略密。回答「3 点钟中半径局部团簇 + 其余绿底少量红点」——方位对；但「其余…少量」低估了全片散点的量。"
+  },
+  {
+   "item_id": "H040",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「右侧中部明显块状缺陷」——那块只是略密，「明显块状」夸大。"
+  },
+  {
+   "item_id": "H040",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机且密集地分布全局」与图相符；中右略密一层未提。"
+  }
+ ]
+}

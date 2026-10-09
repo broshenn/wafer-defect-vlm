@@ -1,0 +1,345 @@
+{
+ "批次": 1,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人亲自跑了这三个模型，知道候选集合；同日先看过原图并写下预读事实（见 图像事实_预读.json），再对匿名编号回答评分。**不是严格盲评，也不冒充独立审判。**",
+ "严重度约定": "格式维：clock_direction 写成字符串 \"null\" 判 CONTRADICTED（与本项目上一轮 8 模型对照同一约定）；JSON null 判 SUPPORTED。",
+ "方向规则": "applicable=true 仅当图中存在**明确的局部定向结构**（线、弧、贴近边缘的团块）且方位可述；中心对称团块、环、近全覆盖、全局散点一律 false。",
+ "逐条": [
+  {
+   "item_id": "H001",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：全局稀疏散点 + 中央偏下一小簇（约 3–4 像素）。回答写「中心致密、连续团簇」——小簇存在但「致密连续」不符，且全片散点未提；clock 写成字符串 null。"
+  },
+  {
+   "item_id": "H001",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心区域红色块状聚集」与中央小簇方向一致但夸大（无块状），全片散点未提。"
+  },
+  {
+   "item_id": "H001",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「不规则聚集的红色像素块，周围散布少量孤立红点」——与图相符；clock 为 JSON null。"
+  },
+  {
+   "item_id": "H002",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "中央致密团块（约 0.4R）与图相符；但「径向分布均匀」无据（团块内部夹绿色碎点），且中环与边缘散点未提。"
+  },
+  {
+   "item_id": "H002",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大面积红色矩形缺陷」——中央大团块成立，但「矩形」是图中没有的几何形状。"
+  },
+  {
+   "item_id": "H002",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大面积不规则红色块状，周围散布少量红点」——与图相符；clock JSON null。"
+  },
+  {
+   "item_id": "H003",
+   "盲号": "甲",
+   "形态": "CONTRADICTED",
+   "位置": "CONTRADICTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：除最外 1–2 圈 die 外几乎全红。回答写「中部环形缺陷带、中心区域基本正常」——图中没有环，中心恰恰是红的，与图直接相反。"
+  },
+  {
+   "item_id": "H003",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大面积红色覆盖中心及大部分区域，边缘保留绿色 die」——与图高度相符（注意其类别写 Near_full，与公开真值 Center 不同，但**描述本身对图是对的**）。"
+  },
+  {
+   "item_id": "H003",
+   "盲号": "丙",
+   "形态": "CONTRADICTED",
+   "位置": "CONTRADICTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「红色失效点呈环形密集分布在晶圆边缘」——图里红色在内部、绿色才在边缘，说反。"
+  },
+  {
+   "item_id": "H004",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「分散红点、随机散布全局」与图相符；但「未见明显聚集」忽略了中央偏左下的可见小团（约 5–6 像素）；clock JSON null。"
+  },
+  {
+   "item_id": "H004",
+   "盲号": "乙",
+   "形态": "CONTRADICTED",
+   "位置": "PARTIAL",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "主图案是全片散点，回答却写「中心致密连续团簇」并完全不提散点；中央小团存在故位置记 PARTIAL。"
+  },
+  {
+   "item_id": "H004",
+   "盲号": "丙",
+   "形态": "CONTRADICTED",
+   "位置": "PARTIAL",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心区域大面积红色块状缺陷」——图中中央只有一个小团，「大面积」无据，且全片散点未提。"
+  },
+  {
+   "item_id": "H005",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "中央致密团块成立；但「径向分布范围较小」低估了实际范围（红块外扩到约 0.6R，外圈还有散红）。"
+  },
+  {
+   "item_id": "H005",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大面积红色圆形」——面积对，「圆形」不成立（团块不规则、内夹绿点）。"
+  },
+  {
+   "item_id": "H005",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心大面积红色失效区，外围环绕不规则绿色合格区」——与图相符；clock JSON null。"
+  },
+  {
+   "item_id": "H006",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "全局散点为主，成立；但「无特定聚集形态」忽略了中央偏左下的可见小簇；clock JSON null。"
+  },
+  {
+   "item_id": "H006",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "中央确有小红簇，但「大面积…明显」夸大了；全片散点未提。"
+  },
+  {
+   "item_id": "H006",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「周围散布少量孤立红点」正确；但「致密、连续」与图中 4–5 像素小簇不符。"
+  },
+  {
+   "item_id": "H007",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「分散红点、全局随机」与图相符（图中小簇极小，不算主结构）；clock JSON null。"
+  },
+  {
+   "item_id": "H007",
+   "盲号": "乙",
+   "形态": "CONTRADICTED",
+   "位置": "CONTRADICTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「中心有一个红色矩形块状缺陷」——图中没有这个结构，属无据断言。"
+  },
+  {
+   "item_id": "H007",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图中有小簇与散点，但小簇在中上而非中心，「致密」也夸大。"
+  },
+  {
+   "item_id": "H008",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "中央小团成立，但主图案是较密的全局散点，回答只写中央团。"
+  },
+  {
+   "item_id": "H008",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "只说中央团簇且称「径向分布范围较小」，而图中红点**较密地铺满全片**——这是对整体图案的重大漏述。"
+  },
+  {
+   "item_id": "H008",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「全局随机分散」与图相符；中央略密的小团未提（轻微）；clock JSON null。"
+  }
+ ]
+}

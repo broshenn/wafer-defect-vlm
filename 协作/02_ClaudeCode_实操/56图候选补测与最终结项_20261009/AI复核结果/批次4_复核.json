@@ -1,0 +1,345 @@
+{
+ "批次": 4,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED。",
+ "方向规则": "本批 8 图均为环状/全片分布，无单一方位可述 → applicable 一律 false。",
+ "逐条": [
+  {
+   "item_id": "H025",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：外圈多段连片红 + 内部稀疏散点。回答相符；惟「连续缺陷环」略强（外圈有绿色缺口）。"
+  },
+  {
+   "item_id": "H025",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「全局随机大量红点」——外圈那条判别性的红环未提。"
+  },
+  {
+   "item_id": "H025",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘一圈红色环状缺陷」——与图相符（内部散点极少，不构成遗漏）。"
+  },
+  {
+   "item_id": "H026",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：外缘大片红**且内部同样密布红点**。回答只写「边缘完整环状」，内部密布被整体漏掉；「完整」也略强。"
+  },
+  {
+   "item_id": "H026",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「内部主要为绿色正常 die、仅少量孤立红点」——与图**直接相反**，内部红点密集。"
+  },
+  {
+   "item_id": "H026",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大量红点随机分布全晶圆」与图相符；外缘更重这一层次未提（次要）。"
+  },
+  {
+   "item_id": "H027",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘断续红环 + 内部少量孤立红点」——与图相符，用词克制。"
+  },
+  {
+   "item_id": "H027",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散全局」——外圈红环未提。"
+  },
+  {
+   "item_id": "H027",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「一圈连续红色环」——环成立，但左侧有明显缺口，「连续」略强。"
+  },
+  {
+   "item_id": "H028",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「红色环沿边缘分布」——与图相符。"
+  },
+  {
+   "item_id": "H028",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散整个晶圆」——外圈红环（几乎整圈）未提。"
+  },
+  {
+   "item_id": "H028",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘连续红环 + 内部少量孤立红点」——与图相符。"
+  },
+  {
+   "item_id": "H029",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘一圈连续红色环」——环成立，左侧有缺口，「连续」略强。"
+  },
+  {
+   "item_id": "H029",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "同甲：环与内部孤立点都对，「连续」略强。"
+  },
+  {
+   "item_id": "H029",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散全局」——上缘与右缘的连片红环未提。"
+  },
+  {
+   "item_id": "H030",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘断续红环 + 内部少量孤立红点」——与图相符。"
+  },
+  {
+   "item_id": "H030",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分布大量红色小方块」——外圈红环未提。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H030",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「红色环形缺陷沿边缘分布」——与图相符。"
+  },
+  {
+   "item_id": "H031",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「红色环沿边缘分布」——与图相符。"
+  },
+  {
+   "item_id": "H031",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘连续红环 + 内部少量孤立红点」——大体相符，「连续」略强（左侧偏绿）。"
+  },
+  {
+   "item_id": "H031",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「绿色区域内随机分布大量红点」——外圈红环未提，且内部其实稀疏，「大量」夸大。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H032",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：红点较均匀铺满全片（含外圈）。回答称「主要位于外环、中心基本正常」——中心附近也有红点，此说偏了；但外圈确有红，且主动标注了不确定。"
+  },
+  {
+   "item_id": "H032",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「红点随机分散全晶圆」与图相符；外缘略重一层未提。"
+  },
+  {
+   "item_id": "H032",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「边缘可见红色环状图案」——边缘有红但不成环，全片散点才是主体。"
+  }
+ ]
+}

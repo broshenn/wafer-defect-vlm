@@ -1,0 +1,40 @@
+{
+ "批次": 3,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED；其它合法字符串不加格式分（方向另列）。",
+ "方向规则": "applicable=true：线状/延伸链、单个偏中心的局部团块、限于约 120° 以内的弧带或贴边团块（方位可述）；整圈环、中心对称、全局散点 → false。",
+ "逐条": [
+  {"item_id": "H017", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "图：右缘 3 点方向一块连通红 + 全片稀疏散点。回答「边缘 3 点钟红色失效区域」位置准确；散点未提（次要但占红像素不小）。"},
+  {"item_id": "H017", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机分散全局」——右缘那块连通红（本图判别性结构）完全未提。"},
+  {"item_id": "H017", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「边缘 3 点钟局部团簇，其余绿底散布少量红点」——与图相符。"},
+
+  {"item_id": "H018", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「边缘局部斑块状聚集」——图中上缘与右上缘确有连片红，表述准确（未指定方位但没说错）。"},
+  {"item_id": "H018", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "PARTIAL"}, "证据": "图：最重的连片红在上缘—右上缘（约 12–2 点）。回答定位 10 点钟，方向有偏；右上缘主弧未提。"},
+  {"item_id": "H018", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「边缘存在局部红色失效区域」——准确但极简；内部散点（数量不少）未提。"},
+
+  {"item_id": "H019", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "图：右缘 3 点一块竖长连通红 + 全片散点。回答「右侧边缘大片红」成立；散点未提。"},
+  {"item_id": "H019", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机分散全局」——右缘大块红未提，属漏掉判别性结构。"},
+  {"item_id": "H019", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「边缘 3 点钟局部连续缺陷带，其余区域少量孤立红点」——与图相符。"},
+
+  {"item_id": "H020", "盲号": "甲", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "图：右下缘（4–5 点）一块连通红。回答写「稀疏断续、无明显特定角度聚集」——与那块连片相抵触。"},
+  {"item_id": "H020", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「右下角红色失效区域」——与图相符（4–5 点）；其余散点未提。"},
+  {"item_id": "H020", "盲号": "丙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机分散全局」——右下缘连片红未提。"},
+
+  {"item_id": "H021", "盲号": "甲", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "图：左下缘（7–8 点）一块连片红 + 全片较广散点。回答「未见特定聚集」与图相反。"},
+  {"item_id": "H021", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「左下角大片红色区域」——与图相符；其余散点未提。"},
+  {"item_id": "H021", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「边缘 8 点钟局部聚集，其余绿底少量红点」——与图相符。"},
+
+  {"item_id": "H022", "盲号": "甲", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "图：上缘一条横向连片红带。回答「顶部横向长条状」——形状描述成立（虽然把它当划痕），全片散点未提。"},
+  {"item_id": "H022", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「边缘及近边缘离散红色」——大致对，但上缘那条连片红被说成「离散」，且未点出它。"},
+  {"item_id": "H022", "盲号": "丙", "形态": "CONTRADICTED", "位置": "CONTRADICTED", "遗漏": "CONTRADICTED", "断言": "CONTRADICTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "PARTIAL"}, "证据": "「中心区域一条断续线状划痕」——图中中心没有线状划痕，红在上缘；方位「12 点」虽与真实结构同向，但描述的结构不存在。"},
+
+  {"item_id": "H023", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "图：红点较密地铺满全片（含外缘），无单一局部结构。回答「全局随机分散」与图相符。"},
+  {"item_id": "H023", "盲号": "乙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「边缘稀疏断续」——外缘确有点，但内部同样密布，说成以边缘为主不准。"},
+  {"item_id": "H023", "盲号": "丙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「边缘存在局部红色缺陷区域」——同样把全片分布说成边缘局部。"},
+
+  {"item_id": "H024", "盲号": "甲", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机分布多个红色方形缺陷」——方形像素块描述成立，但底缘与左缘的聚集（本图主要特征）未提。"},
+  {"item_id": "H024", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「主要分布在边缘，稀疏断续点状」——与图相符（并主动注明难定方向）。"},
+  {"item_id": "H024", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "「左下角和底部边缘块状缺陷」——与图相符；其余散点未提。"}
+ ]
+}

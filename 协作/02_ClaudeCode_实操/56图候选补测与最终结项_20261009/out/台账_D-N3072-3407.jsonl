@@ -1,0 +1,116 @@
+{"ts": 1.29, "tag": "D-N3072-3407", "事件": "环境", "host": "(容器主机名已移除)", "cuda_visible": "GPU-b3899a46-5183-a5ae-d5f4-971a6cbeee55", "device_name": "NVIDIA GeForce RTX 5090", "device_count": 1, "torch": "2.8.0+cu128", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 1.45, "tag": "D-N3072-3407", "事件": "冻结件", "题面": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda", "检查器": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff", "adapter": "babf37ecced78d37f56cc6cdea4d4dd839bce9b8324ef8caf4c7bb7b45fb018b", "N": 56, "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 14.4, "tag": "D-N3072-3407", "事件": "模型加载", "秒": 9.54, "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 14.4, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00012865_003", "序号": "1/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 18.13, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00012865_003", "秒": 3.73, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 18.13, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00032939_024", "序号": "2/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 21.47, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00032939_024", "秒": 3.34, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 21.47, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00015807_003", "序号": "3/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 24.73, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00015807_003", "秒": 3.27, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 24.73, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00006178_006", "序号": "4/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 28.28, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00006178_006", "秒": 3.55, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 28.28, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044359_013", "序号": "5/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 31.81, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044359_013", "秒": 3.53, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 31.81, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00036642_025", "序号": "6/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 35.7, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00036642_025", "秒": 3.89, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 35.7, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00011313_001", "序号": "7/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 39.15, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00011313_001", "秒": 3.45, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 39.15, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044018_004", "序号": "8/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 44.17, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044018_004", "秒": 5.03, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 44.17, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00017121_002", "序号": "9/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 49.01, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00017121_002", "秒": 4.84, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 49.01, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00002971_011", "序号": "10/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 52.81, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00002971_011", "秒": 3.8, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 52.81, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00042336_005", "序号": "11/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 55.8, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00042336_005", "秒": 2.98, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 55.8, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00017133_023", "序号": "12/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 59.56, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00017133_023", "秒": 3.77, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 59.56, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00017122_020", "序号": "13/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 63.24, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00017122_020", "秒": 3.67, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 63.24, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00005159_018", "序号": "14/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 65.9, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00005159_018", "秒": 2.66, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 65.9, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00001827_002", "序号": "15/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 69.4, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00001827_002", "秒": 3.5, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 69.4, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00045598_001", "序号": "16/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 73.14, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00045598_001", "秒": 3.74, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 73.14, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00041172_005", "序号": "17/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 76.99, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00041172_005", "秒": 3.85, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 76.99, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00043677_006", "序号": "18/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 81.37, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00043677_006", "秒": 4.38, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 81.37, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044911_011", "序号": "19/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 84.33, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044911_011", "秒": 2.96, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 84.33, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00006428_021", "序号": "20/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 87.67, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00006428_021", "秒": 3.34, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 87.67, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00043351_005", "序号": "21/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 90.84, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00043351_005", "秒": 3.17, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 90.84, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00042951_012", "序号": "22/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 95.27, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00042951_012", "秒": 4.43, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 95.28, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00042851_008", "序号": "23/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 98.72, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00042851_008", "秒": 3.44, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 98.72, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00047101_017", "序号": "24/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 102.76, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00047101_017", "秒": 4.05, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 102.76, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00022480_007", "序号": "25/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 105.93, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00022480_007", "秒": 3.17, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 105.93, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00001466_011", "序号": "26/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 109.61, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00001466_011", "秒": 3.68, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 109.61, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00022477_023", "序号": "27/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 112.96, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00022477_023", "秒": 3.36, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 112.96, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00011878_020", "序号": "28/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 116.35, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00011878_020", "秒": 3.38, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 116.35, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00016606_013", "序号": "29/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 119.51, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00016606_013", "秒": 3.17, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 119.51, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00022478_015", "序号": "30/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 123.06, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00022478_015", "秒": 3.55, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 123.06, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00016472_023", "序号": "31/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 126.46, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00016472_023", "秒": 3.4, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 126.46, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00038058_017", "序号": "32/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 130.96, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00038058_017", "秒": 4.5, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 130.96, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00003802_016", "序号": "33/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 134.79, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00003802_016", "秒": 3.83, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 134.79, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00011982_024", "序号": "34/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 138.75, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00011982_024", "秒": 3.96, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 138.75, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00043177_018", "序号": "35/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 143.8, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00043177_018", "秒": 5.04, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 143.8, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00011003_015", "序号": "36/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 148.44, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00011003_015", "秒": 4.64, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 148.44, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00040584_010", "序号": "37/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 153.5, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00040584_010", "秒": 5.06, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 153.5, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044415_001", "序号": "38/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 157.93, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044415_001", "秒": 4.43, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 157.93, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00042317_025", "序号": "39/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 162.23, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00042317_025", "秒": 4.3, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 162.23, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00017808_022", "序号": "40/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 166.85, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00017808_022", "秒": 4.62, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 166.85, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00008303_005", "序号": "41/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 170.49, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00008303_005", "秒": 3.64, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 170.49, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00007840_022", "序号": "42/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 175.45, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00007840_022", "秒": 4.96, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 175.45, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00002312_003", "序号": "43/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 178.98, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00002312_003", "秒": 3.53, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 178.98, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00045436_022", "序号": "44/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 183.2, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00045436_022", "秒": 4.22, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 183.2, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00007880_019", "序号": "45/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 187.87, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00007880_019", "秒": 4.66, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 187.87, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00040998_018", "序号": "46/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 192.64, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00040998_018", "秒": 4.78, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 192.64, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00046095_010", "序号": "47/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 195.96, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00046095_010", "秒": 3.32, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 195.96, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00040767_010", "序号": "48/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 199.99, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00040767_010", "秒": 4.03, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 199.99, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044629_001", "序号": "49/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 204.58, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044629_001", "秒": 4.58, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 204.58, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00014289_002", "序号": "50/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 208.75, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00014289_002", "秒": 4.18, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 208.76, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00044825_004", "序号": "51/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 213.13, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00044825_004", "秒": 4.38, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 213.13, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00045875_025", "序号": "52/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 217.85, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00045875_025", "秒": 4.72, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 217.85, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00040578_014", "序号": "53/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 222.63, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00040578_014", "秒": 4.77, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 222.63, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00019107_003", "序号": "54/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 227.39, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00019107_003", "秒": 4.76, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 227.39, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00043612_019", "序号": "55/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 231.24, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00043612_019", "秒": 3.85, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 231.24, "tag": "D-N3072-3407", "事件": "started", "sample_id": "wafer_00046212_020", "序号": "56/56", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 235.27, "tag": "D-N3072-3407", "事件": "done", "sample_id": "wafer_00046212_020", "秒": 4.03, "finish": "stop", "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}
+{"ts": 235.27, "tag": "D-N3072-3407", "事件": "结束", "成功": 56, "失败": 0, "加载秒": 9.54, "推理秒": 220.87, "总秒": 235.27, "base_model": "Qwen/Qwen3.5-9B（公开模型 id；运行实例上的绝对路径已按项目脱敏约定移除）"}

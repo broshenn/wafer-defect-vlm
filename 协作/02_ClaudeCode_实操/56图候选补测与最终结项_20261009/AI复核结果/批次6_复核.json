@@ -1,0 +1,40 @@
+{
+ "批次": 6,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED；其它合法字符串不加格式分（方向另列）。",
+ "方向规则": "本批以全局散点为主；仅 H045 有偏中心的大团（applicable=true），其余 false。",
+ "逐条": [
+  {"item_id": "H041", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "图：红绿交错的全片密布，**上半明显更红**。回答的「随机交错覆盖全片」成立；上下半的密度差未提。"},
+  {"item_id": "H041", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「全片随机大量、无局部聚集」成立；上下半密度差未提，但主动标注了密度难量化。"},
+  {"item_id": "H041", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「随机分布、无特定集中区域」成立；同样未提上半偏重。"},
+
+  {"item_id": "H042", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "图：较密的红点铺满全片。回答写「**稀疏**的红色缺陷die」——密度描述与图不符（明显偏密）。"},
+  {"item_id": "H042", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「大量分散红点、无特定排列」——与图相符。"},
+  {"item_id": "H042", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「红色方块随机散布于绿色背景」——与图相符。"},
+
+  {"item_id": "H043", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「全片细小颗粒状随机分布」——与本图（极密细碎）相符。"},
+  {"item_id": "H043", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「全片随机大量、无局部聚集」与图相符（并如实标注密度难量化）。"},
+  {"item_id": "H043", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「红绿像素随机交错覆盖全片」——与图相符。"},
+
+  {"item_id": "H044", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「随机分布覆盖全片」成立；但写「**稀疏**」，与图中密度不符。"},
+  {"item_id": "H044", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「随机离散散布全晶圆」——与图相符。"},
+  {"item_id": "H044", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「红绿像素随机交错分布」——与图相符。"},
+
+  {"item_id": "H045", "盲号": "甲", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "图：中央偏右—底中一大片明显更密的红，左上大片绿。回答「斑驳随机混合」把这块主导性聚集整个漏掉。"},
+  {"item_id": "H045", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「稀疏、无明显聚集」——与图中偏右的密集红区相反（虽自注了不确定性）。"},
+  {"item_id": "H045", "盲号": "丙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机离散、无特定几何排列」——偏右密集区未提。"},
+
+  {"item_id": "H046", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "图：中央大片不规则红聚集、四周散点。回答与本图相符（也解释了为什么它被答成 Loc）。"},
+  {"item_id": "H046", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「斑驳随机交错」——中央那块大的聚集是主结构，未述。"},
+  {"item_id": "H046", "盲号": "丙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「稀疏、遍布各径向区域」——中央主聚集未述，「稀疏」也不符。"},
+
+  {"item_id": "H047", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「红绿随机交错覆盖全片」——与图相符。"},
+  {"item_id": "H047", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「全片随机大量、无局部聚集」与图相符。"},
+  {"item_id": "H047", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「随机分布、遍布全晶圆」——与图相符。"},
+
+  {"item_id": "H048", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「红绿随机交错覆盖全片」——与图相符。"},
+  {"item_id": "H048", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "分布描述与图相符；「稀疏」与中高密度不符。"},
+  {"item_id": "H048", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「随机离散散布全局」——与图相符。"}
+ ]
+}

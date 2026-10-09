@@ -1,0 +1,40 @@
+{
+ "批次": 2,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED；其它合法字符串不加格式分（方向另列）。",
+ "方向规则": "applicable=true：线状/延伸链、单个偏中心的局部团块、或**限于约 120° 以内**的弧带（方位可述）；整圈/大半圈的环、中心对称图案、全局散点 → false。",
+ "逐条": [
+  {"item_id": "H009", "盲号": "甲", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "PARTIAL"}, "证据": "图：红链自左上经顶到右中（约 2–4 点）的一段弧带。回答只写「2 点钟方向局部团簇」，方向大致对（弧带最重处确在 2–4 点）但漏掉左上/顶部延伸段。clock 为合法字符串。"},
+  {"item_id": "H009", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「中部偏上大面积红色块状」——位置对，但「大面积」夸大（弧带是断续的），右侧延伸段未提；clock 字符串 null。"},
+  {"item_id": "H009", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「中部不规则团块聚集 + 少量分散点」与图相符；弧带向右上的延伸未展开。"},
+
+  {"item_id": "H010", "盲号": "甲", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "PARTIAL"}, "证据": "图：中央偏左一个连通团块 + 底部中央与右侧的延伸链。回答写「中心致密连续团簇、7 点钟」——团块存在但「致密连续」夸大，7 点与实际（约 8–9 点偏西南）有偏差，右侧延伸未提。"},
+  {"item_id": "H010", "盲号": "乙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "CONTRADICTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「底部中央大面积红色矩形缺陷」——底部中央确有红，但「矩形」是图中没有的几何形状（无据断言）；中央偏左主团未提。"},
+  {"item_id": "H010", "盲号": "丙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "CONTRADICTED", "断言": "CONTRADICTED", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「随机分散、无特定聚集」——图中有明显团块（中央偏左、底部中央链），此断言与图相反，属重大漏述。"},
+
+  {"item_id": "H011", "盲号": "甲", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "图：中环断续环状密集 + 中央也有红。回答「中心密集、明显的环状结构」——环状倾向存在但「明显」夸大，且把重心说成中心。"},
+  {"item_id": "H011", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「分散红点、全局」——散点成立，但中环密集成带的事实未述。"},
+  {"item_id": "H011", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中部断续环形、中心较少、边缘少量孤立红点」——与图良好相符。"},
+
+  {"item_id": "H012", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中部断续环形、中心较少、边缘孤立点」——与图相符（并主动注明环不连续）。"},
+  {"item_id": "H012", "盲号": "乙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中央大面积不规则聚集 + 周围零星」——两块大团确实分居中央两侧，但跨左右连成带的结构未述。"},
+  {"item_id": "H012", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中下部环形红色区域」——与图相符（环确实主要在下半）。"},
+
+  {"item_id": "H013", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中环红色区域、中间有绿色间隙」与图相符；环外上半的散点未提（次要）。"},
+  {"item_id": "H013", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「断续环形、中心较少、边缘孤立点」与图相符。"},
+  {"item_id": "H013", "盲号": "丙", "形态": "PARTIAL", "位置": "SUPPORTED", "遗漏": "PARTIAL", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中心区域不规则聚集 + 周围散布」——中心偏右确有团块，但贯穿下半的弧带（主结构）未述。"},
+
+  {"item_id": "H014", "盲号": "甲", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中部断续环、稀疏、覆盖多个时钟方向」——与本图（清晰断续环带）高度相符。"},
+  {"item_id": "H014", "盲号": "乙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「中间区域环形红色图案」——简而准确，无错述。"},
+  {"item_id": "H014", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "SUPPORTED", "方向": {"applicable": false, "verdict": "NO_ANSWER"}, "证据": "「明显的环形分布、位于中部」——与图相符；clock JSON null。"},
+
+  {"item_id": "H015", "盲号": "甲", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "图：左中至底部的宽弧带（约 8 点到 6 点）。回答只写「中心区域环形」——族属相近但位置说成中心，弧带实际在左下外围。"},
+  {"item_id": "H015", "盲号": "乙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「中心环状 + 外围零星点」——同样把带说成中心环；外围点状分布一句是对的。"},
+  {"item_id": "H015", "盲号": "丙", "形态": "SUPPORTED", "位置": "SUPPORTED", "遗漏": "SUPPORTED", "断言": "SUPPORTED", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「中部断续环形、中心较少、边缘稀疏」与图相符（并注明不连续）。"},
+
+  {"item_id": "H016", "盲号": "甲", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "SUPPORTED"}, "证据": "图：底部中央偏左的连通带（约 6–7 点）。回答「中心区域团簇，6 点钟方向附近」——方位对，「中心区域」不确（带在中下至外缘），上半散点未提。"},
+  {"item_id": "H016", "盲号": "乙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "SUPPORTED", "断言": "PARTIAL", "格式": "SUPPORTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「中央大面积不规则聚集 + 周围零星」——聚集与外围点成立，「中央」位置不确。"},
+  {"item_id": "H016", "盲号": "丙", "形态": "PARTIAL", "位置": "PARTIAL", "遗漏": "PARTIAL", "断言": "PARTIAL", "格式": "CONTRADICTED", "方向": {"applicable": true, "verdict": "NO_ANSWER"}, "证据": "「右下象限的环形缺陷」——带实际在底部中央偏左，「环形」夸大（是弧带）。"}
+ ]
+}

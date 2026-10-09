@@ -1,0 +1,345 @@
+{
+ "批次": 7,
+ "复核者": "Claude Code 执行会话（模型复核，非专家 gold）",
+ "上下文限制": "复核者本人跑了这三个模型；先看原图写预读事实，再对匿名编号评分。不是严格盲评。",
+ "严重度约定": "clock_direction 字符串 \"null\" → 格式 CONTRADICTED；JSON null → SUPPORTED；radial_zone 越界（如 \"bottom\"）→ 格式 CONTRADICTED；其它合法字符串不加格式分。",
+ "方向规则": "线状缺陷的「方向」按**线的轴向**判（与本项目冻结题面一致）：竖线=12 点方向；差 1 小时记 PARTIAL，差 ≥2 小时记 CONTRADICTED。",
+ "逐条": [
+  {
+   "item_id": "H049",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：左侧中部一条短横红线 + 全片稀疏散点。回答「中部一条横向红色划痕」成立；散点未提，未给钟点（「横向」是走向不是方位）。"
+  },
+  {
+   "item_id": "H049",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "CONTRADICTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "图：线只有数个像素长、位于左侧约 0.8R。回答称「从中心向外延伸、径向跨度约 0.98R」——**这个跨度数字在图中没有依据**，且「从中心向外延伸」与局部短横线不符；9 点钟方位本身是对的。"
+  },
+  {
+   "item_id": "H049",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「多个红色矩形点状缺陷」——那条横向红线（本图判别性结构）完全未提。"
+  },
+  {
+   "item_id": "H050",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "图：自中心往左下（约 7–8 点）的细斜线 + 稀疏散点。回答「中部一条红色斜线划痕，7 点钟」——与图相符。"
+  },
+  {
+   "item_id": "H050",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「大量微小红色点状」——斜线未提；本图点其实很少，「大量」夸大。"
+  },
+  {
+   "item_id": "H050",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「中心向外延伸的稀疏划痕、约 8 点钟」——与图相符，并如实注明稀疏与不确定。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H051",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：左中一块连片 + 中部与中右的多条**竖向短划**。回答只说「边缘块状聚集」，竖向短划（判别性特征）未述。"
+  },
+  {
+   "item_id": "H051",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「左侧边缘一条明显划痕」——左侧确有标记但呈块状非线状；中部竖向短划未提。"
+  },
+  {
+   "item_id": "H051",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "CONTRADICTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": false,
+    "verdict": "PARTIAL"
+   },
+   "证据": "「边缘断续线状划痕、10 点钟」——实际左侧标记约在 9–9:30，且是块状；中部竖向短划未提。"
+  },
+  {
+   "item_id": "H052",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "图：底缘中央一条短竖线 + 稀疏散点。回答相符；但 radial_zone 写 \"bottom\" **越出冻结枚举**（本批唯一 schema 不合法项），caption 的「底部中央」＝6 点方向，判对。"
+  },
+  {
+   "item_id": "H052",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「中心区域一条断续划痕、指向 6 点钟」——方位对；但那条线在**底缘**，不是自中心延伸。"
+  },
+  {
+   "item_id": "H052",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散的小方块点」——底缘那条短竖线未提。"
+  },
+  {
+   "item_id": "H053",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "PARTIAL",
+   "断言": "SUPPORTED",
+   "格式": "CONTRADICTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "图：左侧中部一块不规则聚集 + 中右一段竖划。回答抓住了左中聚集；竖划未提。"
+  },
+  {
+   "item_id": "H053",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL"
+   },
+   "证据": "「中心区域断续线状划痕、10 点钟」——左中那块更像弧形团块不是划线；10 点与实际（约 9–9:30）有偏差；中右竖划未提。"
+  },
+  {
+   "item_id": "H053",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "CONTRADICTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分布、未见特定聚集」——图中左中有明显聚集，此说与图相反。"
+  },
+  {
+   "item_id": "H054",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "PARTIAL",
+   "遗漏": "PARTIAL",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL"
+   },
+   "证据": "图：右上（约 1–2 点）一列斜向红点 + 右中一小簇。回答称「从右上延伸至左下的划痕」——起点对（右上），但**左下那一半图中没有**；10 点钟与实际相反侧。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H054",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「自约 2 点钟向中心延伸的线状划痕 + 少量孤立点」——与图相符（点列是断续的，「连续」略强）；2 点钟判对。"
+  },
+  {
+   "item_id": "H054",
+   "盲号": "丙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「分散的孤立红点」——右上那列斜向点（判别性结构）未提。"
+  },
+  {
+   "item_id": "H055",
+   "盲号": "甲",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "CONTRADICTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER"
+   },
+   "证据": "「随机分散全局」——中央偏上那条纵向点链未提。"
+  },
+  {
+   "item_id": "H055",
+   "盲号": "乙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL"
+   },
+   "证据": "「中心区域断续线状划痕」——纵向点链成立；但链实际近乎 12 点方向，答的 1 点钟偏了约 1 小时。"
+  },
+  {
+   "item_id": "H055",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED"
+   },
+   "证据": "「中部偏上一条垂直红色缺陷线，12 点」——与图相符。"
+  },
+  {
+   "item_id": "H056",
+   "盲号": "甲",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "CONTRADICTED"
+   },
+   "证据": "图：中央一条清晰的**竖向**直线段。回答「中部偏左短红线」成立，但钟点写 10 点钟——竖线轴向是 12 点，差 2 小时。 【2026-10-09 更正：本项格式原被误判为 CONTRADICTED，经冻结检查器复核为 JSON null（合法），已改为 SUPPORTED。】"
+  },
+  {
+   "item_id": "H056",
+   "盲号": "乙",
+   "形态": "PARTIAL",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "PARTIAL",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "CONTRADICTED"
+   },
+   "证据": "「断续」与那条实心竖线不符；钟点写 9 点钟——竖线轴向 12 点，差 3 小时。"
+  },
+  {
+   "item_id": "H056",
+   "盲号": "丙",
+   "形态": "SUPPORTED",
+   "位置": "SUPPORTED",
+   "遗漏": "SUPPORTED",
+   "断言": "SUPPORTED",
+   "格式": "SUPPORTED",
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL"
+   },
+   "证据": "「中部偏左垂直条状缺陷，其余为分散点」——与图相符；钟点写 10–11 点，与竖线轴向（12 点）差约 1–2 小时。"
+  }
+ ]
+}
