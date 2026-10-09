@@ -3,10 +3,16 @@
 """CPU 交付协作者：**只读**独立复算 8 模型 × 36 图的冻结枚举描述复核。
 
 为什么另写一份：
-  主会话 `汇总枚举复核.py` 的 `extract()` 只读 `d["条目"]` 并只从每条的 `答案集` 取答案
-  —— 这对**分组格式**分片有效，对**扁平格式**分片会读出 0 行。
-  实测 6 个分片里 5 个是扁平格式、1 个（分片2）是分组格式并另存 `扁平条目`。
-  因此本脚本**同时吃两种形态**，并**分别报告**两种读法各自的覆盖量，把差异摊开。
+  核对当时（12:47–12:49 之间）主会话 `汇总枚举复核.py` 的 `extract()` 只从每条的 `答案集`
+  取答案 —— 这对**嵌套格式**分片有效，对**扁平格式**分片会读出 0 行。
+  当时 6 个分片里多数是扁平格式。因此本脚本**同时吃两种形态**，
+  并**分别报告**两种读法各自的覆盖量，把差异摊开。
+
+⚠️ **时点说明（重要，避免留下过时指控）**：
+  主会话已在 **12:49** 修复该读法（`汇总枚举复核.py` 现同时处理扁平与嵌套，
+  mtime 12:49、体积 8237→9350），并重新产出 `描述对照_枚举.json`。
+  本脚本里的「主会话原样读法」**是修复前读法的静态只读模拟，属历史记录**，
+  **不代表主会话当前脚本**。当前有效性以本脚本第四节的**逐格直接对比**为准。
 
 本脚本**不写主会话目录**，只在自己目录输出；不解析自由文本，只统计枚举值。
 输出：枚举复核独立汇总.json / .md
@@ -78,7 +84,7 @@ def main():
             rows.append((sid, lab, a))
     uniq = set(seen)
 
-    # ---- 主会话脚本的读法（只读模拟，不执行其写文件）----
+    # ---- 主会话**修复前**读法的静态只读模拟（历史记录，不是当前脚本）----
     main_read_n = 0
     for i in range(1, 7):
         p = RES / f"分片{i}_复核.json"
@@ -112,14 +118,43 @@ def main():
     for m in sorted(per):
         coverage[m] = {d: sum(c.values()) for d, c in per[m].items()}
 
+    # ---- 第四节：与主会话**12:49 修复后**的成品逐格直接对比 ----
+    MAIN_OUT = RUN / "描述对照_枚举.json"
+    diff, cmp_note = [], "主会话成品缺失，无法逐格对比"
+    if MAIN_OUT.exists():
+        mo = json.loads(MAIN_OUT.read_text(encoding="utf-8"))
+        m_dims = mo.get("逐模型逐维度") or {}
+        cmp_note = f"对比对象：{MAIN_OUT.name}（mtime 见文件）"
+        for m in sorted(set(per) | set(m_dims)):
+            if m not in per:
+                diff.append(f"仅主会话有模型 {m}")
+                continue
+            if m not in m_dims:
+                diff.append(f"仅本脚本有模型 {m}")
+                continue
+            for short, _full in DIMS:
+                mine = dict(per[m].get(short) or {})
+                theirs = {k: v for k, v in (m_dims[m].get(short) or {}).items()}
+                # 主会话可能把 0 计数省略，补齐再比
+                keys = set(mine) | set(theirs)
+                for k in sorted(keys):
+                    a, b = mine.get(k, 0), theirs.get(k, 0)
+                    if a != b:
+                        diff.append(f"{m}/{short}/{k}: 本脚本 {a} vs 主会话 {b}")
     rep = {
         "分片结构": shard_shape,
         "覆盖": {
             "本脚本(兼容两种形态)读到答案单元": len(rows),
             "去重后(图,盲号)": len(uniq),
             "期望": EXPECT_FIGS * EXPECT_MODELS,
-            "主会话脚本原样读法会读到": main_read_n,
+            "主会话修复前读法(静态只读模拟，历史记录)会读到": main_read_n,
             "未映射盲号": unmapped,
+        },
+        "与主会话成品的逐格对比": {
+            "说明": cmp_note,
+            "差异条数": len(diff),
+            "差异明细": diff[:50],
+            "结论": "一致" if not diff else "存在差异，需人工定性",
         },
         "逐模型逐维度": {m: {d: dict(c) for d, c in v.items()}
                     for m, v in per.items()},
@@ -142,7 +177,9 @@ def main():
     L.append(f"\n## 二、覆盖度\n\n- 期望答案单元：{c['期望']}（36 图 × 8 模型）\n")
     L.append(f"- 本脚本兼容两种形态读到：**{c['本脚本(兼容两种形态)读到答案单元']}**，"
              f"去重后 **{c['去重后(图,盲号)']}**\n")
-    L.append(f"- **主会话脚本原样读法（只读模拟）会读到：{c['主会话脚本原样读法会读到']}**\n")
+    L.append(f"- **主会话「修复前」读法（静态只读模拟，历史记录）会读到："
+             f"{c['主会话修复前读法(静态只读模拟，历史记录)会读到']}**"
+             f" —— 主会话已于 12:49 修复该读法，**此数不代表当前脚本**\n")
     if c["未映射盲号"]:
         L.append(f"- 未映射盲号：{c['未映射盲号']}\n")
     L.append("\n## 三、逐模型逐维度（枚举计数）\n\n")
@@ -154,7 +191,13 @@ def main():
             cc = per[m][short]
             L.append(f"| {short} | " + " | ".join(str(cc.get(v, 0))
                                                   for v in VERDICTS) + " |\n")
-    L.append("\n## 四、方向三分列\n\n")
+    d4 = rep["与主会话成品的逐格对比"]
+    L.append("\n## 四、与主会话**成品**的逐格对比（当前有效性以此节为准）\n\n")
+    L.append(f"- {d4['说明']}\n")
+    L.append(f"- 差异条数：**{d4['差异条数']}** → 结论：**{d4['结论']}**\n")
+    for x in d4["差异明细"]:
+        L.append(f"  - {x}\n")
+    L.append("\n## 五、方向三分列\n\n")
     for m in sorted(dir_stats):
         L.append(f"- `{m}`：{dict(dir_stats[m])}\n")
     (D / "枚举复核独立汇总.md").write_text("".join(L), encoding="utf-8")
