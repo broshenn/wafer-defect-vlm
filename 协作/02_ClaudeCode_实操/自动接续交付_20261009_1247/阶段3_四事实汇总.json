@@ -1,0 +1,584 @@
+{
+  "来源": {
+    "冻结枚举JSON": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/描述对照_枚举.json",
+    "sha256": "0ed614135db1b853dea1e2cc20b939389a44957c99f657a0276b2ad0b3c9189f",
+    "字节": 301536,
+    "逐条数": 1728,
+    "期望逐条数": 1728
+  },
+  "口径": {
+    "四事实维": [
+      "形态",
+      "位置",
+      "遗漏",
+      "断言"
+    ],
+    "格式维": [
+      "格式"
+    ],
+    "方向维": [
+      "方向"
+    ],
+    "行和约束": "每模型每维 36 条；四事实 144；格式 36；方向 36",
+    "方向": "「不适用 / 可评」与「verdict 分布」分列；**不合并成方向干净率**",
+    "禁用说法": "不得把四事实的好/坏比例称为「描述准确率」——同 36 图不是独立样本"
+  },
+  "每模型": {
+    "Base": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 11,
+          "SUPPORTED": 17,
+          "CONTRADICTED": 8
+        },
+        "位置": {
+          "SUPPORTED": 22,
+          "CONTRADICTED": 5,
+          "PARTIAL": 9
+        },
+        "遗漏": {
+          "PARTIAL": 12,
+          "CONTRADICTED": 15,
+          "SUPPORTED": 9
+        },
+        "断言": {
+          "SUPPORTED": 30,
+          "CONTRADICTED": 3,
+          "PARTIAL": 3
+        },
+        "格式": {
+          "SUPPORTED": 35,
+          "PARTIAL": 1
+        },
+        "方向": {
+          "false/NO_ANSWER": 18,
+          "true/NO_ANSWER": 13,
+          "true/PARTIAL": 1,
+          "false/SUPPORTED": 4
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 78,
+        "PARTIAL": 35,
+        "CONTRADICTED": 31,
+        "UNCERTAIN": 0,
+        "MISSING": 0,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "D-N3072-3407": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 11,
+          "SUPPORTED": 20,
+          "CONTRADICTED": 5
+        },
+        "位置": {
+          "SUPPORTED": 21,
+          "CONTRADICTED": 3,
+          "PARTIAL": 12
+        },
+        "遗漏": {
+          "SUPPORTED": 14,
+          "PARTIAL": 13,
+          "CONTRADICTED": 9
+        },
+        "断言": {
+          "SUPPORTED": 30,
+          "PARTIAL": 4,
+          "CONTRADICTED": 2
+        },
+        "格式": {
+          "CONTRADICTED": 14,
+          "SUPPORTED": 19,
+          "PARTIAL": 3
+        },
+        "方向": {
+          "false/NO_ANSWER": 17,
+          "true/NO_ANSWER": 6,
+          "false/PARTIAL": 1,
+          "true/SUPPORTED": 5,
+          "true/PARTIAL": 3,
+          "false/SUPPORTED": 4
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 85,
+        "PARTIAL": 40,
+        "CONTRADICTED": 19,
+        "UNCERTAIN": 0,
+        "MISSING": 0,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "GLM-WorkBuddy": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 11,
+          "SUPPORTED": 22,
+          "CONTRADICTED": 3
+        },
+        "位置": {
+          "SUPPORTED": 26,
+          "PARTIAL": 9,
+          "CONTRADICTED": 1
+        },
+        "遗漏": {
+          "SUPPORTED": 25,
+          "CONTRADICTED": 4,
+          "PARTIAL": 7
+        },
+        "断言": {
+          "SUPPORTED": 32,
+          "CONTRADICTED": 2,
+          "PARTIAL": 2
+        },
+        "格式": {
+          "SUPPORTED": 36
+        },
+        "方向": {
+          "false/NO_ANSWER": 18,
+          "true/SUPPORTED": 7,
+          "true/NO_ANSWER": 4,
+          "false/SUPPORTED": 3,
+          "false/PARTIAL": 1,
+          "true/PARTIAL": 3
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 105,
+        "PARTIAL": 29,
+        "CONTRADICTED": 10,
+        "UNCERTAIN": 0,
+        "MISSING": 0,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "L-N3072-3407": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 15,
+          "SUPPORTED": 20,
+          "CONTRADICTED": 1
+        },
+        "位置": {
+          "SUPPORTED": 25,
+          "PARTIAL": 9,
+          "CONTRADICTED": 2
+        },
+        "遗漏": {
+          "CONTRADICTED": 9,
+          "PARTIAL": 16,
+          "SUPPORTED": 11
+        },
+        "断言": {
+          "SUPPORTED": 33,
+          "PARTIAL": 3
+        },
+        "格式": {
+          "CONTRADICTED": 29,
+          "PARTIAL": 5,
+          "SUPPORTED": 2
+        },
+        "方向": {
+          "false/NO_ANSWER": 18,
+          "true/NO_ANSWER": 12,
+          "false/SUPPORTED": 4,
+          "true/SUPPORTED": 2
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 89,
+        "PARTIAL": 43,
+        "CONTRADICTED": 12,
+        "UNCERTAIN": 0,
+        "MISSING": 0,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "kimi-k3": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "SUPPORTED": 23,
+          "PARTIAL": 8,
+          "MISSING": 4,
+          "CONTRADICTED": 1
+        },
+        "位置": {
+          "SUPPORTED": 27,
+          "PARTIAL": 5,
+          "MISSING": 4
+        },
+        "遗漏": {
+          "SUPPORTED": 21,
+          "CONTRADICTED": 4,
+          "PARTIAL": 7,
+          "MISSING": 4
+        },
+        "断言": {
+          "SUPPORTED": 30,
+          "MISSING": 4,
+          "PARTIAL": 1,
+          "CONTRADICTED": 1
+        },
+        "格式": {
+          "SUPPORTED": 32,
+          "MISSING": 4
+        },
+        "方向": {
+          "false/NO_ANSWER": 17,
+          "true/PARTIAL": 4,
+          "true/SUPPORTED": 4,
+          "false/MISSING": 1,
+          "true/NO_ANSWER": 6,
+          "false/SUPPORTED": 4
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 101,
+        "PARTIAL": 21,
+        "CONTRADICTED": 6,
+        "UNCERTAIN": 0,
+        "MISSING": 16,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "qwen3-vl-plus": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 14,
+          "SUPPORTED": 18,
+          "MISSING": 2,
+          "CONTRADICTED": 2
+        },
+        "位置": {
+          "SUPPORTED": 18,
+          "CONTRADICTED": 4,
+          "PARTIAL": 12,
+          "MISSING": 2
+        },
+        "遗漏": {
+          "SUPPORTED": 14,
+          "CONTRADICTED": 9,
+          "PARTIAL": 11,
+          "MISSING": 2
+        },
+        "断言": {
+          "SUPPORTED": 25,
+          "PARTIAL": 7,
+          "MISSING": 2,
+          "CONTRADICTED": 2
+        },
+        "格式": {
+          "SUPPORTED": 24,
+          "CONTRADICTED": 6,
+          "MISSING": 2,
+          "PARTIAL": 4
+        },
+        "方向": {
+          "false/NO_ANSWER": 14,
+          "false/CONTRADICTED": 2,
+          "true/SUPPORTED": 4,
+          "true/NO_ANSWER": 9,
+          "true/MISSING": 1,
+          "false/MISSING": 1,
+          "false/SUPPORTED": 3,
+          "false/PARTIAL": 2
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 75,
+        "PARTIAL": 44,
+        "CONTRADICTED": 17,
+        "UNCERTAIN": 0,
+        "MISSING": 8,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "qwen3.5-397b-a17b": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 11,
+          "SUPPORTED": 17,
+          "MISSING": 6,
+          "CONTRADICTED": 2
+        },
+        "位置": {
+          "SUPPORTED": 21,
+          "PARTIAL": 8,
+          "MISSING": 6,
+          "CONTRADICTED": 1
+        },
+        "遗漏": {
+          "PARTIAL": 9,
+          "CONTRADICTED": 6,
+          "SUPPORTED": 15,
+          "MISSING": 6
+        },
+        "断言": {
+          "SUPPORTED": 24,
+          "MISSING": 6,
+          "PARTIAL": 4,
+          "CONTRADICTED": 2
+        },
+        "格式": {
+          "SUPPORTED": 30,
+          "MISSING": 6
+        },
+        "方向": {
+          "false/NO_ANSWER": 16,
+          "true/NO_ANSWER": 10,
+          "false/MISSING": 1,
+          "true/SUPPORTED": 2,
+          "true/MISSING": 1,
+          "false/SUPPORTED": 4,
+          "false/PARTIAL": 1,
+          "true/PARTIAL": 1
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 77,
+        "PARTIAL": 32,
+        "CONTRADICTED": 11,
+        "UNCERTAIN": 0,
+        "MISSING": 24,
+        "NEEDS_REVIEW": 0
+      }
+    },
+    "qwen3.8-max-0902": {
+      "每维条数": {
+        "形态": 36,
+        "位置": 36,
+        "遗漏": 36,
+        "断言": 36,
+        "格式": 36,
+        "方向": 36
+      },
+      "六维逐维": {
+        "形态": {
+          "PARTIAL": 13,
+          "SUPPORTED": 22,
+          "MISSING": 1
+        },
+        "位置": {
+          "SUPPORTED": 31,
+          "PARTIAL": 4,
+          "MISSING": 1
+        },
+        "遗漏": {
+          "SUPPORTED": 28,
+          "PARTIAL": 4,
+          "CONTRADICTED": 3,
+          "MISSING": 1
+        },
+        "断言": {
+          "SUPPORTED": 32,
+          "PARTIAL": 3,
+          "MISSING": 1
+        },
+        "格式": {
+          "SUPPORTED": 34,
+          "PARTIAL": 1,
+          "MISSING": 1
+        },
+        "方向": {
+          "false/NO_ANSWER": 18,
+          "true/SUPPORTED": 9,
+          "true/NO_ANSWER": 4,
+          "false/SUPPORTED": 4,
+          "true/PARTIAL": 1
+        }
+      },
+      "四事实合计": {
+        "SUPPORTED": 113,
+        "PARTIAL": 24,
+        "CONTRADICTED": 3,
+        "UNCERTAIN": 0,
+        "MISSING": 4,
+        "NEEDS_REVIEW": 0
+      }
+    }
+  },
+  "方向分列": {
+    "L-N3072-3407": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 30,
+        "SUPPORTED": 6
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 30
+    },
+    "qwen3.5-397b-a17b": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 26,
+        "MISSING": 2,
+        "SUPPORTED": 6,
+        "PARTIAL": 2
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 26
+    },
+    "GLM-WorkBuddy": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 22,
+        "SUPPORTED": 10,
+        "PARTIAL": 4
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 22
+    },
+    "qwen3.8-max-0902": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 22,
+        "SUPPORTED": 13,
+        "PARTIAL": 1
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 22
+    },
+    "kimi-k3": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 23,
+        "PARTIAL": 4,
+        "SUPPORTED": 8,
+        "MISSING": 1
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 23
+    },
+    "qwen3-vl-plus": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 23,
+        "CONTRADICTED": 2,
+        "SUPPORTED": 7,
+        "MISSING": 2,
+        "PARTIAL": 2
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 23
+    },
+    "D-N3072-3407": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 23,
+        "PARTIAL": 4,
+        "SUPPORTED": 9
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 23
+    },
+    "Base": {
+      "不适用(applicable=false)": 22,
+      "可评(applicable=true)": 14,
+      "applicable合计": 36,
+      "verdict分布": {
+        "NO_ANSWER": 31,
+        "PARTIAL": 1,
+        "SUPPORTED": 4
+      },
+      "verdict合计": 36,
+      "NO_ANSWER": 31
+    }
+  },
+  "手写摘要错值对照": [
+    {
+      "模型": "L-N3072-3407",
+      "项": "四事实维 PARTIAL 合计",
+      "手写摘要值": 32,
+      "逐条聚合值": 43,
+      "逐维相加": "15 + 9 + 16 + 3",
+      "差值": 11
+    },
+    {
+      "模型": "D-N3072-3407",
+      "项": "四事实维 PARTIAL 合计",
+      "手写摘要值": 37,
+      "逐条聚合值": 40,
+      "逐维相加": "11 + 12 + 13 + 4",
+      "差值": 3
+    }
+  ],
+  "校验": {
+    "问题数": 0,
+    "问题": [],
+    "交叉核对不一致数": 0,
+    "交叉核对明细": []
+  },
+  "结论": "全部行和通过"
+}

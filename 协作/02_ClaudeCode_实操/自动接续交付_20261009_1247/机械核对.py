@@ -99,10 +99,17 @@ def main():
         cnt = Counter(sids)
         dup = {k: v for k, v in cnt.items() if v > 1}
         sid_set = set(sids)
-        sha_ok, sha_bad, sha_missing = 0, [], 0
+        # 图 sha 只对**冻结 36**内的记录比对。
+        # 不在本 36 内的记录（如 GLM 的全 102 份）本来就没有可比的冻结值，
+        # 把「取不到可比字段」或「本就不该参与比对」记成「sha 不符」是口径错误，
+        # 不是指纹断链。故单列 `图sha256未参与比对(非本36)`，不计入 bad。
+        sha_ok, sha_bad, sha_missing, sha_outside = 0, [], 0, 0
         for r in recs:
-            sh = get_sha(r)
             sid = r.get("sample_id")
+            if sid not in frozen_set:
+                sha_outside += 1
+                continue
+            sh = get_sha(r)
             if sh is None:
                 sha_missing += 1
             elif frozen.get(sid) == sh:
@@ -156,6 +163,7 @@ def main():
             "与冻结36交集": len(sid_set & frozen_set),
             "重复": dup,
             "图sha256命中": sha_ok, "图sha256不符": sha_bad, "图sha256缺失": sha_missing,
+            "图sha256未参与比对(非本36)": sha_outside,
             "解析层级": dict(lvl), "严格JSON可解析": strict_ok,
             "诊断层级": dict(dlvl), "围栏诊断可解析": sum(
                 v for k, v in dlvl.items() if k in ("raw", "fenced")),
@@ -201,10 +209,13 @@ def main():
             lambda r: r.get("raw"), lambda r: r.get("image_sha256"))
 
     # ---- D：部署服务 HTTP 回放 ----
+    # 图 sha 是**嵌套**字段：response.image.image_sha256。
+    # 首版只取顶层 image_sha256，取到 36 个 None → 误报「D 图 hash 缺 36」；
+    # 这是取字段口径问题，不是哈希链断裂（修正后 36/36 命中）。
     add("D-N3072-3407", "部署服务HTTP · 性能与自测/http_replay.jsonl",
         load_jsonl(DEP / "性能与自测/http_replay.jsonl"),
         lambda r: (r.get("response") or {}).get("raw_answer"),
-        lambda r: None)
+        lambda r: ((r.get("response") or {}).get("image") or {}).get("image_sha256"))
 
     # ---- GLM：外部 102 的子集 ----
     glm_recs = []
@@ -260,6 +271,8 @@ def main():
                  f"{e['图sha256命中']} | {e['严格JSON可解析']} | {e['完整schema']} | "
                  f"{e['类别_严格Acc']} | {e['类别_围栏诊断Acc']} | "
                  f"{u.get('复算费用_元')} |\n")
+    L.append("\n> 「图中sha命中」的分母是**本 36 图内参与比对的记录**；"
+             "非本轮 36 图的记录（GLM 有 66 条）不参与 sha 比对，见下表，**不是 sha 不符**。\n")
     L.append("\n## 异常项（逐模型机械检查）\n")
     for tag, e in report["模型"].items():
         flags = []
@@ -272,7 +285,10 @@ def main():
         if e["图sha256不符"]:
             flags.append(f"**图sha256不符 {e['图sha256不符']}**")
         if e["图sha256缺失"]:
-            flags.append(f"图sha256缺失 {e['图sha256缺失']} 条")
+            flags.append(f"图sha256缺失 {e['图sha256缺失']} 条（限本 36 图内）")
+        if e.get("图sha256未参与比对(非本36)"):
+            flags.append(f"非本轮 36 图、不参与 sha 比对 {e['图sha256未参与比对(非本36)']} 条"
+                         f"（**不是 sha 不符**）")
         if e["schema不合"]:
             flags.append(f"schema不合 {len(e['schema不合'])} 条")
         L.append(f"- `{tag}`：{'；'.join(flags) if flags else '无'}\n")

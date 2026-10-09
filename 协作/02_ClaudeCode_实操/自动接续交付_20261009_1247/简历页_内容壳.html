@@ -28,24 +28,24 @@
       <article class="project">
         <div class="project-title">多模态模型微调与评测口径建设　|　Qwen3.5-9B · LoRA SFT · 冻结枚举评测 · 同基座对照</div>
         <ul>
-          <li><strong>背景与目标：</strong>晶圆 BIN 图（格状缺陷热力图）判读核心是「格局属哪一类」，而质检沟通还需一句人能读的中文描述。<strong>目标：</strong>把「类别能力」与「描述能力」分开建模与评测，回答「该不该给描述监督」的工程取舍。</li>
-          <li><strong>参与动作：</strong>基于公开数据集 <strong>WM811K</strong> 的 5904 张抽样子集（固定种子 3407；train/val/test = 4721/594/589，<strong>跨划分 lot 交集为 0</strong>），按公开类别分层抽出 <strong>3072</strong> 张训练池；在同一基座 <strong>Qwen3.5-9B</strong> 上 LoRA 微调<strong>两个同输入、同题面、只改监督答案</strong>的模型：<code class="code">L</code> 只监督类别标签，<code class="code">D</code> 监督类别 + 形态 + 中文描述。</li>
-          <li class="nested"><strong>评测口径（关键工作）：</strong>把「描述是否与图相符」的评法<strong>从自由文本正则改为冻结枚举 schema</strong> —— 六维四值（SUPPORTED / PARTIAL / CONTRADICTED / UNCERTAIN / MISSING / NEEDS_REVIEW），并把「方向」<strong>拆成 applicable 与 verdict 两列</strong>；改口径后先跑 <strong>20/20 回归</strong>才开工。</li>
+          <li><strong>背景与目标：</strong>晶圆 BIN 图（格状缺陷热力图）判读核心是「格局属哪一类」，质检沟通还需一句中文描述。<strong>目标：</strong>把「类别能力」与「描述能力」分开建模评测，回答「该不该给描述监督」。</li>
+          <li><strong>参与动作：</strong>基于公开数据集 <strong>WM811K</strong> 的 5904 张抽样子集（固定种子 3407；train/val/test = 4721/594/589，<strong>跨划分 lot 交集为 0</strong>），按类别分层抽 <strong>3072</strong> 张训练池；在同一基座 <strong>Qwen3.5-9B</strong> 上 LoRA 微调<strong>两个同输入、同题面、只改监督答案</strong>的模型：<code class="code">L</code> 只监督类别标签，<code class="code">D</code> 监督类别 + 形态 + 中文描述。</li>
+          <li class="nested"><strong>评测口径（关键工作）：</strong>把「描述是否与图相符」的评法<strong>从自由文本正则改为冻结枚举 schema</strong>：六维四值（SUPPORTED / PARTIAL / CONTRADICTED / UNCERTAIN / MISSING / NEEDS_REVIEW），并把「方向」<strong>拆成 applicable 与 verdict 两列</strong>；改口径后先跑 <strong>20/20 回归</strong>才开工。</li>
           <li class="nested"><strong>对照设计：</strong>固定 <strong>36 图</strong>开发集，同题对照 8 个模型 —— 本项目 <code class="code">L</code>/<code class="code">D</code>、原生基座、四个商用 API 模型与外部 GLM；冻结题面 sha256、固定解码参数，日志留痕可复算。</li>
-          <li><strong>实测结果：</strong>同基座只把监督从「无」换成类别标签，准确率 <strong>0.1667 → 0.8889</strong>；84 张开发验证集上 <strong>77/84（91.7%）</strong>，九类 Macro-F1 <strong>0.9227</strong>。基座原生输出带 Markdown 围栏，严格 JSON 判分几乎全失败 —— <strong>必须把「格式失败」与「内容错误」分开计</strong>。</li>
-          <li class="nested"><strong>负结果（同批同图实测，一并报告）：</strong>（1）加了描述监督，类别准确率<strong>反而下降</strong>（0.8889 → 0.6944）；（2）<strong>本项目的描述并不优于外部零样本大模型</strong> —— 视觉四维「好/坏」为 qwen3.8-max <strong>113/3</strong>、GLM <strong>105/10</strong>，优于 <code class="code">L</code> <strong>89/12</strong>、<code class="code">D</code> <strong>85/19</strong>；（3）<code class="code">L</code> 六维合计垫底<strong>完全由「格式」一维造成</strong>，去掉格式后其视觉四维反好于 <code class="code">D</code>，准确说法是「视觉内容中上、格式合规最差」。</li>
-          <li><strong>个人边界：</strong>数据全部来自<strong>公开数据集</strong>，<strong>未使用公司内部数据、未做产线部署</strong>；<strong>描述结论是模型自查，不是人工金标</strong>；36 图是<strong>开发集而非盲测卷</strong>；本项目模型见过领域标签、外部模型为零样本，<strong>分数差不是训练预算对齐的因果对比</strong>。</li>
+          <li><strong>实测结果：</strong>同基座只把监督从「无」换成类别标签，准确率 <strong>0.1667 → 0.8889</strong>；84 张开发验证集上 <strong>77/84（91.7%）</strong>，九类 Macro-F1 <strong>0.9227</strong>。基座原生输出带 Markdown 围栏，严格 JSON 判分几乎全失败：<strong>必须把「格式失败」与「内容错误」分开计</strong>。</li>
+          <li class="nested"><strong>负结果（同批同图实测）：</strong>（1）加了描述监督，类别准确率<strong>反而下降</strong>（0.8889 → 0.6944）；（2）<strong>本项目的描述并不优于外部零样本大模型</strong> —— 视觉四维「好/坏」为 qwen3.8-max <strong>113/3</strong>、GLM <strong>105/10</strong>，优于 <code class="code">L</code> <strong>89/12</strong>、<code class="code">D</code> <strong>85/19</strong>；（3）<code class="code">L</code> 六维合计垫底<strong>完全由「格式」一维造成</strong>，去掉格式后其视觉四维反好于 <code class="code">D</code>，准确说法是「视觉内容中上、格式合规最差」。</li>
+          <li><strong>个人边界：</strong>数据全部来自<strong>公开数据集</strong>，<strong>未使用公司内部数据、未做产线部署</strong>；<strong>描述结论是模型自查，不是人工金标</strong>；36 图是<strong>开发集而非盲测卷</strong>；36 图 ID/lot 与训练池交集为 0，但其中 <strong>1 张与训练图 PNG 逐字节同内容</strong>，故<strong>不得称「图像内容从未见过」</strong>（剔除后 35 图：<code class="code">L</code> 88.6%、<code class="code">D</code> 68.6%）；本项目模型见过领域标签、外部模型为零样本，<strong>分数差不是训练预算对齐的因果对比</strong>。</li>
         </ul>
       </article>
 
       <article class="project">
         <div class="project-title">推理服务化与可审计交付　|　HTTP 服务 · Schema 校验 · 审计留痕 · 性能实测 · 预算守卫</div>
         <ul>
-          <li><strong>背景与目标：</strong>工业质检里模型输出的<strong>可审计性</strong>与准确率同等重要 —— 需知道「结果是模型原样给的、还是服务改过的」，也需明确的「不确定、请人工看」标记。</li>
+          <li><strong>背景与目标：</strong>工业质检里模型输出的<strong>可审计性</strong>与准确率同等重要：需知道结果是模型原样给的还是服务改过的，也需「不确定、请人工看」标记。</li>
           <li><strong>参与动作：</strong>把微调模型落成<strong>真实 HTTP 推理服务</strong>，设三条硬约束：输入合法性校验、JSON schema 校验、<strong>原答逐字节保留</strong>。关键取舍为 <strong>schema 不合不修补</strong>：坏结构一律标 <code class="code">needs_review</code> 并留原答，只把「服务改过什么」单列成 <code class="code">format_changes</code> 审计项。</li>
           <li class="nested"><strong>工程化：</strong>对照侧设 <strong>20 元硬预算守卫</strong>（在途按 max_tokens 预留、完成按实际 usage 结算），并写死「每图一次请求、客户端重试 0、失败原件保留、不重新调用」，避免重试带来的选择偏差。</li>
-          <li><strong>实测结果：</strong>固定 36 图<strong>真实 HTTP 回放</strong> —— <strong>36/36 返回 200</strong>，类别判对 <strong>25/36</strong>（固定 9 类 Macro-F1 <strong>0.6756</strong>），<code class="code">needs_review</code> <strong>19</strong> 条；时延 p50 ≈ <strong>4.2 s</strong>、p95 ≈ <strong>4.9–5.4 s</strong>；峰值显存 <strong>17.88 GiB</strong>；<strong>CPU 工程契约测试 6/6 通过</strong>。API 对照 4 模型 × 36 图共 144 请求，实付<strong>约 4.90 元 / 20 元上限</strong>（132 成功 + 12 连接层失败，失败未重发）。</li>
-          <li class="nested"><strong>不达标项（照实写）：</strong>「HTTP 通过」≠「内容正确」—— 36/36 返回 200，但只有 25/36 判对；时延是<strong>同客户端端到端</strong>，<strong>不是外部网络时延</strong>；12 条连接层失败为遵守「不做二次调用」纪律而未补齐。</li>
+          <li><strong>实测结果：</strong>固定 36 图<strong>真实 HTTP 回放</strong> —— <strong>36/36 返回 200</strong>，类别判对 <strong>25/36</strong>（固定 9 类 Macro-F1 <strong>0.6756</strong>），<code class="code">needs_review</code> <strong>19</strong> 条；时延 p50 ≈ <strong>4.2 s</strong>、p95 ≈ <strong>4.9–5.4 s</strong>；峰值显存 <strong>17.88 GiB</strong>；<strong>CPU 工程契约测试 6/6 通过</strong>。API 对照 4 模型 × 36 图共 <strong>144 次尝试（132 正常返回 + 12 连接层失败）</strong>，<strong>按标准价用量估算约 4.90 元 / 20 元上限</strong>（<strong>不是平台实付</strong>，失败未重发）。</li>
+          <li class="nested"><strong>不达标项（照实写）：</strong>「HTTP 通过」≠「内容正确」：36/36 返回 200 但仅 25/36 判对；时延是<strong>同客户端端到端</strong>，<strong>不是外部网络时延</strong>；12 条为<strong>连接层失败（非模型答错）</strong>，为遵守「不做二次调用」纪律未补齐。</li>
           <li><strong>个人边界：</strong>服务只跑在<strong>已获准的租用实例</strong>上做真实回放，<strong>未公网发布、未产线试点</strong>，故<strong>无 QPS 与线上稳定性数据</strong>；GPU 计费分钟与租机人民币实耗<strong>仓库内无账单可核，不代填</strong>。</li>
         </ul>
       </article>
@@ -66,7 +66,7 @@
       <div contenteditable="true">
         <strong>模型与训练：</strong>Qwen3.5-9B　·　LoRA / SFT（ms-swift）　·　多模态输入构造<br>
         <strong>评测方法：</strong>冻结枚举 schema 设计　·　同基座对照　·　Macro-F1　·　置信区间　·　解析口径分层（严格 / 围栏诊断）<br>
-        <strong>工程与交付：</strong>Python　·　HTTP 推理服务　·　Schema 校验　·　原答逐字节保留与变更审计　·　SHA-256 哈希链核对　·　预算守卫<br>
+        <strong>工程与交付：</strong>Python　·　HTTP 推理服务　·　Schema 校验　·　原答逐字节留存与变更审计　·　SHA-256 哈希链核对　·　预算守卫<br>
         <strong>数据：</strong>WM811K 抽样与分层　·　lot 级隔离　·　图片内容级去重　·　候选质量分账
       </div>
     </section>

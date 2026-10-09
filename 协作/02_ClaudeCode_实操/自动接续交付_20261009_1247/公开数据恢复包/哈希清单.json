@@ -3,13 +3,13 @@
   "生成者": "CPU 交付整理协作者",
   "包内根目录": "晶圆图公开数据恢复包_20261009/",
   "文件数": 6087,
-  "总字节(未压缩)": 26917604,
+  "总字节(未压缩)": 26919060,
   "说明": "相对路径相对于**包内根目录**；zip 自身的 sha256 见《封包SHA256清册.json》",
   "文件": [
     {
       "relative_path": "README_RESTORE.md",
-      "bytes": 5010,
-      "sha256": "e7fb02854125e2ddaeee923193600c6f304e05247d17937d6941b856578cf801"
+      "bytes": 6466,
+      "sha256": "f3ddb2700db87d396fa7d60de64bd6bdaed8c5e0bd3cacfba07ed746c6b05412"
     },
     {
       "relative_path": "图片/images/wafer_00000001_010.png",
