@@ -1,0 +1,21 @@
+{
+ "n": 6,
+ "一致": 4,
+ "判定": "不一致",
+ "base_plus_adapter": [
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"medium\",\"red_mass_zones\":[\"center\",\"middle\",\"edge\"],\"direction_type\":\"axis\",\"clock_sectors\":[6],\"caption_zh\":\"晶圆中心区域存在一条从中心向外延伸的连续线状缺陷，主要指向6点钟方向，缺陷分布稀疏。\",\"uncertainty\":\"缺陷线在径向延伸过程中存在轻微弯曲，且边缘区域存在少量孤立红点。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"coverage_level\":\"high\",\"red_mass_zones\":[\"edge\"],\"direction_type\":\"none\",\"clock_sectors\":[],\"caption_zh\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显方向性。\",\"uncertainty\":\"边缘区域缺陷分布较稀疏，中心区域有少量孤立点，整体呈随机散布。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"middle\",\"edge\"],\"direction_type\":\"none\",\"clock_sectors\":[4,5],\"caption_zh\":\"晶圆中部偏4-5点钟方向存在局部红色缺陷团簇，其余区域为绿色正常die。\",\"uncertainty\":\"缺陷团簇呈局部聚集，方向性不明显，覆盖范围较小。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"center\",\"middle\"],\"direction_type\":\"single\",\"clock_sectors\":[6],\"caption_zh\":\"晶圆中心偏6点钟方向存在局部红色缺陷团簇，另有少量孤立红点，整体稀疏。\",\"uncertainty\":\"红点数量少且呈断续分布，方向性判断存在不确定性。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"middle\"],\"direction_type\":\"axis\",\"clock_sectors\":[2,8],\"caption_zh\":\"晶圆中部存在一条从约2点钟方向延伸至中心区域的稀疏连续划痕，伴有少量随机红点。\",\"uncertainty\":\"划痕方向与密度判断基于视觉观察，可能存在轻微偏差。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"center\",\"middle\"],\"direction_type\":\"axis\",\"clock_sectors\":[7,1],\"caption_zh\":\"晶圆中心区域存在一条从约7点钟方向起始、向晶圆中心延伸的稀疏连续划痕状缺陷带，缺陷点主要分布在中心径向区域。\",\"uncertainty\":\"划痕方向指向中心，起始于7点钟方向，缺陷密度低，径向分布集中在中心区域。\"}"
+ ],
+ "merged": [
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"medium\",\"red_mass_zones\":[\"center\",\"middle\",\"edge\"],\"direction_type\":\"axis\",\"clock_sectors\":[6],\"caption_zh\":\"晶圆中心区域存在一条从中心向外延伸的连续线状缺陷，主要指向6点钟方向，缺陷分布稀疏。\",\"uncertainty\":\"缺陷线在径向延伸过程中存在轻微弯曲，且边缘区域存在少量孤立红点。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"coverage_level\":\"high\",\"red_mass_zones\":[\"edge\"],\"direction_type\":\"none\",\"clock_sectors\":[],\"caption_zh\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显方向性。\",\"uncertainty\":\"边缘区域缺陷分布较稀疏，存在局部聚集，整体呈断续环状。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"middle\",\"edge\"],\"direction_type\":\"none\",\"clock_sectors\":[4,5],\"caption_zh\":\"晶圆中部偏4-5点钟方向存在局部红色缺陷团簇，其余区域为绿色正常die。\",\"uncertainty\":\"缺陷团簇呈局部聚集，方向性不明显，覆盖范围较小。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"center\",\"middle\"],\"direction_type\":\"single\",\"clock_sectors\":[6],\"caption_zh\":\"晶圆中心偏6点钟方向存在局部红色缺陷团簇，另有少量孤立红点，整体稀疏。\",\"uncertainty\":\"红点数量少且呈断续分布，方向性判断存在不确定性。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"middle\"],\"direction_type\":\"axis\",\"clock_sectors\":[2,8],\"caption_zh\":\"晶圆中部存在一条从约2点钟方向延伸至中心区域的稀疏连续划痕，伴有少量随机分布的孤立红点。\",\"uncertainty\":\"划痕方向与密度判断基于视觉观察，可能存在轻微偏差。\"}",
+  "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"coverage_level\":\"low\",\"red_mass_zones\":[\"center\",\"middle\"],\"direction_type\":\"axis\",\"clock_sectors\":[7,1],\"caption_zh\":\"晶圆中心区域存在一条从约7点钟方向起始、向晶圆中心延伸的稀疏连续划痕状缺陷带，缺陷点主要分布在中心径向区域。\",\"uncertainty\":\"划痕方向指向中心，起始于7点钟方向，缺陷密度低，径向分布集中在中心区域。\"}"
+ ]
+}

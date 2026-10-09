@@ -1,0 +1,22 @@
+{
+  "mode": "adapt",
+  "steps": 64,
+  "model_start": "/root/autodl-tmp/ws/models/Qwen3.5-9B-Dmerged",
+  "start_adapter": null,
+  "data": "/root/autodl-tmp/ws/v2run/数据/adapt_sft.jsonl",
+  "data_sha256": "417b3d7fe1b77714c47a67c4473ffcc8d65a33abcdee5eb5c1ca3cfe7a0aae91",
+  "n_rows": 256,
+  "seconds": 373.405372,
+  "device_minutes": 6.223,
+  "peak_allocated_GiB": 19.442,
+  "checkpoints": [
+    "out/M0/v0-20261009-222855/checkpoint-32",
+    "out/M0/v0-20261009-222855/checkpoint-64"
+  ],
+  "final_checkpoint": "out/M0/v0-20261009-222855/checkpoint-64",
+  "selection": "末步预选",
+  "cuda_visible_devices": "GPU-b3899a46-5183-a5ae-d5f4-971a6cbeee55",
+  "device": "NVIDIA GeForce RTX 5090",
+  "world_size": 1,
+  "finished_at": "2026-10-09T22:35:05.424373"
+}
