@@ -48,3 +48,8 @@ archive/tarballs/
 # .claude/ above; not project content. Its notes are superseded by
 # kimi_k3_cost_test/, which is tracked.
 .workbuddy/
+
+# LoRA/adapter weights downloaded from run instances for evidence. The bytes stay
+# outside the repo; what is committed is the SHA256 in the accompanying evidence file.
+**/检查点权重/
+*.safetensors

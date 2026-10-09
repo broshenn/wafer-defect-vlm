@@ -1,0 +1,87 @@
+{
+ "性质": "首轮实跑证据（远端脚本与实参），从运行实例同步回来，用于纠正『M1/M2 从 M0 继续训练』的错误表述",
+ "远端脚本SHA256": {
+  "v2_train.py": "981c6a80e5ec55993547ea05ff7ab2da080f64a19a3925faecd5233a53185c42",
+  "v2_eval.py": "b279265834b6733b5b3501331b6d0140411d44046b6dde0cc77b0fd60eefcb06",
+  "reward_v2.py": "0d06a6d62426aa68ce3e4a5b09dbe1424aebd943fde370024a39636ae8077569",
+  "说明": "远端 v2_train.py 与本仓库 服务器_v2_train.py **逐字节相同**（同一个 SHA）"
+ },
+ "已发现的接线缺陷": {
+  "事实": "脚本第 113 行定义了 extra = {'adapters':[start_adapter], 'resume_only_model':True}，但**从未把它传进 SftArguments / RLHFArguments 的构造函数**（`**extra` 没有插入）。",
+  "发现方式": "比对 checkpoint 里训练器自存的 args.json：M1/M2 的 adapters=[] 且 resume_only_model=False。",
+  "后果": "**M1 与 M2 都没有从 M0 的 adapter 继续**，各自在合并基座上训练了一个**全新 LoRA**。",
+  "脚本行为": "脚本仍然打印了『从已有 adapter 继续：…』并记录了该 adapter 的 SHA —— **打印的是意图，不是实参**；v2_config.json 里的 start_adapter 字段因此是**错的记录**。",
+  "我之前的错误推断": "我用『496 个张量同名 + 相对差 1.82%/3.81%』当作『真从 M0 续训』的证据 —— 这个推断**不成立**：三个 adapter 用同一种子初始化（init_lora_weights=True、seed/data_seed 均为 3407），相对差小可以由共享初始化解释。Codex 的判断（该差异只是辅助证据）是对的。"
+ },
+ "各 checkpoint 实际参数（训练器自存 args.json）": {
+  "M0": {
+   "model": "/root/autodl-tmp/ws/models/Qwen3.5-9B-Dmerged",
+   "dataset": "数据/adapt_sft.jsonl",
+   "adapters": [],
+   "resume_only_model": false,
+   "learning_rate": 1e-05,
+   "max_steps": 64,
+   "per_device_train_batch_size": 1,
+   "gradient_accumulation_steps": 4,
+   "lora_rank": 16,
+   "lora_alpha": 32,
+   "lora_dropout": 0.05,
+   "freeze_vit": true,
+   "freeze_aligner": true,
+   "torch_dtype": "bfloat16",
+   "gradient_checkpointing": true,
+   "max_length": 2048,
+   "seed": 3407,
+   "data_seed": 3407,
+   "dataset_shuffle": false,
+   "train_dataloader_shuffle": false
+  },
+  "M1": {
+   "dataset": "数据/group60_sft4.jsonl",
+   "adapters": [],
+   "resume_only_model": false,
+   "learning_rate": 1e-05,
+   "max_steps": 60
+  },
+  "M2": {
+   "dataset": "数据/group60_grpo.jsonl",
+   "adapters": [],
+   "resume_only_model": false,
+   "learning_rate": 1e-05,
+   "max_steps": 60,
+   "num_generations": 4,
+   "temperature": 1.0,
+   "top_p": 1.0,
+   "beta": 0.04,
+   "epsilon": 0.2,
+   "use_vllm": false,
+   "max_completion_length": 256,
+   "num_iterations": 1,
+   "importance_sampling_level": "token"
+  }
+ },
+ "adapter 权重 SHA256": {
+  "M0": "43b36375f914ae972e5947f1d742a24e5442d1133b918dea3fc698832174681b",
+  "M1": "746d8504b8dabe9ca382579270ccf6e5802a374e5adf1bebaad0dfed5d2a2fd1",
+  "M2": "57ae33a087ac1f62c0eb0af2961550e43b3cf2d78f4252b239aed7a5071fef77"
+ },
+ "更正后的实验设计（事实层面）": [
+  "M0 = 合并基座 + 全新 LoRA，256 图 schema 适配，64 步",
+  "M1 = 合并基座 + 全新 LoRA，60 图 SFT，60 步",
+  "M2 = 合并基座 + 全新 LoRA，60 图 GRPO，60 步",
+  "**M1 与 M2 仍是一对匹配对照**（同基座、同 60 图、同顺序、同步数，唯一差别是 SFT vs GRPO）",
+  "**M0 与 M1/M2 不是同一条线**：数据不同、步数不同、且 M1/M2 并非从 M0 出发 —— M0 分数更高只能记为『256 图 schema 适配这一条线更好』，不能读成『继续训练导致退化』"
+ ],
+ "数据文件 SHA256": {
+  "adapt_sft.jsonl": "417b3d7fe1b77714c47a67c4473ffcc8d65a33abcdee5eb5c1ca3cfe7a0aae91",
+  "group60_sft4.jsonl": "29ad5c668e66604539c25f9e5b8ee16e0b1f6e3e6b3b4fef393220bff1372b84",
+  "group60_grpo.jsonl": "8a62af8a8ff1f9e2de6496137de3c84a47060acdb53186e99a2174e32ae6b350",
+  "confirm120.jsonl": "711b32a3d0d21f8afa7fe813874362a252adb1e26627124683d8424ec192bf2f",
+  "confirm120_gold.jsonl": "d04102fc1ab5c99e1d8a3407edc16ea6a035cd0aeafe04e4bce92971dae447f3"
+ },
+ "未做": [
+  "没有重训",
+  "没有为此追加 GPU 预算",
+  "没有改任何原答或成绩"
+ ]
+}
