@@ -49,10 +49,19 @@ def main() -> int:
                     if p.is_file() and not any(s in p.parts for s in SKIP_DIRS)),
                    key=lambda p: p.relative_to(D).as_posix())
 
+    SELF_FILES = {"交付清册.json", "交付清册.md"}
     entries = []
     for p in files:
         rel = p.relative_to(D).as_posix()
-        entries.append({"relative_path": rel, "bytes": p.stat().st_size, "sha256": sha(p)})
+        if p.name in SELF_FILES:
+            # 本清册自身的字节随「上一轮登记了什么」变化，登记其 sha256 会导致
+            # 每跑一次值就变、无法复核；故只记字节数并注明原因。
+            entries.append({"relative_path": rel, "bytes": p.stat().st_size,
+                            "sha256": None,
+                            "说明": "本清册自身：内容随运行变化，故不登记 sha256（也不计入总封条）"})
+        else:
+            entries.append({"relative_path": rel, "bytes": p.stat().st_size,
+                            "sha256": sha(p)})
 
     # 总封条**排除本清册自身**（否则每跑一次值就变，无法复核）
     sealed = [e for e in entries if e["relative_path"] not in ("交付清册.json", "交付清册.md")]
@@ -126,7 +135,9 @@ def main() -> int:
           f"- 不含：{'、'.join(report['不含'])}", "",
           "## 逐文件", "", "| 相对路径 | 字节 | sha256(前16) |", "|---|---:|---|"]
     for e in entries:
-        md.append(f"| `{e['relative_path']}` | {e['bytes']} | `{e['sha256'][:16]}` |")
+        h = e["sha256"]
+        md.append(f"| `{e['relative_path']}` | {e['bytes']} | "
+                  f"{'（本清册自身，不登记）' if h is None else '`' + h[:16] + '`'} |")
     if hits:
         md += ["", "## 敏感扫描命中", "", "| 文件 | 行 | 原因 | 命中片段 |", "|---|---:|---|---|"]
         for h in hits[:50]:
