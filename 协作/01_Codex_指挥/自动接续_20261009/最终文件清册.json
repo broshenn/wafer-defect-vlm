@@ -1,0 +1,391 @@
+{
+  "files_excluding_manifest": [
+    {
+      "path": "13点巡检记录.md",
+      "bytes": 1824,
+      "sha256": "5bb3925a0e84c1f72201c29e48181010f42c772a879d7ba0c439bdede9c021b5"
+    },
+    {
+      "path": "13点类别区间.py",
+      "bytes": 2210,
+      "sha256": "82aa2f064824f4e6bd2c661145dd5f1e52766c92d8cf6f5a1318c8fbe5eb526a"
+    },
+    {
+      "path": "13点类别配对区间.json",
+      "bytes": 3150,
+      "sha256": "7c919c647ed0e5d468df10e6e5468c28584e8decb102ef05beafa7c461e6516c"
+    },
+    {
+      "path": "13点补核.json",
+      "bytes": 17095,
+      "sha256": "336d4baf6c2209786eb7408db17339d998f1eebb1b7d613e21372049f0bd3a40"
+    },
+    {
+      "path": "13点补核.py",
+      "bytes": 5109,
+      "sha256": "2df1fd57401cd5e491427d75ec8f73bf5fa8741dc226f4f40422d27353ef417d"
+    },
+    {
+      "path": "13点验收补充_必须并入.md",
+      "bytes": 2939,
+      "sha256": "45ea8be8c90430f221d26f53e211cc3fad9aae753a6478616773b6ad8886dae6"
+    },
+    {
+      "path": "实际PDF_打印版.png",
+      "bytes": 427802,
+      "sha256": "efdefa834eb37991afd67f392b1331366961a44211b62e4523cc9ae86c3d589b"
+    },
+    {
+      "path": "实际PDF文本.txt",
+      "bytes": 5673,
+      "sha256": "5367eed8b7e3888538e6eecc94b121030a86990587f08b91a043f765b711a4cc"
+    },
+    {
+      "path": "封部署启动包.py",
+      "bytes": 1892,
+      "sha256": "c1e5d711758fe5e2bd30cbc065c2f210a99e509fe2c023241af2e023707525c1"
+    },
+    {
+      "path": "执行总指令.md",
+      "bytes": 6771,
+      "sha256": "4987acaad6795616e587a1bce5791bf4ca8fbc31c3ab20c623428b05fef1ef07"
+    },
+    {
+      "path": "晶圆描述服务_恢复启动包.zip",
+      "bytes": 65731,
+      "sha256": "16a87d31da5b96f31a50675fdaf395ac3ecccb387f9de5ac529e8fc31fbdc6f0"
+    },
+    {
+      "path": "最终交付与验收.md",
+      "bytes": 7428,
+      "sha256": "4e9a6aa60d8c0733f3c998c1bf05274dfd04d4c6a5627a58800d2872cc54bcb4"
+    },
+    {
+      "path": "最终实物核验.json",
+      "bytes": 2241,
+      "sha256": "335359aad685dc0d890e85d6bdb435a1365f5748062e722e76d194bff88d6a57"
+    },
+    {
+      "path": "最终实物核验.py",
+      "bytes": 3178,
+      "sha256": "4cd390087c6e7aebe82e6a164a05a77f95246391693c08552b003cdff9401834"
+    },
+    {
+      "path": "最终简历稿/主张证据账本.json",
+      "bytes": 22915,
+      "sha256": "b980fc8d5e3893ce4af10607d5925ad476177fdfe6c211e97121f612880c8cc2"
+    },
+    {
+      "path": "最终简历稿/打印预览.png",
+      "bytes": 427963,
+      "sha256": "e03466f23d1b9efb9aeb320828739f16c5076e6387a5e0140fa5859a481bf6ae"
+    },
+    {
+      "path": "最终简历稿/简历材料_两版项目段落.md",
+      "bytes": 16409,
+      "sha256": "408a489154c7cede37cc82c2f2e79afcfe307445e9fd5b49b2c70e938cc068c6"
+    },
+    {
+      "path": "最终简历稿/项目经历页.pdf",
+      "bytes": 1217719,
+      "sha256": "173708dfbf9b61c29128f1b388c365006343b2ee4ea857fba68ec63d92548654"
+    },
+    {
+      "path": "最终简历稿/项目经历页_可编辑.html",
+      "bytes": 44669,
+      "sha256": "64bdbcdbd507bb5294cd8b352e05e6c6f7cbefcabae4acceac5ab1d233e8c147"
+    },
+    {
+      "path": "最终简历验收.json",
+      "bytes": 300,
+      "sha256": "359cf9a7e1e8882daaf4f4c25c93201ab3205374267bc3fa57e5655b2c747e75"
+    },
+    {
+      "path": "检查Claude接续.py",
+      "bytes": 2730,
+      "sha256": "2f58499f6e3425022ed96a710054965a852772afac8a92c6e6f4af877d72eb86"
+    },
+    {
+      "path": "租机收尾回执.json",
+      "bytes": 620,
+      "sha256": "71aec719361373b81e9e66ce5622b2f0868784ad7a0739a81cd548baec182473"
+    },
+    {
+      "path": "给Claude_13点补核修稿.md",
+      "bytes": 2672,
+      "sha256": "c9889a3fb7c2be13cf1dbed3935b7ade2de1218553e6b62a9bac41cc44067390"
+    },
+    {
+      "path": "给Claude_18点交付接续.md",
+      "bytes": 2822,
+      "sha256": "b30aa9f8df6b7befb74cb1a2773a88188c73e9002091ce05770247413eedefeb"
+    },
+    {
+      "path": "给Claude_只读小适配器备份.md",
+      "bytes": 2293,
+      "sha256": "4ab9aacb83451c9e3d07e8b336ea6b4f81d4ffeac6b0d61cbf8f2e64ab505c51"
+    },
+    {
+      "path": "给Claude_最后文字核验修正.md",
+      "bytes": 1530,
+      "sha256": "c11552d4c532af896ea025866c9995e7217ff8b21292146acc6cb0207cf0eded"
+    },
+    {
+      "path": "给Claude_最终文件与封包.md",
+      "bytes": 3342,
+      "sha256": "a157fef2a88597a977fdfbea840a58d48fd84e5d8be51989bc25c4161d0a65a0"
+    },
+    {
+      "path": "给Claude_租机停止空闲计费.md",
+      "bytes": 2046,
+      "sha256": "dfb69f91f31f2d2359bfe3f2d899be482ab3dfc77a841dd262f380d572ae7878"
+    },
+    {
+      "path": "适配器备份验收与纠正.md",
+      "bytes": 1970,
+      "sha256": "0e6556170d4f4de97aa3c8d1d632a7a62a5c0bbbff74e25e6ff6c98aea47f4e0"
+    },
+    {
+      "path": "部署启动包验收.json",
+      "bytes": 264,
+      "sha256": "25fa6bdd0f3e1bf041afff167d303b3ace222d228ae9a8aa1966b2fbc04c20b0"
+    },
+    {
+      "path": "部署恢复/bundle_manifest.json",
+      "bytes": 7543,
+      "sha256": "f80e7c1530d217b46340a0acc0b189d3fc99049713d81bc469162fe8886e0ffd"
+    },
+    {
+      "path": "部署恢复/demo.html",
+      "bytes": 3544,
+      "sha256": "12c99e2945b964f70a21cd35127f4a5a48173774f1a6ce57149ff4a1587a91a5"
+    },
+    {
+      "path": "部署恢复/prompt_7f.txt",
+      "bytes": 1103,
+      "sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda"
+    },
+    {
+      "path": "部署恢复/README.md",
+      "bytes": 2653,
+      "sha256": "572a6ada07cc4b4a1ec0b1c53cc125b3de7d285cb5169fea7912a14970f86ec8"
+    },
+    {
+      "path": "部署恢复/replay_selftest.py",
+      "bytes": 4881,
+      "sha256": "b35eee4e6ca3afb3fc4dbd7af5c66f74a5929fcd5c74ea7c3ac9be173efc0520"
+    },
+    {
+      "path": "部署恢复/run_d.sh",
+      "bytes": 1159,
+      "sha256": "9ae90b263db0d9417d58d046321ef8cf4c621fa70d9fa9439ddc98e97f49eda2"
+    },
+    {
+      "path": "部署恢复/schema_check.py",
+      "bytes": 9190,
+      "sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff"
+    },
+    {
+      "path": "部署恢复/test_cpu_contract.py",
+      "bytes": 2493,
+      "sha256": "3b99944fbcc707c33c53c8cab2c9d47840006b07a186e5c5596e4b42ecfa6c1d"
+    },
+    {
+      "path": "部署恢复/verify_bundle.py",
+      "bytes": 2302,
+      "sha256": "4d4cef63d50db85ee0137826678162b6ab579e648fb8ca50c309837a5380505b"
+    },
+    {
+      "path": "部署恢复/wafer_service.py",
+      "bytes": 10186,
+      "sha256": "04368d8ffc78017ff1909c7eba680f6d4445104e798c5b4db03c463d927a9c79"
+    },
+    {
+      "path": "部署恢复/图/wafer_00003298_021.png",
+      "bytes": 2000,
+      "sha256": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01"
+    },
+    {
+      "path": "部署恢复/图/wafer_00003822_012.png",
+      "bytes": 1934,
+      "sha256": "4edfae3cc4146d60d1bc17ddcfc2127021e01ecb0beba67c051590e51f090c71"
+    },
+    {
+      "path": "部署恢复/图/wafer_00011690_007.png",
+      "bytes": 2213,
+      "sha256": "f55f65ede98ec648a9efe1515682ec7ca4610b362db4aa5dd61188d464f372ed"
+    },
+    {
+      "path": "部署恢复/图/wafer_00018023_017.png",
+      "bytes": 2079,
+      "sha256": "0e03c92eabc31c73e7ddbe4c342a8ff161714034108aef0eed0faebe586a4088"
+    },
+    {
+      "path": "部署恢复/图/wafer_00019033_001.png",
+      "bytes": 1974,
+      "sha256": "acd00e2aa0549f349d5176ece58ef4f870af37e9f50e314207b23aaaaed1b63e"
+    },
+    {
+      "path": "部署恢复/图/wafer_00019331_006.png",
+      "bytes": 2102,
+      "sha256": "96cab01956ffd1761dae07ff14ec9fb4ecf6e8e4058c8d0c97c1016b51e2e664"
+    },
+    {
+      "path": "部署恢复/图/wafer_00019814_014.png",
+      "bytes": 2131,
+      "sha256": "15feaf927bd0e5cedefb55c598637c7d5709841424291590036be2e7c8109d6f"
+    },
+    {
+      "path": "部署恢复/图/wafer_00022388_005.png",
+      "bytes": 1875,
+      "sha256": "3bc254c9c71a2399238ad4604fa09c7e1725c1d20d057f3988d02bb49f453efd"
+    },
+    {
+      "path": "部署恢复/图/wafer_00026714_009.png",
+      "bytes": 1622,
+      "sha256": "dd5c840d9987740f0973e163f3cfd087d8b4f926c6dc7049ff6c7170963ba7ce"
+    },
+    {
+      "path": "部署恢复/图/wafer_00029697_025.png",
+      "bytes": 2303,
+      "sha256": "fec3ac2112549c882f4f42761356bef023ae782ef556b5d7b459b614f18b0b04"
+    },
+    {
+      "path": "部署恢复/图/wafer_00032899_015.png",
+      "bytes": 1749,
+      "sha256": "e748920456342903543ba6803b2a251a55c3ad0408c04bb565271a964f0d6646"
+    },
+    {
+      "path": "部署恢复/图/wafer_00036756_010.png",
+      "bytes": 1754,
+      "sha256": "ba2e49b3301d68b23de89abe1b935ca60de03f3694df5606bf99710fb29a16f0"
+    },
+    {
+      "path": "部署恢复/图/wafer_00039578_021.png",
+      "bytes": 1698,
+      "sha256": "f7899dd7f7ca7f5e4d483ac8e2215d32ad40f25f1d5b0cfabd5e47c281d48427"
+    },
+    {
+      "path": "部署恢复/图/wafer_00040378_016.png",
+      "bytes": 1795,
+      "sha256": "c1831444f0de02b99c27f686a7a4b5b1d5b34d858bc7530de24bdadd0e1ed977"
+    },
+    {
+      "path": "部署恢复/图/wafer_00040406_017.png",
+      "bytes": 1548,
+      "sha256": "11bb5b1d838e7b1f9257026f54de6c28d4a3579adec222aed7dcabb624e4f854"
+    },
+    {
+      "path": "部署恢复/图/wafer_00040556_007.png",
+      "bytes": 1781,
+      "sha256": "769c2d90c9742ec3de4db39770a2f3f718c69236a8602ce68bf4a844c7bfdc39"
+    },
+    {
+      "path": "部署恢复/图/wafer_00041108_014.png",
+      "bytes": 1713,
+      "sha256": "a07d7c870dd31d483766f754a943ec2f1d93bbb7c593368c43b21c7d1e51adf4"
+    },
+    {
+      "path": "部署恢复/图/wafer_00042202_013.png",
+      "bytes": 1898,
+      "sha256": "789a559d5d024fb1c8ecd3d3c811b69a33da0ac83b6a037606b343c299f2d121"
+    },
+    {
+      "path": "部署恢复/图/wafer_00042778_024.png",
+      "bytes": 1468,
+      "sha256": "5a080c63fe5fd8331d09c6c9f8942983e26b08fb67fc9c84aa7b0041bdbdda01"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043050_009.png",
+      "bytes": 1653,
+      "sha256": "9442bb4a4c8b9328f77c4c7b45f751d278add1e32adbbbbe7177e9d997a23bf0"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043183_023.png",
+      "bytes": 1718,
+      "sha256": "84ab39c592a057d6c7edd254310faa220af9bb67e8f35203f1db734c2fda77bf"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043329_001.png",
+      "bytes": 1683,
+      "sha256": "ed3b7b1b3f3dd46659f15a3b4dcd9f3422af9e0e25fb9d18ec90aa99fef2dce1"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043705_021.png",
+      "bytes": 1866,
+      "sha256": "f76ff558a9413e4cc7a73d149842996a6c9560d55a36ffc87a42922a5c25a82b"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043921_007.png",
+      "bytes": 1624,
+      "sha256": "035b169f2d0688b57d86ac0b606a98f5c8d55628cbf3cfc8f6217d63a5fdde1c"
+    },
+    {
+      "path": "部署恢复/图/wafer_00043980_001.png",
+      "bytes": 1770,
+      "sha256": "b50d8fa445a090865398fc2de2d3a7620eea1dd0da06fc002777d0bd49acdc0d"
+    },
+    {
+      "path": "部署恢复/图/wafer_00044300_025.png",
+      "bytes": 1864,
+      "sha256": "7e9470560bdf303221418e3e21311f403fcf63de4a0525004450567c7a0a3df3"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045191_016.png",
+      "bytes": 1704,
+      "sha256": "85e8b8bd44c863f33d54fbd96e32f186b0af3fc021aa2f752f32a46ce3a5a2d8"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045337_006.png",
+      "bytes": 1851,
+      "sha256": "5590d5962a80fbeb0eb5fa77c72ef875d062fd6de07fc797926699ce3252bd57"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045360_022.png",
+      "bytes": 2151,
+      "sha256": "1b9adc4226cb133119d0ca1dd7756f38863730338ad9982182f828e1694e5946"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045384_019.png",
+      "bytes": 1969,
+      "sha256": "a006f575db6bc0169ff0fb676d49a2cd7c335ef86b9b5939c51add18a284b6ac"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045589_021.png",
+      "bytes": 1850,
+      "sha256": "4489e5f388a7cc67af30f8f8732600a9537c9e5e79d66ed60ac006e97b172783"
+    },
+    {
+      "path": "部署恢复/图/wafer_00045633_013.png",
+      "bytes": 1753,
+      "sha256": "876e4a175e8c36d968ce5ec59d461f69e84a31d6459e6ee5eb42b6e50653d8c9"
+    },
+    {
+      "path": "部署恢复/图/wafer_00046667_020.png",
+      "bytes": 1860,
+      "sha256": "96f2bda39c9ca27b23249176323fc027bf30e0ee3d58f282517f184fb2a4487c"
+    },
+    {
+      "path": "部署恢复/图/wafer_00047246_025.png",
+      "bytes": 1780,
+      "sha256": "4790fffb5da31c43e8eed14b6b74f6a5ea0211c82e35604db3d39653a416518c"
+    },
+    {
+      "path": "部署恢复/图/wafer_00047411_016.png",
+      "bytes": 1988,
+      "sha256": "e01e287cda84a2cfc1dfbc76bd60ee33439fc3065ba0b2099f836ccf9688e52c"
+    },
+    {
+      "path": "部署恢复/图/wafer_00047511_013.png",
+      "bytes": 1697,
+      "sha256": "bfd0d69e08936a3635f43e0b8306d9d2d6a7061c9c148f01a96e7f62c1061f9a"
+    },
+    {
+      "path": "部署恢复/样本清单.json",
+      "bytes": 13508,
+      "sha256": "e662082e77755ead6d4dd76ad4b58be623762e007e8d01ef90f7a472a2cfd64b"
+    }
+  ],
+  "sensitive_hits": [],
+  "scope": "本Codex接续目录；清册自身不计入，权重不入Git。"
+}

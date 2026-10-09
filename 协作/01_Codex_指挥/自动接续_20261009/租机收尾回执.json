@@ -1,0 +1,18 @@
+{
+  "time": "2026-10-09T15:12:19.729493+08:00",
+  "source": "AutoDL official provider shutdown wrapper, not shared-school OS shutdown",
+  "ssh_return_code": 0,
+  "markers": [
+    {
+      "shutdown_attempted": true,
+      "method": "provider_/usr/bin/shutdown",
+      "gpu_process_rows": 0
+    }
+  ],
+  "platform_billing_verified": false,
+  "new_model_api_or_gpu": false,
+  "post_check_time": "2026-10-09T15:14:04.762315+08:00",
+  "ssh_still_reachable": false,
+  "post_check_ssh_code": 255,
+  "conclusion": "平台关机命令已执行，随后SSH不可达；平台计费/账单仍未独立验证。"
+}

@@ -1,0 +1,234 @@
+{
+  "files": [
+    {
+      "path": "demo.html",
+      "bytes": 3544,
+      "sha256": "12c99e2945b964f70a21cd35127f4a5a48173774f1a6ce57149ff4a1587a91a5"
+    },
+    {
+      "path": "prompt_7f.txt",
+      "bytes": 1103,
+      "sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2653,
+      "sha256": "572a6ada07cc4b4a1ec0b1c53cc125b3de7d285cb5169fea7912a14970f86ec8"
+    },
+    {
+      "path": "replay_selftest.py",
+      "bytes": 4881,
+      "sha256": "b35eee4e6ca3afb3fc4dbd7af5c66f74a5929fcd5c74ea7c3ac9be173efc0520"
+    },
+    {
+      "path": "run_d.sh",
+      "bytes": 1159,
+      "sha256": "9ae90b263db0d9417d58d046321ef8cf4c621fa70d9fa9439ddc98e97f49eda2"
+    },
+    {
+      "path": "schema_check.py",
+      "bytes": 9190,
+      "sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff"
+    },
+    {
+      "path": "test_cpu_contract.py",
+      "bytes": 2493,
+      "sha256": "3b99944fbcc707c33c53c8cab2c9d47840006b07a186e5c5596e4b42ecfa6c1d"
+    },
+    {
+      "path": "verify_bundle.py",
+      "bytes": 2302,
+      "sha256": "4d4cef63d50db85ee0137826678162b6ab579e648fb8ca50c309837a5380505b"
+    },
+    {
+      "path": "wafer_service.py",
+      "bytes": 10186,
+      "sha256": "04368d8ffc78017ff1909c7eba680f6d4445104e798c5b4db03c463d927a9c79"
+    },
+    {
+      "path": "图/wafer_00003298_021.png",
+      "bytes": 2000,
+      "sha256": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01"
+    },
+    {
+      "path": "图/wafer_00003822_012.png",
+      "bytes": 1934,
+      "sha256": "4edfae3cc4146d60d1bc17ddcfc2127021e01ecb0beba67c051590e51f090c71"
+    },
+    {
+      "path": "图/wafer_00011690_007.png",
+      "bytes": 2213,
+      "sha256": "f55f65ede98ec648a9efe1515682ec7ca4610b362db4aa5dd61188d464f372ed"
+    },
+    {
+      "path": "图/wafer_00018023_017.png",
+      "bytes": 2079,
+      "sha256": "0e03c92eabc31c73e7ddbe4c342a8ff161714034108aef0eed0faebe586a4088"
+    },
+    {
+      "path": "图/wafer_00019033_001.png",
+      "bytes": 1974,
+      "sha256": "acd00e2aa0549f349d5176ece58ef4f870af37e9f50e314207b23aaaaed1b63e"
+    },
+    {
+      "path": "图/wafer_00019331_006.png",
+      "bytes": 2102,
+      "sha256": "96cab01956ffd1761dae07ff14ec9fb4ecf6e8e4058c8d0c97c1016b51e2e664"
+    },
+    {
+      "path": "图/wafer_00019814_014.png",
+      "bytes": 2131,
+      "sha256": "15feaf927bd0e5cedefb55c598637c7d5709841424291590036be2e7c8109d6f"
+    },
+    {
+      "path": "图/wafer_00022388_005.png",
+      "bytes": 1875,
+      "sha256": "3bc254c9c71a2399238ad4604fa09c7e1725c1d20d057f3988d02bb49f453efd"
+    },
+    {
+      "path": "图/wafer_00026714_009.png",
+      "bytes": 1622,
+      "sha256": "dd5c840d9987740f0973e163f3cfd087d8b4f926c6dc7049ff6c7170963ba7ce"
+    },
+    {
+      "path": "图/wafer_00029697_025.png",
+      "bytes": 2303,
+      "sha256": "fec3ac2112549c882f4f42761356bef023ae782ef556b5d7b459b614f18b0b04"
+    },
+    {
+      "path": "图/wafer_00032899_015.png",
+      "bytes": 1749,
+      "sha256": "e748920456342903543ba6803b2a251a55c3ad0408c04bb565271a964f0d6646"
+    },
+    {
+      "path": "图/wafer_00036756_010.png",
+      "bytes": 1754,
+      "sha256": "ba2e49b3301d68b23de89abe1b935ca60de03f3694df5606bf99710fb29a16f0"
+    },
+    {
+      "path": "图/wafer_00039578_021.png",
+      "bytes": 1698,
+      "sha256": "f7899dd7f7ca7f5e4d483ac8e2215d32ad40f25f1d5b0cfabd5e47c281d48427"
+    },
+    {
+      "path": "图/wafer_00040378_016.png",
+      "bytes": 1795,
+      "sha256": "c1831444f0de02b99c27f686a7a4b5b1d5b34d858bc7530de24bdadd0e1ed977"
+    },
+    {
+      "path": "图/wafer_00040406_017.png",
+      "bytes": 1548,
+      "sha256": "11bb5b1d838e7b1f9257026f54de6c28d4a3579adec222aed7dcabb624e4f854"
+    },
+    {
+      "path": "图/wafer_00040556_007.png",
+      "bytes": 1781,
+      "sha256": "769c2d90c9742ec3de4db39770a2f3f718c69236a8602ce68bf4a844c7bfdc39"
+    },
+    {
+      "path": "图/wafer_00041108_014.png",
+      "bytes": 1713,
+      "sha256": "a07d7c870dd31d483766f754a943ec2f1d93bbb7c593368c43b21c7d1e51adf4"
+    },
+    {
+      "path": "图/wafer_00042202_013.png",
+      "bytes": 1898,
+      "sha256": "789a559d5d024fb1c8ecd3d3c811b69a33da0ac83b6a037606b343c299f2d121"
+    },
+    {
+      "path": "图/wafer_00042778_024.png",
+      "bytes": 1468,
+      "sha256": "5a080c63fe5fd8331d09c6c9f8942983e26b08fb67fc9c84aa7b0041bdbdda01"
+    },
+    {
+      "path": "图/wafer_00043050_009.png",
+      "bytes": 1653,
+      "sha256": "9442bb4a4c8b9328f77c4c7b45f751d278add1e32adbbbbe7177e9d997a23bf0"
+    },
+    {
+      "path": "图/wafer_00043183_023.png",
+      "bytes": 1718,
+      "sha256": "84ab39c592a057d6c7edd254310faa220af9bb67e8f35203f1db734c2fda77bf"
+    },
+    {
+      "path": "图/wafer_00043329_001.png",
+      "bytes": 1683,
+      "sha256": "ed3b7b1b3f3dd46659f15a3b4dcd9f3422af9e0e25fb9d18ec90aa99fef2dce1"
+    },
+    {
+      "path": "图/wafer_00043705_021.png",
+      "bytes": 1866,
+      "sha256": "f76ff558a9413e4cc7a73d149842996a6c9560d55a36ffc87a42922a5c25a82b"
+    },
+    {
+      "path": "图/wafer_00043921_007.png",
+      "bytes": 1624,
+      "sha256": "035b169f2d0688b57d86ac0b606a98f5c8d55628cbf3cfc8f6217d63a5fdde1c"
+    },
+    {
+      "path": "图/wafer_00043980_001.png",
+      "bytes": 1770,
+      "sha256": "b50d8fa445a090865398fc2de2d3a7620eea1dd0da06fc002777d0bd49acdc0d"
+    },
+    {
+      "path": "图/wafer_00044300_025.png",
+      "bytes": 1864,
+      "sha256": "7e9470560bdf303221418e3e21311f403fcf63de4a0525004450567c7a0a3df3"
+    },
+    {
+      "path": "图/wafer_00045191_016.png",
+      "bytes": 1704,
+      "sha256": "85e8b8bd44c863f33d54fbd96e32f186b0af3fc021aa2f752f32a46ce3a5a2d8"
+    },
+    {
+      "path": "图/wafer_00045337_006.png",
+      "bytes": 1851,
+      "sha256": "5590d5962a80fbeb0eb5fa77c72ef875d062fd6de07fc797926699ce3252bd57"
+    },
+    {
+      "path": "图/wafer_00045360_022.png",
+      "bytes": 2151,
+      "sha256": "1b9adc4226cb133119d0ca1dd7756f38863730338ad9982182f828e1694e5946"
+    },
+    {
+      "path": "图/wafer_00045384_019.png",
+      "bytes": 1969,
+      "sha256": "a006f575db6bc0169ff0fb676d49a2cd7c335ef86b9b5939c51add18a284b6ac"
+    },
+    {
+      "path": "图/wafer_00045589_021.png",
+      "bytes": 1850,
+      "sha256": "4489e5f388a7cc67af30f8f8732600a9537c9e5e79d66ed60ac006e97b172783"
+    },
+    {
+      "path": "图/wafer_00045633_013.png",
+      "bytes": 1753,
+      "sha256": "876e4a175e8c36d968ce5ec59d461f69e84a31d6459e6ee5eb42b6e50653d8c9"
+    },
+    {
+      "path": "图/wafer_00046667_020.png",
+      "bytes": 1860,
+      "sha256": "96f2bda39c9ca27b23249176323fc027bf30e0ee3d58f282517f184fb2a4487c"
+    },
+    {
+      "path": "图/wafer_00047246_025.png",
+      "bytes": 1780,
+      "sha256": "4790fffb5da31c43e8eed14b6b74f6a5ea0211c82e35604db3d39653a416518c"
+    },
+    {
+      "path": "图/wafer_00047411_016.png",
+      "bytes": 1988,
+      "sha256": "e01e287cda84a2cfc1dfbc76bd60ee33439fc3065ba0b2099f836ccf9688e52c"
+    },
+    {
+      "path": "图/wafer_00047511_013.png",
+      "bytes": 1697,
+      "sha256": "bfd0d69e08936a3635f43e0b8306d9d2d6a7061c9c148f01a96e7f62c1061f9a"
+    },
+    {
+      "path": "样本清单.json",
+      "bytes": 13508,
+      "sha256": "e662082e77755ead6d4dd76ad4b58be623762e007e8d01ef90f7a472a2cfd64b"
+    }
+  ]
+}

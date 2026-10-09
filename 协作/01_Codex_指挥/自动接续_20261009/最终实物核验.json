@@ -1,0 +1,91 @@
+{
+  "pdf": {
+    "path": "协作\\02_ClaudeCode_实操\\自动接续交付_20261009_1247\\项目经历页.pdf",
+    "sha256": "6bd3f69bb66c57675a5eb8913989980d0958ceb1c20f28ded95bde14bfde00a8",
+    "pages": 1,
+    "text_chars": 2477,
+    "pending_personal_fields": 4,
+    "page_mm": [
+      [
+        209.9,
+        297.0
+      ]
+    ],
+    "private_patterns_present": false
+  },
+  "data_zip": {
+    "path": "协作\\02_ClaudeCode_实操\\自动接续交付_20261009_1247\\公开数据恢复包\\晶圆图公开数据恢复包_20261009.zip",
+    "sha256": "676c39f9be52cf773256ff35b382aea87f1503f9c7e944f4d4d9d55c706b6543",
+    "bytes": 10515044,
+    "files": 6088,
+    "png_files": 5904,
+    "unique_png_sha256": 5875,
+    "crc_bad": null,
+    "unsafe_names": [],
+    "has_restore_readme": true
+  },
+  "adapter_files": [
+    {
+      "path": "L-N3072-3407/adapter_model.safetensors",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "L-N3072-3407/adapter_config.json",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "D-N3072-3407/adapter_model.safetensors",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true
+    },
+    {
+      "path": "D-N3072-3407/adapter_config.json",
+      "exists": true,
+      "bytes_match": true,
+      "sha256_match": true
+    }
+  ],
+  "runtime_files": [
+    {
+      "path": "wafer_service.py",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "demo.html",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "replay_selftest.py",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "test_cpu_contract.py",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "prompt_7f.txt",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "schema_check.py",
+      "exists": true,
+      "tracked": null
+    },
+    {
+      "path": "样本清单.json",
+      "exists": true,
+      "tracked": null
+    }
+  ],
+  "scope": "只读实物验收；没有重跑 GPU 或 API；PDF 布局须另行目视核对。"
+}

@@ -1,0 +1,623 @@
+{
+  "scope": "补充诊断；原36主表、原答、标签和请求不改；不同晶圆ID可有相同PNG，不据此推为同一物理晶圆",
+  "eval_vs_train_content_overlap": {
+    "wafer_00040406_017": [
+      "wafer_00000127_002"
+    ]
+  },
+  "train3072_distinct_png_sha256": 3060,
+  "d_nested_image_hash_verified": 36,
+  "glm_subset_image_hash_verified": 36,
+  "api_failures": {
+    "kimi-k3": [
+      "wafer_00011690_007",
+      "wafer_00018023_017",
+      "wafer_00029697_025",
+      "wafer_00040556_007"
+    ],
+    "qwen3-vl-plus": [
+      "wafer_00043050_009",
+      "wafer_00045360_022"
+    ],
+    "qwen3.5-397b-a17b": [
+      "wafer_00011690_007",
+      "wafer_00022388_005",
+      "wafer_00040556_007",
+      "wafer_00043183_023",
+      "wafer_00043921_007",
+      "wafer_00043980_001"
+    ],
+    "qwen3.8-max-0902": []
+  },
+  "subset_ids": {
+    "frozen36": [
+      "wafer_00045633_013",
+      "wafer_00036756_010",
+      "wafer_00019331_006",
+      "wafer_00045384_019",
+      "wafer_00047411_016",
+      "wafer_00047511_013",
+      "wafer_00019814_014",
+      "wafer_00011690_007",
+      "wafer_00026714_009",
+      "wafer_00022388_005",
+      "wafer_00040406_017",
+      "wafer_00043050_009",
+      "wafer_00045360_022",
+      "wafer_00040378_016",
+      "wafer_00019033_001",
+      "wafer_00043705_021",
+      "wafer_00045191_016",
+      "wafer_00043329_001",
+      "wafer_00003298_021",
+      "wafer_00003822_012",
+      "wafer_00018023_017",
+      "wafer_00029697_025",
+      "wafer_00032899_015",
+      "wafer_00039578_021",
+      "wafer_00040556_007",
+      "wafer_00041108_014",
+      "wafer_00042202_013",
+      "wafer_00042778_024",
+      "wafer_00043183_023",
+      "wafer_00043921_007",
+      "wafer_00043980_001",
+      "wafer_00044300_025",
+      "wafer_00045337_006",
+      "wafer_00045589_021",
+      "wafer_00046667_020",
+      "wafer_00047246_025"
+    ],
+    "exclude_train_same_image": [
+      "wafer_00045633_013",
+      "wafer_00036756_010",
+      "wafer_00019331_006",
+      "wafer_00045384_019",
+      "wafer_00047411_016",
+      "wafer_00047511_013",
+      "wafer_00019814_014",
+      "wafer_00011690_007",
+      "wafer_00026714_009",
+      "wafer_00022388_005",
+      "wafer_00043050_009",
+      "wafer_00045360_022",
+      "wafer_00040378_016",
+      "wafer_00019033_001",
+      "wafer_00043705_021",
+      "wafer_00045191_016",
+      "wafer_00043329_001",
+      "wafer_00003298_021",
+      "wafer_00003822_012",
+      "wafer_00018023_017",
+      "wafer_00029697_025",
+      "wafer_00032899_015",
+      "wafer_00039578_021",
+      "wafer_00040556_007",
+      "wafer_00041108_014",
+      "wafer_00042202_013",
+      "wafer_00042778_024",
+      "wafer_00043183_023",
+      "wafer_00043921_007",
+      "wafer_00043980_001",
+      "wafer_00044300_025",
+      "wafer_00045337_006",
+      "wafer_00045589_021",
+      "wafer_00046667_020",
+      "wafer_00047246_025"
+    ],
+    "api_all_returned_common": [
+      "wafer_00045633_013",
+      "wafer_00036756_010",
+      "wafer_00019331_006",
+      "wafer_00045384_019",
+      "wafer_00047411_016",
+      "wafer_00047511_013",
+      "wafer_00019814_014",
+      "wafer_00026714_009",
+      "wafer_00040406_017",
+      "wafer_00040378_016",
+      "wafer_00019033_001",
+      "wafer_00043705_021",
+      "wafer_00045191_016",
+      "wafer_00043329_001",
+      "wafer_00003298_021",
+      "wafer_00003822_012",
+      "wafer_00032899_015",
+      "wafer_00039578_021",
+      "wafer_00041108_014",
+      "wafer_00042202_013",
+      "wafer_00042778_024",
+      "wafer_00044300_025",
+      "wafer_00045337_006",
+      "wafer_00045589_021",
+      "wafer_00046667_020",
+      "wafer_00047246_025"
+    ],
+    "api_all_returned_and_no_train_same_image": [
+      "wafer_00045633_013",
+      "wafer_00036756_010",
+      "wafer_00019331_006",
+      "wafer_00045384_019",
+      "wafer_00047411_016",
+      "wafer_00047511_013",
+      "wafer_00019814_014",
+      "wafer_00026714_009",
+      "wafer_00040378_016",
+      "wafer_00019033_001",
+      "wafer_00043705_021",
+      "wafer_00045191_016",
+      "wafer_00043329_001",
+      "wafer_00003298_021",
+      "wafer_00003822_012",
+      "wafer_00032899_015",
+      "wafer_00039578_021",
+      "wafer_00041108_014",
+      "wafer_00042202_013",
+      "wafer_00042778_024",
+      "wafer_00044300_025",
+      "wafer_00045337_006",
+      "wafer_00045589_021",
+      "wafer_00046667_020",
+      "wafer_00047246_025"
+    ]
+  },
+  "metrics": {
+    "frozen36": {
+      "kimi-k3": {
+        "strict": {
+          "n": 36,
+          "correct": 14,
+          "accuracy": 0.3888888888888889,
+          "macro_f1_fixed9": 0.3940267335004177
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 14,
+          "accuracy": 0.3888888888888889,
+          "macro_f1_fixed9": 0.3940267335004177
+        }
+      },
+      "qwen3-vl-plus": {
+        "strict": {
+          "n": 36,
+          "correct": 5,
+          "accuracy": 0.1388888888888889,
+          "macro_f1_fixed9": 0.08962962962962963
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 5,
+          "accuracy": 0.1388888888888889,
+          "macro_f1_fixed9": 0.08962962962962963
+        }
+      },
+      "qwen3.5-397b-a17b": {
+        "strict": {
+          "n": 36,
+          "correct": 0,
+          "accuracy": 0.0,
+          "macro_f1_fixed9": 0.0
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 8,
+          "accuracy": 0.2222222222222222,
+          "macro_f1_fixed9": 0.20289359763043974
+        }
+      },
+      "qwen3.8-max-0902": {
+        "strict": {
+          "n": 36,
+          "correct": 19,
+          "accuracy": 0.5277777777777778,
+          "macro_f1_fixed9": 0.4642439431913117
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 19,
+          "accuracy": 0.5277777777777778,
+          "macro_f1_fixed9": 0.4642439431913117
+        }
+      },
+      "Base": {
+        "strict": {
+          "n": 36,
+          "correct": 6,
+          "accuracy": 0.16666666666666666,
+          "macro_f1_fixed9": 0.06907787552948844
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 6,
+          "accuracy": 0.16666666666666666,
+          "macro_f1_fixed9": 0.06907787552948844
+        }
+      },
+      "L-N3072-3407": {
+        "strict": {
+          "n": 36,
+          "correct": 32,
+          "accuracy": 0.8888888888888888,
+          "macro_f1_fixed9": 0.8910934744268076
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 32,
+          "accuracy": 0.8888888888888888,
+          "macro_f1_fixed9": 0.8910934744268076
+        }
+      },
+      "D-N3072-3407": {
+        "strict": {
+          "n": 36,
+          "correct": 25,
+          "accuracy": 0.6944444444444444,
+          "macro_f1_fixed9": 0.6756206756206756
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 25,
+          "accuracy": 0.6944444444444444,
+          "macro_f1_fixed9": 0.6756206756206756
+        }
+      },
+      "GLM-WorkBuddy": {
+        "strict": {
+          "n": 36,
+          "correct": 11,
+          "accuracy": 0.3055555555555556,
+          "macro_f1_fixed9": 0.28784032731401155
+        },
+        "full_fence_diagnostic": {
+          "n": 36,
+          "correct": 11,
+          "accuracy": 0.3055555555555556,
+          "macro_f1_fixed9": 0.28784032731401155
+        }
+      }
+    },
+    "exclude_train_same_image": {
+      "kimi-k3": {
+        "strict": {
+          "n": 35,
+          "correct": 13,
+          "accuracy": 0.37142857142857144,
+          "macro_f1_fixed9": 0.3940267335004177
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 13,
+          "accuracy": 0.37142857142857144,
+          "macro_f1_fixed9": 0.3940267335004177
+        }
+      },
+      "qwen3-vl-plus": {
+        "strict": {
+          "n": 35,
+          "correct": 5,
+          "accuracy": 0.14285714285714285,
+          "macro_f1_fixed9": 0.09074074074074073
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 5,
+          "accuracy": 0.14285714285714285,
+          "macro_f1_fixed9": 0.09074074074074073
+        }
+      },
+      "qwen3.5-397b-a17b": {
+        "strict": {
+          "n": 35,
+          "correct": 0,
+          "accuracy": 0.0,
+          "macro_f1_fixed9": 0.0
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 8,
+          "accuracy": 0.22857142857142856,
+          "macro_f1_fixed9": 0.20354337021003688
+        }
+      },
+      "qwen3.8-max-0902": {
+        "strict": {
+          "n": 35,
+          "correct": 18,
+          "accuracy": 0.5142857142857142,
+          "macro_f1_fixed9": 0.45789473684210524
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 18,
+          "accuracy": 0.5142857142857142,
+          "macro_f1_fixed9": 0.45789473684210524
+        }
+      },
+      "Base": {
+        "strict": {
+          "n": 35,
+          "correct": 6,
+          "accuracy": 0.17142857142857143,
+          "macro_f1_fixed9": 0.07003367003367005
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 6,
+          "accuracy": 0.17142857142857143,
+          "macro_f1_fixed9": 0.07003367003367005
+        }
+      },
+      "L-N3072-3407": {
+        "strict": {
+          "n": 35,
+          "correct": 31,
+          "accuracy": 0.8857142857142857,
+          "macro_f1_fixed9": 0.8910934744268076
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 31,
+          "accuracy": 0.8857142857142857,
+          "macro_f1_fixed9": 0.8910934744268076
+        }
+      },
+      "D-N3072-3407": {
+        "strict": {
+          "n": 35,
+          "correct": 24,
+          "accuracy": 0.6857142857142857,
+          "macro_f1_fixed9": 0.6756206756206756
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 24,
+          "accuracy": 0.6857142857142857,
+          "macro_f1_fixed9": 0.6756206756206756
+        }
+      },
+      "GLM-WorkBuddy": {
+        "strict": {
+          "n": 35,
+          "correct": 10,
+          "accuracy": 0.2857142857142857,
+          "macro_f1_fixed9": 0.27858106805475225
+        },
+        "full_fence_diagnostic": {
+          "n": 35,
+          "correct": 10,
+          "accuracy": 0.2857142857142857,
+          "macro_f1_fixed9": 0.27858106805475225
+        }
+      }
+    },
+    "api_all_returned_common": {
+      "kimi-k3": {
+        "strict": {
+          "n": 26,
+          "correct": 10,
+          "accuracy": 0.38461538461538464,
+          "macro_f1_fixed9": 0.40820105820105823
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 10,
+          "accuracy": 0.38461538461538464,
+          "macro_f1_fixed9": 0.40820105820105823
+        }
+      },
+      "qwen3-vl-plus": {
+        "strict": {
+          "n": 26,
+          "correct": 3,
+          "accuracy": 0.11538461538461539,
+          "macro_f1_fixed9": 0.06560846560846562
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 3,
+          "accuracy": 0.11538461538461539,
+          "macro_f1_fixed9": 0.06560846560846562
+        }
+      },
+      "qwen3.5-397b-a17b": {
+        "strict": {
+          "n": 26,
+          "correct": 0,
+          "accuracy": 0.0,
+          "macro_f1_fixed9": 0.0
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 6,
+          "accuracy": 0.23076923076923078,
+          "macro_f1_fixed9": 0.21604938271604937
+        }
+      },
+      "qwen3.8-max-0902": {
+        "strict": {
+          "n": 26,
+          "correct": 13,
+          "accuracy": 0.5,
+          "macro_f1_fixed9": 0.4765512265512266
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 13,
+          "accuracy": 0.5,
+          "macro_f1_fixed9": 0.4765512265512266
+        }
+      },
+      "Base": {
+        "strict": {
+          "n": 26,
+          "correct": 3,
+          "accuracy": 0.11538461538461539,
+          "macro_f1_fixed9": 0.06049382716049382
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 3,
+          "accuracy": 0.11538461538461539,
+          "macro_f1_fixed9": 0.06049382716049382
+        }
+      },
+      "L-N3072-3407": {
+        "strict": {
+          "n": 26,
+          "correct": 22,
+          "accuracy": 0.8461538461538461,
+          "macro_f1_fixed9": 0.8712522045855379
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 22,
+          "accuracy": 0.8461538461538461,
+          "macro_f1_fixed9": 0.8712522045855379
+        }
+      },
+      "D-N3072-3407": {
+        "strict": {
+          "n": 26,
+          "correct": 16,
+          "accuracy": 0.6153846153846154,
+          "macro_f1_fixed9": 0.6126984126984127
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 16,
+          "accuracy": 0.6153846153846154,
+          "macro_f1_fixed9": 0.6126984126984127
+        }
+      },
+      "GLM-WorkBuddy": {
+        "strict": {
+          "n": 26,
+          "correct": 8,
+          "accuracy": 0.3076923076923077,
+          "macro_f1_fixed9": 0.3227513227513228
+        },
+        "full_fence_diagnostic": {
+          "n": 26,
+          "correct": 8,
+          "accuracy": 0.3076923076923077,
+          "macro_f1_fixed9": 0.3227513227513228
+        }
+      }
+    },
+    "api_all_returned_and_no_train_same_image": {
+      "kimi-k3": {
+        "strict": {
+          "n": 25,
+          "correct": 9,
+          "accuracy": 0.36,
+          "macro_f1_fixed9": 0.40820105820105823
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 9,
+          "accuracy": 0.36,
+          "macro_f1_fixed9": 0.40820105820105823
+        }
+      },
+      "qwen3-vl-plus": {
+        "strict": {
+          "n": 25,
+          "correct": 3,
+          "accuracy": 0.12,
+          "macro_f1_fixed9": 0.06666666666666668
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 3,
+          "accuracy": 0.12,
+          "macro_f1_fixed9": 0.06666666666666668
+        }
+      },
+      "qwen3.5-397b-a17b": {
+        "strict": {
+          "n": 25,
+          "correct": 0,
+          "accuracy": 0.0,
+          "macro_f1_fixed9": 0.0
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 6,
+          "accuracy": 0.24,
+          "macro_f1_fixed9": 0.21604938271604937
+        }
+      },
+      "qwen3.8-max-0902": {
+        "strict": {
+          "n": 25,
+          "correct": 12,
+          "accuracy": 0.48,
+          "macro_f1_fixed9": 0.4765512265512266
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 12,
+          "accuracy": 0.48,
+          "macro_f1_fixed9": 0.4765512265512266
+        }
+      },
+      "Base": {
+        "strict": {
+          "n": 25,
+          "correct": 3,
+          "accuracy": 0.12,
+          "macro_f1_fixed9": 0.06107862248213125
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 3,
+          "accuracy": 0.12,
+          "macro_f1_fixed9": 0.06107862248213125
+        }
+      },
+      "L-N3072-3407": {
+        "strict": {
+          "n": 25,
+          "correct": 21,
+          "accuracy": 0.84,
+          "macro_f1_fixed9": 0.8712522045855379
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 21,
+          "accuracy": 0.84,
+          "macro_f1_fixed9": 0.8712522045855379
+        }
+      },
+      "D-N3072-3407": {
+        "strict": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "macro_f1_fixed9": 0.6126984126984127
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 15,
+          "accuracy": 0.6,
+          "macro_f1_fixed9": 0.6126984126984127
+        }
+      },
+      "GLM-WorkBuddy": {
+        "strict": {
+          "n": 25,
+          "correct": 7,
+          "accuracy": 0.28,
+          "macro_f1_fixed9": 0.3227513227513228
+        },
+        "full_fence_diagnostic": {
+          "n": 25,
+          "correct": 7,
+          "accuracy": 0.28,
+          "macro_f1_fixed9": 0.3227513227513228
+        }
+      }
+    }
+  },
+  "money_note": "成功响应usage按价目推算约4.9034元；不是平台实际实付。失败后台用量/免费抵扣/实际账单未核。"
+}
