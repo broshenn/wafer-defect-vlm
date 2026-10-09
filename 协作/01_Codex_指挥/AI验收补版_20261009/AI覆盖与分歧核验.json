@@ -1,0 +1,461 @@
+{
+  "prior_review_models": [
+    "Base",
+    "D-N3072-3407",
+    "GLM-WorkBuddy",
+    "L-N3072-3407",
+    "kimi-k3",
+    "qwen3-vl-plus",
+    "qwen3.5-397b-a17b",
+    "qwen3.8-max-0902"
+  ],
+  "prior_review_images": 36,
+  "prior_review_cells": 1728,
+  "missing_prior_cells": 0,
+  "original_shards_match_published_cells": true,
+  "source_files": [
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片1_复核.json",
+      "sha256": "446102846ff6933c2ea3a790d06bcdc98bfe9ae641b6042dd4dc0286e8fe15c7"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片2_复核.json",
+      "sha256": "763fbd72b21b6d854dd7886591a6921bdc80854478b90e72594586822d1b7340"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片3_复核.json",
+      "sha256": "68ce2124f0ac0b10afe0af004e23922335d0b3395fd3c7ff0a90b27ce4ff24a0"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片4_复核.json",
+      "sha256": "59c0ea78c00dbcafbebf9deb73b986b405e395d0acb8994b679a4d6f722e4b1f"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片5_复核.json",
+      "sha256": "029dc119e61a23ffc1b5154aa896d671f2f3467be59826b0fffcd6401685fbae"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核结果/分片6_复核.json",
+      "sha256": "e1c0b8303fbd4cdd08ebfd83bd2f4662d47e629e4c679d2b27b3a0e6ccebd9a1"
+    }
+  ],
+  "new_Codex_D_reviewed_images": 36,
+  "new_visual_cells": 144,
+  "visual_cell_disagreements": 59,
+  "disagreement_details": [
+    {
+      "review_id": "R01",
+      "sample_id": "wafer_00045633_013",
+      "dimension": "位置",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R01",
+      "sample_id": "wafer_00045633_013",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R03",
+      "sample_id": "wafer_00019331_006",
+      "dimension": "位置",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R03",
+      "sample_id": "wafer_00019331_006",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R04",
+      "sample_id": "wafer_00045384_019",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R04",
+      "sample_id": "wafer_00045384_019",
+      "dimension": "遗漏",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R05",
+      "sample_id": "wafer_00047411_016",
+      "dimension": "断言",
+      "prior": "PARTIAL",
+      "Codex": "NEEDS_REVIEW"
+    },
+    {
+      "review_id": "R07",
+      "sample_id": "wafer_00019814_014",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R07",
+      "sample_id": "wafer_00019814_014",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R09",
+      "sample_id": "wafer_00026714_009",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R09",
+      "sample_id": "wafer_00026714_009",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R10",
+      "sample_id": "wafer_00022388_005",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R11",
+      "sample_id": "wafer_00040406_017",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R12",
+      "sample_id": "wafer_00043050_009",
+      "dimension": "遗漏",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R13",
+      "sample_id": "wafer_00045360_022",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R13",
+      "sample_id": "wafer_00045360_022",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R14",
+      "sample_id": "wafer_00040378_016",
+      "dimension": "形态",
+      "prior": "PARTIAL",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R14",
+      "sample_id": "wafer_00040378_016",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R15",
+      "sample_id": "wafer_00019033_001",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R16",
+      "sample_id": "wafer_00043705_021",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R17",
+      "sample_id": "wafer_00045191_016",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R17",
+      "sample_id": "wafer_00045191_016",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R18",
+      "sample_id": "wafer_00043329_001",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R18",
+      "sample_id": "wafer_00043329_001",
+      "dimension": "遗漏",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R18",
+      "sample_id": "wafer_00043329_001",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R19",
+      "sample_id": "wafer_00003298_021",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R19",
+      "sample_id": "wafer_00003298_021",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R20",
+      "sample_id": "wafer_00003822_012",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R20",
+      "sample_id": "wafer_00003822_012",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R20",
+      "sample_id": "wafer_00003822_012",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R22",
+      "sample_id": "wafer_00029697_025",
+      "dimension": "形态",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R22",
+      "sample_id": "wafer_00029697_025",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R22",
+      "sample_id": "wafer_00029697_025",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R22",
+      "sample_id": "wafer_00029697_025",
+      "dimension": "断言",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R23",
+      "sample_id": "wafer_00032899_015",
+      "dimension": "遗漏",
+      "prior": "CONTRADICTED",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R24",
+      "sample_id": "wafer_00039578_021",
+      "dimension": "形态",
+      "prior": "PARTIAL",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R24",
+      "sample_id": "wafer_00039578_021",
+      "dimension": "位置",
+      "prior": "SUPPORTED",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R24",
+      "sample_id": "wafer_00039578_021",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "CONTRADICTED"
+    },
+    {
+      "review_id": "R25",
+      "sample_id": "wafer_00040556_007",
+      "dimension": "形态",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R25",
+      "sample_id": "wafer_00040556_007",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R25",
+      "sample_id": "wafer_00040556_007",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R26",
+      "sample_id": "wafer_00041108_014",
+      "dimension": "遗漏",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R27",
+      "sample_id": "wafer_00042202_013",
+      "dimension": "形态",
+      "prior": "CONTRADICTED",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R27",
+      "sample_id": "wafer_00042202_013",
+      "dimension": "位置",
+      "prior": "CONTRADICTED",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R27",
+      "sample_id": "wafer_00042202_013",
+      "dimension": "遗漏",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R27",
+      "sample_id": "wafer_00042202_013",
+      "dimension": "断言",
+      "prior": "CONTRADICTED",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R29",
+      "sample_id": "wafer_00043183_023",
+      "dimension": "位置",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R29",
+      "sample_id": "wafer_00043183_023",
+      "dimension": "遗漏",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R29",
+      "sample_id": "wafer_00043183_023",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R30",
+      "sample_id": "wafer_00043921_007",
+      "dimension": "遗漏",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R32",
+      "sample_id": "wafer_00044300_025",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R32",
+      "sample_id": "wafer_00044300_025",
+      "dimension": "断言",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R33",
+      "sample_id": "wafer_00045337_006",
+      "dimension": "位置",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R33",
+      "sample_id": "wafer_00045337_006",
+      "dimension": "遗漏",
+      "prior": "CONTRADICTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R34",
+      "sample_id": "wafer_00045589_021",
+      "dimension": "形态",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R34",
+      "sample_id": "wafer_00045589_021",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R35",
+      "sample_id": "wafer_00046667_020",
+      "dimension": "遗漏",
+      "prior": "SUPPORTED",
+      "Codex": "PARTIAL"
+    },
+    {
+      "review_id": "R36",
+      "sample_id": "wafer_00047246_025",
+      "dimension": "位置",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    },
+    {
+      "review_id": "R36",
+      "sample_id": "wafer_00047246_025",
+      "dimension": "遗漏",
+      "prior": "PARTIAL",
+      "Codex": "SUPPORTED"
+    }
+  ],
+  "scope": "分歧不代表某个AI一定正确；保留两轮原判断，不能平均成真人gold。格式严重度口径不同，未混入视觉四维比较。"
+}

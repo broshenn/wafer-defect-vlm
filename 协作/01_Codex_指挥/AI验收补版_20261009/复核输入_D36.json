@@ -1,0 +1,290 @@
+[
+  {
+    "review_id": "R01",
+    "sample_id": "wafer_00045633_013",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045633_013.png",
+    "image_sha256": "876e4a175e8c36d968ce5ec59d461f69e84a31d6459e6ee5eb42b6e50653d8c9",
+    "raw_sha256": "95fb44284cde45ad656519611372a394ebf00296f37bcdfc4fadd8fcf64e3af4",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R02",
+    "sample_id": "wafer_00036756_010",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00036756_010.png",
+    "image_sha256": "ba2e49b3301d68b23de89abe1b935ca60de03f3694df5606bf99710fb29a16f0",
+    "raw_sha256": "5aa3c7eed6e0868418a0781abcc6f3edf94e775a1686d320cbcf520d39cb4aa8",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在晶圆中心附近，径向分布范围较小，无明显方向性。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在中心附近，无明显方向性。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R03",
+    "sample_id": "wafer_00019331_006",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00019331_006.png",
+    "image_sha256": "96cab01956ffd1761dae07ff14ec9fb4ecf6e8e4058c8d0c97c1016b51e2e664",
+    "raw_sha256": "62cf69f6f9e3c4104492e76c822eab8b6f318b332d22f8786bb78ef3d7f7c667",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色缺陷die在全晶圆范围内随机散布，无明确连续图形，中心区域密度较高\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷点，覆盖整个径向区域，无明显方向性。\",\"uncertainty\":\"缺陷分布存在局部聚集，但整体呈随机点状，无清晰连续图案。\"}"
+  },
+  {
+    "review_id": "R04",
+    "sample_id": "wafer_00045384_019",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045384_019.png",
+    "image_sha256": "a006f575db6bc0169ff0fb676d49a2cd7c335ef86b9b5939c51add18a284b6ac",
+    "raw_sha256": "a8a0c4c275546c40c4d05ab6d54c17911d5917c588a2830fee7bbde4d780f246",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形\",\"radial_zone\":\"middle\",\"clock_direction\":\"12点\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在断续环形缺陷分布，12点钟方向相对集中，缺陷主要位于中间径向区域。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R05",
+    "sample_id": "wafer_00047411_016",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00047411_016.png",
+    "image_sha256": "e01e287cda84a2cfc1dfbc76bd60ee33439fc3065ba0b2099f836ccf9688e52c",
+    "raw_sha256": "b34f3fb7d24570f2f896ea96bfed6da1d7a88e214f85e01a6a94a4e4fc22a6b8",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色缺陷die与绿色正常die在全晶圆范围内随机散布，缺陷比例约46.5%，无明确连续图形\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"全晶圆范围内红色缺陷die与绿色正常die随机混合分布，缺陷比例约46.5%，无明确连续图形\",\"uncertainty\":\"缺陷分布存在局部聚集，但整体呈随机散布，无单一方向或环形主导模式\"}"
+  },
+  {
+    "review_id": "R06",
+    "sample_id": "wafer_00047511_013",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00047511_013.png",
+    "image_sha256": "bfd0d69e08936a3635f43e0b8306d9d2d6a7061c9c148f01a96e7f62c1061f9a",
+    "raw_sha256": "53d5ac44df708b81197e65ba3706efab8979597b898ce6c45e1eb8405159cbf7",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向性。\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"缺陷主要分布在晶圆边缘区域，呈稀疏、断续的局部点状分布，无明显方向性。\",\"uncertainty\":\"缺陷点分布较为稀疏，部分区域可能存在未识别的微小缺陷。\"}"
+  },
+  {
+    "review_id": "R07",
+    "sample_id": "wafer_00019814_014",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00019814_014.png",
+    "image_sha256": "15feaf927bd0e5cedefb55c598637c7d5709841424291590036be2e7c8109d6f",
+    "raw_sha256": "ec10c4afa398eb6329d2789e771e579f124dc57939abd6b9c1d47fe208b39e50",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R08",
+    "sample_id": "wafer_00011690_007",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00011690_007.png",
+    "image_sha256": "f55f65ede98ec648a9efe1515682ec7ca4610b362db4aa5dd61188d464f372ed",
+    "raw_sha256": "d896291f2aaced4897d1db0da816c738aec1ba21e1c9166bbded023bfa260d19",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部散布少量孤立红点\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R09",
+    "sample_id": "wafer_00026714_009",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00026714_009.png",
+    "image_sha256": "dd5c840d9987740f0973e163f3cfd087d8b4f926c6dc7049ff6c7170963ba7ce",
+    "raw_sha256": "e511f617369f6de6d026cd4f50364cfa57282c50bc9523ab837c4a5673e69aab",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"局部团簇状缺陷，主要分布在6点钟方向中心区域，并伴有少量随机孤立点\",\"radial_zone\":\"center\",\"clock_direction\":\"6点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心6点钟方向存在局部红色缺陷团簇，其余区域以绿色正常die为主并散布少量孤立红点\",\"uncertainty\":\"缺陷团簇内部结构细节及孤立点分布的统计特征\"}"
+  },
+  {
+    "review_id": "R10",
+    "sample_id": "wafer_00022388_005",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00022388_005.png",
+    "image_sha256": "3bc254c9c71a2399238ad4604fa09c7e1725c1d20d057f3988d02bb49f453efd",
+    "raw_sha256": "066166c65318f9ada051833339c9dcc75457a8a333e0984e29f9e4f367f23275",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中部偏12点钟方向存在少量稀疏红色缺陷点，整体呈局部随机分布\",\"radial_zone\":\"middle\",\"clock_direction\":\"12点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中部偏12点钟方向存在少量稀疏红色缺陷点，整体呈局部随机分布\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R11",
+    "sample_id": "wafer_00040406_017",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00040406_017.png",
+    "image_sha256": "11bb5b1d838e7b1f9257026f54de6c28d4a3579adec222aed7dcabb624e4f854",
+    "raw_sha256": "e9bec53c3c623db6dd7c20e37bade3b0b1dc93690f2b2cf7c969e0f0948dfcf8",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上几乎全部区域被缺陷覆盖，仅边缘有少量正常芯片，缺陷分布连续且致密，无明显特定方向性。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆表面几乎完全被缺陷覆盖，仅边缘残留少量正常芯片，缺陷分布连续且致密，无明显方向性。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R12",
+    "sample_id": "wafer_00043050_009",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043050_009.png",
+    "image_sha256": "9442bb4a4c8b9328f77c4c7b45f751d278add1e32adbbbbe7177e9d997a23bf0",
+    "raw_sha256": "7f87bd97929ee9a38c22c75f21af60ed07a69263ebebb2765f809b6aafb62ad7",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆大部分区域为红色缺陷die，仅边缘和局部有少量绿色正常die，缺陷分布广泛且致密\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆全局范围内缺陷die占绝大多数，仅边缘和局部有少量正常die\",\"uncertainty\":\"无\"}"
+  },
+  {
+    "review_id": "R13",
+    "sample_id": "wafer_00045360_022",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045360_022.png",
+    "image_sha256": "1b9adc4226cb133119d0ca1dd7756f38863730338ad9982182f828e1694e5946",
+    "raw_sha256": "00a2af0969717c53de6794b44b97856deb9487804e5a27cdfc8f7bcb357262a7",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的红色缺陷点，无明显聚集或方向性，覆盖整个晶圆区域\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷点，无明显空间模式，覆盖整个晶圆区域\",\"uncertainty\":\"缺陷分布较为稀疏，可能存在少量未识别的微小缺陷\"}"
+  },
+  {
+    "review_id": "R14",
+    "sample_id": "wafer_00040378_016",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00040378_016.png",
+    "image_sha256": "c1831444f0de02b99c27f686a7a4b5b1d5b34d858bc7530de24bdadd0e1ed977",
+    "raw_sha256": "64c78191b2f27a68159791183b54b7f234cdc990cff53276e9b8373c53373b22",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的红色缺陷die，覆盖中心至边缘，无明确连续图形\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷die，覆盖整个径向区域，无明显方向性。\",\"uncertainty\":\"缺陷分布较稀疏，存在少量孤立点，整体呈随机散布特征。\"}"
+  },
+  {
+    "review_id": "R15",
+    "sample_id": "wafer_00019033_001",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00019033_001.png",
+    "image_sha256": "acd00e2aa0549f349d5176ece58ef4f870af37e9f50e314207b23aaaaed1b63e",
+    "raw_sha256": "2b767d4f744241dc20c2a2cf54da61a0c6255795d8db00fe293bba449e4c0339",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"晶圆中部存在一条断续的线状划痕缺陷，主要分布在2点钟方向，伴随少量随机点缺陷。\",\"radial_zone\":\"middle\",\"clock_direction\":\"2点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中部2点钟方向存在断续线状划痕，伴有少量随机点缺陷。\",\"uncertainty\":\"划痕连续性受图像分辨率影响，存在局部断裂。\"}"
+  },
+  {
+    "review_id": "R16",
+    "sample_id": "wafer_00043705_021",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043705_021.png",
+    "image_sha256": "f76ff558a9413e4cc7a73d149842996a6c9560d55a36ffc87a42922a5c25a82b",
+    "raw_sha256": "c8882f0f353bef1e524a0fea2ca453ce0f6e603faf8544d9b81c74d087431054",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向1点钟方向。\",\"radial_zone\":\"center\",\"clock_direction\":\"1点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向1点钟方向。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R17",
+    "sample_id": "wafer_00045191_016",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045191_016.png",
+    "image_sha256": "85e8b8bd44c863f33d54fbd96e32f186b0af3fc021aa2f752f32a46ce3a5a2d8",
+    "raw_sha256": "1a3334a77edbe6691edfaa48d6844341739b543a85f813ff946baa43416da7b4",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在稀疏、断续的局部缺陷点，无明显聚集或方向性。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在稀疏、断续的局部缺陷点，无明显聚集或方向性。\",\"uncertainty\":\"缺陷点分布稀疏，可能受图像噪声影响，需进一步确认。\"}"
+  },
+  {
+    "review_id": "R18",
+    "sample_id": "wafer_00043329_001",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043329_001.png",
+    "image_sha256": "ed3b7b1b3f3dd46659f15a3b4dcd9f3422af9e0e25fb9d18ec90aa99fef2dce1",
+    "raw_sha256": "a1d326bf32debea0ea8e41d8f510b54daa2c5720319c40e51e8aa130e9ce44e0",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的孤立缺陷点，无明显空间模式\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆全图范围内随机分布少量孤立缺陷点，无明确空间模式\",\"uncertainty\":\"缺陷数量较少，空间模式识别置信度低\"}"
+  },
+  {
+    "review_id": "R19",
+    "sample_id": "wafer_00003298_021",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00003298_021.png",
+    "image_sha256": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01",
+    "raw_sha256": "ec10c4afa398eb6329d2789e771e579f124dc57939abd6b9c1d47fe208b39e50",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R20",
+    "sample_id": "wafer_00003822_012",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00003822_012.png",
+    "image_sha256": "4edfae3cc4146d60d1bc17ddcfc2127021e01ecb0beba67c051590e51f090c71",
+    "raw_sha256": "f6ff5688c17e240f6641fcacf50b0029a8cbc22fbf0b914cc191edd0c0751d12",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。\",\"radial_zone\":\"center\",\"clock_direction\":\"6点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。\",\"uncertainty\":\"划痕的连续性和密度较低，存在局部断点。\"}"
+  },
+  {
+    "review_id": "R21",
+    "sample_id": "wafer_00018023_017",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00018023_017.png",
+    "image_sha256": "0e03c92eabc31c73e7ddbe4c342a8ff161714034108aef0eed0faebe586a4088",
+    "raw_sha256": "cb5198d25e6432d32a8c154efdacd5738231329fa0315c0fef6a371aa34f61db",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在断续红色缺陷环，内部有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘区域存在断续的红色缺陷环，内部散布少量孤立红点\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R22",
+    "sample_id": "wafer_00029697_025",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00029697_025.png",
+    "image_sha256": "fec3ac2112549c882f4f42761356bef023ae782ef556b5d7b459b614f18b0b04",
+    "raw_sha256": "f633c4aaafad02681bae9416ba517887d7fc1ee13dc0fab32992a2485601ec26",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形分布，中心区域缺陷较少，外围区域缺陷较多且连续\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中部呈现一个致密、连续的环形缺陷带，覆盖所有时钟方向。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R23",
+    "sample_id": "wafer_00032899_015",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00032899_015.png",
+    "image_sha256": "e748920456342903543ba6803b2a251a55c3ad0408c04bb565271a964f0d6646",
+    "raw_sha256": "b6e46d3596b60d542a741add60c37970d4bb12e17cfdc7d2e63139af802b5ed9",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"致密团簇状\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的团簇状缺陷，缺陷集中在晶圆中心，径向分布均匀，无明显方向性。\",\"uncertainty\":\"无\"}"
+  },
+  {
+    "review_id": "R24",
+    "sample_id": "wafer_00039578_021",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00039578_021.png",
+    "image_sha256": "f7899dd7f7ca7f5e4d483ac8e2215d32ad40f25f1d5b0cfabd5e47c281d48427",
+    "raw_sha256": "95fb44284cde45ad656519611372a394ebf00296f37bcdfc4fadd8fcf64e3af4",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R25",
+    "sample_id": "wafer_00040556_007",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00040556_007.png",
+    "image_sha256": "769c2d90c9742ec3de4db39770a2f3f718c69236a8602ce68bf4a844c7bfdc39",
+    "raw_sha256": "d1c8d359444e91fd5693905fde922f060b2bd85eaebd09a202b4a1fe7c45281c",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的红色缺陷die，无明确空间聚集或方向性，覆盖整个晶圆区域\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷die，无明显空间模式，覆盖整个晶圆区域\",\"uncertainty\":\"缺陷分布稀疏且随机，难以确定具体工艺根因\"}"
+  },
+  {
+    "review_id": "R26",
+    "sample_id": "wafer_00041108_014",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00041108_014.png",
+    "image_sha256": "a07d7c870dd31d483766f754a943ec2f1d93bbb7c593368c43b21c7d1e51adf4",
+    "raw_sha256": "f87aebac26e6130209b70a43df30a8516783d116f8fc4c67eb4c4d5d3a41fadd",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"随机分布的孤立缺陷点，无明显空间模式\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性\",\"uncertainty\":\"缺陷数量较少，空间分布稀疏，难以确定是否存在微弱模式\"}"
+  },
+  {
+    "review_id": "R27",
+    "sample_id": "wafer_00042202_013",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00042202_013.png",
+    "image_sha256": "789a559d5d024fb1c8ecd3d3c811b69a33da0ac83b6a037606b343c299f2d121",
+    "raw_sha256": "8ab8307ef2a7689825cfb4c4ce5e474dcc9585f266da5f8ee6e0250f7a7aee5a",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在断续环形红色缺陷分布，中心区域缺陷较少，边缘有少量孤立红点。\",\"uncertainty\":\"环形结构在径向和角度上均不连续，存在局部聚集与稀疏交替。\"}"
+  },
+  {
+    "review_id": "R28",
+    "sample_id": "wafer_00042778_024",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00042778_024.png",
+    "image_sha256": "5a080c63fe5fd8331d09c6c9f8942983e26b08fb67fc9c84aa7b0041bdbdda01",
+    "raw_sha256": "df822bae2be9348ecc0088a991ac00b3ee416d9c042a3b625bb955105c3a8289",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R29",
+    "sample_id": "wafer_00043183_023",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043183_023.png",
+    "image_sha256": "84ab39c592a057d6c7edd254310faa220af9bb67e8f35203f1db734c2fda77bf",
+    "raw_sha256": "5cfe0a943e4c1dd3d86c60de44df90a143e677d49edaf710fc0824bb8b33cc2d",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖从中心到边缘的整个径向区域，无明显方向性。\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖从中心到边缘的整个径向区域，无明显方向性。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R30",
+    "sample_id": "wafer_00043921_007",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043921_007.png",
+    "image_sha256": "035b169f2d0688b57d86ac0b606a98f5c8d55628cbf3cfc8f6217d63a5fdde1c",
+    "raw_sha256": "07aafb7724f1fed505d95c557d80cd3fd2733151749001852428b38c8ca7a9a2",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"随机分布的孤立缺陷点，无明显聚集或方向性\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆图显示随机分布的少量孤立缺陷点，覆盖整个径向区域，无明确方向性。\",\"uncertainty\":\"缺陷数量较少，分布稀疏，难以确定是否存在微弱方向性。\"}"
+  },
+  {
+    "review_id": "R31",
+    "sample_id": "wafer_00043980_001",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00043980_001.png",
+    "image_sha256": "b50d8fa445a090865398fc2de2d3a7620eea1dd0da06fc002777d0bd49acdc0d",
+    "raw_sha256": "f7f166aa2f3b0de566f8caa179394a95febf55827e08c758cc795ae2d2db7310",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的红色缺陷die，无明确空间聚集或方向性，覆盖中心至边缘全半径区域\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷die，无明显空间模式，覆盖整个晶圆区域\",\"uncertainty\":\"缺陷分布稀疏且随机，难以精确量化密度和范围\"}"
+  },
+  {
+    "review_id": "R32",
+    "sample_id": "wafer_00044300_025",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00044300_025.png",
+    "image_sha256": "7e9470560bdf303221418e3e21311f403fcf63de4a0525004450567c7a0a3df3",
+    "raw_sha256": "a9599fad9909c73bfdc019983edac91394887a51a57a78745ef79fcf7cdd15d9",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的红色缺陷点，无明显聚集或方向性，覆盖整个晶圆区域\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上随机分布着稀疏的红色缺陷点，无明显空间模式，覆盖整个晶圆区域\",\"uncertainty\":\"缺陷点分布较为稀疏，可能存在少量未识别的微小缺陷\"}"
+  },
+  {
+    "review_id": "R33",
+    "sample_id": "wafer_00045337_006",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045337_006.png",
+    "image_sha256": "5590d5962a80fbeb0eb5fa77c72ef875d062fd6de07fc797926699ce3252bd57",
+    "raw_sha256": "f9e420619f1dff7fd8f6a9d63d437043d4466f8cb75ef437592ea1ef493b0420",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"缺陷主要稀疏分布在晶圆边缘区域，呈断续点状，无明显方向性聚集\",\"uncertainty\":\"边缘区域存在少量孤立缺陷点，整体缺陷密度低，无明确连续图案\"}"
+  },
+  {
+    "review_id": "R34",
+    "sample_id": "wafer_00045589_021",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00045589_021.png",
+    "image_sha256": "4489e5f388a7cc67af30f8f8732600a9537c9e5e79d66ed60ac006e97b172783",
+    "raw_sha256": "3f7b75bd8ed29e0916827f1fbd9dd3c35a173e68e18964a68107046fcdaf1bae",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在4点钟方向。\",\"radial_zone\":\"center\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在4点钟方向。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R35",
+    "sample_id": "wafer_00046667_020",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00046667_020.png",
+    "image_sha256": "96f2bda39c9ca27b23249176323fc027bf30e0ee3d58f282517f184fb2a4487c",
+    "raw_sha256": "0169f03e95283623bef5499ba392237e751526a5616498010ed42337fb928695",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"边缘局部聚集\",\"radial_zone\":\"edge\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘4点钟方向存在局部红色缺陷聚集，其余区域以绿色正常die为主并散布少量红色缺陷。\",\"uncertainty\":\"\"}"
+  },
+  {
+    "review_id": "R36",
+    "sample_id": "wafer_00047246_025",
+    "image_path": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/图/wafer_00047246_025.png",
+    "image_sha256": "4790fffb5da31c43e8eed14b6b74f6a5ea0211c82e35604db3d39653a416518c",
+    "raw_sha256": "298b60063f0da3626beab2ac3e0a571c9b55a46c969b54d678764a0ddf62217f",
+    "answer": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。\",\"radial_zone\":\"center\",\"clock_direction\":\"12点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。\",\"uncertainty\":\"\"}"
+  }
+]

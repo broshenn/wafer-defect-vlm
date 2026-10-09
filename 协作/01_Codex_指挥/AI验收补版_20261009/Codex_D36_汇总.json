@@ -1,0 +1,49 @@
+{
+  "reviewed_images": 36,
+  "reviewed_model": "D-N3072-3407",
+  "new_student_inference": 0,
+  "new_business_api_calls": 0,
+  "actual_visual_read": "6张联系表，36张原图均以448x448原像素展示，没有改图片颜色或内容。",
+  "dimensions": {
+    "morphology": {
+      "PARTIAL": 18,
+      "SUPPORTED": 14,
+      "CONTRADICTED": 4
+    },
+    "position": {
+      "PARTIAL": 8,
+      "SUPPORTED": 23,
+      "CONTRADICTED": 5
+    },
+    "main_structure_coverage": {
+      "CONTRADICTED": 7,
+      "PARTIAL": 18,
+      "SUPPORTED": 11
+    },
+    "unsupported_assertions": {
+      "SUPPORTED": 20,
+      "PARTIAL": 15,
+      "NEEDS_REVIEW": 1
+    }
+  },
+  "format": {
+    "PARTIAL": 16,
+    "SUPPORTED": 20
+  },
+  "direction_applicable": {
+    "True": 13,
+    "False": 21,
+    "unknown": 2
+  },
+  "direction_verdicts_when_applicable": {
+    "NO_ANSWER": 5,
+    "SUPPORTED": 4,
+    "PARTIAL": 3,
+    "CONTRADICTED": 1
+  },
+  "content_decisions": {
+    "NEEDS_REVIEW": 28,
+    "NO_MAJOR_ERROR_OBSERVED_BY_AI": 8
+  },
+  "scope": "新一轮AI图像事实检查，不替代人工gold；不把未观察到主要错误解释为真实正确率；不改旧模型复核或历史成绩。"
+}

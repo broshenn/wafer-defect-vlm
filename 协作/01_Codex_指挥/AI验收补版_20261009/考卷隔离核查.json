@@ -1,0 +1,56 @@
+{
+  "scope": "可见历史证据排除后的test候选准备，非最终模型成绩；未核到的历史教师/旧训练全量接触仍未知。",
+  "seed": 3407,
+  "target_per_class": 8,
+  "target_total": 72,
+  "test_before_exclusion": {
+    "Edge_Loc": 79,
+    "none": 26,
+    "Random": 76,
+    "Scratch": 76,
+    "Loc": 80,
+    "Near_full": 16,
+    "Donut": 74,
+    "Edge_Ring": 72,
+    "Center": 90
+  },
+  "eligible_after_exclusion": {
+    "Edge_Loc": 40,
+    "Loc": 36,
+    "Edge_Ring": 27,
+    "Donut": 14,
+    "Random": 21,
+    "Scratch": 35,
+    "Center": 44
+  },
+  "selected_counts": {
+    "Center": 8,
+    "Donut": 8,
+    "Edge_Loc": 8,
+    "Edge_Ring": 8,
+    "Loc": 8,
+    "Random": 8,
+    "Scratch": 8
+  },
+  "selected_n": 56,
+  "shortfalls": {
+    "Near_full": 8,
+    "none": 8
+  },
+  "selected_unique_lots": 56,
+  "selected_unique_png": 56,
+  "visible_exposure_ids": 837,
+  "visible_exposure_lots": 733,
+  "train3072_id_overlap": 0,
+  "train3072_lot_overlap": 0,
+  "train3072_png_overlap": 0,
+  "status": "candidate_package_prepared_not_model_run",
+  "independent_final_test_completed": false,
+  "new_gpu_inference": 0,
+  "new_business_api_attempts": 0,
+  "limitations": [
+    "未在新候选上运行Base/L/D或外部模型，成绩为未测。",
+    "现有源记录不完整，不能保证此前任何模型从未接触过候选。",
+    "没有真人gold；没有把开发36/35图改名成独立最终考卷。"
+  ]
+}

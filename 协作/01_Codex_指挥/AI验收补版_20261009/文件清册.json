@@ -1,0 +1,103 @@
+{
+  "files": [
+    {
+      "path": "AI覆盖与分歧核验.json",
+      "sha256": "a06ef04e37722443d64725416309bd2b169b01f746f0293db716630aaea96d2d",
+      "bytes": 12045
+    },
+    {
+      "path": "AI验收报告.md",
+      "sha256": "3616b4c13b72097ea1ad2ef21aa230d31976042b3b399b01fdffd5921de569a7",
+      "bytes": 6316
+    },
+    {
+      "path": "Codex_D36_汇总.json",
+      "sha256": "c366ea5ac7fb6918305ced6b29304ce1d38aab7b1d54a4069aa4ac20bd418d7b",
+      "bytes": 1243
+    },
+    {
+      "path": "Codex_D36_逐图复核.jsonl",
+      "sha256": "19cd3cf90cd5e20323606aa456968e56ad71844f4c6dc0235fb1232b986e87b7",
+      "bytes": 31053
+    },
+    {
+      "path": "Codex_D36_逐图复核.md",
+      "sha256": "998c03dcd05f440c1cf8155246f935982c0aa397c7e58256630eca068ded4556",
+      "bytes": 6220
+    },
+    {
+      "path": "候选考卷_盲清单.jsonl",
+      "sha256": "8d0e903d53e4d05a995ba803e7048070f756ba197be4807c741df4aee6599f1c",
+      "bytes": 10752
+    },
+    {
+      "path": "写入逐图AI复核.py",
+      "sha256": "0f1c257ca507a98b1d0a0fc4aadf189299955f2ab590086c7db1f28cfa64e80c",
+      "bytes": 8904
+    },
+    {
+      "path": "可见历史接触证据.json",
+      "sha256": "69108ad9f9d2978277ba030fadad8cdd63f7e8246c02d34990a6565061fa348c",
+      "bytes": 577228
+    },
+    {
+      "path": "复核输入_D36.json",
+      "sha256": "372b1d9bf9fcdcc7a36dc599822bb703e0aa3ce4751b8a168e886a3902e09446",
+      "bytes": 28211
+    },
+    {
+      "path": "核查考卷隔离.py",
+      "sha256": "c44c653df96740cc7ed7656e62fc83ded649fabaaf40902c0ac9ca15a8aad2bc",
+      "bytes": 5420
+    },
+    {
+      "path": "核验已有AI覆盖.py",
+      "sha256": "684da9cfa5a1b7c7e974b291a26072f44f767b4e37be1ec6c548877b85b78a97",
+      "bytes": 2806
+    },
+    {
+      "path": "考卷隔离核查.json",
+      "sha256": "db368bb1d6ff8cb3b119319b8871f03c69bff73f30a673dde8907de29e8b06c5",
+      "bytes": 1495
+    },
+    {
+      "path": "逐图复核_1.png",
+      "sha256": "6de6eda8ea9ce1fe8bd0c59c3c9b455f24ca099ec75fcabd30c9885e03929d99",
+      "bytes": 15710
+    },
+    {
+      "path": "逐图复核_2.png",
+      "sha256": "ccd85c889501e086dd397803305c4c519293eaa8fee3dc79a0e6d5586808a67a",
+      "bytes": 14814
+    },
+    {
+      "path": "逐图复核_3.png",
+      "sha256": "663a2666250938703d733bad9aaefbe5e7b645079cd92180d0d20b385a938979",
+      "bytes": 15390
+    },
+    {
+      "path": "逐图复核_4.png",
+      "sha256": "29363af40fed7020f0b8f442265608bbb7d696702fd6adfe7989f6af2a1700e1",
+      "bytes": 15999
+    },
+    {
+      "path": "逐图复核_5.png",
+      "sha256": "81727be73a9d7ca505589a464e9152cc467e5fdc140fdc089cfbe1097fb14fef",
+      "bytes": 14985
+    },
+    {
+      "path": "逐图复核_6.png",
+      "sha256": "1adec5713eb2ba7ab58316d3b0666e33a9c787ac25604b3629810acb96112b7d",
+      "bytes": 15086
+    }
+  ],
+  "checks": {
+    "new_ai_review_rows": 36,
+    "known_prior_cells": 1728,
+    "candidate_images": 56,
+    "candidate_lots": 56,
+    "new_student_inference": 0,
+    "new_business_api_calls": 0,
+    "text_sensitive_hits": 0
+  }
+}
