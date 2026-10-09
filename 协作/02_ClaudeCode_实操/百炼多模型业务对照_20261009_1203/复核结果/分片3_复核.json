@@ -1,0 +1,1397 @@
+{
+ "说明": "分片3（6图×8盲号）描述事实复核——模型自查草稿，非人工gold；判据见同名 .md",
+ "条目": [
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "morphology「随机、无明显聚集或方向性、覆盖整个晶圆」与实测相符（红占着色像素30.7%、12扇区全有分布），但 caption「稀疏」与30.7%高密度不相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」与红点遍布全片、无单一径向集中带一致（分带密度0.222–0.33）。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主体为均匀密布点块（150个红块），无独立主结构未被提及。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构——无裂纹/环带/黑块等无图像依据的提法。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "四字段类型合规（clock_direction为JSON null，非字符串）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "图为全片随机散布（扇区密度0.217–0.410仅呈缓梯度），按口径应填null；该答填null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「离散、无规律的斑点状、遍布整个晶圆」与30.7%密度的散布点块相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」与全片分布相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "散布特征已完整概括，无独立结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，与图无方向性相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「散点状随机分布、无明显聚集/环状/线性」与实测一致（无环形或线状连通块）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "散布描画完整，无结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「离散小块、未见环状/中心聚集/边缘局部/线状」与实测一致（中心带密度最低0.222，无环线结构）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "无结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「密集且无规律」与30.7%高密度散布相符（密度表述正确）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "无结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 写成字符串 null（带引号），非 JSON null——冻结 schema 明示此为格式问题。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "字段内容意图为无方向，与图相符（格式问题另记）。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "己",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「绿色为主、红色随机散布、无局部聚集或环带」与69%绿占比、散布型分布相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "无结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「随机离散、无特定几何排列」与实测一致。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "无结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045360_022",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "MISSING",
+    "evidence": "四个字段均为 null，整条未答。"
+   },
+   "位置": {
+    "verdict": "MISSING",
+    "evidence": "未答。"
+   },
+   "遗漏": {
+    "verdict": "MISSING",
+    "evidence": "未答。"
+   },
+   "断言": {
+    "verdict": "MISSING",
+    "evidence": "未答。"
+   },
+   "格式": {
+    "verdict": "MISSING",
+    "evidence": "整条答案为空（字段全 null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "MISSING",
+    "evidence": "整条未答；图本身无方向性（applicable=false）。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「随机离散分布」部分成立，但把占红55%的连续大团块（34518px）概括为「随机离散点」不完整。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」覆盖成立（外带密度仍0.245），但中央密集核心（内环密度0.714）未体现。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "中央大片团块（34518px、占红54.8%）未传达；「无特定几何排列」淡化了该主结构。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null；中央团块为主的图按口径应null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「中部偏右下大片局部区块」与团块质心方位约4.8点、r约0.20R相符，但「周围零星散布」低估外围（外带密度仍0.245）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「center」与主团块位于中央（内环密度0.714）相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主团块已传达，无其他独立结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "「5点钟」为合规钟点值。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "PARTIAL",
+    "evidence": "报「5点钟」——与团块质心方位约4.8点及5点扇区密度0.65（全图最高）一致，但主结构为中央团块，按口径应填null。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「覆盖中心至边缘」成立，但「无明确连续图形」与34518px连续大团块相悖。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现中央核心集中（内环0.714 vs 外带0.245）。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "中央大团块未传达，被「无明确连续图形」否认。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「大面积交错混杂」成立，但「未形成明显的局部聚集」与内环密度0.714的中央团块矛盾。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现中央集中。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "中央大团块未传达且被否认。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「多个不规则块状、集中中上部及右下」与主要块状分布（中央团块+10点/1点/12点大块）基本相符。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「middle」只覆盖延展部分；主团块核心在中央（内环密度0.714）。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "块状结构已传达。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构（caption「无中心连续模式」措辞偏空，但主体已正确报告为不规则块状）。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 填自由文本（含理由、故填 null），非枚举钟点或 JSON null。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "结论为无方向、填null，与图相符；附带说明「1–4点较密集」仅部分成立（2–4点高于均值而1点0.363低于均值；最密的5点未提），格式问题另记于格式栏。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "己",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「中央大块不规则聚集+全圆散在」准确（团块占红54.8%，外带仍散布）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「center」与中央主团块相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主团块与散布均已传达。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「中心大面积团块、向四周树枝/指状延伸」与34518px大块（r跨度0–1.03、elongation 1.4多方向延展）相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「center」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主团块已传达。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构（「树枝状」为对不规则延展的可接受描述）。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00040378_016",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「红绿交错」成立，但「棋盘状」夸大了规律性——实际为不规则密集团块与散布点的混合。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现中央集中。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "中央大团块未传达（「棋盘状」纹理式概括未及该主结构）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构（「棋盘状」归入形态维度）。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 写成字符串 null（带引号），属格式问题。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "字段内容意图为无方向，与图相符（格式问题另记）。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「右上方一小段斜向线状聚集，其余散布随机」与实测吻合（线状块方位32–38°、r 0.54–1.0；约25个单格散布）。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「middle」——线状主体93%像素在r>0.66外带（rmean 0.81），中带只覆盖其内端（r 0.54–0.66）。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "线状主结构已述，其余散布已概称；顶部边缘红块（309px为最大）量级小未单列。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（「1点钟」为钟点值，其余null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED",
+    "evidence": "报「1点钟」；线状块方位32–38°即1点扇区（30–60°），相符。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「中部断续线状划痕+少量随机点」与两段线体（731px主段+162px副段，方位32–40°）相符。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「middle」——线体主体在外带（93% r>0.66）。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "线状与散布点均已提及，无主要结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「划痕」为对该线状结构的解释性命名，线状本体有图可依。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL",
+    "evidence": "报「2点钟方向」；实际线体方位32–38°属1点扇区，偏约一格（相邻扇区，无重叠）。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「分散点状」覆盖散布红点（约77%红像素），但未识别1点钟线状聚集。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现1点扇区集中（占红28%）与外带偏置（62%红质心在外带）。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "漏掉主要结构——1点钟径向线状聚集（893px、占红23%、跨度r 0.54–1.0）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向（null），而图存在可靠局部方向（线状块方位32–38°）。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「右上向左下延伸的红色裂纹」——线体走向（内端(305,109)到外端(350,39)）相符；「裂纹」为该线状结构的解释性命名。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「edge」——线体93%像素r>0.66，且顶部外缘另有红块，外带说法成立。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "线状已述，但全片散布红点（约60%红像素）与顶部边缘红块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「裂纹」有可见线状本体作依据，非凭空。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（「1点钟方向」为钟点值）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED",
+    "evidence": "报「1点钟方向」；线体方位32–38°即1点扇区，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「离散点状散布」覆盖散布红点，但未识别1点钟线状聚集。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现1点集中与外带偏置。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "漏掉1点钟线状聚集（893px、占红23%的主要结构）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向，而图有可靠局部方向。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "己",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「离散随机散布」覆盖散布红点，未识别线状聚集。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现1点集中。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "漏掉1点钟线状聚集（主要结构）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「稀疏孤立红点」覆盖散布红点，未识别线状聚集。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「global」未体现1点集中。"
+   },
+   "遗漏": {
+    "verdict": "CONTRADICTED",
+    "evidence": "漏掉1点钟线状聚集（主要结构）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00019033_001",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「右上近边缘短斜线密集簇」与线状块（方位32–38°、93%在外带）相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「edge」与线体外带定位相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "线状主结构已述，其余散布已概称。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL",
+    "evidence": "报「1-2点钟」；实际方位32–38°在1点扇区内，2点（60–90°）无对应，跨偏约半格。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「分散矩形点状」覆盖单/双格散布（85块中位约110px），但未识别1089px竖直条带（全图唯一elongation>3的结构）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」与散布遍布各半径方位（12扇区均有分布）相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "漏掉竖直条带（1089px、全图最大块、约2.5倍于次大块）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向；图中竖直条带方位约12点本可报。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "散布点描述成立，但「无明显线性特征」与存在的1089px竖直条带相悖。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "漏掉竖直条带（1089px）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「晶圆边缘存在少量不规则失效点」与外缘小块（430/330/220px等）相符，非凭空。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向；条带方位约12点可报。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「孤立小点零散随机」对散布成立，但「无明显聚集、环带或条纹」忽略竖直条带。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "漏掉竖直条带（1089px）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「一条垂直红色线条、中心偏上」——条带严格竖直（x恒245、y 70–148）、位于中心上方（r 0.35–0.69），「垂直」实测成立。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「center」——条带r 0.35–0.69属中带；且全片散布点（约90%红像素）未列入位置。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "条带已述，但全片散布点（约90%红像素）未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「垂直红线」与像素几何完全吻合，非凭空。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（「12点」为钟点值）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "SUPPORTED",
+    "evidence": "报「12点」；条带方位8–16°即12点扇区（0–30°），相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「中心区域线状划痕」——条带为单连通1089px竖直线状结构（r 0.35–0.69）；「断续/稀疏」用词偏软但主体相符。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「center」——条带实际在中带（r 0.35–0.69）；全片散布未列入位置。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "条带已述，但全片散布点未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「划痕」有可见线状本体作依据，非凭空。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（「1点钟」为钟点值）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "PARTIAL",
+    "evidence": "报「1点钟」；条带方位8–16°属12点扇区，偏约一格（与1点扇区30–60°无重叠）。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "己",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「红点/小块、局部成对或小簇」成立，但「无连续线状」与1089px连续竖直条带相悖。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "漏掉竖直条带（1089px）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「无明显聚集或特定几何形状」忽略1089px竖直条带。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "漏掉竖直条带（1089px）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00043705_021",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「点状与短条状」提及条状元素，但1089px竖直条带（跨度79px约8格）被并入泛称「短条状」，未反映其突出性。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "竖直条带的显著性未传达（漏其为主结构）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": true,
+    "verdict": "NO_ANSWER",
+    "evidence": "未给方向。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「中心区域稀疏断续缺陷点」——中央确有全图最大块（900px、r不超过0.16），但被「稀疏/断续/点」淡化；全片散布与黑色块未提。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「center」——中央块与内环带最高密度（0.19）相符，但50%红像素分布在外带，全片散布为主。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块被淡化；边缘594–612px块与约16处单格黑色块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构（黑色单格确实存在，此答未提亦无凭空）。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 写成字符串 null（带引号），属格式问题。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "字段内容意图为无方向，与图相符（格式问题另记）。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「离散散布全晶圆、少量相邻小簇」大体成立，但「无中心团块」与中央900px块（全图最大连通块）相悖。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」与散布遍布全片相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块被否认式淡化；11/12点外缘612px块与黑色块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「分散的红色方块状缺陷点、无连续线条或特定几何排列」与实际（单格块为主无环线）相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块与外缘594–612px块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「离散点状、边缘零星分布」大体成立，但「无明显聚集」与中央900px块不符（淡化）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块与多处外缘594–612px块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「无明显缺陷图案、仅零星红黑点」——黑色单格确有约16处（说法有据），但13.5%红密度、中央900px块与594–612px块被「零星/无图案」淡化。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「none」——若指无集中带则近似成立，但缺陷遍布全片（含中央块），按所在区域应为global/center。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块与外缘块未提（黑块已提）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「红黑点」有据（黑色单格约16处确实存在）。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 写成字符串 null（带引号），属格式问题。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "字段内容意图为无方向，与图相符（格式问题另记）。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "己",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「零散随机、单个/小块、黑色小块」大体成立（黑块约16处确有），但「无聚集」与中央900px块不符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块与外缘块未提（黑色块已提，有据）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "「黑色小块」有图像依据（约16处单格黑块）。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「小簇或短线状聚集、无环形/中心/边缘集中趋势」与实测大体相符（中央900px块以「小簇」涵盖，量级略偏小）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主要散布与小簇已述；中央块以「小簇」涵盖，无更显著结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00045191_016",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「离散散布、无明显聚集」与中央900px块不符（淡化）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "中央900px块与外缘块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "甲",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「散点状随机分布、底部边缘处略有聚集」——底部确有偏密（5点扇区密度0.303、全图最高；底缘最大块1476px），相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」加正文注明底部稍多，与实际相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "主要倾向（整体散点+底部偏密）已述；其余多格块属散布场内的局部聚并，未单列。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null；图无方向性结构（底部偏密为渐变），相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "乙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「离散小方块、少量相邻小簇、无清晰线/环/单侧集中」与实测基本相符（单格为主、无环线；底部偏密未达清晰单侧集中结构）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底部偏密（红质心的25.4%在4–5点扇区、底缘1476px块）未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "丙",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「离散小块状、1–3连矩形或L形簇」与实测连通块结构相符（单格272–306px为主、多格为L/条状）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底部偏密与底缘1476px块未提。"
+   },
+   "断言": {
+    "verdict": "PARTIAL",
+    "evidence": "「1–3像素」为数值尺寸断言且单位存疑（渲染中单格约17px；数量级与1–3连块一致，属轻度）。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "丁",
+   "形态": {
+    "verdict": "PARTIAL",
+    "evidence": "「无显著缺陷图案、仅零星红点」低估17.6%密度与19个多格块（含1476px底缘块）。"
+   },
+   "位置": {
+    "verdict": "PARTIAL",
+    "evidence": "「none」——缺陷遍布全片（63块、12扇区全有），按所在区域应为global。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底缘1476px等多格块未提（描述为零星点）。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "CONTRADICTED",
+    "evidence": "clock_direction 写成字符串 null（带引号），属格式问题。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "字段内容意图为无方向，与图相符（格式问题另记）。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "戊",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「分散的红色矩形块状缺陷」与单/多格块散布相符。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底部偏密与底缘多格块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "己",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「孤立缺陷点、无明显空间模式」成立（无环/线；底部偏密未提，见遗漏栏）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底部偏密与底缘1476px块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "庚",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「离散随机、无明显聚集中心或边缘环带」成立（无环带、无中心集中）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」相符。"
+   },
+   "遗漏": {
+    "verdict": "PARTIAL",
+    "evidence": "底部偏密与底缘多格块未提。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  },
+  {
+   "图号": "wafer_00043329_001",
+   "盲号": "辛",
+   "形态": {
+    "verdict": "SUPPORTED",
+    "evidence": "「零散散布、少量2–3连小块、底部边缘略密、无明显条带或大簇」与实测相符（底缘最大块1476px约5连，属未及大簇的边界）。"
+   },
+   "位置": {
+    "verdict": "SUPPORTED",
+    "evidence": "「global」加正文注明底部略密，相符。"
+   },
+   "遗漏": {
+    "verdict": "SUPPORTED",
+    "evidence": "散布特征与底部偏密均已述，无主要结构遗漏。"
+   },
+   "断言": {
+    "verdict": "SUPPORTED",
+    "evidence": "无凭空结构。"
+   },
+   "格式": {
+    "verdict": "SUPPORTED",
+    "evidence": "字段合规（null）。"
+   },
+   "方向": {
+    "applicable": false,
+    "verdict": "SUPPORTED",
+    "evidence": "填报null，相符。"
+   }
+  }
+ ]
+}

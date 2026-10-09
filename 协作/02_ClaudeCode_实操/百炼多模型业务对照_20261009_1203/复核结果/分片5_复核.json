@@ -1,0 +1,1397 @@
+{
+  "说明": "分片5（6 图 × 8 匿名答案）描述事实复核。性质：模型复核草稿（AI），不是人工 gold，未填任何「人工」栏位；未读取盲号对照 key；不判类别对错；只判断描述与图是否相符。口径：六维只接受 SUPPORTED/PARTIAL/CONTRADICTED/UNCERTAIN/MISSING（负向维度极性反转：SUPPORTED=无该问题）；方向两列 applicable(true/false/unknown) 与 verdict(含 NO_ANSWER=模型没给方向)；同一事实的规模失真只在最直接维度记最重一次；clock_direction 写成字符串「null」按冻结 schema 记格式问题（有）。本分片 6 图均为无方向性图案（全片交错/随机散布/中心团簇/近全覆盖），applicable 全部为 false。",
+  "条目": [
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "位置": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "遗漏": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "断言": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "格式": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（未答）；本图全片密集交错、无方向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「红绿像素块交错、无明显规则排列或连续线状」与全片 46.5% 红全域交错（12/12 扇区有红）、无长线/环一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与红遍布 12/12 扇区、三带均有红相符（中心带 0.63 略偏内，未致失真）"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "全片交错图样本身即主结构，未见被漏掉的主要结构"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无规则排列/无线状」与连通块形态（最大 91 die 为密度连通产物）不悖"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null；caption 与 morphology 各自成文"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片密集交错、无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「高度交错、无明显聚集或方向性的散乱分布」与全片交错、无方向一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与 12/12 扇区、三带均有红相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "未见被漏掉的主要结构"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明显聚集」在本图量级下可接受（最大块 91 die 属高密度连通的产物）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片密集交错、无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「红色覆盖绝大部分、绿色呈小块散布」与红 46.5%、绿 53.5% 不符：绿色是更大占比且成片，非「小块散布」"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全域红相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "红绿两色覆盖范围均被提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "同一事实错误已在形态项记（不重复降级）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片密集交错、无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「随机离散、无特定几何排列」与全片交错、无方向一致（最大 91 die 块为高密度连通产物）"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "未见被漏掉的主要结构"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片密集交错、无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "己",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「红绿像素随机交错覆盖整个晶圆区域」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全域红相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "未见被漏掉的主要结构"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；全片密集交错无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "位置": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "遗漏": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "断言": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "格式": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（未答）；本图全片密集交错、无方向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00040556_007",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「稀疏」与红占 46.5%（248/533 die）严重不符；其余（随机分布、无明确聚集、覆盖全片）成立，但程度词把近半失效图说成稀疏"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "未见被漏掉的主要结构"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明确空间聚集」在本图量级下可接受"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片密集交错、无方向性图案，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「点状、无明显聚集或形态」大体成立（69 块、最大 4 die）；但「仅有零星」低估——红 97/883=11.0%、12/12 扇区有红"
+      },
+      "位置": {
+        "verdict": "CONTRADICTED",
+        "evidence": "radial_zone 填 none 与事实不符：全片散布（12/12 扇区、三带均有红），应为 global"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 ≈4点/0.93R 等边缘 3–4 die 小簇（量级小，轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明显聚集」在最大块 4 die 量级下可接受"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「分散方块状点缺陷、全局随机分布」与 97 die 散布、69 块一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 ≈4点/0.93R 等边缘 3–4 die 小簇（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「大量」就点数（97 个红 die）而言不构成失据"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「离散随机散布、无明显聚集或几何形状」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名边缘 3–4 die 小簇（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「离散点状散布、边缘处有少量局部聚集」与图一致（边缘确有 3–4 die 小簇）"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "边缘聚集已被笼统提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「随机孤立点、无明显空间模式、覆盖中心至边缘」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名边缘 3–4 die 小簇（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "己",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「全片离散＋右下边缘及左侧边缘各见小簇、无连续线/环」与 4.2点/0.93R、8.3点/0.94R 小簇一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "两处边缘小簇均已点名"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「零散散布、无明显聚集、条带或环形结构」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名边缘 3–4 die 小簇（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明显聚集」在本图量级下可接受"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00041108_014",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「离散小方块、遍布绿色区域、无明显聚集或方向性」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名边缘 3–4 die 小簇（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "位置": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "遗漏": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "断言": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "格式": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（未答）；本图中心团块主导，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "块状缺陷存在且分布不均成立；但主团块（27 die@≈6.9点/0.27R、16 die@≈0.4点/0.18R）位于中心带，「中左区域」与径向定位偏差"
+      },
+      "位置": {
+        "verdict": "PARTIAL",
+        "evidence": "「9点中径较密集」有局域支持（中带 9点 0.48 最高、8.8点/0.45R 有 11 die 块）；但全图以中心带最密（0.432），radial_zone=middle 未反映中心主导"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "块状聚集与散点均被概括（具体偏差已在形态/位置记）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「9点较密集」非无据"
+      },
+      "格式": {
+        "verdict": "PARTIAL",
+        "evidence": "方向字段写「9点钟方向附近较密集」，含密度评述、非简短钟点表达（轻微）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "PARTIAL",
+        "evidence": "不适用而填（轻微不适当）：9点确为全带红密度最高扇区（0.35，中带内 0.48）、另有 8.8点/0.45R 的 11 die 块，内容非无据；但图为中心团块＋全片散布，方向判据不成立，宜填 null"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「分散红点」覆盖约七成红成立；但「未见明显聚集」与中心两团块（27+16 die，占红约 27%）不符"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 可立（三带均有红，0.43/0.22/0.16）"
+      },
+      "遗漏": {
+        "verdict": "CONTRADICTED",
+        "evidence": "全图最大结构——中心两团块（27+16 die）完全未描述"
+      },
+      "断言": {
+        "verdict": "PARTIAL",
+        "evidence": "「未见明显聚集」与中心团块不符（与形态同记）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「中心附近不规则团块＋周围散点」与 27+16 die 中心团块、其余散点一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "center 与团块质心 rn≈0.18–0.27 相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "团块与散点均被描述"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「散乱分布」成立；「无特定聚集区域」与中心两团块不符"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 可立（三带均有红）"
+      },
+      "遗漏": {
+        "verdict": "CONTRADICTED",
+        "evidence": "中心两团块（27+16 die）完全未描述"
+      },
+      "断言": {
+        "verdict": "PARTIAL",
+        "evidence": "「无明显……特定聚集区域」与中心团块不符（与形态同记）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "己",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「中心有密集聚集」成立；「环形分布」证据弱——红以中心带最密（0.432）、无环绕中心的连续带状，0.35–0.45R 仅数块离散"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "center 与团块在中心带相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "中心聚集与外围散点均被提及"
+      },
+      "断言": {
+        "verdict": "PARTIAL",
+        "evidence": "「环形」证据不足（弱）"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「中心区域缺陷较少」与实际相反（中心带红密度 0.432 为最高、两大团块均在中心带）；「中部断续环形」不成立（中带 0.222 低于中心）"
+      },
+      "位置": {
+        "verdict": "CONTRADICTED",
+        "evidence": "middle 与中心主导（0.432 最高、团块在中心带）不符"
+      },
+      "遗漏": {
+        "verdict": "CONTRADICTED",
+        "evidence": "中心团块未描述且被反向断言（「中心较少」）"
+      },
+      "断言": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「中心区域缺陷较少」与像素统计直接矛盾"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042202_013",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「中央连片聚集＋周围零散红点」与 27+16 die 中心团块一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "center 与团块相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "团块与散点均被描述"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；中心团块主导、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「底部边缘绿色窄带、其余几乎全红」与绿带 59 die（5–7.2点）、红 94.6% 一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "edge 与绿带在边缘带（rn 0.82–1.0）相符；红本身近全覆盖（中心/中带 100%）"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "左缘 9点约 2 die 小绿点未提，量级极小，不构成主要遗漏"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为内容字符串（非字符串「null」）；无复读"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "PARTIAL",
+        "evidence": "不适用而填（轻微不适当）：内容指向底部绿带（绿带质心≈6.2点，与「6点钟方向附近」相符），但图近全覆盖、缺陷无方向，依约定应填 null"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「绝大部分红、底部边缘及左侧边缘可见少量绿」与 94.6% 红、绿带＋9点小点一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立；绿位表述相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带与左缘小点均被提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「几乎全红、底部边缘连续绿区、左侧另有很小绿块」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立；caption 中「约6点钟方向」与绿带（≈6.2点）相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带与左缘小点均被提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「绝大部分红、底部及左侧边缘极小局部少量绿」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带与左缘小点均被提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「几乎全部致密连续缺陷、仅边缘少量正常单元」与 94.6% 红、绿全在边缘一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带已被「边缘少量正常单元」概括"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）；caption 与 morphology 全文相同（复读，轻微）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "己",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「底部边缘局部绿区、其余大部分红」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "edge 与绿带在边缘带相符；红近全覆盖"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带已被点名（左缘小点极小未提）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为内容字符串；无复读"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "PARTIAL",
+        "evidence": "不适用而填（轻微不适当）：内容指向底部绿带（≈6.2点，与「6点钟方向」相符），但图近全覆盖、缺陷无方向，依约定应填 null"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「边缘局部聚集的块状绿色区域」与绿带（5–7.2点、边缘带）一致"
+      },
+      "位置": {
+        "verdict": "PARTIAL",
+        "evidence": "radial edge 成立；但文字「约7点至10点方向存在明显的绿色聚集区」与图不符——主绿带在 5–7.2点（59 die），7–10点内仅带尾约 18 die 与 9点 2 die 小点"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿带已被概括（左缘 2 die 小点未提，量级极小）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "定位错误已在位置项记（不重复降级）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null；caption 中钟点坐标为正常表述"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00042778_024",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「大面积红覆盖大部分、仅底部边缘少量绿」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "左缘 9点约 2 die 小绿点未提，量级极小"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；近全覆盖、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "位置": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "遗漏": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "断言": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "格式": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（未答）；本图近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「红色呈分散的像素级斑点、随机分散」与 395 die 单一连通红色主体（红 75.5%）直接矛盾"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立（三带红均为多数：0.66/0.95/0.65）"
+      },
+      "遗漏": {
+        "verdict": "CONTRADICTED",
+        "evidence": "连片红色主体与成片绿色残留（上左 38 die、中心 18 die 等）均未反映"
+      },
+      "断言": {
+        "verdict": "CONTRADICTED",
+        "evidence": "「随机分散状」与 395 die 连通块矛盾"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「红色连成大片并遍布各带；绿色残留在左侧、左下和底部边缘」与 395 die 块、上左 38 die 块、7–8点及底部绿带一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "中心 18 die 绿块以「少量散在簇」概括，存在性已含"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「主要残留」与绿 77% 在边缘带相符"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null；caption 与 morphology 非同文"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "红绝大部分成立；「仅中心及边缘零星散布少量绿色」低估——绿占 24.5%（137 die），含上左缘 38 die、中心 18 die 成块"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿的位置（中心＋边缘）已覆盖"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "程度词问题已在形态项记（不重复降级）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「不连续局部绿块、主要沿边缘呈块状」与绿 77% 在边缘带一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "edge 对绿成立（边缘带占绿 77%）；红本身三带均多数"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "中心 22 die 绿区（含 18 die 块）未提（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "己",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「大面积高密度连续红色」大体成立（395 die 块）；但「近乎全覆盖」「从中心到边缘整个径向区域」夸大——绿占 24.5%、多处成片"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "CONTRADICTED",
+        "evidence": "全部绿色残留（24.5%，含上左 38 die、中心 18 die 块）完全未反映"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「近乎全覆盖」的程度问题已在形态项记（不重复降级）"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）；caption 与 morphology 全文相同（复读，轻微）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；近全片失效、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「大面积红覆盖大部分区域」成立；「仅中心及边缘有少量绿色区域」低估——绿 24.5% 成块（38 die、18 die 等）"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿的位置（中心＋边缘）已覆盖"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "程度词问题已在形态项记"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；近全片失效、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043183_023",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「绝大部分红」成立；「边缘一圈＋中部零星」——边缘一环基本成立（9/12 扇区有缘绿，4–5点有缺口），但中心 22 die 绿被「零星」淡化"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 对红成立；文字绿位（边缘＋中部）与图相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "绿的主要位置已覆盖"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「边缘一圈」在 4–5点缺口处属轻微夸大，已并入形态项"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；近全片失效、绿残留多向，方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "甲",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「散在点状和小簇、下部近边缘有相对密集的小簇、无环/线」与 6–7.4点/0.70–0.90R 约 21 die 小簇组一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "下部小簇组已点名"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无连续环带或长直线」与图一致"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "乙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「小方块、孤立散布全绿区」与图一致（最大块 6 die）"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 6–7点边缘约 21 die 小簇组（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明显聚集」在本图量级下可接受（局部窗 0.33–0.48）"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "丙",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「孤立单点及小簇、零散散布全片」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 6–7点小簇组（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "丁",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「离散点状及小簇状、边缘处亦有零星分布、无环/线」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "SUPPORTED",
+        "evidence": "小簇与边缘分布已概括性提及"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无边缘环/中心集中」与图一致"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "戊",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「随机孤立点、无明显聚集或方向性」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 6–7点小簇组（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "「无明显聚集」在本图量级下可接受"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "己",
+      "形态": {
+        "verdict": "PARTIAL",
+        "evidence": "「无明显缺陷图案、仅有零星小点」低估——红 16.2%（88 die）、含 6–7点约 21 die 小簇组"
+      },
+      "位置": {
+        "verdict": "CONTRADICTED",
+        "evidence": "radial_zone 填 none 与事实不符：全片散布（12/12 扇区有红），应为 global"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "小簇组与散布规模未反映（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "CONTRADICTED",
+        "evidence": "clock_direction 写成字符串「null」（非 JSON null）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（字段为字符串「null」，格式问题另记）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "庚",
+      "形态": {
+        "verdict": "SUPPORTED",
+        "evidence": "「分散矩形块状缺陷、随机散布全片」与图一致"
+      },
+      "位置": {
+        "verdict": "SUPPORTED",
+        "evidence": "global 与全片散布相符"
+      },
+      "遗漏": {
+        "verdict": "PARTIAL",
+        "evidence": "未点名 6–7点小簇组（轻微）"
+      },
+      "断言": {
+        "verdict": "SUPPORTED",
+        "evidence": "无与像素统计相悖的断言"
+      },
+      "格式": {
+        "verdict": "SUPPORTED",
+        "evidence": "clock_direction 为 JSON null"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（JSON null）；全片随机散布、方向不适用"
+      }
+    },
+    {
+      "图号": "wafer_00043921_007",
+      "盲号": "辛",
+      "形态": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "位置": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "遗漏": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "断言": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "格式": {
+        "verdict": "MISSING",
+        "evidence": "四字段全为 null（未答）"
+      },
+      "方向": {
+        "applicable": false,
+        "verdict": "NO_ANSWER",
+        "evidence": "未给方向（未答）；本图全片散布、方向不适用"
+      }
+    }
+  ]
+}

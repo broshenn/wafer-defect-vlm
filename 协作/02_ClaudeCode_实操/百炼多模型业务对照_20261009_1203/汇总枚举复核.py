@@ -46,9 +46,23 @@ def cell(v, allowed):
 
 
 def extract(d):
+    """**先规范化成「一条 = 一个答案集」，再统计。**
+
+    六个分片实际用了三种结构，而且**分片4 同时带扁平键和 `答案集` 镜像**
+    （直接读会重复计数）：
+      · 扁平：条目[] 每条就是一个答案集（有 盲号 + 五维）
+      · 嵌套：条目[] 每图一条，答案集[] 里才是逐盲号判定
+    规范化后必须恰好 **36 图 × 8 模型 = 288 条**，脚本会自检这个数。
+    """
     out = []
     for it in d.get("条目", []):
-        out.append(it)
+        if it.get("盲号") and any(k in it for k in ("形态", "位置", "遗漏")):
+            out.append((it.get("图号") or it.get("sample_id"), it.get("盲号"), it))
+        elif it.get("答案集"):
+            # 图的 sample_id 在父条目上，答案集里可能没有
+            for a in it["答案集"]:
+                out.append((it.get("图号") or it.get("sample_id"),
+                            a.get("盲号"), a))
     return out
 
 
@@ -68,11 +82,15 @@ def main():
     per = defaultdict(lambda: defaultdict(Counter))
     dir_stats = defaultdict(Counter)
     detail = []
-    for it in rows:
-        sid = it.get("sample_id") or it.get("图号")
+    assert len(rows) == 288, f"规范化后应 288 条（36 图 × 8 模型），实际 {len(rows)}"
+    print(f"  规范化后 {len(rows)} 条答案集 ✓（36 图 × 8 模型）")
+    seen = set()
+    for sid, lab, a in rows:
         mp = key.get(sid) or {}
-        for a in it.get("答案集", []):
-            lab = a.get("盲号")
+        if True:
+            if (sid, lab) in seen:
+                print(f"  !! 重复 ({sid},{lab})"); continue
+            seen.add((sid, lab))
             model = mp.get(lab)
             if model is None:
                 print(f"  !! {sid} 盲号 {lab} 映射缺失"); continue
