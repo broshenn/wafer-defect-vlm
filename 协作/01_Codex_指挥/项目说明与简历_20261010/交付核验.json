@@ -1,0 +1,33 @@
+{
+  "files": [
+    {
+      "file": "README_入口.md",
+      "bytes": 1075,
+      "sha256": "78f0c02a0af48ee5b9c02be9d25550b2b4bb1df16c4e23218583c403811f7269"
+    },
+    {
+      "file": "主张证据账本.json",
+      "bytes": 11085,
+      "sha256": "b5fef7eb8eeddc347edab51e8454a4e6f89bf22de4003ae63103561ce14716f0"
+    },
+    {
+      "file": "完整项目说明.md",
+      "bytes": 16335,
+      "sha256": "1d3cd76d21dd0165dcc7461ee4df97fce53178ffd641a2865e4644f869375126"
+    },
+    {
+      "file": "简历描述_背景加五行.md",
+      "bytes": 1922,
+      "sha256": "901b1e573958f11429d3a74d5b3da81f1b8d36fff5aeceb13d70d007b2a2d162"
+    }
+  ],
+  "checks": {
+    "resume_bullet_count": 5,
+    "background_present": true,
+    "key_metrics_match_sources": true,
+    "M0_lineage_correction_present": true,
+    "ledger_structural_validation": "6 claims passed",
+    "sensitive_pattern_hits": 0,
+    "new_experiments": 0
+  }
+}

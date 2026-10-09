@@ -1,0 +1,266 @@
+{
+  "schema_version": 1,
+  "profile": {
+    "candidate_id": "wafer-project-owner",
+    "target_roles": [
+      "大模型/多模态算法",
+      "AI应用工程"
+    ],
+    "updated_at": "2026-10-10"
+  },
+  "claims": [
+    {
+      "id": "claim-wafer-data",
+      "source_fact": "5904 sample_id / 5875 distinct PNG，3072用于训练；lot分组与来源审计已做。",
+      "candidate_wording": "参与整理5904条公开晶圆样本，完成lot分组、来源追溯与图像哈希审计。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/自动接续_20261009/最终实物核验.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": [
+        "项目事实说明",
+        "算法/多模态简历项目草稿",
+        "AI应用工程项目草稿"
+      ],
+      "interview_details": {
+        "decisions": [
+          "类别、格式、描述与规则分分别报告，原答留存。"
+        ],
+        "difficulties": [
+          "不能把所有文件视为图像内容唯一，不能把1200候选加成额外训练图。"
+        ],
+        "verification": [
+          "读取所列机器记录与更正后的实际参数。"
+        ],
+        "result": "5904 sample_id / 5875 distinct PNG，3072用于训练；lot分组与来源审计已做。"
+      },
+      "boundary": "已确认的是项目事实；用户个人负责的开发/训练/验收范围仍待本人确认，不上调为独立实现或负责人。",
+      "risk_notes": [
+        "不能把所有文件视为图像内容唯一，不能把1200候选加成额外训练图。"
+      ],
+      "result_nature": "范围/规模",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "claim-wafer-sft",
+      "source_fact": "56图七类候选Base15/56、L完整schema门控46/56；独立类别字段47/56。",
+      "candidate_wording": "使用3072张图开展语言侧LoRA；56图七类候选含结构校验类别准确率26.8%→82.1%。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/验收_20261009_56图与RL裁决/独立核验.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        },
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/数据/训练数据_N3072.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": [
+        "项目事实说明",
+        "算法/多模态简历项目草稿",
+        "AI应用工程项目草稿"
+      ],
+      "interview_details": {
+        "decisions": [
+          "类别、格式、描述与规则分分别报告，原答留存。"
+        ],
+        "difficulties": [
+          "指标属于L分类模型和56图七类候选，不能归给D部署服务或GRPO。"
+        ],
+        "verification": [
+          "读取所列机器记录与更正后的实际参数。"
+        ],
+        "result": "56图七类候选Base15/56、L完整schema门控46/56；独立类别字段47/56。"
+      },
+      "boundary": "已确认的是项目事实；用户个人负责的开发/训练/验收范围仍待本人确认，不上调为独立实现或负责人。",
+      "risk_notes": [
+        "指标属于L分类模型和56图七类候选，不能归给D部署服务或GRPO。"
+      ],
+      "result_nature": "阶段结果",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "claim-wafer-rl",
+      "source_fact": "类别GRPO90步已跑；多字段GRPO60步G4、与同旧D基座60图SFT匹配；没有从M0续训。",
+      "candidate_wording": "完成90步类别及60步多字段GRPO，配套SFT对照与分量奖励审计。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/收尾_RL90与报告_20261006/阶段实验报告.md",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        },
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/验收_20261009_多字段RL首轮/起点实参核验_20261010.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        },
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/验收_20261009_多字段RL首轮/独立复算.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": [
+        "项目事实说明",
+        "算法/多模态简历项目草稿",
+        "AI应用工程项目草稿"
+      ],
+      "interview_details": {
+        "decisions": [
+          "类别、格式、描述与规则分分别报告，原答留存。"
+        ],
+        "difficulties": [
+          "不得写共同M0续训；当前多字段未显示类别增益，规则合规更低。"
+        ],
+        "verification": [
+          "读取所列机器记录与更正后的实际参数。"
+        ],
+        "result": "类别GRPO90步已跑；多字段GRPO60步G4、与同旧D基座60图SFT匹配；没有从M0续训。"
+      },
+      "boundary": "已确认的是项目事实；用户个人负责的开发/训练/验收范围仍待本人确认，不上调为独立实现或负责人。",
+      "risk_notes": [
+        "不得写共同M0续训；当前多字段未显示类别增益，规则合规更低。"
+      ],
+      "result_nature": "方法/交付",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "claim-wafer-external",
+      "source_fact": "固定36图8模型：原生与L/D、四API及客户端GLM；144尝试/132返回/12连接失败。",
+      "candidate_wording": "完成原生/微调9B及外部模型同图对照，分开评估类别、格式、方向与描述事实。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/自动接续_20261009/13点补核.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        },
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/描述对照_枚举.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": [
+        "项目事实说明",
+        "算法/多模态简历项目草稿",
+        "AI应用工程项目草稿"
+      ],
+      "interview_details": {
+        "decisions": [
+          "类别、格式、描述与规则分分别报告，原答留存。"
+        ],
+        "difficulties": [
+          "外部模型零样本，预算不同；模型复核不是人审，不称小模型全面超过旗舰。"
+        ],
+        "verification": [
+          "读取所列机器记录与更正后的实际参数。"
+        ],
+        "result": "固定36图8模型：原生与L/D、四API及客户端GLM；144尝试/132返回/12连接失败。"
+      },
+      "boundary": "已确认的是项目事实；用户个人负责的开发/训练/验收范围仍待本人确认，不上调为独立实现或负责人。",
+      "risk_notes": [
+        "外部模型零样本，预算不同；模型复核不是人审，不称小模型全面超过旗舰。"
+      ],
+      "result_nature": "阶段结果",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "claim-wafer-deployment",
+      "source_fact": "D HTTP36/36返回成功，类别25/36；P50=4.177s/P95=5.376s，allocated peak17.88GiB。",
+      "candidate_wording": "搭建单卡HTTP推理原型，保留JSON校验与原答审计；36图回放成功，P50约4.2秒。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/自动接续交付_20261009_1247/部署服务复算.json",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        },
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/wafer_service.py",
+          "public": true,
+          "note": "已保存项目记录；更正件优先。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": [
+        "项目事实说明",
+        "算法/多模态简历项目草稿",
+        "AI应用工程项目草稿"
+      ],
+      "interview_details": {
+        "decisions": [
+          "类别、格式、描述与规则分分别报告，原答留存。"
+        ],
+        "difficulties": [
+          "Python标准库HTTP，无FastAPI/vLLM/热挂载；不是生产服务，无业务节省或吞吐证明。"
+        ],
+        "verification": [
+          "读取所列机器记录与更正后的实际参数。"
+        ],
+        "result": "D HTTP36/36返回成功，类别25/36；P50=4.177s/P95=5.376s，allocated peak17.88GiB。"
+      },
+      "boundary": "已确认的是项目事实；用户个人负责的开发/训练/验收范围仍待本人确认，不上调为独立实现或负责人。",
+      "risk_notes": [
+        "Python标准库HTTP，无FastAPI/vLLM/热挂载；不是生产服务，无业务节省或吞吐证明。"
+      ],
+      "result_nature": "实际结果",
+      "last_verified": "2026-10-10"
+    },
+    {
+      "id": "claim-wafer-ownership",
+      "source_fact": "会话记录有用户组织实验和授权执行，尚无完整个人实际开发分工确认。",
+      "candidate_wording": "【待补：本人具体承担的实验设计、开发与验收范围】",
+      "sources": [
+        {
+          "type": "conversation",
+          "location": "当前项目会话",
+          "public": false,
+          "note": "只记来源，不复制私人对话。"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": [
+        "内部待补清单"
+      ],
+      "interview_details": {
+        "decisions": [],
+        "difficulties": [
+          "项目事实不能自动变成个人独立贡献。"
+        ],
+        "verification": [
+          "由本人确认职责。"
+        ],
+        "result": null
+      },
+      "boundary": "不编姓名、学校、公司、时间或职级。",
+      "risk_notes": [
+        "正式使用前确认职责措辞。"
+      ],
+      "last_verified": null
+    }
+  ]
+}
