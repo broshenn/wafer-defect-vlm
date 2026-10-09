@@ -1,0 +1,21 @@
+这是公开晶圆 BIN 图。黑色为晶圆外，绿色为合格 die，红色为失效 die。
+请**只根据图中实际可见的内容**回答。不要推测工艺根因，不要把没有看到的模式写进答案，不要给出未经验证的数值测量。
+
+坐标口径：图片**上方为 12 点钟，右方为 3 点钟，顺时针**。径向位置按晶圆半径的比例划分：**内三分之一 = center，中间三分之一 = middle，外三分之一 = edge**。
+
+只输出**一个 JSON 对象**，不写推理过程、不写 Markdown 代码围栏，必须**恰好**包含以下七个字段：
+
+{"defect_class":"九类之一或 unknown","coverage_level":"none/low/medium/high/near_all/unknown","red_mass_zones":["center","middle","edge" 的子集，或字符串 \"unknown\"],"direction_type":"single/axis/none/unknown","clock_sectors":[1 到 12 的整数],"caption_zh":"一句话客观描述主要形态与位置","uncertainty":"不确定之处，无则空字符串"}
+
+各字段取值规则：
+
+- `defect_class`：从 Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 中选一个；无法可靠判断时填 "unknown"。
+- `coverage_level`：红色 die 占（红色 + 绿色）die 的比例档位。完全没有红点 = "none"；大于 0 且小于 5% = "low"；5% 到 20% = "medium"；20% 到 50% = "high"；50% 及以上 = "near_all"；无法判断 = "unknown"。
+- `red_mass_zones`：红色 die 的质量落在哪些径向区带，按 center、middle、edge 的顺序排列、不重复。例如红点全在中部写 ["middle"]，跨中外部写 ["middle","edge"]。**没有红点时写 []**；无法可靠判断时写字符串 "unknown"（注意是字符串，不是数组）。
+- `direction_type`：红点是否指向某个方向。"single" = 集中在一个钟点方向；"axis" = 沿一条穿过晶圆中心的直线成带状（划痕、对穿）；"none" = 环状、全局分布、离散或没有方向；"unknown" = 看不出来。
+- `clock_sectors`：与 `direction_type` 联动。single 时写**恰好一个** 1–12 的整数（12 = 12 点方向，3 = 3 点方向，顺时针）；axis 时写**恰好两个**相对（相差 6 个扇区）的整数；none 或 unknown 时写 []。
+- `caption_zh`：一句话客观描述主要形态与位置，允许自由文本。
+- `uncertainty`：简述不确定之处（例如"红点太少，方向不可靠"）；没有则空字符串。
+
+图片正常无缺陷时：`defect_class` 填 "none"，`coverage_level` 填 "none"，`red_mass_zones` 填 []，`direction_type` 填 "none"，`clock_sectors` 填 []。
+**不要为了凑满字段而编造方向或区带**：宁可写 "unknown"，也不要把环状或全局分布硬说成某个钟点。本图不提供尺寸依据，因此答案里不要出现任何尺寸、比例或覆盖率的数值。

@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "wafer_multifield_v2",
+  "title": "晶圆多字段判读答案 v2",
+  "description": "多字段 RL v2 的回答 schema。题面见 题面_prompt_v2.txt；参考端定义见 schema_v2_定义.md。draft -> 本轮首轮运行使用，取代性变更必须提升版本号并另存。",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "defect_class",
+    "coverage_level",
+    "red_mass_zones",
+    "direction_type",
+    "clock_sectors",
+    "caption_zh",
+    "uncertainty"
+  ],
+  "properties": {
+    "defect_class": {
+      "type": "string",
+      "enum": ["Center", "Donut", "Edge_Loc", "Edge_Ring", "Loc", "Near_full", "Random", "Scratch", "none", "unknown"]
+    },
+    "coverage_level": {
+      "type": "string",
+      "enum": ["none", "low", "medium", "high", "near_all", "unknown"]
+    },
+    "red_mass_zones": {
+      "description": "有序去重的径向区带列表；没有红点时为空数组；无法判断时用字符串 unknown（不是数组）",
+      "oneOf": [
+        {
+          "type": "array",
+          "items": {"type": "string", "enum": ["center", "middle", "edge"]},
+          "uniqueItems": true
+        },
+        {"type": "string", "enum": ["unknown"]}
+      ]
+    },
+    "direction_type": {
+      "type": "string",
+      "enum": ["single", "axis", "none", "unknown"]
+    },
+    "clock_sectors": {
+      "description": "扇区 1..12（1 = 12 点到 1 点，顺时针）。single 恰好 1 个；axis 恰好 2 个不同值；none/unknown 为空数组",
+      "type": "array",
+      "items": {"type": "integer", "minimum": 1, "maximum": 12}
+    },
+    "caption_zh": {"type": "string"},
+    "uncertainty": {"type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"direction_type": {"const": "single"}}},
+      "then": {"properties": {"clock_sectors": {"minItems": 1, "maxItems": 1}}}
+    },
+    {
+      "if": {"properties": {"direction_type": {"const": "axis"}}},
+      "then": {"properties": {"clock_sectors": {"minItems": 2, "maxItems": 2}}}
+    },
+    {
+      "if": {"properties": {"direction_type": {"enum": ["none", "unknown"]}}},
+      "then": {"properties": {"clock_sectors": {"maxItems": 0}}}
+    }
+  ],
+  "x-wafer-notes": {
+    "rejected_shapes": [
+      "重复键（JSON 层面）",
+      "clock_sectors 里出现 true/false（bool 是 int 的子类，必须显式拒收）",
+      "clock_sectors 含非 1..12 的整数",
+      "red_mass_zones 既不是字符串也不是字符串列表",
+      "尾随文本 / 多对象 / 截断 / 非对象"
+    ],
+    "not_rewarded": ["caption_zh 的内容", "uncertainty 的内容"],
+    "excluded_this_round": ["尺寸 extent（未定义测量对象）"]
+  }
+}

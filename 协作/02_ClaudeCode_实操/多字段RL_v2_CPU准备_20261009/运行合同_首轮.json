@@ -1,0 +1,73 @@
+{
+  "轮次": "多字段 RL v2 首轮（2026-10-09）",
+  "执行合同": "协作/01_Codex_指挥/多字段RL_v2_启动准备_20261009/给Claude_门槛通过后运行首轮.md",
+  "用户指令": "2026-10-09 明确『多字段RL是本轮必做项…门槛通过、获准卡与预算具备后直接运行』",
+  "接收回执": "本文件即为接收与执行回执；本轮目录新建，无同任务历史 started/raw",
+  "运行位置": {
+    "机器": "用户自行租用的 RTX 5090 32GB（非学校机器；主机名与端口只在仓库外接入资料里）",
+    "核查": "2026-10-09 22:17 现场核查：GPU 0 MiB、0% 利用率、空闲",
+    "未做": "未新租实例、未充值、未扩预算、未动学校 5090/A100",
+    "计费": "人民币账单仍未知（由用户按平台结算）；停止进程不等于平台停止计费"
+  },
+  "预算": {
+    "累计上限": 1800,
+    "历史累计": "≈1380.9（见 资源账_统一_20261009.md）",
+    "本轮批准": 120,
+    "本轮已用": "运行后回填",
+    "分项计划": {"合并D+等价性": 12, "M0适配": 20, "M1继续SFT": 20, "M2固定GRPO": 40, "评测": 25, "余量": 3}
+  },
+  "起点": {
+    "基座": "Qwen3.5-9B（/root/autodl-tmp/ws/models/Qwen3.5-9B，4 分片）",
+    "迁移起点adapter": "D-N3072-3407（/root/autodl-tmp/ws/adapters/D-N3072-3407）",
+    "合并产物": "/root/autodl-tmp/ws/models/Qwen3.5-9B-Dmerged（18G，4 分片）",
+    "合并等价性": "受奖励字段 6/6 一致；自由文本 2/6 出现句尾措辞差异（bf16 合并舍入，非漏挂 adapter）；同模型重跑 6/6 逐字一致，证明本机贪心解码可复现",
+    "禁止": "不重复叠加同一 adapter；不恢复旧 optimizer 进度（M1/M2 用 adapters+resume_only_model）"
+  },
+  "数据": {
+    "schema": "wafer_multifield_v2",
+    "适配池": "256 图 × v2 题面 → 目标 JSON（1 epoch / 有效 batch 4 / 64 更新步）",
+    "60图组": "从 RL 池挑 60 图（方向可判 6 张全部入选；类别轮转补齐）",
+    "M1数据": "group60_sft4.jsonl（每图答案连排 4 行，GA4 → 1 图/更新步，60 步）",
+    "M2数据": "group60_grpo.jsonl（每图 1 行 + 参考列，G=4，60 更新步）",
+    "确认池": "120 图（新冻结，与适配池/RL池/规则开发池 lot 与 PNG 交集均为 0）",
+    "隔离核验": "四池 lot 两两交集 = 0（见 数据池合同.json）"
+  },
+  "训练超参（与 RL90 运行同一接线，仅奖励与 schema 变）": {
+    "tuner_type": "lora", "target_modules": ["all-linear"],
+    "lora_rank": 16, "lora_alpha": 32, "lora_dropout": 0.05,
+    "freeze_vit": true, "freeze_aligner": true, "torch_dtype": "bfloat16",
+    "max_length": 2048, "IMAGE_MAX_TOKEN_NUM": 256,
+    "per_device_train_batch_size": 1, "gradient_accumulation_steps": 4,
+    "gradient_checkpointing": true, "seed": 3407, "data_seed": 3407,
+    "dataset_shuffle": false, "train_dataloader_shuffle": false,
+    "lr": "1e-5（adapt/sft/rl 相同）", "lr_scheduler": "cosine, warmup 0",
+    "GRPO": {"num_generations": 4, "temperature": 1.0, "top_p": 1.0,
+             "beta": 0.04, "epsilon": 0.2, "use_vllm": false,
+             "max_completion_length": 256, "num_iterations": 1,
+             "importance_sampling_level": "token"}
+  },
+  "奖励": {
+    "实现": "奖励_v2.py（服务器名 reward_v2.py）",
+    "结构": "事实 0.9（类别 .30 / 覆盖 .20 / 区带 .20 / 方向 .20）+ 格式 0.1",
+    "适用性": "由参考端决定；参考未知的字段权重归零并重新归一化",
+    "拒收形状": "重复键 / 非有限常量 / bool 冒充整数 / 扇区越界 / 尾随文本 / 多对象 / 截断",
+    "系统错误显式失败": "缺参考列 / 批量长度不等 / gold 非法（不填 0 掩盖）",
+    "自测": "21/21（含『格式全对事实全错 ≤0.1』『全 unknown ≤0.1』『编造方向低于答对』）"
+  },
+  "门槛判据": {
+    "CPU": "几何自测 43/43、奖励自测 21/21、三份清单可生成、四池 lot 交集为 0 —— 全过",
+    "M0_2步": "loss 1.424→1.349 下降；grad_norm 2.779/2.503 非零；20 GiB 单卡；trainable 43.28M/9453M = 0.46%（视觉侧冻结）—— 通过",
+    "M2_2步": "运行后填；检查 4 候选同 ID、各分量非全同、非全 0、schema 未被 max_completion_length 截断"
+  },
+  "评测合同": {
+    "卷": "确认池 120 图，v2 题面，不含答案",
+    "解码": "temperature 0.0 / seed 3407 / max_tokens 256 / 不传 enable_thinking",
+    "比较对象": ["M0", "M1", "M2"],
+    "主指标": "受奖励字段逐项：类别准确率、覆盖档位准确率、区带集合准确率、方向类型与扇区；按图配对区间",
+    "另报": "格式通过率、方向适用样本数、caption 的 AI 复核（另列，不合成单一准确率）",
+    "不做": "不用训练规则在 test 上的同公式分数单独当能力证据"
+  },
+  "明确 not run（未运行前）": [
+    "M3 迭代规则奖励", "检索训练与评测", "正式九类独立考卷", "对外部大模型的同卷对照"
+  ]
+}
