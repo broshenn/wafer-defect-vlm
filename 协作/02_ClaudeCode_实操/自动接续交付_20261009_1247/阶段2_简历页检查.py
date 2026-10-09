@@ -12,13 +12,15 @@
 不联网、不调用任何 API。
 """
 from __future__ import annotations
-import hashlib, json, re, subprocess, sys
+import hashlib, json, re, subprocess, sys, tempfile
 from pathlib import Path
 
 D = Path(__file__).resolve().parent
 HTML = D / "项目经历页_可编辑.html"
 PDF = D / "项目经历页.pdf"
-DOM = D / "_dom_tmp.html"
+# 无头浏览器的 DOM 转储写到**系统临时目录**，不落在交付目录里：
+# 否则它会成为交付目录里的一个每次运行都变的文件，污染清册与总封条。
+DOM = Path(tempfile.gettempdir()) / "asu_resume_dom_tmp.html"
 SHELL = D / "简历页_内容壳.html"
 
 BROWSER = next((p for p in (
@@ -80,6 +82,7 @@ def main() -> int:
             inone = re.search(r"一页内\s*·\s*占用\s*(\d+)%", dom)
             fit["指标原文"] = (over.group(0) if over else (inone.group(0) if inone else None))
             fit["是否一页内"] = bool(inone) and not over
+            DOM.unlink(missing_ok=True)      # 读完即删，临时文件不留在磁盘上
         except Exception as e:                                   # noqa: BLE001
             fit["测量失败"] = f"{type(e).__name__}: {e}"
             fit["是否一页内"] = False
