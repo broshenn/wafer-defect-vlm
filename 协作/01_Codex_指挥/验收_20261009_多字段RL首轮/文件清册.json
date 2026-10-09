@@ -31,6 +31,16 @@
       "sha256": "0e974f1c732ca5a4e8923fd9a88234a6ba48cbfe2ba35bffb37397e31ac90f9f"
     },
     {
+      "path": "v2_train_起点修复草案.py",
+      "bytes": 9244,
+      "sha256": "22ebc468d950c764c34defd71ffecaf0ce7cd165773395d40e362b923cb81e82"
+    },
+    {
+      "path": "准备起点修复副本.py",
+      "bytes": 3263,
+      "sha256": "5c8748d5cbed1739ac2edd4461a85d6a5d42c7b32df28c8e262cc205b2248292"
+    },
+    {
       "path": "独立复算.json",
       "bytes": 9153,
       "sha256": "214ca0f856371b40c2ebb78515ffedb327bab5059c9d440ec8369cd1758e80f7"
@@ -46,14 +56,34 @@
       "sha256": "88f3f624293384534857a8965e3a6f7ef68e75d10d54b3ac1d6fe2b81a31ab41"
     },
     {
+      "path": "简历RL段落_最终口径_20261010.md",
+      "bytes": 2416,
+      "sha256": "d6372eb457c5bf12640024b0ae1ff97d09966ec609664d28ff73d771fa0ccf7a"
+    },
+    {
       "path": "给Claude_首轮收口纠偏.txt",
       "bytes": 2302,
       "sha256": "c09ba96fb1350fefaac3564cb17582571576dacef8c42b79754cac4132027842"
     },
     {
+      "path": "起点修复CPU回归.json",
+      "bytes": 1102,
+      "sha256": "8ac2562c01ca55e52ad8a8b9cd36c64c4acea56f3954f3a362d31dead744a176"
+    },
+    {
+      "path": "起点实参核验_20261010.json",
+      "bytes": 1309,
+      "sha256": "c1ad8b2e16442c77c60fe9d2d13c8e5f815a4f59e38c83875a9d8be13287c8bc"
+    },
+    {
+      "path": "起点更正_20261010.md",
+      "bytes": 5871,
+      "sha256": "e2379beee8c9024c5535beb00a9ace963595144870176f53b5e9d92421790780"
+    },
+    {
       "path": "验收与下一步.md",
-      "bytes": 6812,
-      "sha256": "665f966492ad883a1dd00077a3d76c4cf4c5fd204aa96f557d006c3c565bdcb7"
+      "bytes": 7221,
+      "sha256": "d1703db56af97c825294ce44240d27e82670346d479b6c84c9fa52b45d498d64"
     }
   ],
   "sensitive_hits": 0,

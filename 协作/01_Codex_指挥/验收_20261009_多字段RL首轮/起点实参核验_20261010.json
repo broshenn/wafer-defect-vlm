@@ -1,0 +1,42 @@
+{
+  "recorded_model_initialization": {
+    "M2": {
+      "args_file_sha256": "e1397024356b492b08aacf59299d2c65f59de623eaa034486709b81fc798caf9",
+      "adapters": [],
+      "resume_only_model": false,
+      "max_steps": 60,
+      "seed": 3407,
+      "learning_rate": 1e-05,
+      "lr_scheduler_type": "cosine",
+      "warmup_ratio": 0.0
+    },
+    "M1": {
+      "args_file_sha256": "1aacf68cdcafc4b12d3762ce072598de2acc6a252ea25e46f9a97813f55421d2",
+      "adapters": [],
+      "resume_only_model": false,
+      "max_steps": 60,
+      "seed": 3407,
+      "learning_rate": 1e-05,
+      "lr_scheduler_type": "cosine",
+      "warmup_ratio": 0.0
+    },
+    "M0": {
+      "args_file_sha256": "7319ee1f6d947ac12545b3fbdea8eb4732d8c5b24358973a936b611cfc587de1",
+      "adapters": [],
+      "resume_only_model": false,
+      "max_steps": 64,
+      "seed": 3407,
+      "learning_rate": 1e-05,
+      "lr_scheduler_type": "cosine",
+      "warmup_ratio": 0.0
+    }
+  },
+  "constructor_has_extra": {
+    "RLHFArguments": false,
+    "SftArguments": false
+  },
+  "local_train_sha256": "981c6a80e5ec55993547ea05ff7ab2da080f64a19a3925faecd5233a53185c42",
+  "M0_continuation_claim_withdrawn": true,
+  "M1_M2_same_underlying_model_control_valid": true,
+  "no_new_gpu_api_calls": true
+}

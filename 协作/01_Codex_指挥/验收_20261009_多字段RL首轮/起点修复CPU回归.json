@@ -1,0 +1,33 @@
+{
+  "legacy_constructor_capture": {
+    "RLHFArguments": {
+      "adapters_forwarded": false,
+      "resume_only_model_forwarded": false,
+      "steps": 60,
+      "model_override_preserved": true
+    },
+    "SftArguments": {
+      "adapters_forwarded": false,
+      "resume_only_model_forwarded": false,
+      "steps": 60,
+      "model_override_preserved": true
+    }
+  },
+  "fixed_constructor_capture": {
+    "RLHFArguments": {
+      "adapters_forwarded": true,
+      "resume_only_model_forwarded": true,
+      "steps": 60,
+      "model_override_preserved": true
+    },
+    "SftArguments": {
+      "adapters_forwarded": true,
+      "resume_only_model_forwarded": true,
+      "steps": 60,
+      "model_override_preserved": true
+    }
+  },
+  "required_M0_guard_added": true,
+  "scope": "CPU构造函数实参传递验证，不是ms-swift实际模型加载验证；新代码仍是草案，未训练。",
+  "remaining_gate": "真实运行前验证解析后args及加载后的LoRA逐张量等于M0，再允许第一次更新；不得只看打印或训练后相似性。"
+}
