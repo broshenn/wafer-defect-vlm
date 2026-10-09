@@ -1,0 +1,357 @@
+{
+  "schema_version": 1,
+  "profile": {
+    "candidate_id": "待补：真实姓名/联系方式由用户本人填写，不写入公开仓库",
+    "target_roles": [
+      "算法工程师（多模态 / 视觉语言模型方向）",
+      "AI 应用工程师（模型落地 / 推理服务方向）"
+    ],
+    "updated_at": "2026-10-09",
+    "说明": "本账本只记录**项目事实**，不含候选人姓名、学历、公司、联系方式等隐私。真实个人隐私材料请保存在仓库外。",
+    "责任强度口径": "ASu 只允许「参与 / 负责模块 / 主导方案或交付 / 项目负责人」四档。本项目未记录候选人个人分工，故**一律取最保守下界「参与」**；用户确认本人实际承担范围后可上调，**未确认前不得上调**。"
+  },
+  "claims": [
+    {
+      "id": "claim-project-001",
+      "source_fact": "使用公开数据集 WM811K/LSWMD 的 5904 张晶圆 BIN 图抽样子集，按公开类别分层抽取 3072 张做监督微调，基座 Qwen3.5-9B。",
+      "candidate_wording": "在公开晶圆 BIN 图数据（WM811K，5904 张抽样子集）上，从 3072 张分层训练集微调 Qwen3.5-9B，完成 9 类缺陷格局判读。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "data/manifest.jsonl（5904 行）；协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/数据/训练数据_N3072.json（N=3072）",
+          "public": true,
+          "note": "本协作者 2026-10-09 本机点数复核过"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": ["内部草稿"],
+      "interview_details": {
+        "decisions": [
+          "选 WM811K 是因为它是公开可核的晶圆图数据集，避免使用公司内部数据",
+          "训练/验证/测试按 lot 隔离，跨划分 lot 交集为 0"
+        ],
+        "difficulties": [
+          "5904 全库没有做过图片内容级的去重统计，因此不能断言全库无重复图"
+        ],
+        "verification": [
+          "本机复算 data/manifest.jsonl = 5904 行",
+          "本机复读 训练数据_N3072.json 的 N = 3072"
+        ],
+        "result": "训练集与评测集的 lot 交集为 0（3072 训练池 2171 lot 与 102 评测集 102 lot 不相交）"
+      },
+      "boundary": "数据为公开数据集；训练执行由协作流程完成，**候选人在该项目中的个人独立贡献范围尚未由用户确认**。",
+      "risk_notes": [
+        "【待补】个人贡献边界：本项目由用户组织的多角色协作流程执行，候选人本人的具体承担部分需用户确认后才能写成个人成果",
+        "不得写「产线部署」「公司数据」，本项目只用公开数据"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-002",
+      "source_fact": "做了同基座、同数据、同题面、同解码参数、只改监督答案的对照：Base（无监督）0.1667 → L（只给类别标签）0.8889，固定 36 图开发集。",
+      "candidate_wording": "设计并执行同基座对照实验：同 3072 图、同题面模板、同解码参数，**只改监督答案**，类别准确率从基座的 16.7% 提升到 88.9%（固定 36 图开发集）；这一组是本项目最干净的因果对照。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/报告_百炼多模型对照.md（主表）；本协作者独立复算：自动接续交付_20261009_1247/机械核对.md",
+          "public": true,
+          "note": "8 个模型的类别指标由本协作者用机械核对.py 独立复算，与主报告逐项一致"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["算法工程师简历", "AI 应用工程师简历", "面试自我介绍"],
+      "interview_details": {
+        "decisions": [
+          "坚持用同一个基座做对照，而不是拿不同大小的模型比，避免把「参数量差异」当「方法差异」",
+          "固定 36 图、固定题面 sha256、固定解码参数，并在日志里记录，防止中途换题"
+        ],
+        "difficulties": [
+          "基座原生输出带 Markdown 围栏，严格 JSON 解析几乎全失败；必须把「格式失败」和「内容错误」分开计，否则会得出错误结论",
+          "kimi-k3 按原生思考跑，思考 token 占输出 90.4%，生成预算与其他模型不同，不能声称预算对齐"
+        ],
+        "verification": [
+          "本协作者独立复算 8 模型类别指标：L 0.8889 / D 0.6944 / qwen3.8-max 0.5278 / kimi 0.3889 / GLM 0.3056 / Base 0.1667 / vl-plus 0.1389 / 397b 严格 0（围栏诊断 0.2222），与主报告逐项一致",
+          "请求日志 144 条 = 4 模型 × 36 item_id，无多余请求、无重试"
+        ],
+        "result": "Base 0.1667 → L 0.8889（+72.2 个百分点）"
+      },
+      "boundary": "36 图是**开发集**（val84 每类 2 张 + dev18），不是盲测卷。",
+      "risk_notes": [
+        "【重要】本项目模型见过领域训练标签，四个外部模型是零样本 —— 与外部模型的差距**不是训练预算对齐的因果对比**，简历中不得写成「超过所有大模型」"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-003",
+      "source_fact": "在 84 张开发验证集（val84，同标注来源）上，类别监督模型 77/84 = 91.7%，九类 Macro-F1 0.9227。",
+      "candidate_wording": "在 84 张开发验证集上，类别监督模型达到 77/84 准确率（91.7%）、九类 Macro-F1 0.9227。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/01_Codex_指挥/验收_20261008_WorkBuddy外部102/验收与结果.md（主表第 19–31 行）",
+          "public": true,
+          "note": "Codex 侧独立验收"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["算法工程师简历", "AI 应用工程师简历"],
+      "interview_details": {
+        "decisions": [
+          "84 图与 36 图是两个不同分母，报告里分开写，不换分母"
+        ],
+        "difficulties": [
+          "同一个 Macro-F1 在「类别专用题面」是 0.922194、在「七字段题面」是 0.922696，两者不可混用"
+        ],
+        "verification": [
+          "验收文档明文写「不混用两者小数」"
+        ],
+        "result": "val84 77/84 = 91.7%"
+      },
+      "boundary": "**这是开发集，不是盲测卷**；分母 84 不能与 36 互换。",
+      "risk_notes": [
+        "【重要】不得把它写成「现场服务成绩」——现场 36 图服务成绩是 **25/36**，属另一个模型（D，描述模式）",
+        "不得把 L 的类别成绩与 D 的描述成绩拼成「一个模型」的绩效"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-004",
+      "source_fact": "把描述事实的评法从自由文本正则改为冻结枚举 schema（六维四值 + 方向两列），并在复核前做 20/20 回归。",
+      "candidate_wording": "把「模型描述是否与图相符」的评测从自由文本正则改造为**冻结枚举 schema**（六维四值判定 + 方向 applicable/verdict 两列分列），并在复核前跑 20/20 回归；堵住了旧口径「部分支持被算干净」「无问题词默认干净」等三个漏洞。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/复核schema_冻结.py 与 复核schema_冻结.json",
+          "public": true,
+          "note": "本协作者独立复算：枚举复核独立汇总.md，8 模型 × 5 维与方向分布全部复现"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["算法工程师简历", "AI 应用工程师简历", "面试自我介绍"],
+      "interview_details": {
+        "decisions": [
+          "规定 SUPPORTED 恒为「好」，负向维度的「无」也算 SUPPORTED，避免极性混乱",
+          "方向必须拆成「该不该有方向」和「给了什么」两列，因为「方向干净」不等于「方向答对」"
+        ],
+        "difficulties": [
+          "旧口径用自由文本正则，把「部分支持」判成干净；换成枚举后必须由复核者显式给出判定，禁止从自由文本推断",
+          "MISSING 不算正确、NEEDS_REVIEW 不默认通过，宁可为空也不放行"
+        ],
+        "verification": [
+          "本协作者独立复算 8 模型 × 5 维 + 方向分布，与主报告逐维度完全一致",
+          "本协作者另发现并记录一次「分片 JSON 形状不一致导致汇总只读到 96/288」的口径事故，以及它被当场修复的过程"
+        ],
+        "result": "枚举口径落地，六维与方向的分列统计可复算"
+      },
+      "boundary": "**全部描述结论是模型自查**，执行者继承编排会话上下文；**本项目已决定不做真人复核，真人栏永久留空**。",
+      "risk_notes": [
+        "【重要】不得称专家 gold 或人工审核",
+        "旧的 81.0%/89.8%「描述干净率」出自被废弃的自由文本口径，不得再引用"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-005",
+      "source_fact": "把模型能力落成真实 HTTP 推理服务，含输入校验、schema 校验、原答逐字节保留、format_changes 审计、needs_review 标记；36 图真实 HTTP 回放 36/36 返回 200。",
+      "candidate_wording": "把模型落成**真实 HTTP 推理服务**：带输入合法性校验、JSON schema 校验、**原答逐字节保留**与 `format_changes` 审计、`needs_review` 复核标记；36 图真实 HTTP 回放 36/36 返回 200，类别 25/36（Macro-F1 0.6756），p50 约 4.2 s、p95 约 4.9–5.4 s，峰值显存 17.88 GiB，CPU 工程契约测试 6/6 通过。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/部署原型_20261009_0120/（wafer_service.py、性能与自测/http_replay.jsonl、selftest_summary.json）",
+          "public": true,
+          "note": "本协作者独立复算：部署服务复算.md；并**实跑** CPU 契约测试 6/6 通过"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["AI 应用工程师简历", "面试自我介绍"],
+      "interview_details": {
+        "decisions": [
+          "schema 不合**不修补**：坏结构标 needs_review 并保留原答，避免把模型的错误悄悄改对",
+          "把「服务实际改过什么」单列成 format_changes —— 实测只有 clock_direction 的 JSON 类型规范化（16 次）"
+        ],
+        "difficulties": [
+          "时延百分位随口径变化（p50 4.18–4.22 s、p95 4.88–5.38 s），报告里必须写明用的哪种百分位定义",
+          "HTTP 回放文件不含 image_sha256，因此 D 的图哈希链只能经样本清单与指纹间接核"
+        ],
+        "verification": [
+          "本协作者实跑 python -m unittest test_cpu_contract -v → 6/6 通过",
+          "本协作者复算 http_replay.jsonl：36/36 HTTP 200、25/36 正确、Macro-F1 0.6756、needs_review 19，与自测摘要一致"
+        ],
+        "result": "服务在 36 张图上真实跑通并可审计"
+      },
+      "boundary": "「HTTP 通过」≠「内容正确」；「部署运行成功」≠「业务能力相当」。时延是**同客户端提交到完整响应**，不是外部网络时延。服务只跑在获准服务器上，**未做公网发布、未做产线试点**。",
+      "risk_notes": [
+        "【重要】不得写「已产线部署」或「已上线」",
+        "GPU 计费分钟与租机人民币实耗在仓库内无账单，不得代填"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-006",
+      "source_fact": "描述事实对照的实测结果是负结果：本项目的 L 与 D 在「视觉四维」上并不优于外部零样本大模型。",
+      "candidate_wording": "主动设计并报告了**不利于本项目的对照结果**：在固定 36 图的描述事实对照中，外部模型（qwen3.8-max 113 好/3 坏、GLM 105/10）在视觉四维上优于本项目模型（L 89/12、D 85/19）；据此明确区分「类别能力强」与「描述能力强」是两件事。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/描述对照_枚举.md",
+          "public": true,
+          "note": "本协作者独立复算逐维度一致"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["算法工程师简历", "AI 应用工程师简历", "面试自我介绍"],
+      "interview_details": {
+        "decisions": [
+          "把「格式」从「视觉事实」里拆出来单独一维，因为格式是输出约定、与看不看得懂图无关",
+          "拒绝把格式失败混进视觉正确率"
+        ],
+        "difficulties": [
+          "L 的类别准确率第一但六维合计排最后，且**完全由格式一维造成** —— 若不加区分就会得出「L 描述最差」的错误结论",
+          "六维分项来自同 36 张图，不是独立样本，不能当 180 个观测，更不能把比例说成描述准确率"
+        ],
+        "verification": [
+          "本协作者独立复算 8 模型 × 5 维分布 + 方向分布，与主报告完全一致"
+        ],
+        "result": "得到并保留「类别能力与描述能力可以被实测分开」这一负结果"
+      },
+      "boundary": "**模型自查，不是人工 gold**；且 36 图是开发集。",
+      "risk_notes": [
+        "【重要】这是负结果，**简历里必须一起写**，不能只留类别成绩",
+        "不得写「普遍超过所有大模型」"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-007",
+      "source_fact": "百炼 API 四模型对照严格按预算执行：累计实付约 4.90 元 / 20 元上限，144 次请求上限内完成，失败不重试。",
+      "candidate_wording": "在 20 元硬预算内完成 4 个商用大模型 × 36 图的对照，实付约 4.90 元；把「在途按 max_tokens 预留、完成按实际 usage 结算」做成共享费用守卫，并在合同里写死「失败不重试」以避免选择偏差。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/请求日志.jsonl（144 条）",
+          "public": true,
+          "note": "本协作者独立复算 token 与费用：输入 67,878 / 输出 50,898 / ≈4.9034 元"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["AI 应用工程师简历"],
+      "interview_details": {
+        "decisions": [
+          "候选模型事前锁定，不按榜单挑弱模型替换，好坏都报",
+          "合同写死「每图一次请求、客户端自动重试 0、失败原件保留、不重新调用」"
+        ],
+        "difficulties": [
+          "kimi-k3 按原生思考跑，思考 token 同样计费，单模型占本轮费用 90.9%，导致四个模型的生成预算其实不同"
+        ],
+        "verification": [
+          "本协作者复算 144 条日志：132 ok + 12 error；每模型恰好 36 个唯一 item_id，无重试、无补发"
+        ],
+        "result": "实付 ≈4.90 元 / 20 元"
+      },
+      "boundary": "费用是**按公开价目的推算**，不等于平台实际扣款；免费额度是否命中未核。",
+      "risk_notes": [
+        "不得写「效率提升 X%」这类虚构收益",
+        "12 条连接层失败未补齐，若要补需要额外授权"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-project-008",
+      "source_fact": "从租用的 GPU 实例上找回旧一轮 SFT 用的 4292 张训练晶圆清单，与旧指纹逐位一致。",
+      "candidate_wording": "在本地与两台服务器均无副本后，按 provenance 定位到租用实例，找回旧 SFT 的 4292 张训练划分清单并与旧指纹逐位校验一致。",
+      "sources": [
+        {
+          "type": "file",
+          "location": "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/报告/旧资产恢复.md",
+          "public": true,
+          "note": "含 sha256 与隔离复核"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "已确认",
+      "allowed_uses": ["AI 应用工程师简历"],
+      "interview_details": {
+        "decisions": [
+          "找回后第一件事是核指纹与隔离，而不是直接拿来训练"
+        ],
+        "difficulties": [
+          "旧 train 与当前 val/test、评测 102、benchmark core 的交集都要复算，防止数据泄漏"
+        ],
+        "verification": [
+          "旧 train(4292) ∩ 当前 val = 0、∩ test = 0、∩ 评测 102 = 0、∩ benchmark core = 0，lot 交集 = 0"
+        ],
+        "result": "资产恢复且隔离可核"
+      },
+      "boundary": "图像本身来自公开 WM811K；恢复的是**派生训练清单**，不是新数据。",
+      "risk_notes": [
+        "不得把 4292 说成新增唯一晶圆"
+      ],
+      "last_verified": "2026-10-09"
+    },
+    {
+      "id": "claim-personal-boundary-001",
+      "source_fact": "本项目由用户组织的多角色协作流程执行（指挥、实操、标注、复核分别由不同角色承担），候选人在其中的个人独立贡献范围未在项目中记录。",
+      "candidate_wording": "【待补：请用户确认本人在该项目中的具体承担范围后，再写入个人简历】",
+      "sources": [
+        {
+          "type": "document",
+          "location": "协作/README.md、协作/交接_20261007.md（记录了多角色分工，但未记录候选人个人分工）",
+          "public": true,
+          "note": "本项目文档记录的是角色分工，不是个人分工"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": [],
+      "interview_details": {
+        "decisions": [],
+        "difficulties": [],
+        "verification": [
+          "需要用户本人确认：本人负责哪一部分、哪些决策是本人做的"
+        ],
+        "result": null
+      },
+      "boundary": "**未确认前，正式简历不得使用「主导」「负责人」「Owner」等强动词，也不得把协作成果写成本人独立成果。**",
+      "risk_notes": [
+        "【必须处理】这是本账本里唯一一条阻塞项：个人贡献边界未确认前，简历只能写项目事实，不能写个人角色强度"
+      ],
+      "last_verified": null
+    },
+    {
+      "id": "claim-personal-profile-001",
+      "source_fact": "候选人的姓名、联系方式、学历、学校、公司、目标岗位 JD、期望城市在项目材料中均无记录。",
+      "candidate_wording": "【待补：姓名 / 联系方式 / 学历 / 学校 / 目标 JD / 期望城市】",
+      "sources": [
+        {
+          "type": "document",
+          "location": "本项目不含任何个人身份材料（按合规要求未保存）",
+          "public": false,
+          "note": "刻意不采集"
+        }
+      ],
+      "responsibility_level": "参与",
+      "verification_status": "待确认",
+      "allowed_uses": [],
+      "interview_details": {
+        "decisions": [],
+        "difficulties": [],
+        "verification": [
+          "由用户本人填写"
+        ],
+        "result": null
+      },
+      "boundary": "这些字段**不得由 AI 代填或推测**；正式简历导出前必须补齐或删除。",
+      "risk_notes": [
+        "不得抄用 ASu 技能里的虚构示例个人信息"
+      ],
+      "last_verified": null
+    }
+  ]
+}

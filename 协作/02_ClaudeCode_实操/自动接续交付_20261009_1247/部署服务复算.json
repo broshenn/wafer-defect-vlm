@@ -1,0 +1,112 @@
+{
+  "条数": 36,
+  "HTTP状态分布": {
+    "200": 36
+  },
+  "gold类别分布": {
+    "Center": 4,
+    "Donut": 4,
+    "Edge_Loc": 4,
+    "Edge_Ring": 4,
+    "Loc": 4,
+    "Near_full": 4,
+    "Random": 4,
+    "Scratch": 4,
+    "none": 4
+  },
+  "类别正确数": 25,
+  "类别Acc": 0.6944,
+  "MacroF1_fixed9": 0.6756,
+  "逐类": {
+    "Center": {
+      "n": 4,
+      "P": 1.0,
+      "R": 0.5,
+      "F1": 0.6667
+    },
+    "Donut": {
+      "n": 4,
+      "P": 0.6667,
+      "R": 0.5,
+      "F1": 0.5714
+    },
+    "Edge_Loc": {
+      "n": 4,
+      "P": 1.0,
+      "R": 0.75,
+      "F1": 0.8571
+    },
+    "Edge_Ring": {
+      "n": 4,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0
+    },
+    "Loc": {
+      "n": 4,
+      "P": 0.3333,
+      "R": 0.75,
+      "F1": 0.4615
+    },
+    "Near_full": {
+      "n": 4,
+      "P": 1.0,
+      "R": 1.0,
+      "F1": 1.0
+    },
+    "Random": {
+      "n": 4,
+      "P": 0.5,
+      "R": 1.0,
+      "F1": 0.6667
+    },
+    "Scratch": {
+      "n": 4,
+      "P": 1.0,
+      "R": 0.75,
+      "F1": 0.8571
+    },
+    "none": {
+      "n": 4,
+      "P": 0.0,
+      "R": 0.0,
+      "F1": 0.0
+    }
+  },
+  "needs_review数": 19,
+  "时延": {
+    "首条": 3.943434463813901,
+    "p50": 4.215939791873097,
+    "p95": 4.881151892244816,
+    "max": 5.482687097042799,
+    "均值": 4.2113
+  },
+  "format_changes分布": {
+    "clock_direction: 无方向的JSON类型规范化": 16
+  },
+  "review_reasons分布": {
+    "模型报告了不确定项": 19,
+    "存在未经本服务核验的数量/尺寸表述": 1
+  },
+  "与selftest_summary对照": {
+    "scope": "冻结36图开发回放；不是新盲测，非人工gold，不把功能通过当描述事实通过",
+    "n": 36,
+    "health": {
+      "status": "ready",
+      "model_tag": "D-N3072-3407",
+      "gpu_count": 1,
+      "load_seconds": 9.927884057164192
+    },
+    "http_200": 36,
+    "schema_result_available": 36,
+    "needs_review": 19,
+    "correct_class": 25,
+    "macro_f1_fixed9": 0.6756206756206756,
+    "latency_scope": "同客户端HTTP提交至完整响应；首条单列，全部是实际请求",
+    "first_request_seconds": 3.943434463813901,
+    "p50_seconds_all": 4.17719957139343,
+    "p95_seconds_all": 5.376325212419033,
+    "max_peak_allocated_gib": 17.876939296722412,
+    "morphology_position_direction_fact_accuracy": "本脚本未测，需对真实原图和实际response做逐图模型自查"
+  }
+}

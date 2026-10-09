@@ -1,0 +1,385 @@
+{
+  "分片结构": {
+    "分片1": {
+      "条目数": 48,
+      "形态": "扁平(条目即逐答案)",
+      "有扁平条目标签": false
+    },
+    "分片2": {
+      "条目数": 6,
+      "形态": "分组(条目含答案集)",
+      "有扁平条目标签": true
+    },
+    "分片3": {
+      "条目数": 48,
+      "形态": "扁平(条目即逐答案)",
+      "有扁平条目标签": false
+    },
+    "分片4": {
+      "条目数": 48,
+      "形态": "分组(条目含答案集)",
+      "有扁平条目标签": false
+    },
+    "分片5": {
+      "条目数": 48,
+      "形态": "扁平(条目即逐答案)",
+      "有扁平条目标签": false
+    },
+    "分片6": {
+      "条目数": 48,
+      "形态": "扁平(条目即逐答案)",
+      "有扁平条目标签": false
+    }
+  },
+  "覆盖": {
+    "本脚本(兼容两种形态)读到答案单元": 288,
+    "去重后(图,盲号)": 288,
+    "期望": 288,
+    "主会话脚本原样读法会读到": 96,
+    "未映射盲号": []
+  },
+  "逐模型逐维度": {
+    "L-N3072-3407": {
+      "形态": {
+        "PARTIAL": 15,
+        "SUPPORTED": 20,
+        "CONTRADICTED": 1
+      },
+      "位置": {
+        "SUPPORTED": 25,
+        "PARTIAL": 9,
+        "CONTRADICTED": 2
+      },
+      "遗漏": {
+        "CONTRADICTED": 9,
+        "PARTIAL": 16,
+        "SUPPORTED": 11
+      },
+      "断言": {
+        "SUPPORTED": 33,
+        "PARTIAL": 3
+      },
+      "格式": {
+        "CONTRADICTED": 29,
+        "PARTIAL": 5,
+        "SUPPORTED": 2
+      }
+    },
+    "qwen3.5-397b-a17b": {
+      "形态": {
+        "PARTIAL": 11,
+        "SUPPORTED": 17,
+        "MISSING": 6,
+        "CONTRADICTED": 2
+      },
+      "位置": {
+        "SUPPORTED": 21,
+        "PARTIAL": 8,
+        "MISSING": 6,
+        "CONTRADICTED": 1
+      },
+      "遗漏": {
+        "PARTIAL": 9,
+        "CONTRADICTED": 6,
+        "SUPPORTED": 15,
+        "MISSING": 6
+      },
+      "断言": {
+        "SUPPORTED": 24,
+        "MISSING": 6,
+        "PARTIAL": 4,
+        "CONTRADICTED": 2
+      },
+      "格式": {
+        "SUPPORTED": 30,
+        "MISSING": 6
+      }
+    },
+    "GLM-WorkBuddy": {
+      "形态": {
+        "PARTIAL": 11,
+        "SUPPORTED": 22,
+        "CONTRADICTED": 3
+      },
+      "位置": {
+        "SUPPORTED": 26,
+        "PARTIAL": 9,
+        "CONTRADICTED": 1
+      },
+      "遗漏": {
+        "SUPPORTED": 25,
+        "CONTRADICTED": 4,
+        "PARTIAL": 7
+      },
+      "断言": {
+        "SUPPORTED": 32,
+        "CONTRADICTED": 2,
+        "PARTIAL": 2
+      },
+      "格式": {
+        "SUPPORTED": 36
+      }
+    },
+    "qwen3.8-max-0902": {
+      "形态": {
+        "PARTIAL": 13,
+        "SUPPORTED": 22,
+        "MISSING": 1
+      },
+      "位置": {
+        "SUPPORTED": 31,
+        "PARTIAL": 4,
+        "MISSING": 1
+      },
+      "遗漏": {
+        "SUPPORTED": 28,
+        "PARTIAL": 4,
+        "CONTRADICTED": 3,
+        "MISSING": 1
+      },
+      "断言": {
+        "SUPPORTED": 32,
+        "PARTIAL": 3,
+        "MISSING": 1
+      },
+      "格式": {
+        "SUPPORTED": 34,
+        "PARTIAL": 1,
+        "MISSING": 1
+      }
+    },
+    "kimi-k3": {
+      "形态": {
+        "SUPPORTED": 23,
+        "PARTIAL": 8,
+        "MISSING": 4,
+        "CONTRADICTED": 1
+      },
+      "位置": {
+        "SUPPORTED": 27,
+        "PARTIAL": 5,
+        "MISSING": 4
+      },
+      "遗漏": {
+        "SUPPORTED": 21,
+        "CONTRADICTED": 4,
+        "PARTIAL": 7,
+        "MISSING": 4
+      },
+      "断言": {
+        "SUPPORTED": 30,
+        "MISSING": 4,
+        "PARTIAL": 1,
+        "CONTRADICTED": 1
+      },
+      "格式": {
+        "SUPPORTED": 32,
+        "MISSING": 4
+      }
+    },
+    "qwen3-vl-plus": {
+      "形态": {
+        "PARTIAL": 14,
+        "SUPPORTED": 18,
+        "MISSING": 2,
+        "CONTRADICTED": 2
+      },
+      "位置": {
+        "SUPPORTED": 18,
+        "CONTRADICTED": 4,
+        "PARTIAL": 12,
+        "MISSING": 2
+      },
+      "遗漏": {
+        "SUPPORTED": 14,
+        "CONTRADICTED": 9,
+        "PARTIAL": 11,
+        "MISSING": 2
+      },
+      "断言": {
+        "SUPPORTED": 25,
+        "PARTIAL": 7,
+        "MISSING": 2,
+        "CONTRADICTED": 2
+      },
+      "格式": {
+        "SUPPORTED": 24,
+        "CONTRADICTED": 6,
+        "MISSING": 2,
+        "PARTIAL": 4
+      }
+    },
+    "D-N3072-3407": {
+      "形态": {
+        "PARTIAL": 11,
+        "SUPPORTED": 20,
+        "CONTRADICTED": 5
+      },
+      "位置": {
+        "SUPPORTED": 21,
+        "CONTRADICTED": 3,
+        "PARTIAL": 12
+      },
+      "遗漏": {
+        "SUPPORTED": 14,
+        "PARTIAL": 13,
+        "CONTRADICTED": 9
+      },
+      "断言": {
+        "SUPPORTED": 30,
+        "PARTIAL": 4,
+        "CONTRADICTED": 2
+      },
+      "格式": {
+        "CONTRADICTED": 14,
+        "SUPPORTED": 19,
+        "PARTIAL": 3
+      }
+    },
+    "Base": {
+      "形态": {
+        "PARTIAL": 11,
+        "SUPPORTED": 17,
+        "CONTRADICTED": 8
+      },
+      "位置": {
+        "SUPPORTED": 22,
+        "CONTRADICTED": 5,
+        "PARTIAL": 9
+      },
+      "遗漏": {
+        "PARTIAL": 12,
+        "CONTRADICTED": 15,
+        "SUPPORTED": 9
+      },
+      "断言": {
+        "SUPPORTED": 30,
+        "CONTRADICTED": 3,
+        "PARTIAL": 3
+      },
+      "格式": {
+        "SUPPORTED": 35,
+        "PARTIAL": 1
+      }
+    }
+  },
+  "方向分列": {
+    "L-N3072-3407": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 30,
+      "applicable=true": 14,
+      "verdict=SUPPORTED": 6
+    },
+    "qwen3.5-397b-a17b": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 26,
+      "applicable=true": 14,
+      "verdict=MISSING": 2,
+      "verdict=SUPPORTED": 6,
+      "verdict=PARTIAL": 2
+    },
+    "GLM-WorkBuddy": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 22,
+      "applicable=true": 14,
+      "verdict=SUPPORTED": 10,
+      "verdict=PARTIAL": 4
+    },
+    "qwen3.8-max-0902": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 22,
+      "applicable=true": 14,
+      "verdict=SUPPORTED": 13,
+      "verdict=PARTIAL": 1
+    },
+    "kimi-k3": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 23,
+      "applicable=true": 14,
+      "verdict=PARTIAL": 4,
+      "verdict=SUPPORTED": 8,
+      "verdict=MISSING": 1
+    },
+    "qwen3-vl-plus": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 23,
+      "verdict=CONTRADICTED": 2,
+      "applicable=true": 14,
+      "verdict=SUPPORTED": 7,
+      "verdict=MISSING": 2,
+      "verdict=PARTIAL": 2
+    },
+    "D-N3072-3407": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 23,
+      "applicable=true": 14,
+      "verdict=PARTIAL": 4,
+      "verdict=SUPPORTED": 9
+    },
+    "Base": {
+      "applicable=false": 22,
+      "verdict=NO_ANSWER": 31,
+      "applicable=true": 14,
+      "verdict=PARTIAL": 1,
+      "verdict=SUPPORTED": 4
+    }
+  },
+  "每模型每维覆盖数": {
+    "Base": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "D-N3072-3407": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "GLM-WorkBuddy": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "L-N3072-3407": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "kimi-k3": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "qwen3-vl-plus": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "qwen3.5-397b-a17b": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    },
+    "qwen3.8-max-0902": {
+      "形态": 36,
+      "位置": 36,
+      "遗漏": 36,
+      "断言": 36,
+      "格式": 36
+    }
+  }
+}

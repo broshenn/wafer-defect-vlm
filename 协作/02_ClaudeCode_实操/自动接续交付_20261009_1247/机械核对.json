@@ -1,0 +1,1881 @@
+{
+  "冻结盲包": {
+    "图数": 36,
+    "唯一sample_id": 36,
+    "清单条数": 36
+  },
+  "模型": {
+    "kimi-k3": {
+      "来源": "百炼API · kimi-k3_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 32,
+      "图sha256不符": [],
+      "图sha256缺失": 4,
+      "解析层级": {
+        "raw": 32,
+        "empty": 4
+      },
+      "严格JSON可解析": 32,
+      "诊断层级": {
+        "raw": 32,
+        "empty": 4
+      },
+      "围栏诊断可解析": 32,
+      "完整schema": 32,
+      "schema不合": [],
+      "类别_严格Acc": 0.3889,
+      "类别_严格_正确数": 14,
+      "类别_围栏诊断Acc": 0.3889,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00011690_007",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00018023_017",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00019033_001",
+          "gold": "Scratch",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019814_014",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00022388_005",
+          "gold": "Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00036756_010",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039578_021",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040378_016",
+          "gold": "Random",
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040556_007",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045337_006",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        }
+      ],
+      "usage": {
+        "有条数": 32,
+        "输入token": 19776,
+        "输出token": 40593,
+        "思考token": 36690,
+        "复算费用_元": 4.4548,
+        "计价(元/百万token)": [
+          20.0,
+          100.0
+        ]
+      }
+    },
+    "qwen3-vl-plus": {
+      "来源": "百炼API · qwen3-vl-plus_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 34,
+      "图sha256不符": [],
+      "图sha256缺失": 2,
+      "解析层级": {
+        "raw": 34,
+        "empty": 2
+      },
+      "严格JSON可解析": 34,
+      "诊断层级": {
+        "raw": 34,
+        "empty": 2
+      },
+      "围栏诊断可解析": 34,
+      "完整schema": 34,
+      "schema不合": [],
+      "类别_严格Acc": 0.1389,
+      "类别_严格_正确数": 5,
+      "类别_围栏诊断Acc": 0.1389,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00003298_021",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00011690_007",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00018023_017",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019033_001",
+          "gold": "Scratch",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019814_014",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00032899_015",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036756_010",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039578_021",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040378_016",
+          "gold": "Random",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040406_017",
+          "gold": "Near_full",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042778_024",
+          "gold": "Near_full",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043050_009",
+          "gold": "Near_full",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043183_023",
+          "gold": "Near_full",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043980_001",
+          "gold": "Random",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045337_006",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045360_022",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00046667_020",
+          "gold": "Edge_Loc",
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047246_025",
+          "gold": "Loc",
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047511_013",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        }
+      ],
+      "usage": {
+        "有条数": 34,
+        "输入token": 16422,
+        "输出token": 3055,
+        "思考token": 0,
+        "复算费用_元": 0.047,
+        "计价(元/百万token)": [
+          1.0,
+          10.0
+        ]
+      }
+    },
+    "qwen3.5-397b-a17b": {
+      "来源": "百炼API · qwen3.5-397b-a17b_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 30,
+      "图sha256不符": [],
+      "图sha256缺失": 6,
+      "解析层级": {
+        "not_json": 30,
+        "empty": 6
+      },
+      "严格JSON可解析": 0,
+      "诊断层级": {
+        "fenced": 30,
+        "empty": 6
+      },
+      "围栏诊断可解析": 30,
+      "完整schema": 0,
+      "schema不合": [],
+      "类别_严格Acc": 0.0,
+      "类别_严格_正确数": 0,
+      "类别_围栏诊断Acc": 0.2222,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00003298_021",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00003822_012",
+          "gold": "Scratch",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00011690_007",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00018023_017",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00019033_001",
+          "gold": "Scratch",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00019814_014",
+          "gold": "Edge_Ring",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00022388_005",
+          "gold": "Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00026714_009",
+          "gold": "Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00032899_015",
+          "gold": "Center",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00036756_010",
+          "gold": "Center",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00039578_021",
+          "gold": "Center",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00040378_016",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00040406_017",
+          "gold": "Near_full",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00040556_007",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00042778_024",
+          "gold": "Near_full",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043050_009",
+          "gold": "Near_full",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043183_023",
+          "gold": "Near_full",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00043980_001",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045337_006",
+          "gold": "Edge_Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045360_022",
+          "gold": "Random",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00046667_020",
+          "gold": "Edge_Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00047246_025",
+          "gold": "Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        },
+        {
+          "sample_id": "wafer_00047511_013",
+          "gold": "Edge_Loc",
+          "pred": null,
+          "why": "未解析/缺字段"
+        }
+      ],
+      "usage": {
+        "有条数": 30,
+        "输入token": 14400,
+        "输出token": 2963,
+        "思考token": 0,
+        "复算费用_元": 0.0386,
+        "计价(元/百万token)": [
+          1.2,
+          7.2
+        ]
+      }
+    },
+    "qwen3.8-max-0902": {
+      "来源": "百炼API · qwen3.8-max-0902_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 36,
+      "图sha256不符": [],
+      "图sha256缺失": 0,
+      "解析层级": {
+        "raw": 36
+      },
+      "严格JSON可解析": 36,
+      "诊断层级": {
+        "raw": 36
+      },
+      "围栏诊断可解析": 36,
+      "完整schema": 36,
+      "schema不合": [],
+      "类别_严格Acc": 0.5278,
+      "类别_严格_正确数": 19,
+      "类别_围栏诊断Acc": 0.5278,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00003822_012",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019033_001",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00022388_005",
+          "gold": "Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043050_009",
+          "gold": "Near_full",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        }
+      ],
+      "usage": {
+        "有条数": 36,
+        "输入token": 17280,
+        "输出token": 4287,
+        "思考token": 0,
+        "复算费用_元": 0.3617,
+        "计价(元/百万token)": [
+          12.0,
+          36.0
+        ]
+      }
+    },
+    "Base": {
+      "来源": "租机GPU · Base_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 36,
+      "图sha256不符": [],
+      "图sha256缺失": 0,
+      "解析层级": {
+        "raw": 36
+      },
+      "严格JSON可解析": 36,
+      "诊断层级": {
+        "raw": 36
+      },
+      "围栏诊断可解析": 36,
+      "完整schema": 36,
+      "schema不合": [],
+      "类别_严格Acc": 0.1667,
+      "类别_严格_正确数": 6,
+      "类别_围栏诊断Acc": 0.1667,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00003298_021",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00003822_012",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00011690_007",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00018023_017",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019033_001",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019814_014",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00022388_005",
+          "gold": "Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00032899_015",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036756_010",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039578_021",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040406_017",
+          "gold": "Near_full",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042778_024",
+          "gold": "Near_full",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043050_009",
+          "gold": "Near_full",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043183_023",
+          "gold": "Near_full",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045337_006",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00046667_020",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047511_013",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        }
+      ]
+    },
+    "L-N3072-3407": {
+      "来源": "租机GPU · L-N3072-3407_raw.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 36,
+      "图sha256不符": [],
+      "图sha256缺失": 0,
+      "解析层级": {
+        "raw": 36
+      },
+      "严格JSON可解析": 36,
+      "诊断层级": {
+        "raw": 36
+      },
+      "围栏诊断可解析": 36,
+      "完整schema": 36,
+      "schema不合": [],
+      "类别_严格Acc": 0.8889,
+      "类别_严格_正确数": 32,
+      "类别_围栏诊断Acc": 0.8889,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Donut",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Edge_Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        }
+      ]
+    },
+    "D-N3072-3407": {
+      "来源": "部署服务HTTP · 性能与自测/http_replay.jsonl",
+      "记录数": 36,
+      "唯一sample_id": 36,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 0,
+      "图sha256不符": [],
+      "图sha256缺失": 36,
+      "解析层级": {
+        "raw": 36
+      },
+      "严格JSON可解析": 36,
+      "诊断层级": {
+        "raw": 36
+      },
+      "围栏诊断可解析": 36,
+      "完整schema": 36,
+      "schema不合": [],
+      "类别_严格Acc": 0.6944,
+      "类别_严格_正确数": 25,
+      "类别_围栏诊断Acc": 0.6944,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039578_021",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Donut",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        }
+      ]
+    },
+    "GLM-WorkBuddy": {
+      "来源": "WorkBuddy客户端 · 外部评测102（全102，非36子集）",
+      "记录数": 102,
+      "唯一sample_id": 102,
+      "冻结36缺图": [],
+      "不在冻结36的记录": [
+        "wafer_00000052_006",
+        "wafer_00000109_007",
+        "wafer_00002375_023",
+        "wafer_00002377_018",
+        "wafer_00002437_018",
+        "wafer_00002535_006",
+        "wafer_00004348_005",
+        "wafer_00005650_007",
+        "wafer_00008069_023",
+        "wafer_00008368_011",
+        "wafer_00009337_001",
+        "wafer_00011056_010",
+        "wafer_00012745_007",
+        "wafer_00012760_013",
+        "wafer_00014538_022",
+        "wafer_00015635_022",
+        "wafer_00017090_014",
+        "wafer_00017131_003",
+        "wafer_00017184_005",
+        "wafer_00017192_004",
+        "wafer_00017310_023",
+        "wafer_00017918_009",
+        "wafer_00018512_023",
+        "wafer_00019251_014",
+        "wafer_00020098_001",
+        "wafer_00021455_002",
+        "wafer_00021770_008",
+        "wafer_00028106_013",
+        "wafer_00036552_023",
+        "wafer_00036657_013",
+        "wafer_00036696_019",
+        "wafer_00038476_018",
+        "wafer_00039556_022",
+        "wafer_00039941_025",
+        "wafer_00040349_014",
+        "wafer_00040492_004",
+        "wafer_00040811_001",
+        "wafer_00042159_013",
+        "wafer_00042241_025",
+        "wafer_00042279_025",
+        "wafer_00042302_004",
+        "wafer_00042335_025",
+        "wafer_00042370_009",
+        "wafer_00042620_020",
+        "wafer_00042841_008",
+        "wafer_00043228_020",
+        "wafer_00043472_005",
+        "wafer_00043567_024",
+        "wafer_00044002_017",
+        "wafer_00044050_019",
+        "wafer_00044354_020",
+        "wafer_00044402_021",
+        "wafer_00044786_004",
+        "wafer_00045139_025",
+        "wafer_00045201_007",
+        "wafer_00045254_011",
+        "wafer_00045258_003",
+        "wafer_00045321_016",
+        "wafer_00045392_003",
+        "wafer_00045520_016",
+        "wafer_00045570_010",
+        "wafer_00045603_008",
+        "wafer_00045750_014",
+        "wafer_00045842_015",
+        "wafer_00047098_002",
+        "wafer_00047447_008"
+      ],
+      "与冻结36交集": 36,
+      "重复": {},
+      "图sha256命中": 36,
+      "图sha256不符": [
+        "wafer_00039556_022",
+        "wafer_00036657_013",
+        "wafer_00017090_014",
+        "wafer_00036696_019",
+        "wafer_00036552_023",
+        "wafer_00008368_011",
+        "wafer_00042841_008",
+        "wafer_00045258_003",
+        "wafer_00017184_005",
+        "wafer_00019251_014",
+        "wafer_00017192_004",
+        "wafer_00042302_004",
+        "wafer_00042279_025",
+        "wafer_00042241_025",
+        "wafer_00042370_009",
+        "wafer_00017131_003",
+        "wafer_00045603_008",
+        "wafer_00045520_016",
+        "wafer_00005650_007",
+        "wafer_00045321_016",
+        "wafer_00043472_005",
+        "wafer_00021770_008",
+        "wafer_00042335_025",
+        "wafer_00017918_009",
+        "wafer_00012745_007",
+        "wafer_00028106_013",
+        "wafer_00012760_013",
+        "wafer_00044786_004",
+        "wafer_00020098_001",
+        "wafer_00014538_022",
+        "wafer_00002437_018",
+        "wafer_00009337_001",
+        "wafer_00045750_014",
+        "wafer_00044050_019",
+        "wafer_00042159_013",
+        "wafer_00038476_018",
+        "wafer_00042620_020",
+        "wafer_00044354_020",
+        "wafer_00039941_025",
+        "wafer_00044002_017",
+        "wafer_00045139_025",
+        "wafer_00040492_004",
+        "wafer_00002377_018",
+        "wafer_00043567_024",
+        "wafer_00002535_006",
+        "wafer_00002375_023",
+        "wafer_00021455_002",
+        "wafer_00015635_022",
+        "wafer_00011056_010",
+        "wafer_00045570_010",
+        "wafer_00004348_005",
+        "wafer_00045254_011",
+        "wafer_00017310_023",
+        "wafer_00008069_023",
+        "wafer_00047447_008",
+        "wafer_00044402_021",
+        "wafer_00018512_023",
+        "wafer_00000109_007",
+        "wafer_00047098_002",
+        "wafer_00045201_007",
+        "wafer_00045392_003",
+        "wafer_00045842_015",
+        "wafer_00040811_001",
+        "wafer_00040349_014",
+        "wafer_00000052_006",
+        "wafer_00043228_020"
+      ],
+      "图sha256缺失": 0,
+      "解析层级": {
+        "raw": 102
+      },
+      "严格JSON可解析": 102,
+      "诊断层级": {
+        "raw": 102
+      },
+      "围栏诊断可解析": 102,
+      "完整schema": 102,
+      "schema不合": [],
+      "类别_严格Acc": 0.3056,
+      "类别_严格_正确数": 11,
+      "类别_围栏诊断Acc": 0.3056,
+      "类别_错误明细": [
+        {
+          "sample_id": "wafer_00018023_017",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00029697_025",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00032899_015",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040556_007",
+          "gold": "Random",
+          "pred": "Near_full",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00041108_014",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042202_013",
+          "gold": "Loc",
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043921_007",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044300_025",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045337_006",
+          "gold": "Edge_Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045589_021",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00046667_020",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039556_022",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036657_013",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017090_014",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036696_019",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036552_023",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00008368_011",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042841_008",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045258_003",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045633_013",
+          "gold": "Center",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00036756_010",
+          "gold": "Center",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017184_005",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019251_014",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017192_004",
+          "gold": null,
+          "pred": "Donut",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042302_004",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00019331_006",
+          "gold": "Donut",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045384_019",
+          "gold": "Donut",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042279_025",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042241_025",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042370_009",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017131_003",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045603_008",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045520_016",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047511_013",
+          "gold": "Edge_Loc",
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00005650_007",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045321_016",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043472_005",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00021770_008",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047411_016",
+          "gold": "Edge_Loc",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042335_025",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017918_009",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00012745_007",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00028106_013",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00012760_013",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044786_004",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00020098_001",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00014538_022",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00002437_018",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00009337_001",
+          "gold": null,
+          "pred": "Edge_Ring",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00011690_007",
+          "gold": "Edge_Ring",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045750_014",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044050_019",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042159_013",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00026714_009",
+          "gold": "Loc",
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00038476_018",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00022388_005",
+          "gold": "Loc",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00042620_020",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044354_020",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00039941_025",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044002_017",
+          "gold": null,
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045139_025",
+          "gold": null,
+          "pred": "Near_full",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043050_009",
+          "gold": "Near_full",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040492_004",
+          "gold": null,
+          "pred": "Near_full",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00002377_018",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043567_024",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00002535_006",
+          "gold": null,
+          "pred": "Center",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00002375_023",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00021455_002",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00015635_022",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040378_016",
+          "gold": "Random",
+          "pred": "Loc",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00011056_010",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045570_010",
+          "gold": null,
+          "pred": "Near_full",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00004348_005",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045254_011",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00017310_023",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00008069_023",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047447_008",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00044402_021",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00018512_023",
+          "gold": null,
+          "pred": "Scratch",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00000109_007",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043705_021",
+          "gold": "Scratch",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00047098_002",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045201_007",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045392_003",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045842_015",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043329_001",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040811_001",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00040349_014",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00000052_006",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00043228_020",
+          "gold": null,
+          "pred": "Random",
+          "why": "错类"
+        },
+        {
+          "sample_id": "wafer_00045191_016",
+          "gold": "none",
+          "pred": "Random",
+          "why": "错类"
+        }
+      ]
+    }
+  },
+  "请求日志": {
+    "文件": "请求日志.jsonl",
+    "条数": 144,
+    "状态分布": {
+      "ok": 132,
+      "error": 12
+    },
+    "token合计": {
+      "输入": 67878,
+      "输出": 50898,
+      "思考": 36690
+    },
+    "按模型复算费用_元": {
+      "qwen3.5-397b-a17b": 0.0384,
+      "qwen3-vl-plus": 0.0472,
+      "qwen3.8-max-0902": 0.3617,
+      "kimi-k3": 4.4561
+    },
+    "复算总费用_元": 4.9034
+  }
+}
