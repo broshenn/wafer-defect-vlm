@@ -58,7 +58,9 @@ def main() -> int:
     ids = [r["sample_id"] for r in rows]
     uniq_ids = set(ids)
     sha_by_id, missing, size_by_id = {}, [], {}
-    for sid in uniq_ids:
+    for sid in sorted(uniq_ids):        # 排序遍历：set 的迭代顺序随哈希种子变化，
+                                        # 会让等长重复组在两次运行间换位（同计数、不同顺序）
+
         p = IMG / f"{sid}.png"
         if not p.exists():
             missing.append(sid)
@@ -95,7 +97,7 @@ def main() -> int:
         "公开清单与本地sha不符": inv_mismatch,
         "重复组明细(最多列20组)": [
             {"sha256前16": s[:16], "张数": len(v), "sample_ids": v[:8]}
-            for s, v in sorted(dup_groups.items(), key=lambda kv: -len(kv[1]))[:20]
+            for s, v in sorted(dup_groups.items(), key=lambda kv: (-len(kv[1]), kv[0]))[:20]
         ],
     }
     out["A_5904库存"] = A
@@ -114,7 +116,7 @@ def main() -> int:
     if dup_groups:
         md.append("\n### 图片内容重复明细（同 sha、不同 sample_id）\n\n")
         md.append("| sha256前16 | 张数 | sample_ids |\n|---|---:|---|\n")
-        for s, v in sorted(dup_groups.items(), key=lambda kv: -len(kv[1]))[:20]:
+        for s, v in sorted(dup_groups.items(), key=lambda kv: (-len(kv[1]), kv[0]))[:20]:
             md.append(f"| `{s[:16]}` | {len(v)} | {', '.join(v[:8])}"
                       f"{'…' if len(v) > 8 else ''} |\n")
     else:
@@ -215,7 +217,7 @@ def main() -> int:
     g_sha2sid = defaultdict(set)
     for r in g_rows:
         g_sha2sid[r.get("image_sha256")].add(r["sample_id"])
-    g_dupsha = {s: sorted(v) for s, v in g_sha2sid.items() if len(v) > 1 and s}
+    g_dupsha = {s: sorted(v) for s, v in sorted(g_sha2sid.items()) if len(v) > 1 and s}
     D_ = {
         "分片数": len(g_shards), "记录数": len(g_rows),
         "唯一item_id": len(g_items), "唯一sample_id": len(g_sids),
