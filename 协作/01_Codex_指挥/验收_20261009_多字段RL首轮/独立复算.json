@@ -1,0 +1,378 @@
+{
+  "primary_metric": "公开类别Macro-F1，分母固定为确认池实际8类，Near_full缺席不补0混入主分。",
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "class_support": {
+    "Scratch": 24,
+    "Random": 8,
+    "Loc": 25,
+    "Edge_Ring": 21,
+    "Center": 18,
+    "Edge_Loc": 16,
+    "Donut": 5,
+    "none": 3
+  },
+  "models": {
+    "M0": {
+      "n": 120,
+      "strict_json_parsed": 120,
+      "correct": 86,
+      "accuracy": 0.7166666666666667,
+      "macro_f1_fixed_actual_classes": 0.6716428499037195,
+      "coverage_fully_correct": 77,
+      "zones_fully_correct": 55,
+      "mean_rule_reward": 0.6776190476190477,
+      "format_mean": 1.0,
+      "direction_counts": {
+        "nondirectional_fully_correct": 64,
+        "positive_type_correct": 1,
+        "positive_fully_correct": 1,
+        "positive_weighted_sum": 1.0
+      },
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive_clock": 5,
+        "reference_unknown": 35
+      },
+      "positive_direction_weighted_mean": 0.2
+    },
+    "M1": {
+      "n": 120,
+      "strict_json_parsed": 120,
+      "correct": 84,
+      "accuracy": 0.7,
+      "macro_f1_fixed_actual_classes": 0.6519252039109711,
+      "coverage_fully_correct": 78,
+      "zones_fully_correct": 45,
+      "mean_rule_reward": 0.6578571428571428,
+      "format_mean": 1.0,
+      "direction_counts": {
+        "nondirectional_fully_correct": 65,
+        "positive_type_correct": 1,
+        "positive_fully_correct": 1,
+        "positive_weighted_sum": 1.0
+      },
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive_clock": 5,
+        "reference_unknown": 35
+      },
+      "positive_direction_weighted_mean": 0.2
+    },
+    "M2": {
+      "n": 120,
+      "strict_json_parsed": 120,
+      "correct": 83,
+      "accuracy": 0.6916666666666667,
+      "macro_f1_fixed_actual_classes": 0.645951300472577,
+      "coverage_fully_correct": 64,
+      "zones_fully_correct": 37,
+      "mean_rule_reward": 0.605952380952381,
+      "format_mean": 0.9916666666666667,
+      "direction_counts": {
+        "nondirectional_fully_correct": 60,
+        "positive_type_correct": 1,
+        "positive_fully_correct": 1,
+        "positive_weighted_sum": 1.0
+      },
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive_clock": 5,
+        "reference_unknown": 35
+      },
+      "positive_direction_weighted_mean": 0.2
+    }
+  },
+  "paired_bootstrap": {
+    "M1 minus M0": {
+      "class_accuracy_diff": -0.016666666666666666,
+      "class_accuracy_ci95": [
+        -0.058333333333333334,
+        0.025
+      ],
+      "primary_macro_f1_diff": -0.01971764599274839,
+      "primary_macro_f1_ci95": [
+        -0.08531438664952595,
+        0.042526432748207
+      ],
+      "secondary_rule_reward_diff": -0.01976190476190476,
+      "secondary_rule_reward_ci95": [
+        -0.039880952380952385,
+        -0.0011904761904761919
+      ]
+    },
+    "M2 minus M0": {
+      "class_accuracy_diff": -0.025,
+      "class_accuracy_ci95": [
+        -0.06666666666666667,
+        0.016666666666666666
+      ],
+      "primary_macro_f1_diff": -0.02569154943114249,
+      "primary_macro_f1_ci95": [
+        -0.09166312577542668,
+        0.03600085234723316
+      ],
+      "secondary_rule_reward_diff": -0.07166666666666667,
+      "secondary_rule_reward_ci95": [
+        -0.09873015873015874,
+        -0.04609126984126984
+      ]
+    },
+    "M2 minus M1": {
+      "class_accuracy_diff": -0.008333333333333333,
+      "class_accuracy_ci95": [
+        -0.025,
+        0.0
+      ],
+      "primary_macro_f1_diff": -0.005973903438394101,
+      "primary_macro_f1_ci95": [
+        -0.018375104427736044,
+        0.001755809979494316
+      ],
+      "secondary_rule_reward_diff": -0.0519047619047619,
+      "secondary_rule_reward_ci95": [
+        -0.07289682539682539,
+        -0.03218253968253968
+      ]
+    }
+  },
+  "direction_positive_cases": [
+    {
+      "model": "M0",
+      "sample_id": "wafer_00000293_016",
+      "ref_type": "axis",
+      "ref_sectors": [
+        4,
+        10
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M0",
+      "sample_id": "wafer_00000293_017",
+      "ref_type": "single",
+      "ref_sectors": [
+        6
+      ],
+      "pred_type": "single",
+      "pred_sectors": [
+        6
+      ],
+      "weighted_score": 1.0
+    },
+    {
+      "model": "M0",
+      "sample_id": "wafer_00006331_004",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M0",
+      "sample_id": "wafer_00006331_019",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M0",
+      "sample_id": "wafer_00006331_025",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M1",
+      "sample_id": "wafer_00000293_016",
+      "ref_type": "axis",
+      "ref_sectors": [
+        4,
+        10
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M1",
+      "sample_id": "wafer_00000293_017",
+      "ref_type": "single",
+      "ref_sectors": [
+        6
+      ],
+      "pred_type": "single",
+      "pred_sectors": [
+        6
+      ],
+      "weighted_score": 1.0
+    },
+    {
+      "model": "M1",
+      "sample_id": "wafer_00006331_004",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M1",
+      "sample_id": "wafer_00006331_019",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M1",
+      "sample_id": "wafer_00006331_025",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M2",
+      "sample_id": "wafer_00000293_016",
+      "ref_type": "axis",
+      "ref_sectors": [
+        4,
+        10
+      ],
+      "pred_type": "none",
+      "pred_sectors": [
+        4,
+        5
+      ],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M2",
+      "sample_id": "wafer_00000293_017",
+      "ref_type": "single",
+      "ref_sectors": [
+        6
+      ],
+      "pred_type": "single",
+      "pred_sectors": [
+        6
+      ],
+      "weighted_score": 1.0
+    },
+    {
+      "model": "M2",
+      "sample_id": "wafer_00006331_004",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [
+        8
+      ],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M2",
+      "sample_id": "wafer_00006331_019",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [
+        2
+      ],
+      "weighted_score": 0.0
+    },
+    {
+      "model": "M2",
+      "sample_id": "wafer_00006331_025",
+      "ref_type": "axis",
+      "ref_sectors": [
+        2,
+        8
+      ],
+      "pred_type": "none",
+      "pred_sectors": [
+        2
+      ],
+      "weighted_score": 0.0
+    }
+  ],
+  "M2_group_audit": {
+    "rows": 240,
+    "groups": 60,
+    "groups_all_same_id": true,
+    "matches_frozen_group60_order": true,
+    "first10_last10_id_overlap": 0,
+    "first10_reference_coverage": {
+      "medium": 8,
+      "high": 2
+    },
+    "last10_reference_coverage": {
+      "medium": 6,
+      "low": 3,
+      "high": 1
+    },
+    "first10_candidate_reward_mean": 0.5269999249999999,
+    "last10_candidate_reward_mean": 0.5943690500000001,
+    "direction_reference_counts": {
+      "unknown": 11,
+      "none": 43,
+      "single": 5,
+      "axis": 1
+    },
+    "first10_direction_reference_counts": {
+      "unknown": 2,
+      "none": 8
+    },
+    "last10_direction_reference_counts": {
+      "unknown": 3,
+      "none": 5,
+      "single": 2
+    },
+    "same_reward_groups": 10,
+    "interpretation": "首尾10组是不同图，不是固定训练集的前后同题比较，奖励均值趋势不能单独证明记忆/过拟合或训练改善。"
+  },
+  "confirmation_vs_oldD_training_lot_overlap": 43,
+  "scope": "独立CPU重算，无GPU/API；规则奖励属于次指标；不改原答与旧主表。"
+}

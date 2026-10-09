@@ -1,0 +1,71 @@
+{
+  "images": 12,
+  "answers": 36,
+  "field_counts": {
+    "M0": {
+      "shape": {
+        "SUPPORTED": 8,
+        "PARTIAL": 3,
+        "CONTRADICTED": 1
+      },
+      "position": {
+        "PARTIAL": 6,
+        "SUPPORTED": 5,
+        "UNCERTAIN": 1
+      },
+      "major_structure_coverage": {
+        "PARTIAL": 7,
+        "CONTRADICTED": 2,
+        "SUPPORTED": 3
+      },
+      "unsupported_assertion": {
+        "SUPPORTED": 11,
+        "CONTRADICTED": 1
+      }
+    },
+    "M1": {
+      "shape": {
+        "SUPPORTED": 7,
+        "PARTIAL": 4,
+        "CONTRADICTED": 1
+      },
+      "position": {
+        "PARTIAL": 4,
+        "SUPPORTED": 6,
+        "CONTRADICTED": 1,
+        "UNCERTAIN": 1
+      },
+      "major_structure_coverage": {
+        "PARTIAL": 5,
+        "CONTRADICTED": 2,
+        "SUPPORTED": 5
+      },
+      "unsupported_assertion": {
+        "SUPPORTED": 8,
+        "PARTIAL": 3,
+        "CONTRADICTED": 1
+      }
+    },
+    "M2": {
+      "shape": {
+        "SUPPORTED": 6,
+        "PARTIAL": 6
+      },
+      "position": {
+        "PARTIAL": 6,
+        "SUPPORTED": 5,
+        "CONTRADICTED": 1
+      },
+      "major_structure_coverage": {
+        "PARTIAL": 7,
+        "CONTRADICTED": 1,
+        "SUPPORTED": 4
+      },
+      "unsupported_assertion": {
+        "PARTIAL": 4,
+        "SUPPORTED": 8
+      }
+    }
+  },
+  "no_combined_accuracy": true
+}

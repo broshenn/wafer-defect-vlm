@@ -1,0 +1,61 @@
+{
+  "files": [
+    {
+      "path": "caption12_AI复核.jsonl",
+      "bytes": 29256,
+      "sha256": "63be1c27fd298d97a02594008f9234a5c9d5e188759e71f96e43820c2917ec71"
+    },
+    {
+      "path": "caption12_AI复核.md",
+      "bytes": 6087,
+      "sha256": "dcea16aafa3ddb54ccbf690bbf52b58c413884ce88ef93b557fe0d56b28abe0f"
+    },
+    {
+      "path": "caption12_AI汇总.json",
+      "bytes": 1453,
+      "sha256": "3547fe3186efa0a69aa6706d3f394027511a9fa94c0887f961fb148a3712352d"
+    },
+    {
+      "path": "caption12_输入.json",
+      "bytes": 13149,
+      "sha256": "dcb31c249417565925d919cc96202806dc3a78bc85a51ab9215ea788b9bd108e"
+    },
+    {
+      "path": "caption12_阅图_1.png",
+      "bytes": 15713,
+      "sha256": "7a6e686422225c1636557bbe5bef3dcb868ad97412034d66fae21d3514ad4f18"
+    },
+    {
+      "path": "caption12_阅图_2.png",
+      "bytes": 15298,
+      "sha256": "0e974f1c732ca5a4e8923fd9a88234a6ba48cbfe2ba35bffb37397e31ac90f9f"
+    },
+    {
+      "path": "独立复算.json",
+      "bytes": 9153,
+      "sha256": "214ca0f856371b40c2ebb78515ffedb327bab5059c9d440ec8369cd1758e80f7"
+    },
+    {
+      "path": "独立复算.py",
+      "bytes": 7579,
+      "sha256": "9441e8704066d1505806ba1aad4c8aba6864164c1ef382e0cc9ed6b9f24e7f89"
+    },
+    {
+      "path": "登记caption抽查.py",
+      "bytes": 4235,
+      "sha256": "88f3f624293384534857a8965e3a6f7ef68e75d10d54b3ac1d6fe2b81a31ab41"
+    },
+    {
+      "path": "给Claude_首轮收口纠偏.txt",
+      "bytes": 2302,
+      "sha256": "c09ba96fb1350fefaac3564cb17582571576dacef8c42b79754cac4132027842"
+    },
+    {
+      "path": "验收与下一步.md",
+      "bytes": 6812,
+      "sha256": "665f966492ad883a1dd00077a3d76c4cf4c5fd204aa96f557d006c3c565bdcb7"
+    }
+  ],
+  "sensitive_hits": 0,
+  "new_gpu_student_api_calls": 0
+}
