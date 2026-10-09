@@ -1,0 +1,152 @@
+{
+  "model_results": {
+    "Base": {
+      "records": 56,
+      "format": {
+        "strict_json": 56,
+        "schema_ok": 56,
+        "with_contract_warning": 0
+      },
+      "legacy_full_schema_gated": {
+        "correct": 15,
+        "accuracy": 0.26785714285714285,
+        "macro_f1_seven": 0.22942798366139328
+      },
+      "class_field_with_strict_json": {
+        "correct": 15,
+        "accuracy": 0.26785714285714285,
+        "macro_f1_seven": 0.22942798366139328
+      }
+    },
+    "L-N3072-3407": {
+      "records": 56,
+      "format": {
+        "strict_json": 56,
+        "schema_ok": 55,
+        "with_contract_warning": 51
+      },
+      "legacy_full_schema_gated": {
+        "correct": 46,
+        "accuracy": 0.8214285714285714,
+        "macro_f1_seven": 0.8386254501800721
+      },
+      "class_field_with_strict_json": {
+        "correct": 47,
+        "accuracy": 0.8392857142857143,
+        "macro_f1_seven": 0.8491296518607443
+      }
+    },
+    "D-N3072-3407": {
+      "records": 56,
+      "format": {
+        "strict_json": 56,
+        "schema_ok": 56,
+        "with_contract_warning": 28
+      },
+      "legacy_full_schema_gated": {
+        "correct": 43,
+        "accuracy": 0.7678571428571429,
+        "macro_f1_seven": 0.7646321686569364
+      },
+      "class_field_with_strict_json": {
+        "correct": 43,
+        "accuracy": 0.7678571428571429,
+        "macro_f1_seven": 0.7646321686569364
+      }
+    }
+  },
+  "paired": {
+    "L-N3072-3407 minus D-N3072-3407": {
+      "legacy_full_schema_gated": {
+        "mean": 0.05357142857142857,
+        "ci95": [
+          -0.05357142857142857,
+          0.16071428571428573
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      },
+      "class_field_with_strict_json": {
+        "mean": 0.07142857142857142,
+        "ci95": [
+          -0.017857142857142856,
+          0.17857142857142858
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      }
+    },
+    "L-N3072-3407 minus Base": {
+      "legacy_full_schema_gated": {
+        "mean": 0.5535714285714286,
+        "ci95": [
+          0.4107142857142857,
+          0.6964285714285714
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      },
+      "class_field_with_strict_json": {
+        "mean": 0.5714285714285714,
+        "ci95": [
+          0.4107142857142857,
+          0.7142857142857143
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      }
+    },
+    "D-N3072-3407 minus Base": {
+      "legacy_full_schema_gated": {
+        "mean": 0.5,
+        "ci95": [
+          0.3392857142857143,
+          0.6607142857142857
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      },
+      "class_field_with_strict_json": {
+        "mean": 0.5,
+        "ci95": [
+          0.3392857142857143,
+          0.6607142857142857
+        ],
+        "n": 56,
+        "bootstrap": 10000
+      }
+    }
+  },
+  "schema_class_coupling_examples": [
+    {
+      "tag": "L-N3072-3407",
+      "item_id": "H052",
+      "public_label": "Scratch",
+      "parsed_class": "Scratch",
+      "schema_problems": [
+        "radial_zone越界"
+      ]
+    }
+  ],
+  "two_image_diagnostics": {
+    "H003": {
+      "sample_id": "wafer_00015807_003",
+      "public_label": "Center",
+      "render_red_ratio": 0.7273814268632921,
+      "all_raw_red_bbox_circle_radial_span": 1.0162686399109726,
+      "scope": "PNG像素计数；bbox近似圆归一化仅作反例诊断，不是校准尺寸gold。缺陷点少不决定径向跨度。"
+    },
+    "H049": {
+      "sample_id": "wafer_00044629_001",
+      "public_label": "Scratch",
+      "render_red_ratio": 0.052007105240114586,
+      "all_raw_red_bbox_circle_radial_span": 1.0328260652759738,
+      "scope": "PNG像素计数；bbox近似圆归一化仅作反例诊断，不是校准尺寸gold。缺陷点少不决定径向跨度。"
+    }
+  },
+  "ai_verdict_rows": 1008,
+  "complete_students_raw": true,
+  "same_blind56": true,
+  "resource_source": "运行合同与资源账.json：报告9.02设备分钟；租用实例用户自行提供，总累计与实际账单未独立核清。",
+  "scope": "独立CPU复算；历史主成绩保留，另列类别字段口径；未运行新模型、API或训练。"
+}

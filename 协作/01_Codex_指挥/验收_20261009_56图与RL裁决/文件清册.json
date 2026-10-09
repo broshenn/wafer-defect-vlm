@@ -1,0 +1,56 @@
+{
+  "files": [
+    {
+      "path": "修正简历副本.py",
+      "bytes": 6234,
+      "sha256": "c6760104b6752a5d50aa5e106d3f49b46582f3d2d38e01a190dec9765b3e28f1"
+    },
+    {
+      "path": "打印核验_1.png",
+      "bytes": 435272,
+      "sha256": "eddcb03b8fe9eac8637251c910302daa8af38a8d649e1242d38810f132146cd8"
+    },
+    {
+      "path": "独立核验.json",
+      "bytes": 4334,
+      "sha256": "c54b9d2ed016981489d2419dc8c4ff2817d9127ffd137d74c965589295e0b33d"
+    },
+    {
+      "path": "独立核验.py",
+      "bytes": 5660,
+      "sha256": "4993f45bb289b11927b32f6acf696a8bcd0ee7e2f904ce5200f81fabe08a028c"
+    },
+    {
+      "path": "简历打印核验.json",
+      "bytes": 345,
+      "sha256": "edd8ddb86becafbd7906da23e3e2c942f9517b37edd27830cc77839bb23e1d4b"
+    },
+    {
+      "path": "简历项目稿_56图_核验版.md",
+      "bytes": 11300,
+      "sha256": "88061d9a32156ffbfb6255eb2b8ecad8147ed2ed844b86186a52e78af5a03527"
+    },
+    {
+      "path": "给Claude_最后更正与结项.txt",
+      "bytes": 2201,
+      "sha256": "33a375663922e3eb82e9719ad62e68bca10fdc6216051f1a1a952f35bc139039"
+    },
+    {
+      "path": "项目经历页_56图_核验版.html",
+      "bytes": 45519,
+      "sha256": "c50113399d71e7d959fb65dd63c26efa7becc1c2e6e053c231e4524d24de6523"
+    },
+    {
+      "path": "项目经历页_56图_核验版.pdf",
+      "bytes": 1132396,
+      "sha256": "191ad57861d167999b5fcc7e66a3e5fa1e11d9d9bd5434aa59d3858cce3759ff"
+    },
+    {
+      "path": "验收与裁决.md",
+      "bytes": 6891,
+      "sha256": "198f3244eddf4c92f0e9041775e318e6f8d78c94ca15722d8a77a2ef62d34291"
+    }
+  ],
+  "sensitive_hits": 0,
+  "new_gpu_api_calls": 0
+}

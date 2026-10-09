@@ -1,0 +1,12 @@
+{
+  "pages": 1,
+  "A4_mm": [
+    209.9,
+    297.0
+  ],
+  "pending_personal_fields": 4,
+  "full_project_date": true,
+  "pdf_sha256": "191ad57861d167999b5fcc7e66a3e5fa1e11d9d9bd5434aa59d3858cce3759ff",
+  "text_extractable": true,
+  "latest_visual_check": "passed: one A4 page, full right edge and dates visible, no clipping/overlap"
+}
