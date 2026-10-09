@@ -56,15 +56,17 @@ def main() -> int:
         if p.name in SELF_FILES:
             # 本清册自身的字节随「上一轮登记了什么」变化，登记其 sha256 会导致
             # 每跑一次值就变、无法复核；故只记字节数并注明原因。
-            entries.append({"relative_path": rel, "bytes": p.stat().st_size,
-                            "sha256": None,
-                            "说明": "本清册自身：内容随运行变化，故不登记 sha256（也不计入总封条）"})
+            # 字节数也不能登记：本清册的字节数包含「上一轮登记了什么」，
+            # 登记它会让两次连续运行的结果永远差一个值（不收敛）。
+            entries.append({"relative_path": rel, "bytes": None, "sha256": None,
+                            "说明": "本清册自身：内容随运行变化，故既不登记 sha256 也不登记字节数，"
+                                  "不计入文件数与总封条"})
         else:
             entries.append({"relative_path": rel, "bytes": p.stat().st_size,
                             "sha256": sha(p)})
 
     # 总封条**排除本清册自身**（否则每跑一次值就变，无法复核）
-    sealed = [e for e in entries if e["relative_path"] not in ("交付清册.json", "交付清册.md")]
+    sealed = [e for e in entries if e["bytes"] is not None]
     seal = hashlib.sha256(b"".join(bytes.fromhex(e["sha256"]) for e in sealed)).hexdigest()
 
     # ---- 敏感扫描 ----
@@ -95,12 +97,14 @@ def main() -> int:
                 else:
                     hits.append(rec)
 
+    real = [e for e in entries if e["bytes"] is not None]
     report = {
         "目录": str(D),
         "生成时间": "2026-10-09",
         "生成者": "CPU 交付整理协作者",
-        "文件数": len(entries),
-        "总字节": sum(e["bytes"] for e in entries),
+        "文件数": len(real),
+        "本清册自身(不计入)": [e["relative_path"] for e in entries if e["bytes"] is None],
+        "总字节": sum(e["bytes"] for e in real),
         "总封条口径": "按 relative_path 排序，拼接各文件 sha256 的 **digest 字节**后取 sha256"
                     "（不是 hex 字符串拼接；两种口径结果必然不同属正常）；"
                     "**不包含本清册自身**（`交付清册.json` / `交付清册.md`），故可重复复核",
@@ -126,7 +130,8 @@ def main() -> int:
         json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     md = ["# 交付清册（本目录）与敏感扫描", "",
-          f"- 文件数 **{len(entries)}**；总字节 **{report['总字节']/1048576:.2f} MiB**",
+          f"- 文件数 **{len(real)}**（另有本清册自身 2 份，不计入）；"
+          f"总字节 **{report['总字节']/1048576:.2f} MiB**",
           f"- **总封条 sha256**：`{seal}`",
           f"- 口径：{report['总封条口径']}",
           f"- 敏感扫描：模式 {len(PATTERNS)} 个，命中 **{len(hits)}** → "
@@ -136,7 +141,8 @@ def main() -> int:
           "## 逐文件", "", "| 相对路径 | 字节 | sha256(前16) |", "|---|---:|---|"]
     for e in entries:
         h = e["sha256"]
-        md.append(f"| `{e['relative_path']}` | {e['bytes']} | "
+        md.append(f"| `{e['relative_path']}` | "
+                  f"{'—' if e['bytes'] is None else e['bytes']} | "
                   f"{'（本清册自身，不登记）' if h is None else '`' + h[:16] + '`'} |")
     if hits:
         md += ["", "## 敏感扫描命中", "", "| 文件 | 行 | 原因 | 命中片段 |", "|---|---:|---|---|"]
