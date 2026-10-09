@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>项目经历</title>
+  <style>
+.resume-toolbar { position:fixed; z-index:1000; left:0; right:0; top:0; min-height:58px; padding:10px 18px; display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:9px; background:rgba(255,255,255,.97); border-bottom:1px solid #ccd5df; box-shadow:0 2px 10px rgba(21,41,62,.12); }
+.toolbar-title { margin-right:auto; color:#3b4b5d; font-size:13px; letter-spacing:.06em; }
+.resume-toolbar button { border:1px solid #9db0c4; border-radius:5px; background:#fff; color:#24466e; padding:7px 13px; font:inherit; cursor:pointer; }
+.resume-toolbar button:hover { background:#edf4fb; border-color:#315f98; }
+.resume-toolbar button[data-action=pdf] { color:#fff; background:#315f98; border-color:#315f98; }
+.toolbar-control { display:flex; align-items:center; gap:5px; color:#526273; font-size:12px; white-space:nowrap; }
+.toolbar-control select { border:1px solid #9db0c4; border-radius:5px; background:#fff; color:#24466e; padding:6px 7px; font:inherit; }
+.toolbar-control input[type=color] { width:34px; height:30px; padding:2px; border:1px solid #9db0c4; border-radius:5px; background:#fff; cursor:pointer; }
+.resume-toolbar button[data-action=bold] { min-width:68px; }
+.resume-toolbar button[data-action=autofit][aria-pressed=true] { color:#fff; background:#315f98; border-color:#315f98; }
+.resume-toolbar button[data-action=autofit]:disabled { color:#8993a0; background:#f3f5f7; border-color:#cbd5df; cursor:not-allowed; }
+.resume-toolbar button[data-action=reset].armed { border-color:#dc2626; background:#dc2626; color:#fff; }
+.save-status { color:#64748b; font-size:12px; white-space:nowrap; }
+.fit-status { color:#64748b; font-size:12px; white-space:nowrap; }
+.fit-status.warn { color:#b45309; }
+
+@media print { .resume-toolbar { display:none !important; } }
+
+    @page { size: A4; margin: 7mm 10mm 8mm; }
+    :root { --blue: #2458b8; --text: #151515; --muted: #596273; --band: #f2f3f5; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; background: #fff; }
+    body { color: var(--text); font-family: "Times New Roman", "SimHei", "黑体", "Microsoft YaHei", sans-serif; font-size: 10.5pt; line-height: 1.34; }
+    .resume-toolbar { position:sticky; font:13px/1.3 Arial, "Microsoft YaHei", sans-serif; }
+    .resume-toolbar select { max-width:150px; }
+    .sheet { width: 210mm; min-height: 0; padding: 7mm 10mm 8mm; border-top: 0; margin: 0 auto; }
+    .page-break { break-before: auto; }
+    body[data-page-mode="continuous"] { width: 100%; }
+    body[data-page-mode="continuous"] .sheet { width: 210mm; }
+    body[data-page-mode="continuous"] .sheet + .sheet { padding-top: 0; }
+    @media screen {
+      body[data-page-mode="paged"] { min-height: 100vh; padding: 4mm 0 12mm; background: #eef0f3; }
+      body[data-page-mode="paged"] .sheet { min-height: 297mm; margin: 0 auto 12mm; background: #fff; box-shadow: 0 2px 18px rgba(31, 41, 55, .18); }
+      body[data-page-mode="paged"] .sheet:last-of-type { margin-bottom: 0; }
+      body[data-page-mode="continuous"] { background: #fff; }
+      body[data-page-mode="continuous"] .sheet { margin: 0 auto; box-shadow: none; }
+    }
+    @media print {
+      .sheet { padding: 0; width: auto; min-height: 0; }
+      body[data-page-mode="paged"] .sheet { margin: 0; box-shadow: none; }
+      body[data-page-mode="continuous"] .sheet { margin: 0; box-shadow: none; }
+      .profile-photo-slot { border-color: transparent; background: transparent; cursor: default; }
+      .profile-photo-slot::after, .profile-photo-slot .photo-placeholder { display: none !important; }
+    }
+    [contenteditable="true"]:focus { outline: 2px solid #b7caf3; outline-offset: 2px; }
+    h1 { margin: 0 0 3px; font-family: "Microsoft YaHei", "Arial", sans-serif; font-size: 24pt; line-height: 1.08; font-weight: 700; }
+    .header-grid { display: grid; grid-template-columns: minmax(0, 1fr) 28mm; gap: 8mm; align-items: start; }
+    .profile-photo-slot { position: relative; width: 28mm; height: 36mm; display: flex; align-items: center; justify-content: center; overflow: hidden; border: 1px dashed #a8adb7; background: #fafafa; color: #8b919c; font: 9pt/1.2 Arial, sans-serif; text-align: center; cursor: pointer; }
+    .profile-photo-slot.has-photo { border-color: transparent; background: transparent; }
+    .profile-photo-slot:not(.has-photo):hover, .profile-photo-slot:not(.has-photo):focus-visible { border-color: #2458b8; outline: none; }
+    .profile-photo-slot::after { content: "点击上传"; position: absolute; inset: auto 0 0; padding: 4px 2px; background: rgba(36, 88, 184, .88); color: #fff; font: 8pt/1.2 Arial, "Microsoft YaHei", sans-serif; opacity: 0; transition: opacity .15s ease; }
+    .profile-photo-slot:hover::after, .profile-photo-slot:focus-visible::after { opacity: 1; }
+    .profile-photo-slot.has-photo::after { content: "点击替换"; }
+    .photo-placeholder { pointer-events: none; }
+    .profile-photo-slot img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    .meta-row { display: flex; align-items: center; gap: 4px; margin: 2px 0; font-size: 11.5pt; line-height: 1.42; white-space: nowrap; }
+    .meta-icon { width: 16px; height: 16px; object-fit: contain; flex: 0 0 auto; }
+    .meta-row strong { font-weight: 700; }
+    .separator { color: #2d2d2d; padding: 0 5px; }
+    .section { margin-top: 8px; }
+    .section-title { margin: 0 0 4px; padding-bottom: 2px; border-bottom: 2px solid var(--blue); color: var(--blue); font-family: "Microsoft YaHei", "Arial", sans-serif; font-size: 18.5pt; line-height: 1.03; font-weight: 700; break-after: avoid; }
+    .lead { margin: 3px 0 4px; color: #1d448f; font-size: 10.8pt; line-height: 1.35; font-weight: 700; }
+    .evidence-link { margin: 2px 0 5px; color: #2458b8; font-size: 11.5pt; font-weight: 700; }
+    .evidence-link a { color: inherit; }
+    .evidence-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+    .evidence-link { display: flex; align-items: center; flex-wrap: wrap; gap: 2px; }
+    .trend-badge { min-width: 135px; padding: 4px 7px; border: 1px solid #7351a3; border-radius: 6px; color: #7351a3; text-align: center; font: 7px/1.25 Arial, sans-serif; }
+    .trend-badge strong { font-size: 8px; }
+    .company { display: flex; align-items: center; gap: 7px; min-height: 31px; margin: 6px 0 4px; padding: 5px 8px; border-radius: 6px; background: var(--band); page-break-inside: avoid; break-inside: avoid; }
+    .company-logo { width: 27px; height: 27px; object-fit: contain; flex: 0 0 auto; }
+    .company-name { flex: 1; min-width: 0; font-size: 11.2pt; font-weight: 700; }
+    .company-meta { color: #202020; font-size: 9.5pt; white-space: nowrap; }
+    .education-name .education-major { margin-left: 18px; }
+    .project { margin: 3px 0 4px; page-break-inside: avoid; }
+    .project-title { margin: 3px 0 2px; color: #244b9b; font-size: 11.5pt; line-height: 1.12; font-weight: 700; break-after: avoid; }
+    ul { margin: 1px 0 3px 17px; padding: 0; }
+    li { margin: 1px 0; break-inside: avoid; }
+    li::marker { font-size: .8em; }
+    .nested { margin-left: 18px; }
+    .nested::marker { content: "○ "; }
+    .nested-deep { margin-left: 35px; }
+    .nested-deep::marker { content: "▪ "; }
+    .code { padding: 0 2px; border-radius: 2px; background: #eef0f3; font-family: "Cascadia Mono", Consolas, monospace; font-size: .9em; }
+    .muted { color: var(--muted); }
+    .small { font-size: 9pt; }
+    .sheet[data-fit-spacing="tight"] .section { margin-top: 5px; }
+    .sheet[data-fit-spacing="tight"] .section-title { margin-bottom: 2px; padding-bottom: 1px; }
+    .sheet[data-fit-spacing="tight"] .company { margin: 4px 0 2px; padding-top: 3px; padding-bottom: 3px; }
+    .sheet[data-fit-spacing="tight"] .project { margin: 2px 0; }
+    .sheet[data-fit-spacing="tight"] li { margin: 0; }
+    .sheet[data-fit-lh="tight"] { line-height: 1.24; }
+    .sheet[data-fit-scale] > * { width: var(--resume-fit-width, 100%); zoom: var(--resume-fit-scale, 1); }
+  </style>
+</head>
+<body data-page-mode="paged" data-autofit="true">
+<div class="resume-toolbar" role="toolbar" aria-label="简历工具" contenteditable="false">
+  <span class="toolbar-title">HTML 简历</span>
+  <button type="button" data-action="edit">编辑</button>
+  <button type="button" data-action="autofit" aria-pressed="false">自动一页</button>
+  <span data-fit-status class="fit-status" role="status" aria-live="polite"></span>
+  <label class="toolbar-control">字体<select data-action="font" aria-label="字体"><option value="Microsoft YaHei">微软雅黑</option><option value="SimSun">宋体</option><option value="SimHei">黑体</option><option value="Arial">Arial</option><option value="Georgia">Georgia</option><option value="Times New Roman">Times New Roman</option><optgroup label="本地字体" data-local-font-group></optgroup></select></label>
+  <button type="button" data-action="local-fonts" title="读取系统中已安装的字体（需浏览器授权）">本地字体</button>
+  <button type="button" data-action="import-font" title="导入本地字体文件（TTF / OTF / WOFF / WOFF2）">导入字体</button>
+  <input type="file" accept=".ttf,.otf,.ttc,.woff,.woff2" multiple data-font-file-input hidden>
+  <label class="toolbar-control color-control">文字颜色<input type="color" data-action="color" value="#20252b" aria-label="文字颜色"></label>
+  <button type="button" data-action="bold" title="对选中文字加粗或取消加粗"><strong>B</strong> 加粗</button>
+  <label class="toolbar-control">字号<select data-action="font-size" title="字号" aria-label="字号"><option value="10px">10</option><option value="11px" selected>11</option><option value="12px">12</option><option value="14px">14</option><option value="16px">16</option><option value="18px">18</option><option value="22px">22</option><option value="26px">26</option></select></label>
+  <button type="button" data-action="photo">替换照片</button>
+  <button type="button" data-action="save">保存 HTML</button>
+  <button type="button" data-action="pdf">导出 PDF</button>
+  <button type="button" data-action="reset" title="清除所有编辑，恢复文件初始内容">重置</button>
+  <span data-save-status class="save-status" role="status" aria-live="polite">自动保存已开启</span>
+  <input type="file" accept="image/*" data-photo-input hidden>
+    <label for="pageMode">页面模式</label>
+    <select id="pageMode" class="page-mode-select" aria-label="选择页面模式">
+      <option value="paged">A4 分页</option>
+      <option value="continuous">A4 长页（不限高度）</option>
+    </select>
+    <button class="tool-button history-button" type="button" data-command="undo" title="撤回编辑" aria-label="撤回编辑">撤回</button>
+    <button class="tool-button history-button" type="button" data-command="redo" title="前进编辑" aria-label="前进编辑">前进</button></div>
+
+
+  <main class="sheet" data-fit-spacing="tight" data-fit-lh="tight" data-fit-scale="0.93" contenteditable="true" style="--resume-fit-scale: 0.93; --resume-fit-width: 107.5268817204301%;">
+    <header class="header-grid">
+      <div>
+        <h1>项目经历</h1>
+        <div class="meta-row"><strong>姓名：【待补】</strong><span class="separator">|</span><strong>联系方式：【待补】</strong><span class="separator">|</span><strong>目标岗位：【待补】</strong><span class="separator">|</span><span>本页仅含项目经历</span></div>
+      </div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title">项目经历</h2>
+      <div class="company">
+        <div class="company-name">晶圆 BIN 图缺陷判读与中文描述 · 视觉语言模型（公开数据个人项目）</div>
+        <div class="company-meta">2026.09 - 2026.10</div>
+      </div>
+
+      <article class="project">
+        <div class="project-title">多模态模型微调与评测口径建设　|　Qwen3.5-9B · LoRA SFT · 冻结枚举评测 · 同基座对照</div>
+        <ul>
+          <li><strong>背景与目标：</strong>晶圆 BIN 图（格状缺陷热力图）判读核心是「格局属哪一类」，质检沟通还需一句中文描述。<strong>目标：</strong>把「类别能力」与「描述能力」分开建模评测，回答「该不该给描述监督」。</li>
+          <li><strong>参与动作：</strong>基于公开数据集 <strong>WM811K</strong> 的 5904 张抽样子集（固定种子 3407；train/val/test = 4721/594/589，<strong>跨划分 lot 交集为 0</strong>），按类别分层抽 <strong>3072</strong> 张训练池；在同一基座 <strong>Qwen3.5-9B</strong> 上 LoRA 微调<strong>两个同输入、同题面、只改监督答案</strong>的模型：<code class="code">L</code> 只监督类别标签，<code class="code">D</code> 监督类别 + 形态 + 中文描述。</li>
+          <li class="nested"><strong>评测口径（关键工作）：</strong>把「描述是否与图相符」的评法<strong>从自由文本正则改为冻结枚举 schema</strong>：六维枚举（SUPPORTED / PARTIAL / CONTRADICTED / UNCERTAIN / MISSING / NEEDS_REVIEW），并把「方向」<strong>拆成 applicable 与 verdict 两列</strong>；改口径后先跑 <strong>20/20 回归</strong>才开工。</li>
+          <li class="nested"><strong>对照设计：</strong>固定 <strong>36 图</strong>开发集，同题对照 8 个模型 —— 本项目 <code class="code">L</code>/<code class="code">D</code>、原生基座、四个商用 API 模型与外部 GLM；冻结题面 sha256、固定解码参数，日志留痕可复算。</li>
+          <li class="nested"><strong>留出候选补测：</strong>另用 <strong>56 张</strong>与训练池 ID / lot / PNG 内容交集均为 0 的图，在同基座、同题面、同解码参数下补测 <code class="code">Base</code> / <code class="code">L</code> / <code class="code">D</code>，并做<strong>同图配对差与 10000 次按图 bootstrap</strong>（seed 3407）；复核时把「视觉四维」与「格式」<strong>分列</strong>，不合成单一描述准确率。</li>
+          <li><strong>实测结果（56 张留出候选：与训练池的 ID / lot / PNG 内容交集均为 0）：</strong>同基座只把监督从「无」换成类别标签，准确率 <strong>0.2679 → 0.8214</strong>（同图配对 bootstrap 区间 <strong>[0.411, 0.696]，不含 0</strong>）；描述监督的 <code class="code">D</code> 为 <strong>0.7679</strong>，与 <code class="code">L</code> 之差 <strong>[−0.054, +0.161] 跨 0</strong>（类别字段独立口径 <strong>[−0.018, +0.179]</strong> 同样跨 0）<strong>—— 本轮分不出高下</strong>。开发集 36 图上同基座对照 <strong>0.1667 → 0.8889</strong>，84 张开发验证集 <strong>77/84（91.7%）</strong>。基座原生输出带 Markdown 围栏，严格 JSON 判分几乎全失败：<strong>必须把「格式失败」与「内容错误」分开计</strong>。</li>
+          <li class="nested"><strong>负结果（同批同图实测）：</strong>（1）加了描述监督，类别准确率<strong>反而下降</strong>（0.8889 → 0.6944）；（2）<strong>本项目的描述并不优于外部零样本大模型</strong> —— 视觉四维「好/坏」为 qwen3.8-max <strong>113/3</strong>、GLM <strong>105/10</strong>，优于 <code class="code">L</code> <strong>89/12</strong>、<code class="code">D</code> <strong>85/19</strong>；（3）<code class="code">L</code> 六维合计垫底<strong>完全由「格式」一维造成</strong>，去掉格式后其视觉四维反好于 <code class="code">D</code>，准确说法是「视觉内容中上、格式合规最差」；<strong>56 图留出候选上这一现象复现</strong>（<code class="code">L</code> 视觉四维最差项最少 12/224、格式却坏 <strong>51/56</strong>，仍是把 JSON <code class="code">null</code> 写成字符串 <code class="code">"null"</code>）；（4）<strong>格式违规会压低类别分</strong>：<code class="code">L</code> 唯一一条 schema 不合法里类别其实答对（<code class="code">Scratch</code>，真值也是它），被 <code class="code">radial_zone</code> 越界拖成「<strong>全 schema 门控未接收</strong>」——原门控 <strong>46/56 = 0.8214</strong>、类别字段独立口径 <strong>47/56 = 0.8393</strong>；三模型严格 JSON 均 56/56 可解析，<strong>不是解析失败</strong>；（5）56 张里记录到 4 张<strong>「AI 判读与公开标签疑似分歧」</strong>（例：标 Center 的图除最外圈外几乎全红）——<strong>这是分歧记录，未证实原标签错误，标签一个没改</strong>，也不据此宣称历史成绩被标签噪声压着天花板。</li>
+          <li><strong>个人边界：</strong>数据全部来自<strong>公开数据集</strong>，<strong>未使用公司内部数据、未做产线部署</strong>；<strong>描述结论是模型自查，不是人工金标</strong>；36 图是<strong>开发集</strong>，56 图是<strong>可见历史隔离后的留出候选</strong>（<strong>七类、缺 Near_full / none，完整历史接触未核，仍不是独立九类盲测卷</strong>）；36 图 ID/lot 与训练池交集为 0，但其中 <strong>1 张与训练图 PNG 逐字节同内容</strong>，故<strong>不得称「图像内容从未见过」</strong>（剔除后 35 图：<code class="code">L</code> 88.6%、<code class="code">D</code> 68.6%）；本项目模型见过领域标签、外部模型为零样本，<strong>分数差不是训练预算对齐的因果对比</strong>。</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="project-title">推理服务化与可审计交付　|　HTTP 服务 · Schema 校验 · 审计留痕 · 性能实测 · 预算守卫</div>
+        <ul>
+          <li><strong>背景与目标：</strong>工业质检里模型输出的<strong>可审计性</strong>与准确率同等重要：需知道结果是模型原样给的还是服务改过的，也需「不确定、请人工看」标记。</li>
+          <li><strong>参与动作：</strong>把微调模型落成<strong>真实 HTTP 推理服务</strong>，设三条硬约束：输入合法性校验、JSON schema 校验、<strong>原答逐字节保留</strong>。关键取舍为 <strong>schema 不合不修补</strong>：坏结构一律标 <code class="code">needs_review</code> 并留原答，只把「服务改过什么」单列成 <code class="code">format_changes</code> 审计项。</li>
+          <li class="nested"><strong>工程化：</strong>对照侧设 <strong>20 元硬预算守卫</strong>（在途按 max_tokens 预留、完成按实际 usage 结算），并写死「每图一次请求、客户端重试 0、失败原件保留、不重新调用」，避免重试带来的选择偏差。</li>
+          <li><strong>实测结果：</strong>租用单卡顺序完成 <code class="code">Base</code> / <code class="code">L</code> / <code class="code">D</code> × 56 图 = <strong>168 条真实推理，0 失败</strong>，单卡占用 <strong>541 秒</strong>（9.02 设备分钟），峰值显存约 <strong>19.1 GiB</strong>，释放后 1 MiB、无残留进程；每条先写 started 台账、再存原答与四项哈希（图片 / 题面 / 检查器 / adapter）。固定 36 图<strong>真实 HTTP 回放</strong> —— <strong>36/36 返回 200</strong>，类别判对 <strong>25/36</strong>（固定 9 类 Macro-F1 <strong>0.6756</strong>），<code class="code">needs_review</code> <strong>19</strong> 条；时延 p50 ≈ <strong>4.2 s</strong>、p95 ≈ <strong>4.9–5.4 s</strong>；峰值显存 <strong>17.88 GiB</strong>；<strong>CPU 工程契约测试 6/6 通过</strong>。API 对照 4 模型 × 36 图共 <strong>144 次尝试（132 正常返回 + 12 连接层失败）</strong>，<strong>按标准价用量估算约 4.90 元 / 20 元上限</strong>（<strong>不是平台实付</strong>，失败未重发）。</li>
+          <li class="nested"><strong>不达标项（照实写）：</strong>「HTTP 通过」≠「内容正确」：36/36 返回 200 但仅 25/36 判对；时延是<strong>同客户端端到端</strong>，<strong>不是外部网络时延</strong>；12 条为<strong>连接层失败（非模型答错）</strong>，为遵守「不做二次调用」纪律未补齐。</li>
+          <li><strong>个人边界：</strong>服务只跑在<strong>已获准的租用实例</strong>上做真实回放，<strong>未公网发布、未产线试点</strong>，故<strong>无 QPS 与线上稳定性数据</strong>；GPU 计费分钟与租机人民币实耗<strong>仓库内无账单可核，不代填</strong>。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">协作边界说明（请勿删除）</h2>
+      <article class="project">
+        <ul>
+          <li>本项目由<strong>多角色协作流程</strong>执行，项目文档记录的是<strong>角色分工</strong>而非个人分工；<strong>本人具体承担范围【待补】</strong>，故本页全部表述<strong>取最保守下界「参与」</strong>，<strong>不使用「主导 / 负责人 / Owner」</strong>。</li>
+          <li>数据/评测/对照的原始记录、哈希与口径说明随交付保留，本页数字<strong>可回溯到证据账本</strong>，并区分「模型自查」与「人工 gold」（后者<strong>本轮未做，永久留空</strong>）。</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">技能（本项目实际用到）</h2>
+      <div contenteditable="true">
+        <strong>模型与训练：</strong>Qwen3.5-9B　·　LoRA / SFT（ms-swift）　·　多模态输入构造<br>
+        <strong>评测方法：</strong>冻结枚举 schema 设计　·　同基座对照　·　留出集隔离（ID / lot / 图像内容三重交集为 0）　·　同图配对差与按图 bootstrap　·　Macro-F1　·　解析口径分层（严格 / 围栏诊断）<br>
+        <strong>工程与交付：</strong>Python　·　HTTP 推理服务　·　Schema 校验　·　原答逐字节留存与变更审计　·　SHA-256 哈希链核对　·　预算守卫<br>
+        <strong>数据：</strong>WM811K 抽样与分层　·　lot 级隔离　·　图片内容级去重　·　留出候选考卷冻结（题面 / 检查器 / 逐图 SHA 冻结与上传前核对）　·　候选质量分账
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const pageMode = document.querySelector('#pageMode');
+      const modeStorageKey = 'asu-resume-page-mode';
+      const sheets = Array.from(document.querySelectorAll('main.sheet'));
+      const getStoredValue = (key) => {
+        try {
+          return localStorage.getItem(key);
+        } catch (error) {
+          return null;
+        }
+      };
+      const setStoredValue = (key, value) => {
+        try {
+          localStorage.setItem(key, value);
+          return true;
+        } catch (error) {
+          return false;
+        }
+      };
+      const applyMode = (mode) => {
+        document.body.dataset.pageMode = mode;
+        pageMode.value = mode;
+      };
+      applyMode(getStoredValue(modeStorageKey) || 'paged');
+      pageMode.addEventListener('change', () => {
+        applyMode(pageMode.value);
+        setStoredValue(modeStorageKey, pageMode.value);
+      });
+    })();
+(() => {
+  const roots = Array.from(document.querySelectorAll('.resume-page, main.sheet'));
+  const root = roots[0];
+  if (!root) return;
+  const saveStatus = document.querySelector('[data-save-status]');
+  const setSaveStatus = (text) => {
+    if (saveStatus) saveStatus.textContent = text;
+  };
+  const hashText = (text) => {
+    let hash = 2166136261;
+    for (let index = 0; index < text.length; index += 1) {
+      hash ^= text.charCodeAt(index);
+      hash = Math.imul(hash, 16777619);
+    }
+    return (hash >>> 0).toString(16);
+  };
+  const contentStoragePrefix = root.matches('main.sheet') ? 'asu-resume-content-v3' : 'resume-content-v1';
+  const contentStorageKey = `${contentStoragePrefix}-${hashText(window.location.href)}`;
+  const originalRoots = roots.map((page) => page.innerHTML);
+  const templateHash = hashText(JSON.stringify(originalRoots));
+  let saveTimer = null;
+  const getStoredValue = () => {
+    try {
+      return localStorage.getItem(contentStorageKey);
+    } catch (error) {
+      return null;
+    }
+  };
+  const restoreSavedContent = () => {
+    const raw = getStoredValue();
+    if (!raw) return;
+    try {
+      const saved = JSON.parse(raw);
+      if (saved.templateHash !== templateHash || !Array.isArray(saved.sheets) || saved.sheets.length !== roots.length) {
+        setSaveStatus('模板已更新，未恢复旧内容');
+        return;
+      }
+      roots.forEach((page, index) => {
+        if (typeof saved.sheets[index] === 'string') page.innerHTML = saved.sheets[index];
+      });
+      setSaveStatus('已恢复上次编辑');
+    } catch (error) {
+      setSaveStatus('自动保存已开启');
+    }
+  };
+  const saveContent = () => {
+    try {
+      localStorage.setItem(contentStorageKey, JSON.stringify({
+        version: 2,
+        templateHash,
+        sheets: roots.map((page) => page.innerHTML),
+        savedAt: new Date().toISOString()
+      }));
+      setSaveStatus('已自动保存');
+    } catch (error) {
+      setSaveStatus('自动保存不可用');
+    }
+  };
+  const scheduleSave = () => {
+    setSaveStatus('保存中...');
+    window.clearTimeout(saveTimer);
+    saveTimer = window.setTimeout(saveContent, 350);
+  };
+  restoreSavedContent();
+  roots.forEach((page) => page.addEventListener('input', scheduleSave));
+  window.addEventListener('beforeunload', saveContent);
+  document.addEventListener('resume-change', scheduleSave);
+  document.addEventListener('resume-before-save', saveContent);
+  const changed = () => document.dispatchEvent(new Event('resume-change'));
+  const editButton = document.querySelector('[data-action="edit"]');
+  const fontSelect = document.querySelector('[data-action="font"]');
+  const colorInput = document.querySelector('[data-action="color"]');
+  const boldButton = document.querySelector('[data-action="bold"]');
+  const photoButton = document.querySelector('[data-action="photo"]');
+  const autofitButton = document.querySelector('[data-action="autofit"]');
+  const fitStatus = document.querySelector('[data-fit-status]');
+  const saveButton = document.querySelector('[data-action="save"]');
+  const pdfButton = document.querySelector('[data-action="pdf"]');
+  const resetButton = document.querySelector('[data-action="reset"]');
+  const photoInput = document.querySelector('[data-photo-input]');
+  const photoFrame = document.querySelector('.photo-frame, .profile-photo-slot');
+  const photoImage = photoFrame?.querySelector('img');
+  const initialPhotoSource = photoImage?.getAttribute('src') || '';
+  if (photoFrame && initialPhotoSource && !/fictional-resume-photo\.png(?:[?#].*)?$/i.test(initialPhotoSource)) {
+    photoFrame.classList.add('has-photo');
+  }
+  let savedRange = null;
+  if (resetButton) {
+    let armed = false;
+    let disarmTimer = null;
+    const disarm = () => {
+      armed = false;
+      resetButton.classList.remove('armed');
+      resetButton.textContent = '重置';
+      window.clearTimeout(disarmTimer);
+    };
+    const resetEditor = () => {
+      window.clearTimeout(saveTimer);
+      try { localStorage.removeItem(contentStorageKey); } catch (error) { /* 忽略 */ }
+      roots.forEach((page, index) => {
+        page.innerHTML = originalRoots[index];
+      });
+      if (photoInput) photoInput.value = '';
+      savedRange = null;
+      setSaveStatus('已恢复文件初始内容');
+    };
+    resetButton.addEventListener('click', () => {
+      if (!armed) {
+        armed = true;
+        resetButton.classList.add('armed');
+        resetButton.textContent = '再点一次确认重置';
+        window.clearTimeout(disarmTimer);
+        disarmTimer = window.setTimeout(disarm, 3000);
+        return;
+      }
+      disarm();
+      resetEditor();
+    });
+    resetButton.addEventListener('mouseleave', () => {
+      if (armed) disarmTimer = window.setTimeout(disarm, 800);
+    });
+    resetButton.addEventListener('mouseenter', () => {
+      window.clearTimeout(disarmTimer);
+    });
+  }
+  document.addEventListener('selectionchange', () => {
+    const selection = window.getSelection();
+    if (!selection || !selection.rangeCount || !roots.some((page) => page.contains(selection.anchorNode) && page.contains(selection.focusNode))) return;
+    savedRange = selection.getRangeAt(0).cloneRange();
+  });
+  const restoreSelection = () => {
+    if (!savedRange) return;
+    const selection = window.getSelection();
+    selection.removeAllRanges();
+    selection.addRange(savedRange);
+  };
+  const applyFormat = (command, value = null) => {
+    if (root.getAttribute('contenteditable') !== 'true') editButton.click();
+    root.focus();
+    restoreSelection();
+    document.execCommand(command, false, value);
+    changed();
+  };
+  editButton?.addEventListener('click', () => {
+    const editing = root.getAttribute('contenteditable') === 'true';
+    roots.forEach((page) => {
+      page.setAttribute('contenteditable', String(!editing));
+      page.classList.toggle('is-editing', !editing);
+    });
+    editButton.textContent = editing ? '编辑' : '完成编辑';
+    if (!editing) root.focus();
+  });
+  if (root.getAttribute('contenteditable') === 'true') editButton.textContent = '完成编辑';
+  document.querySelectorAll('.resume-toolbar button').forEach((button) => {
+    button.addEventListener('mousedown', (event) => event.preventDefault());
+  });
+  document.querySelectorAll('[data-command]').forEach((button) => {
+    button.addEventListener('click', () => applyFormat(button.dataset.command));
+  });
+  document.querySelector('[data-action="font-size"]')?.addEventListener('change', (event) => {
+    restoreSelection();
+    const selection = window.getSelection();
+    if (!savedRange || !selection.rangeCount || selection.isCollapsed) return;
+    const range = selection.getRangeAt(0);
+    const wrapper = document.createElement('span');
+    wrapper.style.fontSize = event.target.value;
+    wrapper.appendChild(range.extractContents());
+    range.insertNode(wrapper);
+    range.selectNodeContents(wrapper);
+    selection.removeAllRanges();
+    selection.addRange(range);
+    savedRange = range.cloneRange();
+    changed();
+  });
+  photoButton?.addEventListener('click', () => photoInput?.click());
+  document.addEventListener('click', (event) => {
+    if (event.target.closest?.('.profile-photo-slot')) photoInput?.click();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.target.closest?.('.profile-photo-slot') && ['Enter', ' '].includes(event.key)) {
+      event.preventDefault();
+      photoInput?.click();
+    }
+  });
+  photoInput?.addEventListener('change', (event) => {
+    const file = event.target.files?.[0];
+    event.target.value = '';
+    if (!file || !file.type.startsWith('image/') || !photoFrame) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const photoFrame = document.querySelector('.photo-frame, .profile-photo-slot');
+      if (!photoFrame) return;
+      let image = photoFrame.querySelector('img');
+      if (!image) {
+        image = document.createElement('img');
+        image.className = 'profile-photo';
+        image.alt = '证件照';
+        photoFrame.prepend(image);
+      }
+      image.src = reader.result;
+      photoFrame.classList.add('has-photo');
+      photoFrame.querySelector('.photo-placeholder')?.remove();
+      setToolStatus('照片已替换');
+      changed();
+    };
+    reader.readAsDataURL(file);
+  });
+  const localFontGroup = fontSelect ? fontSelect.querySelector('[data-local-font-group]') : null;
+  const localFontButton = document.querySelector('[data-action="local-fonts"]');
+  const importFontButton = document.querySelector('[data-action="import-font"]');
+  const fontFileInput = document.querySelector('[data-font-file-input]');
+  const toolbarTitle = document.querySelector('.toolbar-title');
+  const localFontValuePrefix = 'local:';
+  const removeLocalFontsValue = '__remove_local_fonts__';
+  const installedFontBlocklist = ['icon', 'emoji', 'symbol', 'wingdings', 'webdings', 'dingbat', 'awesome'];
+  const fontFaces = new Map();
+  let localFonts = [];
+  let installedFontNames = [];
+  let statusTimer = null;
+
+  const setToolStatus = (text) => {
+    if (!toolbarTitle) return;
+    toolbarTitle.textContent = text;
+    window.clearTimeout(statusTimer);
+    statusTimer = window.setTimeout(() => { toolbarTitle.textContent = 'HTML 简历'; }, 3000);
+  };
+  const registerLocalFont = async (name, dataUrl) => {
+    const fontFace = new FontFace(name, `url(${dataUrl})`);
+    await fontFace.load();
+    const previous = fontFaces.get(name);
+    if (previous) document.fonts.delete(previous);
+    document.fonts.add(fontFace);
+    fontFaces.set(name, fontFace);
+  };
+  const refreshLocalFontOptions = () => {
+    if (!localFontGroup) return;
+    const names = [];
+    installedFontNames.forEach((name) => {
+      if (!names.includes(name)) names.push(name);
+    });
+    localFonts.forEach((font) => {
+      if (!names.includes(font.name)) names.push(font.name);
+    });
+    localFontGroup.innerHTML = '';
+    names.forEach((name) => {
+      const option = document.createElement('option');
+      option.value = localFontValuePrefix + name;
+      option.textContent = name;
+      localFontGroup.appendChild(option);
+    });
+    if (names.length) {
+      const removeOption = document.createElement('option');
+      removeOption.value = removeLocalFontsValue;
+      removeOption.textContent = '移除全部本地字体';
+      localFontGroup.appendChild(removeOption);
+    }
+  };
+  const importFontFile = (file) => new Promise((resolve) => {
+    const name = (file.name || '本地字体').replace(/\.(ttf|otf|ttc|woff2?|sfnt)$/i, '').trim() || '本地字体';
+    const reader = new FileReader();
+    reader.onload = async () => {
+      const dataUrl = String(reader.result || '');
+      try {
+        await registerLocalFont(name, dataUrl);
+      } catch (error) {
+        setToolStatus('字体文件无法解析');
+        resolve();
+        return;
+      }
+      localFonts = localFonts.filter((font) => font.name !== name);
+      localFonts.push({ name, data: dataUrl });
+      setToolStatus('本地字体已导入（刷新后需重新导入）');
+      resolve();
+    };
+    reader.onerror = () => {
+      setToolStatus('字体文件无法读取');
+      resolve();
+    };
+    reader.readAsDataURL(file);
+  });
+  const loadInstalledFonts = async () => {
+    if (typeof window.queryLocalFonts !== 'function') {
+      setToolStatus('当前浏览器不支持读取本地字体，可用「导入字体」');
+      return;
+    }
+    setToolStatus('正在读取本地字体...');
+    try {
+      const fonts = await window.queryLocalFonts();
+      const families = new Set();
+      fonts.forEach((font) => {
+        if (!font || typeof font.family !== 'string') return;
+        const family = font.family.trim();
+        if (!family) return;
+        const lower = family.toLowerCase();
+        if (installedFontBlocklist.some((part) => lower.includes(part))) return;
+        families.add(family);
+      });
+      installedFontNames = Array.from(families).sort((a, b) => a.localeCompare(b));
+      refreshLocalFontOptions();
+      setToolStatus(`已读取 ${installedFontNames.length} 个本地字体`);
+    } catch (error) {
+      setToolStatus(error && error.name === 'NotAllowedError' ? '已拒绝本地字体读取权限' : '本地字体读取失败');
+    }
+  };
+  const removeAllLocalFonts = () => {
+    fontFaces.forEach((fontFace) => document.fonts.delete(fontFace));
+    fontFaces.clear();
+    localFonts = [];
+    installedFontNames = [];
+    refreshLocalFontOptions();
+    setToolStatus('已清除本地字体');
+  };
+
+  const initAutofit = () => {
+    if (!autofitButton || !fitStatus) return;
+    const isSinglePage = roots.length === 1 && !document.body.classList.contains('variant-two-page');
+    if (!isSinglePage) {
+      autofitButton.disabled = true;
+      autofitButton.textContent = '自动一页（双页不可用）';
+      autofitButton.title = '双页模板保留原分页，不启用自动一页';
+      fitStatus.textContent = '双页模板';
+      return;
+    }
+
+    const MIN_SCALE = 0.9;
+    const TOL = 1;
+    const A4_HEIGHT_PX = (297 * 96) / 25.4;
+    let autofitOn = root.dataset.autofit === 'true';
+    let fitSuppress = false;
+    let fitTimer = null;
+
+    const measurePage = () => {
+      const style = getComputedStyle(root);
+      const paddingTop = parseFloat(style.paddingTop) || 0;
+      const paddingBottom = parseFloat(style.paddingBottom) || 0;
+      const maxHeight = A4_HEIGHT_PX - paddingTop - paddingBottom;
+      const rootRect = root.getBoundingClientRect();
+      const contentTop = rootRect.top + paddingTop;
+      const bottoms = Array.from(root.querySelectorAll('*'))
+        .filter((element) => {
+          const elementStyle = getComputedStyle(element);
+          const rect = element.getBoundingClientRect();
+          return elementStyle.display !== 'none'
+            && elementStyle.visibility !== 'hidden'
+            && elementStyle.position !== 'fixed'
+            && rect.width > 0
+            && rect.height > 0;
+        })
+        .map((element) => {
+          const marginBottom = parseFloat(getComputedStyle(element).marginBottom) || 0;
+          return element.getBoundingClientRect().bottom + marginBottom;
+        });
+      const used = bottoms.length ? Math.max(...bottoms) - contentTop : 0;
+      return { maxHeight, used, overflow: used - maxHeight };
+    };
+    const forceLayout = () => { void root.offsetHeight; };
+    const applyFit = (spacing, lineHeight, scale) => {
+      root.dataset.fitSpacing = spacing;
+      root.dataset.fitLh = lineHeight;
+      root.dataset.fitScale = String(scale);
+      root.style.setProperty('--resume-fit-scale', String(scale));
+      root.style.setProperty('--resume-fit-width', `${100 / scale}%`);
+      forceLayout();
+    };
+    const resetFit = () => applyFit('normal', 'normal', 1);
+    const fillPercent = (measurement) => Math.round((Math.max(0, measurement.used) / measurement.maxHeight) * 100);
+    const report = (text, kind = 'ok') => {
+      fitStatus.textContent = text;
+      fitStatus.classList.toggle('warn', kind === 'warn');
+    };
+    const paintOverflow = (flag) => { root.dataset.fitOverflow = String(flag); };
+    const fitByScale = () => {
+      let low = MIN_SCALE;
+      let high = 1;
+      for (let index = 0; index < 14; index += 1) {
+        const middle = (low + high) / 2;
+        applyFit('tight', 'tight', middle);
+        if (measurePage().overflow <= TOL) low = middle;
+        else high = middle;
+      }
+      let scale = Math.round(low * 100) / 100;
+      applyFit('tight', 'tight', scale);
+      if (measurePage().overflow > TOL && scale > MIN_SCALE) {
+        scale = Math.max(MIN_SCALE, Math.round((scale - 0.01) * 100) / 100);
+        applyFit('tight', 'tight', scale);
+      }
+      return scale;
+    };
+    const autofit = () => {
+      if (fitSuppress) return;
+      fitSuppress = true;
+      try {
+        resetFit();
+        const defaultMeasurement = measurePage();
+        if (defaultMeasurement.overflow <= TOL) {
+          paintOverflow(false);
+          report(`已适配 · 占用 ${fillPercent(defaultMeasurement)}% · 默认排版`);
+          return;
+        }
+        applyFit('tight', 'normal', 1);
+        const spacingMeasurement = measurePage();
+        if (spacingMeasurement.overflow <= TOL) {
+          paintOverflow(false);
+          report(`已适配 · 压缩间距 · 占用 ${fillPercent(spacingMeasurement)}%`);
+          return;
+        }
+        applyFit('tight', 'tight', 1);
+        const lineHeightMeasurement = measurePage();
+        if (lineHeightMeasurement.overflow <= TOL) {
+          paintOverflow(false);
+          report(`已适配 · 压缩间距+行距 · 占用 ${fillPercent(lineHeightMeasurement)}%`);
+          return;
+        }
+        const scale = fitByScale();
+        const scaleMeasurement = measurePage();
+        if (scaleMeasurement.overflow <= TOL) {
+          paintOverflow(false);
+          report(`已适配 · 字号 ${Math.round(scale * 100)}% · 占用 ${fillPercent(scaleMeasurement)}%`);
+          return;
+        }
+        paintOverflow(true);
+        report(`仍溢出 ${Math.round(scaleMeasurement.overflow)}px · 建议精简内容或改为双页`, 'warn');
+      } finally {
+        fitSuppress = false;
+      }
+    };
+    const checkOverflowOnly = () => {
+      const measurement = measurePage();
+      const overflowing = measurement.overflow > TOL;
+      paintOverflow(overflowing);
+      report(overflowing
+        ? `超出单页 ${Math.round(measurement.overflow)}px · 可开启自动一页`
+        : `一页内 · 占用 ${fillPercent(measurement)}%`, overflowing ? 'warn' : 'ok');
+    };
+    const scheduleFit = () => {
+      if (fitSuppress) return;
+      window.clearTimeout(fitTimer);
+      fitTimer = window.setTimeout(autofitOn ? autofit : checkOverflowOnly, 400);
+    };
+    const updateButton = () => {
+      autofitButton.setAttribute('aria-pressed', String(autofitOn));
+      autofitButton.textContent = autofitOn ? '自动一页：开' : '自动一页';
+    };
+
+    autofitButton.addEventListener('click', () => {
+      autofitOn = !autofitOn;
+      root.dataset.autofit = String(autofitOn);
+      updateButton();
+      if (autofitOn) autofit();
+      else {
+        resetFit();
+        checkOverflowOnly();
+      }
+    });
+    const observer = new MutationObserver(scheduleFit);
+    observer.observe(root, { subtree: true, childList: true, characterData: true });
+    document.addEventListener('resume-change', scheduleFit);
+    updateButton();
+    const initialCheck = () => { if (autofitOn) autofit(); else checkOverflowOnly(); };
+    if (document.fonts?.ready) document.fonts.ready.then(initialCheck);
+    else initialCheck();
+  };
+  initAutofit();
+
+  const suggestedHtmlName = () => {
+    const currentName = decodeURIComponent(window.location.pathname.split('/').pop() || '');
+    if (/\.html?$/i.test(currentName)) return currentName;
+    const safeTitle = (document.title || 'resume').replace(/[\\/:*?"<>|]+/g, '-').trim();
+    return `${safeTitle || 'resume'}.html`;
+  };
+  const serializeHtml = () => {
+    document.dispatchEvent(new Event('resume-before-save'));
+    const clone = document.documentElement.cloneNode(true);
+    const clonedRoot = clone.querySelector('.resume-page');
+    const clonedEditButton = clone.querySelector('[data-action="edit"]');
+    const clonedToolbarTitle = clone.querySelector('.toolbar-title');
+    if (clonedRoot) {
+      clonedRoot.setAttribute('contenteditable', 'false');
+      clonedRoot.classList.remove('is-editing');
+    }
+    clone.querySelectorAll('main.sheet').forEach((page) => page.setAttribute('contenteditable', 'true'));
+    if (clonedEditButton) clonedEditButton.textContent = '编辑';
+    if (clonedToolbarTitle) clonedToolbarTitle.textContent = 'HTML 简历';
+    const clonedStatus = clone.querySelector('[data-save-status]');
+    if (clonedStatus) clonedStatus.textContent = '自动保存已开启';
+    if (localFonts.length) {
+      let fontStyle = clone.querySelector('style[data-saved-local-fonts]');
+      if (!fontStyle) {
+        fontStyle = document.createElement('style');
+        fontStyle.setAttribute('data-saved-local-fonts', '');
+        clone.querySelector('head')?.appendChild(fontStyle);
+      }
+      fontStyle.textContent = localFonts.map((font) => {
+        const name = font.name.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+        return `@font-face{font-family:"${name}";src:url(${font.data})}`;
+      }).join('\n');
+    }
+    return '<!doctype html>\n' + clone.outerHTML;
+  };
+  const downloadHtml = (html, name) => {
+    const url = URL.createObjectURL(new Blob([html], { type: 'text/html;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = name;
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+    window.setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  const saveHtml = async () => {
+    const html = serializeHtml();
+    const name = suggestedHtmlName();
+    if (typeof window.showSaveFilePicker === 'function') {
+      try {
+        const handle = await window.showSaveFilePicker({
+          suggestedName: name,
+          types: [{ description: 'HTML 文件', accept: { 'text/html': ['.html', '.htm'] } }]
+        });
+        const writable = await handle.createWritable();
+        await writable.write(new Blob([html], { type: 'text/html;charset=utf-8' }));
+        await writable.close();
+        setToolStatus('HTML 已保存到本地');
+        return;
+      } catch (error) {
+        if (error?.name === 'AbortError') {
+          setToolStatus('已取消保存');
+          return;
+        }
+      }
+    }
+    downloadHtml(html, name);
+    setToolStatus('已下载 HTML 副本');
+  };
+
+  fontSelect?.addEventListener('change', () => {
+    const value = fontSelect.value;
+    if (value === removeLocalFontsValue) {
+      removeAllLocalFonts();
+      fontSelect.value = 'Microsoft YaHei';
+      return;
+    }
+    if (value.startsWith(localFontValuePrefix)) {
+      applyFormat('fontName', `"${value.slice(localFontValuePrefix.length)}", "Microsoft YaHei", sans-serif`);
+      return;
+    }
+    applyFormat('fontName', value);
+  });
+  localFontButton?.addEventListener('click', () => { loadInstalledFonts(); });
+  importFontButton?.addEventListener('click', () => {
+    if (!('FontFace' in window && 'fonts' in document)) {
+      setToolStatus('当前浏览器不支持导入字体文件');
+      return;
+    }
+    fontFileInput?.click();
+  });
+  fontFileInput?.addEventListener('change', async (event) => {
+    const files = Array.from(event.target.files || []);
+    event.target.value = '';
+    if (!files.length) return;
+    setToolStatus('正在导入字体...');
+    for (const file of files) await importFontFile(file);
+    refreshLocalFontOptions();
+  });
+  colorInput?.addEventListener('input', () => applyFormat('foreColor', colorInput.value));
+  boldButton?.addEventListener('click', () => applyFormat('bold'));
+  saveButton?.addEventListener('click', saveHtml);
+  pdfButton?.addEventListener('click', () => window.print());
+})();
+
+  </script>
+</body>
+</html>
