@@ -1,0 +1,53 @@
+{
+  "版本": "v1-冻结",
+  "冻结时间": "2026-10-09",
+  "六维（统一四值，SUPPORTED 恒为好，CONTRADICTED 恒为坏）": {
+    "主要形态是否有图像支持": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN"
+    ],
+    "位置是否吻合": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN"
+    ],
+    "主要结构是否有遗漏": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN"
+    ],
+    "是否无依据断言": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN"
+    ],
+    "格式约定问题": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN"
+    ]
+  },
+  "方向（两列分列）": {
+    "applicable": [
+      true,
+      false,
+      "unknown"
+    ],
+    "verdict": [
+      "SUPPORTED",
+      "PARTIAL",
+      "CONTRADICTED",
+      "UNCERTAIN",
+      "NO_ANSWER"
+    ]
+  },
+  "非法值与缺字段": "必须显式记为 NEEDS_REVIEW / MISSING，**不得默认通过**",
+  "禁止": "不得用自由文本正则直接给结论打分；正则只用于本文件的**回归**，正式复核只接受枚举值",
+  "极性说明": "负向维度的「无」= SUPPORTED（干净）；「有」= CONTRADICTED（有问题）"
+}
