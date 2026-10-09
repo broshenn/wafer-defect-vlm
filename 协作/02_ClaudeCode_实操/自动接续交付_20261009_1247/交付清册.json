@@ -1,0 +1,282 @@
+{
+  "目录": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\自动接续交付_20261009_1247",
+  "生成时间": "2026-10-09",
+  "生成者": "CPU 交付整理协作者",
+  "文件数": 46,
+  "总字节": 16259803,
+  "总封条口径": "按 relative_path 排序，拼接各文件 sha256 的 **digest 字节**后取 sha256（不是 hex 字符串拼接；两种口径结果必然不同属正常）；**不包含本清册自身**（`交付清册.json` / `交付清册.md`），故可重复复核",
+  "总封条覆盖文件数": 44,
+  "总封条 sha256": "01c7d6c8ecc1cf952d1c3ff72ee759cd71c5e9d931b2517aa7a3eff9dc0179bb",
+  "文件": [
+    {
+      "relative_path": "一页结论.md",
+      "bytes": 4050,
+      "sha256": "92bca8376c9a923a81f8eacf56ade242e739c127d1df904ad586ee8b1cdf8533"
+    },
+    {
+      "relative_path": "主张证据账本.json",
+      "bytes": 20397,
+      "sha256": "339d51e12de4038c17f676c9d562c3cc6a5b6ddd0ca484ab78c4f02989217fc5"
+    },
+    {
+      "relative_path": "交付报告.md",
+      "bytes": 10419,
+      "sha256": "b3e5ef713e964fd42641245b10d3db40ca01604095c5539190fe957f0c0616ac"
+    },
+    {
+      "relative_path": "交付清册.json",
+      "bytes": 10009,
+      "sha256": "19501bfbb57d821d6ac58c44ec3af45093a598221f4340e503ed9582b413219e"
+    },
+    {
+      "relative_path": "交付清册.md",
+      "bytes": 3915,
+      "sha256": "771d342bc6b024c12cce39bb35fec8972af6f2f879d0c387ddb4f05f75682dc3"
+    },
+    {
+      "relative_path": "交付状态.json",
+      "bytes": 11850,
+      "sha256": "c15d8b4b10dfb3d38f8d222ebda5411f9388e6ce8fdd7cfd9627e76720ca37d4"
+    },
+    {
+      "relative_path": "公开数据恢复包/哈希清单.json",
+      "bytes": 1128975,
+      "sha256": "646abda7adb6bf7f84088f3e59a1e98dc3f8b8d050ac6cfb7ec319606152724a"
+    },
+    {
+      "relative_path": "公开数据恢复包/晶圆图公开数据恢复包_20261009.zip",
+      "bytes": 10514294,
+      "sha256": "a57dc3fb19c3c8fbf7c5a70c43b981102d09a3ea1aa06d1db7ef2e5ebd9570ed"
+    },
+    {
+      "relative_path": "回执_阶段2.md",
+      "bytes": 6685,
+      "sha256": "b2fc95473548f750fd1baf4a109f844791245103e2355fe9684439481111800c"
+    },
+    {
+      "relative_path": "封包SHA256清册.json",
+      "bytes": 734,
+      "sha256": "62744560edd35a54ffcc9a108eae8e93424be01cc173b58c95a909120089b3a0"
+    },
+    {
+      "relative_path": "封包SHA256清册.md",
+      "bytes": 465,
+      "sha256": "0c9b8b6d603d63d801cf9d0962c03a1a44721c386f2fba72b16fe864b02e570f"
+    },
+    {
+      "relative_path": "接收回执.json",
+      "bytes": 2181,
+      "sha256": "88c8614b02309d167c4b323778aec86498643d6823385e05545d009d13a1e9cd"
+    },
+    {
+      "relative_path": "数据资产清单.md",
+      "bytes": 11163,
+      "sha256": "f9d1422aa7630bca14d5b65ad09eb7cf5caba5b19edf8e753200e9bbf768322a"
+    },
+    {
+      "relative_path": "最终交付入口.md",
+      "bytes": 10901,
+      "sha256": "d62d2ad1269ed70fea33c879437e082883692728dee8f3d81d28a4775c8a2276"
+    },
+    {
+      "relative_path": "机械核对.json",
+      "bytes": 49097,
+      "sha256": "e2dd622873a074dc83372262def70d816e4433d0d461f22bc5e4ffed54cdb2ee"
+    },
+    {
+      "relative_path": "机械核对.md",
+      "bytes": 3009,
+      "sha256": "c42b04df0a49d4a607c1b0b254b6b73814804a2da76c658d9ad3891718a2cd22"
+    },
+    {
+      "relative_path": "机械核对.py",
+      "bytes": 13313,
+      "sha256": "a2493456dcab47de992f6b3e1984fdef4ddaee62f405061f393e8e2e73057180"
+    },
+    {
+      "relative_path": "枚举复核独立汇总.json",
+      "bytes": 8577,
+      "sha256": "31fe001542835c0dfe4b738b093dc938fa479941e1e88a4c749a67124270af9a"
+    },
+    {
+      "relative_path": "枚举复核独立汇总.md",
+      "bytes": 5777,
+      "sha256": "42f094e01b4d8edd9127ac51fd54223fd8b90aad0658d9b58da98ea9abf9e968"
+    },
+    {
+      "relative_path": "枚举复核独立汇总.py",
+      "bytes": 9963,
+      "sha256": "d4603266b9cac0df4cd6ee64859d42edd4ca2706c9c9782d523a9302fe800640"
+    },
+    {
+      "relative_path": "清单_1200_本地相对路径.jsonl",
+      "bytes": 363600,
+      "sha256": "62e7b3b5db98444107d200f14159796896025e657dfc3e45c5428d0942a14469"
+    },
+    {
+      "relative_path": "清单_5904_本地相对路径.jsonl",
+      "bytes": 2372156,
+      "sha256": "70c3e8acf3cc8f828c872b4cf2ba26bab1045ec433259fcbdf4e8fae1f26ba9f"
+    },
+    {
+      "relative_path": "独立核对结论.md",
+      "bytes": 8017,
+      "sha256": "841c28feb6808d6d0e151c8aedfe5a9a696e3598c69be3380de9cd5a2ff22299"
+    },
+    {
+      "relative_path": "简历材料_两版项目段落.md",
+      "bytes": 15985,
+      "sha256": "53a440d551991d5d23f4e0754696ad6a7f57899d259183091b8b75a22645173d"
+    },
+    {
+      "relative_path": "简历页_内容壳.html",
+      "bytes": 8768,
+      "sha256": "21e33f2d5523dfe644781a781e88e5c0953e082658d9aa3e28838e744ef60b80"
+    },
+    {
+      "relative_path": "简历页检查.json",
+      "bytes": 1707,
+      "sha256": "b30082e643f4c18fbf6bfa0ba68ea71a36708a6f6b47abe94baac4cd2ece537c"
+    },
+    {
+      "relative_path": "简历页检查.md",
+      "bytes": 837,
+      "sha256": "76315b7e6ced915d345cdf6fe899d475167b929d5dc5276a194d660eda4cbc16"
+    },
+    {
+      "relative_path": "资产与哈希核对.json",
+      "bytes": 5422,
+      "sha256": "d9ba54f88231ce34090042055d18cd684724024ac37ca2a56061504dd8a10a6c"
+    },
+    {
+      "relative_path": "资产与哈希核对.md",
+      "bytes": 2163,
+      "sha256": "eeec667ae025f2904914b506f798bc725176265807401dfbe4e8f752259a8556"
+    },
+    {
+      "relative_path": "资产与哈希核对.py",
+      "bytes": 7346,
+      "sha256": "c39d2850be5cb7a013736a66f97d468dfc2ba134acb556f9b3e38e8f4d05bf1b"
+    },
+    {
+      "relative_path": "部署服务复算.json",
+      "bytes": 2527,
+      "sha256": "1131934be16cff606095805e214fa4a6d5164ff1850b943d75319b8160805c96"
+    },
+    {
+      "relative_path": "部署服务复算.md",
+      "bytes": 708,
+      "sha256": "4aa8013e7674bb21be38697cdc7d872007e9c10fa90cb2b22c7fdb8da5f2928c"
+    },
+    {
+      "relative_path": "部署服务复算.py",
+      "bytes": 4751,
+      "sha256": "dde8a075eaaa1dfb9be863da3106056585f8fd4a0afc7a25d50ac5e952c2ef3d"
+    },
+    {
+      "relative_path": "阶段2_交付清册.py",
+      "bytes": 7676,
+      "sha256": "c014935df0afdf6ac28175e03602c6fd497151ca5d05a2a5b34e11c6ded46191"
+    },
+    {
+      "relative_path": "阶段2_建恢复包.py",
+      "bytes": 11249,
+      "sha256": "6bd8d3f4ad7f8dc5eb7ca986d9a23f715dd49e43babaa7a29c4730ed490f116b"
+    },
+    {
+      "relative_path": "阶段2_简历页检查.py",
+      "bytes": 9185,
+      "sha256": "c411929b91bdd47d3964f0076b194de16b4fa2ecfbfd2461c76557a8d7690bc4"
+    },
+    {
+      "relative_path": "阶段2_网格逐格核.json",
+      "bytes": 5705,
+      "sha256": "029962bf3a675b5d2fd72b62b3be70ff1fccc56553f0a8cbc39f42375fda800e"
+    },
+    {
+      "relative_path": "阶段2_网格逐格核.md",
+      "bytes": 1978,
+      "sha256": "4520117dd10f95e33f038af413bf147bff12baf7ce59e015981b1aa7577c3085"
+    },
+    {
+      "relative_path": "阶段2_网格逐格核.py",
+      "bytes": 13112,
+      "sha256": "11d3fac7f8e628589136875027f980369508f8f53b63be09e9ee90ab2c30a964"
+    },
+    {
+      "relative_path": "阶段2_资产核验.json",
+      "bytes": 8964,
+      "sha256": "9121ca9a3986aed3a7c9a50a74b827f7fa2fff1eb8dcb5b54e3a4ef3ec07b81b"
+    },
+    {
+      "relative_path": "阶段2_资产核验.md",
+      "bytes": 4574,
+      "sha256": "bcd84655c6728cdb66c50f967b90a11ed245f135ccda58f996d185db372ffaca"
+    },
+    {
+      "relative_path": "阶段2_资产核验.py",
+      "bytes": 17372,
+      "sha256": "0405c671b81079eae0a044e318260abad8fc1b6e7632964e33fa2cbb2f734195"
+    },
+    {
+      "relative_path": "项目经历页.pdf",
+      "bytes": 1158556,
+      "sha256": "7c35940111c7fa5a39f7d2ac1cd721c39684b797dee49c423e03cfed6b579d06"
+    },
+    {
+      "relative_path": "项目经历页_可编辑.html",
+      "bytes": 43584,
+      "sha256": "43c33bdf97638218b63efe4f3e4c52813cf3b045e3730ea92c9848009fe0e68f"
+    },
+    {
+      "relative_path": "项目说明_完整版.md",
+      "bytes": 26143,
+      "sha256": "61882ee96ed96a67ad3147f5aa0005eda9d3888d35faf97c954dff4f3395e174"
+    },
+    {
+      "relative_path": "预览_整页.png",
+      "bytes": 331944,
+      "sha256": "c29bc5b2b977a8555a3dfc11db26e27be15fcba6ef38299814ef24b3320029a4"
+    }
+  ],
+  "敏感扫描": {
+    "扫描模式数": 11,
+    "扫描文件数": 39,
+    "未扫描": [
+      "交付清册.json",
+      "交付清册.md",
+      "阶段2_交付清册.py",
+      "阶段2_建恢复包.py",
+      "二进制文件（.png/.zip/.pdf，无法按文本匹配）"
+    ],
+    "未扫描原因": "规则字面量 / 本扫描自身的产物必然自命中，会产生假警报；这些文件仍计入清册与总封条",
+    "命中数": 0,
+    "命中明细": [],
+    "政策文本豁免数": 2,
+    "政策文本豁免明细": [
+      {
+        "file": "封包SHA256清册.json",
+        "line": 12,
+        "why": "疑似 SSH 私钥/口令用法",
+        "命中": "id_rsa",
+        "分类": "政策文本（列出被禁模式，非泄漏）"
+      },
+      {
+        "file": "封包SHA256清册.json",
+        "line": 13,
+        "why": "疑似 SSH 私钥/口令用法",
+        "命中": "id_ed25519",
+        "分类": "政策文本（列出被禁模式，非泄漏）"
+      }
+    ],
+    "结论": "无命中"
+  },
+  "不含": [
+    "SSH 配置/私钥",
+    ".env",
+    "API Key",
+    "CLI 日志",
+    "虚拟环境",
+    "模型权重"
+  ]
+}
