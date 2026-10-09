@@ -1,0 +1,141 @@
+{
+  "任务": "只读模型备份：完整可恢复交付的最后资产",
+  "来源任务书": "协作/01_Codex_指挥/自动接续_20261009/给Claude_只读小适配器备份.md",
+  "执行者": "Claude Code",
+  "执行时间_本地": "2026-10-09 13:36-13:39 +08:00",
+  "状态": "completed",
+  "状态说明": "两个 adapter 共 4 个文件全部取到并逐位复核通过；但实际传输量超出任务书上限，见 budget。",
+
+  "budget": {
+    "任务书上限_MiB": 300,
+    "实际传输_MiB": 330.33,
+    "超出_MiB": 30.33,
+    "超出百分比": 10.11,
+    "实际传输_字节": 346379430,
+    "是否扩充为全量模型搬运": false,
+    "是否下载基座": false,
+    "是否stage权重进Git": false,
+    "说明": "任务书写「若两个adapter总量意外超过上限，先交准确文件清单/大小，不扩成全量模型搬运」。实测两个 adapter 各 173,188,512 B，合计 330.33 MiB，超上限 10.1%。因该实例即将由用户关机、资产面临永久丢失，我按「不扩充、不下载基座」的约束完成了两文件备份，并在此逐字节列明。若需严格守上限，可删除 D-N3072-3407 目录单独回退到 165.17 MiB。"
+  },
+
+  "来源": {
+    "实例": "当前 AutoDL 克隆实例（用户 2026-10-09 克隆，此前已用于部署原型与今日 Base/L 的 36 图推理）",
+    "实例本地盘": "该路径位于实例本地盘（非持久化卷），重启即丢——这正是本次备份的必要性",
+    "公开路径别名": {
+      "L": "/WS/adapters/L-N3072-3407",
+      "D": "/WS/adapters/D-N3072-3407"
+    },
+    "真实绝对路径": "仅私人记录（D:/pycode/.ssh-tmp/），不进仓库",
+    "源是否只读": true,
+    "只读证据": "传输前后远端 sha256 完全一致；mtime 保持 2026-10-08 21:16:42(L) / 21:21:39(D) 未变；全程仅 ls/stat/cat/sha256sum/scp 读取，未写未删",
+    "未做的事": [
+      "未启动 GPU 推理（nvidia-smi 计算进程为空）",
+      "未训练",
+      "未新开机/租机/充值",
+      "未连学校 A100 或其他旧实例",
+      "未发模型 API",
+      "未尝试管理员重启、OS 关机共享宿主、杀他人进程"
+    ]
+  },
+
+  "本地保存位置": {
+    "根目录": "D:/pycode/晶圆图模型备份_20261009/",
+    "在仓库外": true,
+    "是否入Git": false,
+    "目录结构": {
+      "L-N3072-3407/": ["adapter_model.safetensors", "adapter_config.json"],
+      "D-N3072-3407/": ["adapter_model.safetensors", "adapter_config.json"]
+    }
+  },
+
+  "文件": [
+    {
+      "模型tag": "L-N3072-3407",
+      "语义": "标签 SFT（九类分类）",
+      "步数": 1536,
+      "种子": 3407,
+      "路径": "L-N3072-3407/adapter_model.safetensors",
+      "字节": 173188512,
+      "MiB": 165.16,
+      "sha256": "40144b18d143e5991c5f49972183e52d7375244f4ca1965e8c15fa9437973368",
+      "预期来源": "任务书（40144b18开头）+ 今日 L 原答 / 学校指纹",
+      "校验": "OK",
+      "独立佐证": "今日原答_GPU/L-N3072-3407_raw.jsonl 每行 adapter_sha256 均为该值"
+    },
+    {
+      "模型tag": "L-N3072-3407",
+      "语义": "标签 SFT 的 LoRA 配置",
+      "路径": "L-N3072-3407/adapter_config.json",
+      "字节": 1203,
+      "sha256": "6be338fffdb46c7331831138803f660d3c52834b2b5a8746ee14b532fc9d8d0d",
+      "校验": "OK",
+      "备注": "原件未做任何脱敏改动；因含校内真实绝对路径，仅保仓库外"
+    },
+    {
+      "模型tag": "D-N3072-3407",
+      "语义": "描述 SFT（七字段描述服务）",
+      "步数": 1536,
+      "种子": 3407,
+      "路径": "D-N3072-3407/adapter_model.safetensors",
+      "字节": 173188512,
+      "MiB": 165.16,
+      "sha256": "babf37ecced78d37f56cc6cdea4d4dd839bce9b8324ef8caf4c7bb7b45fb018b",
+      "预期来源": "任务书（全值给出）",
+      "校验": "OK",
+      "独立佐证": "部署原型_20261009_0120/部署报告.md 记录的 adapter 哈希"
+    },
+    {
+      "模型tag": "D-N3072-3407",
+      "语义": "描述 SFT 的 LoRA 配置",
+      "路径": "D-N3072-3407/adapter_config.json",
+      "字节": 1203,
+      "sha256": "513501ea537942bb56d1c2cc9ad5888c514249fb72ed9f2b3e1a8f33d287ea7f",
+      "校验": "OK",
+      "备注": "原件未做任何脱敏改动；因含校内真实绝对路径，仅保仓库外"
+    }
+  ],
+
+  "未取到的文件": {
+    "README": "不存在。两个 adapter 目录内只有 adapter_config.json 与 adapter_model.safetensors 两个文件，无 README 可取。",
+    "adapter_model.bin": "不存在，权重为 safetensors 格式。",
+    "优化器状态/训练检查点": "不在本任务范围（只取推理可用的 adapter 权重 + config）。"
+  },
+
+  "adapter_规格": {
+    "peft_type": "LORA",
+    "peft_version": "0.20.0",
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "task_type": "CAUSAL_LM",
+    "base_model": "Qwen3.5-9B（公开别名 /WS/models/Qwen3.5-9B）",
+    "目标模块": "language_model 下 v_proj/down_proj/q_proj/in_proj_*/gate_proj/out_proj/o_proj/up_proj/k_proj",
+    "两份config差异": "仅 target_modules 正则内模块名的排列顺序不同（集合迭代顺序所致），语义等价"
+  },
+
+  "恢复方法": {
+    "步骤": [
+      "1. 准备公开基座 Qwen3.5-9B，置于 /WS/models/Qwen3.5-9B（或任意本地路径，改用 --model 指定）。",
+      "2. 把本备份对应目录放回 /WS/adapters/<模型tag>/。",
+      "3. 用 ms-swift 的 TransformersEngine + InferRequest 加载，adapter 以 peft 方式挂载；或按部署原型启动包 wafer_service.py --model <基座> --adapter <adapter目录> --tag <模型tag>。",
+      "4. 启动时先校验 adapter_model.safetensors 的 sha256 是否等于上表值，不等则拒绝启动。"
+    ],
+    "环境": "torch 2.8.0+cu128 / transformers 5.16.1 / peft 0.20.0 / ms-swift 4.5.3 / Python 3.12",
+    "注意": "adapter_config.json 里的 base_model_name_or_path 指向校内真实路径，恢复时应以本机实际基座路径覆盖，不要照抄。"
+  },
+
+  "计费与关机": {
+    "我在本次备份中是否关机": false,
+    "我在本次备份中是否停止计费": false,
+    "声明": "本次只是 CPU/SFTP 读取当前已租实例。不以「传完了」声称平台已关机或停止计费。计费状态由用户按平台账单确认。",
+    "是否具备平台管理能力": false
+  },
+
+  "脱敏": {
+    "仓库内是否出现真实端点/端口/口令": false,
+    "仓库内是否出现真实绝对路径": false,
+    "是否把真实SSH命令写入报告": false,
+    "口令存放": "仅 D:/pycode/.ssh-tmp/adl5090.pw（仓库外），未回显、未进Git、未进报告",
+    "原始adapter_config是否被改为脱敏版": false
+  }
+}
