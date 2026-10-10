@@ -1,0 +1,42 @@
+{
+ "remote_image_dir": "/root/autodl-tmp/ws/v3run/图",
+ "只改images字段": true,
+ "files": {
+  "adapt512_sft.jsonl": {
+   "行数": 512,
+   "改写前sha256": "799f44d7fd6507eb80303957ce11f107d095c26141ea875d940c331f0831dc45",
+   "改写后sha256": "16d3321d3da48360d1ca2ac30f86a3c3465c51305187473e2f0e35a1203adceb",
+   "除images外逐字段完全相同": true,
+   "images样例": [
+    "/root/autodl-tmp/ws/v3run/图/wafer_00006467_002.png"
+   ]
+  },
+  "group256_sft4.jsonl": {
+   "行数": 1024,
+   "改写前sha256": "213a063a82fe2ba5fe2c1f23b9050be30c83fb35feecea18fe318cab7b990ad9",
+   "改写后sha256": "3d33a191b1423513298a2d7f052c631cef5f9370807870750994f60dba6e57ba",
+   "除images外逐字段完全相同": true,
+   "images样例": [
+    "/root/autodl-tmp/ws/v3run/图/wafer_00001287_016.png"
+   ]
+  },
+  "group256_grpo.jsonl": {
+   "行数": 256,
+   "改写前sha256": "78a523e9ddee1e59a17428557a2f9199db661aa03f365dffe95e0e727b2d0a47",
+   "改写后sha256": "cff81345d79025c5fd31222d07c3c348cf19a86193ad11c70635064bbb565ce5",
+   "除images外逐字段完全相同": true,
+   "images样例": [
+    "/root/autodl-tmp/ws/v3run/图/wafer_00001287_016.png"
+   ]
+  },
+  "confirmation120_requests.jsonl": {
+   "行数": 120,
+   "改写前sha256": "33d844cdfa8cd4acbe154a033f563220f59a03c7aa2818891865adf59d2dd7e5",
+   "改写后sha256": "965dd5a66cc8364cdf12c84d7f29d280d2e27f07043c6dd60c5871142e1a0fb2",
+   "除images外逐字段完全相同": true,
+   "images样例": [
+    "/root/autodl-tmp/ws/v3run/图/wafer_00015092_006.png"
+   ]
+  }
+ }
+}
