@@ -1,0 +1,37 @@
+{
+ "mode": "adapt",
+ "steps": 2,
+ "model_start": "/root/autodl-tmp/ws/models/Qwen3.5-9B-Dmerged",
+ "start_adapter": null,
+ "data": "/root/autodl-tmp/ws/v3run/数据/adapt512_sft.jsonl",
+ "data_sha256": "16d3321d3da48360d1ca2ac30f86a3c3465c51305187473e2f0e35a1203adceb",
+ "n_rows": 512,
+ "seconds": 27.971506,
+ "device_minutes": 0.466,
+ "peak_allocated_GiB": 18.971,
+ "checkpoints": [
+  "out/gate_adapt/v0-20261010-232508/checkpoint-1",
+  "out/gate_adapt/v0-20261010-232508/checkpoint-2"
+ ],
+ "final_checkpoint": "out/gate_adapt/v0-20261010-232508/checkpoint-2",
+ "selection": "末步预选（不挑最好 checkpoint）",
+ "cuda_visible_devices": "GPU-752b2eea-65f7-1383-f0e5-e0f4774384cb",
+ "device": "NVIDIA GeForce RTX 5090",
+ "world_size": 1,
+ "finished_at": "2026-10-10T23:25:32.591500",
+ "trainer_actual_args": {
+  "max_steps": 2,
+  "learning_rate": 1e-05,
+  "seed": 3407,
+  "data_seed": 3407,
+  "train_dataloader_shuffle": false,
+  "resume_only_model": false,
+  "dataset_shuffle": false,
+  "temperature": 0.0,
+  "adapters": [],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "lora_rank": 16,
+  "lora_alpha": 32
+ }
+}

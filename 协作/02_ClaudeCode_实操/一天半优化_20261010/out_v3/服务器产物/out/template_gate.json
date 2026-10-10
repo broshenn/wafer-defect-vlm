@@ -1,0 +1,30 @@
+{
+ "think_prefix_from_template": true,
+ "assistant_prefix_example": "<|im_start|>user\nx<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER",
+ "samples": [
+  {
+   "sample_id": "wafer_00006467_002",
+   "总长": 630,
+   "图片占位": true,
+   "答案token": 39,
+   "解码尾部与目标一致": true
+  },
+  {
+   "sample_id": "wafer_00018532_004",
+   "总长": 633,
+   "图片占位": true,
+   "答案token": 42,
+   "解码尾部与目标一致": true
+  },
+  {
+   "sample_id": "wafer_00015851_009",
+   "总长": 645,
+   "图片占位": true,
+   "答案token": 54,
+   "解码尾部与目标一致": true
+  }
+ ],
+ "labels_checked_here": false,
+ "labels_note": "encode() 不返回 labels；掩码由 collator 生成，交 2 步 GPU 门槛",
+ "verdict": "PASS"
+}
