@@ -1,0 +1,4448 @@
+{
+ "count": 888,
+ "remote_dir": "/root/autodl-tmp/ws/v3run/图",
+ "tar_bytes": 883644,
+ "tar_sha256": "a2d5933dcffd043550ac9c2eec720932fafd8e82e7ecc1d2915ce86da5a3bbd2",
+ "images": {
+  "wafer_00000054_010.png": {
+   "sha256": "3600e976081aea6f0b1efeaefe932887024fb8cf7bce8eb60dc1fe33f5424824",
+   "bytes": 1730,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000054_010.png"
+  },
+  "wafer_00000055_011.png": {
+   "sha256": "2a16d7b8ec49cf02054d2e3328b163a89c41dcfd2dde3b39f43a0bad7c65020e",
+   "bytes": 1639,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000055_011.png"
+  },
+  "wafer_00000063_013.png": {
+   "sha256": "b71d7592b2c1c7e700fa85b03d72a5db5c83457b7c91c8ae8fc768670db830c7",
+   "bytes": 1815,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000063_013.png"
+  },
+  "wafer_00000063_025.png": {
+   "sha256": "0b296a5fb99ab2b7f6bcae28b97f9146dcb54e023e9489811df2407ed9e9299c",
+   "bytes": 1659,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000063_025.png"
+  },
+  "wafer_00000069_022.png": {
+   "sha256": "e2d4a0c2c5999e9c847b8f161ef8135390e321ebfa6e557153bab4f24d20523c",
+   "bytes": 1735,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000069_022.png"
+  },
+  "wafer_00000101_019.png": {
+   "sha256": "49e531eccf794e53e0a1c578a0cf68ed4a5f33c5667542950299518dd2a2afd4",
+   "bytes": 1628,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000101_019.png"
+  },
+  "wafer_00000106_015.png": {
+   "sha256": "ab28c0d745f93802179deaa855f3ac9563269fb6f4d8195d6d8843fa23dd434c",
+   "bytes": 1709,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000106_015.png"
+  },
+  "wafer_00000106_022.png": {
+   "sha256": "212ee7a9c22b8e9ada657613a6ff513f9a550f5eb9e97dccb1b67e8724f20718",
+   "bytes": 1679,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000106_022.png"
+  },
+  "wafer_00000153_009.png": {
+   "sha256": "23bc67685105beacd87015fac87d442e18308ef444887715b9d61cadcfa82285",
+   "bytes": 1677,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000153_009.png"
+  },
+  "wafer_00000169_021.png": {
+   "sha256": "b34115f49e0e4637d5afb3180f4e7b7fe44e6d898757a63d8455c9ea83a32e82",
+   "bytes": 1817,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000169_021.png"
+  },
+  "wafer_00000171_009.png": {
+   "sha256": "f3f8f1566e89be25a367a77fd5f7a84c2c310d95f220b6adbb7de1e16aed28c4",
+   "bytes": 1777,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000171_009.png"
+  },
+  "wafer_00000238_007.png": {
+   "sha256": "b54891def04c97bfa0066698bdd8dc423b398f8e38539195f13e10c600bb4da7",
+   "bytes": 1553,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000238_007.png"
+  },
+  "wafer_00000270_024.png": {
+   "sha256": "75697223a242d0c1f854796ac5e8a0b8125c9e8d3947ddb6266e4e800171eb5b",
+   "bytes": 1813,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000270_024.png"
+  },
+  "wafer_00000277_012.png": {
+   "sha256": "55267114d14cf67406376c75ce355c13161f69c928f6bbcb4bc12cc0551e7050",
+   "bytes": 1581,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000277_012.png"
+  },
+  "wafer_00000281_004.png": {
+   "sha256": "8670f763f690fa6cb3949b150144da2b78e77dc3b8d401fb118242759a5a4626",
+   "bytes": 1635,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000281_004.png"
+  },
+  "wafer_00000490_013.png": {
+   "sha256": "e3d93f1504fa4cda828d8c946ab5ec3169dacacbdb8b6628e3598247a1de62ea",
+   "bytes": 1916,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00000490_013.png"
+  },
+  "wafer_00001287_016.png": {
+   "sha256": "fb92280b69b11b598940ff338ef37c103a0d65c22d8d32857fb7b5f23c8294f3",
+   "bytes": 1727,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00001287_016.png"
+  },
+  "wafer_00001414_011.png": {
+   "sha256": "003eed676e5a3efe8166aafea7c434e941944580d420498876675bed772020e6",
+   "bytes": 2543,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00001414_011.png"
+  },
+  "wafer_00001414_012.png": {
+   "sha256": "bce3873250dce026ed19d960f79daa2e2352052493b817104ebe8dc4b8bfacf5",
+   "bytes": 2480,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00001414_012.png"
+  },
+  "wafer_00001416_025.png": {
+   "sha256": "c4b26144e3b442dd93de334c859f837a0981da94512b7bbbbf0014805c40dc3b",
+   "bytes": 2294,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00001416_025.png"
+  },
+  "wafer_00001556_009.png": {
+   "sha256": "616d5b4ba48a33097fba62943a853f08b8bdb30d7a8e417c076c5f050dc43a9a",
+   "bytes": 1919,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00001556_009.png"
+  },
+  "wafer_00002422_005.png": {
+   "sha256": "74955b14984f3425bb524cc7b7cd74e921c46b31f3868f02875ff7a3cd1d3e0d",
+   "bytes": 2263,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002422_005.png"
+  },
+  "wafer_00002422_012.png": {
+   "sha256": "53eec1e66ae9d0831e02fc391a50dd17106dff8b5fbf89f6d6ec9b545a5be634",
+   "bytes": 2261,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002422_012.png"
+  },
+  "wafer_00002422_014.png": {
+   "sha256": "b901df9b46ea23d3ca61d1ed4fbba4711698d98fa6d72d65f9608ab70d155d70",
+   "bytes": 2294,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002422_014.png"
+  },
+  "wafer_00002422_015.png": {
+   "sha256": "956f5f84e8e9dc19e38b0bdcc82a6888cb1c4ac173a42d92460cfcd264f5f3fd",
+   "bytes": 2289,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002422_015.png"
+  },
+  "wafer_00002464_002.png": {
+   "sha256": "9235d52d6d1528ec10da7b8c2c563bdc5fc0649910df13887c02ab04d6db3fa1",
+   "bytes": 2038,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002464_002.png"
+  },
+  "wafer_00002494_021.png": {
+   "sha256": "0f0c43563f1ae206f59bfcf4d85a4af4e5de142aed24509adf6739ee403c6904",
+   "bytes": 1930,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002494_021.png"
+  },
+  "wafer_00002507_002.png": {
+   "sha256": "bc9a8b242f3f1ac3bee84f517f456310f5db3db381d5eaad9609d7ae2fe9fc71",
+   "bytes": 1839,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002507_002.png"
+  },
+  "wafer_00002507_023.png": {
+   "sha256": "edd8ce6a4e1817ce1b2605c18704ae3b23b41d3c57f947273db55f504ead6743",
+   "bytes": 1890,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002507_023.png"
+  },
+  "wafer_00002517_001.png": {
+   "sha256": "6d0c79f2ca2fd665a897d8534902c2a629befe570d326e7436504e05050cbec5",
+   "bytes": 1862,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002517_001.png"
+  },
+  "wafer_00002517_007.png": {
+   "sha256": "cd0b0aabb6104548e4fbc20ede9748beca22e4fb15c60a6b95a1e34d1aa13322",
+   "bytes": 2187,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002517_007.png"
+  },
+  "wafer_00002517_024.png": {
+   "sha256": "a49bf925bf6e773dd25c0997c0fb6c58050fccf6fd108c97aacc8a2de2d81a88",
+   "bytes": 1861,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002517_024.png"
+  },
+  "wafer_00002518_009.png": {
+   "sha256": "956bdb0485f525d003edb2b6b6ad6edad8c807bbe738c10c79a876b2cfbf1eae",
+   "bytes": 1861,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002518_009.png"
+  },
+  "wafer_00002519_001.png": {
+   "sha256": "71a1c9031b045ebdda741b1c70d4f54ae4b4aced97f053915d4eaf9298b88a75",
+   "bytes": 1847,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002519_001.png"
+  },
+  "wafer_00002519_005.png": {
+   "sha256": "ef870f4e88e45247b39a948bdb58b4ccd05cf3656160fc4bdf2b4e314cc86e18",
+   "bytes": 1922,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002519_005.png"
+  },
+  "wafer_00002519_023.png": {
+   "sha256": "17bbf4b831f8b9758414123b903e4b2cc5d5fae49fd98e148aa9e657bc7e86c7",
+   "bytes": 1887,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002519_023.png"
+  },
+  "wafer_00002520_004.png": {
+   "sha256": "8e796a7728114bf0462d03d5476062e2cb7a14438734d4d645b714e6c735e401",
+   "bytes": 1878,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002520_004.png"
+  },
+  "wafer_00002520_025.png": {
+   "sha256": "45148b5cccdbf28e422d0b2eb33ac605de25f1d97a85efb7f1d3b17ff1ab5142",
+   "bytes": 1878,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002520_025.png"
+  },
+  "wafer_00002521_008.png": {
+   "sha256": "2c7dd553b8e7891e46b74b5130e8c1f105ea2e85a0c47346b930bf1ecf5be6bf",
+   "bytes": 1883,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002521_008.png"
+  },
+  "wafer_00002534_003.png": {
+   "sha256": "9d258179c017b4b0851eb5eefb9ddc355d6e1c348461bbb3c94524c94e0cd29a",
+   "bytes": 2363,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002534_003.png"
+  },
+  "wafer_00002534_004.png": {
+   "sha256": "f0725cdad6258314c8622b8c5426d4850596df71de7569c41d506c74771d268b",
+   "bytes": 2395,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002534_004.png"
+  },
+  "wafer_00002534_012.png": {
+   "sha256": "7a77c8aa0d8e37ddc6466f0d103a3679ef1be37c49af52253a7c0918c78db2ce",
+   "bytes": 2294,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002534_012.png"
+  },
+  "wafer_00002534_018.png": {
+   "sha256": "cb13afc8ef2001374bfd59b24b6fb360e2bff1f5dd47e7a47de43a4cd98b3f4c",
+   "bytes": 2347,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002534_018.png"
+  },
+  "wafer_00002920_001.png": {
+   "sha256": "5ce85ac0ca859b6018be2fd8ee2e5fd6d9a25c1f14905124144653b55486cc23",
+   "bytes": 2121,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00002920_001.png"
+  },
+  "wafer_00003293_002.png": {
+   "sha256": "2ab4c8893319b1ac3334cdd8199bee099a1303648731cdc41ca4d523b653c48d",
+   "bytes": 2133,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003293_002.png"
+  },
+  "wafer_00003293_005.png": {
+   "sha256": "46c15f1f0ef3af3a28974ce5bc101e8b4bd6f0adcfaa69da474907dc57b5ee0e",
+   "bytes": 2109,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003293_005.png"
+  },
+  "wafer_00003399_001.png": {
+   "sha256": "7d9d548028f95f0619b24fc6e6b7654d12025adebf733b50eebd0ad1b63b6497",
+   "bytes": 1875,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003399_001.png"
+  },
+  "wafer_00003663_013.png": {
+   "sha256": "8f5676182f6502ea94e3f65e97167209cfd5bd944fa863a0984b2d625b4152fe",
+   "bytes": 1695,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003663_013.png"
+  },
+  "wafer_00003664_016.png": {
+   "sha256": "ad9423f885ba61961ff01d032ec490af6f956ef4db1d76abcca34181c1b9debf",
+   "bytes": 1769,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003664_016.png"
+  },
+  "wafer_00003664_017.png": {
+   "sha256": "d8d2747fbcccf2966d4e248094ece1feae131373d84b90242d0817c6658accd4",
+   "bytes": 1761,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003664_017.png"
+  },
+  "wafer_00003664_024.png": {
+   "sha256": "6ba2a85442678ca4b1ac3314076b136f4271a5efad7719049051b4a515b18c5e",
+   "bytes": 1761,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003664_024.png"
+  },
+  "wafer_00003830_021.png": {
+   "sha256": "61f28a4e46b4a364672b3eb14b60c3bed89ab4ddb0115046fcd133f9ceaaaa56",
+   "bytes": 1408,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003830_021.png"
+  },
+  "wafer_00003868_002.png": {
+   "sha256": "24a3652ed705949cb5b45ad86bcb628cbb7e2ddd008c7d601ceb5d0861bb7ca4",
+   "bytes": 1436,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003868_002.png"
+  },
+  "wafer_00003868_012.png": {
+   "sha256": "46deca8d18651a2fb7bbdb2f6eb647e956fa7ae5278e21709596b0847dd30022",
+   "bytes": 1434,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003868_012.png"
+  },
+  "wafer_00003868_015.png": {
+   "sha256": "744e6f5b65d90fe1c1a5f5bbf56a3a5144dcb84bfc1c9f635dc5f049939b741a",
+   "bytes": 1421,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003868_015.png"
+  },
+  "wafer_00003916_007.png": {
+   "sha256": "fceef1f07af982e1f61756a5d7fd33af3eabd5b7866c2d53f26f531e3b441230",
+   "bytes": 1857,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003916_007.png"
+  },
+  "wafer_00003916_010.png": {
+   "sha256": "2dd3a15e19cae9036eeb84f1f14fec1a3483558355dda0b1bda47c019d21d963",
+   "bytes": 1870,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00003916_010.png"
+  },
+  "wafer_00004050_023.png": {
+   "sha256": "f87dd7e5bf923a0ad36586b7439a89ebafc12b2c323e334f5e33b2d9f548eb3e",
+   "bytes": 2376,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004050_023.png"
+  },
+  "wafer_00004084_007.png": {
+   "sha256": "14e9ab91ca808b0e05812f486ecc2daa46bd5f9e578b9fb90b65bf9dbd0cb3c2",
+   "bytes": 2145,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004084_007.png"
+  },
+  "wafer_00004087_005.png": {
+   "sha256": "10bc6ecb7d3427aeb953ee51cd034af4c2b26d8df29e95b8bb9b13d0dff79886",
+   "bytes": 2598,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004087_005.png"
+  },
+  "wafer_00004087_008.png": {
+   "sha256": "adf437ed840e2b7dd8159a6633fbfeda6a716ebd17e60f894250e13cf5801e98",
+   "bytes": 2481,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004087_008.png"
+  },
+  "wafer_00004087_015.png": {
+   "sha256": "894494840cc65f958722d3713c1cf2b299f1ec660961ef6107acced4357064ed",
+   "bytes": 2246,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004087_015.png"
+  },
+  "wafer_00004087_022.png": {
+   "sha256": "1d3e85143be260e662821a205f43fe2ec2f36e50238898d92e1c3b9932266043",
+   "bytes": 2221,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004087_022.png"
+  },
+  "wafer_00004137_019.png": {
+   "sha256": "203300c8f281e623bb4c3dc0c49000446f109b8b9c3bb766f0539cfbc4bde6b4",
+   "bytes": 1809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004137_019.png"
+  },
+  "wafer_00004184_019.png": {
+   "sha256": "fc618501e0199a8ef7e39a955da84c2b7a8482aa00992c8b32fffd386b3be80f",
+   "bytes": 1899,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004184_019.png"
+  },
+  "wafer_00004289_007.png": {
+   "sha256": "126fb60c4a10988352d0c948cc1e36975f0842969706a1a881d44709dcec264a",
+   "bytes": 1885,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004289_007.png"
+  },
+  "wafer_00004550_007.png": {
+   "sha256": "322e767a239643f107ebef25ba7c622b50ce7d019d094c824fa877a652492339",
+   "bytes": 1879,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004550_007.png"
+  },
+  "wafer_00004724_020.png": {
+   "sha256": "3c6525f17ea6a157fda6d68014cd76da33d2996a2b435fd79a750e51425e3af9",
+   "bytes": 2346,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004724_020.png"
+  },
+  "wafer_00004728_008.png": {
+   "sha256": "3d238d790ea386caaba1902bcaedb929e440a2550eeb0be2cabe17622d28840d",
+   "bytes": 2209,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004728_008.png"
+  },
+  "wafer_00004728_016.png": {
+   "sha256": "3320c6909894e9c965a7c9d29e87db4b85f6817f24163699ee7bb3a40936d291",
+   "bytes": 2247,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00004728_016.png"
+  },
+  "wafer_00005127_006.png": {
+   "sha256": "6af2b9c6ab03a13d28ad1231fc51f813d57ed739e5e67739694f2de95f2cd845",
+   "bytes": 2823,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005127_006.png"
+  },
+  "wafer_00005410_022.png": {
+   "sha256": "480ad6d02f586dbea38124c1b159b034f8418316c4a9cb30f95bd9d341a4c457",
+   "bytes": 1914,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005410_022.png"
+  },
+  "wafer_00005447_007.png": {
+   "sha256": "d73e2088fad71477d4afbfa00bbd1fa39aab0e2386776babcd26b536c1fc6367",
+   "bytes": 1469,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005447_007.png"
+  },
+  "wafer_00005676_023.png": {
+   "sha256": "3dd12c2b9f7a8bede70406a3218ee01ba2fc4aaeee5cf5266e24ee22cdb22477",
+   "bytes": 1764,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005676_023.png"
+  },
+  "wafer_00005916_015.png": {
+   "sha256": "b0847707093f6166ab4ac3c75d927f75c4702cf6aacca9608a22bd4328fc73e6",
+   "bytes": 2083,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005916_015.png"
+  },
+  "wafer_00005916_019.png": {
+   "sha256": "66b3265441696ddec38da2609387a4b526b1e233eeca503b54d14bb1fdbf047b",
+   "bytes": 2111,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005916_019.png"
+  },
+  "wafer_00005916_020.png": {
+   "sha256": "04ec10e47a30f41c9ad0d0a038003cea319fa36c087058284f4080b3da4c2a3a",
+   "bytes": 2084,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005916_020.png"
+  },
+  "wafer_00005957_005.png": {
+   "sha256": "9503d361613ee5760bd7ab80b8be449e12317eb2a9d40d0994f2cdfb4bb78cb4",
+   "bytes": 1445,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005957_005.png"
+  },
+  "wafer_00005993_007.png": {
+   "sha256": "2ac7476ea11769364da2918f326e84711095ea53ff641dcae2631093caa34668",
+   "bytes": 1428,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005993_007.png"
+  },
+  "wafer_00005993_009.png": {
+   "sha256": "e759ae9c959d1f6038cf54c0731025a5efdeddd4208963b4ae6f765010915f3e",
+   "bytes": 1437,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005993_009.png"
+  },
+  "wafer_00005998_017.png": {
+   "sha256": "2c550462b2cbf8ee5f96f576154b4efbf5a411c1ea81925cb429d365d96bc79e",
+   "bytes": 1435,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005998_017.png"
+  },
+  "wafer_00005998_018.png": {
+   "sha256": "2b3e3cd84d6c5b83aa630c00d2e4867ddaa21c2f2efc30dfd5a9326e448eb6e4",
+   "bytes": 1466,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005998_018.png"
+  },
+  "wafer_00005998_021.png": {
+   "sha256": "0daeeddb77a599cf6821e676a29473de6aeb61545937f16c25bae57df8d1938b",
+   "bytes": 1410,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005998_021.png"
+  },
+  "wafer_00005998_024.png": {
+   "sha256": "be86c8ca747a9bb047350bf54a686c3dcb14fd2469e45ef5e513fdb10898ea2e",
+   "bytes": 1423,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00005998_024.png"
+  },
+  "wafer_00006011_020.png": {
+   "sha256": "e5d5a7b9667f4171b1696bed7672c94f6263a47933823f74b7928207e7a1a016",
+   "bytes": 1896,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006011_020.png"
+  },
+  "wafer_00006103_014.png": {
+   "sha256": "72d23a1e070b96577902f55b303f4752d81169ee4c2f693883fd6d41b5a4eccd",
+   "bytes": 1906,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006103_014.png"
+  },
+  "wafer_00006175_001.png": {
+   "sha256": "22b2f7a090e8a992d98614e723fc2c9eb7b426c2da300519d113b2a9ccfdd0af",
+   "bytes": 1397,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006175_001.png"
+  },
+  "wafer_00006175_003.png": {
+   "sha256": "0c8d5e7fa8c4550ce2a4fb64499df20c584caed502a705070f0c5223354c1c7d",
+   "bytes": 1405,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006175_003.png"
+  },
+  "wafer_00006227_008.png": {
+   "sha256": "d74cb63642e7501d2026df6c4ef84c4fd50c9575c0369b8c6be3b4bf45e05132",
+   "bytes": 1934,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006227_008.png"
+  },
+  "wafer_00006227_012.png": {
+   "sha256": "72d5a9d38bd827c35c1986974d8825bf4bfc94001323f73e8776390600f63764",
+   "bytes": 1982,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006227_012.png"
+  },
+  "wafer_00006228_004.png": {
+   "sha256": "ce1de374a71aaa02306ad4d1faccb9181c879b9b81b167a713d17a214e401328",
+   "bytes": 1451,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006228_004.png"
+  },
+  "wafer_00006233_025.png": {
+   "sha256": "2d0fd2393d1d562f1d0850cc04f56ba885bd852f7c780f073393a7143d7b2f53",
+   "bytes": 1491,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006233_025.png"
+  },
+  "wafer_00006394_010.png": {
+   "sha256": "a792b6759a7433a040f7e5192ed0fc205258990cd8b362f6a87e672032581cbd",
+   "bytes": 1982,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006394_010.png"
+  },
+  "wafer_00006467_002.png": {
+   "sha256": "8663f8d0dca4f1c093d2c0b60ff90ad2b8cacc1cde6ebbbc66382729d9e270f0",
+   "bytes": 1422,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006467_002.png"
+  },
+  "wafer_00006467_007.png": {
+   "sha256": "e3c0e232e15affc1a5db4ccf9c093ed6d0f74cacd76f3a0d7dc6e4049d5a8453",
+   "bytes": 1421,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006467_007.png"
+  },
+  "wafer_00006467_008.png": {
+   "sha256": "2df751d52f57c60109dfa3845770edbed173becf48ee298aded06f48052b0157",
+   "bytes": 1423,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006467_008.png"
+  },
+  "wafer_00006693_003.png": {
+   "sha256": "48c7cce91d877e3900107535b2a9915d24a5993616b96aae46403c439d59d7a4",
+   "bytes": 2420,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006693_003.png"
+  },
+  "wafer_00006700_006.png": {
+   "sha256": "623eb504b12988ea507bd1e635d5c55657eabda9f93f670435bd1af19f03ab0a",
+   "bytes": 2093,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006700_006.png"
+  },
+  "wafer_00006801_004.png": {
+   "sha256": "6c9433b3659c0f830de12887a0020214e833f99f5448cf7a13efbe4d466b6036",
+   "bytes": 1967,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006801_004.png"
+  },
+  "wafer_00006953_008.png": {
+   "sha256": "e5c2b14629ad207b4beaa9fd909ca6b52513090febe8a9b41e502c24b39f6547",
+   "bytes": 2198,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00006953_008.png"
+  },
+  "wafer_00007184_010.png": {
+   "sha256": "96186b30335b0b88587606a65c8f337acc38be1545b41d3a354372fc26bcb55d",
+   "bytes": 2249,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007184_010.png"
+  },
+  "wafer_00007369_003.png": {
+   "sha256": "5f6fada61ab4dc8c82ab89b661c95b5c749159c4162a6d9779563278fe401818",
+   "bytes": 1447,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007369_003.png"
+  },
+  "wafer_00007791_015.png": {
+   "sha256": "83402190ca547da71bae33a242419b7ae906c6fb2f4cbca63570adb9f62d81d2",
+   "bytes": 1439,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007791_015.png"
+  },
+  "wafer_00007837_022.png": {
+   "sha256": "7b21ab5376a680cb716ab40d5a726db71a3bed0e7168a40794843fb6a829d648",
+   "bytes": 2076,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007837_022.png"
+  },
+  "wafer_00007846_004.png": {
+   "sha256": "f3990e4a2beb45712d71a93c2b0838a62b10844e7d6fc34192513ff982f39b55",
+   "bytes": 1416,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007846_004.png"
+  },
+  "wafer_00007846_013.png": {
+   "sha256": "57645dcbff183b033de36fb1f7430a4308730608cb1ad2668b279df323485736",
+   "bytes": 1490,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007846_013.png"
+  },
+  "wafer_00007846_023.png": {
+   "sha256": "422782bae4d450e74cd6b41c66c4237957bcc32f903d2337c07120bb6828c504",
+   "bytes": 1441,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007846_023.png"
+  },
+  "wafer_00007864_013.png": {
+   "sha256": "05476097e5e45607bb42934377180e4f57113c60b726a4b8dceb123ec95da5b8",
+   "bytes": 1444,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007864_013.png"
+  },
+  "wafer_00007864_025.png": {
+   "sha256": "2c84dfc6fb25149d387e4dd85db97580d0b7d00fb9c028c3bb99871fd630b163",
+   "bytes": 1473,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007864_025.png"
+  },
+  "wafer_00007934_006.png": {
+   "sha256": "9bf46e04cd7620d783cd18836b782a0fb7d7778fee95601ee55cbe6817aed7bc",
+   "bytes": 1418,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007934_006.png"
+  },
+  "wafer_00007934_025.png": {
+   "sha256": "2c2c3fb8b2e8c83e7ad402730ea551524111a3e2d45095158c505afdc3e5b3a1",
+   "bytes": 1426,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007934_025.png"
+  },
+  "wafer_00007973_013.png": {
+   "sha256": "a5a6e5dfff44f2d314699acc7dd12f15c303f3e9b63425cf471bdedebb77a8a7",
+   "bytes": 1971,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007973_013.png"
+  },
+  "wafer_00007994_002.png": {
+   "sha256": "c5efa0f6008e06ee7087f97de0c9ec5a5b343499703d134f17447e1fe63926fc",
+   "bytes": 1441,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007994_002.png"
+  },
+  "wafer_00007994_004.png": {
+   "sha256": "01e17a753a6bdb0e19b8612482aea78b5680afa3c0311392c191f59c134a7572",
+   "bytes": 1458,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00007994_004.png"
+  },
+  "wafer_00008149_021.png": {
+   "sha256": "60ee925e1a2dd261e15ea6dcbbb450b65a9598fdd052f0f4946df7fc8bd951f4",
+   "bytes": 1763,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008149_021.png"
+  },
+  "wafer_00008154_012.png": {
+   "sha256": "1d5f2078e5881e679b3bd971b766c16a7532ce39ccde38bd06fb1536f0d4deb6",
+   "bytes": 1728,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008154_012.png"
+  },
+  "wafer_00008270_002.png": {
+   "sha256": "451cf92e99ce7f7e9e3af1282db9ea375957805d3750f134b33094a87bcd2706",
+   "bytes": 2187,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008270_002.png"
+  },
+  "wafer_00008270_003.png": {
+   "sha256": "9ca7423d58ce30690cfb492a4090a517b59d9424a95ea8c9fe1f4330bc70328c",
+   "bytes": 2203,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008270_003.png"
+  },
+  "wafer_00008270_010.png": {
+   "sha256": "19930a7466e6d60b5d0745463ffe110adaa9820d82e80afcb079cec1597b9c63",
+   "bytes": 2192,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008270_010.png"
+  },
+  "wafer_00008270_024.png": {
+   "sha256": "e6752dca6281ef81b93380c792daa93ab2205e686b4397361bf44e2d05c3f678",
+   "bytes": 2219,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008270_024.png"
+  },
+  "wafer_00008281_011.png": {
+   "sha256": "8a33210a2573e9061297c4ce322d0f4ee98b1b92168f3b85ccb7108b8fc90917",
+   "bytes": 1930,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008281_011.png"
+  },
+  "wafer_00008362_003.png": {
+   "sha256": "31afef5fdd5e7dd8a8458430bf7494d566859748dc2fa5d3546e382092b031b1",
+   "bytes": 1742,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008362_003.png"
+  },
+  "wafer_00008362_004.png": {
+   "sha256": "2c63e98f1092b0cb3276ea8e081fac72fcb41910d13879876f8beb88b35a58ff",
+   "bytes": 1660,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008362_004.png"
+  },
+  "wafer_00008468_013.png": {
+   "sha256": "f753a68dbf19789286841572287c78a5ef736e2a6fba11d14238664041e02af1",
+   "bytes": 2349,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008468_013.png"
+  },
+  "wafer_00008819_007.png": {
+   "sha256": "fbcd2194d64523d20016b21323146d506434c7fb740e9349c7702d87ae3d71bd",
+   "bytes": 2249,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008819_007.png"
+  },
+  "wafer_00008819_021.png": {
+   "sha256": "7a6806bbb2022bbdb52c1f62bd1d88a30a4b2b5d2e678955cdc0d56b206df572",
+   "bytes": 2145,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00008819_021.png"
+  },
+  "wafer_00009026_021.png": {
+   "sha256": "fba8f0d12a180ee87edcc01c5aeb591c23959a90d0c051711e40590758916f50",
+   "bytes": 2467,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00009026_021.png"
+  },
+  "wafer_00009149_006.png": {
+   "sha256": "06889ec046b5064c99d793f34b14137da9f3c7daf0fb0e5b6323af5b964e3819",
+   "bytes": 2341,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00009149_006.png"
+  },
+  "wafer_00009149_016.png": {
+   "sha256": "0bd04e804983a2151f1d1230754dc2d8c18384acd61d0dedd44f5970b7e5aed4",
+   "bytes": 2318,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00009149_016.png"
+  },
+  "wafer_00009159_001.png": {
+   "sha256": "921d92fbe1ac9299b4c1f67f124a9d12bbac4f25a5855012ea2451fde6fca15b",
+   "bytes": 2096,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00009159_001.png"
+  },
+  "wafer_00010049_007.png": {
+   "sha256": "109cc092bac714e27880007b144a36b2859601fc58c42f5e9b7d281d5b942fa8",
+   "bytes": 2209,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010049_007.png"
+  },
+  "wafer_00010049_013.png": {
+   "sha256": "c0f95cb54a9bf365ae1dc0bfc7fa109bb8ebf3ce36917a519c75bce9478a5b1e",
+   "bytes": 1827,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010049_013.png"
+  },
+  "wafer_00010225_024.png": {
+   "sha256": "4f5c67d94edd673834a25dbdf3557df7a8cbf5eda61414df367755bee956290f",
+   "bytes": 1819,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010225_024.png"
+  },
+  "wafer_00010236_008.png": {
+   "sha256": "a6f92aa1b83d3ec469a04812a83d44d82b83d1d8c560bd8a2f95b382acbef1c8",
+   "bytes": 1762,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010236_008.png"
+  },
+  "wafer_00010329_021.png": {
+   "sha256": "d9f53f5417f0b1ee94df4fa2b5151bb0fccc14f3b9c12ce3672c41320fd166ca",
+   "bytes": 1734,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010329_021.png"
+  },
+  "wafer_00010696_012.png": {
+   "sha256": "500904ce06baeb468969dbff8eac97f3acd5796416d5f8e477d19926de66604d",
+   "bytes": 1560,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010696_012.png"
+  },
+  "wafer_00010942_004.png": {
+   "sha256": "16f6366308e3068769c37ee95ad14257d917db97ec1e7b4017e77eb0aeb77a62",
+   "bytes": 1909,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010942_004.png"
+  },
+  "wafer_00010942_016.png": {
+   "sha256": "ce2f85f8d7d15791adff717afebf512456ec99c3bdbe1c5eedd40209e9ecbb5a",
+   "bytes": 1855,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010942_016.png"
+  },
+  "wafer_00010942_019.png": {
+   "sha256": "e55dc308145b09985603d6ddb72a8e83a338a7bf4bdc54e7d926b18d2e007194",
+   "bytes": 1876,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010942_019.png"
+  },
+  "wafer_00010942_022.png": {
+   "sha256": "e69a9965e2247692a9664a5a41f1b7cd5d717c1372e64cf018c73bc234b2bfe9",
+   "bytes": 1856,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010942_022.png"
+  },
+  "wafer_00010954_009.png": {
+   "sha256": "185915f771fe4061cb8d85ccdb62de5c90b983a09dd9719f0b8ea7522ae465f1",
+   "bytes": 1929,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010954_009.png"
+  },
+  "wafer_00010954_022.png": {
+   "sha256": "3a485b50487f0c868ad1f0ffa4cf92983f646426c2a8f8a7c97e65cab8053e6a",
+   "bytes": 1908,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00010954_022.png"
+  },
+  "wafer_00011171_003.png": {
+   "sha256": "20c4718d11efaa95441028ca9ceb5174cb53811e5ad8fcb5a8b8fcfffe4ee5c0",
+   "bytes": 2425,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011171_003.png"
+  },
+  "wafer_00011171_005.png": {
+   "sha256": "942c683ca08e85cf58e958fb5da8a3a257e1980b2e873ffb951dd1618af13d48",
+   "bytes": 2355,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011171_005.png"
+  },
+  "wafer_00011171_013.png": {
+   "sha256": "ad29a0af302e65844578031711c0d6365543c5326906d7f0c9271a7447b6d11b",
+   "bytes": 2404,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011171_013.png"
+  },
+  "wafer_00011171_024.png": {
+   "sha256": "df2cf02bb01fe4121ccbc1a8d04ea2d9bbe12ecb022f852f980b8ec5d0fb4bda",
+   "bytes": 2289,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011171_024.png"
+  },
+  "wafer_00011400_013.png": {
+   "sha256": "3695b5efef039d3516e99a3f274b3e24516d354c798466151683971f747ec5f4",
+   "bytes": 1903,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011400_013.png"
+  },
+  "wafer_00011537_008.png": {
+   "sha256": "ce64bfaf9bdb4b0fe2b6da4d2197d5d370c46526fde321563a022df378f975e8",
+   "bytes": 2170,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00011537_008.png"
+  },
+  "wafer_00012140_014.png": {
+   "sha256": "5194ec153a6a27099e7a4005e041bd3cd75d2959ec5dd3ddb79734947407a84c",
+   "bytes": 1802,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012140_014.png"
+  },
+  "wafer_00012141_014.png": {
+   "sha256": "d3dfbe405e1e3fe523f6638cf6f03c2846fccb02b05d11ead6ba5662abdc16eb",
+   "bytes": 1827,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012141_014.png"
+  },
+  "wafer_00012310_005.png": {
+   "sha256": "0b3d58508bea573d5b934144072e7aede4c499613bf4328a503158abf6dbebe6",
+   "bytes": 2099,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012310_005.png"
+  },
+  "wafer_00012744_008.png": {
+   "sha256": "1fafe23d47d4d324854b10652fbc820f2f103b741287b57a0ea92eac583bbba0",
+   "bytes": 2342,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012744_008.png"
+  },
+  "wafer_00012744_015.png": {
+   "sha256": "def6a5ed82eddf8fbb88172731193c7d18a07af4e82cc7cf7e9255d7f667939a",
+   "bytes": 2253,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012744_015.png"
+  },
+  "wafer_00012751_008.png": {
+   "sha256": "10fa593f7c86180233d9f113097012ca9da92883c62daf83c16750ce26edb3bc",
+   "bytes": 2342,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012751_008.png"
+  },
+  "wafer_00012756_001.png": {
+   "sha256": "1644806a89daef178dbe30d3e8a6ad8f6f1e765311e7cccf461ac219af2d5b11",
+   "bytes": 2209,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012756_001.png"
+  },
+  "wafer_00012756_013.png": {
+   "sha256": "fc50cf0c8cbc295f63fcb9183d69f3af366753c256f3f657a77654dd62777c1a",
+   "bytes": 2192,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012756_013.png"
+  },
+  "wafer_00012756_024.png": {
+   "sha256": "4b49378727fc43455a80feec547ce605ff19c92103873de5c8efbd313dd7a4e1",
+   "bytes": 2295,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012756_024.png"
+  },
+  "wafer_00012759_005.png": {
+   "sha256": "ab662658104d6ddbb5ce3eedd3435c1685f94c2f32fd21098d818aa1e8fd0f1c",
+   "bytes": 2385,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012759_005.png"
+  },
+  "wafer_00012759_006.png": {
+   "sha256": "70a70ebf350d580bc75c9c328afba4f9237d20529e0b1fb670f7943fef996364",
+   "bytes": 2357,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012759_006.png"
+  },
+  "wafer_00012759_018.png": {
+   "sha256": "8011427c52c3b8c6b7df029c59fac42af943622e34b4ae07e0da0b53fe60a97f",
+   "bytes": 2402,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012759_018.png"
+  },
+  "wafer_00012767_010.png": {
+   "sha256": "e33bf62d4952016e9dc8894c61bfb69696fb1b3746b41459dc0505848f485128",
+   "bytes": 2300,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012767_010.png"
+  },
+  "wafer_00012767_012.png": {
+   "sha256": "2708ee5dcc08a85ab0c12f5965643c0d63a7bcc0cfd6327dd75c6f21f6118533",
+   "bytes": 2277,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012767_012.png"
+  },
+  "wafer_00012886_008.png": {
+   "sha256": "56d9e85e29a1d9ce02da26924ba80e5e72deba8d28e129bc20e93c5222e98415",
+   "bytes": 1708,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012886_008.png"
+  },
+  "wafer_00012908_021.png": {
+   "sha256": "26ed426f13c6116ce4bc96d92be62adb9f4aa5f4781ea7e335f767f9789a66b9",
+   "bytes": 1813,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012908_021.png"
+  },
+  "wafer_00012950_008.png": {
+   "sha256": "9b2414c1048f2bb51a2fba68cf33040b7ca3a6e5a2a6722b408d27ce011c4abd",
+   "bytes": 2033,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012950_008.png"
+  },
+  "wafer_00012970_001.png": {
+   "sha256": "3c3124be2952e345300b3e6cd8e421e864dad26ecfb34bd1d17decc6257279d1",
+   "bytes": 1895,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00012970_001.png"
+  },
+  "wafer_00013505_008.png": {
+   "sha256": "8e0b05c3c995f9a42f116bfdb0cda801e7eeab5732095a3b560fde3da2d18761",
+   "bytes": 1769,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013505_008.png"
+  },
+  "wafer_00013714_013.png": {
+   "sha256": "2c302590c46c010c55ec31b7ab2cf4c74651b9562ce7675640c7b81b27ca683a",
+   "bytes": 1943,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013714_013.png"
+  },
+  "wafer_00013714_024.png": {
+   "sha256": "81edcb104e190b99017b3e3eb526bb1c56be1e243e6861dc8e9585468215ffd6",
+   "bytes": 1914,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013714_024.png"
+  },
+  "wafer_00013751_005.png": {
+   "sha256": "fb1bd4d0fc77728f69ad34bc5892781a21336ca1530e32b1a0f4a7e9d39f46da",
+   "bytes": 2125,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013751_005.png"
+  },
+  "wafer_00013752_012.png": {
+   "sha256": "775dea53832c1e87f969b5fe22722d9bcfd8c5039b13dfa28c2c80ed11fc4eff",
+   "bytes": 2088,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013752_012.png"
+  },
+  "wafer_00013900_022.png": {
+   "sha256": "441fbc9dd1d6c5e2050f94237443795672e6ab28a8776b08bab5039fd9d4f632",
+   "bytes": 1734,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00013900_022.png"
+  },
+  "wafer_00014096_024.png": {
+   "sha256": "86abe74f31803181f0c031dc4897ba4368f1a4f0f06b5f34b256424636852e38",
+   "bytes": 1632,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014096_024.png"
+  },
+  "wafer_00014310_009.png": {
+   "sha256": "c5c586f078660d3d39cc08382d6fa543014f7a25714bb7f2f66ec8c50475ce6a",
+   "bytes": 1833,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014310_009.png"
+  },
+  "wafer_00014375_004.png": {
+   "sha256": "8398dfc817984d23e52abd456b6454da0381265aa60115c1a7426fc6015bc381",
+   "bytes": 2437,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014375_004.png"
+  },
+  "wafer_00014376_005.png": {
+   "sha256": "04e39a99f0be026619d50cb64c988328e81a532db766a07ac7dec981a3b8c53d",
+   "bytes": 2468,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014376_005.png"
+  },
+  "wafer_00014402_017.png": {
+   "sha256": "312a8b856f922854572a75d9a44420c6753ca57268e4b024ccb638dc9e9241be",
+   "bytes": 2035,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014402_017.png"
+  },
+  "wafer_00014826_009.png": {
+   "sha256": "041813f18ac29884d892f1709b2ae66f4e5141672b57cf7bb13d009100a084c3",
+   "bytes": 2083,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00014826_009.png"
+  },
+  "wafer_00015069_012.png": {
+   "sha256": "043580ec19461b8d51e628c87fcd9e2aad91cc4df5a6f9811b6994847f1840ad",
+   "bytes": 1969,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_012.png"
+  },
+  "wafer_00015069_014.png": {
+   "sha256": "1e79b54f53b3e4551e3576f79d3199cdad0f779cc9d43431885b58bec16da2d5",
+   "bytes": 2000,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_014.png"
+  },
+  "wafer_00015069_016.png": {
+   "sha256": "adb64c1ec21140b70b13b6b299bb53ddf926b84514ea3505a0abce428b5cb18a",
+   "bytes": 1971,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_016.png"
+  },
+  "wafer_00015069_017.png": {
+   "sha256": "1d69faab6e6a64d41578c15517a5dccfc59c564f6d487eb366883324ce76b101",
+   "bytes": 1888,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_017.png"
+  },
+  "wafer_00015069_018.png": {
+   "sha256": "eecd7359b13a878c9f0ed1984ab40fba2c60d7c6329b798a53316014e3331319",
+   "bytes": 2051,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_018.png"
+  },
+  "wafer_00015069_020.png": {
+   "sha256": "6f6c90638c7efd565fbfe9082767f70aefd6f98675d3eb97ed97fa0a39418bd1",
+   "bytes": 2205,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_020.png"
+  },
+  "wafer_00015069_023.png": {
+   "sha256": "5f227b685947896f1d372922e06c5fb1bf7a5bc38b049304a88004a45c6a0a48",
+   "bytes": 1731,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015069_023.png"
+  },
+  "wafer_00015092_006.png": {
+   "sha256": "4b3e11972f89fb242c05a284ba0baf65d4253e63b142b76b297fcc5c73bd95b8",
+   "bytes": 2431,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015092_006.png"
+  },
+  "wafer_00015095_006.png": {
+   "sha256": "cde27e628108e93b2d6e2313f83c9743688e1001154bb91deb127d4073aef008",
+   "bytes": 1762,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015095_006.png"
+  },
+  "wafer_00015120_007.png": {
+   "sha256": "0242d2e4587ae3c44ea8d6e1f7139950f658d9e521699af62706a201456522d3",
+   "bytes": 2651,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015120_007.png"
+  },
+  "wafer_00015129_001.png": {
+   "sha256": "77d966dcb17c2dd0a616d1f3ad5d3b946773dfef65b12c50b638cb19cfd57b4b",
+   "bytes": 4413,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015129_001.png"
+  },
+  "wafer_00015166_006.png": {
+   "sha256": "0e3eba6d1a6a41ccab3dda79c31c6d09823b8a0f9069d5c41c39f6f4af39746e",
+   "bytes": 3025,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015166_006.png"
+  },
+  "wafer_00015202_004.png": {
+   "sha256": "d60f5266993410ddfb9002b7c2c74a926d27fcef4ec23da887e62ee1ea42359e",
+   "bytes": 2845,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015202_004.png"
+  },
+  "wafer_00015350_021.png": {
+   "sha256": "89925ce69df9b69e888896431f5e314003963d98618c2ae4630ec82082442bef",
+   "bytes": 1729,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015350_021.png"
+  },
+  "wafer_00015373_023.png": {
+   "sha256": "429eee698caa0841a9aa1f096b51a395ea4d9f8c6f6ed03a87688211f385c55a",
+   "bytes": 1854,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015373_023.png"
+  },
+  "wafer_00015456_003.png": {
+   "sha256": "0be53306497df806c70033c4c5d272552414230d25bae61d58b75dd29fe76cf1",
+   "bytes": 2107,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015456_003.png"
+  },
+  "wafer_00015534_005.png": {
+   "sha256": "dc2956cb391f494ce63d4f3e0b2984a4755aad667a2e34452e6a63d43d4fa2fc",
+   "bytes": 1868,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015534_005.png"
+  },
+  "wafer_00015534_017.png": {
+   "sha256": "53b77ef865b55f54b57b96988ad120cc97d95e2da53bbfdae166827c9eb4a18c",
+   "bytes": 1816,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015534_017.png"
+  },
+  "wafer_00015558_003.png": {
+   "sha256": "a80fc1900ee77781c5c21ff95cc8a3a9ebc06ec5bdf2ac4e4814eb2c828a23df",
+   "bytes": 2000,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015558_003.png"
+  },
+  "wafer_00015575_012.png": {
+   "sha256": "8dd12e1213995a727d001e73d966227adc57ca1ef298861fe9f82daf6fb837b8",
+   "bytes": 2037,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015575_012.png"
+  },
+  "wafer_00015632_012.png": {
+   "sha256": "bc182bafd89987b06e9742938c44f7c5d9352ad4d4afb3de3198833021f762ed",
+   "bytes": 2021,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015632_012.png"
+  },
+  "wafer_00015632_025.png": {
+   "sha256": "437ba69108fa307e070d85e5dff189cf7a351f8da6a2dbe089b1d539f07190c2",
+   "bytes": 1903,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015632_025.png"
+  },
+  "wafer_00015636_005.png": {
+   "sha256": "f0aff13235f83d3b1061e0855d620c47ea4908da357d79e44c0deabafe6961ba",
+   "bytes": 2387,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015636_005.png"
+  },
+  "wafer_00015661_018.png": {
+   "sha256": "3d915f0bfc3efe413b1d7d77135ed6c928f0e0d5bdc815775979a7cf13a5aa65",
+   "bytes": 1724,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015661_018.png"
+  },
+  "wafer_00015670_012.png": {
+   "sha256": "59500080bf1f428eaaddc61967b8c40827b7a6275c083366df20dc0280e7bdee",
+   "bytes": 1823,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015670_012.png"
+  },
+  "wafer_00015672_001.png": {
+   "sha256": "c904e7d8eb526373265d3175fe869d9cd2993a03d29da64295e315fd70b1013f",
+   "bytes": 2080,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015672_001.png"
+  },
+  "wafer_00015704_002.png": {
+   "sha256": "ec64c4fd6d1df74cefc9d0f701401c07578c3ee9d8862061606182d520496301",
+   "bytes": 2900,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015704_002.png"
+  },
+  "wafer_00015753_004.png": {
+   "sha256": "b8657356b4ef3e94a1d1f6e3a4d10d1db59674afee4c78f1e3c80a01309607a8",
+   "bytes": 2302,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015753_004.png"
+  },
+  "wafer_00015753_009.png": {
+   "sha256": "145b02512d1201c896ffd8d0d2ed7a2c5c5d461498bf75488ed41d3a0825fef0",
+   "bytes": 2296,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015753_009.png"
+  },
+  "wafer_00015796_005.png": {
+   "sha256": "6bd97bd3918be9eb168032ef424c994047c84872f0792a15d2d278874bb0fc4f",
+   "bytes": 1939,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015796_005.png"
+  },
+  "wafer_00015796_009.png": {
+   "sha256": "ee7dd3bd1bb7f094f08c97bd4ddb9654e519b9c4cb35a2c64ce390b0ae7b92fa",
+   "bytes": 2039,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015796_009.png"
+  },
+  "wafer_00015801_008.png": {
+   "sha256": "2a49e8228a12820c5e293ab35fbd9bc7e518542739cd5acf5399c73b01231cad",
+   "bytes": 2166,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015801_008.png"
+  },
+  "wafer_00015851_009.png": {
+   "sha256": "c39d7a1ff1ac21699dab2e1bb5d2a1020192c4d66cf061c81186276def1392e1",
+   "bytes": 1814,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015851_009.png"
+  },
+  "wafer_00015851_020.png": {
+   "sha256": "779a96886ad1247a9faea0410484ac7c1dc4c2d727b4454b36ba90c42c37882a",
+   "bytes": 2024,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015851_020.png"
+  },
+  "wafer_00015865_016.png": {
+   "sha256": "baef2e3146aeda601640c732006de3ff724279031d25c6f0fdd517dcff0db928",
+   "bytes": 1829,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015865_016.png"
+  },
+  "wafer_00015906_005.png": {
+   "sha256": "253ffe4c0cd8a8d7297b05f12d6a9062a8f659c1e90c3a42c7fece5ff8f8fa01",
+   "bytes": 1938,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015906_005.png"
+  },
+  "wafer_00015906_018.png": {
+   "sha256": "15b734acd64ebc8f40d488aa70fb2253c591bb4998165a66416a0cf8b6dcaac0",
+   "bytes": 2108,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00015906_018.png"
+  },
+  "wafer_00016385_002.png": {
+   "sha256": "fcf262ffd1ae6459b985a51746baf81352205a7c2056994cfd28cbadea909486",
+   "bytes": 4197,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016385_002.png"
+  },
+  "wafer_00016385_020.png": {
+   "sha256": "c3c346140fa3836c2b7e43f3f2016a0e9e260a8b322fadf8b635d608d18ffebd",
+   "bytes": 4313,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016385_020.png"
+  },
+  "wafer_00016416_005.png": {
+   "sha256": "2229eefa50633000ffb547c9ac4077eb8f0dc6a836dbd80b9b25ac22a0566acc",
+   "bytes": 4627,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016416_005.png"
+  },
+  "wafer_00016490_001.png": {
+   "sha256": "1af31a6ab13c8dfdb5498787900d66379d2ecf9b85cda7d01c9df78c1109c338",
+   "bytes": 1971,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016490_001.png"
+  },
+  "wafer_00016541_008.png": {
+   "sha256": "afb7f6450b530c78318d68307086feef202ea280f03aa9ab044fe11a22f9e1be",
+   "bytes": 2002,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016541_008.png"
+  },
+  "wafer_00016541_015.png": {
+   "sha256": "94523bf906cab3264a056a3e17336f62d473ea52f9fc9ff32d14c5ce2667476e",
+   "bytes": 2865,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016541_015.png"
+  },
+  "wafer_00016552_004.png": {
+   "sha256": "ecd3a251b5d7a964c103ae31b25f069a1bd544ac07d4fcd8028bb85490916e2e",
+   "bytes": 1954,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016552_004.png"
+  },
+  "wafer_00016552_005.png": {
+   "sha256": "89280430583e0385eb28d929f2a511d9de9fff4415fc22f071868d683cbac107",
+   "bytes": 1981,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016552_005.png"
+  },
+  "wafer_00016601_005.png": {
+   "sha256": "6c787b465591f16a30c4c1c93451cc941cb3656c2479601e72f3b949f7857fa2",
+   "bytes": 2096,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016601_005.png"
+  },
+  "wafer_00016601_007.png": {
+   "sha256": "b5d2c3c93b94a4fd80da5aa6be45a8d64ba8a5af39f308ceb8fbbd1a6bf01371",
+   "bytes": 2049,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016601_007.png"
+  },
+  "wafer_00016604_010.png": {
+   "sha256": "65c0cb40fa021756bc026ac6794763cf383f81b5360dc45ae7a604d646b0af99",
+   "bytes": 1978,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016604_010.png"
+  },
+  "wafer_00016605_007.png": {
+   "sha256": "7c16a237c65273d8d494281c3e3320c2d5871a843a61ab876d8f7d1ec8479383",
+   "bytes": 1918,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016605_007.png"
+  },
+  "wafer_00016605_013.png": {
+   "sha256": "6bae7a968a537c8f63a73db5007fe0c4717f3d028a1912eda534e7528ed81a17",
+   "bytes": 2025,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016605_013.png"
+  },
+  "wafer_00016605_014.png": {
+   "sha256": "7e9a1c2acf5dd19b990b2b3687768401292eb4a83dcf54adec2acdd8d7af3f26",
+   "bytes": 2026,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016605_014.png"
+  },
+  "wafer_00016635_007.png": {
+   "sha256": "2a626085465bd80fbef0eac9fd4229c059969705ae1fbf3a9134779c579952a3",
+   "bytes": 2131,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016635_007.png"
+  },
+  "wafer_00016675_005.png": {
+   "sha256": "41049a2146a235472b187668b085600eef94a072bfc401e7311096c23e3cbd7d",
+   "bytes": 2121,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016675_005.png"
+  },
+  "wafer_00016703_014.png": {
+   "sha256": "60891d2a5f11b98713a7edbe5a33a58b33961bd9300439050facea949c344e61",
+   "bytes": 2671,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016703_014.png"
+  },
+  "wafer_00016703_022.png": {
+   "sha256": "79d3a147ea4df92ba76568b57ffe9cd9d04042214cf85be92022e9a7d8a89e49",
+   "bytes": 2470,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016703_022.png"
+  },
+  "wafer_00016703_023.png": {
+   "sha256": "44febbb5744f2c81da48aa35ddb2f6ce4e583a8215380b0f11ae685acfee3741",
+   "bytes": 2396,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016703_023.png"
+  },
+  "wafer_00016703_024.png": {
+   "sha256": "bae6668a17ce4f14730b59c0f5f7f6471e27ed14471603507983f0cf020abfa4",
+   "bytes": 2508,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016703_024.png"
+  },
+  "wafer_00016703_025.png": {
+   "sha256": "6ed6120a7796f6e922a02a5b2c68bde58b6c044c6d9eb839198a1090039c090b",
+   "bytes": 2487,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016703_025.png"
+  },
+  "wafer_00016827_008.png": {
+   "sha256": "5e72a64f2707d8bbdefd624ec13617481078f9ba0017c2f93c4d9d125c92d8b1",
+   "bytes": 1822,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016827_008.png"
+  },
+  "wafer_00016894_009.png": {
+   "sha256": "718e378616c2e86c6d43ac6c97bf3f2b4677b22d07e3cda74eacaf1ee4f4b93c",
+   "bytes": 1883,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016894_009.png"
+  },
+  "wafer_00016894_011.png": {
+   "sha256": "169dd3fcef4dc2b517bd3d57e87ab6cf3a7c43ed84bebe1171c1317882e58e89",
+   "bytes": 2086,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00016894_011.png"
+  },
+  "wafer_00017125_003.png": {
+   "sha256": "307c7c3d7994435dbfeeb01ca50d7954ebed2e4b2d739f336f71710cc90838b2",
+   "bytes": 2031,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017125_003.png"
+  },
+  "wafer_00017125_005.png": {
+   "sha256": "79e65e8036b2045bc276a40b99d5b8134e297c2ea04517608bf5fcae2703a2c8",
+   "bytes": 1932,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017125_005.png"
+  },
+  "wafer_00017125_009.png": {
+   "sha256": "b24402090ff87d7353a42bea6df01ce7c5c63dcf7e12f4abc86add3fc69155e7",
+   "bytes": 2020,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017125_009.png"
+  },
+  "wafer_00017125_014.png": {
+   "sha256": "4fc68f6445968086e6fcbb27558902bc01a4f7c011c7182ebb56741068c2dd7d",
+   "bytes": 1943,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017125_014.png"
+  },
+  "wafer_00017125_015.png": {
+   "sha256": "5256b179b6c171e90815a84d3a1fb2a94e36d6ac612326fdcaf40bc781de81e3",
+   "bytes": 1948,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017125_015.png"
+  },
+  "wafer_00017139_020.png": {
+   "sha256": "5f581d51ae767e3935f171bf9902a13e6968c717b51709b094fbcc5b462fe735",
+   "bytes": 1926,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017139_020.png"
+  },
+  "wafer_00017139_021.png": {
+   "sha256": "2fed2b3cc9ab421ceea7fa2b2e01a4b8c557d5d753a1c576c1b648e3a78791a4",
+   "bytes": 1945,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017139_021.png"
+  },
+  "wafer_00017143_005.png": {
+   "sha256": "73ad71474d633e6178a429258df9aef57a5b9180a776746f0e3ec23f88ccf634",
+   "bytes": 2079,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_005.png"
+  },
+  "wafer_00017143_007.png": {
+   "sha256": "7af109123aa1bce9b5597c5fa3bfe54b6a329298a2c21dfa84c1afaf0722fb46",
+   "bytes": 2024,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_007.png"
+  },
+  "wafer_00017143_008.png": {
+   "sha256": "08023833d79d8ad60483458f0da3b7b96b98624fb41941c111dc0df04b1b3579",
+   "bytes": 1970,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_008.png"
+  },
+  "wafer_00017143_010.png": {
+   "sha256": "6bcec0b429944f10af624f4b29c69ad30d05e6a665665c2930796700b625a984",
+   "bytes": 2027,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_010.png"
+  },
+  "wafer_00017143_011.png": {
+   "sha256": "a14cd20842835e5e97749093434e2ecd71e444668eed8c209dd5b74a0a24bb56",
+   "bytes": 1933,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_011.png"
+  },
+  "wafer_00017143_012.png": {
+   "sha256": "8407d5a39c2dd82be9779f71b820394a55a77ede6a1fc6f18d02cc5904c41551",
+   "bytes": 2066,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_012.png"
+  },
+  "wafer_00017143_014.png": {
+   "sha256": "9f9ed9441d23a4b3aadfc577f095511a2c483520c246caee6d9a5a2d047339c8",
+   "bytes": 1970,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_014.png"
+  },
+  "wafer_00017143_016.png": {
+   "sha256": "875d8a10b484b16d30d7e464ba28b39f51012cdaad780980263d508569420891",
+   "bytes": 1922,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_016.png"
+  },
+  "wafer_00017143_018.png": {
+   "sha256": "cf4e5d224b6e837fe6e286951e73c7cb38f0cb5db667876d3caa50b27d0f8e14",
+   "bytes": 2048,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_018.png"
+  },
+  "wafer_00017143_020.png": {
+   "sha256": "d1d74d645f47a9d6dd13dba35d9fc30742bdac6d34c0338f28261f73cc2ba14b",
+   "bytes": 2016,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_020.png"
+  },
+  "wafer_00017143_025.png": {
+   "sha256": "ff85e6d346b24a6ece46da5f58a6dde674c10c2534810ad00cb1b32ed69e603d",
+   "bytes": 2075,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017143_025.png"
+  },
+  "wafer_00017155_004.png": {
+   "sha256": "316c5e7d77efcfef3710f9fb306d5131df5996f64434846524fc821595d212a3",
+   "bytes": 1954,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_004.png"
+  },
+  "wafer_00017155_005.png": {
+   "sha256": "3ae3ee03e5451021c0d80b90a40b65bab3c4af9190345ac5a3995228fc88ed10",
+   "bytes": 1925,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_005.png"
+  },
+  "wafer_00017155_006.png": {
+   "sha256": "ddebed6f00a4dfecd8571ce7f98979f089772e439df7f619cb827c944df7845c",
+   "bytes": 2038,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_006.png"
+  },
+  "wafer_00017155_008.png": {
+   "sha256": "561bbe6ffeef6163c0299a1e41e553575acaeaeafa9d917833e462199a01f71a",
+   "bytes": 2032,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_008.png"
+  },
+  "wafer_00017155_010.png": {
+   "sha256": "94e6ad1dd492458cc10ce546b65c2df64c02d25dfec3a1a30405074177f52da5",
+   "bytes": 1923,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_010.png"
+  },
+  "wafer_00017155_011.png": {
+   "sha256": "b5033aabf8aea88fd18b86eef48ba622b9273162a7ee7baf623c27e33f450bb7",
+   "bytes": 2089,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_011.png"
+  },
+  "wafer_00017155_012.png": {
+   "sha256": "fee4cb1fa3532a0e3187f4a9281447dce534d832576283e48a89e602bcc8055f",
+   "bytes": 2025,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_012.png"
+  },
+  "wafer_00017155_016.png": {
+   "sha256": "ed7c8a97f16f6c3c315ea403b2f50f0f97a96eaaa10d731936c19cfdcfb60fe2",
+   "bytes": 2122,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_016.png"
+  },
+  "wafer_00017155_017.png": {
+   "sha256": "b086b8300b4205a1eed5c800cb51fcfcde6cc3dfed6c0bac64f37e84207253d2",
+   "bytes": 1962,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_017.png"
+  },
+  "wafer_00017155_019.png": {
+   "sha256": "a0a3993820fe0c6921d04e928d41b0c82425ed0aec4f78335fc032cc07729fe0",
+   "bytes": 1970,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_019.png"
+  },
+  "wafer_00017155_022.png": {
+   "sha256": "d6fdda4a3bf3d4ac82c16e96427820cab07a3b5aa77698b56086eb62bd4f9897",
+   "bytes": 1997,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_022.png"
+  },
+  "wafer_00017155_023.png": {
+   "sha256": "cb74012449f0b4af23c5bf60caecdd39d9e9b9e93695fbd0b9c283a23a8343d7",
+   "bytes": 1995,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_023.png"
+  },
+  "wafer_00017155_024.png": {
+   "sha256": "e3206d30067df9d846279de00be0f5b8dd1e7113b3e0674641d53294f264a3f0",
+   "bytes": 2031,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_024.png"
+  },
+  "wafer_00017155_025.png": {
+   "sha256": "5c10bc15b7a2832768d91c4681278fa0ae84e6602e5094b1f07794061edf3520",
+   "bytes": 2007,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017155_025.png"
+  },
+  "wafer_00017159_016.png": {
+   "sha256": "14ae678d13cc56d1bfa98793eafc46cdabbe43948381631b82b901623745a4a3",
+   "bytes": 1986,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017159_016.png"
+  },
+  "wafer_00017159_020.png": {
+   "sha256": "7e9f219f784160c6b3629211ab526355555d1d532ab2e85efe183d7b5b086712",
+   "bytes": 1935,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017159_020.png"
+  },
+  "wafer_00017159_022.png": {
+   "sha256": "2dee70e411c92646476a3dc7edcd5578bd3f31fc77166fe3dbe930a3b95df515",
+   "bytes": 1950,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017159_022.png"
+  },
+  "wafer_00017159_024.png": {
+   "sha256": "a310749afc28588502f3cd9b9b42bbce3e21938ed6f998e30f8db6dae0d23e00",
+   "bytes": 2024,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017159_024.png"
+  },
+  "wafer_00017160_005.png": {
+   "sha256": "10ebec3ec817571acf6ff1ba47995281bb2c10e094f64fa68106ab14e3b4b99a",
+   "bytes": 1692,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017160_005.png"
+  },
+  "wafer_00017164_005.png": {
+   "sha256": "b8ccb6f48ce4ade28287ae0d4a0c4be8eecd657964d5a909b1cdc11a75027971",
+   "bytes": 1857,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017164_005.png"
+  },
+  "wafer_00017187_024.png": {
+   "sha256": "e4aeaef901a0ff18d1815d9c57ba33a6f4f47c8325ef6d373e8b6c9d0e53f75c",
+   "bytes": 1809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017187_024.png"
+  },
+  "wafer_00017262_007.png": {
+   "sha256": "a77beea8c7ed3f45f640664eed416064eed2c45d80185d2b2013f35bc66c9735",
+   "bytes": 2807,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017262_007.png"
+  },
+  "wafer_00017285_009.png": {
+   "sha256": "faf753dd70ebe31242381a7433f23e24110dcf01fc22149d81016c85ca1505a5",
+   "bytes": 2811,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017285_009.png"
+  },
+  "wafer_00017285_010.png": {
+   "sha256": "c95eaf99d15efbfe2400f0e9a1d1ac44685a80a648cadd7a5e5a8d05c95ae86e",
+   "bytes": 2936,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017285_010.png"
+  },
+  "wafer_00017486_025.png": {
+   "sha256": "d636ec9acf8548430bc409d33e388ce6f378b85414c089334ad62c4c2a33b90a",
+   "bytes": 1745,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017486_025.png"
+  },
+  "wafer_00017530_002.png": {
+   "sha256": "64736ac25b2e59ed876583418a641ff8687be87d81badff604ed686c23bf7f73",
+   "bytes": 2292,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017530_002.png"
+  },
+  "wafer_00017625_016.png": {
+   "sha256": "8cc2944000f26cc49fcb2a0cc121e3a288166c609b2e373896442a022b2fb106",
+   "bytes": 2105,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017625_016.png"
+  },
+  "wafer_00017727_001.png": {
+   "sha256": "85bcdedc782064e8aafcfc97d50f78bc759fcaa972f3ab6338107fcae8da0c29",
+   "bytes": 1834,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017727_001.png"
+  },
+  "wafer_00017743_012.png": {
+   "sha256": "36af8e2618ad590b17b9798700923c5482340cd9bbbf5784f0bd4065a5e42934",
+   "bytes": 1907,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017743_012.png"
+  },
+  "wafer_00017957_012.png": {
+   "sha256": "b6d4229f9e4123f0b30613489a6b73b1dbe0525ea843ee27abb048dd8db5e905",
+   "bytes": 2290,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00017957_012.png"
+  },
+  "wafer_00018017_001.png": {
+   "sha256": "b73ba3df63d11ebbdfe8727e05895645ac5b654a854afe2254ca8cd732d14103",
+   "bytes": 2062,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018017_001.png"
+  },
+  "wafer_00018017_002.png": {
+   "sha256": "1d94ea810d9b3511b652377b79ce5b2f65329c8d9f05d6ba8eb92a00629f0900",
+   "bytes": 2153,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018017_002.png"
+  },
+  "wafer_00018017_006.png": {
+   "sha256": "28a0e47462fe8e69cd0ab869c1c5c48c55a11e4e890c750fcd5a052195079b4a",
+   "bytes": 2037,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018017_006.png"
+  },
+  "wafer_00018017_019.png": {
+   "sha256": "5f7019400ff83e87abb39dce3776fd9dc13241f825229eedf05555d8cdba522e",
+   "bytes": 2062,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018017_019.png"
+  },
+  "wafer_00018072_011.png": {
+   "sha256": "7a05bdafe8f8243bc7a20f9d91f2a0827a96c99e647c100e8dd7005755f66177",
+   "bytes": 1835,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018072_011.png"
+  },
+  "wafer_00018082_020.png": {
+   "sha256": "c5cc42cbf38c77960e2103b95d23eeb3cdbab2218849a229ec53eefc004811ae",
+   "bytes": 1649,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018082_020.png"
+  },
+  "wafer_00018086_012.png": {
+   "sha256": "a99985d4edd3fcfce13d0ab00e04c13d3b666a803d9f93be75e48411f6129666",
+   "bytes": 1792,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018086_012.png"
+  },
+  "wafer_00018231_019.png": {
+   "sha256": "ffb8d767c658e91f291ebaa2151e02044ba8f23b375076bc41b3adc69c825e8f",
+   "bytes": 2562,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018231_019.png"
+  },
+  "wafer_00018303_008.png": {
+   "sha256": "6483d720551e22bfe089d7f6772bdf3ecc7773e1d3a7f865e4664b9b1f3529d5",
+   "bytes": 1950,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018303_008.png"
+  },
+  "wafer_00018326_005.png": {
+   "sha256": "2bd0fd548a770ef3d220f6c11a34d0eddc60fb3f763067617bffd259b2820f9b",
+   "bytes": 2022,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018326_005.png"
+  },
+  "wafer_00018378_001.png": {
+   "sha256": "183f83c1bc8835a1448f4589245785f3201f6aef45781da4e3a5c401fe32d49c",
+   "bytes": 2015,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018378_001.png"
+  },
+  "wafer_00018378_014.png": {
+   "sha256": "24dda7c012ee2c2ab4d0da679117ce45ba48098b541a84178d6735277968e608",
+   "bytes": 2007,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018378_014.png"
+  },
+  "wafer_00018499_001.png": {
+   "sha256": "4cd77b9dfe31aa1a737f1e5a3238e4e02706d6745862635521d4286c7584f3c3",
+   "bytes": 1993,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018499_001.png"
+  },
+  "wafer_00018504_018.png": {
+   "sha256": "e7372d9731d1fb51fa4d90391b19fc994ad7b9135df8587bee301982468e2cbd",
+   "bytes": 2044,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018504_018.png"
+  },
+  "wafer_00018504_019.png": {
+   "sha256": "9b067e66fa2b01d1acbb4550c9d0f2c845e8dafe9f0db4a6382e32e6ff9c0fb4",
+   "bytes": 2145,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018504_019.png"
+  },
+  "wafer_00018527_025.png": {
+   "sha256": "f1e16eb4a936ab8aabbc5eb65b08d4cd8c38dc496a4142d75c3491e168084dfe",
+   "bytes": 2173,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018527_025.png"
+  },
+  "wafer_00018532_004.png": {
+   "sha256": "0e2e04f3cff2dfed271e324c939df5aedea3fa7ac0210a96d0ad50ae47100f1f",
+   "bytes": 2211,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018532_004.png"
+  },
+  "wafer_00018650_024.png": {
+   "sha256": "684c181a27c52bc366974723d1b94848da045e7ce4410ee2d6ed3ab0e3c36a04",
+   "bytes": 1868,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018650_024.png"
+  },
+  "wafer_00018726_009.png": {
+   "sha256": "ac07b6a33d8f320661568c9b2858504b7d0e4ee4af5b02fbc8965b92a779e8d7",
+   "bytes": 1991,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018726_009.png"
+  },
+  "wafer_00018789_018.png": {
+   "sha256": "8adc10c16e49fa4a690f13257d96f3ef7c039c311ef235ab94a229d18197f98d",
+   "bytes": 1765,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018789_018.png"
+  },
+  "wafer_00018808_017.png": {
+   "sha256": "83dada046a288519e443b7365f72b3e4dc3e457fa270cdd685c7c4c8775912ad",
+   "bytes": 1786,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018808_017.png"
+  },
+  "wafer_00018808_024.png": {
+   "sha256": "d9d538cbf4e0212f633f420ef2358e1f507982793fc74034a98e8d917c9d2235",
+   "bytes": 1835,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018808_024.png"
+  },
+  "wafer_00018865_023.png": {
+   "sha256": "36b5491e3e06654e673c38556d98fcce78a53ebc39f362e137183f76136badb8",
+   "bytes": 1664,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018865_023.png"
+  },
+  "wafer_00018905_002.png": {
+   "sha256": "c6e8ba80493fc07baf23528d2ec98ee4fb4ba483cd1869bb59a52862f5221973",
+   "bytes": 2629,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018905_002.png"
+  },
+  "wafer_00018905_003.png": {
+   "sha256": "a1330bcbc109800a27db9f0ca6ebae22516c52c87929a22776f668823316df42",
+   "bytes": 2742,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018905_003.png"
+  },
+  "wafer_00018905_009.png": {
+   "sha256": "e1fa1bcb60668be833915911ee50c36f465f60fb3b0bd45b20c58b5efef24e45",
+   "bytes": 2545,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018905_009.png"
+  },
+  "wafer_00018905_016.png": {
+   "sha256": "f57577ec12b104add3dadf878dfa85f8288daf306032521f60349ae44ce07150",
+   "bytes": 2809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00018905_016.png"
+  },
+  "wafer_00019115_022.png": {
+   "sha256": "2f9dcf14e38b4b48d4f675323e04c580cc64616d8080e5d3328c664a5ef77d3f",
+   "bytes": 3962,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019115_022.png"
+  },
+  "wafer_00019171_007.png": {
+   "sha256": "10e8b5e981081dad1c3a4180cf22cb8f31d040962525d12a8a6105e873c6733b",
+   "bytes": 2153,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019171_007.png"
+  },
+  "wafer_00019231_016.png": {
+   "sha256": "eeed4cd6dcca59e2ad1d37835537edaa20f76476dfc32db41c3b72e2e3a3e1d3",
+   "bytes": 1807,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019231_016.png"
+  },
+  "wafer_00019231_017.png": {
+   "sha256": "fe71a37c44f807b57b997d188f71e78a00fd7000b6abfe998568faab4cde5382",
+   "bytes": 1816,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019231_017.png"
+  },
+  "wafer_00019237_008.png": {
+   "sha256": "6f7faec68cbe47311f730a8be1a6b720578d3730345f003bd0200d80755b14b0",
+   "bytes": 1809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019237_008.png"
+  },
+  "wafer_00019237_010.png": {
+   "sha256": "df9d76ada3f9b8b15c650347489fc4107f2cde75645a812ff4422d9883fa26cc",
+   "bytes": 1802,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019237_010.png"
+  },
+  "wafer_00019237_018.png": {
+   "sha256": "d8228e5352a2ebaab865d0dd6a50813d29a2451f3fe5a32dc754cea67f9dc47f",
+   "bytes": 1870,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019237_018.png"
+  },
+  "wafer_00019237_024.png": {
+   "sha256": "464e0f0259a232efc26bc471eece3c0eaeaac00709b59fe9e629f489724c0f8d",
+   "bytes": 1866,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019237_024.png"
+  },
+  "wafer_00019240_005.png": {
+   "sha256": "968221529c848cc89557cfeaeff7926b4ae56ef9eba367e94e1a4be0394f02f8",
+   "bytes": 1782,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019240_005.png"
+  },
+  "wafer_00019277_014.png": {
+   "sha256": "de29f57d8322c89a2125a0018a106c940ba781551174148c57fe879ec3f5c1d8",
+   "bytes": 2515,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019277_014.png"
+  },
+  "wafer_00019321_013.png": {
+   "sha256": "40042c3cac0f41966b7ee8c2674fe377cccb817151867932fc09a3b5fb0aadd6",
+   "bytes": 2079,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019321_013.png"
+  },
+  "wafer_00019344_022.png": {
+   "sha256": "28b8d8270da6faae314b095a25c30295186d9bf2d03f21669d487283bd8bfebb",
+   "bytes": 1892,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019344_022.png"
+  },
+  "wafer_00019390_009.png": {
+   "sha256": "b5557b9f76ac0880440a572ff6d42d5cc11c5fff36108a94098d89289b14bd41",
+   "bytes": 2080,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019390_009.png"
+  },
+  "wafer_00019390_010.png": {
+   "sha256": "83845ac8bb39124cc830b26f7955f6cacfe2acf3f88c3f1bf8887c8c89a92060",
+   "bytes": 2016,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019390_010.png"
+  },
+  "wafer_00019404_023.png": {
+   "sha256": "a322185a1f4acf4663fa9e7d1b8823164a96e3559150c80b34038b9d664035be",
+   "bytes": 1811,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019404_023.png"
+  },
+  "wafer_00019765_022.png": {
+   "sha256": "02df9f42825bb5603332de2b0cd98dc7c4832e806a44f4ea1fe4f7c209f138ec",
+   "bytes": 1749,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019765_022.png"
+  },
+  "wafer_00019864_007.png": {
+   "sha256": "00e8370d5bf79fbe314e31faea4feb875b7b10d90685510cb65264964bd5fd5d",
+   "bytes": 2716,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019864_007.png"
+  },
+  "wafer_00019977_011.png": {
+   "sha256": "1c3b856f67720b25ae360a9b0b5d311d4b2300d600fffaff99741807f71f56fa",
+   "bytes": 1837,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00019977_011.png"
+  },
+  "wafer_00020121_024.png": {
+   "sha256": "684f2d9234561c243924da5720fff3d715dfc38015f0f4a460f8b25210943d78",
+   "bytes": 2075,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020121_024.png"
+  },
+  "wafer_00020257_012.png": {
+   "sha256": "099d2761d0be1060413a02736dd038c43e082860faa81268db43a60e22c04991",
+   "bytes": 2024,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020257_012.png"
+  },
+  "wafer_00020258_007.png": {
+   "sha256": "3ea14a2f1347376c73d7c1ea4b9daed8f3769d5514978343b04b005c9c79c2f5",
+   "bytes": 2030,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020258_007.png"
+  },
+  "wafer_00020428_023.png": {
+   "sha256": "06076fa28d1d08f19553186aaa6548e067071e7203c3fb9c7ff021e8e9fa848f",
+   "bytes": 2098,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020428_023.png"
+  },
+  "wafer_00020610_009.png": {
+   "sha256": "c57bb59b821fcd269f50a29467488d712c1142bf5e0039b91583dbc349fe4bf0",
+   "bytes": 2703,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020610_009.png"
+  },
+  "wafer_00020732_018.png": {
+   "sha256": "6145936d543ea963227bd6846e3333c1e3db71a4982eb225804cf72a11aa6ec7",
+   "bytes": 2055,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020732_018.png"
+  },
+  "wafer_00020906_004.png": {
+   "sha256": "7b3bd54f1489090cdfc5906406b7bab11c702d63a050a8728ba3a974c53795d4",
+   "bytes": 2077,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020906_004.png"
+  },
+  "wafer_00020908_005.png": {
+   "sha256": "600d24881413f54b88b4dcea681b0710394d567b41f20753c833503b46712415",
+   "bytes": 2185,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020908_005.png"
+  },
+  "wafer_00020908_009.png": {
+   "sha256": "44eb82e0e64ed9dd352c94aebed791259f2e5291ca69d92c1dc3527b295c7bfb",
+   "bytes": 2078,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020908_009.png"
+  },
+  "wafer_00020908_013.png": {
+   "sha256": "9eaa9c03b378c1b42fb560204cbf930322008aa2160da20a95610b5b89372696",
+   "bytes": 2057,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020908_013.png"
+  },
+  "wafer_00020908_024.png": {
+   "sha256": "8a29fc052c88acd0b642f2a4f2f2575a122f4b97db95e3b10c312b1a3b6b98c8",
+   "bytes": 2027,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00020908_024.png"
+  },
+  "wafer_00021234_020.png": {
+   "sha256": "6761efc9d6f6ef8dec07eb7ae141c91b63e7fc66412223e85482b5700262adf2",
+   "bytes": 2356,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021234_020.png"
+  },
+  "wafer_00021444_004.png": {
+   "sha256": "cb4c79a3a92fa8022780a5e00c7209acac9a20a13945dea87366d2fdaf46f7f6",
+   "bytes": 1993,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021444_004.png"
+  },
+  "wafer_00021444_005.png": {
+   "sha256": "bc1bdc4335637392286706b09d6bc0d5daa0e9e0e661b10d4898a2ae89ecab09",
+   "bytes": 2089,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021444_005.png"
+  },
+  "wafer_00021479_002.png": {
+   "sha256": "ce5f89abe5fdb5111ee1eda56e0a4943d82428295adbc29f2632a4e78fa7b6f2",
+   "bytes": 2112,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021479_002.png"
+  },
+  "wafer_00021479_007.png": {
+   "sha256": "53ef1abd1352e05019c0488ab669db9393e3cd2fd5d239ea21285481e3d89dd0",
+   "bytes": 2132,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021479_007.png"
+  },
+  "wafer_00021623_006.png": {
+   "sha256": "1ed2ed3abcb1d05543e8c3d658154129c7295a9689e5e4872401d3e9816dff21",
+   "bytes": 1918,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021623_006.png"
+  },
+  "wafer_00021649_003.png": {
+   "sha256": "e544e64e54431f6a098b469181dbfd6bf859436a0ef366c0bf53535eb09c7bca",
+   "bytes": 1910,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021649_003.png"
+  },
+  "wafer_00021649_009.png": {
+   "sha256": "c8422c180876efd8b00e1c90e2e8ab214a50411550335a1840b732cbf8d4adf7",
+   "bytes": 2017,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021649_009.png"
+  },
+  "wafer_00021649_022.png": {
+   "sha256": "d943dcbc0f0e1b0065d9c026871731a31dc0ab91862487c2fee424c4867356ff",
+   "bytes": 1932,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021649_022.png"
+  },
+  "wafer_00021679_022.png": {
+   "sha256": "b169c23525975f1620e0d71fba41ed2823cf57aa6ecc414f129f2a8b004c809c",
+   "bytes": 1919,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021679_022.png"
+  },
+  "wafer_00021758_005.png": {
+   "sha256": "197639a9f9398863e7508a31e5970c68d64ebbc46271382d517e148696db0e23",
+   "bytes": 2248,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021758_005.png"
+  },
+  "wafer_00021758_009.png": {
+   "sha256": "a5a3178ef8e11e7c36b5e7cb991f2afa0f2135099040de078f61cfa32e7b9164",
+   "bytes": 2260,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021758_009.png"
+  },
+  "wafer_00021758_013.png": {
+   "sha256": "3fd94babd9e168a934fc671c34d8fddf11a73859f0f6444f71238588dfe56ed2",
+   "bytes": 2214,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021758_013.png"
+  },
+  "wafer_00021758_014.png": {
+   "sha256": "56a6070c8b374a8b0f04ecb3dbcd8b033a740254f81e9e693484a5e00f3b9c1e",
+   "bytes": 2277,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021758_014.png"
+  },
+  "wafer_00021758_023.png": {
+   "sha256": "d745d6d47f9d8bfc72b0540244b55427cb97cf5efab6cfd1593c3c8f2aefc6ba",
+   "bytes": 2239,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021758_023.png"
+  },
+  "wafer_00021850_023.png": {
+   "sha256": "af54f8e526dedcd5836285d793c248a8f0671d7c474b5e3d9a93ac4bdf899a22",
+   "bytes": 1818,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021850_023.png"
+  },
+  "wafer_00021858_006.png": {
+   "sha256": "7a89cce901e1a9cdf342e93510062b2fed8dede6a9a9227a1d64968048d469ea",
+   "bytes": 1831,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021858_006.png"
+  },
+  "wafer_00021878_020.png": {
+   "sha256": "ec5d4f66f53cfdce0f5e658c80eee10be190f68158aa7dffcf5265f77a872c8f",
+   "bytes": 2978,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021878_020.png"
+  },
+  "wafer_00021878_023.png": {
+   "sha256": "605eb7c0f73b0a711d5355cf4db9ac202517392d1163c9f091f55f168d0ab426",
+   "bytes": 3315,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00021878_023.png"
+  },
+  "wafer_00022126_006.png": {
+   "sha256": "9554e1224723ea46cd3f374bdee66009ea039d3e6cfd2622aeb30c91e1f3ce4d",
+   "bytes": 1624,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022126_006.png"
+  },
+  "wafer_00022126_014.png": {
+   "sha256": "c555cce8ac872e5f9f6882d55a2973567809581f4d38174e2affaecaca6d006a",
+   "bytes": 1563,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022126_014.png"
+  },
+  "wafer_00022205_002.png": {
+   "sha256": "298087e1f9ad175b385066ba1ac607bd952cc0dce9004ad6eb958eea5a37f175",
+   "bytes": 1722,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022205_002.png"
+  },
+  "wafer_00022216_015.png": {
+   "sha256": "aa3063db0d2209e3182005eba6ae9a7dacf9bf5fb748259ba022b8728f4896a6",
+   "bytes": 1527,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022216_015.png"
+  },
+  "wafer_00022219_014.png": {
+   "sha256": "ad994c0511191e51aa71b077fb2ab3b339e94ee611a9ec7ac68c21093b1c07f8",
+   "bytes": 2156,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022219_014.png"
+  },
+  "wafer_00022264_022.png": {
+   "sha256": "f7b0a51f40422684291ce64def7b8d899f721f9548bb459d9f34076fd56b95f8",
+   "bytes": 1599,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022264_022.png"
+  },
+  "wafer_00022671_001.png": {
+   "sha256": "413acb5fa5548b753430ce635fc1a959a785e63ddaf35f2fab64773c81be7c49",
+   "bytes": 1941,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022671_001.png"
+  },
+  "wafer_00022700_006.png": {
+   "sha256": "46c99f2e4765ade34a0c80414b22e1ba02adb3494bc37ae8f4b8b77dd6c859f3",
+   "bytes": 1934,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022700_006.png"
+  },
+  "wafer_00022770_001.png": {
+   "sha256": "7ba18d69a440df70c12544aea86fb95f5cbcb4722e4fd6856f504b47e12d8a26",
+   "bytes": 1839,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022770_001.png"
+  },
+  "wafer_00022908_016.png": {
+   "sha256": "e4e9e88e94525e81501e02d1b569c088f02dd27312a344de19a7f6caa4097c18",
+   "bytes": 2044,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022908_016.png"
+  },
+  "wafer_00022940_021.png": {
+   "sha256": "700cb829e738a7e566fbfdddfaa8047cada3048c5b811b74ca3d198af8009f70",
+   "bytes": 2247,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022940_021.png"
+  },
+  "wafer_00022941_019.png": {
+   "sha256": "0382b0437e49a4540caa042908ee8db0771e79f367192001f555f32b819c4082",
+   "bytes": 2226,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022941_019.png"
+  },
+  "wafer_00022941_020.png": {
+   "sha256": "a202c6a8c992c8dba0a94f52ca0ff51a11cfddb09b7284902108831bcd94653d",
+   "bytes": 2136,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00022941_020.png"
+  },
+  "wafer_00023237_016.png": {
+   "sha256": "1143030fd31e55259b2730383a695d6100a382c9d7957c35542af2a2d58e1ae1",
+   "bytes": 2087,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023237_016.png"
+  },
+  "wafer_00023285_009.png": {
+   "sha256": "789103e796d7b0a22b7408c24e35ca5c0638deee5dbd85b8e6fa8d633a711c43",
+   "bytes": 2007,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023285_009.png"
+  },
+  "wafer_00023391_012.png": {
+   "sha256": "588e3637140c01483b1f166bbab655ceabc239e67cc4ec915ea41531aa80eccd",
+   "bytes": 2225,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023391_012.png"
+  },
+  "wafer_00023415_015.png": {
+   "sha256": "b674c8b6df062e3781d412a110cd8114529f74099413c7566606959101bcdf5c",
+   "bytes": 2051,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023415_015.png"
+  },
+  "wafer_00023480_011.png": {
+   "sha256": "9829157d6590ba75048170bd0903c14db1b26a3509eb8f84e0121d49e39b1088",
+   "bytes": 1647,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023480_011.png"
+  },
+  "wafer_00023503_023.png": {
+   "sha256": "bc3e88c15cae4dfb743be0ad6d2df077d6f3ef0dbe4506ca80e9c2802e34361d",
+   "bytes": 1955,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023503_023.png"
+  },
+  "wafer_00023622_021.png": {
+   "sha256": "e16ebcf4a149895300b7746cedde990f1c7f56bc9dcca446b2c3a71e1f09eb8f",
+   "bytes": 1784,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023622_021.png"
+  },
+  "wafer_00023625_021.png": {
+   "sha256": "df06e64cd48130785ffb6cc8a9241a446b5d75420982f3db25ed405ed345b3aa",
+   "bytes": 1907,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023625_021.png"
+  },
+  "wafer_00023642_024.png": {
+   "sha256": "74aab2e86e1f38c638438a6556cda79129c5af7f7780b366e60dc92699850ce4",
+   "bytes": 1898,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023642_024.png"
+  },
+  "wafer_00023661_016.png": {
+   "sha256": "fb34406a4763933d6ebf77c10282571816eb321d27cf6c83cdd3bbdaec0c80c0",
+   "bytes": 1765,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023661_016.png"
+  },
+  "wafer_00023798_001.png": {
+   "sha256": "e230089178b7d7fffc84662f9607a5ccff3ab01af5fd4e99076c0810cb9818a0",
+   "bytes": 2000,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023798_001.png"
+  },
+  "wafer_00023823_016.png": {
+   "sha256": "5cd8abc2d8a130610db5651853e9afb51929693cd0fb74f8152783895dd74606",
+   "bytes": 2126,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00023823_016.png"
+  },
+  "wafer_00024199_005.png": {
+   "sha256": "e5b49b6ffc3ca9971d7673af424080bfc9a2ad66003c4368ac79e4411f6fff85",
+   "bytes": 1962,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024199_005.png"
+  },
+  "wafer_00024277_023.png": {
+   "sha256": "b1c1c3f6b07c68d81684b3a63be31ca285e45c31d097d5c01136decc6c2eab3f",
+   "bytes": 2025,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024277_023.png"
+  },
+  "wafer_00024339_011.png": {
+   "sha256": "28c2fad833b79b251c7fe729f24c9952493963f5e14de025a359720843ac2d5f",
+   "bytes": 1770,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024339_011.png"
+  },
+  "wafer_00024522_014.png": {
+   "sha256": "de596168fd816180762acde19bc5af5cb70466495689c724b114a552355e6bcd",
+   "bytes": 2837,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024522_014.png"
+  },
+  "wafer_00024522_025.png": {
+   "sha256": "802991222588f72666ce67c7ebe1fe76a52d40286d6265db22b90a91895ce510",
+   "bytes": 2878,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024522_025.png"
+  },
+  "wafer_00024582_004.png": {
+   "sha256": "cf01b38612adf0a02d061ea5a0f42ea05d58b7dbbcd75e3cd48830ccf6c95c16",
+   "bytes": 1924,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024582_004.png"
+  },
+  "wafer_00024635_002.png": {
+   "sha256": "235158737d019f66eb60940055aa204feba70330dc95592c2fbe8075c1b5da00",
+   "bytes": 1721,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024635_002.png"
+  },
+  "wafer_00024635_005.png": {
+   "sha256": "c4ce309121a14753a81ccbdacee924b238400b6449a1563d10ee00fb09a7c155",
+   "bytes": 1896,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024635_005.png"
+  },
+  "wafer_00024635_007.png": {
+   "sha256": "99d02c8d441c7fe1102aa4c9ac47042aa5f4df53c358f47c797ed53e8a394815",
+   "bytes": 1800,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024635_007.png"
+  },
+  "wafer_00024635_010.png": {
+   "sha256": "090aa5292021d81fa1953e043a18937b9908368870f7e3ce877af787edad742c",
+   "bytes": 1839,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00024635_010.png"
+  },
+  "wafer_00025174_008.png": {
+   "sha256": "2f81b34d1d1fd0aaf0d296fe3fe085cef0e9b335e75c1cd6fdd336c730e323ec",
+   "bytes": 1649,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00025174_008.png"
+  },
+  "wafer_00025247_021.png": {
+   "sha256": "515784279f1d5f532c694a2857c2ac268ba0486ab1cb72963f3e180d5d6fa35e",
+   "bytes": 2259,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00025247_021.png"
+  },
+  "wafer_00026441_001.png": {
+   "sha256": "5efc22b33992c67d5d6ef6e01d6db5d63df9b9240c95fd5f211f0263321d2e5d",
+   "bytes": 1987,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00026441_001.png"
+  },
+  "wafer_00026441_016.png": {
+   "sha256": "33b05c37792ecaa31fec3ba51c799fd58d9112f0ebb305c01113793662ed47e5",
+   "bytes": 1932,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00026441_016.png"
+  },
+  "wafer_00027513_007.png": {
+   "sha256": "9ca0c0b601a3034948dd78549847a01cac2b08ad9fd411c9980180b0eee5296f",
+   "bytes": 1813,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00027513_007.png"
+  },
+  "wafer_00027513_016.png": {
+   "sha256": "27612efed0a15235d466f5830adc8123225e0bcd1b140b8d26bfcce397448836",
+   "bytes": 1777,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00027513_016.png"
+  },
+  "wafer_00028113_023.png": {
+   "sha256": "31ea842cd739e0a319c1f57592521eb8046325d147fbb66e7d82836cb2404245",
+   "bytes": 1982,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00028113_023.png"
+  },
+  "wafer_00029115_012.png": {
+   "sha256": "2e6eb6cb5280fa1b51de0a1841cb22d1776310286b11d6ce57e4388c3d9e3219",
+   "bytes": 2301,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00029115_012.png"
+  },
+  "wafer_00030429_024.png": {
+   "sha256": "33864e5e74b5d11ffc7ac19c8f8500a16d6f6978b1a560f5360396e13cda6200",
+   "bytes": 1831,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00030429_024.png"
+  },
+  "wafer_00030526_009.png": {
+   "sha256": "cfbb742ed416d17380b78e021d4dc8f41f2414f99969c41afc846b009511cebf",
+   "bytes": 2108,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00030526_009.png"
+  },
+  "wafer_00031591_025.png": {
+   "sha256": "c3eb96e616dfd4af52caff9a715e6769ad7ac73bfe3f320f00d69974980c0968",
+   "bytes": 1848,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00031591_025.png"
+  },
+  "wafer_00031960_014.png": {
+   "sha256": "7301e51ebc45ea873c11b11215c41ad9754b7556520974100f8b161dd57adb84",
+   "bytes": 1908,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00031960_014.png"
+  },
+  "wafer_00032163_012.png": {
+   "sha256": "358b94790c75e4f440d9e2f269adbda35d16928652de5449cc7c6ecb171c06cc",
+   "bytes": 1778,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032163_012.png"
+  },
+  "wafer_00032852_016.png": {
+   "sha256": "6a177231f68d83cba49585b852c923d01dae344283080c015c1fd989a698d26e",
+   "bytes": 1693,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032852_016.png"
+  },
+  "wafer_00032896_001.png": {
+   "sha256": "ecbe2aae4a0a6504a31877a594cc8427876a597f00b90e1fd31f7b2adb1a0230",
+   "bytes": 1762,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032896_001.png"
+  },
+  "wafer_00032944_010.png": {
+   "sha256": "cab1fb70ab8801be19c57f0506738ad53c4d03a636f857a066a70cc83bd5dbc0",
+   "bytes": 1748,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032944_010.png"
+  },
+  "wafer_00032962_015.png": {
+   "sha256": "ae0a9e53f77f94606da96eeaaf4532e82e1e583ce23edadd2e74b79e05fb52a9",
+   "bytes": 1762,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032962_015.png"
+  },
+  "wafer_00032989_021.png": {
+   "sha256": "4af33d7fb64b209c45c1bea8b934183afa1a744079c93cb79d1b78cbb73a57b5",
+   "bytes": 1754,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00032989_021.png"
+  },
+  "wafer_00033121_008.png": {
+   "sha256": "2e6d99fd6861a22bbf09869099535a9ce3f9bcea8071b3e366e72103a18f5090",
+   "bytes": 1690,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00033121_008.png"
+  },
+  "wafer_00033398_001.png": {
+   "sha256": "efba8552a90ad2ba2972cfafa0955451f6082462b81f7a1568795ab7739131ea",
+   "bytes": 1888,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00033398_001.png"
+  },
+  "wafer_00034143_009.png": {
+   "sha256": "9f38a49548578bd3b8be0f525b911caf654e192b1f2461b3e809e7c4cd179cfa",
+   "bytes": 1931,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00034143_009.png"
+  },
+  "wafer_00034923_023.png": {
+   "sha256": "a1f91df9828e31191775c67ee876db60ac05413a61bf3210cb90575967afbef6",
+   "bytes": 1794,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00034923_023.png"
+  },
+  "wafer_00035449_021.png": {
+   "sha256": "957470abc1d38e706523bac4c868a43fc865b994335b598d78c0053dfc2ed555",
+   "bytes": 1429,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035449_021.png"
+  },
+  "wafer_00035898_006.png": {
+   "sha256": "2d242d2cf5ed5177a56b0c45e31accc1e91435356417260a1765730c7dede39d",
+   "bytes": 1718,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035898_006.png"
+  },
+  "wafer_00035898_011.png": {
+   "sha256": "e158395380ae469f7480a28191c0ff1856933c68c107012e96adf91ff438a72b",
+   "bytes": 1780,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035898_011.png"
+  },
+  "wafer_00035935_023.png": {
+   "sha256": "2c452306f6bdf22d8f233a5c08931d67c75e8271ba47390866853ea653e7a5bc",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035935_023.png"
+  },
+  "wafer_00035965_003.png": {
+   "sha256": "dcf6f872f1e78b312cbd8908760f7771662b25f6084e6000eca7d19ad39bf336",
+   "bytes": 1793,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035965_003.png"
+  },
+  "wafer_00035965_007.png": {
+   "sha256": "cb11920399da29ad21fde5f39714176c9ffdb34820eaf87d1db7117b9eb8b4d8",
+   "bytes": 1717,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035965_007.png"
+  },
+  "wafer_00035965_015.png": {
+   "sha256": "15615f10f411fef70f7fe5c66feba9940bce84d5c2ae373956a928fa6d606e13",
+   "bytes": 1758,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00035965_015.png"
+  },
+  "wafer_00036054_021.png": {
+   "sha256": "e7f6fd6828892af436a8d534619db84058c4eeea69f55713ceb35b843105029b",
+   "bytes": 1758,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036054_021.png"
+  },
+  "wafer_00036077_023.png": {
+   "sha256": "ca9f2aa3f216ac205b443d896499f76d5058be64c1e55d245136fcbbc7744807",
+   "bytes": 1931,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036077_023.png"
+  },
+  "wafer_00036126_003.png": {
+   "sha256": "1fb195602f8842a0ef20f72d7bc5736efe5bf44072da1ef337b8281819d3760d",
+   "bytes": 1917,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036126_003.png"
+  },
+  "wafer_00036492_011.png": {
+   "sha256": "da22b84305d3d9c9e3aa69c685125c3aa6cf956dabba58ebc61ce8d2f69dd1f3",
+   "bytes": 2033,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036492_011.png"
+  },
+  "wafer_00036633_003.png": {
+   "sha256": "28d9882829e97996bcc7efa88b50e2c4953c16ae50eff004596518041658b4b5",
+   "bytes": 1759,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_003.png"
+  },
+  "wafer_00036633_009.png": {
+   "sha256": "bc9c390b1163a9bf87a4ea2a1080b28c5f9969a669efa2da5e6127d034d16183",
+   "bytes": 1787,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_009.png"
+  },
+  "wafer_00036633_014.png": {
+   "sha256": "c205c37282466e113f82c7a808e7733a1973b67cd8f01d1f1dda893487608262",
+   "bytes": 1769,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_014.png"
+  },
+  "wafer_00036633_015.png": {
+   "sha256": "6b5a3adea43b77550ce0cc6cbffc19123ec748cc850149c8be902d50df5a90cc",
+   "bytes": 1757,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_015.png"
+  },
+  "wafer_00036633_016.png": {
+   "sha256": "1d284402a9d4f5eb022d5cb21e393db5d172918441b7c3b2d0a44881e626c169",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_016.png"
+  },
+  "wafer_00036633_017.png": {
+   "sha256": "51e12526d407353fe0c38a790962771a7ff9f548fa7b8eeee3286c42adfb9c7b",
+   "bytes": 1799,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_017.png"
+  },
+  "wafer_00036633_020.png": {
+   "sha256": "52cbcea85dbb1c79e8408ba4fa2b55f04263e00411feb8dedb411790b3f92046",
+   "bytes": 1737,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_020.png"
+  },
+  "wafer_00036633_025.png": {
+   "sha256": "ec00de963c6a982ca5edc9c720efd3b239428fda83e10cbd301c7b4e3300acd3",
+   "bytes": 1744,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036633_025.png"
+  },
+  "wafer_00036686_020.png": {
+   "sha256": "d392ffb80bdf06fdb8498e0f1f712224995713a6b1d80d833f03eda8859cfef4",
+   "bytes": 1707,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036686_020.png"
+  },
+  "wafer_00036738_025.png": {
+   "sha256": "0298060bc1f8fb0b5115724b7376aa2ecea2e0f305659b3abf6f854603b11c81",
+   "bytes": 1704,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036738_025.png"
+  },
+  "wafer_00036739_014.png": {
+   "sha256": "c7a71f0c113cc09c04da3e90ae3dd1271ad99138303707e59a85c061398ee153",
+   "bytes": 1729,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036739_014.png"
+  },
+  "wafer_00036752_019.png": {
+   "sha256": "8fbe0114271dc6af7e9b1be32d7d8c736a6b3f8934b9cfcd24be0af7eea4db62",
+   "bytes": 1715,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036752_019.png"
+  },
+  "wafer_00036754_007.png": {
+   "sha256": "0656445be3fafb31457c14688db1b7a3db0f5f2b6a6cd3dbf8c4704f5339ab15",
+   "bytes": 1760,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036754_007.png"
+  },
+  "wafer_00036754_019.png": {
+   "sha256": "cd9779bfe803ec10f180c971484e20449f8d0ec4cedb9894b2f9c8be4f674f7d",
+   "bytes": 1714,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036754_019.png"
+  },
+  "wafer_00036761_005.png": {
+   "sha256": "4f37eca5be71b053b36346a30ebfc38d9bd9f9d0a9a32b25f71580289141b732",
+   "bytes": 1711,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036761_005.png"
+  },
+  "wafer_00036761_016.png": {
+   "sha256": "27bb1949d10bfc4218f6d1391d2a6947ab0706e043e0d5b8e1bfbb16dd1ecdeb",
+   "bytes": 1754,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036761_016.png"
+  },
+  "wafer_00036781_013.png": {
+   "sha256": "d0a356f30554ca2df5065e7391241e165998c3012dd01cf5d118a38b28bc3673",
+   "bytes": 1755,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036781_013.png"
+  },
+  "wafer_00036781_023.png": {
+   "sha256": "2b1acd921b93bb26bddade5b011439c8c97a508d21b776f1bcc5a258c8fd97b3",
+   "bytes": 1700,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036781_023.png"
+  },
+  "wafer_00036782_008.png": {
+   "sha256": "573874ff1607041427ed6a8c21c2251b9c3fa22a122d9a6853fb7f9f944ef38c",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036782_008.png"
+  },
+  "wafer_00036819_003.png": {
+   "sha256": "a08c86c8effc0f4764920a6011f2fca6db32fa0ab4c4a47164532445b8195573",
+   "bytes": 1781,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036819_003.png"
+  },
+  "wafer_00036819_007.png": {
+   "sha256": "a74c535c0adb60b383327ddb89465ccd02816e93c514f762a1870e79510c884d",
+   "bytes": 1793,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036819_007.png"
+  },
+  "wafer_00036830_008.png": {
+   "sha256": "48cd7fdb10c83bbe059801b1b3121c3eb2841bb958b8083491c08afb7853f478",
+   "bytes": 1760,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036830_008.png"
+  },
+  "wafer_00036830_016.png": {
+   "sha256": "f97ddab695967880309fb6a334bcfc7878415197daa07de728ad7310a13a3647",
+   "bytes": 1680,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036830_016.png"
+  },
+  "wafer_00036830_021.png": {
+   "sha256": "a404a0afc98e2ab9607cf8f3a6eca290885bfd26e3f4a9e31e96e68e424d38fe",
+   "bytes": 1770,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036830_021.png"
+  },
+  "wafer_00036830_022.png": {
+   "sha256": "b1cb50c76200c2a74a1396bcda548756ecdcc9c5904b9c0d46c011eafca0e425",
+   "bytes": 1698,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036830_022.png"
+  },
+  "wafer_00036858_002.png": {
+   "sha256": "fe454766968786814436f324b71572f876cad3c78b53f29a71d0ef7b4b9b7cf8",
+   "bytes": 1763,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036858_002.png"
+  },
+  "wafer_00036858_015.png": {
+   "sha256": "51cf48ac54ffaed271caf95a875f6ad4d1c5cc66e671505f37c8ae9265d2fe65",
+   "bytes": 1744,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036858_015.png"
+  },
+  "wafer_00036858_019.png": {
+   "sha256": "786933816fad90ab4820afc75165c0f00a75590110673d4a0c7f645a27fae80c",
+   "bytes": 1722,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036858_019.png"
+  },
+  "wafer_00036868_005.png": {
+   "sha256": "1974197a2c05732502a1b47ea286ff03c694db94e20d591b704ca46e37131e4d",
+   "bytes": 1746,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036868_005.png"
+  },
+  "wafer_00036868_006.png": {
+   "sha256": "a61d420e1a5b85cf9bd7e1bd84ea0ec2081de9927325e8faf219a969ee818732",
+   "bytes": 1742,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036868_006.png"
+  },
+  "wafer_00036868_016.png": {
+   "sha256": "c51c2f59e73af08cfbf191b6563b1e1085ea0db5412853264e022b7a2cecc264",
+   "bytes": 1753,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036868_016.png"
+  },
+  "wafer_00036868_017.png": {
+   "sha256": "aca6cbd25db53c284ab9f4e50fff63ff55544aba0fe524c98b60f7c03d15246a",
+   "bytes": 1750,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036868_017.png"
+  },
+  "wafer_00036874_020.png": {
+   "sha256": "2025137464d962cdc82c766de35ea3524d5bd29eb956e8ce6d53d5f03d4c974d",
+   "bytes": 1729,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036874_020.png"
+  },
+  "wafer_00036882_022.png": {
+   "sha256": "27c50c1b1f70172f44d162a3dc8484d31955d270b8dba0aaef23b2360f9728e9",
+   "bytes": 1740,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036882_022.png"
+  },
+  "wafer_00036893_009.png": {
+   "sha256": "619668c27b8ebb151b61890a8e9976260e7a5d2f439d7ca08ec64e06c554b6e7",
+   "bytes": 1734,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036893_009.png"
+  },
+  "wafer_00036908_005.png": {
+   "sha256": "6fb5c26b826e1fae12a4ae85f3b35ad58f41b3d53d3004f722441700f13f22d5",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036908_005.png"
+  },
+  "wafer_00036956_003.png": {
+   "sha256": "724f1a461c04f3c447fe89e58395123296bb9e11d8d44205f8d3dd7d986bd0d7",
+   "bytes": 1743,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036956_003.png"
+  },
+  "wafer_00036962_005.png": {
+   "sha256": "c6018b8bafe1a837e96dc2c92cb76956f78028df3b222fd1831c7f87f539937c",
+   "bytes": 1750,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036962_005.png"
+  },
+  "wafer_00036962_008.png": {
+   "sha256": "e85f3fbbb7d94968f53d45b6aaa320f1fd4c4fdea2f72ae67be025acfefaa69d",
+   "bytes": 1756,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036962_008.png"
+  },
+  "wafer_00036973_009.png": {
+   "sha256": "02a1bcc687d543cc00b189b3478239da3806418d3df27b383aeaa8d5088d00e8",
+   "bytes": 1708,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036973_009.png"
+  },
+  "wafer_00036973_018.png": {
+   "sha256": "6c397394aa9ad4dc412817a8df59181e597c5258d67261f72329551ee39d2245",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036973_018.png"
+  },
+  "wafer_00036974_018.png": {
+   "sha256": "b7ef416d0e3b0c7a69f607cf8fa70879f747526c8d201eb2cd5b8c42ff8933b1",
+   "bytes": 1724,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036974_018.png"
+  },
+  "wafer_00036993_007.png": {
+   "sha256": "648382405c3f97d14d3cc2b5142a630dbaa526fd7097df9b1accc7fbf03c4413",
+   "bytes": 1809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036993_007.png"
+  },
+  "wafer_00036993_015.png": {
+   "sha256": "277b17026f21ddf2e62b99506a9d3c3ac174ab9ff4485ba9ea1b01d4f9203e5f",
+   "bytes": 1777,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00036993_015.png"
+  },
+  "wafer_00037032_008.png": {
+   "sha256": "cb96a25fbdb0ad9187bdf93035526ea0dfd57a439c9f9dfa3884f2efad6ee94f",
+   "bytes": 1680,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037032_008.png"
+  },
+  "wafer_00037104_018.png": {
+   "sha256": "84987f2a0ca5ea766106d3a72ff61ec774c4d58009efb8853b8c0ebf66c07560",
+   "bytes": 2006,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037104_018.png"
+  },
+  "wafer_00037315_025.png": {
+   "sha256": "0ecfb6bb465541b892971260c09ad02d5b3fd967b2a635bcf0c396a2d25fc752",
+   "bytes": 2109,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037315_025.png"
+  },
+  "wafer_00037354_004.png": {
+   "sha256": "70f9b4d4230249c1ff689f28551f4167c6d99584ba1f2f403fd71424e9d94c6c",
+   "bytes": 2139,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037354_004.png"
+  },
+  "wafer_00037578_002.png": {
+   "sha256": "43e2af7bead32eab0890c5424503552d77ce35099508b7bc7145af7f61b8cbf1",
+   "bytes": 2043,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037578_002.png"
+  },
+  "wafer_00037813_012.png": {
+   "sha256": "b952922f464455cecc6ad06571915347514313602899f8c99100ddf4c8039c65",
+   "bytes": 2025,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037813_012.png"
+  },
+  "wafer_00037885_011.png": {
+   "sha256": "4439cf0495f0d47d8b0bec8521c47a57bd0762bcedfcea49acb5929f4e3713cb",
+   "bytes": 1925,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037885_011.png"
+  },
+  "wafer_00037907_010.png": {
+   "sha256": "7b4469e16da5e3c1ff95964d59be280ef9fc9c3bece562dac3d00582f38aecd1",
+   "bytes": 2180,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037907_010.png"
+  },
+  "wafer_00037915_009.png": {
+   "sha256": "63fa23126bcee0322092fae743eada868feb6ba869faa0126617ddc59f44a967",
+   "bytes": 2139,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00037915_009.png"
+  },
+  "wafer_00038377_002.png": {
+   "sha256": "aa2777e831d1660e332620208afec098663885431bd4b38ac9d57ac54cdb94ad",
+   "bytes": 2006,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00038377_002.png"
+  },
+  "wafer_00038377_005.png": {
+   "sha256": "c23baeaad912c47c3b6bf9cf3510f377c3022893d17d7ccb8b118e8de43fbb03",
+   "bytes": 2000,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00038377_005.png"
+  },
+  "wafer_00038377_007.png": {
+   "sha256": "5e0ad08c0c49f82596b476137f8d085ab2d00cf460df07f73d89ec33c9f7bb25",
+   "bytes": 1964,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00038377_007.png"
+  },
+  "wafer_00038377_019.png": {
+   "sha256": "5f0c6fb5a6f022e614e22c8749e67411eccbd80c62c9792badd223f800d1b772",
+   "bytes": 2011,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00038377_019.png"
+  },
+  "wafer_00038590_019.png": {
+   "sha256": "3165d6b0ab7f3397e5df748b1e20bd686ba55e43d8339d0baeb4b1da2408963c",
+   "bytes": 1417,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00038590_019.png"
+  },
+  "wafer_00039480_010.png": {
+   "sha256": "c3722fcc265ed3c4795f53d46438f84c346e93d5f673a8b81d2e402010989202",
+   "bytes": 1763,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039480_010.png"
+  },
+  "wafer_00039480_011.png": {
+   "sha256": "5097057cdb93b140055b7b2d4330505acbde7e2de2b06558483ef92c77707450",
+   "bytes": 1820,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039480_011.png"
+  },
+  "wafer_00039480_012.png": {
+   "sha256": "f74a32b2a8b9796cfa2ada15b504f8a562d130e208d89c114fab05d5a233d8d7",
+   "bytes": 1798,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039480_012.png"
+  },
+  "wafer_00039511_014.png": {
+   "sha256": "0d95c24b26069e0c3c3937cf553787f22a2d4a69e4d31355ea8e2dd27024e6e2",
+   "bytes": 1756,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039511_014.png"
+  },
+  "wafer_00039511_020.png": {
+   "sha256": "6dff4e62b2a8f71bc31e47f3caa076c35622c7f2af4cf6704e58d66ddc8cc77e",
+   "bytes": 1704,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039511_020.png"
+  },
+  "wafer_00039512_015.png": {
+   "sha256": "eb06bf292a71efa7a9253de862bef5659b5d3fc3ef4e60535cfd184460c46a15",
+   "bytes": 1731,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039512_015.png"
+  },
+  "wafer_00039512_020.png": {
+   "sha256": "f1d4b2454dab4609799bf983f7a79fc9a381863e0afdf45585d7dcddaa9f2c16",
+   "bytes": 1722,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039512_020.png"
+  },
+  "wafer_00039512_022.png": {
+   "sha256": "6d0f2559e6924cacd0a4d30c5636e7f3542e1c590f9272c3dfb5d8c4269b79b7",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039512_022.png"
+  },
+  "wafer_00039514_016.png": {
+   "sha256": "26eb994603d0ee8ff14aacf971b360b91c2780e1dcadd60697cc66f0a311978c",
+   "bytes": 1737,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039514_016.png"
+  },
+  "wafer_00039534_025.png": {
+   "sha256": "e9d6d9531be068fcc0a9ee3567ea11021cd6e50a278d4e55bceb59d1d80ef749",
+   "bytes": 1761,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039534_025.png"
+  },
+  "wafer_00039550_016.png": {
+   "sha256": "c3ecbe478793fdfbd009a54141b7397050694967fab5532aed2e0d456896b68d",
+   "bytes": 1764,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039550_016.png"
+  },
+  "wafer_00039560_008.png": {
+   "sha256": "2289c7aa9168560e529e33eaf2a6d80a8002a808fcf67ed9efa33761d2138fae",
+   "bytes": 1725,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039560_008.png"
+  },
+  "wafer_00039565_008.png": {
+   "sha256": "28cd5aa14014a7f5adc62580df1bd91f14175934719a30a4219dc5e46d0dbade",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039565_008.png"
+  },
+  "wafer_00039565_010.png": {
+   "sha256": "2f44e20484cc50272703ba740a1397ce2ce6bf111f08ace9b322f6dc17d89467",
+   "bytes": 1717,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039565_010.png"
+  },
+  "wafer_00039567_008.png": {
+   "sha256": "c9da72b95e9508c419f072585d57bb878d740aba2b540a944f0e963b6639a2dc",
+   "bytes": 1724,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039567_008.png"
+  },
+  "wafer_00039605_023.png": {
+   "sha256": "1f6fde1e45cd62e0f3fb8fed5f069966794028f4b4914a7633c6e2525010c6e5",
+   "bytes": 1777,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039605_023.png"
+  },
+  "wafer_00039609_016.png": {
+   "sha256": "a393e806a4993f5b2d157981819fa45b340383d7160d7c93ca0b356e7716d57d",
+   "bytes": 1707,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039609_016.png"
+  },
+  "wafer_00039760_006.png": {
+   "sha256": "5e03ab0dbdb4d70004c9a2c15852d51ac92c8a60c7a8a2991896818101f610f3",
+   "bytes": 1821,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00039760_006.png"
+  },
+  "wafer_00040329_014.png": {
+   "sha256": "275b2577a6f5d6952220173cf98ef08b4cc8e6babe9c7b63971c9fe1cecb895a",
+   "bytes": 1694,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040329_014.png"
+  },
+  "wafer_00040336_020.png": {
+   "sha256": "6efeb95db272b1b2dbb82a3c43bd518c7e7a83e1a80a2c608674ae164c2dea6c",
+   "bytes": 1599,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040336_020.png"
+  },
+  "wafer_00040337_002.png": {
+   "sha256": "529cf116a743310ba22f037c2191ace4774d36b940dece3737a64e0d56c6afca",
+   "bytes": 1668,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040337_002.png"
+  },
+  "wafer_00040360_012.png": {
+   "sha256": "0c4865df99f01a5858dfbfeba72d4f8871edd3571ec2f5cdc8955bd7f3a28863",
+   "bytes": 1647,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040360_012.png"
+  },
+  "wafer_00040362_016.png": {
+   "sha256": "f70b6327ff1fcf5b33a8bfad44db3ac5a61dc14912f4c24ad0913640207ad5c7",
+   "bytes": 1697,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040362_016.png"
+  },
+  "wafer_00040425_019.png": {
+   "sha256": "17ddc6b7e9422762d624d11a4df4c5c986eec26b0dc61caeaa5752e54f54632e",
+   "bytes": 1664,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040425_019.png"
+  },
+  "wafer_00040426_012.png": {
+   "sha256": "1180c383c10dceba1feaa258e6bd06c20b31f6b86aeb19269e15a6423dc95848",
+   "bytes": 1780,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040426_012.png"
+  },
+  "wafer_00040438_001.png": {
+   "sha256": "049136effcd482d1c1d68edb39ddf82f5ee894e5b8860190ef529cecb7f7cb3a",
+   "bytes": 1757,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040438_001.png"
+  },
+  "wafer_00040438_012.png": {
+   "sha256": "b5e688cddc6813f25145fcde98a69d93adc6da69620a14838cc6327a900fc51a",
+   "bytes": 1772,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040438_012.png"
+  },
+  "wafer_00040438_013.png": {
+   "sha256": "29f89e383583e9ef49a2d1c9a9aa754d8fff9236c571c4d7f30cab8ba0872783",
+   "bytes": 1621,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040438_013.png"
+  },
+  "wafer_00040448_010.png": {
+   "sha256": "035b6cad18e32f5aafa3c6acaacd7fc81be1f2bfb9204675cd81ed96d6ed100e",
+   "bytes": 1652,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040448_010.png"
+  },
+  "wafer_00040458_002.png": {
+   "sha256": "8160860edbdbfb4c6f2393391fa8df4e91715855313fe2aa6a4b5acc80e38963",
+   "bytes": 1691,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040458_002.png"
+  },
+  "wafer_00040465_005.png": {
+   "sha256": "1fb60d2a39d4303d75f8f10ce7c15c5da7140cffb9ad8f57477a2ffec7f40a9a",
+   "bytes": 1606,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040465_005.png"
+  },
+  "wafer_00040467_001.png": {
+   "sha256": "66bd4fa0064d2fe1eb3f1a73c0f77af2dafc5171d5c9705959fca4cff1be4c77",
+   "bytes": 1655,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040467_001.png"
+  },
+  "wafer_00040470_022.png": {
+   "sha256": "c272c6df490ee0a11909ffb9ba889b128e5f9efcfbc925cb82e07846e8566fbe",
+   "bytes": 1621,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040470_022.png"
+  },
+  "wafer_00040472_024.png": {
+   "sha256": "33bb5e8b07f7a8bc50e2fae8e3b0d1dc276b369d03eaac2f7967099d0c954277",
+   "bytes": 1566,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040472_024.png"
+  },
+  "wafer_00040475_012.png": {
+   "sha256": "43069b817710b007671c8cec450edef2dff08ff3c0994e199b7bdc676bda654a",
+   "bytes": 1811,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040475_012.png"
+  },
+  "wafer_00040478_004.png": {
+   "sha256": "381079a686cdb4055ae304d06435182072fc46818591934db5037a6a951a68ae",
+   "bytes": 1688,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040478_004.png"
+  },
+  "wafer_00040496_009.png": {
+   "sha256": "07000dba4cf57c5f33eedd7beb651b31a8ee717b0631691150f6ca5c49b62056",
+   "bytes": 1731,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040496_009.png"
+  },
+  "wafer_00040511_025.png": {
+   "sha256": "d25b072a0790475e10fe06eb830becfd55e293308103b20924a3f154b29f0254",
+   "bytes": 1784,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040511_025.png"
+  },
+  "wafer_00040557_021.png": {
+   "sha256": "74e5df658efa67f84af04882e456fd086987bfca3c0e6f68595c4e0b13333cb0",
+   "bytes": 1660,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040557_021.png"
+  },
+  "wafer_00040567_020.png": {
+   "sha256": "22f7a752916ba0ce283a44440314bfc176f4f09341c47e51a3bb32f306795cb5",
+   "bytes": 1800,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040567_020.png"
+  },
+  "wafer_00040587_023.png": {
+   "sha256": "d3876d2a2213f719d660266fd43751a80ee89e8168ab66915d1e7e40e2b6501b",
+   "bytes": 1645,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040587_023.png"
+  },
+  "wafer_00040600_006.png": {
+   "sha256": "d1b9722b3945166598bf950cc98fde3b58abc50ac8a1e0863fa414e2f47650ba",
+   "bytes": 1729,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040600_006.png"
+  },
+  "wafer_00040608_001.png": {
+   "sha256": "598f03b41a65e4e3d98f96bd8ec8f913227cccbb21292a9c8d435dd44ca0ec8e",
+   "bytes": 1592,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040608_001.png"
+  },
+  "wafer_00040611_024.png": {
+   "sha256": "264bd0d9d3491b2896df1afff16d700da8867a91e18b34a2a43c4baded42d12b",
+   "bytes": 1631,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040611_024.png"
+  },
+  "wafer_00040636_017.png": {
+   "sha256": "80d6ae864ff2b4605d5c57e8cdbef3a404da34f25f959129a1a689a1f6678212",
+   "bytes": 1671,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040636_017.png"
+  },
+  "wafer_00040641_008.png": {
+   "sha256": "2474da99eafe4a83164b88c0778eadf7c399b1214e09bc5c7a0c7a0c1270d0c3",
+   "bytes": 1753,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040641_008.png"
+  },
+  "wafer_00040661_010.png": {
+   "sha256": "9bf295606f95451b04e18fe8e8181ff0d8fdc5976dd4f8001451be67ffe068d4",
+   "bytes": 1626,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040661_010.png"
+  },
+  "wafer_00040690_008.png": {
+   "sha256": "ce03b67f7d0893e2f8f9d532cbbe26f01d64837b4eddb2264e4f091b904c847d",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040690_008.png"
+  },
+  "wafer_00040737_002.png": {
+   "sha256": "3501c2e4b8601b0ce6339ec78d39255e3f0ca76f19e565fec6096fdcf8659ae1",
+   "bytes": 1861,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040737_002.png"
+  },
+  "wafer_00040771_015.png": {
+   "sha256": "8e00a924e8e467018208f683c92d758402c4161492ebab222fa1df5a93458be5",
+   "bytes": 1738,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040771_015.png"
+  },
+  "wafer_00040772_010.png": {
+   "sha256": "632e6935901551e768b14331888b88392bad3bac0f2a2067e5bf05117d11161e",
+   "bytes": 1845,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040772_010.png"
+  },
+  "wafer_00040783_023.png": {
+   "sha256": "c82c4eead6f2c5c00b42a2be6d5cc9c09ee1bb0ad83788a6b1203d8bb6e70f5e",
+   "bytes": 1774,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040783_023.png"
+  },
+  "wafer_00040792_006.png": {
+   "sha256": "3647a94419128c27c5f404d66aae6ac9482a5f7115c61dee22c81976d89a93d3",
+   "bytes": 1797,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040792_006.png"
+  },
+  "wafer_00040793_013.png": {
+   "sha256": "0a977c28000ceede20fd2394fdfc1ebcb00403055169b0e48c87aaa3a6b195c0",
+   "bytes": 1787,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040793_013.png"
+  },
+  "wafer_00040809_017.png": {
+   "sha256": "ce5b6348a7fa2b8827e025f09b91bdae9bc275ba75f6e113c9e380022f387261",
+   "bytes": 1765,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040809_017.png"
+  },
+  "wafer_00040821_014.png": {
+   "sha256": "ed03016383261fc150207d81de78308fd6c98604a8ca08ad7c28647d000d5496",
+   "bytes": 1763,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040821_014.png"
+  },
+  "wafer_00040821_017.png": {
+   "sha256": "ca9c53e61149e1ed1e6dab1b456a14eb3cf4abbfa4997eec660a04520020e53c",
+   "bytes": 1751,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040821_017.png"
+  },
+  "wafer_00040830_020.png": {
+   "sha256": "7a64dc0828c4a5144b2c36362484a1cacf2906fd85aa6982349d9b49c201d2df",
+   "bytes": 1823,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040830_020.png"
+  },
+  "wafer_00040845_002.png": {
+   "sha256": "de5bbdb22dd4b18f13198b07d20e33ba811c73721702c46b815441d63ffe7a0d",
+   "bytes": 1694,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040845_002.png"
+  },
+  "wafer_00040850_001.png": {
+   "sha256": "9814f93fe3ab63857b39a06b0f15d15cb65ccfa6a2ea9bab4413f68bc483b965",
+   "bytes": 1793,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040850_001.png"
+  },
+  "wafer_00040878_002.png": {
+   "sha256": "f047fbe4a35c08451758d846e5e63965e46cdbde9e1177631b23981c83a1dad3",
+   "bytes": 1902,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040878_002.png"
+  },
+  "wafer_00040912_002.png": {
+   "sha256": "64ca21d6234aa1a09ca0caf9cbee41390bc47dfde7c8e8313a974b1dc31b1544",
+   "bytes": 1869,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040912_002.png"
+  },
+  "wafer_00040912_004.png": {
+   "sha256": "869fc8b9a4cdc6a274b5115f1debf261d43acbdbaf028d2ec82ebe55ac45d270",
+   "bytes": 1797,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040912_004.png"
+  },
+  "wafer_00040923_007.png": {
+   "sha256": "d928660ee56288a80b9b9d71b9bb3d2b183c17f306613b009323d53e188799ab",
+   "bytes": 1900,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040923_007.png"
+  },
+  "wafer_00040947_003.png": {
+   "sha256": "d9c9e7bd22da838e396b9c65f8ae21d71d280442c55f02bd6c3ba8b7b5f407ee",
+   "bytes": 1677,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040947_003.png"
+  },
+  "wafer_00040979_003.png": {
+   "sha256": "701ce3466bd4482a9c2ca1b27cfd0c87501591874ff7b3726bfe185a3b60e549",
+   "bytes": 1739,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040979_003.png"
+  },
+  "wafer_00040979_009.png": {
+   "sha256": "6a4b22cc673a1a4fcfad2209b031d1e66048fd38a1d89a1caa7f01081cbb1414",
+   "bytes": 1887,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040979_009.png"
+  },
+  "wafer_00040994_022.png": {
+   "sha256": "032cb4700415932a5c4d377d20e973b5a268db3868504a998b8238214b4a48a2",
+   "bytes": 1753,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00040994_022.png"
+  },
+  "wafer_00041023_015.png": {
+   "sha256": "45a685b3ba64c6fc61ae1284c91107b9e483e26670f555fbe044ada0afdc9593",
+   "bytes": 1680,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041023_015.png"
+  },
+  "wafer_00041132_016.png": {
+   "sha256": "734a0c94a46efe71a977940f9cd61d3705ee36e12ad9ee956e40500542040856",
+   "bytes": 1939,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041132_016.png"
+  },
+  "wafer_00041133_005.png": {
+   "sha256": "aaa8603f7d162c89cd757d59b56a83907dfe7ff62c8388036883eea31d00f0fc",
+   "bytes": 1736,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041133_005.png"
+  },
+  "wafer_00041135_005.png": {
+   "sha256": "56e9c93b5d8aa9f89b90b1d19df14ff4b4973405f23b980505e8594899306b33",
+   "bytes": 1807,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041135_005.png"
+  },
+  "wafer_00041159_005.png": {
+   "sha256": "e592d91b0e2f460d255205a3352a37b3dd4be7c0df41de1c60a6e18a63ad0857",
+   "bytes": 1733,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041159_005.png"
+  },
+  "wafer_00041171_005.png": {
+   "sha256": "1098365b62b7cecb44d80d7c4b4d3c08385adccedce86eb093a72cd5e2f4f467",
+   "bytes": 1799,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00041171_005.png"
+  },
+  "wafer_00042024_014.png": {
+   "sha256": "b1b2229b208d820fd579fac4b7282b59c434895872161db25289c4419421f3c5",
+   "bytes": 1554,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042024_014.png"
+  },
+  "wafer_00042043_006.png": {
+   "sha256": "9e3417ea1096ac2c9198054fb9c4b1e8d09c1b699713fbe53daa50eb8b88a1c7",
+   "bytes": 1517,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042043_006.png"
+  },
+  "wafer_00042079_006.png": {
+   "sha256": "5263773f7244cbf214f0b7a4f1dfe5831e61438dfa28a4eb32fc6306ff649110",
+   "bytes": 1501,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042079_006.png"
+  },
+  "wafer_00042109_006.png": {
+   "sha256": "a1265c9d984ac15f6a7965f356dfb6dfc8ccde849511e617ca6919ed257dceb7",
+   "bytes": 1555,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042109_006.png"
+  },
+  "wafer_00042136_016.png": {
+   "sha256": "c44c9b032550960d9544fff50039501a19034b2aac32869a4ea551a4a2ed5f52",
+   "bytes": 1609,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042136_016.png"
+  },
+  "wafer_00042143_025.png": {
+   "sha256": "b008b6aa49199732c3a858e292e67f705d13c0f1ec9268037dfd77a3282c664d",
+   "bytes": 1620,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042143_025.png"
+  },
+  "wafer_00042155_004.png": {
+   "sha256": "450e2a8f98d93fd4bcd92cc1d5380c09723c0c475026497af7905afd57fb960e",
+   "bytes": 1631,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042155_004.png"
+  },
+  "wafer_00042167_017.png": {
+   "sha256": "a2775f3757b7495c81f3528ff8b5e160c6a6cb58f982dac608a238e63259051b",
+   "bytes": 1673,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042167_017.png"
+  },
+  "wafer_00042167_018.png": {
+   "sha256": "36b62504c2c5bb9e8929935d9ac8c50be8406cff73e53ba97d8ca34d83d791db",
+   "bytes": 1634,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042167_018.png"
+  },
+  "wafer_00042167_019.png": {
+   "sha256": "1eaa06f61eeeec438a30bd23e046630427b24cacd3d57f4c2653656f366c9dd2",
+   "bytes": 1651,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042167_019.png"
+  },
+  "wafer_00042184_006.png": {
+   "sha256": "22f793bba62a724a8872185fde52940c35413b3e6f6028ea3198fcd886f476e2",
+   "bytes": 1921,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042184_006.png"
+  },
+  "wafer_00042194_005.png": {
+   "sha256": "009d0d7cd434ba1ae9d092c27029092ea75176754a2466ddd122c378a3421cf2",
+   "bytes": 1841,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042194_005.png"
+  },
+  "wafer_00042199_017.png": {
+   "sha256": "cdada95203b37b38df3a6ebf2ecbe3e2c2e5c4ba56b70c46ce905b46050c8c03",
+   "bytes": 1975,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042199_017.png"
+  },
+  "wafer_00042201_007.png": {
+   "sha256": "768d4c9ef565092d6033432abee8cc1a467016e00bed7f217f8669fee593e2ec",
+   "bytes": 1703,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042201_007.png"
+  },
+  "wafer_00042201_024.png": {
+   "sha256": "4f8c21e6c801e3ddba21dbc04ac5b5d6e09c7967e643a86cad3e2e91b41ab542",
+   "bytes": 1776,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042201_024.png"
+  },
+  "wafer_00042211_012.png": {
+   "sha256": "7568500edd0bf7b635438a85b6ba689c7f1b4ebee6a8d3c81d828f05eef279d7",
+   "bytes": 1907,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042211_012.png"
+  },
+  "wafer_00042243_001.png": {
+   "sha256": "242711e52627668d6a4bb34dd5c7e9d8d3409403e621ad455e7468835b643dac",
+   "bytes": 1985,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042243_001.png"
+  },
+  "wafer_00042243_019.png": {
+   "sha256": "dcade1923cf08ac7c3ab8a572992ef19cf85b16d1dcd6250adc9ae1eaeca2802",
+   "bytes": 1948,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042243_019.png"
+  },
+  "wafer_00042245_015.png": {
+   "sha256": "bcf0cf90c0d262479b60013fc4de0add0fba38ace644a8b4302a4224812d470f",
+   "bytes": 1792,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042245_015.png"
+  },
+  "wafer_00042245_023.png": {
+   "sha256": "fe3fe85c691637bcb2fbdad55ca2a455ccbd7b4306e30be9e55a255b701a9f3e",
+   "bytes": 1884,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042245_023.png"
+  },
+  "wafer_00042249_004.png": {
+   "sha256": "de116934f2f1ee5ce1dd7a18a87e4e602e7ff479c59d2ddf4adc29dc5228bf85",
+   "bytes": 1806,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042249_004.png"
+  },
+  "wafer_00042249_024.png": {
+   "sha256": "f800660d3a1eddf7552de013ba0ccdbbb1228d9cdcd14799752552aa51ff18bc",
+   "bytes": 1847,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042249_024.png"
+  },
+  "wafer_00042250_022.png": {
+   "sha256": "2445132cd0cc902c7d033cc34b7dbb70f0e8ec05a178218e73f0bcde7388563d",
+   "bytes": 1889,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042250_022.png"
+  },
+  "wafer_00042263_022.png": {
+   "sha256": "1554a75b0a6c00dfe0cb0b90dd1f8dff8314e6849157d201f74e92ad26a6c2a1",
+   "bytes": 1888,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042263_022.png"
+  },
+  "wafer_00042267_019.png": {
+   "sha256": "708e4ea4e0f39eda60b317b238727927fcc26a92ad4f49b921e3149ac22e8016",
+   "bytes": 1857,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042267_019.png"
+  },
+  "wafer_00042277_004.png": {
+   "sha256": "7c6f21155cf5ef48adafc1e4838a8e00554222a34642125b23034c2d8186460f",
+   "bytes": 1913,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042277_004.png"
+  },
+  "wafer_00042277_013.png": {
+   "sha256": "8e5797b07cc5fc1ddac356f7f836bb073ac61a700d4406a2da750df32df7eafa",
+   "bytes": 1857,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042277_013.png"
+  },
+  "wafer_00042277_021.png": {
+   "sha256": "641cf333739e1bad04484a652839985237ef7426d8ab386a43e2ae67d01fb3d6",
+   "bytes": 1817,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042277_021.png"
+  },
+  "wafer_00042281_020.png": {
+   "sha256": "64dc0fe344dee82c82c50323bd866eb9cd204ef9619ce1f8eabddb662c0aa61f",
+   "bytes": 1910,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042281_020.png"
+  },
+  "wafer_00042283_006.png": {
+   "sha256": "8088ca9d3f93c6174dd80f8b2b0bea4b3134b5c868dc4d317e26a5c6ccd5a028",
+   "bytes": 1886,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042283_006.png"
+  },
+  "wafer_00042283_011.png": {
+   "sha256": "f65152d2e76cb131487364b6ad24de3729133f04360cd258305c0bec1d5f197d",
+   "bytes": 1837,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042283_011.png"
+  },
+  "wafer_00042330_023.png": {
+   "sha256": "725364a1866394559b1010c4f0a9949e203fa959ccd418e15a0a6bd095c7970d",
+   "bytes": 1740,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042330_023.png"
+  },
+  "wafer_00042332_016.png": {
+   "sha256": "e88bf1933f083c7917a61343fdc111edfe9b9c4e9d63e7d455801cb010376eec",
+   "bytes": 1895,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042332_016.png"
+  },
+  "wafer_00042332_018.png": {
+   "sha256": "69420b8f67887d7254095bc6f615d79100c160f7573c98a77f5d1d3625f48009",
+   "bytes": 1821,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042332_018.png"
+  },
+  "wafer_00042367_004.png": {
+   "sha256": "5086937828db8d98d2d99a639766eb280f74b73dd6e1311e54e0dd800e6d68ec",
+   "bytes": 1880,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042367_004.png"
+  },
+  "wafer_00042367_007.png": {
+   "sha256": "2ade568f02c4e6ae63c83d9a1f70361fd77afadd34c8de43b382fb3f7d596acc",
+   "bytes": 1920,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042367_007.png"
+  },
+  "wafer_00042367_008.png": {
+   "sha256": "605428931c1d127ac1e46ea0b4d82320ffc82b1745dae2675fe8737a40ee2fb2",
+   "bytes": 1880,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042367_008.png"
+  },
+  "wafer_00042367_016.png": {
+   "sha256": "9bc580e1d795df8155789d4a8462ca48af0fe4c0c24b55f810e8ff9656bbff20",
+   "bytes": 1960,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042367_016.png"
+  },
+  "wafer_00042367_022.png": {
+   "sha256": "69554f4b29a700490c47566e80885887e84ebc71389b5760655768da626a9f4d",
+   "bytes": 1931,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042367_022.png"
+  },
+  "wafer_00042397_008.png": {
+   "sha256": "b010931ff489bfe7b67a19e01193950169dd63f5851eb3003249ef2f6f263b8a",
+   "bytes": 1648,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042397_008.png"
+  },
+  "wafer_00042442_018.png": {
+   "sha256": "79622d23285013c90b337313877e83737f00a7b3c2de9473c74ca6839adffebf",
+   "bytes": 1738,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042442_018.png"
+  },
+  "wafer_00042451_017.png": {
+   "sha256": "3d33d1e331314cdb19af172ef48ac10ee792c48ccc9309e063edc65b9dc88aab",
+   "bytes": 1701,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042451_017.png"
+  },
+  "wafer_00042462_008.png": {
+   "sha256": "ad46167485069c84fa4518bc16985955a559242b353f3d8fc77f3821c7db0096",
+   "bytes": 1716,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042462_008.png"
+  },
+  "wafer_00042511_025.png": {
+   "sha256": "fb6d43ebc0260bb12c36e4265b24bf1d6ba6e04d97468052e6473a802d6f08fb",
+   "bytes": 1701,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042511_025.png"
+  },
+  "wafer_00042598_012.png": {
+   "sha256": "1268f56d96c068efc0fb57751b4327e2f02e775e18cd94b38ddbb9bba19eed55",
+   "bytes": 1725,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042598_012.png"
+  },
+  "wafer_00042618_001.png": {
+   "sha256": "f8d4f33d385f1f6ff6f615fae787d2b87d2c1d844ef0e929820d055887262aab",
+   "bytes": 2274,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042618_001.png"
+  },
+  "wafer_00042656_018.png": {
+   "sha256": "0544a4f2b61152ec4461247a762b2c17872b4968923c2ab04abceb3eeef8a371",
+   "bytes": 1794,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042656_018.png"
+  },
+  "wafer_00042680_002.png": {
+   "sha256": "1232304343f62bf0a907c7cecbbe16e84b5ffb4afb2e62fdcf75eac64c66c114",
+   "bytes": 1823,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042680_002.png"
+  },
+  "wafer_00042680_025.png": {
+   "sha256": "3f32c9cce6264002677ae0eca989179cf50545bc8ab55157eb177d459d0714d2",
+   "bytes": 1829,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042680_025.png"
+  },
+  "wafer_00042711_009.png": {
+   "sha256": "25a7723e72aa814ac34931a765e564c16ef8e29428200a85999adef6b10be957",
+   "bytes": 1801,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042711_009.png"
+  },
+  "wafer_00042718_020.png": {
+   "sha256": "a92bb3d8a7c00994648c43acdaac4b5544a12af5b58666d91f95771c4fa98b4d",
+   "bytes": 1735,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042718_020.png"
+  },
+  "wafer_00042748_015.png": {
+   "sha256": "266617c8299d4e38a9d629a96636882042f40eace46bfbc10768408ecf990e23",
+   "bytes": 2300,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042748_015.png"
+  },
+  "wafer_00042792_004.png": {
+   "sha256": "8ef974eac50455c492cd7d7098d735eb78d69242e1233f78d7d902eb67205dc0",
+   "bytes": 1681,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042792_004.png"
+  },
+  "wafer_00042831_023.png": {
+   "sha256": "1eae3046dcb8be582564d541805ebbb9b568ef8d3ccdd0e1dda2b9b063222df4",
+   "bytes": 1625,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042831_023.png"
+  },
+  "wafer_00042847_002.png": {
+   "sha256": "d19d7fd761490dfd43935955e9bba1e8da5a96167488e5bb4287a396b83f0a4c",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042847_002.png"
+  },
+  "wafer_00042865_024.png": {
+   "sha256": "899adf2f7b224c7177061032c8b6961228ce05beb87e353344fb9cc06a365bf4",
+   "bytes": 1679,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042865_024.png"
+  },
+  "wafer_00042895_016.png": {
+   "sha256": "3ebbbe88bc32b19d7a1936ed90fc8623ceb9d190919b0a510a60f9163be21502",
+   "bytes": 1655,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042895_016.png"
+  },
+  "wafer_00042900_009.png": {
+   "sha256": "5c6e4554473167bc93d75c505bcdfdb0509f582af397976bbdf891a209d0e2bf",
+   "bytes": 1796,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042900_009.png"
+  },
+  "wafer_00042917_020.png": {
+   "sha256": "1dc2b972f96c9a8651cae1adc42688f9f573bb49d45773781da7f2ca7eb52603",
+   "bytes": 1764,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042917_020.png"
+  },
+  "wafer_00042957_024.png": {
+   "sha256": "a6a3ddefc91c92d188db883c5a9cd93c47dda2278d306734049a953c6891a29e",
+   "bytes": 1599,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042957_024.png"
+  },
+  "wafer_00042963_025.png": {
+   "sha256": "b761b3684de32017bf2dfd74101aafcb35c35f703b8c8cf2c42e34c9b63a61c1",
+   "bytes": 1477,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042963_025.png"
+  },
+  "wafer_00042964_021.png": {
+   "sha256": "5412db2de92712bd9b246ed79c6c0b1a3370a32ea7366e08d7e4935e0caa30f8",
+   "bytes": 1640,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042964_021.png"
+  },
+  "wafer_00042967_002.png": {
+   "sha256": "03e4a5a93e46dbb768d01e4d8b87d77a5892f7a506548e7d0bdf46595d748ca8",
+   "bytes": 1510,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042967_002.png"
+  },
+  "wafer_00042967_019.png": {
+   "sha256": "4d0e06083c337bc6a724a8948f8533cee0e685098f6115e4561fe39ae9a78247",
+   "bytes": 1698,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042967_019.png"
+  },
+  "wafer_00042967_021.png": {
+   "sha256": "3dcd10ba6f35dd600c3ac88aca31039ebb09ec83a775cd829f59f12de77b7b48",
+   "bytes": 1701,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042967_021.png"
+  },
+  "wafer_00042975_004.png": {
+   "sha256": "419a71adb0c0860116ff93dc7c6238e5f34e1cf6e356b234df739155c7e4b735",
+   "bytes": 1556,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042975_004.png"
+  },
+  "wafer_00042985_008.png": {
+   "sha256": "8281f37a59ba9dc1f32289e2d7c6dd78ecda36ac2f8188c435e1f55f7c1751cc",
+   "bytes": 1776,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00042985_008.png"
+  },
+  "wafer_00043029_020.png": {
+   "sha256": "bedce1fbb9650f1cdea207cf590aea54c8bcbf4027462d4bbc92ad6caa551eeb",
+   "bytes": 1748,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043029_020.png"
+  },
+  "wafer_00043031_004.png": {
+   "sha256": "1fca11b2425a950b4fdf703cfcd03d9f54eaa6939d77aa7646658ab0504e317e",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043031_004.png"
+  },
+  "wafer_00043047_007.png": {
+   "sha256": "d393338e96df7e262aa962099cf8ea2c91cec499dd5226646771d3ddc89f05bd",
+   "bytes": 1738,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043047_007.png"
+  },
+  "wafer_00043128_019.png": {
+   "sha256": "c5c725f523f808095afd2b5fb1ac726c4dd23feff338aac4e29e0ec82d0a4594",
+   "bytes": 1717,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043128_019.png"
+  },
+  "wafer_00043181_006.png": {
+   "sha256": "41f39d43ef6877391f26fe85f48bce06a15cec15344383a24673e17463a7ef27",
+   "bytes": 1705,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043181_006.png"
+  },
+  "wafer_00043190_015.png": {
+   "sha256": "4f92fe5661ebafdc42f9262eaec0dc04d05b197164e9d0601548081e4fab7736",
+   "bytes": 1677,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043190_015.png"
+  },
+  "wafer_00043250_009.png": {
+   "sha256": "ef94ecc2ab2a800aa493c79bbdf9f51c14960e74648250dd209a94e889940267",
+   "bytes": 1794,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043250_009.png"
+  },
+  "wafer_00043260_004.png": {
+   "sha256": "968dee04c525f3dbc085aace34832f9486782402203b11a9169ce01e6f1f5cfa",
+   "bytes": 1802,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043260_004.png"
+  },
+  "wafer_00043374_002.png": {
+   "sha256": "1f595a9b16535cf1c05fc0d508d8e8f84efa5e48aeb33f7441ae3ad6f13b8ddf",
+   "bytes": 1687,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043374_002.png"
+  },
+  "wafer_00043374_024.png": {
+   "sha256": "cfceb248153fb735364a8be3231412f42c82728550d00a241f36955dbfe9b281",
+   "bytes": 1641,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043374_024.png"
+  },
+  "wafer_00043386_019.png": {
+   "sha256": "564943585835adea321401f5196c601e8d5f1fe7ebdf143a6912aad1f3fe88f1",
+   "bytes": 1686,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043386_019.png"
+  },
+  "wafer_00043459_025.png": {
+   "sha256": "d8f9dc3a24c2673a047517b2ba5e340ff5720b04fd330f088e6cc45e154f472f",
+   "bytes": 1697,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043459_025.png"
+  },
+  "wafer_00043477_006.png": {
+   "sha256": "557edab92fff6191a1f92fad0f7385588409b7c93bca8b698fd0b851a04f8c21",
+   "bytes": 1767,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043477_006.png"
+  },
+  "wafer_00043477_017.png": {
+   "sha256": "f9b9921da47ba7723865145858d12c06444b0a8b15e017bc30f3bc24bc4812f9",
+   "bytes": 1672,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043477_017.png"
+  },
+  "wafer_00043503_008.png": {
+   "sha256": "2e222e6a69e7b3fbb3e74c1ee24a3100dcabfa98cee655d6ce1757b3b97bef5c",
+   "bytes": 1713,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043503_008.png"
+  },
+  "wafer_00043527_010.png": {
+   "sha256": "717826fd415e070642ddbcc91c1cd312da526dd4d9d82398ff88604d5aba14e3",
+   "bytes": 1675,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043527_010.png"
+  },
+  "wafer_00043554_018.png": {
+   "sha256": "68a3de7f5655c14380b7928fc4f5c8b5fbed7c83d89fccdf3630e0145258abf4",
+   "bytes": 1670,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043554_018.png"
+  },
+  "wafer_00043568_024.png": {
+   "sha256": "589a9ba1dac2019c094c7ee6b4fa47c4cbfc754d8780611a5378cf07c300a9df",
+   "bytes": 1702,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043568_024.png"
+  },
+  "wafer_00043583_025.png": {
+   "sha256": "3d9900cc6a8e4bd41334fae95864aca9e502fa11f8c26a69f018db334ba82067",
+   "bytes": 1648,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043583_025.png"
+  },
+  "wafer_00043629_009.png": {
+   "sha256": "5d99c11c67ff00840fbdb2a191f1232b9f0dabc9a32fc1e3ac7004a3ee0a3160",
+   "bytes": 1688,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043629_009.png"
+  },
+  "wafer_00043632_024.png": {
+   "sha256": "a2ace35c84dc8e6d6397e8787f8abc46da2c317c88d8a568bef4ab0f62d470fa",
+   "bytes": 1734,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043632_024.png"
+  },
+  "wafer_00043651_001.png": {
+   "sha256": "11fcc47106be253e8466b21640c0fd39adbec67f2c8effdbc184bc04c2a4fda7",
+   "bytes": 1826,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043651_001.png"
+  },
+  "wafer_00043662_014.png": {
+   "sha256": "06f068dfafa881ace7077494667ad37525f2507e4b94f278590db953acdebae6",
+   "bytes": 1907,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043662_014.png"
+  },
+  "wafer_00043662_017.png": {
+   "sha256": "e4a66bc06776f1f6f405a6c13831ce4261db813fc7d7b913e5cfe6bb7eccd58a",
+   "bytes": 1742,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043662_017.png"
+  },
+  "wafer_00043680_013.png": {
+   "sha256": "7bcc1812b35a93eb73283689dc915d065e37e95f11bd5718bb72013aaa69b8ea",
+   "bytes": 2098,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043680_013.png"
+  },
+  "wafer_00043704_010.png": {
+   "sha256": "281a04ae32713a432b0b09391ee9006d896699e8d31115a676eae7b73bb4c662",
+   "bytes": 1771,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043704_010.png"
+  },
+  "wafer_00043729_022.png": {
+   "sha256": "f6fc75250dede2280d11b1fb1463ba50bbe76a9fd9316c9e504465031c941f41",
+   "bytes": 1765,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043729_022.png"
+  },
+  "wafer_00043831_010.png": {
+   "sha256": "c829a69bd821b4115a38947fc00739d2f9d356e0d6a2d7b82f49fc52abec84f7",
+   "bytes": 2363,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043831_010.png"
+  },
+  "wafer_00043831_011.png": {
+   "sha256": "eb9ff0e1888a07d3bed0707755c3481c321551cfea1369eca2a8c1ce0f97da7b",
+   "bytes": 2353,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043831_011.png"
+  },
+  "wafer_00043906_004.png": {
+   "sha256": "cf0d8e709243801414e1f9b52d3d082edaa3772998cd32628bdbfe45f861125f",
+   "bytes": 1653,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043906_004.png"
+  },
+  "wafer_00043908_010.png": {
+   "sha256": "7a26264d9c5b428e5e58bb8894c0adff4a5d86c11b61851315133d1e64828af3",
+   "bytes": 1728,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043908_010.png"
+  },
+  "wafer_00043927_022.png": {
+   "sha256": "0b38487e9016d6140b6219cf6286818d192f860f19d6a862d54c41fabdaba85f",
+   "bytes": 1611,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043927_022.png"
+  },
+  "wafer_00043929_004.png": {
+   "sha256": "f24b2b78f5f9b92e80807b0df8904f9e16f0eecbe672c122c1e9e66fa73f106b",
+   "bytes": 1613,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00043929_004.png"
+  },
+  "wafer_00044003_006.png": {
+   "sha256": "a26a7982d9063c24303704378410c17531d286e5ee1c64c76fea7b6fca92af76",
+   "bytes": 1618,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044003_006.png"
+  },
+  "wafer_00044003_009.png": {
+   "sha256": "7dee0637ca82f2cb67aa46701ae792de5d7487d653f778ca38d67c51ab4bb0fa",
+   "bytes": 1608,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044003_009.png"
+  },
+  "wafer_00044006_018.png": {
+   "sha256": "ce775a5cb63bff1f7fc78f035c8f2f58e94c654b21c54f23a2a5822adcee8bd7",
+   "bytes": 1670,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044006_018.png"
+  },
+  "wafer_00044027_017.png": {
+   "sha256": "d553f381c9a6871f09bcaa90bd0993d819e68703cc16c943f6a8a5c4616fe1ab",
+   "bytes": 1541,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044027_017.png"
+  },
+  "wafer_00044032_002.png": {
+   "sha256": "67bafb6322a6afbd765339f729908c36b3d4a12adb249f370f166e19cfeea09b",
+   "bytes": 1732,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044032_002.png"
+  },
+  "wafer_00044037_001.png": {
+   "sha256": "89758fa00b1a5b90ff0c56c98e26d428414a989c0a8ade43727fcb598a96b028",
+   "bytes": 2394,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044037_001.png"
+  },
+  "wafer_00044037_011.png": {
+   "sha256": "434ab678c349d24a904271e75bb812c3556737fe9eee8f3047e218cbbca74da9",
+   "bytes": 2106,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044037_011.png"
+  },
+  "wafer_00044038_012.png": {
+   "sha256": "7cad88af56180ae3a2e60d9e2d4a318a629233fb6e3ad61298575d1c814116f5",
+   "bytes": 2219,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044038_012.png"
+  },
+  "wafer_00044038_018.png": {
+   "sha256": "30a3dfd9460c1a77222bee462780739977b786b6b574e024558b687a8bd03d0b",
+   "bytes": 2482,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044038_018.png"
+  },
+  "wafer_00044043_012.png": {
+   "sha256": "6f6682f137fbfe3fc4fdf929c51d918bc675b3d876b289c229ce6931c845bf36",
+   "bytes": 1730,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044043_012.png"
+  },
+  "wafer_00044076_011.png": {
+   "sha256": "98359debcf99953f5ee35f443d8e2b6abe332c3718d087abc4588e86b6347a2e",
+   "bytes": 1716,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044076_011.png"
+  },
+  "wafer_00044076_013.png": {
+   "sha256": "db998cd86fb2cc4551175ccca512ad8e66dadec80e8b813e6201a86dafe52b74",
+   "bytes": 1652,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044076_013.png"
+  },
+  "wafer_00044076_015.png": {
+   "sha256": "a8b9c6551295adedf61f06aa158982017540d343e18b556028482bc18929458a",
+   "bytes": 1708,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044076_015.png"
+  },
+  "wafer_00044084_024.png": {
+   "sha256": "61adc2dd46bb2e5e38d3c6cef4e6fb83f1a1611db3c32f444966b832aea19f16",
+   "bytes": 1694,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044084_024.png"
+  },
+  "wafer_00044105_005.png": {
+   "sha256": "5e8d18d20b09e7f9017d95131876119be987c0ad35c1c1f72baf97abdcd666df",
+   "bytes": 1809,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044105_005.png"
+  },
+  "wafer_00044105_021.png": {
+   "sha256": "5f0b945475a15665e83d91d0c600ed481cea71217cec0e56def8efad60a556cc",
+   "bytes": 1694,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044105_021.png"
+  },
+  "wafer_00044105_023.png": {
+   "sha256": "05150872e13211e1c065c37fcbf142baf537038db2549a4bac541af7cc7ac14b",
+   "bytes": 1755,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044105_023.png"
+  },
+  "wafer_00044107_018.png": {
+   "sha256": "26ebf8289af0c8a0450464ddcaecccf371871aa94675617a3d98f853c130cd62",
+   "bytes": 1785,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044107_018.png"
+  },
+  "wafer_00044127_023.png": {
+   "sha256": "d73fb9b248c201997a34de00e5da6a886da13a4cba091fd5b306e6aee68ff1da",
+   "bytes": 1643,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044127_023.png"
+  },
+  "wafer_00044170_004.png": {
+   "sha256": "f5f4f3a11049bd1aa4669b335aafcd45438998272b3c426d739bf7003b332e91",
+   "bytes": 1841,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044170_004.png"
+  },
+  "wafer_00044170_005.png": {
+   "sha256": "14da28df4a5142fc1b0da3eb286bf849170bc1e6a9af20ed9cd9d30be8ece3be",
+   "bytes": 1886,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044170_005.png"
+  },
+  "wafer_00044170_008.png": {
+   "sha256": "d5ecdefe671bb51d5e98e07e34e77afd196b742d76657fb43bec68f5cac84278",
+   "bytes": 1894,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044170_008.png"
+  },
+  "wafer_00044170_010.png": {
+   "sha256": "8913a70e740d788c2c84aa7c25de6132197bb50a46f9ad2bf8e9a2ce50af536a",
+   "bytes": 1924,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044170_010.png"
+  },
+  "wafer_00044171_003.png": {
+   "sha256": "7be96768a815ca30a9828c630868544393c11b324d2335820a2098e062011e96",
+   "bytes": 1839,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044171_003.png"
+  },
+  "wafer_00044171_018.png": {
+   "sha256": "c7d226aad1db7dfd153c0dc1622b03795d5de2b19c3ee86dbc9bf48dc75496c4",
+   "bytes": 1931,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044171_018.png"
+  },
+  "wafer_00044171_020.png": {
+   "sha256": "43e6df6fda26513a1208626a88c51f48932a9b4f35619ab7707a98cbf54e2443",
+   "bytes": 1914,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044171_020.png"
+  },
+  "wafer_00044178_021.png": {
+   "sha256": "36956ebced3a3bc8489d5d4ee1f021e0d3bf1cef41b280804d0417b19e582f84",
+   "bytes": 1724,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044178_021.png"
+  },
+  "wafer_00044184_008.png": {
+   "sha256": "265a59983f2c94af1ae0be5284fa015be5a02593192be653d512400b66147adb",
+   "bytes": 1718,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044184_008.png"
+  },
+  "wafer_00044184_021.png": {
+   "sha256": "a4126e74368bd4863f4a46b1f951c9c209404277a94686fc74e111ae7ff015c2",
+   "bytes": 1736,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044184_021.png"
+  },
+  "wafer_00044185_003.png": {
+   "sha256": "bd04e7aa79aafd96954aa4d974bcbd967158821352806f2f26f1ac7534125f70",
+   "bytes": 1788,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044185_003.png"
+  },
+  "wafer_00044189_014.png": {
+   "sha256": "6ac344887b8fff5dc61fae5f730c25eaf90bef9e69fbefd1f80ea6f73f8fe2bf",
+   "bytes": 1880,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044189_014.png"
+  },
+  "wafer_00044211_019.png": {
+   "sha256": "d88f8078f24a7b92d5a75a3d603e37a2483f8ebfc0c1a4169fe311e29f87b274",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044211_019.png"
+  },
+  "wafer_00044216_018.png": {
+   "sha256": "84f6f4dc9c5ecc833c9c78dbfb9594cf9ca33ea8bdf8c5eb821bc12cfd852da1",
+   "bytes": 1891,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044216_018.png"
+  },
+  "wafer_00044219_007.png": {
+   "sha256": "f1c0c56dd37ac8f94b890e41f4d6014174eb78f23246c8a98197615fc5691ecd",
+   "bytes": 1808,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044219_007.png"
+  },
+  "wafer_00044219_025.png": {
+   "sha256": "17edfd6bb52805eb77daf230b20475a36fc773226005464864d0cec24f2f291b",
+   "bytes": 1825,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044219_025.png"
+  },
+  "wafer_00044221_006.png": {
+   "sha256": "aadccfa2ae5b9591fe3752de8ce72b2626adbf5b498fe4825ec7340fc5b2f1d8",
+   "bytes": 1700,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044221_006.png"
+  },
+  "wafer_00044232_010.png": {
+   "sha256": "e13ad01ca03eadd46ca01a3b63883f8c6487ee28d6be7fc3193bcf1d7700b37e",
+   "bytes": 1790,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044232_010.png"
+  },
+  "wafer_00044233_023.png": {
+   "sha256": "a7b112a73568d19e388c2a608ee7eb4ff43725c900abd0ec77d912615be1542f",
+   "bytes": 1779,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044233_023.png"
+  },
+  "wafer_00044298_014.png": {
+   "sha256": "cf04a9125f9e7427264418f393b098c039dd5890e729fa6d0b2040085455b4d4",
+   "bytes": 1714,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044298_014.png"
+  },
+  "wafer_00044335_016.png": {
+   "sha256": "ac47af79af04e8fde05506031bb4a45c402b31501be44ed9e528137a3c442847",
+   "bytes": 1937,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044335_016.png"
+  },
+  "wafer_00044374_010.png": {
+   "sha256": "babb4c8501bf6b342e53386e90e8a028140bb3bf7841eea4d9ecd3cbe173d88f",
+   "bytes": 1745,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044374_010.png"
+  },
+  "wafer_00044394_008.png": {
+   "sha256": "50e0a5e8ec03425070266e1e8a6f3df3d6244fa627690777e6693961b83617e0",
+   "bytes": 1797,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044394_008.png"
+  },
+  "wafer_00044445_022.png": {
+   "sha256": "eee0e1915508ab24c7b8ac0b7b076025448c9d9c4d242969c3b92487051e0f53",
+   "bytes": 1732,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044445_022.png"
+  },
+  "wafer_00044496_016.png": {
+   "sha256": "552ed51ce1a77b6a80d748e7a017ea27cca42b06e4522eb52594d9d744590ad3",
+   "bytes": 1707,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044496_016.png"
+  },
+  "wafer_00044502_016.png": {
+   "sha256": "88e73fe3f2b8f6ab1ff942214740f62b9128adb54823ae45a45967ca78018f09",
+   "bytes": 1854,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044502_016.png"
+  },
+  "wafer_00044509_016.png": {
+   "sha256": "caa9285c0e55db8f07e3b9a97600b5797ecf8be1e62e881f66a8a3d651a07cc3",
+   "bytes": 1705,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044509_016.png"
+  },
+  "wafer_00044531_011.png": {
+   "sha256": "8d5f1ea62b50240f61c6de547652606d846b68ba67e70d1e723683b5a8d14724",
+   "bytes": 1795,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044531_011.png"
+  },
+  "wafer_00044570_001.png": {
+   "sha256": "9c44afdcfa9f49eb94af14cd10197821b0ddc3256bfbfe506f2672a0d2f85d5f",
+   "bytes": 1797,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044570_001.png"
+  },
+  "wafer_00044570_007.png": {
+   "sha256": "824e08f8e5abe967f30c4bc73b94d37b0ba4a90c6c4813500b45175b96c1e8b9",
+   "bytes": 2271,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044570_007.png"
+  },
+  "wafer_00044576_016.png": {
+   "sha256": "6789d1e8d9f37110650fa0ebeda6f378ac76315164e51c16ec0a25dd816b015e",
+   "bytes": 1728,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044576_016.png"
+  },
+  "wafer_00044599_019.png": {
+   "sha256": "2c4a52d1b9803de4747bb2d4c145c0507a12a31ac3cd2b9578dd0cd25ef05e6e",
+   "bytes": 2247,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044599_019.png"
+  },
+  "wafer_00044783_013.png": {
+   "sha256": "c9773fbd6c98b89cf509fafa1bdbbbc5e1a7613e37378e8dc01e79bb8c0ccbf0",
+   "bytes": 2137,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044783_013.png"
+  },
+  "wafer_00044789_004.png": {
+   "sha256": "91d1afc46a33feb0e4649c3ab4cc9c1ac8d7d79426e80d54cee1b0983b93e1da",
+   "bytes": 2144,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044789_004.png"
+  },
+  "wafer_00044792_010.png": {
+   "sha256": "46692e7fa1f1b474631eacf75ae3655a1ad283e3f2610a079da5ebe221e770e8",
+   "bytes": 2340,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044792_010.png"
+  },
+  "wafer_00044795_005.png": {
+   "sha256": "883e58a17c11b0b5b73ab53d4a140bc3f64959dcce82ad30e8f3ac477db010ab",
+   "bytes": 2056,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044795_005.png"
+  },
+  "wafer_00044798_012.png": {
+   "sha256": "0be6252fdeaa3e2129163a577e89e51d19059327ce0a12dc9c361ae446928ded",
+   "bytes": 2270,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044798_012.png"
+  },
+  "wafer_00044798_015.png": {
+   "sha256": "ec301a44edfdf83b0f4153c6fcba47ea7c3db3e4cec24795a80ae6cb6873312f",
+   "bytes": 2222,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044798_015.png"
+  },
+  "wafer_00044816_015.png": {
+   "sha256": "e2a8a0c33caff5a3e85b147d092ca8d3ad921a444f024e56e7a23802bd1c9afb",
+   "bytes": 2173,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044816_015.png"
+  },
+  "wafer_00044899_014.png": {
+   "sha256": "6ea7481cb1f6279cacd43885fbd7ef73c012f5f3dbaf58812bf177b9b8ed6a71",
+   "bytes": 1726,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044899_014.png"
+  },
+  "wafer_00044953_003.png": {
+   "sha256": "d187ea418eb926b62915b719b07fd747e59de1b8253cc32ad8cfb4a5746f958e",
+   "bytes": 1587,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044953_003.png"
+  },
+  "wafer_00044982_006.png": {
+   "sha256": "36adeb126e2d139a927b448571c4360704ec3d5216f7988776b1fc6e26c00506",
+   "bytes": 1640,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044982_006.png"
+  },
+  "wafer_00044982_010.png": {
+   "sha256": "3b303a16f4eb4b3626eda2a579622383caf859cf8d1b3b374ea4273f053eb7a3",
+   "bytes": 1704,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044982_010.png"
+  },
+  "wafer_00044982_011.png": {
+   "sha256": "316c9212c13c7137dbb3aa41ad9bfdb3618ff3b77dd7f554520204a0cc463db5",
+   "bytes": 1704,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044982_011.png"
+  },
+  "wafer_00044982_013.png": {
+   "sha256": "d26ab5edf4752ac8e08047924876e81557bccf5ffed2de9a8940fcc4322109fb",
+   "bytes": 1643,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00044982_013.png"
+  },
+  "wafer_00045002_025.png": {
+   "sha256": "d4d34663ee122029c068246937b5404abc6d517b8d671287dc10c6a406db7523",
+   "bytes": 1661,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045002_025.png"
+  },
+  "wafer_00045005_006.png": {
+   "sha256": "e6a96490e8319fbc5692b7d9fed759c0153debb35d65afab4b4c8965471eeafe",
+   "bytes": 1692,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045005_006.png"
+  },
+  "wafer_00045051_009.png": {
+   "sha256": "4fe6424a32b587be6e209d4752c49fcc4326684c4d47210355ef18d42b4a6129",
+   "bytes": 1537,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045051_009.png"
+  },
+  "wafer_00045126_012.png": {
+   "sha256": "0e9fc297e95fecf2a0d194592776ef26b5fbb12d8857fc481cf769aad974a9f4",
+   "bytes": 1592,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045126_012.png"
+  },
+  "wafer_00045241_021.png": {
+   "sha256": "805c20014095da606af70a96452bbe46163e2254d848f40f2d0a4158baaa3eb6",
+   "bytes": 1664,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045241_021.png"
+  },
+  "wafer_00045247_021.png": {
+   "sha256": "fdf734dba29ff19d3c1aa108097a41e52b8bfcda50000258f31ed94da51c93fb",
+   "bytes": 1661,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045247_021.png"
+  },
+  "wafer_00045252_016.png": {
+   "sha256": "03402f35be2b7aeab048ffc083e20c62be96de5e131f3bc1827555130840af32",
+   "bytes": 1621,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045252_016.png"
+  },
+  "wafer_00045300_003.png": {
+   "sha256": "fe4278df7a3e3a58f4b9683343f2b7d593ba5cab876d3dd8604f38ac2bcd179a",
+   "bytes": 1992,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045300_003.png"
+  },
+  "wafer_00045316_006.png": {
+   "sha256": "551f5296a1a9d218e5c4bbf7ee04b631b556f4fe86806ecfff99471b0c490de2",
+   "bytes": 1887,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045316_006.png"
+  },
+  "wafer_00045316_009.png": {
+   "sha256": "723acb0c78d42528ea66034ee066fd998a597796cbe773d5ccca27839c448132",
+   "bytes": 1822,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045316_009.png"
+  },
+  "wafer_00045316_013.png": {
+   "sha256": "cd900b3c5fd8b4f457428e80bb87e2cfbe5b8c456341a804edb62b8538554823",
+   "bytes": 1863,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045316_013.png"
+  },
+  "wafer_00045339_003.png": {
+   "sha256": "16a40fbee0a2ab1235d764e776b8155271d8498c6c3244ce529658d1bb794174",
+   "bytes": 2174,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045339_003.png"
+  },
+  "wafer_00045340_009.png": {
+   "sha256": "45a9d699357a8635c7c0d962f3f439c596ba020a0f36f9f8b49aa5342cef3f93",
+   "bytes": 1799,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045340_009.png"
+  },
+  "wafer_00045349_007.png": {
+   "sha256": "68c986c7432f927737ae40c7bd5236811bdca3f6f6c4f12d396020f7707c6f7f",
+   "bytes": 1922,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045349_007.png"
+  },
+  "wafer_00045399_010.png": {
+   "sha256": "d20234d5e4fa75d84a25858f91ec4564380fd5676d7905556265a194971ee3a7",
+   "bytes": 1982,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045399_010.png"
+  },
+  "wafer_00045414_013.png": {
+   "sha256": "ea59c11ed31e44dfc4c3b348b495974ab1744016e1256e120202c39496347296",
+   "bytes": 1925,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045414_013.png"
+  },
+  "wafer_00045414_014.png": {
+   "sha256": "fbaf11f86db14aa3f718df686b5a1bf3aa29c4c90b64b4f57f6faaff8a456683",
+   "bytes": 2117,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045414_014.png"
+  },
+  "wafer_00045417_009.png": {
+   "sha256": "a773b9c7a075205a6637476a5b491f7ee47702eb5ca50ddab961ddc25e00b047",
+   "bytes": 1924,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045417_009.png"
+  },
+  "wafer_00045433_024.png": {
+   "sha256": "15af2a3691dd69473828fe3e362e26a219b9a97306e443634bbfe00141ae0899",
+   "bytes": 1826,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045433_024.png"
+  },
+  "wafer_00045455_011.png": {
+   "sha256": "230b3b1ab3e32b3bf310a9f8d51eb678c9bf2ae920b831089baf098cd41127ee",
+   "bytes": 1783,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045455_011.png"
+  },
+  "wafer_00045464_017.png": {
+   "sha256": "48026764ebd6705ca623f3ff91b6d01b4ec30ef5353201f8127ddd0fdc1b75b7",
+   "bytes": 1815,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045464_017.png"
+  },
+  "wafer_00045500_016.png": {
+   "sha256": "ee6612e942b18ee2ef1dfaa02b53e0bd34040d2bbb17e896a39ac73c73200df9",
+   "bytes": 1816,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045500_016.png"
+  },
+  "wafer_00045531_024.png": {
+   "sha256": "781894bd006a155df3f681532096494af4e5805049997146b041f9312dab1caf",
+   "bytes": 1753,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045531_024.png"
+  },
+  "wafer_00045537_004.png": {
+   "sha256": "c8f115044dce35b65372b59f43cfd2873c942d48bb2a07de592a38a3cfaf0ed0",
+   "bytes": 1796,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045537_004.png"
+  },
+  "wafer_00045537_018.png": {
+   "sha256": "4e940b4ca59dfecf6160f797e6aa92ee1d459e95107d8a02bcbea54ef6a2fc6e",
+   "bytes": 1733,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045537_018.png"
+  },
+  "wafer_00045539_015.png": {
+   "sha256": "1e1d4a3d30d30a3e208d1f45ea93087f39c96b7cc0c9250fa3ffd18cc0231640",
+   "bytes": 1801,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045539_015.png"
+  },
+  "wafer_00045545_009.png": {
+   "sha256": "2ce478a5ecea40d9a97dfe0794363be6590735b3a04f2701c83d1748e8e2601a",
+   "bytes": 1780,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045545_009.png"
+  },
+  "wafer_00045566_004.png": {
+   "sha256": "6f82bca75db48e29c250a917c477bf0e6f926f79ce2e0c675ed28090f5ca7dac",
+   "bytes": 2148,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045566_004.png"
+  },
+  "wafer_00045566_008.png": {
+   "sha256": "d8ac3d1744250321b81d178169cb57ec4fd9111f6982c768edaf88f7df1ad76e",
+   "bytes": 2150,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045566_008.png"
+  },
+  "wafer_00045566_013.png": {
+   "sha256": "6d93137478fdf175117fef21b87f2a902b984e56b8252ecd5fc275f43579fffc",
+   "bytes": 2148,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045566_013.png"
+  },
+  "wafer_00045585_022.png": {
+   "sha256": "486f47ebfb8d37d9a99a5c21f799aef6fe251875472229a19218235ee6fa5871",
+   "bytes": 1801,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045585_022.png"
+  },
+  "wafer_00045605_007.png": {
+   "sha256": "d34f057ebb5cce870175878b4f60b882560083a734d1fb1fc9c98edbebf884a8",
+   "bytes": 1759,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045605_007.png"
+  },
+  "wafer_00045635_001.png": {
+   "sha256": "8163e87dfe809a948f6d9b510b170a3bde9b5e7976705401f9713c3858b7c682",
+   "bytes": 2020,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_001.png"
+  },
+  "wafer_00045635_002.png": {
+   "sha256": "5a9432c2fed17bf008a9efcc18c2994f93ad1cbeb0766c6d2ca8e148df0a3b8f",
+   "bytes": 1950,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_002.png"
+  },
+  "wafer_00045635_003.png": {
+   "sha256": "ee11361973a2e4775c0950f10fe8accef09a1f638293f4fbb16e8862d27d671a",
+   "bytes": 1984,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_003.png"
+  },
+  "wafer_00045635_004.png": {
+   "sha256": "a1aa9cdf01e77d9dbcb7446a4da9f82e30e38f2fe21715498d9ea4bda26e749b",
+   "bytes": 2034,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_004.png"
+  },
+  "wafer_00045635_005.png": {
+   "sha256": "af44017abecf29054e658af7c6700dc8ff506becb8496cbc5304f7254cb6c09d",
+   "bytes": 1872,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_005.png"
+  },
+  "wafer_00045635_007.png": {
+   "sha256": "6642d1c8a4a943b37211cb822e27c279aeeaffe8a0cebabdb931a9486a7d84ac",
+   "bytes": 1853,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_007.png"
+  },
+  "wafer_00045635_013.png": {
+   "sha256": "1184fd5febe2bef797c3e36d85c504fdca762ff7c7335df3f404936eefec0752",
+   "bytes": 1775,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_013.png"
+  },
+  "wafer_00045635_023.png": {
+   "sha256": "d879409ad2d9a23f3b35cd7c5f0a71ed8e26b72998f88e3739c7d17f9a327c46",
+   "bytes": 1776,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045635_023.png"
+  },
+  "wafer_00045641_003.png": {
+   "sha256": "2ad9b7e6173ad23984eee9089ead488aa95b0b9843b85e4353b0a2a2f76d8fda",
+   "bytes": 1800,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045641_003.png"
+  },
+  "wafer_00045641_012.png": {
+   "sha256": "41118882251ee7f0504677dc9d9b990ab4b56f23a0bf5ad132769471d104cf73",
+   "bytes": 1721,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045641_012.png"
+  },
+  "wafer_00045645_006.png": {
+   "sha256": "989942d9f3ab1f9d8f8a570f3edeb43129d62a03798ffb08788a21392deb391f",
+   "bytes": 1782,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045645_006.png"
+  },
+  "wafer_00045645_014.png": {
+   "sha256": "22a4689c7109f535e67ba2f8cc02a6b3e0f0c57c62207fa4814b28e1ef6ba2bf",
+   "bytes": 2080,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045645_014.png"
+  },
+  "wafer_00045679_019.png": {
+   "sha256": "803408f9e922cf26d93a204307c9c3b145c0f8f905ca317cc627229a8e48d161",
+   "bytes": 1908,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045679_019.png"
+  },
+  "wafer_00045687_006.png": {
+   "sha256": "6a09cbc971ed99715811c1e8e1ca980427a6c3ff43f180f79b55c7d83eaff9d7",
+   "bytes": 1864,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045687_006.png"
+  },
+  "wafer_00045687_009.png": {
+   "sha256": "aec832f46b5f2015ad18caba49a41540caed8a4d2d7482a006768309386bb88c",
+   "bytes": 2357,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045687_009.png"
+  },
+  "wafer_00045692_017.png": {
+   "sha256": "608c32ed151658f3e37782b98378a27088771f0c2d2c053478b82ae65b091edb",
+   "bytes": 2441,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045692_017.png"
+  },
+  "wafer_00045697_023.png": {
+   "sha256": "dcf30502fc24321dfd07478cc3f851bd27b7ad4bb829fd9bef06fa9286012978",
+   "bytes": 1848,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045697_023.png"
+  },
+  "wafer_00045708_007.png": {
+   "sha256": "eb11d8527efc253bb4513c4ea7377f109dd347122657f35b97b4dc58f61ad420",
+   "bytes": 1800,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045708_007.png"
+  },
+  "wafer_00045717_009.png": {
+   "sha256": "6828d52e2a883b2f7835011137447a2a1df7309ec711fd81b9de5771049060c9",
+   "bytes": 2322,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045717_009.png"
+  },
+  "wafer_00045717_018.png": {
+   "sha256": "0bacab31e4ece9974470c969e3156fd52be2d9768bf87a88831298faeb6b398f",
+   "bytes": 1897,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045717_018.png"
+  },
+  "wafer_00045728_012.png": {
+   "sha256": "f3b85e024a7dcef53775a8a97a5a60c51901bf2c008f09ac1deafd3cafca01f4",
+   "bytes": 2164,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045728_012.png"
+  },
+  "wafer_00045733_001.png": {
+   "sha256": "2e24dfd2fca4c009a16d84fdc0da3c1e931835006f7c856354c6c7e2cf202749",
+   "bytes": 1869,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045733_001.png"
+  },
+  "wafer_00045733_024.png": {
+   "sha256": "6ab5274e64ae8077737bb10440462c2e6ed1c3af01885d75f7779e38ba234a49",
+   "bytes": 1861,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045733_024.png"
+  },
+  "wafer_00045738_008.png": {
+   "sha256": "e92186c28ff9f4084d19bf22281a47a7d97aaaf2f73eae8bf7259e5e50c8adaf",
+   "bytes": 1762,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045738_008.png"
+  },
+  "wafer_00045738_018.png": {
+   "sha256": "d61a1e2cf2c7be4aae6153b8829f02b71b79e430d0eb8f1032b8a09741976ddc",
+   "bytes": 2435,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045738_018.png"
+  },
+  "wafer_00045748_002.png": {
+   "sha256": "0a43509be2205e687099b657c4e0aa4370e4b3508855c11f0a0e0908d7ac4816",
+   "bytes": 1755,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045748_002.png"
+  },
+  "wafer_00045760_017.png": {
+   "sha256": "d1e096d9df9101c505de386965a5b5bb1466026f3503c375cff0cf4bedadfd60",
+   "bytes": 2260,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045760_017.png"
+  },
+  "wafer_00045761_008.png": {
+   "sha256": "5cd2625f0d17d5639a6c0d9a2f94a5a06fc967ccd51de08c2290483ec3e0102a",
+   "bytes": 1834,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045761_008.png"
+  },
+  "wafer_00045761_009.png": {
+   "sha256": "c526ca838a037b9bf46fba53ad35f0d337b243987543d3a90d2dcb1fee68f296",
+   "bytes": 1848,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045761_009.png"
+  },
+  "wafer_00045761_016.png": {
+   "sha256": "5c18394506e3b71e0b7bf89bb6dd516f205d33420a7bd1b333abaf7b97a2d226",
+   "bytes": 1829,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045761_016.png"
+  },
+  "wafer_00045767_004.png": {
+   "sha256": "32c0c680a582312dc0e1c18e7ab0d03e54e332e3f11d4ddd3aef2f4413c4425b",
+   "bytes": 1848,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045767_004.png"
+  },
+  "wafer_00045768_003.png": {
+   "sha256": "e6c59c11cbb4380fa167b608d4cfa93c11c8aa8411534fab1f5c7e2bb8ddcb31",
+   "bytes": 1944,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045768_003.png"
+  },
+  "wafer_00045768_012.png": {
+   "sha256": "375380991efd4a95c2e37dfb7831417e0adbc11c6a187eb2de280825a484994b",
+   "bytes": 1993,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045768_012.png"
+  },
+  "wafer_00045784_010.png": {
+   "sha256": "2f7fe063590d5617b9ee939e0cb6ea3bd09178226fae7ecddf3c7991aef7f44c",
+   "bytes": 1746,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045784_010.png"
+  },
+  "wafer_00045799_007.png": {
+   "sha256": "08720b1e979ae3fa20689343a6db4a029a4f7bc8ad7dfaf2d1a08d1774b66c00",
+   "bytes": 2196,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045799_007.png"
+  },
+  "wafer_00045801_006.png": {
+   "sha256": "0f865811c5264803f1fdd1f3b5732f584b9e304fb1eff07c6f2e426e19d64b9a",
+   "bytes": 1842,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045801_006.png"
+  },
+  "wafer_00045856_016.png": {
+   "sha256": "27140eef621864e03dbcbad4ff2d4b48de0a44f3745a395460ea900b08a3230e",
+   "bytes": 1780,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045856_016.png"
+  },
+  "wafer_00045863_006.png": {
+   "sha256": "2817812010c608bba5d4788452538447c33ab031b44b0d4f04bff9fda7e90ee2",
+   "bytes": 1735,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045863_006.png"
+  },
+  "wafer_00045863_010.png": {
+   "sha256": "6f1040ef62802b5b6fa1359d68e989d4cca966c1dbb59ed922076c0c857c9b35",
+   "bytes": 1858,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045863_010.png"
+  },
+  "wafer_00045863_011.png": {
+   "sha256": "f47864cc0359cd97456e8792d4e191ebf9d5746aea76b6dee23bcd2ced585632",
+   "bytes": 1765,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045863_011.png"
+  },
+  "wafer_00045863_014.png": {
+   "sha256": "a2e29a7acdf34f3c3f9eed1e850b01974cd65b1847bca93c9fe62bfd2a42a85f",
+   "bytes": 1932,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045863_014.png"
+  },
+  "wafer_00045877_002.png": {
+   "sha256": "bfd5c42f8909a0e11ef682df8227ec80da7fc690b4c5a315c709834ee749bebd",
+   "bytes": 1825,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045877_002.png"
+  },
+  "wafer_00045877_014.png": {
+   "sha256": "c43f100da3fce3865929c157a567a94067eb28cfb6b6e70b148ab1b71875f1a7",
+   "bytes": 2026,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045877_014.png"
+  },
+  "wafer_00045877_015.png": {
+   "sha256": "2651c68ff1a779dd319dcb04683c953c256073380ea789aff20f886a5a01f25a",
+   "bytes": 1817,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045877_015.png"
+  },
+  "wafer_00045899_008.png": {
+   "sha256": "5d5008b7a0daf6753fff7beacfc8b0bb78077cc1ab1bbb4c7cc140324e2c2518",
+   "bytes": 1836,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045899_008.png"
+  },
+  "wafer_00045899_022.png": {
+   "sha256": "b61b5a5d1049ecf5b960efcad00d3ec64188eac67ac0182c1d8475c9a426ba6d",
+   "bytes": 1872,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045899_022.png"
+  },
+  "wafer_00045902_009.png": {
+   "sha256": "bcdfce3d154e1b084e91cdfe3011c2a83763a3b53f985a5e534aed1cbf96396c",
+   "bytes": 1934,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045902_009.png"
+  },
+  "wafer_00045919_022.png": {
+   "sha256": "50f8c184acc94c76e7f6f56eff3d28f9307741a626916397e1dd3cb4b0b9a905",
+   "bytes": 1899,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045919_022.png"
+  },
+  "wafer_00045969_012.png": {
+   "sha256": "d68162a0c26c3b79b5c8dc1d889b8c7b000ce2e15f7db1142ed53151e08b4314",
+   "bytes": 2156,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00045969_012.png"
+  },
+  "wafer_00046043_007.png": {
+   "sha256": "99eedc3f3a4890050185b165245100b11cef825510540153baf1245d9db184c9",
+   "bytes": 1736,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046043_007.png"
+  },
+  "wafer_00046075_007.png": {
+   "sha256": "99e93f5d6c5c2d17dff45ab889f155f6813f387cf05fc5546716a918accec64b",
+   "bytes": 1867,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046075_007.png"
+  },
+  "wafer_00046078_023.png": {
+   "sha256": "2880db5f0f603aeac0584ef79254b8104448ec1ee43e64b1507cbccb2d3bfcca",
+   "bytes": 1741,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046078_023.png"
+  },
+  "wafer_00046081_002.png": {
+   "sha256": "1c910a3ec1dc6286819ffebdb852228376c5aa168b2ec3211c80664ce75ee745",
+   "bytes": 1834,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046081_002.png"
+  },
+  "wafer_00046087_017.png": {
+   "sha256": "11145ae8e97e28408e3dececd013f5d62037ec9aafbca545e86b2ccb4213831d",
+   "bytes": 1791,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046087_017.png"
+  },
+  "wafer_00046144_002.png": {
+   "sha256": "46efc52d892cb2405e35b5b9d77a6c3dd7049db17985ee4cb39821229f34bbb7",
+   "bytes": 2156,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046144_002.png"
+  },
+  "wafer_00046205_013.png": {
+   "sha256": "ecba33687015217f009029b1cb073d840365994f7e2ecf9eb0763ca8dfe28996",
+   "bytes": 1683,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046205_013.png"
+  },
+  "wafer_00046211_001.png": {
+   "sha256": "c6282d438a53c368159c5707a85385290c0606a48788300f8ef167642b2623b5",
+   "bytes": 1693,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046211_001.png"
+  },
+  "wafer_00046270_003.png": {
+   "sha256": "29f4c9c48f87f2f33cff195788fd44ac24a74b6afc40df14e5bd0aa013942e26",
+   "bytes": 1618,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046270_003.png"
+  },
+  "wafer_00046270_008.png": {
+   "sha256": "9ec15b253bf80313cc493eceddb662d59f4cf182e11091783b937dc49c45f2d3",
+   "bytes": 1617,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046270_008.png"
+  },
+  "wafer_00046271_024.png": {
+   "sha256": "64f1ead90bafd354bfb0365805df0ab59f3ac7aa27c793cb036bd781e3ddba40",
+   "bytes": 1600,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046271_024.png"
+  },
+  "wafer_00046385_004.png": {
+   "sha256": "4c789ea8c2528cad85e89f96e16396a5d792f5c8dcf5c78d09bc1f039ca5b390",
+   "bytes": 1705,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046385_004.png"
+  },
+  "wafer_00046400_007.png": {
+   "sha256": "c5ddb00685570338b8688fa5137350bfe446f1d32ce4c93129b2d2782e584a62",
+   "bytes": 1613,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046400_007.png"
+  },
+  "wafer_00046408_011.png": {
+   "sha256": "d0c5ac90b4ee5d0f49102279aedb5c1c4617a71cf8bf8bb641760334b5a602ae",
+   "bytes": 1664,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046408_011.png"
+  },
+  "wafer_00046499_015.png": {
+   "sha256": "9989a368e1ba8e1bbc3f43aec9bff8b221f43af117039acc227bc659041a1d09",
+   "bytes": 1712,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046499_015.png"
+  },
+  "wafer_00046535_008.png": {
+   "sha256": "94cd29c4099e555b149679ea4d46ab3d8afad490fd640e2487848287fdaed844",
+   "bytes": 1587,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046535_008.png"
+  },
+  "wafer_00046539_016.png": {
+   "sha256": "7bdd28298acffa18fc6d76b25f601dbbcae190416f394099f8ffee1c45a8f529",
+   "bytes": 1697,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046539_016.png"
+  },
+  "wafer_00046552_006.png": {
+   "sha256": "403fc134be2d8e7ffe9b9a16c6c4d8375f49adf24be6c722f2140de4f08bfbb8",
+   "bytes": 1746,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046552_006.png"
+  },
+  "wafer_00046575_025.png": {
+   "sha256": "fd9ced0156d88e27a48d8b8f673450b3ad1b0787c527f053cdaabc4911e2c79b",
+   "bytes": 1648,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046575_025.png"
+  },
+  "wafer_00046595_016.png": {
+   "sha256": "184e6389b3d4ee53567370cdabf73ea81b5540aa71d756eed2cc21e5997849af",
+   "bytes": 1637,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046595_016.png"
+  },
+  "wafer_00046633_012.png": {
+   "sha256": "d62d58534e7495197314fa616011a08ed2d19ebb527cf628ceec86b3761199de",
+   "bytes": 1728,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046633_012.png"
+  },
+  "wafer_00046670_007.png": {
+   "sha256": "2e5c35d961d2ae31c70d2c86efbbd441ddee6ad263b688651d6f13364c1a49cd",
+   "bytes": 1812,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046670_007.png"
+  },
+  "wafer_00046673_010.png": {
+   "sha256": "03f78c0f5191363cc23f5f72d3916d9ab6ea0ea8d8d55c7c94f65cb46a8f41ea",
+   "bytes": 1746,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046673_010.png"
+  },
+  "wafer_00046682_025.png": {
+   "sha256": "5bc4e91190a7fd0bda9240d16ad2a920a033296cae090da7bbc04e319c13a7c9",
+   "bytes": 1812,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046682_025.png"
+  },
+  "wafer_00046710_012.png": {
+   "sha256": "eee755d2301c546645d8d9b0eaa5c7a1b48dae8021ce02e1ddc8fd7568916ee7",
+   "bytes": 1988,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046710_012.png"
+  },
+  "wafer_00046732_019.png": {
+   "sha256": "53cae3a1f9bf1b2aa21cade6b1f4ee0bc4f7c62512108dbcb4c48ddc2ee1eede",
+   "bytes": 1576,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046732_019.png"
+  },
+  "wafer_00046741_009.png": {
+   "sha256": "efe0266c0434b3e15888c32f75c728c60199c271aa6beb7903eb7d4c2e693a0f",
+   "bytes": 1616,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046741_009.png"
+  },
+  "wafer_00046795_012.png": {
+   "sha256": "ba2ddbd30ec0f52ae3fadff09f4f85a93eab145b1efc0c0edfa2ad9cf6cfef35",
+   "bytes": 1680,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046795_012.png"
+  },
+  "wafer_00046813_012.png": {
+   "sha256": "3b5f6640187b97de426fee42c7aea1bae9ed56380a4399d2b5faa5c20a252b79",
+   "bytes": 1654,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046813_012.png"
+  },
+  "wafer_00046865_017.png": {
+   "sha256": "058359b61e721cba312e5786aca634d73e083792cf96b48df25c9d84d82b13a5",
+   "bytes": 1583,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046865_017.png"
+  },
+  "wafer_00046872_013.png": {
+   "sha256": "6585280eaadedcc783a8d10ff8543c29248fc1afb89d0f618443bd76ff21cc5b",
+   "bytes": 1854,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046872_013.png"
+  },
+  "wafer_00046884_002.png": {
+   "sha256": "7c724e9101fb67de338ebbbe455312d02a7e20478652f12667cbd9e9490c6a53",
+   "bytes": 1614,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046884_002.png"
+  },
+  "wafer_00046935_015.png": {
+   "sha256": "9a0c62d500900a3067228d75d62e49ada560261ac7cc5cbe03a3a458edd8be84",
+   "bytes": 1589,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046935_015.png"
+  },
+  "wafer_00046961_014.png": {
+   "sha256": "2227fb6d696a7f1c293e5310822c9c1e488e4dad74de075c502ce6ce645b9d85",
+   "bytes": 1603,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046961_014.png"
+  },
+  "wafer_00046979_007.png": {
+   "sha256": "e2451889840c714e599c6f20ec342fb32e801a254808b1f30094724ab09b3e38",
+   "bytes": 1615,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046979_007.png"
+  },
+  "wafer_00046986_004.png": {
+   "sha256": "5b5c47304e0339fd69b2f65e6ed250a6012d2569dc2697ca87c348eb2a882117",
+   "bytes": 1523,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00046986_004.png"
+  },
+  "wafer_00047003_005.png": {
+   "sha256": "51efa7c262df471e8299824b841340b8d3bf2210fd5830c73bdaf6f047e841dd",
+   "bytes": 1677,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047003_005.png"
+  },
+  "wafer_00047041_010.png": {
+   "sha256": "2ee698a02cc46df2cf2e6d0f6d0e9f96050c34ba8cb898465574dcd50f62365e",
+   "bytes": 1613,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047041_010.png"
+  },
+  "wafer_00047055_003.png": {
+   "sha256": "e299fdc6de19ccaec6bd3bfb0f394e03a44d92dc24de8f3e50abc0a23edf26ff",
+   "bytes": 1549,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047055_003.png"
+  },
+  "wafer_00047059_004.png": {
+   "sha256": "c1f2beb7db669f09db8342e17fb14e88f34623197793bc57f6bb7d60bad18f57",
+   "bytes": 1594,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047059_004.png"
+  },
+  "wafer_00047081_009.png": {
+   "sha256": "c310aec3e2e80182f8c5345b2edc460ffa192fa311b629a0c5c35a31f400f2e3",
+   "bytes": 1605,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047081_009.png"
+  },
+  "wafer_00047081_016.png": {
+   "sha256": "2857d2e4578b8d385f9eb3d0bae2662738ef08b133a748efc338e15cb67a1442",
+   "bytes": 1575,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047081_016.png"
+  },
+  "wafer_00047081_017.png": {
+   "sha256": "6fa4b8e62ce42741164e1a8943698a8666dbe5effa906fe0f2052079348ad732",
+   "bytes": 1561,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047081_017.png"
+  },
+  "wafer_00047085_024.png": {
+   "sha256": "51f3d18457036551cbf6f036305a302d9277e50393e21009e92393a93614cb29",
+   "bytes": 1629,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047085_024.png"
+  },
+  "wafer_00047107_023.png": {
+   "sha256": "a0f14b33b0fddabfdd1cb314fd628faa4d9c084d2da4d8123059b4397ee0f9da",
+   "bytes": 1540,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047107_023.png"
+  },
+  "wafer_00047114_004.png": {
+   "sha256": "9740fcb6ca1c69b91c35b28f92115a9789e4568c0e7046aa2ebeff88a8adf266",
+   "bytes": 1614,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047114_004.png"
+  },
+  "wafer_00047114_008.png": {
+   "sha256": "33d255c9c76db066535f6432c109a50b88b1cb09484e8071f84c0ce96b1cdfd1",
+   "bytes": 1629,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047114_008.png"
+  },
+  "wafer_00047115_007.png": {
+   "sha256": "8104ebbce9c5f55badc2f85f6cc9e7ccc6c7ad1c2a4289adb0a7389f6576aab2",
+   "bytes": 1644,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047115_007.png"
+  },
+  "wafer_00047239_003.png": {
+   "sha256": "9afc96fffb0fb3460786e1e6afae8e4d39fc00d1ab82c6d6f737e6ea680bb750",
+   "bytes": 2107,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047239_003.png"
+  },
+  "wafer_00047270_011.png": {
+   "sha256": "51f3bd1f0c030f61ed64f7b1241b161e034d6ab630e964158e896c291f9e3fdc",
+   "bytes": 1769,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047270_011.png"
+  },
+  "wafer_00047270_024.png": {
+   "sha256": "57392a74084e54ef41a12649da2e36f90590a2b42c77830b0477e194d77432fd",
+   "bytes": 1864,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047270_024.png"
+  },
+  "wafer_00047282_010.png": {
+   "sha256": "399c4c2de6592a4c556bdddbc295101c7094e7fc2f03ba950cdb78067a42ce6e",
+   "bytes": 1836,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047282_010.png"
+  },
+  "wafer_00047282_021.png": {
+   "sha256": "67b0e12cef829950db7724322526a9b460113b3b59b1b47a3c197b2e279ceb2b",
+   "bytes": 1766,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047282_021.png"
+  },
+  "wafer_00047282_025.png": {
+   "sha256": "ea048cce8a9a2373a5d987be7becce0e7ad9a7192801ffc4af45c42e3b018979",
+   "bytes": 1784,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047282_025.png"
+  },
+  "wafer_00047286_025.png": {
+   "sha256": "95bb22e2089378b1f45ee3acfbf8e1d56200058b406f024cd1b1477a52b053c5",
+   "bytes": 1767,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047286_025.png"
+  },
+  "wafer_00047316_011.png": {
+   "sha256": "10d86fc96d6f86e56be767e0b2974c0ded2a1d6e546a9fe8ff9610368d2429c9",
+   "bytes": 1816,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047316_011.png"
+  },
+  "wafer_00047316_017.png": {
+   "sha256": "be9629bd836ef1ade97a3e7e9ab5054816610807297106f66e0a0b1224645662",
+   "bytes": 1853,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047316_017.png"
+  },
+  "wafer_00047349_004.png": {
+   "sha256": "5f66b27acbb8f758435e2ffcae6e75d1e2651e158d58c902552c7d6e66e11173",
+   "bytes": 1799,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047349_004.png"
+  },
+  "wafer_00047407_025.png": {
+   "sha256": "1f8bfbf1be1bda2a1f9e79ee72918ec2bdac6c995056ec6c7acbdf08dfa9fbce",
+   "bytes": 1868,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047407_025.png"
+  },
+  "wafer_00047416_003.png": {
+   "sha256": "4db2aaf33460f2bfd36efb2f34e19ac9e58ff310024fa6d3b8cb85875e3c6e18",
+   "bytes": 1845,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047416_003.png"
+  },
+  "wafer_00047436_019.png": {
+   "sha256": "9ff8036d70429c1e4c58948dccff13ecf05342482ae4ee88ca337c13023ad549",
+   "bytes": 1913,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047436_019.png"
+  },
+  "wafer_00047440_006.png": {
+   "sha256": "a6bca51492c66373b24ef86c02ebf9257040e9c67ee99646f907376f0cd95b7f",
+   "bytes": 1462,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047440_006.png"
+  },
+  "wafer_00047444_004.png": {
+   "sha256": "3c31111106753864e3b37de9136349d0ee6a69f625781ec443a3a75c287d2ff8",
+   "bytes": 1747,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047444_004.png"
+  },
+  "wafer_00047444_009.png": {
+   "sha256": "7d0ee3359eb44765719b573d43f02c64e5b35784eb5d2f2d240c0186bbed4998",
+   "bytes": 1714,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047444_009.png"
+  },
+  "wafer_00047453_003.png": {
+   "sha256": "4c08023ed6fa748f07084ffb1340a277e62f007372af1d6bba8cd6836567ec96",
+   "bytes": 1761,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047453_003.png"
+  },
+  "wafer_00047460_015.png": {
+   "sha256": "13cd51977b77e2f72ade7a5491bdd4591cb9219a11c31b2d43e24278cbb8934e",
+   "bytes": 1829,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047460_015.png"
+  },
+  "wafer_00047468_022.png": {
+   "sha256": "c37f087e54b4f72ff3a7622897ad8c9984fff2cc3529678e91a1492267e2cc1c",
+   "bytes": 1848,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047468_022.png"
+  },
+  "wafer_00047481_018.png": {
+   "sha256": "af5b298a381cb045bf3722c41769102efd5c902f9f064978bcff5e1c60908e49",
+   "bytes": 1603,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047481_018.png"
+  },
+  "wafer_00047486_001.png": {
+   "sha256": "58ae65b01408b848ca9056d16518b20fc8c64b93ff38ac9bf3f5c1fd7ce99287",
+   "bytes": 1364,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047486_001.png"
+  },
+  "wafer_00047486_009.png": {
+   "sha256": "ad0f7a5cf43ce7c91a2999f1cdf70abb168664ba43fcd6ea93d397aa987ea943",
+   "bytes": 1527,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047486_009.png"
+  },
+  "wafer_00047486_015.png": {
+   "sha256": "dd3938f7a03ca775184a119e2287a25d49a0b8666bd3cf7d82a541a422acc75f",
+   "bytes": 1637,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047486_015.png"
+  },
+  "wafer_00047486_019.png": {
+   "sha256": "513e7337c7dcbf8d759075447b04f2d91709311ed0bc0516fc69c04559b20b95",
+   "bytes": 1568,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047486_019.png"
+  },
+  "wafer_00047489_003.png": {
+   "sha256": "5bb199626bcebfbe8faa22913e1a3b2f9e644149822a4e24dcf202e25cca9f58",
+   "bytes": 1668,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047489_003.png"
+  },
+  "wafer_00047489_016.png": {
+   "sha256": "1e717b50aa6ebe2eff8de30258fb2ac21dbcdae99dbfb0eef63327c25dfd2a0c",
+   "bytes": 1534,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047489_016.png"
+  },
+  "wafer_00047489_017.png": {
+   "sha256": "c0d428fc740a2d99b8bd506f865791e37c10ddda3c46b9625b9b2e608383c1ba",
+   "bytes": 1539,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047489_017.png"
+  },
+  "wafer_00047516_015.png": {
+   "sha256": "db8d3d3d6841e5861ae64ddc0acf5180cbb17358593ff223dfd76faaf6c63cc2",
+   "bytes": 1594,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047516_015.png"
+  },
+  "wafer_00047524_007.png": {
+   "sha256": "4fcffe95f795c705485c2e963ddd72ef3c3766c9b2c19f989c37769f00b9cd43",
+   "bytes": 1558,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047524_007.png"
+  },
+  "wafer_00047537_003.png": {
+   "sha256": "705eceb17f43d335ef47318b5798fd06a58c09b006b98011070d7a811f337925",
+   "bytes": 1560,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047537_003.png"
+  },
+  "wafer_00047537_020.png": {
+   "sha256": "c07e24fee09f13732d65724ec21b0401431048e39dd4dd306748d09705dc1d3f",
+   "bytes": 1612,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047537_020.png"
+  },
+  "wafer_00047539_008.png": {
+   "sha256": "2e276ef80c90bad09b344299dc4f42d45ce2b6294b697d3f3960c26fb8322087",
+   "bytes": 1509,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047539_008.png"
+  },
+  "wafer_00047539_011.png": {
+   "sha256": "ca8a6de0df03818e3e614a1bbddd984f2e49fef329dd5bdf5c4817d2b8eb2bbd",
+   "bytes": 1578,
+   "remote": "/root/autodl-tmp/ws/v3run/图/wafer_00047539_011.png"
+  }
+ }
+}
