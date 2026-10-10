@@ -56,6 +56,8 @@ def main() -> int:
     ap.add_argument("--max-completion-length", type=int, default=256)
     ap.add_argument("--lr", type=float, default=None)
     ap.add_argument("--start-adapter", default=None)
+    ap.add_argument("--expect-m0-sha", default=None,
+                    help="运行时守卫要求的 M0 adapter 文件期望 SHA256；不给则守卫拒绝启动")
     ap.add_argument("--probe", action="store_true",
                     help="门槛模式：允许 2 步；其余合同闸门（起点必须显式给出）照旧")
     a = ap.parse_args()
@@ -112,7 +114,10 @@ def main() -> int:
         os.environ["WAFER_START_ADAPTER"] = a.start_adapter
         os.environ["WAFER_FIX_MODE"] = a.mode
         os.environ["WAFER_GUARD_OUT"] = f"{a.out}/runtime_gate.json"
-        from runtime_guard_v2fix import install
+        if not a.expect_m0_sha:
+            raise RuntimeError("v3 合同：给 --start-adapter 时必须同时给 --expect-m0-sha")
+        os.environ["WAFER_EXPECT_M0_SHA"] = a.expect_m0_sha
+        from runtime_guard_v3 import install
         install()
         print("运行时门槛已装载（初始权重/参考策略断言）")
 

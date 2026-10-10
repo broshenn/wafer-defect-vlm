@@ -158,6 +158,42 @@ def score(text: str, ref: dict) -> dict:
             'errors': errors, 'parts': parts, 'eligible_weights': weights}
 
 
+class WaferV3Reward:
+    """ms-swift 奖励回调。`reference_json` 与 `sample_id` 由数据集列提供。
+
+    与 Codex 原件的差别只有一处：内部走本文件的 `parse()`（剥完整空 think 包装）。
+    """
+
+    def __init__(self):
+        self.audit = []
+
+    def __call__(self, completions, reference_json=None, sample_id=None, **kwargs):
+        if reference_json is None or len(reference_json) != len(completions):
+            raise RuntimeError('Missing or misaligned frozen reference')
+        if sample_id is None or len(sample_id) != len(completions):
+            raise RuntimeError('Missing or misaligned sample IDs')
+        out = []
+        for text, raw_ref, sid in zip(completions, reference_json, sample_id):
+            if not isinstance(text, str):
+                raise RuntimeError('Completion contract expects string')
+            result = score(text, parse(raw_ref))
+            stripped = strip_envelope(text)
+            self.audit.append({'sample_id': sid, 'response': text,
+                               'had_empty_think_prefix': stripped != text.strip(),
+                               'raw_parse_ok': _raw_ok(text), **result})
+            out.append(result['reward'])
+        return out
+
+
+def _raw_ok(text: str) -> bool:
+    """原始全文严格 JSON 口径是否通过（**只作分口径报告，不参与奖励**）。"""
+    try:
+        parse_raw_strict(text)
+        return True
+    except Exception:
+        return False
+
+
 def self_test() -> dict:
     cases = []
 
