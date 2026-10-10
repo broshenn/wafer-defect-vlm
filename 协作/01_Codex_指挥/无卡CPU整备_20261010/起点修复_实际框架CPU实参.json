@@ -1,0 +1,25 @@
+{
+  "CPU_actual_SftArguments_adapters_ok": true,
+  "CPU_actual_RLHFArguments_adapters_ok": true,
+  "CPU_actual_RLHFArguments_ref_adapters_ok": true,
+  "resume_only_model": true,
+  "data": {
+    "group60_sft4.jsonl": {
+      "rows": 240,
+      "sha256": "29ad5c668e66604539c25f9e5b8ee16e0b1f6e3e6b3b4fef393220bff1372b84",
+      "missing_images": 0
+    },
+    "group60_grpo.jsonl": {
+      "rows": 60,
+      "sha256": "8a62af8a8ff1f9e2de6496137de3c84a47060acdb53186e99a2174e32ae6b350",
+      "missing_images": 0
+    },
+    "confirm120.jsonl": {
+      "rows": 120,
+      "sha256": "711b32a3d0d21f8afa7fe813874362a252adb1e26627124683d8424ec192bf2f",
+      "missing_images": 0
+    }
+  },
+  "model_loading": "not_run",
+  "CPU_probe_use_cpu_override": true
+}

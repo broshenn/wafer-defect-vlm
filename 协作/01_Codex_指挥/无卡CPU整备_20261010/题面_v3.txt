@@ -1,0 +1,9 @@
+这是公开晶圆 BIN 图，黑色为片外，绿色为合格格点，红色为失效格点。
+只输出一个 JSON 对象，不写 Markdown 或推理。严格包含六字段：
+defect_class：Center、Donut、Edge_Loc、Edge_Ring、Loc、Near_full、Random、Scratch、none 或 unknown。none 表示未见可辨缺陷模式，不表示红点为零。
+coverage_band：zero、under_5pct、5_to_under_20pct、20_to_under_50pct、half_or_more 或 unknown。分母为图中所有红绿格点；half_or_more 只表示红点占半片及以上，不等于几乎全片。
+red_mass_zones：按 center、middle、edge 顺序排列的数组，或 unknown。晶圆归一化半径按三等份分区；总红点至少3个时，区内至少2红点且占全部红点至少10%才纳入。无红点填空数组；少量证据不足填 unknown。指全部红点的质量分布，不能等同主要缺陷结构位置。
+angular_type：single、opposed、nondirectional 或 unknown。指全部红点相对晶圆中心的角向聚集；opposed 表示相对两侧聚集，不表示一定有一条穿中心划痕；nondirectional 不表示图中没有线状形态。
+clock_sectors：整数数组，上方12点、右方3点、顺时针，12个扇区；single填1个扇区，opposed填2个相对扇区，其余填空数组。证据不足不要强猜。
+uncertainty：中文简短说明，确定时为空字符串。
+不输出 Caption、尺寸、失效原因或额外字段。主要形态与描述是另一个任务。

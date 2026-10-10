@@ -1,0 +1,444 @@
+{
+  "angular": {
+    "nondirectional": 43,
+    "opposed": 2,
+    "single": 19,
+    "unknown": 20
+  },
+  "answer_source": "future model visual annotation; not gold; old outputs unchanged",
+  "counts": {
+    "Center": 4,
+    "Donut": 4,
+    "Edge_Loc": 12,
+    "Edge_Ring": 4,
+    "Loc": 23,
+    "Near_full": 4,
+    "Random": 4,
+    "Scratch": 5,
+    "none": 24
+  },
+  "item_map": [
+    {
+      "item_id": "wbv3_001",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00000055_011"
+    },
+    {
+      "item_id": "wbv3_002",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00002422_015"
+    },
+    {
+      "item_id": "wbv3_003",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00003830_021"
+    },
+    {
+      "item_id": "wbv3_004",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00004087_022"
+    },
+    {
+      "item_id": "wbv3_005",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00005957_005"
+    },
+    {
+      "item_id": "wbv3_006",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00005998_017"
+    },
+    {
+      "item_id": "wbv3_007",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00005998_018"
+    },
+    {
+      "item_id": "wbv3_008",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00005998_021"
+    },
+    {
+      "item_id": "wbv3_009",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00005998_024"
+    },
+    {
+      "item_id": "wbv3_010",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00006228_004"
+    },
+    {
+      "item_id": "wbv3_011",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00006233_025"
+    },
+    {
+      "item_id": "wbv3_012",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00006467_002"
+    },
+    {
+      "item_id": "wbv3_013",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00006467_007"
+    },
+    {
+      "item_id": "wbv3_014",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00006467_008"
+    },
+    {
+      "item_id": "wbv3_015",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00007864_013"
+    },
+    {
+      "item_id": "wbv3_016",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00007864_025"
+    },
+    {
+      "item_id": "wbv3_017",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00012950_008"
+    },
+    {
+      "item_id": "wbv3_018",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00015558_003"
+    },
+    {
+      "item_id": "wbv3_019",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00015632_025"
+    },
+    {
+      "item_id": "wbv3_020",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00015851_009"
+    },
+    {
+      "item_id": "wbv3_021",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00015865_016"
+    },
+    {
+      "item_id": "wbv3_022",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00016541_008"
+    },
+    {
+      "item_id": "wbv3_023",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00016601_005"
+    },
+    {
+      "item_id": "wbv3_024",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00016703_014"
+    },
+    {
+      "item_id": "wbv3_025",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00017125_005"
+    },
+    {
+      "item_id": "wbv3_026",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00017164_005"
+    },
+    {
+      "item_id": "wbv3_027",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00017262_007"
+    },
+    {
+      "item_id": "wbv3_028",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00017957_012"
+    },
+    {
+      "item_id": "wbv3_029",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00018072_011"
+    },
+    {
+      "item_id": "wbv3_030",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00018086_012"
+    },
+    {
+      "item_id": "wbv3_031",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00018378_014"
+    },
+    {
+      "item_id": "wbv3_032",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00018532_004"
+    },
+    {
+      "item_id": "wbv3_033",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00019115_022"
+    },
+    {
+      "item_id": "wbv3_034",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00019321_013"
+    },
+    {
+      "item_id": "wbv3_035",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00020121_024"
+    },
+    {
+      "item_id": "wbv3_036",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00020258_007"
+    },
+    {
+      "item_id": "wbv3_037",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00021623_006"
+    },
+    {
+      "item_id": "wbv3_038",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00021649_003"
+    },
+    {
+      "item_id": "wbv3_039",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00022126_006"
+    },
+    {
+      "item_id": "wbv3_040",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00022216_015"
+    },
+    {
+      "item_id": "wbv3_041",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00023285_009"
+    },
+    {
+      "item_id": "wbv3_042",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00024582_004"
+    },
+    {
+      "item_id": "wbv3_043",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00024635_002"
+    },
+    {
+      "item_id": "wbv3_044",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00024635_007"
+    },
+    {
+      "item_id": "wbv3_045",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00024635_010"
+    },
+    {
+      "item_id": "wbv3_046",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00036633_025"
+    },
+    {
+      "item_id": "wbv3_047",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00036739_014"
+    },
+    {
+      "item_id": "wbv3_048",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00036819_007"
+    },
+    {
+      "item_id": "wbv3_049",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00039560_008"
+    },
+    {
+      "item_id": "wbv3_050",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00040470_022"
+    },
+    {
+      "item_id": "wbv3_051",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00040809_017"
+    },
+    {
+      "item_id": "wbv3_052",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00040979_003"
+    },
+    {
+      "item_id": "wbv3_053",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00041023_015"
+    },
+    {
+      "item_id": "wbv3_054",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00042043_006"
+    },
+    {
+      "item_id": "wbv3_055",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00042201_024"
+    },
+    {
+      "item_id": "wbv3_056",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042267_019"
+    },
+    {
+      "item_id": "wbv3_057",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042330_023"
+    },
+    {
+      "item_id": "wbv3_058",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042332_016"
+    },
+    {
+      "item_id": "wbv3_059",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00042397_008"
+    },
+    {
+      "item_id": "wbv3_060",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042451_017"
+    },
+    {
+      "item_id": "wbv3_061",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00042680_025"
+    },
+    {
+      "item_id": "wbv3_062",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00042831_023"
+    },
+    {
+      "item_id": "wbv3_063",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042865_024"
+    },
+    {
+      "item_id": "wbv3_064",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042895_016"
+    },
+    {
+      "item_id": "wbv3_065",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00042964_021"
+    },
+    {
+      "item_id": "wbv3_066",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00043128_019"
+    },
+    {
+      "item_id": "wbv3_067",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00043374_002"
+    },
+    {
+      "item_id": "wbv3_068",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00043374_024"
+    },
+    {
+      "item_id": "wbv3_069",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00043629_009"
+    },
+    {
+      "item_id": "wbv3_070",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00043729_022"
+    },
+    {
+      "item_id": "wbv3_071",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00044003_006"
+    },
+    {
+      "item_id": "wbv3_072",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00044003_009"
+    },
+    {
+      "item_id": "wbv3_073",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00044107_018"
+    },
+    {
+      "item_id": "wbv3_074",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00044184_021"
+    },
+    {
+      "item_id": "wbv3_075",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00044374_010"
+    },
+    {
+      "item_id": "wbv3_076",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00044982_011"
+    },
+    {
+      "item_id": "wbv3_077",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00045692_017"
+    },
+    {
+      "item_id": "wbv3_078",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00046400_007"
+    },
+    {
+      "item_id": "wbv3_079",
+      "prior_D_seen": false,
+      "sample_id": "wafer_00046741_009"
+    },
+    {
+      "item_id": "wbv3_080",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00046872_013"
+    },
+    {
+      "item_id": "wbv3_081",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00046986_004"
+    },
+    {
+      "item_id": "wbv3_082",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00047003_005"
+    },
+    {
+      "item_id": "wbv3_083",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00047081_009"
+    },
+    {
+      "item_id": "wbv3_084",
+      "prior_D_seen": true,
+      "sample_id": "wafer_00047489_003"
+    }
+  ],
+  "training_subset": true,
+  "unique_PNGs": 84
+}

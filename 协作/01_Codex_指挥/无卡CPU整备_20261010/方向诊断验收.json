@@ -1,0 +1,125 @@
+{
+  "GPU_predictions": "not_run",
+  "angular": {
+    "opposed": 6,
+    "single": 12
+  },
+  "considered_and_recomputed": [
+    {
+      "sample_id": "wafer_00004090_009",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00004090_017",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00004090_018",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00004090_020",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00006316_021",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00006367_011",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00006498_001",
+      "v2_angular": "axis",
+      "v3_angular": "opposed"
+    },
+    {
+      "sample_id": "wafer_00006498_008",
+      "v2_angular": "axis",
+      "v3_angular": "unknown"
+    },
+    {
+      "sample_id": "wafer_00011982_024",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00014655_001",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00014655_005",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00015092_006",
+      "v2_angular": "single",
+      "v3_angular": "unknown"
+    },
+    {
+      "sample_id": "wafer_00018063_003",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00019033_025",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00023474_002",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00023474_003",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00037238_012",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00038476_018",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00039941_006",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    },
+    {
+      "sample_id": "wafer_00039941_007",
+      "v2_angular": "single",
+      "v3_angular": "unknown"
+    },
+    {
+      "sample_id": "wafer_00046325_011",
+      "v2_angular": "single",
+      "v3_angular": "unknown"
+    },
+    {
+      "sample_id": "wafer_00046368_018",
+      "v2_angular": "single",
+      "v3_angular": "single"
+    }
+  ],
+  "human_review": "not_run",
+  "limitation": "New confirmation candidate pool has no positive angular cases. Do not infer direction ability from its nondirectional score. Reused diagnostic is reported separately.",
+  "new_confirmation120_positive_direction_N": 0,
+  "selected": 18,
+  "status": "reused_development_diagnostic_not_final_benchmark",
+  "train_lot_PNG_intersections": 0
+}

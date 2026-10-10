@@ -1,0 +1,11 @@
+{
+  "CPU_test_methods": 17,
+  "failures": 0,
+  "errors": 0,
+  "geometry_v2_legacy_cases": 43,
+  "legacy_cases_passed": 43,
+  "packet_replay_idempotence": "passed",
+  "all_python_AST_parse": "passed",
+  "GPU_model_loading_proof": "actual runtime evidence stored separately",
+  "WorkBuddy_dispatch": "not_received"
+}

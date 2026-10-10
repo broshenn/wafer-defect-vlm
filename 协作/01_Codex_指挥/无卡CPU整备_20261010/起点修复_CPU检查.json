@@ -1,0 +1,10 @@
+{
+  "constructor_forwarding": "passed_CPU_AST",
+  "policy_adapter": "explicit_M0",
+  "reference_adapter": "explicit_M0_for_GRPO",
+  "steps": 60,
+  "source_sha256": "981c6a80e5ec55993547ea05ff7ab2da080f64a19a3925faecd5233a53185c42",
+  "runtime_model_loading": "not_run",
+  "GPU_training": "not_run",
+  "generated_sha256": "6ed2383d7011100858a85f083f593e4b458e332fb3b6bb2e35378b71f98be8c3"
+}

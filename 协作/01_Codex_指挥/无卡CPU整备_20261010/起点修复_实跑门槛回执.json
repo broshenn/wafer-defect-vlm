@@ -1,0 +1,57 @@
+{
+  "checked_at_utc": "2026-10-10T11:46:02.918797+00:00",
+  "run_id": "v2_fix_s3407_20261010",
+  "status": "running",
+  "cap_device_minutes": 50,
+  "GPU": "RTX5090_single",
+  "M0_sha256": "43b36375f914ae972e5947f1d742a24e5442d1133b918dea3fc698832174681b",
+  "jobs": [
+    {
+      "tag": "M1_fix",
+      "status": "finished",
+      "exit_code": 0,
+      "device_minutes_upper": 6.7818
+    },
+    {
+      "tag": "M2_fix",
+      "status": "running"
+    }
+  ],
+  "runtime_gates": {
+    "M1_fix": {
+      "model_loading_gate": "passed",
+      "two_step_gate": "passed",
+      "mode": "sft",
+      "M0_sha256": "43b36375f914ae972e5947f1d742a24e5442d1133b918dea3fc698832174681b",
+      "policy_equal_M0_tensor_count": 496,
+      "trainable_tensor_count": 496,
+      "step": 2,
+      "policy_changed_tensors": 496,
+      "nonzero_gradient_tensors": 496,
+      "forwards": {
+        "policy": 8,
+        "reference": 0,
+        "image": 8
+      }
+    },
+    "M2_fix": {
+      "model_loading_gate": "passed",
+      "two_step_gate": "passed",
+      "mode": "rl",
+      "M0_sha256": "43b36375f914ae972e5947f1d742a24e5442d1133b918dea3fc698832174681b",
+      "policy_equal_M0_tensor_count": 496,
+      "reference_equal_M0_tensor_count": 496,
+      "trainable_tensor_count": 496,
+      "step": 2,
+      "policy_changed_tensors": 496,
+      "nonzero_gradient_tensors": 496,
+      "forwards": {
+        "policy": 16,
+        "reference": 8,
+        "image": 26
+      },
+      "reference_unchanged_M0_tensor_count": 496
+    }
+  },
+  "not_complete_until_all_three_raw_sets_and_CPU_analysis": true
+}

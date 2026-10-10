@@ -1,0 +1,183 @@
+{
+  "GPU_gate": "not_run",
+  "WorkBuddy_execution": "not_dispatched",
+  "confirmation_status": "Original test-side candidate subset; prior-contact ledger limited to named files; no human gold; not a full final benchmark",
+  "images_verified": 918,
+  "intersections": {
+    "adapt__confirmation": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    },
+    "adapt__rl": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    },
+    "adapt__rule_dev": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    },
+    "confirmation__rl": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    },
+    "confirmation__rule_dev": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    },
+    "rl__rule_dev": {
+      "PNG": 0,
+      "lot": 0,
+      "sample": 0
+    }
+  },
+  "new_GPU_training": "not_run",
+  "pools": {
+    "adapt": {
+      "angular": {
+        "nondirectional": 339,
+        "opposed": 2,
+        "single": 19,
+        "unknown": 152
+      },
+      "classes": {
+        "Center": 80,
+        "Donut": 33,
+        "Edge_Loc": 77,
+        "Edge_Ring": 51,
+        "Loc": 76,
+        "Near_full": 17,
+        "Random": 56,
+        "Scratch": 81,
+        "none": 41
+      },
+      "lots": 350,
+      "seen_by_D_id": 351,
+      "seen_by_D_lot": 415,
+      "unique_PNGs": 512,
+      "unique_wafer_IDs": 512
+    },
+    "confirmation": {
+      "angular": {
+        "nondirectional": 77,
+        "unknown": 43
+      },
+      "classes": {
+        "Center": 23,
+        "Donut": 3,
+        "Edge_Loc": 23,
+        "Edge_Ring": 13,
+        "Loc": 24,
+        "Random": 11,
+        "Scratch": 23
+      },
+      "lots": 106,
+      "seen_by_D_id": 0,
+      "seen_by_D_lot": 0,
+      "unique_PNGs": 120,
+      "unique_wafer_IDs": 120
+    },
+    "rl": {
+      "angular": {
+        "nondirectional": 148,
+        "opposed": 1,
+        "single": 15,
+        "unknown": 92
+      },
+      "classes": {
+        "Center": 29,
+        "Donut": 44,
+        "Edge_Loc": 28,
+        "Edge_Ring": 30,
+        "Loc": 53,
+        "Near_full": 2,
+        "Random": 25,
+        "Scratch": 24,
+        "none": 21
+      },
+      "lots": 159,
+      "seen_by_D_id": 170,
+      "seen_by_D_lot": 209,
+      "unique_PNGs": 256,
+      "unique_wafer_IDs": 256
+    },
+    "rule_dev": {
+      "angular": {
+        "nondirectional": 22,
+        "unknown": 8
+      },
+      "classes": {
+        "Center": 1,
+        "Edge_Loc": 2,
+        "Edge_Ring": 12,
+        "Loc": 5,
+        "Near_full": 2,
+        "Scratch": 8
+      },
+      "lots": 20,
+      "seen_by_D_id": 16,
+      "seen_by_D_lot": 20,
+      "unique_PNGs": 30,
+      "unique_wafer_IDs": 30
+    }
+  },
+  "rotation_derived_tasks": 111,
+  "rotation_images_materialized": false,
+  "seed": 3407,
+  "sources": [
+    {
+      "path": "benchmark/core.jsonl",
+      "sha256": "76d6a56ee25634d3be8daacc4ca3f995fb5f1b99dbaa2029a6024660f2bc2e3a",
+      "unique_ids": 252
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/百炼多模型业务对照_20261009_1203/盲号对照_key.json",
+      "sha256": "0ab064a055993ca22f9f7e3d4154f0e0fd1e91e51946529912fd1e0b1c535d7d",
+      "unique_ids": 36
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/56图候选补测与最终结项_20261009/冻结清单.json",
+      "sha256": "7dc66cccdc40a56a45ff18a61e0b8621a04f1e300f440e76ec3e05f60f9f4d02",
+      "unique_ids": 56
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/收尾_RL90与报告_20261006/R0_dev18.jsonl",
+      "sha256": "3fafcdabab31352eb966bc67b6fb509031cfdd1438e042e5545299eccbf3316a",
+      "unique_ids": 18
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/收尾_RL90与报告_20261006/R0_val90.jsonl",
+      "sha256": "41b5e19dbacb13a610dc4417a092d8164a1c1a81ae435175fbdcc6bd4b0ae57c",
+      "unique_ids": 84
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/多字段RL_v2_CPU准备_20261009/清单_确认池.jsonl",
+      "sha256": "8b4f89a6437ce37592aff97bf59a968e9b73243dce740150606ba751fd040682",
+      "unique_ids": 120
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/多字段RL_v2_CPU准备_20261009/清单_规则开发池.jsonl",
+      "sha256": "2b26105b1ef997218510c0d818ed16e778331f3141b9a3539e48c610dd826a44",
+      "unique_ids": 30
+    },
+    {
+      "path": "data/manifest.jsonl",
+      "sha256": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/多字段RL_v2_CPU准备_20261009/几何特征表.jsonl",
+      "sha256": "81226f6dff46e2051d1a67018fc4603c17a9a7175e73fe56b3af41dacb8fc203"
+    },
+    {
+      "path": "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/数据/D_N3072.jsonl",
+      "sha256": "6a518cb0f10afadd81c15ac190f5934ee3bad08844e66f5709960d1c23ce2ee9"
+    }
+  ],
+  "status": "CPU_candidates_not_training_authorization",
+  "threshold_origin": "Frozen v2 train-calibrated thresholds, not freshly tuned on confirmation",
+  "workbuddy_plan_images": 84
+}

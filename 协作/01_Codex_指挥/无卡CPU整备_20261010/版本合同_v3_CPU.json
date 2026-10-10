@@ -1,0 +1,19 @@
+{
+  "version": "wafer_v3_CPU_candidates_20261010",
+  "core_sha256": "4f77d8dde57069095fa022ae40b0a583ffa1f317e6841bfd4fed44c4774dbc2e",
+  "prompt_sha256": "08533309fd8fc71e9900a312b726e9074e950e1237a2cc60ce85db734112f87c",
+  "status": "CPU_prepared_not_GPU_authorized",
+  "primary_metric": "public_class_macro_F1_actual_covered_classes",
+  "geometry_origin": "pinned_v2_measurement_thresholds_plus_corrected_hour_centers",
+  "clock_legacy": "floor(angle/30)+1: right=4; retained in v2 repair",
+  "clock_v3": "nearest_hour_center: top12/right3/down6/left9; ambiguity tolerance3deg at correct boundaries",
+  "caption": "separate visual annotation; not program template gold",
+  "pool_freeze_order": "lot/PNG connected components frozen before v3 remeasurement",
+  "confirmation_positive_direction_N": 0,
+  "reused_direction_diagnostic_N": 18,
+  "derived_rotation_tasks": 111,
+  "unique_original_training_images": 768,
+  "new_unique_wafers_from_rotation": 0,
+  "human_review": "not_run",
+  "next_v3_GPU_contract": "pending_review_and_budget"
+}

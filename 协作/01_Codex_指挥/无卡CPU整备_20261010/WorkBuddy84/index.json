@@ -1,0 +1,74 @@
+{
+  "batches": [
+    {
+      "count": 7,
+      "file": "batch_01.jsonl",
+      "sha256": "0c6f57116b9a6dec74df1ec77d45f6b27cdac18ec8a8643d86b5a038f612b496"
+    },
+    {
+      "count": 7,
+      "file": "batch_02.jsonl",
+      "sha256": "964032ac21dc90b61f6d8c48bdc2fa5908a9c3f286005702ffcb22b470c7de4f"
+    },
+    {
+      "count": 7,
+      "file": "batch_03.jsonl",
+      "sha256": "8d1d98d23299d873b64e1ce23e144e094312f4638a800a66fb912b6e37a0a1a2"
+    },
+    {
+      "count": 7,
+      "file": "batch_04.jsonl",
+      "sha256": "43d76ef749a6c9c1ebbba90dffbae36f15b8677b84ca53d1cfe9dc246332c6c2"
+    },
+    {
+      "count": 7,
+      "file": "batch_05.jsonl",
+      "sha256": "aae45ce95eef7a5d97e5ba042b6b76b6276c17eb14acb2bbfcf2f3d82ab883f4"
+    },
+    {
+      "count": 7,
+      "file": "batch_06.jsonl",
+      "sha256": "747734fba50c6f07daaeb7cf010bdd5a3180709462f1ce074d3bf220f70a6037"
+    },
+    {
+      "count": 7,
+      "file": "batch_07.jsonl",
+      "sha256": "2e159cb985686b427b28d25fee8e1143fe51a0ff446d756c72896ff5162e415c"
+    },
+    {
+      "count": 7,
+      "file": "batch_08.jsonl",
+      "sha256": "c67881ed6ba25c377985b58fcc694bb2003cb42c85edf490caa6b20d3aaefe13"
+    },
+    {
+      "count": 7,
+      "file": "batch_09.jsonl",
+      "sha256": "fec2d66d39a2734376b5d07684fa443d98135b49f5931b551bf2b1cd17a6fbb1"
+    },
+    {
+      "count": 7,
+      "file": "batch_10.jsonl",
+      "sha256": "7b0ad91b6b52e7c58dfa394d6ffc758d8e5abfd49b4b45bfbcf8e8ec0dbdebb6"
+    },
+    {
+      "count": 7,
+      "file": "batch_11.jsonl",
+      "sha256": "bd45776bff3dd175e4915c230e44ce0b4d4091d7db1fcbf75bb5349aee46fa08"
+    },
+    {
+      "count": 7,
+      "file": "batch_12.jsonl",
+      "sha256": "b54071193f4093be5e256b6d2cbd50965ea5232619a5742adc7f4b01b001a189"
+    }
+  ],
+  "blind_manifest_sha256": "10f8386236c89fc9f29134b4a84d746e67f96c5f43af8acf710c8454b7a21c24",
+  "checker_dependency_file": "../core_v3.py",
+  "checker_dependency_sha256": "4f77d8dde57069095fa022ae40b0a583ffa1f317e6841bfd4fed44c4774dbc2e",
+  "checker_file": "../workbuddy_schema_check.py",
+  "checker_sha256": "689ce27c38642cbce91d8c0117d23171dd32743a5ea79ef6e3cf3fbec498e02d",
+  "count": 84,
+  "first_ever_annotation": "not_claimed",
+  "prompt_file": "标注题面.txt",
+  "prompt_sha256": "81cf126a6b351efec8994f67b22fdfcccb44e1dc8853559afafb58187ad4002c",
+  "version": "WB84_v3"
+}
