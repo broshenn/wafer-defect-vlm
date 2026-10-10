@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘弧形密集带加全局散布点","main_location_zh":"主要结构是沿右下边缘（约3点钟至6点钟之间）分布的一段密集弧形失效带，另有红点全局稀疏散布","location_clock":[5],"orientation_clock":[],"secondary_observations":["整片有稀疏红点散布，中心区域也有少量","左下边缘有零星红点"],"caption_zh":"右下边缘有一段密集的弧形失效带，约以5点钟方向为中心，其余区域红点稀疏散布。","uncertainty":"弧形带跨越多个钟点，location_clock 取其大致中心方向5点钟，存在偏差；弧带沿边缘弯曲，无直线延伸轴。"}

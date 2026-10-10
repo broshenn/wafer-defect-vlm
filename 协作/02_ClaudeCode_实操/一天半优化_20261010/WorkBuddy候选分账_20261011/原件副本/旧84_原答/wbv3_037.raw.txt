@@ -1,0 +1,1 @@
+{"morphology_zh":"晶圆边缘一圈红色环状带，内部绿色区域散布大量红色点状散点","main_location_zh":"主要结构为环绕整圆的边缘，内部散点为全局分布","location_clock":[],"orientation_clock":[],"secondary_observations":["内部红色散点在整片绿色区域内无明显方向聚集"],"caption_zh":"晶圆边缘呈整圈红色环状失效，内部绿色区域伴有全局散布的红色点状散点","uncertainty":"边缘环带厚度不均匀，个别方位较宽，无法确认是否为同心环"}

@@ -1,0 +1,1 @@
+{"morphology_zh":"贯穿中心的竖直细长红色带，中心附近伴横向短带，边缘散布红色小块","main_location_zh":"主要细长带位于圆片中心，贯穿上下；另有沿圆周边缘分布的散点","location_clock":[],"orientation_clock":[12,6],"secondary_observations":["中心附近有大致沿3点-9点方向的横向红色短带，与竖带相交呈十字状","圆周边缘多处散布红色小块"],"caption_zh":"中心一条竖直细长红带贯穿12点至6点方向，中部有横向短带相交，边缘散布红点。","uncertainty":""}

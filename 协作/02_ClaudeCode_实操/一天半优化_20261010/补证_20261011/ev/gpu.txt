@@ -1,0 +1,1 @@
+/root/pack_evidence.sh: line 32: /usr/bin/nvidia-smi: Permission denied

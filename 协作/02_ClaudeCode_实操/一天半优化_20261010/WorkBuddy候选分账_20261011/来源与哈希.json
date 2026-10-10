@@ -1,0 +1,26 @@
+{
+ "生成时间": "2026-10-11 01:39:18",
+ "seed": 3407,
+ "smoke": 0,
+ "dry_run": false,
+ "总数": 84,
+ "分账计数": {
+  "unreviewed_keep": 54,
+  "review_or_reject_isolated": 9,
+  "candidate_pending_review": 20,
+  "candidate_suspend": 1
+ },
+ "target_object 计数": {
+  "全局分布": 25,
+  "红色失效结构": 56,
+  "绿色合格区（本轮初筛命中，待复核）": 2,
+  "绿色合格区（Codex 已判定，另挂起）": 1
+ },
+ "来源": {
+  "输入指纹": {
+   "WorkBuddy30_独立核验.json": "af44babb2862b6b24299f4481fe2706e1b34f2abfcdeb09cff51df2ff276d140",
+   "旧84目录": "D:\\pycode\\晶圆图研究\\协作\\04_WorkBuddy_复核\\方向形态84_v3_20261010_200950",
+   "本轮30目录": "D:\\pycode\\晶圆图研究\\协作\\04_WorkBuddy_复核\\内容复核30_v3_20261010_233400"
+  }
+ }
+}

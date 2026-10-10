@@ -1,0 +1,1 @@
+{"morphology_zh":"散点状失效，另有少量小块状聚集","main_location_zh":"全局散布，左下边缘与底部边缘各有一小簇聚集","location_clock":[],"orientation_clock":[],"secondary_observations":["左下边缘约7至8点钟方向有一小簇红色聚集","底部边缘约6点钟方向另有一小簇红色聚集"],"caption_zh":"红色失效格点全局散布，左下与底部边缘各有一小簇聚集，无明确单一主要结构","uncertainty":"散点遍布全图，难以认定唯一主要结构位置；两簇边缘聚集规模相近，无法确定何者为主"}

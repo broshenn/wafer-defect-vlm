@@ -1,0 +1,1 @@
+{"morphology_zh":"大面积失效背景上散布的绿色合格点状格点，无清晰团块或线条结构","main_location_zh":"绿色合格点全局散布于整个晶圆，下半部略显密集但无明确聚集中心","location_clock":[],"orientation_clock":[],"secondary_observations":["整片以红色失效格点为主，合格格点占比很小"],"caption_zh":"整片晶圆以红色失效为主，绿色合格点呈全局散布，无明显方向性结构。","uncertainty":"下半部绿点略多，但是否构成可靠聚集方向不确定"}

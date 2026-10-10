@@ -1,0 +1,1 @@
+{"morphology_zh":"整体以绿色为主，右侧边缘有一个红色小团块，另见少量零散红点","main_location_zh":"主要红色结构位于晶圆右缘靠近边缘处","location_clock":[3],"orientation_clock":[],"secondary_observations":["左侧约9点钟边缘附近有少量红点","其余区域散布个别零星红点"],"caption_zh":"晶圆几乎全为绿色合格格点，仅右缘3点钟方向有一红色小团块，伴少量散点","uncertainty":"右缘团块较小，形态近似楔形小块，无法确认是否为更大结构的局部"}

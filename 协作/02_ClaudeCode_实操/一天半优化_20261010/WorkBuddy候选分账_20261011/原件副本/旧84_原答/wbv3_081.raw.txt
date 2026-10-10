@@ -1,0 +1,1 @@
+{"morphology_zh":"稀疏的红色点状及小块状失效格点","main_location_zh":"全局分布，整片晶圆范围内散见，左上方相对略密","location_clock":[],"orientation_clock":[],"secondary_observations":["左上方有若干相邻的小块红点群","中部有零星小块状红点"],"caption_zh":"整片晶圆稀疏散布红色点状与小块状失效格点，左上方相对略密集","uncertainty":"散点全局分布，左上方略密但不构成明确主导结构，方向钟点不可靠"}

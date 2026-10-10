@@ -1,0 +1,1 @@
+{"morphology_zh":"大面积红色失效区，绿色合格格点聚集成上下两个不规则团块","main_location_zh":"绿色主要结构位于晶圆顶部与底部偏边缘，中心为大红区","location_clock":[],"orientation_clock":[],"secondary_observations":["左侧中部有一块较大的绿色块","边缘散布少量零星绿色点"],"caption_zh":"红色失效占主导，绿色合格格点主要聚集在上下两端，中心为大红区","uncertainty":"绿色分布偏向上下两端但不构成连续线条，故不填唯一钟点与延伸轴"}

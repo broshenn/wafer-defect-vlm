@@ -1,0 +1,1 @@
+{"morphology_zh":"晶圆以绿色合格格点为主，红色失效格点呈点状散布，部分连成小片","main_location_zh":"红色格点全局散布，边缘区域相对略密","location_clock":[],"orientation_clock":[],"secondary_observations":["顶部、底部及左右边缘附近红点略显偏多","中部有少量相邻红点连成小片"],"caption_zh":"晶圆整体为绿色合格，红色失效格点以点状全局散布，边缘略密","uncertainty":"边缘红点略多但未形成连续环带"}

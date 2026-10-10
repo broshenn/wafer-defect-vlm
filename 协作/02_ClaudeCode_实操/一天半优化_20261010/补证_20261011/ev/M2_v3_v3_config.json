@@ -1,0 +1,46 @@
+{
+ "mode": "rl",
+ "steps": 256,
+ "model_start": "/root/autodl-tmp/ws/models/Qwen3.5-9B-Dmerged",
+ "start_adapter": "out/M0_v3/v0-20261010-232543/checkpoint-128",
+ "data": "/root/autodl-tmp/ws/v3run/数据/group256_grpo.jsonl",
+ "data_sha256": "cff81345d79025c5fd31222d07c3c348cf19a86193ad11c70635064bbb565ce5",
+ "n_rows": 256,
+ "seconds": 2393.770404,
+ "device_minutes": 39.896,
+ "peak_allocated_GiB": 19.177,
+ "checkpoints": [
+  "out/M2_v3/v0-20261011-000507/checkpoint-128",
+  "out/M2_v3/v0-20261011-000507/checkpoint-256"
+ ],
+ "final_checkpoint": "out/M2_v3/v0-20261011-000507/checkpoint-256",
+ "selection": "末步预选（不挑最好 checkpoint）",
+ "cuda_visible_devices": "GPU-752b2eea-65f7-1383-f0e5-e0f4774384cb",
+ "device": "NVIDIA GeForce RTX 5090",
+ "world_size": 1,
+ "finished_at": "2026-10-11T00:44:57.366805",
+ "trainer_actual_args": {
+  "max_steps": 256,
+  "learning_rate": 1e-05,
+  "seed": 3407,
+  "data_seed": 3407,
+  "train_dataloader_shuffle": false,
+  "resume_only_model": true,
+  "dataset_shuffle": false,
+  "temperature": 1.0,
+  "adapters": [
+   "/root/autodl-tmp/ws/v3run/out/M0_v3/v0-20261010-232543/checkpoint-128"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "use_vllm": false,
+  "num_generations": 4,
+  "ref_adapters": [
+   "out/M0_v3/v0-20261010-232543/checkpoint-128"
+  ],
+  "beta": 0.04,
+  "max_completion_length": 256
+ }
+}

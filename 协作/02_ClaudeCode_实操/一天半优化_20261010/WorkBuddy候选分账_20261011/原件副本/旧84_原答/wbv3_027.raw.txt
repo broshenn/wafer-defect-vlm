@@ -1,0 +1,1 @@
+{"morphology_zh":"全局散布的红色点状失效，晶圆边缘有一圈红色环带","main_location_zh":"红点全局分布，红色环带沿整个晶圆边缘分布","location_clock":[],"orientation_clock":[],"secondary_observations":["边缘红环在底部和右侧略明显","内部红点稀疏且无明显聚集方向"],"caption_zh":"晶圆以绿色为主，红点全局散布，边缘有一圈红色环带。","uncertainty":"内部红点分布均匀，无明确主要结构方向"}

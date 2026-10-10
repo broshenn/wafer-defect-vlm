@@ -1,0 +1,1 @@
+{"morphology_zh":"整片绿色合格格点为主，红色失效格点为零星散布的小点和小块","main_location_zh":"红色散点全局随机散布，无明显聚集方向","location_clock":[],"orientation_clock":[],"secondary_observations":["左侧中部边缘附近有一块稍大的红色块"],"caption_zh":"晶圆几乎全绿，红色失效点全局零星散布","uncertainty":""}

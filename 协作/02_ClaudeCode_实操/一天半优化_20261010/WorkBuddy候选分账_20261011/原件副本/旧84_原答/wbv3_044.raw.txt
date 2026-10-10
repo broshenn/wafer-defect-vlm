@@ -1,0 +1,1 @@
+{"morphology_zh":"左上方边缘弧形红色团块带，另有零散红色散点","main_location_zh":"主要结构位于晶圆左上至顶部边缘，偏向11点钟方向","location_clock":[11],"orientation_clock":[],"secondary_observations":["片内散布较多孤立红色散点","右侧边缘基本为绿色"],"caption_zh":"主要失效集中在晶圆左上方约11点钟边缘呈弧形带，片内另有散点散布。","uncertainty":"红色边缘带跨越约9点到12点，取中心偏向11点钟，存在一定主观判断。"}

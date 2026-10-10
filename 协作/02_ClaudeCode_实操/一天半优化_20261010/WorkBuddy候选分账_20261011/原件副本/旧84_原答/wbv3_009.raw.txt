@@ -1,0 +1,1 @@
+{"morphology_zh":"两处小型红点团块","main_location_zh":"一处位于右上近边缘，一处位于左下偏内部，整体为少量散点分布","location_clock":[],"orientation_clock":[],"secondary_observations":["右上约1-2点钟近边缘处有一小团红点","左下约7-8点钟方向有一小团红点"],"caption_zh":"晶圆基本全绿，仅见右上与左下两处很小的红色团块","uncertainty":"两处团块规模相近，无法可靠判定唯一主要结构方向"}

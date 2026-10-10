@@ -1,0 +1,1 @@
+{"morphology_zh":"全片稀疏红色散点，左上方边缘有一小片较密集红点","main_location_zh":"红点全局散布，左上方边缘略密集","location_clock":[],"orientation_clock":[],"secondary_observations":["左上方边缘有一小片红点较密集"],"caption_zh":"晶圆全片散布稀疏红色失效点，左上方边缘略密集。","uncertainty":"红点整体为全局散布，左上方小密集区是否构成主要结构不明确。"}

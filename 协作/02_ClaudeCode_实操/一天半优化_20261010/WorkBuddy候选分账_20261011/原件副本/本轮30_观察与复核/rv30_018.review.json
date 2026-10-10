@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_018",
+ "item_id":"wbv3_043",
+ "sample_id":"wafer_00024635_002",
+ "image_sha256":"235158737d019f66eb60940055aa204feba70330dc95592c2fbe8075c1b5da00",
+ "original_raw_sha256":"d8376079d9bc9c246b72281bd68bdd15d04656aa14764b6dd20c2ffb5ea6e0ab",
+ "observation_raw_sha256":"6924b2287521de32fa93b779185e1242f142565737c423e84949cb64aa7c7e57",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上顶部边缘确有一条弧形红色带状聚集，12点附近最厚、向两侧渐薄，片内另有零散红色孤立点，与被审句一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称主要结构位于顶部边缘偏12点钟方向；图上红带紧贴上缘并横跨约10点至2点区间，重心在12点，相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句取[12]；红带沿上缘展布且最厚处位于正上方，独立观察亦记[12]，一致。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]；该红带为沿边缘的弧形结构而非直线延伸轴，不填延伸轴合理，独立观察同为[]。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到片内散布少量孤立红点与底部边缘个别红点；图上左上、中部、右半及下部确有零散红点，底部边缘附近亦可见个别红点，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括主要失效集中于顶部12点边缘弧形带并伴少量散点，与图面一致。"},
+  "uncertainty":{"verdict":"not_applicable","evidence":"被审原答uncertainty为空字符串；本图主要形态与位置清晰，无未声明的重大歧义，无可核对象。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"",
+ "uncertainty":"独立观察与被审原答在七字段上无明显分歧；仅红带两端渐薄的边界范围存在轻微视觉歧义，不影响判读。"
+}

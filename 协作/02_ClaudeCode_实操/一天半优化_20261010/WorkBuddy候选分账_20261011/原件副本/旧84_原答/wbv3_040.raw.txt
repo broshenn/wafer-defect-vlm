@@ -1,0 +1,1 @@
+{"morphology_zh":"一个较大的不规则红色团块，向右伸出带状尾，另有多处零散红点","main_location_zh":"主要团块位于中部偏左，贴近9点钟边缘并向中心方向延伸","location_clock":[9],"orientation_clock":[],"secondary_observations":["顶部边缘附近有零星红点","右下及底部边缘附近有少量散点"],"caption_zh":"主要失效为9点钟侧的大团块并向中心拖尾，其余为全局少量散点","uncertainty":"团块尾端接近中心但未见贯穿中心的连续细线，故不填延伸轴"}

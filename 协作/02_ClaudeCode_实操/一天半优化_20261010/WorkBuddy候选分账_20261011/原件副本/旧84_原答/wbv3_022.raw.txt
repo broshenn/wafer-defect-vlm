@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘密集红色团块，另有全片稀疏红色散点","main_location_zh":"主要团块位于晶圆右下方边缘附近，偏离中心","location_clock":[5],"orientation_clock":[],"secondary_observations":["全片散布稀疏红色失效点"],"caption_zh":"晶圆右下方边缘有一片密集红色团块，其余区域散布稀疏红点。","uncertainty":"主要团块方向在4至5点钟之间，取5点钟。"}

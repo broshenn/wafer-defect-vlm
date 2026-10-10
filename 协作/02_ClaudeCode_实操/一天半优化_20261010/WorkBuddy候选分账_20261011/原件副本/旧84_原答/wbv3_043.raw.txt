@@ -1,0 +1,1 @@
+{"morphology_zh":"顶部边缘弧形红色团块带，另有零散红色散点","main_location_zh":"主要结构位于晶圆顶部边缘，偏向12点钟方向","location_clock":[12],"orientation_clock":[],"secondary_observations":["片内散布少量孤立红色格点","底部边缘有个别红点"],"caption_zh":"主要失效集中在晶圆顶部12点钟边缘呈弧形带，另有少量散点散布片内。","uncertainty":""}

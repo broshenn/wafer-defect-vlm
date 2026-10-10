@@ -1,0 +1,1 @@
+{"morphology_zh":"小块状团块","main_location_zh":"左侧中部偏边缘","location_clock":[9],"orientation_clock":[],"secondary_observations":["左下方约8点钟方向另有一个孤立小红点"],"caption_zh":"晶圆左侧中部偏边缘有一小块红色失效团块，其余区域基本为绿色合格格点","uncertainty":""}

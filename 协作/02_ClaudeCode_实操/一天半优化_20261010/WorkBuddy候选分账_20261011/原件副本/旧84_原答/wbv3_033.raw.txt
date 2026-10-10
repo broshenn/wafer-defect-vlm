@@ -1,0 +1,1 @@
+{"morphology_zh":"顶部一大片密集红色团块，伴全片零散红色散点","main_location_zh":"主要团块偏离中心位于圆片上方，其余区域为全局散点","location_clock":[12],"orientation_clock":[],"secondary_observations":["中下部绿色区域散布稀疏红点，无可见连线或环形结构"],"caption_zh":"圆片顶部12点钟附近有大片密集红色团块，其余区域散布少量红点。","uncertainty":"顶部团块横向较宽，跨越约10点至2点，以12点作为代表方向。"}

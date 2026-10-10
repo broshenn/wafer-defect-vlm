@@ -1,0 +1,1 @@
+{"morphology_zh":"右侧一大片红色团块，左半以绿色为主并散布零星红点","main_location_zh":"主要红色团块位于晶圆右侧，偏离中心偏向3点钟方向，覆盖右中部到右边缘","location_clock":[3],"orientation_clock":[],"secondary_observations":["左半部绿色区域中有零散红点散布","底部边缘附近有少量孤立红点"],"caption_zh":"晶圆右侧有一大片红色失效团块，左半部以合格格点为主并有零星红点散布。","uncertainty":""}

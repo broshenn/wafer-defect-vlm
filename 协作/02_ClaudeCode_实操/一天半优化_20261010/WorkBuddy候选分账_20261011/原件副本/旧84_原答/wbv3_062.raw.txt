@@ -1,0 +1,1 @@
+{"morphology_zh":"红色失效格点为零散点状，密度较低，散布全片","main_location_zh":"全局散布，无明显主导结构","location_clock":[],"orientation_clock":[],"secondary_observations":["左侧边缘约9点钟方向有少量边缘红点","右侧边缘约3点钟方向有个别边缘红点"],"caption_zh":"绿色晶圆上红色失效格点低密度全局零散散布，左右边缘各有少量边缘红点。","uncertainty":""}

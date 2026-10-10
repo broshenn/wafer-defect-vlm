@@ -1,0 +1,4 @@
+torch 2.8.0+cu128
+transformers 5.16.1
+peft 0.20.0
+swift 4.5.3

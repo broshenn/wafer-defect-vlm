@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_017",
+ "item_id":"wbv3_040",
+ "sample_id":"wafer_00022216_015",
+ "image_sha256":"aa3063db0d2209e3182005eba6ae9a7dacf9bf5fb748259ba022b8728f4896a6",
+ "original_raw_sha256":"d24e4ce3bef4876702f2ff5dcd1b855320fbce81cf76e4d09ec663215ce7337a",
+ "observation_raw_sha256":"17baa507891e45fee4c6779677c7cea9cbc985fd0313647760c767fbb3e2f397",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上左中部确有一个较大不规则红色团块，自左缘向中心方向伸出横向延展的带状部分，绿色区域伴零散红点，与被审句描述一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称团块位于中部偏左、贴近9点钟边缘并向中心延伸；图上团块主体紧贴左缘中段并向右伸至中心附近，相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句取[9]；团块质量集中于左缘中段一侧，独立观察亦记[9]，一致。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]，其uncertainty说明尾端接近中心但未见贯穿中心的连续细线。本worker独立观察曾填[9,3]（横向延展），但该结构是不规则斑块而非规则细线，被审采取保守不填有图面依据；构成判读分歧而非矛盾。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到顶部边缘附近零星红点、右下及底部边缘附近少量散点；图上上缘有小红色斑点、右下与下缘偏左处有散点及小片贴边聚集，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括为9点钟侧大团块向中心拖尾伴全局少量散点，与图面形态与位置一致。"},
+  "uncertainty":{"verdict":"supported","evidence":"被审句已说明不填延伸轴的理由（尾端近中心但无贯穿连续细线），该说明与图上斑块状（非细线）形态相符。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"可考虑在uncertainty中补充说明团块横向（9-3轴）延展明显，若按连续斑块判读可给出9-3延伸轴，但保持不填亦属合理保守判读。",
+ "uncertainty":"唯一分歧在orientation_clock：本worker独立观察填[9,3]（团块横向延展明显），被审填[]并在uncertainty中说明未见贯穿中心的连续细线。两者分别从斑块延展与细线判据出发，属判读口径分歧，非图面事实矛盾。"
+}

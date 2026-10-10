@@ -1,0 +1,1 @@
+{"morphology_zh":"中心一个致密的红色团块，轮廓大致近圆形，向外逐渐稀疏过渡","main_location_zh":"主要团块位于晶圆中心区域，基本居中，无明显偏心方向","location_clock":[],"orientation_clock":[],"secondary_observations":["团块外围全局散布少量孤立红点","边缘各处可见零星红点，顶部和底部边缘略多"],"caption_zh":"晶圆中心有一个致密的红色失效团块，四周伴少量散布红点","uncertainty":"中心团块边缘不规则且略向多个方向延伸，但不足以判定可靠延伸轴"}

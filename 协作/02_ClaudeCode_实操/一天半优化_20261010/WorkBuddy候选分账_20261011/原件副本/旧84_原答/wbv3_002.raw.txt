@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘整圈环状失效带，内部红绿大块斑驳混杂","main_location_zh":"主要结构为沿晶圆边缘的整圈环形带，内部区域大面积混杂失效","location_clock":[],"orientation_clock":[],"secondary_observations":["内部残留的绿色区域呈不规则斑块状分布"],"caption_zh":"晶圆边缘为整圈红色环状失效带，内部大面积红绿斑驳混杂","uncertainty":"内部混杂区域无明确主导方向，难以进一步归纳形态"}

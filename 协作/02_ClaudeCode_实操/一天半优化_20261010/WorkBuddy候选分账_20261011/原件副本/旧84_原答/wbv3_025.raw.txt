@@ -1,0 +1,1 @@
+{"morphology_zh":"大面积不规则红色团块，边缘参差，另有稀疏红色散点","main_location_zh":"团块位于晶圆中上部偏右，偏离中心","location_clock":[1],"orientation_clock":[],"secondary_observations":["中部偏左有一小段横向红色短线","全片散布稀疏红色散点"],"caption_zh":"晶圆中上部偏右有一大片不规则红色团块，另有少量散点和一小段横向短线。","uncertainty":"团块跨12至2点钟方向，中心约在1点钟，位置钟点存在小幅歧义。"}

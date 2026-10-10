@@ -1,0 +1,1 @@
+{"morphology_zh":"红色失效格点以零散点状散布全片，中心附近有一小簇较集中的红点","main_location_zh":"全局散布，无明显主导结构","location_clock":[],"orientation_clock":[],"secondary_observations":["底部边缘约6点钟方向有一小段边缘红点聚集","中心偏上可见一小团红点簇"],"caption_zh":"绿色晶圆上红点全局零散散布，中心附近有小簇聚集，底部边缘有少量边缘红点。","uncertainty":"中心小簇与全片散点边界不清，无法判定可靠方向。"}
