@@ -1,0 +1,55 @@
+{
+  "run_id": "v2_fix_s3407_20261010",
+  "status": "completed_training_and_raw_evaluation_pending_CPU_analysis",
+  "cap_device_minutes": 50,
+  "start_utc": "2026-10-10T11:36:20.672496+00:00",
+  "cumulative_historical_device_minutes": "unknown_exact_estimate_1437",
+  "total_project_cap_device_minutes": 1800,
+  "rental_CNY": "unknown_actual_bill",
+  "single_GPU": true,
+  "new_v3_training": false,
+  "elapsed_device_min_upper": 39.2505,
+  "end_utc": "2026-10-10T12:15:35.704069+00:00",
+  "jobs": [
+    {
+      "tag": "M1_fix",
+      "start_utc": "2026-10-10T11:36:20.672580+00:00",
+      "status": "finished",
+      "exit_code": 0,
+      "end_utc": "2026-10-10T11:43:07.578461+00:00",
+      "device_minutes_upper": 6.7818
+    },
+    {
+      "tag": "M2_fix",
+      "start_utc": "2026-10-10T11:43:07.579860+00:00",
+      "status": "finished",
+      "exit_code": 0,
+      "end_utc": "2026-10-10T11:56:12.221179+00:00",
+      "device_minutes_upper": 13.0773
+    },
+    {
+      "tag": "M0_actual_eval",
+      "start_utc": "2026-10-10T11:56:12.222672+00:00",
+      "status": "finished",
+      "exit_code": 0,
+      "end_utc": "2026-10-10T12:02:41.559134+00:00",
+      "device_minutes_upper": 6.4889
+    },
+    {
+      "tag": "M1_fix_eval",
+      "start_utc": "2026-10-10T12:02:41.563956+00:00",
+      "status": "finished",
+      "exit_code": 0,
+      "end_utc": "2026-10-10T12:08:52.568645+00:00",
+      "device_minutes_upper": 6.1834
+    },
+    {
+      "tag": "M2_fix_eval",
+      "start_utc": "2026-10-10T12:08:52.572919+00:00",
+      "status": "finished",
+      "exit_code": 0,
+      "end_utc": "2026-10-10T12:15:35.699481+00:00",
+      "device_minutes_upper": 6.7188
+    }
+  ]
+}

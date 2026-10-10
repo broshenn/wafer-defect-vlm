@@ -1,0 +1,18 @@
+{
+  "models": {
+    "M0": {
+      "bytes": 173188512,
+      "sha256": "43b36375f914ae972e5947f1d742a24e5442d1133b918dea3fc698832174681b"
+    },
+    "M1_fix": {
+      "bytes": 173188512,
+      "sha256": "7a16f98c3abdf219ab8af66c87d2d31639363e150a100d19788dd2433a53d857"
+    },
+    "M2_fix": {
+      "bytes": 173188512,
+      "sha256": "ec71a5cbe66684b604af717c032fd8cdfcff82c66da48ba458bce5428bf37de6"
+    }
+  },
+  "backup_root": "outside_git_local_model_backup_20261010",
+  "remote_final_adapter_hashes_match_local": true
+}

@@ -1,0 +1,14 @@
+{
+  "M0_actual": {
+    "full_empty_think_prefix": 120,
+    "n": 120
+  },
+  "M1_fix": {
+    "full_empty_think_prefix": 120,
+    "n": 120
+  },
+  "M2_fix": {
+    "full_empty_think_prefix": 120,
+    "n": 120
+  }
+}

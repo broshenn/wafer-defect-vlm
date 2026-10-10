@@ -1,0 +1,159 @@
+{
+  "run_id": "v2_fix_s3407_20261010",
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Random",
+    "Scratch",
+    "none"
+  ],
+  "support": {
+    "Scratch": 24,
+    "Random": 8,
+    "Loc": 25,
+    "Edge_Ring": 21,
+    "Center": 18,
+    "Edge_Loc": 16,
+    "Donut": 5,
+    "none": 3
+  },
+  "primary": "Public class Macro-F1 over fixed actual confirmation classes; not rule reward",
+  "category_extraction": "Frozen v2 parse_answer normalization; raw strict JSON is reported separately",
+  "bootstrap": "sample-paired 10000, seed3407; single seed; development confirmation",
+  "models": {
+    "M0_actual": {
+      "n": 120,
+      "class_correct": 86,
+      "class_accuracy": 0.7166666666666667,
+      "primary_class_macro_f1": 0.6716428499037195,
+      "strict_JSON_objects": 0,
+      "normalized_JSON_objects_frozen_parser": 120,
+      "think_prefix_count": 120,
+      "frozen_v2_checker_full_count": 120,
+      "frozen_v2_checker_mean": 1.0,
+      "coverage_correct": 77,
+      "zones_correct": 55,
+      "secondary_rule_reward": 0.6776190476190477,
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive": 5,
+        "unknown": 35
+      },
+      "direction_correct": {
+        "nondirectional_fully_correct": 64,
+        "positive_fully_correct": 1
+      },
+      "source_sha256": "cb863d52302d095c441e422e5cc1b9018ac3697589042a59a814984aa9fc3e57"
+    },
+    "M1_fix": {
+      "n": 120,
+      "class_correct": 88,
+      "class_accuracy": 0.7333333333333333,
+      "primary_class_macro_f1": 0.6894558750941729,
+      "strict_JSON_objects": 0,
+      "normalized_JSON_objects_frozen_parser": 120,
+      "think_prefix_count": 120,
+      "frozen_v2_checker_full_count": 120,
+      "frozen_v2_checker_mean": 1.0,
+      "coverage_correct": 97,
+      "zones_correct": 71,
+      "secondary_rule_reward": 0.7576190476190476,
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive": 5,
+        "unknown": 35
+      },
+      "direction_correct": {
+        "nondirectional_fully_correct": 70,
+        "positive_fully_correct": 0
+      },
+      "source_sha256": "aee79de337490544f5edce4e1693d2b7f901df72830cd4527665d084f3309896"
+    },
+    "M2_fix": {
+      "n": 120,
+      "class_correct": 84,
+      "class_accuracy": 0.7,
+      "primary_class_macro_f1": 0.6732585257985854,
+      "strict_JSON_objects": 0,
+      "normalized_JSON_objects_frozen_parser": 120,
+      "think_prefix_count": 120,
+      "frozen_v2_checker_full_count": 120,
+      "frozen_v2_checker_mean": 1.0,
+      "coverage_correct": 75,
+      "zones_correct": 51,
+      "secondary_rule_reward": 0.6626190476190476,
+      "direction_denominators": {
+        "nondirectional": 80,
+        "positive": 5,
+        "unknown": 35
+      },
+      "direction_correct": {
+        "nondirectional_fully_correct": 65,
+        "positive_fully_correct": 1
+      },
+      "source_sha256": "24b09f4d19a0e2c0e90ad70d12e9583651ca680059f77081c2aaacaf8378ec3d"
+    }
+  },
+  "paired": {
+    "M1_fix minus M0_actual": {
+      "primary_macro_f1_diff": 0.01781302519045347,
+      "primary_macro_f1_CI95": [
+        -0.03972608265387356,
+        0.07533897617017815
+      ],
+      "class_accuracy_diff": 0.016666666666666666,
+      "class_accuracy_CI95": [
+        -0.016666666666666666,
+        0.05
+      ],
+      "secondary_rule_reward_diff": 0.08000000000000002,
+      "secondary_rule_reward_CI95": [
+        0.04678571428571429,
+        0.11416666666666667
+      ]
+    },
+    "M2_fix minus M0_actual": {
+      "primary_macro_f1_diff": 0.0016156758948658867,
+      "primary_macro_f1_CI95": [
+        -0.08304441246514405,
+        0.0857770612489478
+      ],
+      "class_accuracy_diff": -0.016666666666666666,
+      "class_accuracy_CI95": [
+        -0.06666666666666667,
+        0.03333333333333333
+      ],
+      "secondary_rule_reward_diff": -0.015000000000000001,
+      "secondary_rule_reward_CI95": [
+        -0.04416666666666666,
+        0.011190476190476188
+      ]
+    },
+    "M2_fix minus M1_fix": {
+      "primary_macro_f1_diff": -0.016197349295587582,
+      "primary_macro_f1_CI95": [
+        -0.08574920478191761,
+        0.05425005195526811
+      ],
+      "class_accuracy_diff": -0.03333333333333333,
+      "class_accuracy_CI95": [
+        -0.08333333333333333,
+        0.016666666666666666
+      ],
+      "secondary_rule_reward_diff": -0.09499999999999999,
+      "secondary_rule_reward_CI95": [
+        -0.1326190476190476,
+        -0.058333333333333334
+      ]
+    }
+  },
+  "caption_evaluation": "not_run",
+  "limitations": [
+    "v2 legacy clock/axis/coverage definitions retained for controlled repair",
+    "old confirmation120 is development and overlaps old D training lots",
+    "No independent human gold; no claim of universal RL improvement"
+  ]
+}

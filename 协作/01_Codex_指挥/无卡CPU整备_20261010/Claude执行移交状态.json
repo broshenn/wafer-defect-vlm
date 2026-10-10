@@ -1,0 +1,11 @@
+{
+  "transport_dispatched": true,
+  "model_acceptance": "failed_authentication_401",
+  "new_receipt": "not_created",
+  "new_worker_stopped_by_creator": true,
+  "scope": "Only created background copy; existing interactive Claude sessions unchanged",
+  "handoff_file": "给Claude_执行接手_已完成起点修复.md",
+  "next_execution_owner": "Claude Code",
+  "review_owner": "Codex",
+  "GPU_repair_already_completed": true
+}

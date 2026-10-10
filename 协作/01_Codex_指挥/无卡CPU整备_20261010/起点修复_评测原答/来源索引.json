@@ -1,0 +1,35 @@
+[
+  {
+    "model": "M0_actual",
+    "n": 120,
+    "original_private_file_sha256": "f483cf38438261dcfc0937fad4aa71884f16c228a24ab0cae7640f5e781fbd8a",
+    "sanitized_public_file_sha256": "cb863d52302d095c441e422e5cc1b9018ac3697589042a59a814984aa9fc3e57",
+    "removed_fields": [
+      "host",
+      "base_model"
+    ],
+    "raw_response_preserved": true
+  },
+  {
+    "model": "M1_fix",
+    "n": 120,
+    "original_private_file_sha256": "c42b52db298402c207dbaedf9d484a4de5f6a33f6c49d7f1e92bca27beab1963",
+    "sanitized_public_file_sha256": "aee79de337490544f5edce4e1693d2b7f901df72830cd4527665d084f3309896",
+    "removed_fields": [
+      "host",
+      "base_model"
+    ],
+    "raw_response_preserved": true
+  },
+  {
+    "model": "M2_fix",
+    "n": 120,
+    "original_private_file_sha256": "656af21125278493ebb5d0f1251c274a019b86af9f31fe69c2969fff9fa4aa43",
+    "sanitized_public_file_sha256": "24b09f4d19a0e2c0e90ad70d12e9583651ca680059f77081c2aaacaf8378ec3d",
+    "removed_fields": [
+      "host",
+      "base_model"
+    ],
+    "raw_response_preserved": true
+  }
+]

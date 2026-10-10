@@ -47,7 +47,7 @@ def main():
         if len(rr)!=len(br) or set(br)!=set(ids):
             raise RuntimeError('Incomplete/duplicate raw IDs: '+tag)
         ps, rs, parts, formats=[],[],[],[]
-        direction=Counter();den=Counter();strict_json=0
+        direction=Counter();den=Counter();strict_json=0;normalized_json=0;empty_think=0
         for sid in ids:
             raw=br[sid]['raw'];g=bygold[sid]
             try:
@@ -56,6 +56,8 @@ def main():
             except (ValueError,TypeError):
                 pass
             obj,how=reward.parse_answer(raw);ref=reward.parse_reference(g,0)
+            normalized_json+=obj is not None
+            empty_think+=raw.lstrip().startswith('<think>')
             result=reward.score_one(obj,ref);fmt,_=reward.check_format(obj,how)
             pc=obj.get('defect_class') if isinstance(obj,dict) else None
             ps.append(index.get(pc,len(classes)));rs.append(.9*result['fact']+.1*fmt)
@@ -68,7 +70,10 @@ def main():
         p=np.array(ps);pred[tag]=p;values[tag]=np.array(rs)
         models[tag]={'n':120,'class_correct':int((p==truth).sum()),'class_accuracy':float((p==truth).mean()),
                      'primary_class_macro_f1':macro(truth,p),'strict_JSON_objects':strict_json,
-                     'full_format_count':sum(f==1 for f in formats),'format_mean':float(np.mean(formats)),
+                     'normalized_JSON_objects_frozen_parser':normalized_json,
+                     'think_prefix_count':empty_think,
+                     'frozen_v2_checker_full_count':sum(f==1 for f in formats),
+                     'frozen_v2_checker_mean':float(np.mean(formats)),
                      'coverage_correct':sum(r['coverage_level']==1 for r in parts),
                      'zones_correct':sum(r['zones']==1 for r in parts),
                      'secondary_rule_reward':float(np.mean(rs)),
@@ -97,6 +102,7 @@ def main():
                               'secondary_rule_reward_diff':float(reward_delta.mean()),'secondary_rule_reward_CI95':ci(reward_delta[ix].mean(axis=1))}
     result={'run_id':'v2_fix_s3407_20261010','classes':classes,'support':dict(Counter(r['gold_class'] for r in gold)),
             'primary':'Public class Macro-F1 over fixed actual confirmation classes; not rule reward',
+            'category_extraction':'Frozen v2 parse_answer normalization; raw strict JSON is reported separately',
             'bootstrap':'sample-paired 10000, seed3407; single seed; development confirmation',
             'models':models,'paired':pairs,'caption_evaluation':'not_run',
             'limitations':['v2 legacy clock/axis/coverage definitions retained for controlled repair',

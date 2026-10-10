@@ -1,0 +1,6 @@
+{
+  "compute_process_count": 0,
+  "query_exit": 0,
+  "platform_power_billing_state": "not_confirmed",
+  "own_GPU_task": "completed_no_new_experiment_started"
+}

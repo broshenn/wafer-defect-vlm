@@ -1,0 +1,338 @@
+{
+  "files": [
+    {
+      "path": "analyze_fix.py",
+      "sha256": "dd2f9c2f8ecae7fb2b9677161a20d7b4e73a23899eedf51dc158f0d030313bf6",
+      "bytes": 6357
+    },
+    {
+      "path": "build_cpu_packet.py",
+      "sha256": "943aa1eb82812a20edf476b9a342e5735f930f464c7d42c7e51065f463f4ba60",
+      "bytes": 15668
+    },
+    {
+      "path": "build_direction_diagnostic.py",
+      "sha256": "b0987c594004e81e0aa8389b5f309d60be1946656b647b64388ce44aad2d3f7b",
+      "bytes": 2962
+    },
+    {
+      "path": "Claude执行移交状态.json",
+      "sha256": "03287165eeb97d8788d3ba0d5dd122956fca2dd1cacc15fcc9b3db6873ab75a1",
+      "bytes": 427
+    },
+    {
+      "path": "core_v3.py",
+      "sha256": "4f77d8dde57069095fa022ae40b0a583ffa1f317e6841bfd4fed44c4774dbc2e",
+      "bytes": 7637
+    },
+    {
+      "path": "CPU数据验收.json",
+      "sha256": "e558d913438b18661f7ac56965f48d7cb14211ba3df0ed4dec8a01ed9a0ace69",
+      "bytes": 4930
+    },
+    {
+      "path": "CPU验证汇总.json",
+      "sha256": "5ca61afe2d9d06720c8056884504ca3f6ff9e807ae541d48dc79a606bf8e7f6d",
+      "bytes": 315
+    },
+    {
+      "path": "data_v3/adapt512_sft.jsonl",
+      "sha256": "799f44d7fd6507eb80303957ce11f107d095c26141ea875d940c331f0831dc45",
+      "bytes": 961708
+    },
+    {
+      "path": "data_v3/confirmation120_reference.jsonl",
+      "sha256": "1f709dc7a704f5ee358e9aa44ad98390894772ffe27b69ac0c7334845047af11",
+      "bytes": 28867
+    },
+    {
+      "path": "data_v3/confirmation120_requests.jsonl",
+      "sha256": "33d844cdfa8cd4acbe154a033f563220f59a03c7aa2818891865adf59d2dd7e5",
+      "bytes": 197040
+    },
+    {
+      "path": "data_v3/group256_grpo.jsonl",
+      "sha256": "78a523e9ddee1e59a17428557a2f9199db661aa03f365dffe95e0e727b2d0a47",
+      "bytes": 476452
+    },
+    {
+      "path": "data_v3/group256_sft4.jsonl",
+      "sha256": "213a063a82fe2ba5fe2c1f23b9050be30c83fb35feecea18fe318cab7b990ad9",
+      "bytes": 1922192
+    },
+    {
+      "path": "direction_diagnostic.jsonl",
+      "sha256": "c48f57d7d4278a32deed26cff76dba63da4f5c93a23ec9e272068b496a6f81cb",
+      "bytes": 8962
+    },
+    {
+      "path": "M0_实际复测一致性.json",
+      "sha256": "ba85437fccc884e06c68923c0d8fb8e44d1cfd2a854b7e66fd22c0fec17e7a48",
+      "bytes": 382
+    },
+    {
+      "path": "pools/adapt.jsonl",
+      "sha256": "6196b366e9d01c2e57d1fe13d795d92aeb1935fb086052b6db9aa83cfd07cfd8",
+      "bytes": 944339
+    },
+    {
+      "path": "pools/confirmation.jsonl",
+      "sha256": "64454c135065d2f1558bcd2b1b04f014adafd62175d576903d240bd3184f7eab",
+      "bytes": 223033
+    },
+    {
+      "path": "pools/rl.jsonl",
+      "sha256": "11a47246ecc7226b124dbbbaa7d09607b96a6767a79a8179f0672756e0f4ca5b",
+      "bytes": 471430
+    },
+    {
+      "path": "pools/rule_dev.jsonl",
+      "sha256": "23dfc8df3c7a3206b24e91cbeb4fc26fb9807cb30ea1cb9462ad91b082506b69",
+      "bytes": 55214
+    },
+    {
+      "path": "prepare_v2fix.py",
+      "sha256": "aa82721e2deb9b8159b0494c10b8149bd061de96afa7d1054f0db3509026a848",
+      "bytes": 3625
+    },
+    {
+      "path": "README_入口.md",
+      "sha256": "56d289ca2b5b54bff8663e5d09196ca665348d48e9eb7141693b5a8dd4150933",
+      "bytes": 3599
+    },
+    {
+      "path": "repair_driver.py",
+      "sha256": "b8b1510c50bd8da585eec3fa9857ff07b407d3c705bec982819037307fdb505b",
+      "bytes": 5326
+    },
+    {
+      "path": "rotation_recipes.jsonl",
+      "sha256": "7e07bf3ce03304efbf4d0f9aeb4f2413709423c88dcbf2f2e227c002446e8952",
+      "bytes": 50882
+    },
+    {
+      "path": "runtime_guard_v2fix.py",
+      "sha256": "015c7703c115b76a4ab6be54fe898a845c6e55288bbef7692c4a6cdb6ddd508e",
+      "bytes": 6102
+    },
+    {
+      "path": "test_analysis.py",
+      "sha256": "e842cd5efa80c597a1a6c685158d8b7fb5a436eb233a4d91b001d601cdee75a0",
+      "bytes": 3245
+    },
+    {
+      "path": "test_cpu_v3.py",
+      "sha256": "4fc1cb23a42421c9cfb4cb7f0f6e5efe4b6b92d326a42e3195b06db225e80989",
+      "bytes": 4628
+    },
+    {
+      "path": "test_packet.py",
+      "sha256": "c62b87697f0ed9d57a8a271b59066c0073dffc77a1da5a8ca429d72fc1cd4368",
+      "bytes": 4351
+    },
+    {
+      "path": "v2_train_fixed.py",
+      "sha256": "6ed2383d7011100858a85f083f593e4b458e332fb3b6bb2e35378b71f98be8c3",
+      "bytes": 9465
+    },
+    {
+      "path": "WorkBuddy84/batch_01.jsonl",
+      "sha256": "0c6f57116b9a6dec74df1ec77d45f6b27cdac18ec8a8643d86b5a038f612b496",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_02.jsonl",
+      "sha256": "964032ac21dc90b61f6d8c48bdc2fa5908a9c3f286005702ffcb22b470c7de4f",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_03.jsonl",
+      "sha256": "8d1d98d23299d873b64e1ce23e144e094312f4638a800a66fb912b6e37a0a1a2",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_04.jsonl",
+      "sha256": "43d76ef749a6c9c1ebbba90dffbae36f15b8677b84ca53d1cfe9dc246332c6c2",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_05.jsonl",
+      "sha256": "aae45ce95eef7a5d97e5ba042b6b76b6276c17eb14acb2bbfcf2f3d82ab883f4",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_06.jsonl",
+      "sha256": "747734fba50c6f07daaeb7cf010bdd5a3180709462f1ce074d3bf220f70a6037",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_07.jsonl",
+      "sha256": "2e159cb985686b427b28d25fee8e1143fe51a0ff446d756c72896ff5162e415c",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_08.jsonl",
+      "sha256": "c67881ed6ba25c377985b58fcc694bb2003cb42c85edf490caa6b20d3aaefe13",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_09.jsonl",
+      "sha256": "fec2d66d39a2734376b5d07684fa443d98135b49f5931b551bf2b1cd17a6fbb1",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_10.jsonl",
+      "sha256": "7b0ad91b6b52e7c58dfa394d6ffc758d8e5abfd49b4b45bfbcf8e8ec0dbdebb6",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_11.jsonl",
+      "sha256": "bd45776bff3dd175e4915c230e44ce0b4d4091d7db1fcbf75bb5349aee46fa08",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/batch_12.jsonl",
+      "sha256": "b54071193f4093be5e256b6d2cbd50965ea5232619a5742adc7f4b01b001a189",
+      "bytes": 1582
+    },
+    {
+      "path": "WorkBuddy84/blind84.jsonl",
+      "sha256": "10f8386236c89fc9f29134b4a84d746e67f96c5f43af8acf710c8454b7a21c24",
+      "bytes": 18984
+    },
+    {
+      "path": "WorkBuddy84/index.json",
+      "sha256": "909a8291fa0a4b1180a7c090dea57be7ef80ced4fbcb1e2cb433699a4f54f7c4",
+      "bytes": 2357
+    },
+    {
+      "path": "WorkBuddy84/标注题面.txt",
+      "sha256": "81cf126a6b351efec8994f67b22fdfcccb44e1dc8853559afafb58187ad4002c",
+      "bytes": 1974
+    },
+    {
+      "path": "WorkBuddy84/给WorkBuddy_直接执行.md",
+      "sha256": "9c868fa1caf214496abc559f0703505e7772a663134714c83cf5e83d3ef8aac6",
+      "bytes": 2802
+    },
+    {
+      "path": "WorkBuddy84_来源审计.json",
+      "sha256": "54740019b52c3f5fe7b38157d0513a38005ca30472eacf26b2db7b8d228c5bb7",
+      "bytes": 9701
+    },
+    {
+      "path": "workbuddy_schema_check.py",
+      "sha256": "689ce27c38642cbce91d8c0117d23171dd32743a5ea79ef6e3cf3fbec498e02d",
+      "bytes": 2641
+    },
+    {
+      "path": "方向诊断验收.json",
+      "sha256": "56b528cfb361de4e1fdeca3dbad5a4bfe0c0835a412f6c0856487a1332511a20",
+      "bytes": 2992
+    },
+    {
+      "path": "版本合同_v3_CPU.json",
+      "sha256": "ea8981fed8d6d46069b456b40ba9f47717c5c1e8fc0e3a507f02aac61d15d893",
+      "bytes": 1041
+    },
+    {
+      "path": "给Claude_执行接手_已完成起点修复.md",
+      "sha256": "d4d87a6c76605410a800f4e99ca22adb70ee29fe241aed40332488d0be322ba1",
+      "bytes": 4241
+    },
+    {
+      "path": "给Claude_新连接与避免重复.md",
+      "sha256": "c2a1819de561ce8cb2b6feb45e88f9f596539651861f7b4b91ce1f963104365b",
+      "bytes": 1963
+    },
+    {
+      "path": "起点修复_CPU检查.json",
+      "sha256": "210c2f3d1e4ddcbca91fb706bd47dcba5243988db516d6b8b709e31bf6c84a5e",
+      "bytes": 390
+    },
+    {
+      "path": "起点修复_交付报告.md",
+      "sha256": "fb7bbee02ebff3b2a943d6d794d0e3cca859f8b9465e661565499089d535efe8",
+      "bytes": 5510
+    },
+    {
+      "path": "起点修复_图片末态指纹.json",
+      "sha256": "764a52d1a9013fab0764d71f813cb965ffef0644a50e39ae46323edb258784fb",
+      "bytes": 185
+    },
+    {
+      "path": "起点修复_实跑门槛回执.json",
+      "sha256": "5f3fb096b1745fcd00711e09cadecaccece920f1561d81119e00fee9a26aaa4f",
+      "bytes": 1580
+    },
+    {
+      "path": "起点修复_实际框架CPU实参.json",
+      "sha256": "799778064c5d61486adb4d56b35d69960807010c41327f4af4cdf6af805c011c",
+      "bytes": 752
+    },
+    {
+      "path": "起点修复_最终运行账.json",
+      "sha256": "c242ad73658262379dff8b185a163dc7de2623fea4a46dc26b985db6b49788b3",
+      "bytes": 1677
+    },
+    {
+      "path": "起点修复_模型备份指纹.json",
+      "sha256": "1435c12e1873d506c7ea7ae2890ff99759ddd489a3f0eccaf97ee92c2ef55aa6",
+      "bytes": 524
+    },
+    {
+      "path": "起点修复_真实启动回执.json",
+      "sha256": "0cfdd178cfe1bd8c91fcf02b681937ae5ea88f408985fca59d2837b74b42f5e7",
+      "bytes": 77
+    },
+    {
+      "path": "起点修复_结束设备状态.json",
+      "sha256": "29b4e8cb969c9a69bc5887137e7961cc0ebae58c5c44bb7c4a9282142f66f531",
+      "bytes": 160
+    },
+    {
+      "path": "起点修复_结果.json",
+      "sha256": "c56798762a7c733b104ffb4207bc2aefafd17ca361f768929e58dda8293d6266",
+      "bytes": 4799
+    },
+    {
+      "path": "起点修复_训练器实参与组审计.json",
+      "sha256": "c0c9fe7b8d9651e695ccbf28ee4da4ebaa9c3e5ee493e079366e907d16a25657",
+      "bytes": 1682
+    },
+    {
+      "path": "起点修复_评测原答/M0_actual_raw.jsonl",
+      "sha256": "cb863d52302d095c441e422e5cc1b9018ac3697589042a59a814984aa9fc3e57",
+      "bytes": 81280
+    },
+    {
+      "path": "起点修复_评测原答/M1_fix_raw.jsonl",
+      "sha256": "aee79de337490544f5edce4e1693d2b7f901df72830cd4527665d084f3309896",
+      "bytes": 79435
+    },
+    {
+      "path": "起点修复_评测原答/M2_fix_raw.jsonl",
+      "sha256": "24b09f4d19a0e2c0e90ad70d12e9583651ca680059f77081c2aaacaf8378ec3d",
+      "bytes": 80340
+    },
+    {
+      "path": "起点修复_评测原答/来源索引.json",
+      "sha256": "2f6e78838395e2d8540897c24e1d60dc98ffa5cf0698276939c57f41c9d44232",
+      "bytes": 1065
+    },
+    {
+      "path": "起点修复_评测原答/格式前缀核验.json",
+      "sha256": "f511cddbd10a77fc447154847dfb6c917adc32a257354b59d1b49acc689bc305",
+      "bytes": 210
+    },
+    {
+      "path": "题面_v3.txt",
+      "sha256": "08533309fd8fc71e9900a312b726e9074e950e1237a2cc60ce85db734112f87c",
+      "bytes": 1493
+    }
+  ],
+  "scan_hits": 0,
+  "original_resume_preserved": true,
+  "next_executor": "Claude Code",
+  "reviewer": "Codex"
+}

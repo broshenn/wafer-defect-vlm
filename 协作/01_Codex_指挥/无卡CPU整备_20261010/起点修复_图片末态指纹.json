@@ -1,0 +1,7 @@
+{
+  "phase": "post_training_same_files_verification",
+  "images": 180,
+  "decoded448PNG": 180,
+  "mismatched_IDs": [],
+  "claim": "Does not fabricate a pre-training hash measurement"
+}

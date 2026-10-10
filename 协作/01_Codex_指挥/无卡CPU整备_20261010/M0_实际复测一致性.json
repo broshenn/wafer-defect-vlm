@@ -1,0 +1,8 @@
+{
+  "new_completed_raw_count": 120,
+  "previous_M0_raw_count": 120,
+  "exact_response_matches": 120,
+  "new_original_private_file_sha256": "f483cf38438261dcfc0937fad4aa71884f16c228a24ab0cae7640f5e781fbd8a",
+  "old_public_file_sha256": "230bfa70498787d8a9c5f17e760b30a29f8408d845df42a333d9d2c10b637a80",
+  "interpretation": "actual same-prompt greedy replay; not inherited scores"
+}
