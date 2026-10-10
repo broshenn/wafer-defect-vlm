@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-10",
+  "resource_statement": "用户确认已有租用5090可独立使用，LabGuard另一张卡",
+  "scope": "当前版保留；首轮起点修复共享原预算，v3/more seeds为建议未运行",
+  "current_adapt_positive_direction": 0,
+  "current_RL256_positive_direction": 6,
+  "train_original_positive_direction_candidates": 67,
+  "proposed_device_minutes_all_optional_stages": 280,
+  "new_runs_started": 0,
+  "files": [
+    {
+      "name": "优化方案_36小时.md",
+      "sha256": "a74b8ee3ca0c29e29a0fdf76ffb63cdd0453450f4fda56303010c4814801a3a5"
+    },
+    {
+      "name": "给Claude_先修真实起点并准备下一版.md",
+      "sha256": "8e3ab7ccc32180eabab6a5046934dad9c89143ac905285279135f9bceed2b2b5"
+    }
+  ]
+}
