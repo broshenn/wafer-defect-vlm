@@ -1,0 +1,180 @@
+{
+ "池规模": {
+  "adapt": 512,
+  "rl": 256,
+  "rule_dev": 30,
+  "confirmation": 120
+ },
+ "隔离": {
+  "adapt×rl": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  },
+  "adapt×rule_dev": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  },
+  "adapt×confirmation": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  },
+  "rl×rule_dev": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  },
+  "rl×confirmation": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  },
+  "rule_dev×confirmation": {
+   "sample": 0,
+   "lot": 0,
+   "png_sha": 0
+  }
+ },
+ "池内唯一性": {
+  "adapt": {
+   "样本": true,
+   "PNGsha": true
+  },
+  "rl": {
+   "样本": true,
+   "PNGsha": true
+  },
+  "rule_dev": {
+   "样本": true,
+   "PNGsha": true
+  },
+  "confirmation": {
+   "样本": true,
+   "PNGsha": true
+  }
+ },
+ "hash核对": {
+  "与manifest缺失": 0,
+  "与本地PNG不符": 0,
+  "不符样例": []
+ },
+ "参考": {
+  "schema不合法": 0,
+  "样例": [],
+  "方向参考(含池名)": {
+   "adapt": {
+    "single": 19,
+    "unknown": 152,
+    "opposed": 2,
+    "nondirectional": 339
+   },
+   "rl": {
+    "single": 15,
+    "unknown": 92,
+    "opposed": 1,
+    "nondirectional": 148
+   },
+   "rule_dev": {
+    "nondirectional": 22,
+    "unknown": 8
+   },
+   "confirmation": {
+    "unknown": 43,
+    "nondirectional": 77
+   }
+  },
+  "覆盖分布": {
+   "adapt": {
+    "under_5pct": 71,
+    "5_to_under_20pct": 221,
+    "20_to_under_50pct": 169,
+    "half_or_more": 51
+   },
+   "rl": {
+    "20_to_under_50pct": 86,
+    "under_5pct": 36,
+    "5_to_under_20pct": 118,
+    "half_or_more": 16
+   },
+   "rule_dev": {
+    "5_to_under_20pct": 18,
+    "20_to_under_50pct": 3,
+    "under_5pct": 7,
+    "half_or_more": 2
+   },
+   "confirmation": {
+    "5_to_under_20pct": 56,
+    "half_or_more": 6,
+    "20_to_under_50pct": 54,
+    "under_5pct": 4
+   }
+  },
+  "zones=unknown": {}
+ },
+ "语义抽查": {
+  "none类样本数": 62,
+  "none类里覆盖为zero的": 0,
+  "none类里红格>0的（说明none≠零红点被遵守）": 0,
+  "half_or_more样本数": 75,
+  "opposed样本数": 3,
+  "opposed的扇区是否都成对相反": true,
+  "opposed方向样例": [
+   [
+    "adapt",
+    "wafer_00005998_017",
+    [
+     2,
+     8
+    ],
+    null
+   ],
+   [
+    "adapt",
+    "wafer_00005998_018",
+    [
+     2,
+     8
+    ],
+    null
+   ],
+   [
+    "rl",
+    "wafer_00007994_004",
+    [
+     2,
+     8
+    ],
+    null
+   ]
+  ]
+ },
+ "旋转": {
+  "配方数": 111,
+  "配方样例": {
+   "clockwise_degrees": 90,
+   "derived_id": "wafer_00006467_002__cw90",
+   "free_text_caption_rotated": false,
+   "new_unique_wafer": false,
+   "original_sample_id": "wafer_00006467_002",
+   "original_sha256": "8663f8d0dca4f1c093d2c0b60ff90ad2b8cacc1cde6ebbbc66382729d9e270f0",
+   "reference": {
+    "angular_type": "single",
+    "clock_sectors": [
+     11
+    ],
+    "coverage_band": "under_5pct",
+    "defect_class": "Loc",
+    "red_mass_zones": [
+     "middle",
+     "edge"
+    ],
+    "uncertainty": ""
+   },
+   "split_pool": "adapt"
+  },
+  "训练侧唯一原图数": 768,
+  "配方是否已变成训练行": true
+ }
+}

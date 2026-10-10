@@ -1,0 +1,27 @@
+{
+ "裸 JSON": {
+  "原件可解析": "512/512",
+  "复核版可解析": "512/512"
+ },
+ "带完整空 think 前缀": {
+  "原件可解析": "0/512",
+  "复核版可解析": "512/512"
+ },
+ "角向答unknown且参考nondirectional": {
+  "原件角向分": 0.4,
+  "复核版角向分": 0.0,
+  "原件总分": 0.88,
+  "复核版总分": 0.8
+ },
+ "参考样例": {
+  "defect_class": "Center",
+  "coverage_band": "20_to_under_50pct",
+  "red_mass_zones": [
+   "center",
+   "middle",
+   "edge"
+  ],
+  "angular_type": "nondirectional",
+  "clock_sectors": []
+ }
+}
