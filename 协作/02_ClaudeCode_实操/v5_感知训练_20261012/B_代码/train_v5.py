@@ -53,6 +53,8 @@ def resolve_config(a):
             cfg["image_max_token_num"] = wcfg["image_max_token_num"]
     # 环境变量必须在 torch 之前设（dry-run 不启动训练，跳过）
     if not a.dry_run:
+        if cfg["image_max_token_num"] is None:
+            raise SystemExit("image_max_token_num 为 null：应来自 FROM_WINNER 继承或配置里显式给出")
         os.environ["IMAGE_MAX_TOKEN_NUM"] = str(cfg["image_max_token_num"])
         if mode == "rl":
             os.environ["WAFER_REWARD_MODE"] = cfg["reward_mode"]

@@ -13,8 +13,8 @@
 - [x] 第 8 步 叠加核验图（step8_overlays.py, P2 已做）
 - [x] 第 9 步 打包与交付报告（img448.tgz 25.7MB / img896.tgz，交付报告已写）（A_数据/交付报告.md）
 - [x] 任务卡 B 全部完成（02:30）：16 文件 + 10 测试文件全 PASS（common10/reward23/configs20/score11/sched18/rewrite5/screen5/bootstrap4/winner+plan13/gate6）；交付报告见 B_代码/交付报告.md
-- [~] 任务卡 C：连通✅→选卡/占卡✅→上传（4 个 bundle 校验中）→冒烟（smoke_run.py 已就绪）→night_plan
-- [ ] 任务卡 D：**先释放占位** → 启动夜跑 → 巡检循环
+- [x] 任务卡 C 完成（02:48）：上传全量 SHA 校验✅、服务器 setup✅、冒烟全过✅（含 S2 visual 220 键、Rfull 探针 gate 全过）、night_plan 126 任务已生成
+- [~] 任务卡 D：占位已释放✅ → 调度器已启动✅（pid 3696693）→ 巡检循环进行中（sft_S1 7.23s/it，ETA 45min/线）
 - [ ] 任务卡 E：初版报告 + ALL_DONE.flag
 
 ## 服务器状态

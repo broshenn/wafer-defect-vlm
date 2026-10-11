@@ -39,3 +39,23 @@
 - 问题：线性探针的视觉塔具体调用方式（model.visual 接口、image_grid_thw）本机无法验证（本机无 ms-swift/torch 环境）。
 - 选择：按 transformers 通用接口写好，标 P2；在服务器冒烟时先用 5 张图带 --limit 5 试跑确认，失败则按 0.4 表标 not run。
 - 理由：probe 是 P2 诊断，不给关键路径挡路；失败不影响主实验。
+
+## D9 2026-10-12 02:40 上传与解包校验
+- 方式：数据（29 个 jsonl，147MB）与代码（37 个文件）分别打 tar.gz（gzip 后 3.5MB / 48KB），与 img448.tgz/img896.tgz 共 4 个文件上传，每个核对 SHA；服务器端 setup_server.py 再做 bundle SHA + 解包后全量文件 SHA 双层校验。
+- 过程记录：首轮校验对 configs/、tests/ 报 21 处"不符"，查明为**校验器读 manifest 键时 Windows 反斜杠未归一化**（tarfile 打包时已自动把 arcname 反斜杠转为 `/`，解包本身正确）；修校验器后全部通过。数据文件全量 SHA 一次通过。
+
+## D10 2026-10-12 02:44 配置路径改写补一轮
+- 问题：rewrite_paths 只替换 `/WS/v5`，而 configs 里模型路径是 `/WS/models/Qwen3.5-9B`（不在 /WS/v5 下），S1 探针因此 "path not found"。
+- 选择：对 configs/*.json 再做一轮 `/WS` → 真实根 的替换（数据文件不受影响，其内容只有 `__IMG__` 与 `/WS/v5` 两种形态）。不改任何合同数值。
+
+## D11 2026-10-12 02:44 运行时环境修复（两处）
+- ① envs/wafer 缺 `msgspec`：ms-swift 4.5.3 的 grpo_trainer 顶层 import 依赖它，RL 无法启动。选择：pip 安装 msgspec==0.22.0（与该机 labguard wheels 中的版本一致）。这是用户自己的 env，不改共享/系统环境。
+- ② Rfull 探针首轮把 `IMAGE_MAX_TOKEN_NUM` 设成了字符串 "None"（探针配置 image_max_token_num=null 且起点为字面路径，未走 FROM_WINNER 继承）→ swift 报 `int('None')`。选择：train_v5 对 null 显式 SystemExit 报错；探针配置显式给 256。夜跑 RL 线走 FROM_WINNER 继承，不受影响。
+
+## D12 2026-10-12 02:48 冒烟结论（全部项目最终状态）
+- PASS：S1/S2 探针 2 步 + gate（S2 visual 键 220>0、S1 =0）→ **S2 训练视觉侧得到确认**；Rfull 探针 2 步（重跑后 rc=0，92s，30.84s/step，runtime_gate 两项张量计数>0 且 two_step_gate=passed，reward_audit 16 条中 4 条非 -1）；评测 10 张 7.14s/张；score_v5 出 metrics；scheduler 假任务 DONE/FAILED/SKIPPED 全对。
+- 首轮三项失败及处置（如实记录）：test_configs 因路径已改写而断言失败（测试改为对根路径不敏感，服务器复验 20/20）；Rfull 探针因 rl_pool320 夜跑才生成而崩（改用 rl_candidates800 重跑）；纯测试 8/9 即由前者引起。smoke_report.json 中保留原 FAIL 记录并以 notes 说明。
+
+## D13 2026-10-12 02:46 夜跑启动
+- 已释放全部占位、核验 GPU1–7 零进程后启动调度器（pid 3696693）；详见 D_夜跑/启动回执.md。
+- 实测 SFT 7.2s/step ≈ 单线 45 分钟，比冒烟估计更快；若一切顺利，全部任务预计 07:30-08:00 前收尾（硬截止 08:30 不变）。

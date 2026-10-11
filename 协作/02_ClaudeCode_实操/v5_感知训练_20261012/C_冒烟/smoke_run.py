@@ -95,8 +95,13 @@ def main():
         rate, unit = parse_rate(LOGS / f"smoke_{line}_probe.log")
         stage(f"{line}_probe2", rc == 0, f"rc={rc} {dt:.0f}s rate={rate} {unit}")
         gate_out = outdir / "gate_sft.json"
+        try:
+            ck = find_ckpt(outdir)
+        except SystemExit as exc:
+            stage(f"{line}_gate", False, f"找不到 checkpoint：{exc}")
+            continue
         rc2, dt2, log2 = run([PY, "gate_sft.py", "--config", f"configs/{line}.json",
-                              "--ckpt", str(find_ckpt(outdir)), "--out", str(gate_out)],
+                              "--ckpt", str(ck), "--out", str(gate_out)],
                              f"smoke_{line}_gate.log", timeout=300)
         g = json.loads(gate_out.read_text(encoding="utf-8")) if gate_out.exists() else {}
         if line == "S2":
@@ -107,10 +112,19 @@ def main():
             timing[f"{line}_s_per_step"] = rate
 
     # 3) Rfull probe（起点= S1 probe checkpoint-2）
-    s1_ckpt = find_ckpt(V5 / "runs" / "S1_probe")
+    try:
+        s1_ckpt = find_ckpt(V5 / "runs" / "S1_probe")
+    except SystemExit as exc:
+        stage("Rfull_probe2", False, f"无 S1 checkpoint 作起点：{exc}")
+        s1_ckpt = None
+    if s1_ckpt is None:
+        # 直接跳到 scheduler 假任务与计时汇总
+        pass
     cfg = json.loads((CODE / "configs" / "Rfull.json").read_text(encoding="utf-8"))
     cfg["start_adapter"] = str(s1_ckpt)
     cfg["line"] = "Rfull_probe"
+    cfg["data"] = str(V5 / "data" / "rl_candidates800.jsonl")
+cfg["image_max_token_num"] = 256  # 冒烟时 rl_pool320 尚未生成
     (CODE / "configs" / "Rfull_probe.json").write_text(
         json.dumps(cfg, ensure_ascii=False, indent=1) + "\n", encoding="utf-8", newline="\n")
     rc, dt, log = run([PY, "train_v5.py", "--config", "configs/Rfull_probe.json",

@@ -56,6 +56,17 @@ def main():
         dest.mkdir(parents=True, exist_ok=True)
         with tarfile.open(V5 / tgz) as tf:
             tf.extractall(dest)
+    # ②.5 Windows 打包的 arcname 反斜杠归一化（tar 在 Linux 会解成文件名含 '\' 的平铺文件）
+    moved = 0
+    for p in list((V5 / "code").iterdir()):
+        if "\\" in p.name:
+            dest = V5 / "code" / p.name.replace("\\", "/")
+            dest.parent.mkdir(parents=True, exist_ok=True)
+            shutil.move(str(p), str(dest))
+            moved += 1
+    if moved:
+        print(f"[fix] 反斜杠文件名归一化 {moved} 个")
+
     # ③ 全量校验
     bad = 0
     for name, info in manifest["data_files"].items():
@@ -64,7 +75,7 @@ def main():
             print(f"!! 数据文件不符: {name}")
             bad += 1
     for name, info in manifest["code_files"].items():
-        p = V5 / "code" / name
+        p = V5 / "code" / name.replace("\\", "/")   # manifest 键在 Windows 下带反斜杠
         if not p.exists() or sha(p) != info["sha256"]:
             print(f"!! 代码文件不符: {name}")
             bad += 1
