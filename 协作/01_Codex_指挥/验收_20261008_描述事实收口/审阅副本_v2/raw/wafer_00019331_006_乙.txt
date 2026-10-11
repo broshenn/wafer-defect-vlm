@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Donut","morphology":"环形分布的红色失效区域，中间有绿色间隙","radial_zone":"middle","clock_direction":"null","extent_r":null,"caption_zh":"红色失效区域呈环形分布在晶圆中部，中间有绿色区域","uncertainty":""}

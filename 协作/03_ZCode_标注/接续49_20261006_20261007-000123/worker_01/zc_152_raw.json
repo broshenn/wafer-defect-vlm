@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"红色失效die密集分布于晶圆边缘一圈，多处相邻相连形成不规则环带，环带不完全连续且宽窄不一；内部绿色区域散布少量孤立红点和小簇，密度明显低于边缘","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die密集分布于晶圆边缘整圈形成不规则环带，内部散布少量孤立红点","uncertainty":"边缘环带并非完全连续，内部亦有散点，若按边缘局部集中判读则为Edge_Loc；此处按整圈密集判为Edge_Ring"}

@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"左侧边缘内侧一小簇竖向短条状红色失效die，其余晶圆全绿\",\"radial_zone\":\"edge\",\"clock_direction\":\"9点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆左侧约9点钟方向边缘内侧见一由数个红色die构成的小簇局部失效，其余区域未见明显失效\",\"uncertainty\":\"簇很小，类别在Loc与Edge_Loc之间有一定模糊性\"}",
+  "raw_sha256": "1fe27d6b7035037652876b4edeb68fbe0b0756512ccdef9d98fc709b9da404fd",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "1fe27d6b7035037652876b4edeb68fbe0b0756512ccdef9d98fc709b9da404fd",
+  "input_path": "raw/wbe0067.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

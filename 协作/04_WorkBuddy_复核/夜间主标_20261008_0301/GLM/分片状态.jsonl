@@ -1,0 +1,338 @@
+{"shard":"001","status":"dispatched","time":"2026-10-08T03:26+08:00"}
+{"shard":"002","status":"dispatched","time":"2026-10-08T03:26+08:00"}
+{"shard":"001","status":"done","done":7,"note":"verified"}
+{"shard":"002","status":"done","done":7,"note":"verified"}
+{"shard":"003","status":"dispatched"}
+{"shard":"004","status":"dispatched"}
+{"shard": "003", "status": "done", "done": 7, "note": "verified"}
+{"shard": "004", "status": "done", "done": 7, "note": "verified"}
+{"shard": "005", "status": "dispatched"}
+{"shard": "006", "status": "dispatched"}
+{"shard": "005", "status": "done", "done": 7, "note": "verified"}
+{"shard": "006", "status": "done", "done": 7, "note": "verified"}
+{"shard": "007", "status": "dispatched"}
+{"shard": "008", "status": "dispatched"}
+{"shard": "007", "status": "done", "done": 7, "note": "verified+盲验抽查通过"}
+{"shard": "008", "status": "done", "done": 7, "note": "verified+盲验抽查通过"}
+{"shard": "009", "status": "dispatched"}
+{"shard": "010", "status": "dispatched"}
+{"shard": "009", "status": "done", "done": 7}
+{"shard": "010", "status": "done", "done": 7}
+{"shard": "011", "status": "dispatched"}
+{"shard": "012", "status": "dispatched"}
+{"shard": "011", "status": "done", "done": 7}
+{"shard": "012", "status": "done", "done": 7, "note": "1处落盘转义修正，作答未变"}
+{"shard": "013", "status": "dispatched"}
+{"shard": "014", "status": "dispatched", "note": "wbg0093已预置"}
+{"shard": "013", "status": "done", "done": 7, "note": "013有1次落盘转义修复(作答未变);014含预置wbg0093"}
+{"shard": "014", "status": "done", "done": 7, "note": "013有1次落盘转义修复(作答未变);014含预置wbg0093"}
+{"shard": "015", "status": "dispatched"}
+{"shard": "016", "status": "dispatched"}
+{"shard": "015", "status": "done", "done": 7}
+{"shard": "016", "status": "done", "done": 7}
+{"shard": "017", "status": "dispatched", "note": "018含预置wbg0123"}
+{"shard": "018", "status": "dispatched", "note": "018含预置wbg0123"}
+{"shard": "017", "status": "done", "done": 7}
+{"shard": "018", "status": "done", "done": 7}
+{"shard": "019", "status": "dispatched"}
+{"shard": "020", "status": "dispatched"}
+{"shard": "019", "status": "done", "done": 7, "note": "019含近重复对wbg0129/0130(像素差2.7%,已核实为真实相似图)"}
+{"shard": "020", "status": "done", "done": 7, "note": "019含近重复对wbg0129/0130(像素差2.7%,已核实为真实相似图)"}
+{"shard": "021", "status": "dispatched"}
+{"shard": "022", "status": "dispatched"}
+{"shard": "021", "status": "done", "done": 7, "note": "wbg0146/0147答案逐字节相同但像素差64.56%→隔离存疑,交Claude裁决;其余5图正常"}
+{"shard": "022", "status": "done", "done": 7}
+{"shard": "023", "status": "dispatched"}
+{"shard": "024", "status": "dispatched"}
+{"shard": "023", "status": "done", "done": 7}
+{"shard": "024", "status": "done", "done": 7}
+{"shard": "025", "status": "dispatched"}
+{"shard": "026", "status": "dispatched"}
+{"shard": "025", "status": "done", "done": 7}
+{"shard": "026", "status": "done", "done": 7}
+{"shard": "027", "status": "dispatched"}
+{"shard": "028", "status": "dispatched"}
+{"shard": "027", "status": "done", "done": 7}
+{"shard": "028", "status": "done", "done": 7}
+{"shard": "029", "status": "dispatched"}
+{"shard": "030", "status": "dispatched"}
+{"shard": "029", "status": "done", "done": 7}
+{"shard": "030", "status": "done", "done": 7}
+{"shard": "031", "status": "dispatched"}
+{"shard": "032", "status": "dispatched"}
+{"shard": "031", "status": "done", "done": 7}
+{"shard": "032", "status": "done", "done": 7}
+{"shard": "033", "status": "dispatched"}
+{"shard": "034", "status": "dispatched"}
+{"shard":"033","status":"done","items":"wbg0225-0231","verified_at":"loop","note":"7/7哈希字段核验通过,无片内重复"}
+{"shard":"034","status":"done","items":"wbg0232-0238","verified_at":"loop","note":"7/7哈希字段核验通过,无片内重复"}
+{"shard":"035","status":"dispatched"}
+{"shard":"036","status":"dispatched"}
+{"shard":"035","status":"done","items":"wbg0239-0245","verified_at":"loop","note":"7/7核验通过,全Edge-Ring但无答案复用"}
+{"shard":"036","status":"done","items":"wbg0246-0252","verified_at":"loop","note":"7/7核验通过,无重复"}
+{"shard":"037","status":"dispatched"}
+{"shard":"038","status":"dispatched"}
+{"shard":"037","status":"done","items":"wbg0253-0259","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"038","status":"done","items":"wbg0260-0266","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"039","status":"dispatched"}
+{"shard":"040","status":"dispatched"}
+{"shard":"039","status":"done","items":"wbg0267-0273","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"040","status":"done","items":"wbg0274-0280","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"041","status":"dispatched"}
+{"shard":"042","status":"dispatched"}
+{"shard":"041","status":"done","items":"wbg0281-0287","verified_at":"loop","note":"7/7核验通过;网络中断致原答未落盘,已从_tmp_041.json恢复落盘,作答未改写,check=recovered_from_tmp_041"}
+{"shard":"042","status":"done","items":"wbg0288-0294","verified_at":"loop","note":"7/7核验通过;worker断网前已完成落盘"}
+{"shard":"043","status":"dispatched"}
+{"shard":"044","status":"dispatched"}
+{"shard":"043","status":"done","items":"wbg0295-0301","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"044","status":"done","items":"wbg0302-0308","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"045","status":"dispatched"}
+{"shard":"046","status":"dispatched"}
+{"shard":"045","status":"done","items":"wbg0309-0315","verified_at":"loop","note":"7/7核验通过;worker首写中止后重写成功,无重复行"}
+{"shard":"046","status":"done","items":"wbg0316-0322","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"047","status":"dispatched"}
+{"shard":"048","status":"dispatched"}
+{"shard":"047","status":"done","items":"wbg0323-0329","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"048","status":"done","items":"wbg0330-0336","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"049","status":"dispatched"}
+{"shard":"050","status":"dispatched"}
+{"shard":"049","status":"done","items":"wbg0337-0343","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"050","status":"done","items":"wbg0344-0350","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"051","status":"dispatched"}
+{"shard":"052","status":"dispatched"}
+{"shard":"051","status":"done","items":"wbg0351-0357","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"052","status":"done","items":"wbg0358-0364","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"053","status":"dispatched"}
+{"shard":"054","status":"dispatched"}
+{"shard":"053","status":"done","items":"wbg0365-0371","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"054","status":"done","items":"wbg0372-0378","verified_at":"loop","note":"7/7核验通过;worker重跑时image_sha256字段写空,已按索引确定性补全,作答未改写,check=image_sha_filled_from_index"}
+{"shard":"055","status":"dispatched"}
+{"shard":"056","status":"dispatched"}
+{"shard":"055","status":"done","items":"wbg0379-0385","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"056","status":"done","items":"wbg0386-0392","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"057","status":"dispatched"}
+{"shard":"058","status":"dispatched"}
+{"shard":"057","status":"done","items":"wbg0393-0399","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"058","status":"done","items":"wbg0400-0406","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"059","status":"dispatched"}
+{"shard":"060","status":"dispatched"}
+{"shard":"059","status":"done","items":"wbg0407-0413","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"060","status":"done","items":"wbg0414-0420","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"061","status":"dispatched"}
+{"shard":"062","status":"dispatched"}
+{"shard":"061","status":"done","items":"wbg0421-0427","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"062","status":"done","items":"wbg0428-0434","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"063","status":"dispatched"}
+{"shard":"064","status":"dispatched"}
+{"shard":"063","status":"done","items":"wbg0435-0441","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"064","status":"done","items":"wbg0442-0448","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"065","status":"dispatched"}
+{"shard":"066","status":"dispatched"}
+{"shard":"065","status":"done","items":"wbg0449-0455","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"066","status":"done","items":"wbg0456-0462","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"067","status":"dispatched"}
+{"shard":"068","status":"dispatched"}
+{"shard":"067","status":"done","items":"wbg0463-0469","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"068","status":"done","items":"wbg0470-0476","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"069","status":"dispatched"}
+{"shard":"070","status":"dispatched"}
+{"shard":"069","status":"done","items":"wbg0477-0483","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"070","status":"done","items":"wbg0484-0490","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"071","status":"dispatched"}
+{"shard":"072","status":"dispatched"}
+{"shard":"071","status":"done","items":"wbg0491-0497","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"072","status":"done","items":"wbg0498-0504","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"073","status":"dispatched"}
+{"shard":"074","status":"dispatched"}
+{"shard":"073","status":"done","items":"wbg0505-0511","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"074","status":"done","items":"wbg0512-0518","verified_at":"loop","note":"7/7核验通过,全Edge-Ring但无答案复用"}
+{"shard":"075","status":"dispatched"}
+{"shard":"076","status":"dispatched"}
+{"shard":"075","status":"done","items":"wbg0519-0525","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"076","status":"done","items":"wbg0526-0532","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"077","status":"dispatched"}
+{"shard":"078","status":"dispatched"}
+{"shard":"077","status":"done","items":"wbg0533-0539","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"078","status":"done","items":"wbg0540-0546","verified_at":"loop","note":"7/7核验通过,6Center独立作答无复用"}
+{"shard":"079","status":"dispatched"}
+{"shard":"080","status":"dispatched"}
+{"shard":"079","status":"done","items":"wbg0547-0553","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"080","status":"done","items":"wbg0554-0560","verified_at":"loop","note":"7/7核验通过;最终文件由临时文件恢复落盘check=recovered_from_tmp_080,作答零改动"}
+{"shard":"081","status":"dispatched"}
+{"shard":"082","status":"dispatched"}
+{"shard":"081","status":"done","items":"wbg0561-0567","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"082","status":"done","items":"wbg0568-0574","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"083","status":"dispatched"}
+{"shard":"084","status":"dispatched"}
+{"shard":"083","status":"done","items":"wbg0575-0581","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"084","status":"done","items":"wbg0582-0588","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"085","status":"dispatched"}
+{"shard":"086","status":"dispatched"}
+{"shard":"085","status":"done","items":"wbg0589-0595","verified_at":"loop","note":"7/7核验通过;worker写错目录GL(笔误),内容校验后迁回GLM/workers,笔误目录已清理"}
+{"shard":"086","status":"done","items":"wbg0596-0602","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"087","status":"dispatched"}
+{"shard":"088","status":"dispatched"}
+{"shard":"087","status":"done","items":"wbg0603-0609","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"088","status":"done","items":"wbg0610-0616","verified_at":"loop","note":"7/7核验通过,7Center独立作答无复用"}
+{"shard":"089","status":"dispatched"}
+{"shard":"090","status":"dispatched"}
+{"shard":"090","status":"attempt1_aborted","items":"wbg0624-0630","note":"worker自停并自报作答不可信;主会话磁盘取证:7图SHA256全部与盲包一致、均为448x448 PNG、抽验图像链路正常,判定为worker侧会话混乱;遗留3条临时作答已隔离改名_tmp_090_attempt1_worker自停作废.jsonl,不入正册;分片将重派attempt2"}
+{"shard":"091","status":"dispatched"}
+{"shard":"092","status":"dispatched"}
+{"shard":"091","status":"done","items":"wbg0631-0637","verified_at":"loop","note":"7/7核验通过,7Center独立作答无复用"}
+{"shard":"092","status":"done","items":"wbg0638-0644","verified_at":"loop","note":"7/7核验通过,7Center独立作答无复用"}
+{"shard":"093","status":"dispatched"}
+{"shard":"094","status":"dispatched"}
+{"shard":"093","status":"done","items":"wbg0645-0651","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"094","status":"done","items":"wbg0652-0658","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"095","status":"dispatched"}
+{"shard":"096","status":"dispatched"}
+{"shard":"095","status":"done","items":"wbg0659-0665","verified_at":"loop","note":"7/7核验通过;worker曾丢2条临时记录并按原始作答补齐(未重读图,sha按清单归一),核验无异常"}
+{"shard":"096","status":"done","items":"wbg0666-0672","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"097","status":"dispatched"}
+{"shard":"098","status":"dispatched"}
+{"shard":"097","status":"done","items":"wbg0673-0679","verified_at":"loop","note":"7/7核验通过,7Center独立作答无复用"}
+{"shard":"098","status":"done","items":"wbg0680-0686","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"099","status":"dispatched"}
+{"shard":"100","status":"dispatched"}
+{"shard":"101","status":"dispatched"}
+{"shard":"102","status":"dispatched"}
+{"shard":"101","status":"done","items":"wbg0701-0707","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"102","status":"done","items":"wbg0708-0714","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"103","status":"dispatched"}
+{"shard":"104","status":"dispatched"}
+{"shard":"103","status":"done","items":"wbg0715-0721","verified_at":"loop","note":"7/7核验通过;wbg0717 image_sha256曾丢1字符(63位),按索引修复check=image_sha_fixed_from_index,作答零改动;worker曾漏写wbg0716按原始作答补齐"}
+{"shard":"104","status":"done","items":"wbg0722-0728","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"105","status":"dispatched"}
+{"shard":"106","status":"dispatched"}
+{"shard":"105","status":"done","items":"wbg0729-0735","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"106","status":"done","items":"wbg0736-0742","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"107","status":"dispatched"}
+{"shard":"108","status":"dispatched"}
+{"shard":"107","status":"done","items":"wbg0743-0749","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"108","status":"done","items":"wbg0750-0756","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"109","status":"dispatched"}
+{"shard":"110","status":"dispatched"}
+{"shard":"109","status":"done","items":"wbg0757-0763","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"110","status":"done","items":"wbg0764-0770","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"111","status":"dispatched"}
+{"shard":"112","status":"dispatched"}
+{"shard":"111","status":"done","items":"wbg0771-0777","verified_at":"loop","note":"7/7核验通过;worker自曝早期幻觉后删除污染临时文件重做,主会话数学抽验wbg0772(红像素上下分布4:1)与其作答描述一致"}
+{"shard":"112","status":"done","items":"wbg0778-0784","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"113","status":"dispatched"}
+{"shard":"114","status":"dispatched"}
+{"shard":"113","status":"done","items":"wbg0785-0791","verified_at":"loop","note":"7/7核验通过"}
+{"shard":"114","status":"done","items":"wbg0792-0798","verified_at":"loop","note":"7/7核验通过;worker自报工具I/O异常后改以磁盘权威清单为准执行,结构核验全部通过"}
+{"shard":"115","status":"dispatched"}
+{"shard":"116","status":"dispatched"}
+{"shard":"115","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"116","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"117","status":"dispatched","items":"wbg0813-0819","time":"2026-10-08"}
+{"shard":"118","status":"dispatched","items":"wbg0820-0826","time":"2026-10-08"}
+{"shard":"117","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"118","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"119","status":"dispatched","items":"wbg0827-0833","time":"2026-10-08"}
+{"shard":"120","status":"dispatched","items":"wbg0834-0840","time":"2026-10-08"}
+{"shard":"119","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"120","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"121","status":"dispatched","items":"wbg0841-0847","time":"2026-10-08"}
+{"shard":"122","status":"dispatched","items":"wbg0848-0854","time":"2026-10-08"}
+{"shard":"121","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"122","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"123","status":"dispatched","items":"wbg0855-0861","time":"2026-10-08"}
+{"shard":"124","status":"dispatched","items":"wbg0862-0868","time":"2026-10-08"}
+{"shard":"123","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"124","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"125","status":"dispatched","items":"wbg0869-0875","time":"2026-10-08"}
+{"shard":"126","status":"dispatched","items":"wbg0876-0882","time":"2026-10-08"}
+{"shard":"125","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"126","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"127","status":"dispatched","items":"wbg0883-0889","time":"2026-10-08"}
+{"shard":"128","status":"dispatched","items":"wbg0890-0896","time":"2026-10-08"}
+{"shard":"127","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"128","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"129","status":"dispatched","items":"wbg0897-0903","time":"2026-10-08"}
+{"shard":"130","status":"dispatched","items":"wbg0904-0910","time":"2026-10-08"}
+{"shard":"129","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"130","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"131","status":"dispatched","items":"wbg0911-0917","time":"2026-10-08"}
+{"shard":"132","status":"dispatched","items":"wbg0918-0924","time":"2026-10-08"}
+{"shard":"131","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"132","status":"done","verified":true,"rows":7,"check":"self_ok","note":"类别聚集片(6x Edge-Ring),答案哈希审计无复用","time":"2026-10-08"}
+{"shard":"133","status":"dispatched","items":"wbg0925-0931","time":"2026-10-08"}
+{"shard":"134","status":"dispatched","items":"wbg0932-0938","time":"2026-10-08"}
+{"shard":"133","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"134","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"135","status":"dispatched","items":"wbg0939-0945","time":"2026-10-08"}
+{"shard":"136","status":"dispatched","items":"wbg0946-0952","time":"2026-10-08"}
+{"shard":"135","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"136","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"137","status":"dispatched","items":"wbg0953-0959","time":"2026-10-08"}
+{"shard":"138","status":"dispatched","items":"wbg0960-0966","time":"2026-10-08"}
+{"shard":"137","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"138","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"139","status":"dispatched","items":"wbg0967-0973","time":"2026-10-08"}
+{"shard":"140","status":"dispatched","items":"wbg0974-0980","time":"2026-10-08"}
+{"shard":"139","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"140","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"141","status":"dispatched","items":"wbg0981-0987","time":"2026-10-08"}
+{"shard":"142","status":"dispatched","items":"wbg0988-0994","time":"2026-10-08"}
+{"shard":"141","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"142","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"143","status":"dispatched","items":"wbg0995-1001","time":"2026-10-08"}
+{"shard":"144","status":"dispatched","items":"wbg1002-1008","time":"2026-10-08"}
+{"shard":"143","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"144","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"145","status":"dispatched","items":"wbg1009-1015","time":"2026-10-08"}
+{"shard":"146","status":"dispatched","items":"wbg1016-1022","time":"2026-10-08"}
+{"shard":"145","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"146","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"147","status":"dispatched","items":"wbg1023-1029","time":"2026-10-08"}
+{"shard":"148","status":"dispatched","items":"wbg1030-1036","time":"2026-10-08"}
+{"shard":"147","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"148","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"149","status":"dispatched","items":"wbg1037-1043","time":"2026-10-08"}
+{"shard":"150","status":"dispatched","items":"wbg1044-1050","time":"2026-10-08"}
+{"shard":"149","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"150","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"151","status":"dispatched","items":"wbg1051-1057","time":"2026-10-08"}
+{"shard":"152","status":"dispatched","items":"wbg1058-1064","time":"2026-10-08"}
+{"shard":"151","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"152","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"153","status":"dispatched","items":"wbg1065-1071","time":"2026-10-08"}
+{"shard":"154","status":"dispatched","items":"wbg1072-1078","time":"2026-10-08"}
+{"shard":"153","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"154","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"155","status":"dispatched","items":"wbg1079-1085","time":"2026-10-08"}
+{"shard":"156","status":"dispatched","items":"wbg1086-1092","time":"2026-10-08"}
+{"shard":"155","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"156","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"157","status":"dispatched","items":"wbg1093-1099","time":"2026-10-08"}
+{"shard":"158","status":"dispatched","items":"wbg1100-1106","time":"2026-10-08"}
+{"shard":"157","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"158","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"159","status":"dispatched","items":"wbg1107-1113","time":"2026-10-08"}
+{"shard":"160","status":"dispatched","items":"wbg1114-1120","time":"2026-10-08"}
+{"shard":"159","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"160","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"161","status":"dispatched","items":"wbg1121-1127","time":"2026-10-08"}
+{"shard":"162","status":"dispatched","items":"wbg1128-1134","time":"2026-10-08"}
+{"shard":"161","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"162","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"163","status":"dispatched","items":"wbg1135-1141","time":"2026-10-08"}
+{"shard":"164","status":"dispatched","items":"wbg1142-1148","time":"2026-10-08"}
+{"shard":"163","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"164","status":"done","verified":true,"rows":7,"check":"self_ok","time":"2026-10-08"}
+{"shard":"165","status":"dispatched","items":"wbg1149-1155","time":"2026-10-08"}
+{"shard":"166","status":"dispatched","items":"wbg1156-1162","time":"2026-10-08"}
+{"shard":"165","status":"done","items":"wbg1149-wbg1155","rows":7,"verified":"verify_shards.py 165 166","ts":"2026-10-08"}
+{"shard":"166","status":"done","items":"wbg1156-wbg1162","rows":7,"verified":"verify_shards.py 165 166","ts":"2026-10-08"}
+{"shard":"167","status":"dispatched","items":"wbg1163-wbg1169","ts":"2026-10-08"}
+{"shard":"168","status":"dispatched","items":"wbg1170-wbg1176","ts":"2026-10-08"}
+{"shard":"167","status":"done","items":"wbg1163-wbg1169","rows":7,"verified":"verify_shards.py 167 168","ts":"2026-10-08"}
+{"shard":"168","status":"done","items":"wbg1170-wbg1176","rows":7,"verified":"verify_shards.py 167 168","ts":"2026-10-08"}
+{"shard":"169","status":"dispatched","items":"wbg1177-wbg1183","ts":"2026-10-08"}
+{"shard":"170","status":"dispatched","items":"wbg1184-wbg1190","ts":"2026-10-08"}
+{"shard":"171","status":"done","items":"wbg1191-wbg1197","rows":7,"verified":"verify_shards.py 171 172","ts":"2026-10-08"}
+{"shard":"172","status":"done","items":"wbg1198-wbg1200","rows":3,"note":"尾片3图,verify_shards已适配尾片行数","verified":"verify_shards.py 031 115 171 172","ts":"2026-10-08"}
+{"checkpoint":15,"after_shard":"172","items_done":"wbg0001-1200","rows":1200,"unique_item":1200,"dup_answer_groups":["wbg0129/0130","wbg0146/0147"],"note":"1200图全部完成核验","ts":"2026-10-08"}

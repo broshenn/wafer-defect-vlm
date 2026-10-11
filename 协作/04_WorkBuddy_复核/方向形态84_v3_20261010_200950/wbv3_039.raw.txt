@@ -1,0 +1,1 @@
+{"morphology_zh":"整体以绿色为主，底部边缘附近有一个红色小团块，另见少量零散红点","main_location_zh":"主要红色团块位于晶圆下部靠近下缘处","location_clock":[6],"orientation_clock":[],"secondary_observations":["其余区域散布个别零星红点"],"caption_zh":"晶圆几乎全为绿色合格格点，仅下部6点钟方向边缘附近有一红色小团块，伴少量散点","uncertainty":"底部团块由几个相邻红点聚成，规模较小"}

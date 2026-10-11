@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Scratch","morphology":"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。","radial_zone":"center","clock_direction":"6点钟方向","extent_r":null,"caption_zh":"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。","uncertainty":"划痕的连续性和密度较低，存在局部断点。"}

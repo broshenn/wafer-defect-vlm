@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"none","morphology":"无可见缺陷图案","radial_zone":"none","clock_direction":null,"extent_r":null,"caption_zh":"晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。","uncertainty":"缺陷点数量少且分散，难以确定其统计显著性或潜在工艺关联。"}

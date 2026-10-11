@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"一条斜向略弯的红色线状失效带从左上延伸到中下部，附近伴少量散点\",\"radial_zone\":\"middle\",\"clock_direction\":\"10点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆以绿色合格die为主，一条斜向略弯的红色线状失效带从左上10点钟附近延伸至中下部接近下缘。\",\"uncertainty\":\"线条起点贴近边缘且略弯曲，是否直线划痕存在一定不确定性。\"}\n",
+  "raw_sha256": "a2daf977e940b4ab0ba2d952c6a9de823ed1a07fc23a3fa0895f5263ef2268ca",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "a2daf977e940b4ab0ba2d952c6a9de823ed1a07fc23a3fa0895f5263ef2268ca",
+  "input_path": "raw/wbe0087.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

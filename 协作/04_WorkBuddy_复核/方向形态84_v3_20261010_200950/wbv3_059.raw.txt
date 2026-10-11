@@ -1,0 +1,1 @@
+{"morphology_zh":"稀疏的孤立红色点状格点，整体散布，无团块、环、弧或细长带","main_location_zh":"全局散布，中心、中部与边缘均有零星红点，无主导聚集区域","location_clock":[],"orientation_clock":[],"secondary_observations":["右上方约2点钟边缘附近有一两个孤立黑色格点","下方约5至6点钟中部有相邻红点与黑色格点"],"caption_zh":"少量红色失效点全局稀疏散布，无明显主导结构","uncertainty":"红点稀疏且均匀，无法可靠判定位置钟点或延伸轴"}

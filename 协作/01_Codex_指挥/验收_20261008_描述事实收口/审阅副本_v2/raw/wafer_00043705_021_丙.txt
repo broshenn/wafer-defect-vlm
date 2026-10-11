@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Scratch","morphology":"一条垂直的红色短线","radial_zone":"center","clock_direction":"12点","extent_r":null,"caption_zh":"晶圆中心偏上位置有一条垂直红色短线缺陷","uncertainty":""}

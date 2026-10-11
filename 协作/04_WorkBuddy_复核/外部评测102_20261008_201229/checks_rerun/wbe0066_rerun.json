@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"中央偏下向右下延伸的一条斜向红色带状划痕，伴全图零星点状失效\",\"radial_zone\":\"middle\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆中部偏下自中心附近向约4点钟方向延伸一条斜向短带状红色划痕，其余区域零散分布点状红色失效die\",\"uncertainty\":\"划痕带较短且由离散die构成，与局部聚集存在混淆可能\"}",
+  "raw_sha256": "878664e29a1b7a9ac70c0bde1c6b872271aa213513d259bafa61b221c5561cf4",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "878664e29a1b7a9ac70c0bde1c6b872271aa213513d259bafa61b221c5561cf4",
+  "input_path": "raw/wbe0066.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

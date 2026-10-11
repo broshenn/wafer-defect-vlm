@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"一条斜向红色线条从中部向右下方延伸至边缘，周围伴散点分布\",\"radial_zone\":\"middle\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆以绿色为主，红色失效die沿从中部指向右下4-5点钟方向的斜线分布并延伸到边缘，其余区域散布少量红点。\",\"uncertainty\":\"线条后半段略有间断，方向取4-5点钟之间。\"}\n",
+  "raw_sha256": "eafa91c46f73e7c9d30c4449b714d9c1f48ccbb8e5a68325f20875464bcbc7bd",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "eafa91c46f73e7c9d30c4449b714d9c1f48ccbb8e5a68325f20875464bcbc7bd",
+  "input_path": "raw/wbe0088.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

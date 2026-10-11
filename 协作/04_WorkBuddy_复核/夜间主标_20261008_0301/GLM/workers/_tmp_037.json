@@ -1,0 +1,107 @@
+[
+  {
+    "item_id": "wbg0253",
+    "image_sha256": "ab25bd17342d2cea5c7318ee5a4eabc160e4868cae7904f5003ca4971649a761",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全图散布细小红色单点失效die，密度很低，其中左中偏下区域有几颗红点略靠拢成小簇，下方中部还隐约可见一小段近竖直的点链，但整体无明确几何轮廓",
+      "radial_zone": "中间",
+      "clock_direction": "7-9点略集中，其余方位零星",
+      "extent_r": null,
+      "caption_zh": "晶圆绝大部分为绿色良品，红色失效die以零散单点形式随机分布于全片，仅在左下偏中区域有一小簇和一条短点链，覆盖程度极低，不构成任何环形或带状图案。",
+      "uncertainty": "中：散点总量少且无明显形状，Random判断较稳，但左下小簇与短点链是否该升级为Loc存在歧义"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0254",
+    "image_sha256": "331476dd7f6a51e86939ff2b13bd041fe782cb4028f579b3a567577fc9ba531a",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "左上区域一条由红色die连成的弧形链条，走向与晶圆外轮廓平行、贴近视场边缘弯曲延伸，另全片零散分布少量孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "10-12点",
+      "extent_r": null,
+      "caption_zh": "晶圆左上象限沿外缘内侧出现一条弧状红点失效链，从约12点方位弯向10点方位，紧贴边缘但未闭合，其余区域良品间仅夹杂数十个孤立红点，失效总面积很小。",
+      "uncertainty": "中：弧线紧贴边缘且沿圆周走向，Edge-Loc与弧形Scratch两者存在歧义，倾向按位置判为Edge-Loc"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0255",
+    "image_sha256": "26974dbdee061e2d24098c8c52e93ce5edda61f82821ecaef772249253ce7750",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "沿晶圆最外圈一整周连续闭合的红色细环带，厚度约1-3个die宽，环内芯片几乎全绿，仅中心及左中偶见两三个孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘整周被一条连续闭合的红色失效细环包裹，环带较薄且各向均匀，内部区域近乎全部良品，仅零星几颗红点，属于典型边缘环缺陷。",
+      "uncertainty": "低：环带完整连续、形态典型，判断明确"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0256",
+    "image_sha256": "26fdb3ba345ba6b3db79b10723d0d236f5447fc9c364aa7cdd1eb06c916d0122",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆外围一圈连续的红色失效环带贯穿全部方位，环体较薄；环内大片绿色区域里可见约四五颗散在红点，集中在左下方与中上部",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆周边整圈呈现连续红色失效带，环宽约两三个die，环内以绿色良品为主，左下及中上部零散点缀数颗失效点，整体覆盖面积不大。",
+      "uncertainty": "低：闭合环形态清晰典型，内部散点少不影响主类判断"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0257",
+    "image_sha256": "d39acc6d797a0e8ac7bd549918ecbc5a8fc2ce4120ae9fe16e46efc6e33b161f",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "中央偏上位置出现一片不规则致密红色团块，由成片失效die聚集并向左下方拖出一条渐疏的散点尾迹，同时全片边缘及右下角另伴生多处零散红点",
+      "radial_zone": "中心",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "晶圆中上部心区形成一大块不规则致密红色失效聚集团，向左下方延伸出稀疏点尾，聚集区外全片还散布数十颗独立红点并于右下缘略密，失效总覆盖中等。",
+      "uncertainty": "中：主团块明确为局部聚集，但其中心略偏上，归入中心区与中间区之间略有模糊；伴生散点较多也带一定Random成分"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0258",
+    "image_sha256": "14765691df73c1af28e00edcfc74ee9bdb401dda2fdd94cb8f2aed2a20e45bec",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆最外层一圈连续闭合的红色环带，环厚约2-4个die，环体完整无断口；环内芯片几乎全为绿色，仅顶部偏右可见一两颗孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘整周环绕一条连续的红色失效环带，厚度薄而均匀，环内区域几乎完全干净无失效，仅上方零星一两颗红点，是内部良率极高的边缘环形态。",
+      "uncertainty": "低：环带完整且内部极干净，形态典型，判断明确"
+    },
+    "model": "GLM-5.3-Flash"
+  },
+  {
+    "item_id": "wbg0259",
+    "image_sha256": "cf83c4135afc3d93573dcd368f489733e4f95d7bd76baa06c3352f8ec903e803",
+    "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外围红色环带明显且连续，厚度较一般边缘环更宽（约2-5个die）；环内同时散布大量孤立红点，散点在全片大致均匀，中带偏右略密",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘整周覆盖较宽的连续红色失效带，同时内部区域散布数十颗随机分布的红点失效，中带偏右稍密，整体为边缘环伴生散点的复合形态，覆盖程度中等偏高。",
+      "uncertainty": "中：边缘环带与内部随机散点两种成分并存，主类归属存在Edge-Ring与Random之间的歧义，按环带显著性判为Edge-Ring"
+    },
+    "model": "GLM-5.3-Flash"
+  }
+]

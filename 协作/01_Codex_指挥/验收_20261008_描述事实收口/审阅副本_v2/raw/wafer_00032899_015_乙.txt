@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Center","morphology":"致密团簇状","radial_zone":"center","clock_direction":"null","extent_r":null,"caption_zh":"晶圆中心区域存在一个致密、连续的团簇状缺陷区域，缺陷点主要聚集在中心附近，向四周辐射密度逐渐降低，无明显方向性。","uncertainty":""}

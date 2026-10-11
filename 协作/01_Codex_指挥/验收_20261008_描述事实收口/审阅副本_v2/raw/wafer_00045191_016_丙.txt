@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"none","morphology":"无明显缺陷图案，仅有零星红黑像素点","radial_zone":"none","clock_direction":"null","extent_r":null,"caption_zh":"绿色背景上分布少量红黑像素点，无集中缺陷","uncertainty":""}

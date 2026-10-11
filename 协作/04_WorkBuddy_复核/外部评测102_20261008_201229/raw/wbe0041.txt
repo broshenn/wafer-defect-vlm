@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"红色失效die沿晶圆边缘呈环带分布，顶部12点钟与底部及右下方向最密集，中央区域基本干净","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die集中于晶圆边缘呈不连续环带，顶部与底部边缘最密集，中央区域仅有零星失效点","uncertainty":"边缘环带不完整连续，部分方位较轻，Edge_Ring 与 Edge_Loc 之间存在一定模糊"}

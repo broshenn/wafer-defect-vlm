@@ -1,0 +1,1 @@
+{"morphology_zh":"绿色合格背景上散布的红色失效点状格点，密度低、无清晰团块或线条","main_location_zh":"红色失效点全局散布于整个晶圆，无明确聚集中心","location_clock":[],"orientation_clock":[],"secondary_observations":["右侧约3点钟边缘有一小片红色格点略密集"],"caption_zh":"整片晶圆以绿色合格为主，红色失效点呈低密度全局散布，无明显方向性结构。","uncertainty":"右边缘红点略密，但范围小，不足以判定为可靠的主要结构方向"}

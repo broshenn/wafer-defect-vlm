@@ -1,0 +1,1 @@
+{"morphology_zh":"小团块加零星散点","main_location_zh":"主要结构是位于左下方靠近边缘处的一小团失效点","location_clock":[8],"orientation_clock":[],"secondary_observations":["右上方约2点钟方向有一个孤立红点","底部约6点钟附近有零星红点"],"caption_zh":"整片以合格格点为主，左下方约8点钟靠边缘处有一小团失效点，另有少量零星红点。","uncertainty":"左下小团块形状不规则，钟点定位存在小幅偏差。"}

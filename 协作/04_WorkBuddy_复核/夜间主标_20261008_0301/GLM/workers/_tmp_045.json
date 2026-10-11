@@ -1,0 +1,72 @@
+[
+  {
+    "item_id": "wbg0309",
+    "defect_class": "Edge-Loc",
+    "morphology": "左侧边缘处红色fail die聚成一条较窄的纵向短带，带内die较致密且略向圆内延伸；其余fail以孤立小点稀疏散布全圆，密度低",
+    "radial_zone": "边缘",
+    "clock_direction": "9点",
+    "extent_r": null,
+    "caption_zh": "左缘约9点方位出现一条窄的竖向红色聚集带并向内略作延伸，其余fail die以零散小点分布于全圆，总体覆盖程度较低。",
+    "uncertainty": "中：主聚集带较小且同时存在较多背景散点，Edge-Loc与Loc的界限不够分明。"
+  },
+  {
+    "item_id": "wbg0310",
+    "defect_class": "Near-full",
+    "morphology": "红色fail呈大片连片覆盖，右上与左中各有一块大面积连续红区，中部残留一条绿色竖向通道，下部红绿交错成斑块状，整体fail约占三分之二",
+    "radial_zone": "中间",
+    "clock_direction": "12-2点为主，另9点附近有大片区域",
+    "extent_r": null,
+    "caption_zh": "红色失效以两块大面积连片区域占据上半部偏右与左中部，中部仅残留一条绿色竖带，下部红绿混杂，fail覆盖率约三分之二。",
+    "uncertainty": "中：fail未达九成，处于Near-full与区域性大面积Loc之间的模糊地带，且失效呈多块分布而非单一区域。"
+  },
+  {
+    "item_id": "wbg0311",
+    "defect_class": "Near-full",
+    "morphology": "红色fail几乎覆盖整圆，仅下缘偏右残留一片绿色pass聚集小区，小区内夹杂零星红点，其余区域全红",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆几乎整片失效，红色覆盖约九成且贯穿中心至边缘，仅底部偏右（6-7点）边缘残存一小片绿色pass聚集区。",
+    "uncertainty": "低：图形非常明确，fail占绝对主导，仅pass残留区的定位略有主观性。"
+  },
+  {
+    "item_id": "wbg0312",
+    "morphology": "红色fail为背景主体，覆盖约四分之三；绿色pass以孤立散点和两三连的小簇形式散布，中下部略密，上部较稀疏",
+    "defect_class": "Near-full",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆大部失效，红色覆盖约四分之三并遍布全圆，绿色pass仅以散点与小簇形式残存，中下部略为集中。",
+    "uncertainty": "中：fail约七成半，未达典型near-full的极高占比，与重度随机失效难以严格区分。"
+  },
+  {
+    "item_id": "wbg0313",
+    "defect_class": "Random",
+    "morphology": "红色fail以孤立点和2-3连的小块、短横条形式散布，密度大体均匀，无环、带、线等几何结构，绿底占主导",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "绿色pass为底色，红色fail以小簇短条形式较均匀地散布全圆，覆盖率约三成，不呈现任何几何形态。",
+    "uncertainty": "低：散点分布均匀且无结构特征，Random判断依据充分。"
+  },
+  {
+    "item_id": "wbg0314",
+    "defect_class": "Random",
+    "morphology": "红色fail以短横条与小簇密布，单个失效常连成2-4格的条状，全圆密度大体一致，约四成覆盖率，无几何结构",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "绿底上红色fail以短横条和小簇形式密集散布全圆，覆盖率约四成且分布均匀，未见任何方向性或区域聚集。",
+    "uncertainty": "低：整体呈均匀随机散布，形态清晰。"
+  },
+  {
+    "item_id": "wbg0315",
+    "defect_class": "Random",
+    "morphology": "红色fail以点状、短条及少量4-6格连片散布全圆，中部偏左与上缘密度略高，整体仍近似均匀随机",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "绿色pass为主底，红色fail散布全圆约占四成，多为点状与短条并夹杂少量连片，中部偏左及上缘密度略高。",
+    "uncertainty": "中：中心附近连片略多，不排除轻度中心倾向，但未达Loc的紧致程度。"
+  }
+]

@@ -1,0 +1,39 @@
+{
+ "generated_at_utc": "2026-10-11T05:07:50Z",
+ "manifest_verify": {
+  "entries": 16,
+  "all_match": true,
+  "mismatches": []
+ },
+ "originals_fingerprint_spotcheck": {
+  "note": "只读抽查：整理期间被引用的Kimi原答与GLM裁决原件指纹（与卡内记载一致性由逐卡SHA承担）",
+  "fingerprints": {
+   "kimi_raw": {
+    "wbv3_002.raw.txt": "8505a87f955141b8f53d87f81be40fe961f0a3b89fccade431f583a06dcaf524",
+    "wbv3_006.raw.txt": "ba72701896f9a36ac59c5f02486722c1d06cd11ce10d748b53e9597f640a75ad",
+    "wbv3_009.raw.txt": "f883f697a47a286c012273c7ef1523ef750d10af37ed15d57badf15254de8d9a",
+    "wbv3_018.raw.txt": "0ae74e0a332c118e8ec371da5164ffe19c8d6637ad90fd915cc6c2fd31a46756",
+    "wbv3_024.raw.txt": "435e784cca5ea626f1f130b803c92c7541185778e96ef236154343ec5bd7ef8f",
+    "wbv3_029.raw.txt": "5b7d7db188cce13d98a6b735a5902163adc0ed4c53e0d0f6fcf9c21cfc3b98a2",
+    "wbv3_033.raw.txt": "585c33ea74d66725764e98d2c140c3a892501c1bc542409f8e7280957f614633",
+    "wbv3_034.raw.txt": "b1600979de8c18cc3d701802653e611f9db5a46623eb230636c59455d3c6b9e0",
+    "wbv3_038.raw.txt": "cf4da5e0fbe9416d2abf81e3c5dc9abe7536e5a9025d3fa25c890362b88d6fc2",
+    "wbv3_061.raw.txt": "a1fc9a747649edc9798daa800f554d393a9aa53166b7d03dfb981d39d96025d4",
+    "wbv3_064.raw.txt": "c7e4cf4cefff7ac245c355c32c9fdb1ec7a7cb42041ce3fe72f66724ea7768e5",
+    "wbv3_082.raw.txt": "faaf8dcac5afbd2b606f358806789d2cb20fc7b20392cf0fd0eeff440fd7f75c"
+   },
+   "glm_review": {
+    "rv30_001.review.json": "1041bbb38aabdb7c4b98f650d5016f8322d8d71568a98ac12392286a7820f23a",
+    "rv30_004.review.json": "3ab7b74f423cdde1f2410506ecd0f7f33072e41f50be657bb0d376a9d3263a77",
+    "rv30_005.review.json": "68e66e119e96111820db6c5b523f2dab610ebc201be7feb47ef566abaaaa7bef",
+    "rv30_009.review.json": "a11dcf4f5493ac591f8a865d95b8d96b6dd1ec400c4e9e3f7a1b6353d8cf36a0",
+    "rv30_010.review.json": "a4fd3d11fe7f3ae0851e0ab006de7afff09a288edf45817805df410ca7d5e2ea",
+    "rv30_012.review.json": "58f25b6f1086cfb0965cfbf518e52973ee2c89d602247278bfd0ffbf8253c919",
+    "rv30_013.review.json": "0fc75c9d4dbe239a98c1c268b1beb1e806a468999a9549329ec975d8aec8aba1",
+    "rv30_015.review.json": "0d2b53aa18512c1c8d285223f3f20de34d83a99f341c6002865b65671b65a46f",
+    "rv30_025.review.json": "96ba632161a321274cf1965f73fca0c8bba8eac207ca8bfbfe0e7c5c5a6fe1c1",
+    "rv30_027.review.json": "1a7e29f5079eac574cbabd8f892edc0ef34689ee2f8ee5d564a3af80f8f91e6f"
+   }
+  }
+ }
+}

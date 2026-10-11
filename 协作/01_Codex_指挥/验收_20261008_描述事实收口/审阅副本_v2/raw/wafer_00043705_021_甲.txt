@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Scratch","morphology":"稀疏断续线状划痕，主要沿1点钟方向延伸，伴有少量孤立红点","radial_zone":"middle","clock_direction":"1点钟方向","extent_r":null,"caption_zh":"晶圆中部存在一条稀疏、断续的线状划痕，主要指向1点钟方向，并伴有少量随机分布的孤立缺陷点。","uncertainty":"划痕的连续性较低，存在断点，且伴有少量随机点，可能影响方向判断的精确性。"}

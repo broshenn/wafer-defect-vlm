@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"下半部约6点钟方向大片红色失效聚集并延伸至底边，伴全图零散点状失效","radial_zone":"middle","clock_direction":"6点钟","extent_r":null,"caption_zh":"晶圆下部约6点钟方向见大片红色失效die聚集并延展到底部边缘，其余全域尚有零散点状与短条状失效","uncertainty":"聚集范围较大且与全图散布叠加，Loc与Random叠加形态难以单一归类"}

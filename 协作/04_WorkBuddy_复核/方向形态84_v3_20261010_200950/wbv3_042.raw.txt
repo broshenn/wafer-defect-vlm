@@ -1,0 +1,1 @@
+{"morphology_zh":"一个较大的不规则红色团块，边界参差，周围伴零散红点","main_location_zh":"主要团块位于中右部，自中部偏右延伸至3点钟右边缘","location_clock":[3],"orientation_clock":[],"secondary_observations":["其余区域散布少量孤立红点","顶部及底部边缘附近有零星红点"],"caption_zh":"主要失效为3点钟侧中右部的大团块并触及右边缘，其余为少量散点","uncertainty":"团块形态不规则，不构成可判定的细长延伸轴"}

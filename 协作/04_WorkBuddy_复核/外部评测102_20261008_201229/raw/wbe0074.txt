@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"绿色合格die为主，红色失效die在全片范围内随机散布","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆以绿色合格die为主，红色失效die随机散布于全片各处，无局部聚集或环带结构。","uncertainty":"失效die较稀疏，未见明显成组或条纹形态，判断为随机分布。"}

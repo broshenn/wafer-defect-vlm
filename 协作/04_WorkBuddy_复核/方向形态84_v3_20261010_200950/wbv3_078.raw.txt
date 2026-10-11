@@ -1,0 +1,1 @@
+{"morphology_zh":"分散的红色点状失效格点","main_location_zh":"全局分布，整片晶圆范围内散见","location_clock":[],"orientation_clock":[],"secondary_observations":[],"caption_zh":"整片晶圆上全局散布少量红色点状失效格点，无明显聚集结构","uncertainty":""}

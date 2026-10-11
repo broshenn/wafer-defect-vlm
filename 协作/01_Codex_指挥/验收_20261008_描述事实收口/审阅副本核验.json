@@ -1,0 +1,16 @@
+{
+  "purpose": "匿名开发审阅副本，非人工gold；原分数及原答不变",
+  "inputs": {
+    "协作\\02_ClaudeCode_实操\\描述事实验收_20261008_1911\\C_描述事实审阅\\样本清单.json": "e662082e77755ead6d4dd76ad4b58be623762e007e8d01ef90f7a472a2cfd64b",
+    "协作\\02_ClaudeCode_实操\\夜间扩容_20261008_0244\\结果\\Base_7f_raw.jsonl": "b3dca5dd65a06398ba9e60346eb7da9d655d38d5631324969988fe53d08b6761",
+    "协作\\02_ClaudeCode_实操\\夜间扩容_20261008_0244\\结果\\L-N3072-3407_7f_raw.jsonl": "6666413d62d82810b99b6c8cdb8e47e9dd96a21ef9c1f58552f101da665a9360",
+    "协作\\02_ClaudeCode_实操\\夜间扩容_20261008_0244\\结果\\D-N3072-3407_7f_raw.jsonl": "86ac1f9694cb8af360e73205d616bacb8c0ab1e50a1fd359c926d226b6f068fb"
+  },
+  "images": 36,
+  "answer_sets": 108,
+  "display_counts": {
+    "原严格可解析": 82,
+    "原格式失败；仅展示时剥完整围栏": 26
+  },
+  "raw_nonempty": 108
+}

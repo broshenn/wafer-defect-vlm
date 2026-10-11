@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0274",
+    "image_sha256": "0242d2e4587ae3c44ea8d6e1f7139950f658d9e521699af62706a201456522d3",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全片红绿以单颗粒度细碎交错，fail点约占一半，均匀散布无任何几何结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "整个晶圆表面红绿颗粒均匀混杂呈椒盐状随机散布，fail约占一半，无明显区域聚集。",
+      "uncertainty": "低：红绿高比例混杂且无空间结构，随机特征明确"
+    }
+  },
+  {
+    "item_id": "wbg0275",
+    "image_sha256": "46a5d72affe63a0457276184e427c9b89df5b041dcc7951160a85bc1c89d89dc",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全圆面红绿像素级混杂，红点略少于绿点，偶有两三连块但不成形",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红绿fail与pass小颗粒遍布全圆彼此交叠，比例约四六开，未见集中区域或带状痕迹。",
+      "uncertainty": "低：随机散布特征清楚，个别小连块属随机波动"
+    }
+  },
+  {
+    "item_id": "wbg0276",
+    "image_sha256": "3baadfbc45189bdb84e76597b1635eb8ef6b4fefdb3d5fdd846448c4698002e1",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全片椒盐状红绿混杂，红点略偏少，圆心附近红点稍密但未构成可辨识图形",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "全圆红绿细粒随机交织，fail比例约四成，中央略密但整体无明确缺陷形状。",
+      "uncertainty": "中：中心附近红密度略高，不排除轻度中心聚集，但图形不可辨"
+    }
+  },
+  {
+    "item_id": "wbg0277",
+    "image_sha256": "ff45b649c210971d2da0282f0ccc6d4e6df8ad2fcd46a0edefbc57c16499aaf9",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "绿色略占优，红色以零散小簇穿插全片，无边缘带、同心环或线状痕迹",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "晶圆全境绿底上散布红色小簇与孤立红点，fail约三分之一，分布均匀无结构。",
+      "uncertainty": "低：散点分布均匀，无明显聚集或方位偏好"
+    }
+  },
+  {
+    "item_id": "wbg0278",
+    "image_sha256": "c7ce5b691a157e58adfef661397338e6e85944b9ad42090fc413020a001c9853",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心一片致密相连的红色区块，向四周过渡为绿底上的零散红点",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "晶圆正中形成约占三分之一圆径的致密红色聚集核，核内红点连片，外围渐稀。",
+      "uncertainty": "中：中心聚集明确，但核区边界不圆整且略向上偏"
+    }
+  },
+  {
+    "item_id": "wbg0279",
+    "image_sha256": "7662257cdc7fd7101b59d30d7b6d37df424fc7bd6c9a5c232b4ae88d3e26826f",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "红色密集带纵贯中部，自上缘经圆心延伸至下部，左右两侧以绿为主",
+      "radial_zone": "中心",
+      "clock_direction": "12-6点（纵向带）",
+      "extent_r": null,
+      "caption_zh": "红色fail沿穿过圆心的纵向中带密集连片，纵贯约七成半径范围，左右两翼绿色占优。",
+      "uncertainty": "高：密集区呈纵向条带状，介于Center与Loc之间，归类存在歧义"
+    }
+  },
+  {
+    "item_id": "wbg0280",
+    "image_sha256": "a960617a03bc955af333ee7469b146f4c0c3e5ef25eb0445d813cdabb7fa16ee",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "上中部一大块不规则红色密集区，向下朝圆心方向散开为零星红点，其余区域绿色为主",
+      "radial_zone": "中间",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "12点位偏内一侧出现约四分之一圆径的不规则红色密集块，向下渐散，下半圆基本保持绿色。",
+      "uncertainty": "中：聚集位置明确偏上中，与Center的区别仅在偏离圆心的程度"
+    }
+  }
+]

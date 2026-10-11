@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Scratch","morphology":"线状划痕","radial_zone":"edge","clock_direction":"2点钟","extent_r":null,"caption_zh":"晶圆边缘2点钟方向存在一条断续线状划痕，其余区域分布少量孤立红点。","uncertainty":"划痕断续且伴有少量孤立红点，整体缺陷稀疏。"}

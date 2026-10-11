@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"红色失效die散布全圆，中部偏下有一条近水平、略不连续的红色条带聚集\",\"radial_zone\":\"middle\",\"clock_direction\":\"6点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆以绿色为主，红色失效die散布全圆，中心偏下处有一条近水平方向的红色短条带。\",\"uncertainty\":\"条带较短且不连续，与周边散点并存，Scratch判断有一定不确定性。\"}\n",
+  "raw_sha256": "1ff9a72fad57e0c07a273fd0b4546e89fcd28f57a471dd39fac36ecb41c2a0c7",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "1ff9a72fad57e0c07a273fd0b4546e89fcd28f57a471dd39fac36ecb41c2a0c7",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0089.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

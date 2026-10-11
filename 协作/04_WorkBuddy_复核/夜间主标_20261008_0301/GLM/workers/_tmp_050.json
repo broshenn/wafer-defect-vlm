@@ -1,0 +1,72 @@
+[
+  {
+    "item_id": "wbg0344",
+    "defect_class": "Center",
+    "morphology": "晶圆中心偏右有一大块致密的近方形红色失效区块，边界较清晰，外围绿色区域内散布零星红色单点，部分红点沿区块右侧与晶圆边缘分布",
+    "radial_zone": "中心",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "晶圆中心出现一大块致密红色失效区，向右侧略有延展，约占晶圆两成面积，其余区域散布稀疏红点。",
+    "uncertainty": "低：中心致密块状特征清晰，仅周边散点的归属略有含糊。"
+  },
+  {
+    "item_id": "wbg0345",
+    "defect_class": "Scratch",
+    "morphology": "一条横贯晶圆中部的水平红色失效带，带内失效密集且宽窄不均，带外绿色区域另有少量随机散点",
+    "radial_zone": "中间",
+    "clock_direction": "9-3点",
+    "extent_r": null,
+    "caption_zh": "一条水平失效带横穿晶圆中部，自9点方向延伸至3点方向，带宽中等并伴有零散随机失效点。",
+    "uncertainty": "低：水平条带形态十分明显，划痕类判断把握较大。"
+  },
+  {
+    "item_id": "wbg0346",
+    "defect_class": "Center",
+    "morphology": "晶圆中心被一大片近似圆形的致密红色失效团块占据，轮廓略不规则，外围还有较多分散的红色单点",
+    "radial_zone": "中心",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "晶圆中心大片区域被致密红色失效团块覆盖，尺度约为晶圆直径三分之一，外围散布较多随机红点。",
+    "uncertainty": "低：中心团块特征醒目，散点虽多但不改变主体判断。"
+  },
+  {
+    "item_id": "wbg0347",
+    "defect_class": "Random",
+    "morphology": "红色失效点密集散布于整片晶圆，分布近似均匀但右下方向略显密集，无成块或线状结构",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "失效点以较高密度随机散布全片，仅右下角略密一些，整体无明确几何形状且覆盖面广。",
+    "uncertainty": "中：主体为随机散布，但右下略密使其与局部聚集模式的界限不够干脆。"
+  },
+  {
+    "item_id": "wbg0348",
+    "defect_class": "Scratch",
+    "morphology": "多条竖直方向的柱状红色失效条纹纵贯全片，长短不一、疏密不均，中下部与左右边缘一带较密",
+    "radial_zone": "无",
+    "clock_direction": "12-6点",
+    "extent_r": null,
+    "caption_zh": "多条纵向条纹状失效纵贯晶圆上下并遍布全片，疏密不均，呈成组竖直划痕的外观。",
+    "uncertainty": "中：竖直条纹形态明确，但条纹数量多且夹杂散点，与随机缺陷叠加后难以严格切分。"
+  },
+  {
+    "item_id": "wbg0349",
+    "defect_class": "Loc",
+    "morphology": "右侧中部偏下有一致密红色团块，并向12点方向延伸出不规则条带，其余区域为稀疏散点",
+    "radial_zone": "中间",
+    "clock_direction": "2-4点",
+    "extent_r": null,
+    "caption_zh": "晶圆中右部2-4点方向出现致密红色失效聚集，并向12点方向拖出条带，整体覆盖范围中等。",
+    "uncertainty": "低：局部聚集与延伸带均清晰，方位判断把握较大。"
+  },
+  {
+    "item_id": "wbg0350",
+    "defect_class": "Loc",
+    "morphology": "右中部有一大片致密红色失效团块，轮廓不规则并向下方延展，左半片与外围绿色区散点稀少",
+    "radial_zone": "中间",
+    "clock_direction": "3-5点",
+    "extent_r": null,
+    "caption_zh": "晶圆右侧3-5点方向中部有一大片致密红色失效聚集区并向下方略作延伸，其余区域散点很少。",
+    "uncertainty": "低：团块边界与方位清楚，仅对其是否触及边缘略有保留。"
+  }
+]

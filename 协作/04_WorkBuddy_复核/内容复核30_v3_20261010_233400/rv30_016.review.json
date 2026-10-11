@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_016",
+ "item_id":"wbv3_039",
+ "sample_id":"wafer_00022126_006",
+ "image_sha256":"9554e1224723ea46cd3f374bdee66009ea039d3e6cfd2622aeb30c91e1f3ce4d",
+ "original_raw_sha256":"e6767164e71af2617b1ee56b3e075ad8ddeb2bfd2cbfd02f19fc228d759571df",
+ "observation_raw_sha256":"477e916d9bb0071718dfb995cc1d4eceb4d2529fa7d08145b753d81cf33685b8",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上晶圆几乎全绿，仅下边缘偏左处有几个相邻红点聚成的小簇，其余红点零星孤立，与被审句'整体以绿色为主、底部边缘有红色小团块、另见零散红点'一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称主要红色团块位于下部靠近下缘处；图上唯一聚集结构确紧贴下边缘略偏左，位置描述相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句取[6]。该小簇位于下缘、略偏左，本worker独立观察记为[7]并注明介于6点与7点之间的歧义；[6]处于该歧义范围内，不构成矛盾。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]。图上无细长线状结构，小簇呈点团状，无延伸轴，填空合理。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到其余区域散布个别零星红点；图上中上偏左内部有一对相邻红点、右中下与左下各有孤立红点，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括与图面一致：几乎全绿、下部6点钟方向边缘附近红色小团块、伴少量散点。"},
+  "uncertainty":{"verdict":"supported","evidence":"被审句已注明团块由几个相邻红点聚成、规模较小，与图上小簇的实际规模相符。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"",
+ "uncertainty":"唯一分歧是钟点细节：本worker独立观察记[7]（下缘略偏左），被审记[6]；因该小簇确实介于6与7点之间且规模很小，视为歧义范围内的判读差异，不构成矛盾。"
+}

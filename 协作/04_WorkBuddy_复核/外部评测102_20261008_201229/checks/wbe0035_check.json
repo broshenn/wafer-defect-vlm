@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Center\",\"morphology\":\"红色失效die密集聚集于晶圆中心区，呈不规则团块并伴全图零散分布\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"中心区域有一片不规则密集红色失效团块，外围绿色区域散布零星红点\",\"uncertainty\":\"中央团块边界不规则并向中部延伸，与周边散点无清晰分界\"}\n",
+  "raw_sha256": "366300c49d88db4e2de4d2a8616190d3add19776de8d904e90988249422fa4b0",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "366300c49d88db4e2de4d2a8616190d3add19776de8d904e90988249422fa4b0",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0035.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

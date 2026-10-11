@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"全图散布稀疏点状红色失效die，上方偏左处有一小簇聚集","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆全域零星散布点状红色失效die，仅上方偏左约11点钟处见一小簇密集红点，其余区域分布稀疏随机","uncertainty":""}

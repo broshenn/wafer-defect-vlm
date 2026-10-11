@@ -1,0 +1,1550 @@
+[
+  {
+    "number": 1,
+    "sample_id": "wafer_00045633_013",
+    "image_sha256": "876e4a175e8c36d968ce5ec59d461f69e84a31d6459e6ee5eb42b6e50653d8c9",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域有一块红色矩形块状缺陷",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心位置有一块红色矩形缺陷"
+        },
+        "raw_sha256": "dac6138ad74b3f4dbf791cba9f2e1ee5bb2d4d08c82a473673510dab3cc860df",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域有一块红色矩形块状缺陷\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心位置有一块红色矩形缺陷\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "局部团簇状缺陷，主要分布在晶圆中心偏右下方区域，呈不规则块状分布，周围散布少量孤立红点。",
+          "radial_zone": "center",
+          "clock_direction": "4点钟方向",
+          "caption_zh": "晶圆中心偏右下方存在局部红色缺陷团簇，周围散布少量孤立红点。"
+        },
+        "raw_sha256": "6e3a207a604170b0b229a06daa364d9e42061870112f03fd877a5805d542766b",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"局部团簇状缺陷，主要分布在晶圆中心偏右下方区域，呈不规则块状分布，周围散布少量孤立红点。\",\"radial_zone\":\"center\",\"clock_direction\":\"4点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心偏右下方存在局部红色缺陷团簇，周围散布少量孤立红点。\",\"uncertainty\":\"缺陷团簇内部结构细节及孤立点分布范围需进一步确认。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "954494b9dceecb90ebc1ea5d25d6167fad5c424267f2f131e791201b026f2c60",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\": \"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "sample_id": "wafer_00036756_010",
+    "image_sha256": "ba2e49b3301d68b23de89abe1b935ca60de03f3694df5606bf99710fb29a16f0",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域红色块状聚集",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心区域存在红色块状聚集缺陷"
+        },
+        "raw_sha256": "763944c14a53a62e0173a200d2cba42e485beeb727d29953b74196686437397b",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域红色块状聚集\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心区域存在红色块状聚集缺陷\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于绿色合格区域中"
+        },
+        "raw_sha256": "eb51ce43098a9232b468f9f1ba61013dfaee12dd81547803ed4fe00c400e021e",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于绿色合格区域中\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在晶圆中心附近，径向分布范围较小，无明显方向性。",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在中心附近，无明显方向性。"
+        },
+        "raw_sha256": "5aa3c7eed6e0868418a0781abcc6f3edf94e775a1686d320cbcf520d39cb4aa8",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在晶圆中心附近，径向分布范围较小，无明显方向性。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，缺陷点主要聚集在中心附近，无明显方向性。\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 3,
+    "sample_id": "wafer_00019331_006",
+    "image_sha256": "96cab01956ffd1761dae07ff14ec9fb4ecf6e8e4058c8d0c97c1016b51e2e664",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色缺陷die在全晶圆范围内随机散布，无明确连续图形，局部有聚集",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色缺陷die在全晶圆范围内随机散布，局部有聚集，无明确连续图形"
+        },
+        "raw_sha256": "ed0467e1beb38bacdc16c36a1b0643bb462e1483e3e736ec106387a4a3c8762b",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色缺陷die在全晶圆范围内随机散布，无明确连续图形，局部有聚集\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色缺陷die在全晶圆范围内随机散布，局部有聚集，无明确连续图形\",\"uncertainty\":\"缺陷分布较稀疏，存在少量孤立点，整体呈随机性\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形分布的红色失效区域，中间有绿色间隙",
+          "radial_zone": "middle",
+          "clock_direction": "null",
+          "caption_zh": "红色失效区域呈环形分布在晶圆中部，中间有绿色区域"
+        },
+        "raw_sha256": "542249b4a8bd8506c7f8af6e4cfaffde984ac9ac29ca9c58dca4cde388860b44",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形分布的红色失效区域，中间有绿色间隙\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色失效区域呈环形分布在晶圆中部，中间有绿色区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色像素呈不规则块状和条状分布",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点以不规则块状和条状形态随机分布于晶圆全局区域"
+        },
+        "raw_sha256": "ebe7a4b9cc99401ad68c5ec7255d02f9226acf1673232b578f2c3b0941c88903",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Loc\",\n\"morphology\": \"红色像素呈不规则块状和条状分布\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点以不规则块状和条状形态随机分布于晶圆全局区域\",\n\"uncertainty\": \"\"\n}"
+      }
+    ]
+  },
+  {
+    "number": 4,
+    "sample_id": "wafer_00045384_019",
+    "image_sha256": "a006f575db6bc0169ff0fb676d49a2cd7c335ef86b9b5939c51add18a284b6ac",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形缺陷图案，由红色像素组成，环绕中心区域",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心区域呈现环形红色缺陷图案"
+        },
+        "raw_sha256": "ef3e0f82fe491beffb1f00615293feedf7a3e917c736c8aa27ffb2e231ef3e79",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形缺陷图案，由红色像素组成，环绕中心区域\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心区域呈现环形红色缺陷图案\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "c9db58dd70a36d9e3bc275924fa1d33a85d3e1aeb7f4e0f8c487a6bff0390eac",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形",
+          "radial_zone": "middle",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中部存在断续环形分布的红色缺陷，中心区域缺陷较少，边缘也有少量散在缺陷。"
+        },
+        "raw_sha256": "f1f2f66f06f3bfff504c7e4d68a087e26d8e0e21b1b789180165583d62fbee22",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在断续环形分布的红色缺陷，中心区域缺陷较少，边缘也有少量散在缺陷。\",\"uncertainty\":\"环形结构在径向和角度上均不连续，存在局部聚集和孤立点。\"}"
+      }
+    ]
+  },
+  {
+    "number": 5,
+    "sample_id": "wafer_00047411_016",
+    "image_sha256": "e01e287cda84a2cfc1dfbc76bd60ee33439fc3065ba0b2099f836ccf9688e52c",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "左侧大面积红色区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆左侧呈现大面积红色失效区域，右侧为绿色合格区域"
+        },
+        "raw_sha256": "6fc7a1f664e04872a6128f410796701d5e8548e77536351f1fbcddb6a42fe438",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"左侧大面积红色区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆左侧呈现大面积红色失效区域，右侧为绿色合格区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红绿像素随机交错分布",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红绿像素在晶圆全局范围内随机交错分布"
+        },
+        "raw_sha256": "0b08cc2f23d3a033ba4930b071d4464be99e502e9f321f9ef04fbd89402354d9",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"红绿像素随机交错分布\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红绿像素在晶圆全局范围内随机交错分布\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色缺陷die与绿色正常die在全晶圆范围内随机散布，缺陷比例约46.5%，无明确连续图形",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "全晶圆范围内红色缺陷die与绿色正常die随机混合分布，缺陷比例约46.5%，无明确连续图形"
+        },
+        "raw_sha256": "eeeca5f246ec89a47510ff84461b811ee1bb77909265dc1c722db8f1991fb60e",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色缺陷die与绿色正常die在全晶圆范围内随机散布，缺陷比例约46.5%，无明确连续图形\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"全晶圆范围内红色缺陷die与绿色正常die随机混合分布，缺陷比例约46.5%，无明确连续图形\",\"uncertainty\":\"缺陷分布存在局部聚集，但整体呈随机散布，无单一方向或环形主导模式\"}"
+      }
+    ]
+  },
+  {
+    "number": 6,
+    "sample_id": "wafer_00047511_013",
+    "image_sha256": "bfd0d69e08936a3635f43e0b8306d9d2d6a7061c9c148f01a96e7f62c1061f9a",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。"
+        },
+        "raw_sha256": "8085f233eaefd2a1827e4a1a482bc143bcd8db1586fc290e54cb67624e240350",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显连续图案或特定方向聚集。\",\"uncertainty\":\"缺陷点分布稀疏且断续，难以确定具体方向性聚集。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "底部横向红色条带",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "底部边缘存在横向红色失效区域"
+        },
+        "raw_sha256": "a46c161b58b0a5b6b4d30b5fa74ec1f12ff67e12be6e5eec73fc0d859d3833cf",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"底部横向红色条带\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"底部边缘存在横向红色失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "边缘呈环状分布的红色像素块",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色失效die主要分布在晶圆边缘，形成环状图案"
+        },
+        "raw_sha256": "175c4fd00620fe45d9578a95909462997845adce4e36bb2530deab41a24dfc74",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Edge_Ring\",\n\"morphology\":\"边缘呈环状分布的红色像素块\",\n\"radial_zone\":\"edge\",\n\"clock_direction\":\"null\",\n\"extent_r\":null,\n\"caption_zh\":\"红色失效die主要分布在晶圆边缘，形成环状图案\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 7,
+    "sample_id": "wafer_00019814_014",
+    "image_sha256": "15feaf927bd0e5cedefb55c598637c7d5709841424291590036be2e7c8109d6f",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色环状缺陷沿晶圆边缘分布",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状缺陷沿晶圆边缘分布"
+        },
+        "raw_sha256": "4247382e8cb1811833579560077fc935b86c1c6968e1e266c576a52405227f35",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色环状缺陷沿晶圆边缘分布\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色环状缺陷沿晶圆边缘分布\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘存在连续红色缺陷环，内部有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘有连续红色缺陷环，内部散布少量孤立红点"
+        },
+        "raw_sha256": "d896291f2aaced4897d1db0da816c738aec1ba21e1c9166bbded023bfa260d19",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部散布少量孤立红点\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "绿色背景上随机分布的红色小方块",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色合格区域中随机散布着红色失效点"
+        },
+        "raw_sha256": "7de52efd0dfafe293328c801d0134ab5050c2591d519fec71a13ae5b47dc9cb5",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"绿色背景上随机分布的红色小方块\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色合格区域中随机散布着红色失效点\",\n\"uncertainty\": \"\"\n}"
+      }
+    ]
+  },
+  {
+    "number": 8,
+    "sample_id": "wafer_00011690_007",
+    "image_sha256": "f55f65ede98ec648a9efe1515682ec7ca4610b362db4aa5dd61188d464f372ed",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色环状轮廓包围绿色区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状轮廓包围绿色区域"
+        },
+        "raw_sha256": "d77c123ce21c52234343de6f9472b982571954b9b24a8c4ab1c53066ecb7d5a3",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色环状轮廓包围绿色区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色环状轮廓包围绿色区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘存在连续红色缺陷环，内部有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘有连续红色缺陷环，内部散布少量孤立红点"
+        },
+        "raw_sha256": "d896291f2aaced4897d1db0da816c738aec1ba21e1c9166bbded023bfa260d19",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部散布少量孤立红点\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色背景上随机分布着红色像素点"
+        },
+        "raw_sha256": "d631303b390c1389ba1c2c1cf1bb88dffbb86d3744c211d318b2b7b5a0a50319",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色背景上随机分布着红色像素点\",\n\"uncertainty\": \"\"\n}"
+      }
+    ]
+  },
+  {
+    "number": 9,
+    "sample_id": "wafer_00026714_009",
+    "image_sha256": "dd5c840d9987740f0973e163f3cfd087d8b4f926c6dc7049ff6c7170963ba7ce",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。",
+          "radial_zone": "center",
+          "clock_direction": "6点钟方向",
+          "caption_zh": "晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。"
+        },
+        "raw_sha256": "edd24d388f195c911f0fb6187a085ddaf5ee30f9f807f46ce51945589d0a4996",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。\",\"radial_zone\":\"center\",\"clock_direction\":\"6点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密的团簇状缺陷群，主要分布在6点钟方向附近。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "底部中央的红色块状区域",
+          "radial_zone": "bottom",
+          "clock_direction": "null",
+          "caption_zh": "底部中央存在红色块状失效区域"
+        },
+        "raw_sha256": "09cbbd77aff11a28c25b6c8a567a4142725710f0900ed3bc70455471e379d0ac",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"底部中央的红色块状区域\",\"radial_zone\":\"bottom\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"底部中央存在红色块状失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "底部中央垂直条状",
+          "radial_zone": "center",
+          "clock_direction": "6点钟",
+          "caption_zh": "底部中央存在一条明显的垂直红色失效条带"
+        },
+        "raw_sha256": "dec183e95e5fc0c37df3b4409d20aa93394a65226f65053686d241e12e3e14df",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Loc\",\n\"morphology\":\"底部中央垂直条状\",\n\"radial_zone\":\"center\",\n\"clock_direction\":\"6点钟\",\n\"extent_r\":null,\n\"caption_zh\":\"底部中央存在一条明显的垂直红色失效条带\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 10,
+    "sample_id": "wafer_00022388_005",
+    "image_sha256": "3bc254c9c71a2399238ad4604fa09c7e1725c1d20d057f3988d02bb49f453efd",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "左上角有一块红色区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "左上角有一块红色失效区域"
+        },
+        "raw_sha256": "99e64ab4e6d20d8d53ea2375a644d05b7bb8d81a35b6d279934895c97ea1da50",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"左上角有一块红色区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"左上角有一块红色失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏",
+          "radial_zone": "middle",
+          "clock_direction": "12",
+          "caption_zh": "晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏"
+        },
+        "raw_sha256": "8e38072e207f99bc7424648c56443420c78cea6886dd53222100f452945a6c0a",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏\",\"radial_zone\":\"middle\",\"clock_direction\":\"12\",\"extent_r\":null,\"caption_zh\":\"晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "954494b9dceecb90ebc1ea5d25d6167fad5c424267f2f131e791201b026f2c60",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\": \"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 11,
+    "sample_id": "wafer_00040406_017",
+    "image_sha256": "11bb5b1d838e7b1f9257026f54de6c28d4a3579adec222aed7dcabb624e4f854",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "分散的像素点状",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色背景上随机分布着多个绿色像素点"
+        },
+        "raw_sha256": "1961407f7fbc85da839f5edd854da06d311c42d81a4a63f7cedb4152dce3acf8",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"分散的像素点状\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色背景上随机分布着多个绿色像素点\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。"
+        },
+        "raw_sha256": "df822bae2be9348ecc0088a991ac00b3ee416d9c042a3b625bb955105c3a8289",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "大面积红色区域覆盖整个晶圆",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域几乎覆盖整个晶圆，仅有少量绿色合格die分散其中"
+        },
+        "raw_sha256": "d53ea12384a384c8bbbfa02fc55d9f5666fbbca5563c2976a53ae67083e6d071",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"大面积红色区域覆盖整个晶圆\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色区域几乎覆盖整个晶圆，仅有少量绿色合格die分散其中\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 12,
+    "sample_id": "wafer_00043050_009",
+    "image_sha256": "9442bb4a4c8b9328f77c4c7b45f751d278add1e32adbbbbe7177e9d997a23bf0",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "大面积红色区域覆盖左侧及中部，右侧边缘有绿色斑块",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域占据绝大部分，右侧边缘分布绿色合格区域"
+        },
+        "raw_sha256": "7d0ddae6e97ab7bb355acb13addd0d5b03ffcbbe75764d75d2099817ba7518a0",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"大面积红色区域覆盖左侧及中部，右侧边缘有绿色斑块\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色区域占据绝大部分，右侧边缘分布绿色合格区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆左侧（约9点钟方向）存在大面积连续的红色缺陷区域，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。",
+          "radial_zone": "global",
+          "clock_direction": "9点钟方向",
+          "caption_zh": "晶圆左侧（约9点钟方向）存在大面积连续红色缺陷，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。"
+        },
+        "raw_sha256": "910bfde1042922ee9584508c4a2937d8c4455d51aeff35f28ac696f72f95f2ea",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆左侧（约9点钟方向）存在大面积连续的红色缺陷区域，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。\",\"radial_zone\":\"global\",\"clock_direction\":\"9点钟方向\",\"extent_r\":\"null\",\"caption_zh\":\"晶圆左侧（约9点钟方向）存在大面积连续红色缺陷，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。\",\"uncertainty\":\"无\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "沿晶圆边缘分布的密集像素化斑块",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "绿色合格die沿晶圆边缘呈环状密集分布，内部为红色失效die"
+        },
+        "raw_sha256": "6f2e686b63589fcf6533182188ef569ddeceac69675d1ac3db904ec119e441f0",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Edge_Ring\",\n\"morphology\":\"沿晶圆边缘分布的密集像素化斑块\",\n\"radial_zone\":\"edge\",\n\"clock_direction\":\"null\",\n\"extent_r\":null,\n\"caption_zh\":\"绿色合格die沿晶圆边缘呈环状密集分布，内部为红色失效die\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 13,
+    "sample_id": "wafer_00045360_022",
+    "image_sha256": "1b9adc4226cb133119d0ca1dd7756f38863730338ad9982182f828e1694e5946",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "随机点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆全图随机分布稀疏红色缺陷点，无明确局部聚集或连续图形"
+        },
+        "raw_sha256": "a3a86f8d5f262d174dcbc579858e73ca9fd9693edd46af6a93ca8a596f156bb7",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机点\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆全图随机分布稀疏红色缺陷点，无明确局部聚集或连续图形\",\"uncertainty\":\"缺陷点分布较广，局部存在少量小团簇，整体呈随机散点特征\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "967f4e15d00aa3598e469b3e84fb25acc8dd3cbbea0b7555b3b36d38288ff976",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"随机分布的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}\n```"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色像素随机散布在绿色背景中，形成斑驳的随机图案",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色像素随机散布在绿色背景中，形成斑驳的随机图案"
+        },
+        "raw_sha256": "6cd2f88adf67f4d1b33bf8d44967af8e00aee8e247825102ae130c19cc3b257c",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色像素随机散布在绿色背景中，形成斑驳的随机图案\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色像素随机散布在绿色背景中，形成斑驳的随机图案\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 14,
+    "sample_id": "wafer_00040378_016",
+    "image_sha256": "c1831444f0de02b99c27f686a7a4b5b1d5b34d858bc7530de24bdadd0e1ed977",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "随机点状缺陷，分布广泛且无明确聚集形态",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆内红色缺陷die呈随机散布，覆盖中心至边缘多个区域，绿色正常die占多数。"
+        },
+        "raw_sha256": "4290bb52036981ff1dc1ae8e74b820b766198aea177ed06ee4ba96addd9bd214",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机点状缺陷，分布广泛且无明确聚集形态\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆内红色缺陷die呈随机散布，覆盖中心至边缘多个区域，绿色正常die占多数。\",\"uncertainty\":\"缺陷分布较稀疏，局部存在少量聚集但整体无明确方向性。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色与绿色像素随机交错分布，形成斑驳图案",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色与绿色像素随机交错分布，形成斑驳图案"
+        },
+        "raw_sha256": "e08a09d04019a66b6470ea3bc766754188d03042a6949433b874ef37b399f340",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红色与绿色像素随机交错分布，形成斑驳图案\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色与绿色像素随机交错分布，形成斑驳图案\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "红色像素呈随机、无规则分布",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点呈随机分布，遍布整个晶圆区域"
+        },
+        "raw_sha256": "1f7c60301eeaacf8dedcf673e3034e8f11c1bafbe7f7fd2705c01a5e505a7631",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"红色像素呈随机、无规则分布\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点呈随机分布，遍布整个晶圆区域\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 15,
+    "sample_id": "wafer_00019033_001",
+    "image_sha256": "acd00e2aa0549f349d5176ece58ef4f870af37e9f50e314207b23aaaaed1b63e",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "954494b9dceecb90ebc1ea5d25d6167fad5c424267f2f131e791201b026f2c60",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\": \"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "线状划痕",
+          "radial_zone": "edge",
+          "clock_direction": "2点钟",
+          "caption_zh": "晶圆边缘2点钟方向存在一条断续线状划痕，其余区域分布少量孤立红点。"
+        },
+        "raw_sha256": "46955268b3c0f6199a9be926e26297e649ef99504ee686871e5774c341e09391",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"线状划痕\",\"radial_zone\":\"edge\",\"clock_direction\":\"2点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘2点钟方向存在一条断续线状划痕，其余区域分布少量孤立红点。\",\"uncertainty\":\"划痕断续且伴有少量孤立红点，整体缺陷稀疏。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "一条从右上方向左下方延伸的红色裂纹",
+          "radial_zone": "edge",
+          "clock_direction": "1点钟方向",
+          "caption_zh": "晶圆边缘有一条明显的红色裂纹"
+        },
+        "raw_sha256": "0fb2a9efd59105187fe79e8d68bfb72517f15e3f9f9b2067cc3c14ce3776299b",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"一条从右上方向左下方延伸的红色裂纹\",\"radial_zone\":\"edge\",\"clock_direction\":\"1点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有一条明显的红色裂纹\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 16,
+    "sample_id": "wafer_00043705_021",
+    "image_sha256": "f76ff558a9413e4cc7a73d149842996a6c9560d55a36ffc87a42922a5c25a82b",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "稀疏断续线状划痕，主要沿1点钟方向延伸，伴有少量孤立红点",
+          "radial_zone": "middle",
+          "clock_direction": "1点钟方向",
+          "caption_zh": "晶圆中部存在一条稀疏、断续的线状划痕，主要指向1点钟方向，并伴有少量随机分布的孤立缺陷点。"
+        },
+        "raw_sha256": "a738b16a61eb6a6fcac9db10ff1dbc15fc6975484692e111ccb421a47d15dab1",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"稀疏断续线状划痕，主要沿1点钟方向延伸，伴有少量孤立红点\",\"radial_zone\":\"middle\",\"clock_direction\":\"1点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在一条稀疏、断续的线状划痕，主要指向1点钟方向，并伴有少量随机分布的孤立缺陷点。\",\"uncertainty\":\"划痕的连续性较低，存在断点，且伴有少量随机点，可能影响方向判断的精确性。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "c9db58dd70a36d9e3bc275924fa1d33a85d3e1aeb7f4e0f8c487a6bff0390eac",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "一条垂直的红色短线",
+          "radial_zone": "center",
+          "clock_direction": "12点",
+          "caption_zh": "晶圆中心偏上位置有一条垂直红色短线缺陷"
+        },
+        "raw_sha256": "f31238b5c7eec0e6d0397d6727bd97b479113033d19ccc8ac654df92ac8009ff",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"一条垂直的红色短线\",\"radial_zone\":\"center\",\"clock_direction\":\"12点\",\"extent_r\":null,\"caption_zh\":\"晶圆中心偏上位置有一条垂直红色短线缺陷\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 17,
+    "sample_id": "wafer_00045191_016",
+    "image_sha256": "85e8b8bd44c863f33d54fbd96e32f186b0af3fc021aa2f752f32a46ce3a5a2d8",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机分散分布于整个晶圆区域"
+        },
+        "raw_sha256": "7f15ef0f0bc6eac93b4d71a18afdb86840e8f71cd592d626a33fd92f321d3cee",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机分散分布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无可见缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": null,
+          "caption_zh": "晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。"
+        },
+        "raw_sha256": "c559ba10c1cef7c147e493aac2f49dffc78067fed2530de0bdde00ae9b4151ce",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无可见缺陷图案\",\"radial_zone\":\"none\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。\",\"uncertainty\":\"缺陷点数量少且分散，难以确定其统计显著性或潜在模式。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无明显缺陷图案，仅有零星红黑像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布少量红黑像素点，无集中缺陷"
+        },
+        "raw_sha256": "d7f8f813f935fe9911811e4922e214bd103773262827974f2d37d4e81e19d0e9",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无明显缺陷图案，仅有零星红黑像素点\",\"radial_zone\":\"none\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"绿色背景上分布少量红黑像素点，无集中缺陷\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 18,
+    "sample_id": "wafer_00043329_001",
+    "image_sha256": "ed3b7b1b3f3dd46659f15a3b4dcd9f3422af9e0e25fb9d18ec90aa99fef2dce1",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无显著缺陷图案，仅有零星红色像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布着零星的红色像素点，无明显缺陷形态"
+        },
+        "raw_sha256": "2ca58603cc28b8af910717eacf3d8f3004d10269eb41ab65b32ee348874a47f8",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无显著缺陷图案，仅有零星红色像素点\",\"radial_zone\":\"none\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"绿色背景上分布着零星的红色像素点，无明显缺陷形态\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "随机分布的孤立缺陷点，无明显空间模式",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆内随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性"
+        },
+        "raw_sha256": "d2e80b73476c8b401845cb373da58e864492dd0165bbca978fc28b3a0728742a",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机分布的孤立缺陷点，无明显空间模式\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆内随机分布少量孤立缺陷点，覆盖中心至边缘区域，无明确方向性\",\"uncertainty\":\"缺陷数量较少，空间分布稀疏，模式识别置信度较低\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "c9db58dd70a36d9e3bc275924fa1d33a85d3e1aeb7f4e0f8c487a6bff0390eac",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 19,
+    "sample_id": "wafer_00003298_021",
+    "image_sha256": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "绿色背景上随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "4c69116ffa53a9bd5a0ced764699dcb8544735c04881aecc926b26a33a6226fc",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"绿色背景上随机分布的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点"
+        },
+        "raw_sha256": "ec10c4afa398eb6329d2789e771e579f124dc57939abd6b9c1d47fe208b39e50",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在连续红色缺陷环，内部为绿色正常die并伴有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘有连续红色缺陷环，内部主要为绿色正常die并散布少量孤立红点\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色环状缺陷包围绿色区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状缺陷包围绿色区域"
+        },
+        "raw_sha256": "b8436bd655f953c4a501eee0544aeaa869beed1890c3662f14087e9a4d067637",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色环状缺陷包围绿色区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色环状缺陷包围绿色区域\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 20,
+    "sample_id": "wafer_00003822_012",
+    "image_sha256": "4edfae3cc4146d60d1bc17ddcfc2127021e01ecb0beba67c051590e51f090c71",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色裂纹贯穿晶圆，呈不规则分支状",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色裂纹从左侧延伸至右侧，贯穿整个晶圆区域"
+        },
+        "raw_sha256": "b57e048e2d9e0a8e97a66f2410e499dec9430dcc2d2d50133c27ef8d86b193bc",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"红色裂纹贯穿晶圆，呈不规则分支状\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色裂纹从左侧延伸至右侧，贯穿整个晶圆区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。",
+          "radial_zone": "center",
+          "clock_direction": "6点钟方向",
+          "caption_zh": "晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。"
+        },
+        "raw_sha256": "f6ff5688c17e240f6641fcacf50b0029a8cbc22fbf0b914cc191edd0c0751d12",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Scratch\",\"morphology\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。\",\"radial_zone\":\"center\",\"clock_direction\":\"6点钟方向\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一条断续的、稀疏的线状划痕缺陷，主要指向6点钟方向。\",\"uncertainty\":\"划痕的连续性和密度较低，存在局部断点。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色像素呈随机离散分布，无特定几何形状或方向性",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "cf7b0be3780611698a5cc77ded261cddbae9c4a670695d1dbeaab56e2c966aa3",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"红色像素呈随机离散分布，无特定几何形状或方向性\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}"
+      }
+    ]
+  },
+  {
+    "number": 21,
+    "sample_id": "wafer_00018023_017",
+    "image_sha256": "0e03c92eabc31c73e7ddbe4c342a8ff161714034108aef0eed0faebe586a4088",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "分散的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色背景上随机分布着红色像素点"
+        },
+        "raw_sha256": "d631303b390c1389ba1c2c1cf1bb88dffbb86d3744c211d318b2b7b5a0a50319",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"分散的红色像素点\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"绿色背景上随机分布着红色像素点\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘存在断续的红色缺陷环，内部有少量孤立红点",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘区域存在断续分布的红色缺陷环，内部有少量孤立红点"
+        },
+        "raw_sha256": "901338ec5f981e63f26584f021af8a59c69ed5dce8c64d535771528d6fdc0f27",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"晶圆边缘存在断续的红色缺陷环，内部有少量孤立红点\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘区域存在断续分布的红色缺陷环，内部有少量孤立红点\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色环状缺陷沿晶圆边缘分布",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "红色环状缺陷沿晶圆边缘分布"
+        },
+        "raw_sha256": "4247382e8cb1811833579560077fc935b86c1c6968e1e266c576a52405227f35",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色环状缺陷沿晶圆边缘分布\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色环状缺陷沿晶圆边缘分布\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "sample_id": "wafer_00029697_025",
+    "image_sha256": "fec3ac2112549c882f4f42761356bef023ae782ef556b5d7b459b614f18b0b04",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形红色失效区域，主要分布在晶圆上半部分及右侧边缘",
+          "radial_zone": "upper/middle/edge/global/none/unknown",
+          "clock_direction": "null",
+          "caption_zh": "红色失效区域呈环形分布，主要集中在晶圆上半部和右侧"
+        },
+        "raw_sha256": "62419e033dec4b52140cbc88e75cbe39fbdc4be5dad75e68acea6465e64d4dfb",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形红色失效区域，主要分布在晶圆上半部分及右侧边缘\",\"radial_zone\":\"upper/middle/edge/global/none/unknown\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色失效区域呈环形分布，主要集中在晶圆上半部和右侧\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红绿像素随机分布，无连续线条或环形结构",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红绿像素在晶圆全局范围内随机分布，未见明显集中区域或特定形态"
+        },
+        "raw_sha256": "7f733a3eee2699c431780d3a3f177396b3b77d2ab9af7786f47338dcb80b5713",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"红绿像素随机分布，无连续线条或环形结构\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红绿像素在晶圆全局范围内随机分布，未见明显集中区域或特定形态\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形",
+          "radial_zone": "middle",
+          "clock_direction": "12点",
+          "caption_zh": "晶圆中部存在断续环形红色缺陷分布，12点钟方向较密集，中心区域缺陷较少。"
+        },
+        "raw_sha256": "b0535191c81423ebabf78e49be8b206bac6e164ebb9135927063c3fd29729459",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形\",\"radial_zone\":\"middle\",\"clock_direction\":\"12点\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在断续环形红色缺陷分布，12点钟方向较密集，中心区域缺陷较少。\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "sample_id": "wafer_00032899_015",
+    "image_sha256": "e748920456342903543ba6803b2a251a55c3ad0408c04bb565271a964f0d6646",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域红色块状缺陷",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心位置存在明显的红色块状失效区域"
+        },
+        "raw_sha256": "211b350414356095d6621ac8dec01cfe503ded6c3007587f19e6e47b763f553c",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域红色块状缺陷\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心位置存在明显的红色块状失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "致密团簇状",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中心区域存在一个致密、连续的团簇状缺陷区域，缺陷点主要聚集在中心附近，向四周辐射密度逐渐降低，无明显方向性。"
+        },
+        "raw_sha256": "4ce23b9032ab791c3df05653dc88e0a78e5d442e4ce4f033d038c797238650b9",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"致密团簇状\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的团簇状缺陷区域，缺陷点主要聚集在中心附近，向四周辐射密度逐渐降低，无明显方向性。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "中心区域存在大面积不规则红色聚集",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "晶圆中心区域存在大面积红色失效聚集"
+        },
+        "raw_sha256": "6daf6a49d74a1b725b3f67c23bc72a20f261beac036b9b72d61bfe0f6366c76f",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Center\",\n\"morphology\":\"中心区域存在大面积不规则红色聚集\",\n\"radial_zone\":\"center\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"晶圆中心区域存在大面积红色失效聚集\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "sample_id": "wafer_00039578_021",
+    "image_sha256": "f7899dd7f7ca7f5e4d483ac8e2215d32ad40f25f1d5b0cfabd5e47c281d48427",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "红色像素呈随机分布的离散点状和块状，无特定几何规律",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "12c79ae7f0133c08cf0b09e7f16da5a8735b987d410cdbacadc49a23c10d414f",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"红色像素呈随机分布的离散点状和块状，无特定几何规律\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。"
+        },
+        "raw_sha256": "95fb44284cde45ad656519611372a394ebf00296f37bcdfc4fadd8fcf64e3af4",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域有一个红色方块状缺陷",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心位置有一个红色方块状缺陷"
+        },
+        "raw_sha256": "5f778b448b92b6bdd16b213a350d2d967abcb41dfb380a7d13bc568f34a20473",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Center\",\"morphology\":\"中心区域有一个红色方块状缺陷\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心位置有一个红色方块状缺陷\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "sample_id": "wafer_00040556_007",
+    "image_sha256": "769c2d90c9742ec3de4db39770a2f3f718c69236a8602ce68bf4a844c7bfdc39",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "随机点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "晶圆内红色缺陷die与绿色正常die呈随机散布，缺陷覆盖中心至边缘全半径区域，整体密度较高。"
+        },
+        "raw_sha256": "68cf29c666e56fb7abee199ceb223627f7a3b09a71d861787dcf2287049deb73",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机点\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆内红色缺陷die与绿色正常die呈随机散布，缺陷覆盖中心至边缘全半径区域，整体密度较高。\",\"uncertainty\":\"无\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红绿像素随机交错分布",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红绿像素随机交错分布覆盖整个晶圆区域"
+        },
+        "raw_sha256": "0def5c05cdeb036b30adba46473731c2abd935155078399958e83935d05d9782",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红绿像素随机交错分布\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红绿像素随机交错分布覆盖整个晶圆区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素块",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "aa5ab9afa44c488ad65179c4315857e2d7f2789c1d1d5ff2673db712f9e3d861",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素块\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "sample_id": "wafer_00041108_014",
+    "image_sha256": "a07d7c870dd31d483766f754a943ec2f1d93bbb7c593368c43b21c7d1e51adf4",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "c9db58dd70a36d9e3bc275924fa1d33a85d3e1aeb7f4e0f8c487a6bff0390eac",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无可见缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": null,
+          "caption_zh": "晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。"
+        },
+        "raw_sha256": "c559ba10c1cef7c147e493aac2f49dffc78067fed2530de0bdde00ae9b4151ce",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无可见缺陷图案\",\"radial_zone\":\"none\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。\",\"uncertainty\":\"缺陷点数量少且分散，难以确定其统计显著性或潜在模式。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无明显缺陷图案，仅有零星红色像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布着零星的红色像素点，无集中缺陷"
+        },
+        "raw_sha256": "ba878b1c9d9988ed40a466d555cf24ae1bb69e1e4acf0886728e213f08751851",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无明显缺陷图案，仅有零星红色像素点\",\"radial_zone\":\"none\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"绿色背景上分布着零星的红色像素点，无集中缺陷\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "sample_id": "wafer_00042202_013",
+    "image_sha256": "789a559d5d024fb1c8ecd3d3c811b69a33da0ac83b6a037606b343c299f2d121",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中心区域呈环形分布的红色失效区，内部包含不规则红色块状结构",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心区域呈现环形红色失效图案，内部包含不规则红色块状结构"
+        },
+        "raw_sha256": "2e5da0a6ae9149182a9cc6a93dc9ac0c6cf4bd1e355f9ca9c17962d906b52dc7",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"中心区域呈环形分布的红色失效区，内部包含不规则红色块状结构\",\"radial_zone\":\"center\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"中心区域呈现环形红色失效图案，内部包含不规则红色块状结构\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "环形",
+          "radial_zone": "middle",
+          "clock_direction": "null",
+          "caption_zh": "晶圆中部存在断续环形红色缺陷分布，中心区域缺陷较少，边缘区域缺陷稀疏。"
+        },
+        "raw_sha256": "c6bfe5cb9841726e9e1566f1fc58a60c71db4da6ef807c6d33e2108e9f9468b2",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Donut\",\"morphology\":\"环形\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆中部存在断续环形红色缺陷分布，中心区域缺陷较少，边缘区域缺陷稀疏。\",\"uncertainty\":\"环形结构在径向和角度上均不连续，存在局部聚集和孤立点。\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "红色像素呈随机散布状，无特定几何排列",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "c90cf474a55afe4fe6a2a90c6866fe232a5f876d87825c285d51ea290c78a06e",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\": \"Random\",\n\"morphology\": \"红色像素呈随机散布状，无特定几何排列\",\n\"radial_zone\": \"global\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\": \"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "sample_id": "wafer_00042778_024",
+    "image_sha256": "5a080c63fe5fd8331d09c6c9f8942983e26b08fb67fc9c84aa7b0041bdbdda01",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "大面积红色区域覆盖晶圆大部分",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域占据晶圆绝大部分，底部边缘有少量绿色区域"
+        },
+        "raw_sha256": "3754c48d5645a2274c6539902384f3c6db794bea0f47af269f15273388c1b369",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"大面积红色区域覆盖晶圆大部分\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色区域占据晶圆绝大部分，底部边缘有少量绿色区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。"
+        },
+        "raw_sha256": "df822bae2be9348ecc0088a991ac00b3ee416d9c042a3b625bb955105c3a8289",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上几乎全部区域被致密、连续的缺陷覆盖，仅边缘有少量正常单元。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "边缘局部聚集",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘（约7-9点钟方向）存在局部聚集的失效点"
+        },
+        "raw_sha256": "46a8947cd4b687170b41faaaa5af1065fb028e760ec0ed78381913b709a4994c",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Edge_Loc\",\n\"morphology\":\"边缘局部聚集\",\n\"radial_zone\":\"edge\",\n\"clock_direction\":\"null\",\n\"extent_r\":null,\n\"caption_zh\":\"晶圆边缘（约7-9点钟方向）存在局部聚集的失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "sample_id": "wafer_00043183_023",
+    "image_sha256": "84ab39c592a057d6c7edd254310faa220af9bb67e8f35203f1db734c2fda77bf",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。"
+        },
+        "raw_sha256": "9933d859ab88c7e87e0142579fa17fff09bf6f9849e78e2f948fca8a99278c66",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上存在大面积、高密度、近乎全覆盖的缺陷分布，缺陷die呈连续致密状态，覆盖中心至边缘几乎所有区域，仅边缘有少量孤立正常die。\",\"uncertainty\":\"无\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "大面积红色区域覆盖晶圆大部分，仅边缘和中心有少量绿色像素",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红色区域占据绝大部分晶圆面积，绿色区域呈零星分布"
+        },
+        "raw_sha256": "cc7ae942ea3466534cc6970e8abca407159abbc6fda0c35c1743a66e5680ae14",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Near_full\",\"morphology\":\"大面积红色区域覆盖晶圆大部分，仅边缘和中心有少量绿色像素\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红色区域占据绝大部分晶圆面积，绿色区域呈零星分布\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "边缘局部聚集",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘（约10点至1点方向）存在局部聚集的失效点"
+        },
+        "raw_sha256": "dd1938c00fb06a24c9486076bc9af65019e98e76641f89f1228d6b38fdba7f15",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Edge_Loc\",\n\"morphology\":\"边缘局部聚集\",\n\"radial_zone\":\"edge\",\n\"clock_direction\":\"null\",\n\"extent_r\":null,\n\"caption_zh\":\"晶圆边缘（约10点至1点方向）存在局部聚集的失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "sample_id": "wafer_00043921_007",
+    "image_sha256": "035b169f2d0688b57d86ac0b606a98f5c8d55628cbf3cfc8f6217d63a5fdde1c",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无可见缺陷图案",
+          "radial_zone": "none",
+          "clock_direction": null,
+          "caption_zh": "晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。"
+        },
+        "raw_sha256": "12acfb123f8617a5abf5e36ceffbdd28c5239d9f84d92ab38813ca8a9777b7bb",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无可见缺陷图案\",\"radial_zone\":\"none\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆上存在少量随机分布的孤立缺陷点，未形成特定空间模式。\",\"uncertainty\":\"缺陷点数量少且分散，难以确定其统计显著性或潜在工艺关联。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于绿色合格区域中"
+        },
+        "raw_sha256": "eb51ce43098a9232b468f9f1ba61013dfaee12dd81547803ed4fe00c400e021e",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于绿色合格区域中\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "无明显缺陷图案，仅有零星红色像素点",
+          "radial_zone": "none",
+          "clock_direction": "null",
+          "caption_zh": "绿色背景上分布着少量红色像素点，无集中缺陷"
+        },
+        "raw_sha256": "a86870c96612c02c493e962789a213c24aa1d42232985189f07fff516bd91248",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"none\",\"morphology\":\"无明显缺陷图案，仅有零星红色像素点\",\"radial_zone\":\"none\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"绿色背景上分布着少量红色像素点，无集中缺陷\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 31,
+    "sample_id": "wafer_00043980_001",
+    "image_sha256": "b50d8fa445a090865398fc2de2d3a7620eea1dd0da06fc002777d0bd49acdc0d",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "随机点",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "晶圆内红色缺陷die呈随机散布，覆盖中心至边缘，无明确连续图形。"
+        },
+        "raw_sha256": "25da3ddc462de4b502f44e1b81cf35f915de4db83b801ff1a0d09f0b74539b0f",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"随机点\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆内红色缺陷die呈随机散布，覆盖中心至边缘，无明确连续图形。\",\"uncertainty\":\"缺陷分布较稀疏，局部有聚集但整体无清晰方向性。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红绿像素随机交错分布",
+          "radial_zone": "global",
+          "clock_direction": "null",
+          "caption_zh": "红绿像素随机交错分布"
+        },
+        "raw_sha256": "55c98b122054dede01480d80877832d4c3bfbc5564b007d35069e7213e5b337b",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Random\",\"morphology\":\"红绿像素随机交错分布\",\"radial_zone\":\"global\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"红绿像素随机交错分布\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素块",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于整个晶圆区域"
+        },
+        "raw_sha256": "aa5ab9afa44c488ad65179c4315857e2d7f2789c1d1d5ff2673db712f9e3d861",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素块\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于整个晶圆区域\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 32,
+    "sample_id": "wafer_00044300_025",
+    "image_sha256": "7e9470560bdf303221418e3e21311f403fcf63de4a0525004450567c7a0a3df3",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于绿色合格区域中"
+        },
+        "raw_sha256": "eb51ce43098a9232b468f9f1ba61013dfaee12dd81547803ed4fe00c400e021e",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于绿色合格区域中\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。"
+        },
+        "raw_sha256": "5b2183be916e5f416cdf9a555eea3dcc394a77d7b3c2c3d9b43f89376c2e0c98",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "边缘局部红色像素块",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘存在局部红色失效区域"
+        },
+        "raw_sha256": "450885a556730a0505586a7539574d3383689f85a68c037eb1aca67691198a75",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"边缘局部红色像素块\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘存在局部红色失效区域\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 33,
+    "sample_id": "wafer_00045337_006",
+    "image_sha256": "5590d5962a80fbeb0eb5fa77c72ef875d062fd6de07fc797926699ce3252bd57",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "红色失效点随机散布于绿色合格区域中"
+        },
+        "raw_sha256": "eb51ce43098a9232b468f9f1ba61013dfaee12dd81547803ed4fe00c400e021e",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"红色失效点随机散布于绿色合格区域中\",\n\"uncertainty\":\"\"\n}\n```"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集"
+        },
+        "raw_sha256": "d6d04e7a6b1e2f16847471fd6e33e1c6f5a6bb2c479a4bd6866124a0aa632b11",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "左侧边缘有红色块状区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "左侧边缘存在红色失效区域"
+        },
+        "raw_sha256": "f002d0dca61df169f9ee0bfc43a488620d96bb298489a4dec231ea0f40a78881",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"左侧边缘有红色块状区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"左侧边缘存在红色失效区域\",\"uncertainty\":\"\"}"
+      }
+    ]
+  },
+  {
+    "number": 34,
+    "sample_id": "wafer_00045589_021",
+    "image_sha256": "4489e5f388a7cc67af30f8f8732600a9537c9e5e79d66ed60ac006e97b172783",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "右下象限的红色块状区域",
+          "radial_zone": "middle",
+          "clock_direction": "null",
+          "caption_zh": "右下象限存在红色块状失效区域"
+        },
+        "raw_sha256": "f336416a0a4315944c07750afa635c8d0cf9f7fe7922b5cc7b9edebbff0f3044",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"右下象限的红色块状区域\",\"radial_zone\":\"middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"右下象限存在红色块状失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "团簇状",
+          "radial_zone": "center",
+          "clock_direction": "4点钟",
+          "caption_zh": "晶圆中心区域存在一个致密的红色缺陷团簇，主要分布在4点钟方向附近。"
+        },
+        "raw_sha256": "e83cc870279e974765f69742314190bb2907a7f7f0205e2c7edcfe7eb1a091f5",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"团簇状\",\"radial_zone\":\"center\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密的红色缺陷团簇，主要分布在4点钟方向附近。\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "中心区域聚集的红色像素块",
+          "radial_zone": "center",
+          "clock_direction": "null",
+          "caption_zh": "中心区域存在聚集的红色失效点"
+        },
+        "raw_sha256": "4163417bf1163a172973d0f25e46cf8111cb932bf1dd9bf744bd2b43f299871d",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Loc\",\n\"morphology\":\"中心区域聚集的红色像素块\",\n\"radial_zone\":\"center\",\n\"clock_direction\":\"null\",\n\"extent_r\":null,\n\"caption_zh\":\"中心区域存在聚集的红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 35,
+    "sample_id": "wafer_00046667_020",
+    "image_sha256": "96f2bda39c9ca27b23249176323fc027bf30e0ee3d58f282517f184fb2a4487c",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "边缘局部聚集",
+          "radial_zone": "edge",
+          "clock_direction": "4点钟",
+          "caption_zh": "晶圆边缘4点钟方向存在局部红色缺陷聚集，其余区域以绿色正常die为主并散布少量红色缺陷点。"
+        },
+        "raw_sha256": "8ee52a0638a7144f6220dd5d7e6403850cef3d3cfc4c12ef0deb345d91279e90",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"边缘局部聚集\",\"radial_zone\":\"edge\",\"clock_direction\":\"4点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆边缘4点钟方向存在局部红色缺陷聚集，其余区域以绿色正常die为主并散布少量红色缺陷点。\",\"uncertainty\":\"缺陷分布较稀疏，边缘聚集范围约1.96R，中心区域缺陷较少。\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "右下角红色块状区域",
+          "radial_zone": "edge",
+          "clock_direction": "null",
+          "caption_zh": "右下角存在明显的红色失效区域"
+        },
+        "raw_sha256": "eb38605e04e921f3826825a9f378cd84c304cf449855089d842a9173a3db72d8",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Edge_Loc\",\"morphology\":\"右下角红色块状区域\",\"radial_zone\":\"edge\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"右下角存在明显的红色失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原格式失败；仅展示时剥完整围栏",
+        "fields": {
+          "morphology": "随机分布的红色像素点",
+          "radial_zone": "global",
+          "clock_direction": null,
+          "caption_zh": "绿色晶圆背景上随机分布着红色失效点"
+        },
+        "raw_sha256": "c9db58dd70a36d9e3bc275924fa1d33a85d3e1aeb7f4e0f8c487a6bff0390eac",
+        "raw": "<think>\n\n</think>\n\n```json\n{\n\"defect_class\":\"Random\",\n\"morphology\":\"随机分布的红色像素点\",\n\"radial_zone\":\"global\",\n\"clock_direction\":null,\n\"extent_r\":null,\n\"caption_zh\":\"绿色晶圆背景上随机分布着红色失效点\",\n\"uncertainty\":\"\"\n}\n```"
+      }
+    ]
+  },
+  {
+    "number": 36,
+    "sample_id": "wafer_00047246_025",
+    "image_sha256": "4790fffb5da31c43e8eed14b6b74f6a5ea0211c82e35604db3d39653a416518c",
+    "answers": [
+      {
+        "blind": "甲",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "红色矩形块状区域",
+          "radial_zone": "upper-middle",
+          "clock_direction": "null",
+          "caption_zh": "晶圆上方中部存在一个红色矩形块状失效区域"
+        },
+        "raw_sha256": "09fdfc6a3f7926656686aae5a902d7036019ad13c0529c386417e81f28e35c24",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"红色矩形块状区域\",\"radial_zone\":\"upper-middle\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"晶圆上方中部存在一个红色矩形块状失效区域\",\"uncertainty\":\"\"}"
+      },
+      {
+        "blind": "乙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "中央区域存在不规则聚集的红色像素块",
+          "radial_zone": "center",
+          "clock_direction": null,
+          "caption_zh": "中央区域可见聚集的红色失效点"
+        },
+        "raw_sha256": "cd82cbdc9e814a30c8a4e97c4879298d1f40ca37ebd5b45313d63965d1cd06dd",
+        "raw": "<think>\n\n</think>\n\n{\n\"defect_class\": \"Loc\",\n\"morphology\": \"中央区域存在不规则聚集的红色像素块\",\n\"radial_zone\": \"center\",\n\"clock_direction\": null,\n\"extent_r\": null,\n\"caption_zh\": \"中央区域可见聚集的红色失效点\",\n\"uncertainty\": \"\"\n}"
+      },
+      {
+        "blind": "丙",
+        "display_mode": "原严格可解析",
+        "fields": {
+          "morphology": "晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。",
+          "radial_zone": "center",
+          "clock_direction": "12",
+          "caption_zh": "晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。"
+        },
+        "raw_sha256": "dd9a749b7d461b513dfb3aae4c5d3061c011924817fc35810c7cd1af2e2ca949",
+        "raw": "<think>\n\n</think>\n\n{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。\",\"radial_zone\":\"center\",\"clock_direction\":\"12\",\"extent_r\":null,\"caption_zh\":\"晶圆中心区域存在一个致密、连续的缺陷团簇，主要分布在12点钟方向附近。\",\"uncertainty\":\"\"}"
+      }
+    ]
+  }
+]

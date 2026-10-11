@@ -1,0 +1,60 @@
+{
+  "completed_count": 7,
+  "completed_ids": [
+    "zc_122",
+    "zc_123",
+    "zc_124",
+    "zc_125",
+    "zc_126",
+    "zc_127",
+    "zc_128"
+  ],
+  "format_pass_count": 7,
+  "skipped_ids": [],
+  "source": "gpt_model_annotation",
+  "finished_at": "2026-10-06T11:35:26.346777+00:00",
+  "files": [
+    {
+      "item_id": "zc_122",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_122_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_122_entry.json"
+    },
+    {
+      "item_id": "zc_123",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_123_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_123_entry.json"
+    },
+    {
+      "item_id": "zc_124",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_124_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_124_entry.json"
+    },
+    {
+      "item_id": "zc_125",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_125_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_125_entry.json"
+    },
+    {
+      "item_id": "zc_126",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_126_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_126_entry.json"
+    },
+    {
+      "item_id": "zc_127",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_127_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_127_entry.json"
+    },
+    {
+      "item_id": "zc_128",
+      "checker_exit_code": 0,
+      "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_128_raw.json",
+      "entry_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_128_entry.json"
+    }
+  ]
+}

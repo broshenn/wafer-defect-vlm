@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0526",
+    "image_sha256": "966523f6b09125e730837336fd2be3ddc5551680a67bdc16ea0e1cfcf005ae39",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全圆散布的随机散点状失效，红色die遍布整个晶圆且密度偏高，仅见零星小簇聚集，无环状、带状或单一团块等整体结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色失效die以较高密度随机散布于整个晶圆，覆盖率约三至四成，无任何明显空间结构。",
+      "uncertainty": "低：随机散布特征明确，无主导几何结构，各向分布大致均匀。"
+    }
+  },
+  {
+    "item_id": "wbg0527",
+    "image_sha256": "65852077fbe1a3a5d740fabbdb40595d6980a22079d9da1fef9b58884f91c4ab",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "高良率底图上的低密度随机散点，红色die零散分布于全圆各处，仅中部偏下与右缘偶有两三粒的小簇，不构成任何连续形态",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "晶圆整体高良率，红色失效die以低密度零散点缀于全圆，覆盖率约百分之几到一成。",
+      "uncertainty": "中：红点稀少且无结构，Random与none的分界在此密度下较模糊，倾向按仍有全圆散布判Random。"
+    }
+  },
+  {
+    "item_id": "wbg0528",
+    "image_sha256": "f337a3b6fe03cd99d1b64d5ecdabb4a7f9e853a01f562b6f4ba205c7cf7242c0",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红绿混杂的随机分布，红色die密集散布全圆，外圈边缘数列的红色密度略高于内部，绿色主要在中部形成几处不规则斑块",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色失效die以约一半的覆盖率随机混杂于全圆，边缘一圈密度略高于中心区，无单一明确缺陷结构。",
+      "uncertainty": "中：内部失效密度也很高，边缘环带只是略密而非干净细环，Edge-Ring与Random之间主类难判，倾向按整体随机判Random。"
+    }
+  },
+  {
+    "item_id": "wbg0529",
+    "image_sha256": "863ebaccb0ba8509f8a5898a7361f69a5761052f88fff2a2dfa887cd3957f900",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "高良率底图，中心略偏左下处有一团由十余粒die组成的不规则致密红色聚集块，其余区域为全圆零星散点，右缘中部另有一小段短条状红",
+      "radial_zone": "中心",
+      "clock_direction": "中心偏左下（约7-8点）",
+      "extent_r": null,
+      "caption_zh": "晶圆整体高良率，仅在中心略偏左下出现一块中等尺寸的致密红色聚集块，其余失效为零星散点。",
+      "uncertainty": "低：聚集块位置与边界清晰，Loc特征明确；块体尺寸中等但足以辨认。"
+    }
+  },
+  {
+    "item_id": "wbg0530",
+    "image_sha256": "9061f2bb0aa5634ff2898960e5cd6d2f4b6866ea95b2b2416c3bbb25e0c50d16",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "高良率底图，右侧边缘中下段（约3-5点方向）有一片贴边的红色聚集，由边缘斑块与相邻短带、散簇组成，其余区域仅零星散点",
+      "radial_zone": "边缘",
+      "clock_direction": "3-5点",
+      "extent_r": null,
+      "caption_zh": "晶圆整体高良率，红色失效集中聚集在右缘偏下的一小段弧带上，覆盖范围有限，其余区域散点稀疏。",
+      "uncertainty": "中：聚集明确贴边、指向Edge-Loc，但其密度不均且宽度稍大，与紧贴边缘的大块Loc界线略模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0531",
+    "image_sha256": "cf5ca853983d32c2941f8ae0cf8dae8a699365ebc570cd010459f45ccc138df8",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "高良率底图，中部有一条自顶部12点附近经中心右侧向4点方向延伸的弧形红色聚集带，带宽2-4粒die，顶部边缘另有一小块贴边红，其余为全圆零星散点",
+      "radial_zone": "中间",
+      "clock_direction": "11点经中部至4点弧带",
+      "extent_r": null,
+      "caption_zh": "晶圆整体高良率，中部存在一条横跨约五小时钟点的弧形红色聚集带，尺寸中等，其余失效为零星散点。",
+      "uncertainty": "中：聚集呈弧带状，形态介于多个Loc聚集连片与部分环残段之间，主类归Loc但形态描述存在歧义。"
+    }
+  },
+  {
+    "item_id": "wbg0532",
+    "image_sha256": "afbd0f84bc55a8cab3e0b3079963d9c1ba59a2dcedfa4c1d2c9522732539c685",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "高良率底图，右上象限有大片边界较清晰的致密红色失效区，从顶部边缘延伸到右缘呈扇形块状，其余区域仅零星散点、底部散点略多",
+      "radial_zone": "边缘",
+      "clock_direction": "12-3点",
+      "extent_r": null,
+      "caption_zh": "晶圆整体高良率，右上象限约四分之一区域为贴边的致密红色失效块，其余区域基本正常。",
+      "uncertainty": "低：块体致密、边界清楚，Edge-Loc特征明确；唯覆盖面积偏大，与大块局部失效的界线略有模糊。"
+    }
+  }
+]

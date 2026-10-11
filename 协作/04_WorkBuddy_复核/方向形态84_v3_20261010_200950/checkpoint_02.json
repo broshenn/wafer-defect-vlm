@@ -1,0 +1,1 @@
+{"checkpoint":2,"at_utc":"2026-10-10T13:15:49Z","planned":84,"attempted":21,"format_pass":21,"format_fail":0,"not_executed":63,"completed_batches":["batch_01","batch_02","batch_03"],"notes":"batch_02/03由后台worker补齐；worker-b02/b03前台流超时，wbv3_010/017由父会话补闭合(raw保留)"}

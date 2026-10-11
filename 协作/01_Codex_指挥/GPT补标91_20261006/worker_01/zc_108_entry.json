@@ -1,0 +1,32 @@
+{
+  "item_id": "zc_108",
+  "sample_id": "wafer_00042116_020",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00042116_020.png",
+  "image_sha256": "196899c32b612f0cd4e38d78ce7cb9aaa8564577c4a06182af42bf6a0758de96",
+  "raw_sha256": "cc0eab92d7f03f39eeac56b13fdf09c40cc0de0b6f1ddf532cfe6641c70575a4",
+  "visual_read_count": 1,
+  "visual_read_tool": "tools.view_image",
+  "visual_read_detail": "original",
+  "image_presented_via": "functions.exec image(result.image_url)",
+  "checker_exit_code": 0,
+  "checker_version": "format_v4_clock_range_20261003",
+  "started_at_utc": "2026-10-06T11:31:54Z",
+  "finished_at_utc": "2026-10-06T11:32:18.026450+00:00",
+  "model_call_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra"
+  },
+  "backend_model_id": "未提供",
+  "input_tokens": "未提供",
+  "output_tokens": "未提供",
+  "source": "gpt_model_annotation",
+  "human_reviewed": false,
+  "prompt_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "checker_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261003_GLM180\\check_answer_v4.py",
+  "checker_sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2",
+  "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_01\\zc_108_raw.json",
+  "checker_stdout_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_01\\zc_108_check.stdout.txt",
+  "checker_stderr_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_01\\zc_108_check.stderr.txt",
+  "checker_exit_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_01\\zc_108_check.exit.json"
+}

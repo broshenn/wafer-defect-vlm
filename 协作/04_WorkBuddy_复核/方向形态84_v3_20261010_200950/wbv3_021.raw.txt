@@ -1,0 +1,1 @@
+{"morphology_zh":"一个占据晶圆下半部的大面积红色失效区域，上边界大致水平","main_location_zh":"红色区域位于晶圆下半部并延伸至底部边缘，上半部以绿色合格为主","location_clock":[6],"orientation_clock":[],"secondary_observations":["上半部绿色区域散布少量红色失效点，中心附近略密","顶部边缘有一小片红色格点"],"caption_zh":"晶圆下半部为大片红色失效区域，上半部以绿色合格为主并散见少量红点。","uncertainty":""}

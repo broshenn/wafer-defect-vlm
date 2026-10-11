@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Edge_Loc",
+"morphology":"边缘局部聚集",
+"radial_zone":"edge",
+"clock_direction":"null",
+"extent_r":null,
+"caption_zh":"晶圆边缘（约7-9点钟方向）存在局部聚集的失效点",
+"uncertainty":""
+}
+```

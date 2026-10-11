@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"上半部横贯宽带状红色失效区，下半部基本保持绿色\",\"radial_zone\":\"middle\",\"clock_direction\":\"12点钟\",\"extent_r\":null,\"caption_zh\":\"上部约9点经12点到3点方向有一片横贯的宽带状红色失效区，下半部以绿色为主并散布零星红点\",\"uncertainty\":\"失效带较宽且触及左右两侧边缘，与Donut或Edge_Loc形态有重叠，钟点方向仅代表主体方位\"}\n",
+  "raw_sha256": "a1f4faa8017fc428ffadfa2a5fcff2a4595f30a88dbae66af877e7db487a133e",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "a1f4faa8017fc428ffadfa2a5fcff2a4595f30a88dbae66af877e7db487a133e",
+  "input_path": "raw/wbe0033.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

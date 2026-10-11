@@ -1,0 +1,1 @@
+{"checker_version": "format_v4_clock_range_20261003", "path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_123_raw.json", "exit_code": 0, "failures": [], "detail": {"clock_expressions_stripped": {}, "field_order_matches_prompt": true}}

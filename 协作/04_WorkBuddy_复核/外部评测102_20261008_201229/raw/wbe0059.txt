@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"左下方中带一处不规则红色聚集团块，全晶圆另散布稀疏孤立红点","radial_zone":"middle","clock_direction":"8点钟","extent_r":null,"caption_zh":"主要失效为左下方中带一处不规则红色聚集团块，其余区域散布孤立红点。","uncertainty":"团块边界不规则，与周边散点无明显分界。"}

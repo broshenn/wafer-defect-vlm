@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0435",
+    "image_sha256": "c1b5bbbb19ab5d4e68134c862e2085d967350d334ac9ef2d38426ced275eeb8f",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色失效die以孤立散点形式随机遍布整个晶圆，密度较低，仅在中心偏上区域有一小簇轻微聚集",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色失效die以稀疏孤立散点形式随机分布于整个晶圆，无明显径向或方位聚集，仅中心偏上略有一小簇，整体覆盖率低",
+      "uncertainty": "低-中：散点分布明确以随机为主，但中心偏上的小簇略似Loc痕迹，整体仍判随机散点"
+    }
+  },
+  {
+    "item_id": "wbg0436",
+    "image_sha256": "e95b93d9adb6384d104054839518d51df8af5790020cd344a28b08883d874355",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "晶圆顶部边缘处有一小块致密的红色失效聚集区，其余失效为全圆稀疏的孤立散点",
+      "radial_zone": "边缘",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "晶圆顶部12点方向边缘存在一小块致密红色失效聚集带，其余失效为全圆稀疏散点，整体覆盖率较低",
+      "uncertainty": "中：顶部边缘聚集符合Edge-Loc特征，但聚集块面积较小，需与边缘孤立缺口区分"
+    }
+  },
+  {
+    "item_id": "wbg0437",
+    "image_sha256": "0e7376d9dba481671dbb353378511a4337f016a4cce3678a873e6698b86120ef",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "晶圆顶部边缘有一小簇致密红色失效聚集，其余失效为极稀疏的孤立散点，全图几乎为绿色pass",
+      "radial_zone": "边缘",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "晶圆顶部12点方向边缘有一小簇致密红色失效聚集，其余区域仅有零星散点，整体失效覆盖率极低",
+      "uncertainty": "中：整体失效极少，顶部边缘小簇规模有限，判为Edge-Loc置信度中等"
+    }
+  },
+  {
+    "item_id": "wbg0438",
+    "image_sha256": "182724763709c6feeac2de9aae55bae0b14710eef054c1fd5f7b1f9b19fe917e",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "晶圆左侧中部有一小块致密红色失效聚集，其余失效为全圆分布的稀疏孤立散点",
+      "radial_zone": "中间",
+      "clock_direction": "9点",
+      "extent_r": null,
+      "caption_zh": "晶圆左侧9点方向中部有一小块致密红色失效聚集，其余失效为稀疏散点，整体覆盖率较低",
+      "uncertainty": "中：聚集块较小，判Loc有一定主观性，也可能视为随机波动形成的密集点"
+    }
+  },
+  {
+    "item_id": "wbg0439",
+    "image_sha256": "aa5ebf576622df9a24ef544ce5029e02d8e08449cad0ba4e9bb271da4c61351f",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "晶圆上部有一条水平直线状红色划痕自中部向右延伸，其余失效为全圆随机散点，右缘略有聚集",
+      "radial_zone": "中间",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "晶圆上部有一条水平直线状红色划痕自中部向右延伸，长度约占直径三分之一，其余失效为全圆稀疏散点",
+      "uncertainty": "低-中：水平线状划痕特征清晰易辨，背景散点略多但主特征明确"
+    }
+  },
+  {
+    "item_id": "wbg0440",
+    "image_sha256": "39c745040d40deb8586440ddca2f3a114fe6e85ce16915fa0f7e850ac613cd2c",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "晶圆左上区域有一条斜向排列的点状红色链近似直线延伸，其余失效为全圆随机散点",
+      "radial_zone": "中间",
+      "clock_direction": "10-11点",
+      "extent_r": null,
+      "caption_zh": "晶圆左上10-11点方向中部有一条斜向点状红色链近似划痕走向，其余失效为全圆稀疏散点，覆盖率较低",
+      "uncertainty": "高：斜线链由离散die组成，判划痕与随机聚集存在歧义，背景散点较多，置信度低-中"
+    }
+  },
+  {
+    "item_id": "wbg0441",
+    "image_sha256": "0ed01df92201813d042094cdad4200b25b64b40d159ff2ec8e0bfac8bacfd85e",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "细小红色失效点以低密度均匀散布于整个晶圆，无可见聚集、环状或边缘结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "细小的红色失效点以低密度均匀散布于整个晶圆表面，无任何径向或方位聚集，覆盖率很低",
+      "uncertainty": "低：分布均匀且无任何结构特征，随机属性明确"
+    }
+  }
+]

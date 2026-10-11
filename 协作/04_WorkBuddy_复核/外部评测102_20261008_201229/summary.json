@@ -1,0 +1,44 @@
+{
+  "run": "WorkBuddy外部评测102_同图同题外部模型直接推理对照",
+  "output_dir": "D:\\pycode\\晶圆图研究\\协作\\04_WorkBuddy_复核\\外部评测102_20261008_201229",
+  "display_model": "GLM-5.3-Flash（父会话与全部14个worker子代理，客户端显示口径）",
+  "model_exact_backend_id": "未知：客户端不暴露后端模型标识",
+  "sampling_params": "未知：客户端未暴露温度/top_p等真实请求参数",
+  "backend_request_log_available": false,
+  "disclosure": "后台注入/真实参数/后端请求数未提供；request_records中的prompt为执行时从题面文件逐字读入的客户端侧记录，hash为现算值，不冒充后端发送证据。",
+  "plan_vs_actual": {
+    "planned": 102,
+    "attempted": 102,
+    "completed": 102,
+    "unexecuted": 0,
+    "unexecuted_ids": [],
+    "extra_raw_without_index": [],
+    "failures": 0
+  },
+  "counts": {
+    "strict_json": 102,
+    "schema_ok": 102,
+    "contract_warnings": 0,
+    "schema_failures": 0,
+    "image_sha_mismatch": 0,
+    "rerun_mismatch_with_first_check": 0
+  },
+  "integrity": {
+    "index_sha256_runtime": "41d6e79c7ae6026fae34a609f39af4ced07aa080b163c18e813d1205c9dcd0c1",
+    "index_sha256_ok": true,
+    "prompt_sha256_runtime": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "prompt_sha256_ok": true,
+    "checker_sha256_runtime": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+    "checker_sha256_ok": true,
+    "shard_union_equals_index": true,
+    "unique_item_ids": 102,
+    "unique_sample_ids": 102,
+    "raw_files": 102
+  },
+  "time": {
+    "start": "2026-10-08T20:12:30+08:00",
+    "end": "2026-10-08T21:28:44+08:00"
+  },
+  "scope_statement": "全部原答为模型输出，非人工gold；本目录不含正确率、不读取真值；结构合格不等于视觉事实正确。",
+  "problems": []
+}

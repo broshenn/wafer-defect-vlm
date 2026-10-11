@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0400",
+    "image_sha256": "698d51d7498190a53d5acdd5224dd7a81e9df0b44d48e4b3953e21d2cf113026",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "全圆散布稀疏红色fail点，另有一条带折角的线状红色划痕，自下边缘附近向晶圆中下部延伸，线旁伴少量聚集点",
+      "radial_zone": "中间",
+      "clock_direction": "7-8点",
+      "extent_r": null,
+      "caption_zh": "晶圆整体以绿色pass为主，红色fail呈稀疏散点遍布全圆，并在左下方7-8点方位有一条带折角的线状划痕从中下部延伸至下边缘，覆盖范围较小。",
+      "uncertainty": "中——划痕形态清晰但走向有折角，与散点并存，类别以Scratch为主判断，不排除叠加随机fail。"
+    }
+  },
+  {
+    "item_id": "wbg0401",
+    "image_sha256": "75df5b5cc7cc5a4e14a706e0cf7453d60ceac51ce042c6a6ac3c771a6c02a039",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail die以较高密度随机散布于整个晶圆，红绿混杂，无任何线状、环状或局部聚集的几何结构，仅中心附近略密",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die高密度且大体均匀地随机散布在整个晶圆表面，占比约四五成，无集中方位和几何形态。",
+      "uncertainty": "低——随机分布特征明显，全圆各处密度接近。"
+    }
+  },
+  {
+    "item_id": "wbg0402",
+    "image_sha256": "e2a5ab37d7010626bd9c6258ccf41155889695a54a071aeb8f34c4ffb05e9818",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "红色fail呈稀疏散点遍布全圆，另见两条线状条纹：一条位于左上自边缘向内斜伸，一条位于下方近垂直并带横向小枝",
+      "radial_zone": "边缘",
+      "clock_direction": "10-11点及6点",
+      "extent_r": null,
+      "caption_zh": "晶圆以绿色pass为主，红色散点稀疏分布于全圆，并在左上10-11点方位和下方6点方位各有一条自边缘向内延伸的线状划痕，整体覆盖程度较低。",
+      "uncertainty": "中——两条划痕均较短且散点背景明显，划痕走向判读存在一定模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0403",
+    "image_sha256": "6d944097e85e09a5ea02d41153dd5404041b5e17ebc87de787c7444a170a828b",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "一条粗的水平直线状红色划痕自左边缘横贯至圆心附近，圆心处红色加粗并形成聚集块，全圆另有稀疏散点",
+      "radial_zone": "中间",
+      "clock_direction": "9点",
+      "extent_r": null,
+      "caption_zh": "红色fail以一条水平粗直线划痕为主体，从左边缘9点方位一直延伸到晶圆中心，中心处 fail 密集成块，其余区域仅有稀疏散点，整体覆盖中等偏低。",
+      "uncertainty": "低——水平划痕粗而清晰，形态判读明确。"
+    }
+  },
+  {
+    "item_id": "wbg0404",
+    "image_sha256": "7fb4a2d741e300ef2b6b0a477e1a977939a93876020ac9f38e63f2807fb3cfca",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "中心水平线附近一条细短线状红色划痕，其上方有一列稀疏红色点链自11点方向向下汇聚至划痕，全圆散布稀疏红点",
+      "radial_zone": "中间",
+      "clock_direction": "9-11点",
+      "extent_r": null,
+      "caption_zh": "晶圆整体绿色为主，红色fail在中心偏西的水平位置形成一条细短划痕，并有自上方11点方位向下的点状链汇聚，全圆散点稀疏，覆盖程度低。",
+      "uncertainty": "中——划痕细短且与点链伴生，与粗划痕相比形态较弱，判断为Scratch但存在一定模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0405",
+    "image_sha256": "85cecb2271175e49f9c229543c1dc8196039bf71e241068b0fd3bf8126b0ac5c",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "红色fail稀疏散布全圆，右中偏外处有一小簇由多条水平短线组成的横向条带群，左下方另见零星水平短线",
+      "radial_zone": "中间",
+      "clock_direction": "4点",
+      "extent_r": null,
+      "caption_zh": "晶圆以绿色pass为主，红色fail散点稀疏分布全圆，并在右中4点方位的中间带形成一小簇水平短线状聚集，覆盖范围小。",
+      "uncertainty": "中——横向短线簇面积小，介于局部聚集与轻微划痕之间，倾向判为Scratch。"
+    }
+  },
+  {
+    "item_id": "wbg0406",
+    "image_sha256": "1633bd1e4f15887388fb51efb4ad6be49bf30fd7bb271ed7eb13005ed6173b4b",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "晶圆正中心一处致密的红色实心团块，并有稀疏红色点链自中心向左上10-11点方向延伸，全圆另有稀疏散点",
+      "radial_zone": "中心",
+      "clock_direction": "中心（点链偏向10-11点）",
+      "extent_r": null,
+      "caption_zh": "红色fail在晶圆正中心聚集成一小块致密团块，尺寸约占半径五分之一，并向左上方向拖出稀疏点链，其余区域散点稀疏。",
+      "uncertainty": "低——中心致密团块特征明确，Center判断把握较大，点链为次要伴生特征。"
+    }
+  }
+]

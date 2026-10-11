@@ -1,0 +1,15 @@
+{
+ "generated_at_local": "2026-10-10T23:34:47",
+ "generated_at_utc": "2026-10-10T15:34:47Z",
+ "purpose": "内容复核30轮 第1步：84图机械独立复核（PNG SHA现算 + 检查器复跑）",
+ "planned": 84,
+ "image_exists": 84,
+ "image_sha_match": 84,
+ "raw_exists": 84,
+ "schema_ok": 84,
+ "schema_fail": [],
+ "rows_with_warnings": 48,
+ "duplicate_raw_sha_groups": {},
+ "old_dir_read_only": "D:\\pycode\\晶圆图研究\\协作\\04_WorkBuddy_复核\\方向形态84_v3_20261010_200950",
+ "note": "仅机械核验：不证明当时真实读图/后端请求，不重建执行时证据；本次时间戳为本表生成时间。"
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0295",
+    "image_sha256": "c2ec0bf5ff6e281af584516e30c82d82b7b849042d676c0540f4b7fb4b77b2b8",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红绿两种die在整圆内随机交错混杂，看不出任何成块、成环或成线的结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "整张晶圆上失效die与合格die完全随机穿插，红绿占比大致相当，覆盖整个圆面且无任何集中区域。",
+      "uncertainty": "中：红绿边界为像素级噪声样式，占比按目测约一半，无集中结构这一点判断较为明确。"
+    }
+  },
+  {
+    "item_id": "wbg0296",
+    "image_sha256": "9e6b2e2d7294e0f5616b5b73f85835a71f55e08fe5f11ff4afec3855bed00ffb",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "散点状随机失效，整体散布，红色颗粒在圆心中部一带略微密集，外围以绿色为底",
+      "radial_zone": "中间",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "失效die以小颗粒形式随机散布全圆，密度向圆心中部略有抬升，红色约占四成，边缘一圈绿底更明显。",
+      "uncertainty": "中：中心略密的观感较弱，不排除是随机涨落，仍以随机散点为主要判断。"
+    }
+  },
+  {
+    "item_id": "wbg0297",
+    "image_sha256": "595be29ed037d240955c3691932e2dc5c644d794d6735a775147b8c3e5f2cb96",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "全圆随机混杂失效，红绿像素互相咬合呈噪声状，中心附近红色略显稠密",
+      "radial_zone": "中间",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红绿die在全圆范围内随机交叠，中心偏上区域红色密度稍高并向四周渐稀，整体红约占一半。",
+      "uncertainty": "中：中心与外围密度差不算大，类别在Random与Center之间有犹豫，倾向Random。"
+    }
+  },
+  {
+    "item_id": "wbg0298",
+    "image_sha256": "698962b35e2d655f8903bd1931f4795b0b6ca14964ef0277fc255b158fcfe97c",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "随机散布的红色失效die，颗粒较小且零散，绿底占比更高，无成片或成线结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "失效die以细碎散点形式遍布整圆，红约三五成占比，各处密度大体一致，未见方向性或局部聚团。",
+      "uncertainty": "中：散点很细，具体红绿比例目测误差较大，但无集中区域的结论比较可靠。"
+    }
+  },
+  {
+    "item_id": "wbg0299",
+    "image_sha256": "34e60c831d0c28aabfe3a69ebf13ccaca389bf148a7b10a72882f4759d63d5ae",
+    "raw_answer": {
+      "defect_class": "Near-full",
+      "morphology": "高密度随机失效，红色连绵成片覆盖圆面大部分，绿色仅在上方一带残存成小块",
+      "radial_zone": "中间",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "失效die大面积连片，红约占七成以上且几乎铺满全圆，仅上方残留少量绿色碎块，属接近全片的失效样式。",
+      "uncertainty": "中：密度极高时不易排除隐含的局部Pattern，但整体呈随机高密度覆盖，判Near-full较稳。"
+    }
+  },
+  {
+    "item_id": "wbg0300",
+    "image_sha256": "571826fb8913e27dfc4aef874ff0171614d1ae3159ec216805b9cdb655b1ea08",
+    "raw_answer": {
+      "defect_class": "Near-full",
+      "morphology": "红色近乎淹没整圆，绿色只剩零散碎斑散布其间，随机噪声状高密度失效",
+      "radial_zone": "中间",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色die占据绝对多数并连绵覆盖约八成圆面，绿色仅以零星碎斑形式散布，失效程度接近整片。",
+      "uncertainty": "中：与Random的区分主要靠密度，本图红色占比很高，Near-full判断置信中等。"
+    }
+  },
+  {
+    "item_id": "wbg0301",
+    "image_sha256": "f31e76ac005a940a769bed1a2092d9c5493757d2b9ba78055f2439870aac52f1",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "局部聚集型失效，红色连成一片不规则致密斑块，边缘略有毛刺感，圆面其余部分基本干净",
+      "radial_zone": "中间",
+      "clock_direction": "12-2点",
+      "extent_r": null,
+      "caption_zh": "晶圆绝大部分为绿色，仅上部偏右即12点到2点方位出现一片红色致密聚集区，从中上一直延伸到中部，尺寸约占圆径三分之一。",
+      "uncertainty": "低：斑块结构清晰、背景干净，Loc判断把握较大，仅其是否触及上边缘略有观察误差。"
+    }
+  }
+]

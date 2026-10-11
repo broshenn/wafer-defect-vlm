@@ -1,0 +1,311 @@
+{
+  "passed": 13,
+  "total": 13,
+  "all_passed": true,
+  "cases": [
+    {
+      "name": "合法七字段",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": true,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": true,
+        "schema_problems": [],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "88ac90b8693a34f19296a8e7f3075e90949eb8b3cdc880d166ba4c4ef9928191",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "允许空think前缀",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": true,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": true,
+        "schema_problems": [],
+        "contract_warnings": [],
+        "raw_text": "<think>\n\n</think>\n\n{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "d141a3ee2d53a3e6f21c0f653f327767ce2532a05aedb9a7b0107699c24f5e74",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "clock字符串null主schema仍通过",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": true,
+        "has_contract_warning": true
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": true,
+        "schema_problems": [],
+        "contract_warnings": [
+          "clock_direction_string_null:类型合法，但违反无可靠方向时填JSON null的约定"
+        ],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":\"null\",\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "78e79b5afa2ff7331bcab028411f4279accee5ff5678dd822322a9f8bad98489",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "重复键",
+      "passed": true,
+      "expected": {
+        "strict_json": false,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": false,
+        "parse_status": "duplicate_key",
+        "schema_ok": false,
+        "schema_problems": [
+          "未解析"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\",\"uncertainty\":\"\"}",
+        "raw_sha256": "13c3ca678ffc60809fd2451f03f6e8a0bd16a9954ecf77b926a722711c6e4ff9",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "缺字段",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "缺字段:uncertainty"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\"}",
+        "raw_sha256": "499ba85a7d972ed69af0cfe7d635e168a383e74f540147bffd5dbd9d274d7fdf",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "多字段",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "多字段:extra"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\",\"extra\":\"合成字段\"}",
+        "raw_sha256": "966d128d25c924737ea04467829c1665d783c1a4c083e7dd0a40cc3fb4b095c8",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "类别别名不改写",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "defect_class越界"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"Edge-Ring\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "1ff4b3cdc613f7458b036ddea625b4c755a175c4c80c702ca059abc1d7638ca9",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "径向中文非枚举",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "radial_zone越界"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"边缘\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "832078dc59d60670809e25192f5073c4bb59b568518d02c468623f2372d458d3",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "字段类型错误",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "defect_class非字符串",
+          "radial_zone非字符串",
+          "clock_direction类型错",
+          "morphology非字符串",
+          "caption_zh非字符串",
+          "uncertainty非字符串"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":[],\"morphology\":null,\"radial_zone\":1,\"clock_direction\":3,\"extent_r\":null,\"caption_zh\":{},\"uncertainty\":false}",
+        "raw_sha256": "ea4d6bfca6000ec32b87abe1f1f567b8da09b38577619558940d4f9cc275e357",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "extent字符串null不通过",
+      "passed": true,
+      "expected": {
+        "strict_json": true,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": true,
+        "parse_status": "ok",
+        "schema_ok": false,
+        "schema_problems": [
+          "extent_r非null"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":\"null\",\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "7ec9331f5ff13fd68f864e908073c18c8cb89465e91d58b20345aabcb5107847",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "围栏原答失败",
+      "passed": true,
+      "expected": {
+        "strict_json": false,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": false,
+        "parse_status": "not_json",
+        "schema_ok": false,
+        "schema_problems": [
+          "未解析"
+        ],
+        "contract_warnings": [],
+        "raw_text": "```json\n{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}\n```",
+        "raw_sha256": "50cced99453ec8c0f6bd854f1819dafeaca2ec077f38d36c85c5b65b0321f826",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "多对象尾随",
+      "passed": true,
+      "expected": {
+        "strict_json": false,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": false,
+        "parse_status": "multiple_objects",
+        "schema_ok": false,
+        "schema_problems": [
+          "未解析"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}\n{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "0f8c711ab8392875e064232000b43e665b5da7fa59b1b7e2a541fd049c78facb",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    },
+    {
+      "name": "非有限常量",
+      "passed": true,
+      "expected": {
+        "strict_json": false,
+        "schema_ok": false,
+        "has_contract_warning": false
+      },
+      "actual": {
+        "strict_json": false,
+        "parse_status": "non_finite",
+        "schema_ok": false,
+        "schema_problems": [
+          "未解析"
+        ],
+        "contract_warnings": [],
+        "raw_text": "{\"defect_class\":\"unknown\",\"morphology\":\"离线合成检查文本\",\"radial_zone\":\"unknown\",\"clock_direction\":null,\"extent_r\":NaN,\"caption_zh\":\"离线合成检查文本\",\"uncertainty\":\"\"}",
+        "raw_sha256": "a53109e5663e190e72e4907bfada464397d07aecd6067674bdc798b947fc8bfb",
+        "canonical_object_sha256": null,
+        "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+        "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold"
+      }
+    }
+  ],
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "note": "全部为离线合成反例，无真实图片标签或模型答案",
+  "frozen_schema_comparison": "13/13 verdicts equal; source function compiled alone, no source side effects",
+  "prompt_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda"
+}

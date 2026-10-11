@@ -1,0 +1,22 @@
+# 新清单_sha256.txt —— 追加记录_20261011_0133 全目录（修正制作顺序后的清单）
+# 生成：2026-10-10T17:45:13Z（UTC）
+# 规则：汇总与一览（终版副本/）及全部说明、程序、程序结果先完成，本清单最后生成；生成后不重写任何被包含文件。
+# 清单外文件（有意排除）：新清单_sha256.txt（自身）；程序D_核验结果.json（按设计在清单之后生成）。
+# 格式：<sha256>  <相对路径>（相对本目录，POSIX分隔符）
+
+59bd393e145cc4113dfbeb982eb7d9be66f3250be12a591b85206947c3361f34  wbv3_064_描述对象说明.md
+2ef6c6af762fcf578359c52b3b092816c9c3340c20561156620bd5ae8936ed14  时间顺序矛盾核查.md
+d42d99a06fb5fdd75bd72eefd6c4faf9a4aa03a00b68431442e40ed224e2be24  真实日志索引.md
+8a02e8ae7a548206d913965b949a50d817ed80c653a9e4984273360e473057c5  程序A_审计日志时间线.json
+7e6ed501e9eddda55596278e952a84cfbad862610df4c58a3b889c4467b68dbd  程序A_审计日志时间线.py
+f2e22a82b660e40a163e92c7de02fe7eaf0fb9e7c48d5b8d2f6f4cce91d6593f  程序B_矛盾分类.json
+a1e4b79326aebbd5a16bc65d29fce89dcd19d708eab7ca75a588cbbbb70433b1  程序B_矛盾分类.py
+84957b1a2a764c554e997241542bd89e30758601b8611d4b65eee5e807d9f87e  程序C_056哈希字符差异.json
+d61820795c07fa395ea2802abf5bcd642bccb27d03ebf19fcc3b4bcd2da1a768  程序C_056哈希字符差异.py
+6a7f0bad07294b809714db2f12632fb748736ad7174a8479a053bc0c23d96b75  程序D_独立核验新目录.py
+b469f27c63c672981ba96fc3bef4dfb401dfc618991bb69a3131a520badbed34  程序E_生成核查报告.py
+0c1486627c00d3599889cdd8a0fd65009b8819e8281403327fefa08d8b591a03  程序F_生成终版副本.py
+a42b46eb11b20fcd6084827cae6de925560fc357b6e3280cebb9def8cc3ae386  终版副本/30图复核结果一览_v2.md
+dc918bfcf3e4c3cc6c410378084b0e95597aea424f25f4eebc0606f208b2d6e3  终版副本/final_summary_v2.json
+f6bc409efcd4dc212721deb0a769eca63745412f152ffe024935fd4ec25c2a49  证据来源与声明降级.md
+3c252f8beb0a758ef1e49082abf82af12a1752daa85d1895533e0a930696d02e  追加说明_总览.md

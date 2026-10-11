@@ -1,0 +1,13 @@
+<think>
+
+</think>
+
+{
+"defect_class": "Random",
+"morphology": "分散的红色像素点",
+"radial_zone": "global",
+"clock_direction": null,
+"extent_r": null,
+"caption_zh": "红色失效点随机分散分布于整个晶圆区域",
+"uncertainty": ""
+}

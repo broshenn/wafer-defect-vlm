@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die零散随机分布在整个晶圆，边缘处略密，无明显条带或大块聚集\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die零散随机散布于整个晶圆，边缘略有增多，无可见空间聚集模式\",\"uncertainty\":\"边缘与内部密度差异轻微，不排除边缘略偏多\"}\n",
+  "raw_sha256": "d473c07f1909eff25fc980c66b2f22b6ab073451fb4c84a5e51cb9ae73eb94df",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "d473c07f1909eff25fc980c66b2f22b6ab073451fb4c84a5e51cb9ae73eb94df",
+  "input_path": "raw/wbe0095.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

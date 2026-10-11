@@ -1,0 +1,4193 @@
+{
+  "date": "2026-10-08T21:42:57+08:00",
+  "topic": "相同七字段题面中的类别成绩；不是描述正确率",
+  "integrity": {
+    "rows": 102,
+    "strict_json": 102,
+    "schema_ok": 102,
+    "warnings": 0,
+    "chain_verified": true
+  },
+  "metrics": {
+    "dev18": {
+      "GLM-WorkBuddy": {
+        "n": 18,
+        "correct": 7,
+        "accuracy": 0.3888888888888889,
+        "macro_f1_fixed9": 0.35432098765432096,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 1,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.25,
+            "recall": 0.5,
+            "f1": 0.3333333333333333
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Random": {
+            "support": 2,
+            "tp": 1,
+            "fp": 6,
+            "fn": 1,
+            "precision": 0.14285714285714285,
+            "recall": 0.5,
+            "f1": 0.2222222222222222
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "none": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Random": 1,
+            "Center": 1
+          },
+          "Donut": {
+            "Loc": 2
+          },
+          "Edge_Loc": {
+            "Random": 1,
+            "Loc": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 1,
+            "Random": 1
+          },
+          "Loc": {
+            "Center": 1,
+            "Loc": 1
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Near_full": 1,
+            "Random": 1
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Random": 1
+          },
+          "none": {
+            "Random": 2
+          }
+        }
+      },
+      "Base": {
+        "n": 18,
+        "correct": 1,
+        "accuracy": 0.05555555555555555,
+        "macro_f1_fixed9": 0.07407407407407407,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 0,
+            "fp": 4,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "none": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "INVALID": 2
+          },
+          "Donut": {
+            "Random": 1,
+            "INVALID": 1
+          },
+          "Edge_Loc": {
+            "INVALID": 2
+          },
+          "Edge_Ring": {
+            "Random": 2
+          },
+          "Loc": {
+            "INVALID": 1,
+            "Loc": 1
+          },
+          "Near_full": {
+            "INVALID": 2
+          },
+          "Random": {
+            "INVALID": 2
+          },
+          "Scratch": {
+            "Random": 1,
+            "INVALID": 1
+          },
+          "none": {
+            "INVALID": 2
+          }
+        }
+      },
+      "Base-fence-diagnostic": {
+        "n": 18,
+        "correct": 4,
+        "accuracy": 0.2222222222222222,
+        "macro_f1_fixed9": 0.15925925925925927,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 0,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 2,
+            "fp": 11,
+            "fn": 0,
+            "precision": 0.15384615384615385,
+            "recall": 1.0,
+            "f1": 0.26666666666666666
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "none": {
+            "support": 2,
+            "tp": 0,
+            "fp": 0,
+            "fn": 2,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 1,
+            "Random": 1
+          },
+          "Donut": {
+            "Random": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Random": 2
+          },
+          "Loc": {
+            "Random": 1,
+            "Loc": 1
+          },
+          "Near_full": {
+            "Edge_Loc": 2
+          },
+          "Random": {
+            "Random": 2
+          },
+          "Scratch": {
+            "Random": 2
+          },
+          "none": {
+            "Random": 2
+          }
+        }
+      },
+      "L-N3072-3407": {
+        "n": 18,
+        "correct": 15,
+        "accuracy": 0.8333333333333334,
+        "macro_f1_fixed9": 0.8296296296296296,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "none": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 2
+          },
+          "Donut": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Random": 2
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Edge_Loc": 1
+          },
+          "none": {
+            "none": 2
+          }
+        }
+      },
+      "D-N3072-3407": {
+        "n": 18,
+        "correct": 14,
+        "accuracy": 0.7777777777777778,
+        "macro_f1_fixed9": 0.7814814814814814,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 1,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.5,
+            "f1": 0.5
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 1,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.3333333333333333,
+            "recall": 0.5,
+            "f1": 0.4
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "none": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 1,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Random": 2
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Edge_Loc": 1
+          },
+          "none": {
+            "none": 2
+          }
+        }
+      },
+      "D-N3072-3408": {
+        "n": 18,
+        "correct": 14,
+        "accuracy": 0.7777777777777778,
+        "macro_f1_fixed9": 0.7777777777777778,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 2,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "none": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 1,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Loc": 2
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Random": 2
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Random": 1
+          },
+          "none": {
+            "none": 1,
+            "Random": 1
+          }
+        }
+      },
+      "D-N3072-3409": {
+        "n": 18,
+        "correct": 14,
+        "accuracy": 0.7777777777777778,
+        "macro_f1_fixed9": 0.782010582010582,
+        "per_class": {
+          "Center": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Edge_Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 2,
+            "tp": 2,
+            "fp": 3,
+            "fn": 0,
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285714
+          },
+          "Near_full": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 2,
+            "tp": 2,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Scratch": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "none": {
+            "support": 2,
+            "tp": 1,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 1,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 1,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 2
+          },
+          "Loc": {
+            "Loc": 2
+          },
+          "Near_full": {
+            "Near_full": 2
+          },
+          "Random": {
+            "Random": 2
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Edge_Loc": 1
+          },
+          "none": {
+            "none": 1,
+            "Loc": 1
+          }
+        }
+      }
+    },
+    "val84": {
+      "GLM-WorkBuddy": {
+        "n": 84,
+        "correct": 28,
+        "accuracy": 0.3333333333333333,
+        "macro_f1_fixed9": 0.3274782204556394,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 0,
+            "fp": 6,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 1,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.1,
+            "f1": 0.18181818181818182
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 6,
+            "fp": 2,
+            "fn": 4,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 4,
+            "fp": 9,
+            "fn": 6,
+            "precision": 0.3076923076923077,
+            "recall": 0.4,
+            "f1": 0.34782608695652173
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 3,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75
+          },
+          "Random": {
+            "support": 10,
+            "tp": 7,
+            "fp": 36,
+            "fn": 3,
+            "precision": 0.16279069767441862,
+            "recall": 0.7,
+            "f1": 0.2641509433962264
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 7,
+            "fp": 2,
+            "fn": 3,
+            "precision": 0.7777777777777778,
+            "recall": 0.7,
+            "f1": 0.7368421052631579
+          },
+          "none": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Loc": 3,
+            "Random": 7
+          },
+          "Donut": {
+            "Loc": 2,
+            "Random": 2,
+            "Donut": 1,
+            "Center": 5
+          },
+          "Edge_Loc": {
+            "Random": 6,
+            "Edge_Ring": 2,
+            "Loc": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 6,
+            "Random": 4
+          },
+          "Loc": {
+            "Loc": 4,
+            "Random": 4,
+            "Scratch": 2
+          },
+          "Near_full": {
+            "Near_full": 3,
+            "Loc": 1
+          },
+          "Random": {
+            "Random": 7,
+            "Center": 1,
+            "Loc": 1,
+            "Near_full": 1
+          },
+          "Scratch": {
+            "Scratch": 7,
+            "Random": 3
+          },
+          "none": {
+            "Random": 10
+          }
+        }
+      },
+      "Base": {
+        "n": 84,
+        "correct": 4,
+        "accuracy": 0.047619047619047616,
+        "macro_f1_fixed9": 0.03065134099616858,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 0,
+            "fp": 1,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 0,
+            "fp": 3,
+            "fn": 10,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 4,
+            "fp": 15,
+            "fn": 6,
+            "precision": 0.21052631578947367,
+            "recall": 0.4,
+            "f1": 0.27586206896551724
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "none": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Random": 1,
+            "INVALID": 9
+          },
+          "Donut": {
+            "Loc": 2,
+            "INVALID": 6,
+            "Random": 2
+          },
+          "Edge_Loc": {
+            "INVALID": 7,
+            "Edge_Ring": 1,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Random": 9,
+            "INVALID": 1
+          },
+          "Loc": {
+            "INVALID": 10
+          },
+          "Near_full": {
+            "INVALID": 4
+          },
+          "Random": {
+            "Random": 4,
+            "INVALID": 6
+          },
+          "Scratch": {
+            "INVALID": 9,
+            "Loc": 1
+          },
+          "none": {
+            "INVALID": 9,
+            "Random": 1
+          }
+        }
+      },
+      "Base-fence-diagnostic": {
+        "n": 84,
+        "correct": 15,
+        "accuracy": 0.17857142857142858,
+        "macro_f1_fixed9": 0.10404410404410405,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 1,
+            "fp": 3,
+            "fn": 9,
+            "precision": 0.25,
+            "recall": 0.1,
+            "f1": 0.14285714285714285
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 4,
+            "fp": 7,
+            "fn": 6,
+            "precision": 0.36363636363636365,
+            "recall": 0.4,
+            "f1": 0.38095238095238093
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 0,
+            "fp": 0,
+            "fn": 4,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 9,
+            "fp": 59,
+            "fn": 1,
+            "precision": 0.1323529411764706,
+            "recall": 0.9,
+            "f1": 0.23076923076923078
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 1,
+            "fp": 0,
+            "fn": 9,
+            "precision": 1.0,
+            "recall": 0.1,
+            "f1": 0.18181818181818182
+          },
+          "none": {
+            "support": 10,
+            "tp": 0,
+            "fp": 0,
+            "fn": 10,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Random": 9,
+            "Loc": 1
+          },
+          "Donut": {
+            "Loc": 3,
+            "Random": 7
+          },
+          "Edge_Loc": {
+            "Random": 8,
+            "Edge_Ring": 2
+          },
+          "Edge_Ring": {
+            "Random": 9,
+            "Edge_Ring": 1
+          },
+          "Loc": {
+            "Loc": 4,
+            "Random": 6
+          },
+          "Near_full": {
+            "Random": 2,
+            "Edge_Ring": 1,
+            "Loc": 1
+          },
+          "Random": {
+            "Random": 9,
+            "Loc": 1
+          },
+          "Scratch": {
+            "Scratch": 1,
+            "Random": 8,
+            "Loc": 1
+          },
+          "none": {
+            "Random": 10
+          }
+        }
+      },
+      "L-N3072-3407": {
+        "n": 84,
+        "correct": 77,
+        "accuracy": 0.9166666666666666,
+        "macro_f1_fixed9": 0.9226956279587858,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 8,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 9,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.8181818181818182,
+            "recall": 0.9,
+            "f1": 0.8571428571428571
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 10,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9090909090909091,
+            "recall": 1.0,
+            "f1": 0.9523809523809523
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "none": {
+            "support": 10,
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 9,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 10
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 8,
+            "Edge_Ring": 1,
+            "Random": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 9,
+            "Edge_Loc": 1
+          },
+          "Loc": {
+            "Loc": 9,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 10
+          },
+          "Scratch": {
+            "Scratch": 9,
+            "Loc": 1
+          },
+          "none": {
+            "none": 9,
+            "Edge_Loc": 1
+          }
+        }
+      },
+      "D-N3072-3407": {
+        "n": 84,
+        "correct": 70,
+        "accuracy": 0.8333333333333334,
+        "macro_f1_fixed9": 0.8408298673004555,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 7,
+            "fp": 0,
+            "fn": 3,
+            "precision": 1.0,
+            "recall": 0.7,
+            "f1": 0.8235294117647058
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 6,
+            "fp": 2,
+            "fn": 4,
+            "precision": 0.75,
+            "recall": 0.6,
+            "f1": 0.6666666666666666
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 10,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 9,
+            "fp": 3,
+            "fn": 1,
+            "precision": 0.75,
+            "recall": 0.9,
+            "f1": 0.8181818181818182
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 10,
+            "fp": 5,
+            "fn": 0,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "none": {
+            "support": 10,
+            "tp": 6,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 7,
+            "Loc": 2,
+            "Donut": 1
+          },
+          "Donut": {
+            "Donut": 9,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 6,
+            "Edge_Ring": 2,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 10
+          },
+          "Loc": {
+            "Loc": 9,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 10
+          },
+          "Scratch": {
+            "Scratch": 9,
+            "Edge_Loc": 1
+          },
+          "none": {
+            "none": 6,
+            "Edge_Loc": 1,
+            "Random": 2,
+            "Loc": 1
+          }
+        }
+      },
+      "D-N3072-3408": {
+        "n": 84,
+        "correct": 68,
+        "accuracy": 0.8095238095238095,
+        "macro_f1_fixed9": 0.824423951616934,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 5,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 9,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 8,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.8888888888888888,
+            "recall": 0.8,
+            "f1": 0.8421052631578947
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 10,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 9,
+            "fp": 8,
+            "fn": 1,
+            "precision": 0.5294117647058824,
+            "recall": 0.9,
+            "f1": 0.6666666666666666
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 10,
+            "fp": 6,
+            "fn": 0,
+            "precision": 0.625,
+            "recall": 1.0,
+            "f1": 0.7692307692307693
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 7,
+            "fp": 1,
+            "fn": 3,
+            "precision": 0.875,
+            "recall": 0.7,
+            "f1": 0.7777777777777778
+          },
+          "none": {
+            "support": 10,
+            "tp": 6,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 5,
+            "Loc": 4,
+            "Random": 1
+          },
+          "Donut": {
+            "Donut": 9,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 8,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 10
+          },
+          "Loc": {
+            "Loc": 9,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 10
+          },
+          "Scratch": {
+            "Scratch": 7,
+            "Loc": 3
+          },
+          "none": {
+            "none": 6,
+            "Edge_Loc": 1,
+            "Random": 2,
+            "Loc": 1
+          }
+        }
+      },
+      "D-N3072-3409": {
+        "n": 84,
+        "correct": 67,
+        "accuracy": 0.7976190476190477,
+        "macro_f1_fixed9": 0.8053673994850465,
+        "per_class": {
+          "Center": {
+            "support": 10,
+            "tp": 5,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "Edge_Loc": {
+            "support": 10,
+            "tp": 6,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.8571428571428571,
+            "recall": 0.6,
+            "f1": 0.7058823529411765
+          },
+          "Edge_Ring": {
+            "support": 10,
+            "tp": 10,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.8333333333333334,
+            "recall": 1.0,
+            "f1": 0.9090909090909091
+          },
+          "Loc": {
+            "support": 10,
+            "tp": 9,
+            "fp": 8,
+            "fn": 1,
+            "precision": 0.5294117647058824,
+            "recall": 0.9,
+            "f1": 0.6666666666666666
+          },
+          "Near_full": {
+            "support": 4,
+            "tp": 4,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 10,
+            "tp": 10,
+            "fp": 4,
+            "fn": 0,
+            "precision": 0.7142857142857143,
+            "recall": 1.0,
+            "f1": 0.8333333333333334
+          },
+          "Scratch": {
+            "support": 10,
+            "tp": 9,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9,
+            "recall": 0.9,
+            "f1": 0.9
+          },
+          "none": {
+            "support": 10,
+            "tp": 5,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 5,
+            "Loc": 4,
+            "Donut": 1
+          },
+          "Donut": {
+            "Donut": 9,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 6,
+            "Edge_Ring": 2,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 10
+          },
+          "Loc": {
+            "Loc": 9,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 4
+          },
+          "Random": {
+            "Random": 10
+          },
+          "Scratch": {
+            "Scratch": 9,
+            "Loc": 1
+          },
+          "none": {
+            "none": 5,
+            "Edge_Loc": 1,
+            "Loc": 3,
+            "Random": 1
+          }
+        }
+      }
+    },
+    "full102": {
+      "GLM-WorkBuddy": {
+        "n": 102,
+        "correct": 35,
+        "accuracy": 0.3431372549019608,
+        "macro_f1_fixed9": 0.3355453799280273,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 1,
+            "fp": 7,
+            "fn": 11,
+            "precision": 0.125,
+            "recall": 0.08333333333333333,
+            "f1": 0.1
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 1,
+            "fp": 0,
+            "fn": 11,
+            "precision": 1.0,
+            "recall": 0.08333333333333333,
+            "f1": 0.15384615384615385
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 7,
+            "fp": 2,
+            "fn": 5,
+            "precision": 0.7777777777777778,
+            "recall": 0.5833333333333334,
+            "f1": 0.6666666666666666
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 5,
+            "fp": 12,
+            "fn": 7,
+            "precision": 0.29411764705882354,
+            "recall": 0.4166666666666667,
+            "f1": 0.3448275862068966
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 5,
+            "fp": 2,
+            "fn": 1,
+            "precision": 0.7142857142857143,
+            "recall": 0.8333333333333334,
+            "f1": 0.7692307692307693
+          },
+          "Random": {
+            "support": 12,
+            "tp": 8,
+            "fp": 42,
+            "fn": 4,
+            "precision": 0.16,
+            "recall": 0.6666666666666666,
+            "f1": 0.25806451612903225
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 8,
+            "fp": 2,
+            "fn": 4,
+            "precision": 0.8,
+            "recall": 0.6666666666666666,
+            "f1": 0.7272727272727273
+          },
+          "none": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Random": 8,
+            "Center": 1,
+            "Loc": 3
+          },
+          "Donut": {
+            "Loc": 4,
+            "Random": 2,
+            "Donut": 1,
+            "Center": 5
+          },
+          "Edge_Loc": {
+            "Random": 7,
+            "Loc": 3,
+            "Edge_Ring": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 7,
+            "Random": 5
+          },
+          "Loc": {
+            "Center": 1,
+            "Loc": 5,
+            "Random": 4,
+            "Scratch": 2
+          },
+          "Near_full": {
+            "Near_full": 5,
+            "Loc": 1
+          },
+          "Random": {
+            "Near_full": 2,
+            "Random": 8,
+            "Center": 1,
+            "Loc": 1
+          },
+          "Scratch": {
+            "Scratch": 8,
+            "Random": 4
+          },
+          "none": {
+            "Random": 12
+          }
+        }
+      },
+      "Base": {
+        "n": 102,
+        "correct": 5,
+        "accuracy": 0.049019607843137254,
+        "macro_f1_fixed9": 0.039285714285714285,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 0,
+            "fp": 1,
+            "fn": 12,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 1,
+            "fp": 3,
+            "fn": 11,
+            "precision": 0.25,
+            "recall": 0.08333333333333333,
+            "f1": 0.125
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 4,
+            "fp": 19,
+            "fn": 8,
+            "precision": 0.17391304347826086,
+            "recall": 0.3333333333333333,
+            "f1": 0.22857142857142856
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "none": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "INVALID": 11,
+            "Random": 1
+          },
+          "Donut": {
+            "Random": 3,
+            "INVALID": 7,
+            "Loc": 2
+          },
+          "Edge_Loc": {
+            "INVALID": 9,
+            "Edge_Ring": 1,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Random": 11,
+            "INVALID": 1
+          },
+          "Loc": {
+            "INVALID": 11,
+            "Loc": 1
+          },
+          "Near_full": {
+            "INVALID": 6
+          },
+          "Random": {
+            "INVALID": 8,
+            "Random": 4
+          },
+          "Scratch": {
+            "Random": 1,
+            "INVALID": 10,
+            "Loc": 1
+          },
+          "none": {
+            "INVALID": 11,
+            "Random": 1
+          }
+        }
+      },
+      "Base-fence-diagnostic": {
+        "n": 102,
+        "correct": 19,
+        "accuracy": 0.18627450980392157,
+        "macro_f1_fixed9": 0.11880571638636155,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 1,
+            "fp": 0,
+            "fn": 11,
+            "precision": 1.0,
+            "recall": 0.08333333333333333,
+            "f1": 0.15384615384615385
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 0,
+            "fp": 2,
+            "fn": 12,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 1,
+            "fp": 3,
+            "fn": 11,
+            "precision": 0.25,
+            "recall": 0.08333333333333333,
+            "f1": 0.125
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 5,
+            "fp": 8,
+            "fn": 7,
+            "precision": 0.38461538461538464,
+            "recall": 0.4166666666666667,
+            "f1": 0.4
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 0,
+            "fp": 0,
+            "fn": 6,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 11,
+            "fp": 70,
+            "fn": 1,
+            "precision": 0.13580246913580246,
+            "recall": 0.9166666666666666,
+            "f1": 0.23655913978494625
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 1,
+            "fp": 0,
+            "fn": 11,
+            "precision": 1.0,
+            "recall": 0.08333333333333333,
+            "f1": 0.15384615384615385
+          },
+          "none": {
+            "support": 12,
+            "tp": 0,
+            "fp": 0,
+            "fn": 12,
+            "precision": 0,
+            "recall": 0.0,
+            "f1": 0.0
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 1,
+            "Random": 10,
+            "Loc": 1
+          },
+          "Donut": {
+            "Random": 8,
+            "Loc": 4
+          },
+          "Edge_Loc": {
+            "Random": 10,
+            "Edge_Ring": 2
+          },
+          "Edge_Ring": {
+            "Random": 11,
+            "Edge_Ring": 1
+          },
+          "Loc": {
+            "Random": 7,
+            "Loc": 5
+          },
+          "Near_full": {
+            "Edge_Loc": 2,
+            "Random": 2,
+            "Edge_Ring": 1,
+            "Loc": 1
+          },
+          "Random": {
+            "Random": 11,
+            "Loc": 1
+          },
+          "Scratch": {
+            "Random": 10,
+            "Scratch": 1,
+            "Loc": 1
+          },
+          "none": {
+            "Random": 12
+          }
+        }
+      },
+      "L-N3072-3407": {
+        "n": 102,
+        "correct": 92,
+        "accuracy": 0.9019607843137255,
+        "macro_f1_fixed9": 0.9084380032206119,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 11,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9166666666666666,
+            "f1": 0.9565217391304348
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 11,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9166666666666666,
+            "recall": 0.9166666666666666,
+            "f1": 0.9166666666666666
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 10,
+            "fp": 3,
+            "fn": 2,
+            "precision": 0.7692307692307693,
+            "recall": 0.8333333333333334,
+            "f1": 0.8
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 11,
+            "fp": 1,
+            "fn": 1,
+            "precision": 0.9166666666666666,
+            "recall": 0.9166666666666666,
+            "f1": 0.9166666666666666
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 10,
+            "fp": 3,
+            "fn": 2,
+            "precision": 0.7692307692307693,
+            "recall": 0.8333333333333334,
+            "f1": 0.8
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 12,
+            "fp": 1,
+            "fn": 0,
+            "precision": 0.9230769230769231,
+            "recall": 1.0,
+            "f1": 0.96
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 10,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "none": {
+            "support": 12,
+            "tp": 11,
+            "fp": 0,
+            "fn": 1,
+            "precision": 1.0,
+            "recall": 0.9166666666666666,
+            "f1": 0.9565217391304348
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 11,
+            "Loc": 1
+          },
+          "Donut": {
+            "Donut": 11,
+            "Loc": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 10,
+            "Edge_Ring": 1,
+            "Random": 1
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 11,
+            "Edge_Loc": 1
+          },
+          "Loc": {
+            "Donut": 1,
+            "Loc": 10,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 6
+          },
+          "Random": {
+            "Random": 12
+          },
+          "Scratch": {
+            "Scratch": 10,
+            "Edge_Loc": 1,
+            "Loc": 1
+          },
+          "none": {
+            "none": 11,
+            "Edge_Loc": 1
+          }
+        }
+      },
+      "D-N3072-3407": {
+        "n": 102,
+        "correct": 84,
+        "accuracy": 0.8235294117647058,
+        "macro_f1_fixed9": 0.8322171772613218,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 8,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 10,
+            "fp": 2,
+            "fn": 2,
+            "precision": 0.8333333333333334,
+            "recall": 0.8333333333333334,
+            "f1": 0.8333333333333334
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 8,
+            "fp": 3,
+            "fn": 4,
+            "precision": 0.7272727272727273,
+            "recall": 0.6666666666666666,
+            "f1": 0.6956521739130435
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 12,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "f1": 0.9230769230769231
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 10,
+            "fp": 5,
+            "fn": 2,
+            "precision": 0.6666666666666666,
+            "recall": 0.8333333333333334,
+            "f1": 0.7407407407407407
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 12,
+            "fp": 5,
+            "fn": 0,
+            "precision": 0.7058823529411765,
+            "recall": 1.0,
+            "f1": 0.8275862068965517
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 10,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "none": {
+            "support": 12,
+            "tp": 8,
+            "fp": 0,
+            "fn": 4,
+            "precision": 1.0,
+            "recall": 0.6666666666666666,
+            "f1": 0.8
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 8,
+            "Loc": 3,
+            "Donut": 1
+          },
+          "Donut": {
+            "Donut": 10,
+            "Loc": 1,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 8,
+            "Edge_Ring": 2,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 12
+          },
+          "Loc": {
+            "Donut": 1,
+            "Loc": 10,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 6
+          },
+          "Random": {
+            "Random": 12
+          },
+          "Scratch": {
+            "Scratch": 10,
+            "Edge_Loc": 2
+          },
+          "none": {
+            "none": 8,
+            "Edge_Loc": 1,
+            "Random": 2,
+            "Loc": 1
+          }
+        }
+      },
+      "D-N3072-3408": {
+        "n": 102,
+        "correct": 82,
+        "accuracy": 0.803921568627451,
+        "macro_f1_fixed9": 0.8178595918870518,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 6,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 10,
+            "fp": 0,
+            "fn": 2,
+            "precision": 1.0,
+            "recall": 0.8333333333333334,
+            "f1": 0.9090909090909091
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 10,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 12,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 11,
+            "fp": 10,
+            "fn": 1,
+            "precision": 0.5238095238095238,
+            "recall": 0.9166666666666666,
+            "f1": 0.6666666666666666
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 12,
+            "fp": 8,
+            "fn": 0,
+            "precision": 0.6,
+            "recall": 1.0,
+            "f1": 0.75
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 8,
+            "fp": 1,
+            "fn": 4,
+            "precision": 0.8888888888888888,
+            "recall": 0.6666666666666666,
+            "f1": 0.7619047619047619
+          },
+          "none": {
+            "support": 12,
+            "tp": 7,
+            "fp": 0,
+            "fn": 5,
+            "precision": 1.0,
+            "recall": 0.5833333333333334,
+            "f1": 0.7368421052631579
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 6,
+            "Loc": 5,
+            "Random": 1
+          },
+          "Donut": {
+            "Donut": 10,
+            "Loc": 1,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 10,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 12
+          },
+          "Loc": {
+            "Loc": 11,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 6
+          },
+          "Random": {
+            "Random": 12
+          },
+          "Scratch": {
+            "Scratch": 8,
+            "Random": 1,
+            "Loc": 3
+          },
+          "none": {
+            "none": 7,
+            "Random": 3,
+            "Edge_Loc": 1,
+            "Loc": 1
+          }
+        }
+      },
+      "D-N3072-3409": {
+        "n": 102,
+        "correct": 81,
+        "accuracy": 0.7941176470588235,
+        "macro_f1_fixed9": 0.8030016776819846,
+        "per_class": {
+          "Center": {
+            "support": 12,
+            "tp": 6,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          },
+          "Donut": {
+            "support": 12,
+            "tp": 10,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "Edge_Loc": {
+            "support": 12,
+            "tp": 8,
+            "fp": 2,
+            "fn": 4,
+            "precision": 0.8,
+            "recall": 0.6666666666666666,
+            "f1": 0.7272727272727273
+          },
+          "Edge_Ring": {
+            "support": 12,
+            "tp": 12,
+            "fp": 2,
+            "fn": 0,
+            "precision": 0.8571428571428571,
+            "recall": 1.0,
+            "f1": 0.9230769230769231
+          },
+          "Loc": {
+            "support": 12,
+            "tp": 11,
+            "fp": 11,
+            "fn": 1,
+            "precision": 0.5,
+            "recall": 0.9166666666666666,
+            "f1": 0.6470588235294118
+          },
+          "Near_full": {
+            "support": 6,
+            "tp": 6,
+            "fp": 0,
+            "fn": 0,
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0
+          },
+          "Random": {
+            "support": 12,
+            "tp": 12,
+            "fp": 4,
+            "fn": 0,
+            "precision": 0.75,
+            "recall": 1.0,
+            "f1": 0.8571428571428571
+          },
+          "Scratch": {
+            "support": 12,
+            "tp": 10,
+            "fp": 1,
+            "fn": 2,
+            "precision": 0.9090909090909091,
+            "recall": 0.8333333333333334,
+            "f1": 0.8695652173913043
+          },
+          "none": {
+            "support": 12,
+            "tp": 6,
+            "fp": 0,
+            "fn": 6,
+            "precision": 1.0,
+            "recall": 0.5,
+            "f1": 0.6666666666666666
+          }
+        },
+        "confusion": {
+          "Center": {
+            "Center": 6,
+            "Loc": 5,
+            "Donut": 1
+          },
+          "Donut": {
+            "Donut": 10,
+            "Loc": 1,
+            "Random": 1
+          },
+          "Edge_Loc": {
+            "Edge_Loc": 8,
+            "Edge_Ring": 2,
+            "Random": 2
+          },
+          "Edge_Ring": {
+            "Edge_Ring": 12
+          },
+          "Loc": {
+            "Loc": 11,
+            "Scratch": 1
+          },
+          "Near_full": {
+            "Near_full": 6
+          },
+          "Random": {
+            "Random": 12
+          },
+          "Scratch": {
+            "Scratch": 10,
+            "Edge_Loc": 1,
+            "Loc": 1
+          },
+          "none": {
+            "none": 6,
+            "Loc": 4,
+            "Edge_Loc": 1,
+            "Random": 1
+          }
+        }
+      }
+    }
+  },
+  "format_full102": {
+    "GLM-WorkBuddy": {
+      "strict_json": 102,
+      "schema_ok": 102,
+      "clock_string_null": 0,
+      "warnings": 0
+    },
+    "Base": {
+      "strict_json": 28,
+      "schema_ok": 28,
+      "clock_string_null": 0
+    },
+    "L-N3072-3407": {
+      "strict_json": 102,
+      "schema_ok": 98,
+      "clock_string_null": 96
+    },
+    "D-N3072-3407": {
+      "strict_json": 102,
+      "schema_ok": 101,
+      "clock_string_null": 52
+    },
+    "D-N3072-3408": {
+      "strict_json": 102,
+      "schema_ok": 102,
+      "clock_string_null": 64
+    },
+    "D-N3072-3409": {
+      "strict_json": 102,
+      "schema_ok": 101,
+      "clock_string_null": 55
+    }
+  },
+  "paired": {
+    "val84": {
+      "L-N3072-3407 minus GLM": {
+        "a_minus_b_accuracy": 0.5833333333333333,
+        "accuracy_paired_bootstrap95": [
+          0.4642857142857143,
+          0.6904761904761905
+        ],
+        "a_minus_b_macro_f1": 0.5952174075031464,
+        "macro_f1_paired_bootstrap95": [
+          0.5065506688695095,
+          0.6939087914923527
+        ],
+        "a_win_b_loss": 50,
+        "a_loss_b_win": 1,
+        "mcnemar_exact_two_sided_p": 4.618527782440651e-14,
+        "bootstrap_n": 5000,
+        "seed": 3407,
+        "unit": "同一晶圆配对；本102图恰为102个不同lot；开发集条件结果"
+      },
+      "D-N3072-3407 minus GLM": {
+        "a_minus_b_accuracy": 0.5,
+        "accuracy_paired_bootstrap95": [
+          0.39285714285714285,
+          0.6071428571428572
+        ],
+        "a_minus_b_macro_f1": 0.513351646844816,
+        "macro_f1_paired_bootstrap95": [
+          0.4109851399529818,
+          0.6175586716585952
+        ],
+        "a_win_b_loss": 42,
+        "a_loss_b_win": 0,
+        "mcnemar_exact_two_sided_p": 4.547473508864641e-13,
+        "bootstrap_n": 5000,
+        "seed": 3407,
+        "unit": "同一晶圆配对；本102图恰为102个不同lot；开发集条件结果"
+      }
+    }
+  },
+  "backend_disclosure": "GLM为WorkBuddy显示型号；后台注入/真实参数/精确后端标识未知；客户端记录不证明实际后端请求",
+  "gold_source": "公开manifest.failure_type；只用于类别评分。形态/位置/方向/Caption仍无独立gold。",
+  "raw_records": [
+    {
+      "item_id": "wbe0001",
+      "sample_id": "wafer_00003298_021",
+      "image_sha256": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01",
+      "raw_sha256": "eef689f4d30db9ff5d62f436deeae8a9ec54359391f51bdece0a2d000e8ddf3c",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0002",
+      "sample_id": "wafer_00003822_012",
+      "image_sha256": "4edfae3cc4146d60d1bc17ddcfc2127021e01ecb0beba67c051590e51f090c71",
+      "raw_sha256": "ac3e97240135eed8cd718278bd7b1c4eba208a32e7a4fec137d6dc3687ce1b13",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0003",
+      "sample_id": "wafer_00018023_017",
+      "image_sha256": "0e03c92eabc31c73e7ddbe4c342a8ff161714034108aef0eed0faebe586a4088",
+      "raw_sha256": "c5cd03c4614d49cea21180d870b1fb6c42c2f8e83d928fd89fb7452b0cd872f8",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0004",
+      "sample_id": "wafer_00029697_025",
+      "image_sha256": "fec3ac2112549c882f4f42761356bef023ae782ef556b5d7b459b614f18b0b04",
+      "raw_sha256": "b0998259bc727cd2aba6b254d05f0a614f7e5a0fab92bd81f824fa475bf6d1f7",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0005",
+      "sample_id": "wafer_00032899_015",
+      "image_sha256": "e748920456342903543ba6803b2a251a55c3ad0408c04bb565271a964f0d6646",
+      "raw_sha256": "899efdf74b4e445e5fcf0388ea8edb78e9ad04e92ddafe5724da74101d26b3c6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0006",
+      "sample_id": "wafer_00039578_021",
+      "image_sha256": "f7899dd7f7ca7f5e4d483ac8e2215d32ad40f25f1d5b0cfabd5e47c281d48427",
+      "raw_sha256": "90798a0de8797ad1d8785dec08a79588bcffda16d517baaf15113371641867f2",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0007",
+      "sample_id": "wafer_00040556_007",
+      "image_sha256": "769c2d90c9742ec3de4db39770a2f3f718c69236a8602ce68bf4a844c7bfdc39",
+      "raw_sha256": "34ad91f49b5e4c6cf59865174d12c67abfabe1e3576374ec4fb332512aa7d31f",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0008",
+      "sample_id": "wafer_00041108_014",
+      "image_sha256": "a07d7c870dd31d483766f754a943ec2f1d93bbb7c593368c43b21c7d1e51adf4",
+      "raw_sha256": "57a46d6af5077b9f28b5231aa0b58ea9af7ae537a842025fdf4bf5608a1c8597",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0009",
+      "sample_id": "wafer_00042202_013",
+      "image_sha256": "789a559d5d024fb1c8ecd3d3c811b69a33da0ac83b6a037606b343c299f2d121",
+      "raw_sha256": "6c0d8e95b561a7bd9a39a2a1646cc3ef18fa2cc55fb397b2dc780319f1e2dbcd",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0010",
+      "sample_id": "wafer_00042778_024",
+      "image_sha256": "5a080c63fe5fd8331d09c6c9f8942983e26b08fb67fc9c84aa7b0041bdbdda01",
+      "raw_sha256": "6dc1bc37bfd9e188bc8377228c4c6b279974d939571cf19f086d3cca72f3b911",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0011",
+      "sample_id": "wafer_00043183_023",
+      "image_sha256": "84ab39c592a057d6c7edd254310faa220af9bb67e8f35203f1db734c2fda77bf",
+      "raw_sha256": "89f23287208e4168ea20e2c20851d1c13a0d93107bd27e5c14985e5cd5f30c55",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0012",
+      "sample_id": "wafer_00043921_007",
+      "image_sha256": "035b169f2d0688b57d86ac0b606a98f5c8d55628cbf3cfc8f6217d63a5fdde1c",
+      "raw_sha256": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0013",
+      "sample_id": "wafer_00043980_001",
+      "image_sha256": "b50d8fa445a090865398fc2de2d3a7620eea1dd0da06fc002777d0bd49acdc0d",
+      "raw_sha256": "00c22242b20079f2e2974c6206bdb85af10e84891bd0c66463e316d63d3ea94b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0014",
+      "sample_id": "wafer_00044300_025",
+      "image_sha256": "7e9470560bdf303221418e3e21311f403fcf63de4a0525004450567c7a0a3df3",
+      "raw_sha256": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0015",
+      "sample_id": "wafer_00045337_006",
+      "image_sha256": "5590d5962a80fbeb0eb5fa77c72ef875d062fd6de07fc797926699ce3252bd57",
+      "raw_sha256": "7f8153b7fd4dad22644d1615ca5a3acd5cf68fd57b955f0757f872c715a2e952",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0016",
+      "sample_id": "wafer_00045589_021",
+      "image_sha256": "4489e5f388a7cc67af30f8f8732600a9537c9e5e79d66ed60ac006e97b172783",
+      "raw_sha256": "7d6960cd38b7d2cea5e245331c1d1b4fc5e3b9e8a2f165b16e30542768356c8d",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0017",
+      "sample_id": "wafer_00046667_020",
+      "image_sha256": "96f2bda39c9ca27b23249176323fc027bf30e0ee3d58f282517f184fb2a4487c",
+      "raw_sha256": "32645b310d47270c9e32983bc5b56379247139e15afd4eb91f44efffbc7c99b5",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0018",
+      "sample_id": "wafer_00047246_025",
+      "image_sha256": "4790fffb5da31c43e8eed14b6b74f6a5ea0211c82e35604db3d39653a416518c",
+      "raw_sha256": "2fcf34664cfb1c12d8163def2ab04dab8687a6693aa2690d2b5e5bdcdebc74d3",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0019",
+      "sample_id": "wafer_00039556_022",
+      "image_sha256": "45872942feea750887d64a0413e2208aca1e6c37562eda71ab4ff49cead087e4",
+      "raw_sha256": "e03ac4fb702217aa4d9d0848bf4f2def65d033c8feefb86b39f3920d062b7a3a",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0020",
+      "sample_id": "wafer_00036657_013",
+      "image_sha256": "8cfaef77f012ab792c0648f58a34cafb57ba49a701a71b4ffae0976c333a5baa",
+      "raw_sha256": "1710ccf6f751833cd1a299e5209145cc465bb8024f514250acccf5abc4f1dc25",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0021",
+      "sample_id": "wafer_00017090_014",
+      "image_sha256": "15b27a0265798ecc3ee4ab6f9f93ce330304b5ea5b83fdc4c2d44057811a0e5b",
+      "raw_sha256": "0051480f8d878e17b6853272ec9448b9b5665d951917627dcfbf0e97d0ce4698",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0022",
+      "sample_id": "wafer_00036696_019",
+      "image_sha256": "fbdb46c2caf6ba24911f595c37aa9dfeff70f64e4d1f36a4a6f51871cd912574",
+      "raw_sha256": "22da3159e792cda6ee0c49c53348e8d7d4cccb3f777128c39d23b9327f5abe77",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0023",
+      "sample_id": "wafer_00036552_023",
+      "image_sha256": "2d227f67185880261aef0e53f90a5089ec873687fe1a76563d0082813143a766",
+      "raw_sha256": "bbaf0e93fa46424ef3a5bf24d7f08c3f18c1b04b38afd502d0f9d67ccf6b20a6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0024",
+      "sample_id": "wafer_00008368_011",
+      "image_sha256": "9acdeb780909e2319f1cb440854a1765dc79b56e8a246917ed8ed41f942ea331",
+      "raw_sha256": "34cc59ccab32949a18b1fcf60a29fa3d370b83522a5969a941312351cdffc6e9",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0025",
+      "sample_id": "wafer_00042841_008",
+      "image_sha256": "124211e25c2592ef7e4b8cde16561e8870cf4864ac759bfb5945482ed23d9cee",
+      "raw_sha256": "a6f8c48d52d4f2174697d4a34c7ed4cc8a4cf6697e062a5c23e441c59469df93",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0026",
+      "sample_id": "wafer_00045258_003",
+      "image_sha256": "f31b58acdb443a490bdb32651f67d4f3955929ceb19e645a549d620569dfaddf",
+      "raw_sha256": "f31c6b6d17c77aeff6b591c7b2d55e9c7dfedffb70f2016185fa3551bd3c4deb",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0027",
+      "sample_id": "wafer_00045633_013",
+      "image_sha256": "876e4a175e8c36d968ce5ec59d461f69e84a31d6459e6ee5eb42b6e50653d8c9",
+      "raw_sha256": "f5482b0f2ca9d848549baeaf8323840a63684be638c6120e3b2be2abab9e9374",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0028",
+      "sample_id": "wafer_00036756_010",
+      "image_sha256": "ba2e49b3301d68b23de89abe1b935ca60de03f3694df5606bf99710fb29a16f0",
+      "raw_sha256": "1d293127c5876958f8341e53bfc82633f8b473328947a5416ab8287b7bbb84e2",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0029",
+      "sample_id": "wafer_00017184_005",
+      "image_sha256": "5ee475f149d9acb94ba1a01fe87dd1205c9d8573e47c3b1f66250c922ccb67ce",
+      "raw_sha256": "5dc22f80665be940103d01bba00882b1c6315137b57a34cf12be653a09d3a07b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0030",
+      "sample_id": "wafer_00019251_014",
+      "image_sha256": "2579b651f7f44ba28e51754c5357d71f6c68476e0ea3fcfd3854f98ecbe2b9bf",
+      "raw_sha256": "5395b9e4ac6888fefb710d67babde881a22c28937d5a772ff3ab4502e21db6ba",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0031",
+      "sample_id": "wafer_00017192_004",
+      "image_sha256": "56028d560408e855f625bd1475a78a79a91a8269e625e32830dc330dcb25fb5e",
+      "raw_sha256": "4fd474d153910ce95c1bb505d0f2495bce8e19994ba1b2ce33439e808c29a224",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0032",
+      "sample_id": "wafer_00042302_004",
+      "image_sha256": "94253519004975333a01f051b080992660008c62cca031cb4f58b3d6458a6eb9",
+      "raw_sha256": "9905d222ab44f8913f16858e8df64db6d1857df3ad30710fa96bf31791adc15b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0033",
+      "sample_id": "wafer_00019331_006",
+      "image_sha256": "96cab01956ffd1761dae07ff14ec9fb4ecf6e8e4058c8d0c97c1016b51e2e664",
+      "raw_sha256": "a1f4faa8017fc428ffadfa2a5fcff2a4595f30a88dbae66af877e7db487a133e",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0034",
+      "sample_id": "wafer_00045384_019",
+      "image_sha256": "a006f575db6bc0169ff0fb676d49a2cd7c335ef86b9b5939c51add18a284b6ac",
+      "raw_sha256": "6079a1506b97c6ee33a97f233b81ea3d47e7816fb2af565fe358bee34c17cca9",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0035",
+      "sample_id": "wafer_00042279_025",
+      "image_sha256": "ce57a8331e535a4884e1931f526bb88c6b1dd284526b14a022ee73593c2b3eb3",
+      "raw_sha256": "366300c49d88db4e2de4d2a8616190d3add19776de8d904e90988249422fa4b0",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0036",
+      "sample_id": "wafer_00042241_025",
+      "image_sha256": "c8bc0922bb98c6556590e74c4117bb37effb4d29e8a54de8e4ac7ed7238446c8",
+      "raw_sha256": "1178bd2a9d8d481d4d9f8a7c6ba0d8c2771b94de1480fd777a1707b6fb20d375",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0037",
+      "sample_id": "wafer_00042370_009",
+      "image_sha256": "0551f39d473e855be1821dcd0b2d8af2caa6ee43338bf01b7ab4878f3b045653",
+      "raw_sha256": "725a377ce9714ea5511e6d7c6f981f5d30b95163abbc12af034256f5b54faaf1",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0038",
+      "sample_id": "wafer_00017131_003",
+      "image_sha256": "87ef2323037cbc54a0deafcc2d2f32d82244fb78ffe7302a44d7da3b602a2e5e",
+      "raw_sha256": "9dfc32bb8150a60bdccf247c41727d7fde5394de9f6b42122ab9e6a7d2409659",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0039",
+      "sample_id": "wafer_00045603_008",
+      "image_sha256": "7b2f225b7d6de2a28a56d3744319117d6aaf97026e22eee0d27f8ce04d628649",
+      "raw_sha256": "d806d26f74af102c2b33243bb4a5224c91115a77752b7f273d78db5d4bc8ed5b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0040",
+      "sample_id": "wafer_00045520_016",
+      "image_sha256": "acfcfbdc46e36a9f0a419abea7ec9db2889f3968142f93f109d99758226d0fe8",
+      "raw_sha256": "d1207f0ab03bec2beafa978b9eab1d0ed6e429520021fb52c6b91a50cde544d4",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0041",
+      "sample_id": "wafer_00047511_013",
+      "image_sha256": "bfd0d69e08936a3635f43e0b8306d9d2d6a7061c9c148f01a96e7f62c1061f9a",
+      "raw_sha256": "3146f41184aa38d76290feda5b51f39c1d61577003c548df3ea447f3f3d030c8",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0042",
+      "sample_id": "wafer_00005650_007",
+      "image_sha256": "e6527d5f33b0a864f2b083d44db6a914634ce90c1404dadf5289cbcf6fdabbc5",
+      "raw_sha256": "a0497573e4f703131e9a63f07c2db70ee6e35040de4d97fb8ed48eec460372ba",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0043",
+      "sample_id": "wafer_00045321_016",
+      "image_sha256": "666aaa7cc451d0e40bff9d6fbfabad188a3f310d99ba88b12eb42d7968e5b334",
+      "raw_sha256": "d5d1b8200801ca33f562fd430c329b5f3122231e8d2713f1b04c5de55ec3b899",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0044",
+      "sample_id": "wafer_00043472_005",
+      "image_sha256": "1a64e2efa13f8b7c9f8cf91eaf3d3f0fbca7e343d2536bf6df8be66da4c87f02",
+      "raw_sha256": "b8c85f80a13747831e66a84bb33762b83730c38df5da4b43322e4cddcdd31d67",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0045",
+      "sample_id": "wafer_00021770_008",
+      "image_sha256": "4c00c9f7c894cc1f685e2d823349e60c2c91172bc7ca560727439683bd561b92",
+      "raw_sha256": "87cb0a9e5d30fa71a548044dc62b7ea7e85915b60b1fc7a7b6bfba04dd1166f1",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0046",
+      "sample_id": "wafer_00047411_016",
+      "image_sha256": "e01e287cda84a2cfc1dfbc76bd60ee33439fc3065ba0b2099f836ccf9688e52c",
+      "raw_sha256": "08e97e8694073d43d679710c3baeacb28a0f12a67d8c69c857b963ab419e7874",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0047",
+      "sample_id": "wafer_00042335_025",
+      "image_sha256": "3a36e329dce89f2a0f83cf52336be7b103e30e6815649d25ae90d8698e57566e",
+      "raw_sha256": "a70bc0ad522e089a409e3a16f6f9d6364a9200ff3a5658f156724b0ba3cd542a",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0048",
+      "sample_id": "wafer_00017918_009",
+      "image_sha256": "0d5c71771a666e9c3e8585ddf4217fec2cc6fa587e854befc47fa28be986ace3",
+      "raw_sha256": "52a1f7d8620089eaba506c7159d00ca33883b43d5a71804bc701ce3ffcfb8a4f",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0049",
+      "sample_id": "wafer_00019814_014",
+      "image_sha256": "15feaf927bd0e5cedefb55c598637c7d5709841424291590036be2e7c8109d6f",
+      "raw_sha256": "d2143a98df1856e115fdc8e706d31b194f410dca3e363626bb28223990c0c47f",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0050",
+      "sample_id": "wafer_00012745_007",
+      "image_sha256": "23b51d157c3ea837d4d7c77bddc8b60241caa49d1ed8654b1ce68ed45f30a3c0",
+      "raw_sha256": "406ca4f50113e5026cad5d05ee2df353c220d8d35161086616ab7a42df2cd8d4",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0051",
+      "sample_id": "wafer_00028106_013",
+      "image_sha256": "cffc08636f89b53dd6f83030270aa28b4bea3707d97caaf6919e0dfd6a307d5f",
+      "raw_sha256": "502f9c1078bcc266f5aff2d06bbdb893825d8678d403ea5dbc2e3711e3ceb35b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0052",
+      "sample_id": "wafer_00012760_013",
+      "image_sha256": "056503a15eef25d082fba2b87d05e9a206d6d0fe3e8b1afeee4b8c1974104b4b",
+      "raw_sha256": "1a5ceb3fa23f4690ac3ba4eb0de380c1b4fd4aea5d5179981de56b98a47d19b6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0053",
+      "sample_id": "wafer_00044786_004",
+      "image_sha256": "8d9466beabb70a5cb3d150f1fdcb2f92fb6aa5ab3ce962243da706d1e9eea012",
+      "raw_sha256": "d59e0eeafca759fee8f4a0ffa8244bb7450b148e772af91364b8cd8fb5f068b2",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0054",
+      "sample_id": "wafer_00020098_001",
+      "image_sha256": "49e2d915461f37fd0635368664b0c6fe0f9fec8c42d4dcf4d69a1dc1de132d6e",
+      "raw_sha256": "12375dd1de24dbef5d8f8d83a09407178e6101944e4c4e4940346e9eb095470a",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0055",
+      "sample_id": "wafer_00014538_022",
+      "image_sha256": "4f091009419d556c17120d538403858eab8003a961ece5f5f765ff00fcc04a01",
+      "raw_sha256": "99f2002ebc05b60435d9ac2cfa2abb130a2d0bf8d81b799eafe2db4326ae70c9",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0056",
+      "sample_id": "wafer_00002437_018",
+      "image_sha256": "c32d7342dfa30681974635092125407266755316af99e5186e17348d61ddc319",
+      "raw_sha256": "c9ff074b802217bb0efc91ac9072834d990a2363984687c89dba9eac388e919f",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0057",
+      "sample_id": "wafer_00009337_001",
+      "image_sha256": "4228e66d6429ca5004b4ccaffd0c71d6ac601898db39447222071f0050f2a51f",
+      "raw_sha256": "f8459af24de792b28525a1c7db47ca93db0410dfd6b5584e13b3607348a78425",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0058",
+      "sample_id": "wafer_00011690_007",
+      "image_sha256": "f55f65ede98ec648a9efe1515682ec7ca4610b362db4aa5dd61188d464f372ed",
+      "raw_sha256": "eff20b334897b72b915d3e9a6f88106b0a5a8fe9d8fb6cd2f2d6f6734ce72d8d",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0059",
+      "sample_id": "wafer_00045750_014",
+      "image_sha256": "215595b169572e59a0f222f350778bd038071f187fecd23a49ebab93a96327c2",
+      "raw_sha256": "8e4c7ceaa4a0ed3746c78a7aa12a5daefc7dd78dd2b4ddef2bf4bc9fd4bbd0cf",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0060",
+      "sample_id": "wafer_00044050_019",
+      "image_sha256": "3ef4dca481899a71cf13bb389bd5ec927491b63ae848c93d96054da3936219f6",
+      "raw_sha256": "39653c632b9097ed1e9d91b6c9e12a14b0184c07c83a7f781a0cc99f82d5f57b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0061",
+      "sample_id": "wafer_00042159_013",
+      "image_sha256": "d5d75ab727cf42533329ece3f32c2e40480d829bab19c0794bf6c3f9906ee688",
+      "raw_sha256": "b54bbaf35bc14d98f2933f2f8de468a495925403e59e92a9268f9051d7385934",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0062",
+      "sample_id": "wafer_00026714_009",
+      "image_sha256": "dd5c840d9987740f0973e163f3cfd087d8b4f926c6dc7049ff6c7170963ba7ce",
+      "raw_sha256": "c1252a309b948f3bce2e1d5568d26d5792cdae475020e2a68b508b9fad562c84",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0063",
+      "sample_id": "wafer_00038476_018",
+      "image_sha256": "6ceb3d48a63247ccb9784b77727d653251ca81d7f0463923fd9cb3b759d57573",
+      "raw_sha256": "29e907751a9ae1c2621d8f75a3900e9daef1bfb308dd7194b7317cd79d886d02",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0064",
+      "sample_id": "wafer_00022388_005",
+      "image_sha256": "3bc254c9c71a2399238ad4604fa09c7e1725c1d20d057f3988d02bb49f453efd",
+      "raw_sha256": "8556b12893261e8328553c33ba49f3a7b9f8a7b7bd805cb62d555a6db678e5bf",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0065",
+      "sample_id": "wafer_00042620_020",
+      "image_sha256": "70fe2163672b840d39a235263b04db247fb47ba2f654436b4ccfa5b38bbdde67",
+      "raw_sha256": "0366ce7216141f14cef424d70acbb03e71246c457dade6af2d77f2c97124ef3c",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0066",
+      "sample_id": "wafer_00044354_020",
+      "image_sha256": "c1ae8eee8933f60ca841342b2e63277b026f2e2642a85d26dda647210305e73b",
+      "raw_sha256": "878664e29a1b7a9ac70c0bde1c6b872271aa213513d259bafa61b221c5561cf4",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0067",
+      "sample_id": "wafer_00039941_025",
+      "image_sha256": "8148f45718513925c87ecdd5a5bd9a3a4c91e342212733bcee4a17e011063c59",
+      "raw_sha256": "1fe27d6b7035037652876b4edeb68fbe0b0756512ccdef9d98fc709b9da404fd",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0068",
+      "sample_id": "wafer_00044002_017",
+      "image_sha256": "12458eaca3802e986222d9ae607f0918cf1e12063dada8fba7e2d70f77c95355",
+      "raw_sha256": "d780f5263e1244821e54c05a203d8d534de100787a92c69476d92039b882d36b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0069",
+      "sample_id": "wafer_00045139_025",
+      "image_sha256": "6d81a8f47ed920ef8ade2f8289e9c20718da7ddae2dcd4f4d1af7e0f023c4d26",
+      "raw_sha256": "2bb5c64ed164e10b6f61846da2fb3aaa95499f38162bddadc9d3bbbb5f92203d",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0070",
+      "sample_id": "wafer_00043050_009",
+      "image_sha256": "9442bb4a4c8b9328f77c4c7b45f751d278add1e32adbbbbe7177e9d997a23bf0",
+      "raw_sha256": "c957f6e5f63bdedf28c17275ead00ece5f9ae0c5f6cf524590e2684e4e538474",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0071",
+      "sample_id": "wafer_00040406_017",
+      "image_sha256": "11bb5b1d838e7b1f9257026f54de6c28d4a3579adec222aed7dcabb624e4f854",
+      "raw_sha256": "bd7f5a5eaf980f5be40e44ae023e82f285c468ce41f9d54da73000094f5cb4a1",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0072",
+      "sample_id": "wafer_00040492_004",
+      "image_sha256": "2dc77866c007a2ac537c2b66f24c5fc4397bde5b00799df32091ec36e0908873",
+      "raw_sha256": "fc692e6633117085a9740804cb3f8400ac61d08a68abeedc362279685ed03bec",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0073",
+      "sample_id": "wafer_00002377_018",
+      "image_sha256": "d30de40578f6849f7639ccb8238e00d53e20dbe76015a9bd66ebd54d7035b4a0",
+      "raw_sha256": "75bff31d0b5d721504e7f67cbc5411d4457847bf5727180ab94cd14f5fa8aa5b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0074",
+      "sample_id": "wafer_00045360_022",
+      "image_sha256": "1b9adc4226cb133119d0ca1dd7756f38863730338ad9982182f828e1694e5946",
+      "raw_sha256": "9c24f4f8aa46db235bedaf5e794ec95056f05fc149093c672b5159d68a449962",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0075",
+      "sample_id": "wafer_00043567_024",
+      "image_sha256": "2609e4d76646ddcd8f48fe91061f9d2af7ca5b36e0c46a1bf44d9d7ac7518d7d",
+      "raw_sha256": "82a7bb6fa56e30a8a9f788d5970de12ca11d3749b7ff54b5dd23c8fd8c6bfc85",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0076",
+      "sample_id": "wafer_00002535_006",
+      "image_sha256": "c795ea0a352b2fb2047167ced5ec841cc609109a0f03647fbac983a4a6bd4343",
+      "raw_sha256": "d9a4795358ce87640ed9d2d77ba5cdc32e0a43fad1c7f084a8fdeaa2481af1a0",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0077",
+      "sample_id": "wafer_00002375_023",
+      "image_sha256": "26fd30b4d0642d1661fb4719e1e096e6e8cc0921a65012c8fbc3fc452c610681",
+      "raw_sha256": "6efeada988f4e34ec9872f914f5ed619421320523b5cd16ea4d802e7c1c2da57",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0078",
+      "sample_id": "wafer_00021455_002",
+      "image_sha256": "04a3d7b8e8a4b62bbbc2d7da3e8d9f920f1c339d488a3e434c30a0d51cde3fd7",
+      "raw_sha256": "6c1b72010e2b744e6113281ad3f434031136ef9c1d14d285afb07501bb3df5e6",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0079",
+      "sample_id": "wafer_00015635_022",
+      "image_sha256": "173fd24d74a62195e96404f24676c7398b879b98d66411a98ff9b243773852d0",
+      "raw_sha256": "5add2a7cb7ee534a8214c135a48046fdc6bfd00ec37f7e7c5e7cfcd78e2e9eaf",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0080",
+      "sample_id": "wafer_00040378_016",
+      "image_sha256": "c1831444f0de02b99c27f686a7a4b5b1d5b34d858bc7530de24bdadd0e1ed977",
+      "raw_sha256": "a63a1c20adb97f4b64b4abfca9e5be559ec817eb7f9c41c9a1a70b83ad7af6cb",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0081",
+      "sample_id": "wafer_00011056_010",
+      "image_sha256": "58956004b756ac9994fa564174e675048bd3e9397ced0b34460c2e69e8b9eef7",
+      "raw_sha256": "316da5cc537c64eccf2c6566e6e93f944b674ac0ce1f6e1e296966fca63d765a",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0082",
+      "sample_id": "wafer_00045570_010",
+      "image_sha256": "7f5ffb1d6e873671f25912912be15b3c251ffac3580610ac952e787585d68fc0",
+      "raw_sha256": "c12e38b2534b5d5ecda9374f107e6c7641215baa2559debddbeb80f30755e723",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0083",
+      "sample_id": "wafer_00004348_005",
+      "image_sha256": "ac63fb66193c14f7406f5f5cd7849b6c055333eab5ae1f621b6a8e6bedcab763",
+      "raw_sha256": "8bc511abf3c23ecaf8d71b8cac5c3ceeed8f9d403f51a7a18914c58495025d2b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0084",
+      "sample_id": "wafer_00045254_011",
+      "image_sha256": "186dfb5bbdf0febdb6c7070c5f376dd51b6ebfe62e0e51483338afd8d268b379",
+      "raw_sha256": "813c52d86cedf8a3d6b5d0b42dffcf05797f4ca12ea911e9d20384748471fb08",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0085",
+      "sample_id": "wafer_00019033_001",
+      "image_sha256": "acd00e2aa0549f349d5176ece58ef4f870af37e9f50e314207b23aaaaed1b63e",
+      "raw_sha256": "9b07baeaf3910ab140232d0cd51c0d08c5338666882356948b2e0a77b8d60d71",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0086",
+      "sample_id": "wafer_00017310_023",
+      "image_sha256": "97e6b4dedd87a18734d8ba70391cc0883efbef1c1678c90b602b5fcff729b694",
+      "raw_sha256": "a4ba86774264c7fa12e58217016d5a12e73bcb3a182a302dfa42b52fd7a353d1",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0087",
+      "sample_id": "wafer_00008069_023",
+      "image_sha256": "2e4b3210ec9b906d4328b89d17c04df8462d788d2e8e87704077087fa18e10b1",
+      "raw_sha256": "a2daf977e940b4ab0ba2d952c6a9de823ed1a07fc23a3fa0895f5263ef2268ca",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0088",
+      "sample_id": "wafer_00047447_008",
+      "image_sha256": "35b016707528cca44a5881be7c62c3021a075e4b37826ef97d65198a7d1726bd",
+      "raw_sha256": "eafa91c46f73e7c9d30c4449b714d9c1f48ccbb8e5a68325f20875464bcbc7bd",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0089",
+      "sample_id": "wafer_00044402_021",
+      "image_sha256": "9373d5efed7ca3a3963a9fb86c162defd3b4b6bccfe9bd769cd7c76512fcfe97",
+      "raw_sha256": "1ff9a72fad57e0c07a273fd0b4546e89fcd28f57a471dd39fac36ecb41c2a0c7",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0090",
+      "sample_id": "wafer_00018512_023",
+      "image_sha256": "001a1c5e2ac20e018169a0456bc5d4708edba2a64dfb5a59c5aaf8d259dbb7af",
+      "raw_sha256": "ca60c14380fe9e929f2151c4e88b70c58adb685c4644529084763f920268e081",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0091",
+      "sample_id": "wafer_00000109_007",
+      "image_sha256": "5d0aa2ccddd4c6d7412c6a68f2b36b088cc5af9cdc45d16b4cf4a2117e629d74",
+      "raw_sha256": "badf93986ba6a70110b841502592e75c5edb74e4447b0c75bcff67c6bf2bd9de",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0092",
+      "sample_id": "wafer_00043705_021",
+      "image_sha256": "f76ff558a9413e4cc7a73d149842996a6c9560d55a36ffc87a42922a5c25a82b",
+      "raw_sha256": "b146d30a803a25e869212d9ccddda9b618a96841074682d98a64fca244d1cc1f",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0093",
+      "sample_id": "wafer_00047098_002",
+      "image_sha256": "d47ddd1b8321f29b5bd78ebfa78b941f7159626b7e2743a18782702139d3f408",
+      "raw_sha256": "5c9e5e86cda6e73e5f9da63b46535fd4bb8b100daa2dd16daac53c394ff13eec",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0094",
+      "sample_id": "wafer_00045201_007",
+      "image_sha256": "54ffc6af934f6f113e1aab7593e977f8c70fef37affcde6bf49eff2be0711ab3",
+      "raw_sha256": "1762371864b5c1b8ed69096f004f0c63015313bd6fccea2c91604352347de99b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0095",
+      "sample_id": "wafer_00045392_003",
+      "image_sha256": "29fff4e82dc5227379e99e2c8ff5c64641c7623a59ee052838097677a1db84f8",
+      "raw_sha256": "d473c07f1909eff25fc980c66b2f22b6ab073451fb4c84a5e51cb9ae73eb94df",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0096",
+      "sample_id": "wafer_00045842_015",
+      "image_sha256": "9d908c913cd56407ce1d0dd3ca7457f425c956c94e1dfc48b0f7c87e585190e8",
+      "raw_sha256": "384be96298c2173a36e0a70a1e80d54e5dd9210fadc2839597ddac27e3108829",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0097",
+      "sample_id": "wafer_00043329_001",
+      "image_sha256": "ed3b7b1b3f3dd46659f15a3b4dcd9f3422af9e0e25fb9d18ec90aa99fef2dce1",
+      "raw_sha256": "6627649f6e152ff8e9f492f79d8de3508e3617630f23ed815036e60a35f219bc",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0098",
+      "sample_id": "wafer_00040811_001",
+      "image_sha256": "7ac24ea5069cb707979a5194385f5c5573bc896afa002023e3a322830e44650d",
+      "raw_sha256": "edd5c79aea491d63c7f640693f209b1d8ed8a62c26e00a7cf9f350148852e2aa",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0099",
+      "sample_id": "wafer_00040349_014",
+      "image_sha256": "6d6b47798ed3d16e697bbb41da69f7234d3bef336bf003164d502267bbce30bd",
+      "raw_sha256": "479644a8394ac7c8b5dc963c55be0c4d4b32ee1c70623194c9635ca1be52c197",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0100",
+      "sample_id": "wafer_00000052_006",
+      "image_sha256": "51c8cba5469bc1cdc40710e96a7a767ab3186da71f1ab065d40f4d055c6b5ff6",
+      "raw_sha256": "2365626dd3cd661f501e8762321f3e5da314b478b22f4f343e8fa4f822097b36",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0101",
+      "sample_id": "wafer_00043228_020",
+      "image_sha256": "80625b7a8c6bbd371b1a6f145f0faa4e0e920fe7a07a09b2eb9feed692639294",
+      "raw_sha256": "62530e985ff459c97dcefc44517dc8739042461600c1118be6d34e8e1699d17b",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    },
+    {
+      "item_id": "wbe0102",
+      "sample_id": "wafer_00045191_016",
+      "image_sha256": "85e8b8bd44c863f33d54fbd96e32f186b0af3fc021aa2f752f32a46ce3a5a2d8",
+      "raw_sha256": "90a746ee6a9513d88f19743453c295a990dc753087849da728dfe8527f7b8d99",
+      "strict_json": true,
+      "schema_ok": true,
+      "warnings": []
+    }
+  ],
+  "sources_sha256": {
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/客户端盲包/WorkBuddy_外部评测102/WB_eval102_索引.jsonl": "41d6e79c7ae6026fae34a609f39af4ced07aa080b163c18e813d1205c9dcd0c1",
+    "协作/01_Codex_指挥/WorkBuddy外部102_执行补包_20261008/prompt_7f.txt": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "协作/01_Codex_指挥/WorkBuddy外部102_执行补包_20261008/schema_check.py": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+    "data/manifest.jsonl": "c2f8a9afbf7ab3bc7bac92dc2f5896f8896bf379de2ac1c9d3667afcebcbaa19",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0001.txt": "eef689f4d30db9ff5d62f436deeae8a9ec54359391f51bdece0a2d000e8ddf3c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0001_meta.json": "7b25daf9cb7b611300773401c59fc84aba8b100d44539f1a175efa67456286e8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0001.json": "47550930b54c61cb3c26a900604c18920b977ea979db83a5f698c7ea8f383a00",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0001_check.json": "99e6d29781e6447c2d95654ba3912511d9ee306de82c423873e044761651ea9c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0001_rerun.json": "64a09a50557bbbcc0ca482300e6dab2cc027a27db3ac0f21a1bb32a7aeb3b2da",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0002.txt": "ac3e97240135eed8cd718278bd7b1c4eba208a32e7a4fec137d6dc3687ce1b13",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0002_meta.json": "78bf34d7ec4342482bd7cdc22b4b543b13317fcaccd8d9839929cbedf3baafe4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0002.json": "6698c9b201945052ac2632e0f256292cfb5d7d3202296171bc66ee224545b092",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0002_check.json": "a83013db0af15a3948d6173c3248dd8bd3c538e1f6352c270bbfd17299964ff0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0002_rerun.json": "d54d995b1b5217090d25a1e83d458df95558eb8c6c846c76a181c40512048a94",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0003.txt": "c5cd03c4614d49cea21180d870b1fb6c42c2f8e83d928fd89fb7452b0cd872f8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0003_meta.json": "0483320e0b65a894ed6722622a7ae56a0cadbf812482eb2127b9d422f9a70653",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0003.json": "efb53183787d816d6df98f3bbf4b7f7bdf811ea60512b190f485b215232db170",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0003_check.json": "1a4a41964a956e2de25a5da04fb2a66b215e03092914edfb401c9d133b91fdcd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0003_rerun.json": "dc7cc075b293aac162dd5d0ab72a94f95f49a5e105836077f7cfc524d38ebefc",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0004.txt": "b0998259bc727cd2aba6b254d05f0a614f7e5a0fab92bd81f824fa475bf6d1f7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0004_meta.json": "b05622de2d2ba61ef5759d2c7951352ae15f201e3715dfc056febae96939fed1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0004.json": "9a6e9d701c514eea6bc428f8e414b3e5f9f0c80b3e88d35971daee33e687899f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0004_check.json": "923cfa91721b7a0843abd0b0d5e8e11d22690bdf869681cc0e29fede07f86380",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0004_rerun.json": "562c1ce0bf4511d7889a5af7951d4f5aff4dfbed7fa5e4b5f9397794054113d9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0005.txt": "899efdf74b4e445e5fcf0388ea8edb78e9ad04e92ddafe5724da74101d26b3c6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0005_meta.json": "133a1f563c253b94a7d64b03b77b027c79c819c088b8e13506722c694c5c38c8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0005.json": "79b72574c89a359f7b4f0a59e7a21e371c41321e7e1034c4a12f4eab36d220d7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0005_check.json": "fa4da1426b49d0b9cc882b244ac002cf3e5bf41f306bad3c8730449bde4718b5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0005_rerun.json": "55feaadf6528890c123ca7eeef13b9e0bd06e197ffd2e60f1d20e6ab64a1bca7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0006.txt": "90798a0de8797ad1d8785dec08a79588bcffda16d517baaf15113371641867f2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0006_meta.json": "0ac899186cc91ae526eac2a37a0543a6a5686efdf713d9fb01abf452bcdb9d77",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0006.json": "d0c99d3fe05a09a0dff72f5fccd8a31ff9ccb4036ac22321ebe03d214bc953f3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0006_check.json": "c8d71e63a9545fdaa28bfd8a3c0750b6c7691bb98b7936052236d4e6d6b3e418",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0006_rerun.json": "bc8ca644f9f92eee27733cffdfea57edb5c898c976106deb6c6134067bf225ae",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0007.txt": "34ad91f49b5e4c6cf59865174d12c67abfabe1e3576374ec4fb332512aa7d31f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0007_meta.json": "fd87c4b55955d4e7cd55addd10c66c3b05963042b44efc6ecc688d19407457e9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0007.json": "4a6f2e4bf0b88705baa089c4fc9c50b16c6249801f3403aaa79af6658663e6fe",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0007_check.json": "cc28b9479acefe6f257790854dd2e8bc37efd00363366f98e12b5b8fdc4f7922",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0007_rerun.json": "86d25d531dade48aa2d2f481316670e7d190ced3d78125395225b2e01c3201a0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0008.txt": "57a46d6af5077b9f28b5231aa0b58ea9af7ae537a842025fdf4bf5608a1c8597",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0008_meta.json": "dad432881d74036617fc8b8a16995ace727a0b40c86add781742ec7bfe0303f1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0008.json": "e9bea157fa1562a4e10f14578b234104c67f6e6308e7088af54b9761b1001986",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0008_check.json": "21098cde31dfd99ba3d7395a78fc31ce61bb13d87656c2ed864ca610430bec9c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0008_rerun.json": "459b6823d2e1733806a33643b216ea8f62a236f889939f373a2e0274b6aa514e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0009.txt": "6c0d8e95b561a7bd9a39a2a1646cc3ef18fa2cc55fb397b2dc780319f1e2dbcd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0009_meta.json": "8fb754e56ec7edabba8d73b99491d65472958732c7b32bc1a8e6b4064e1632e3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0009.json": "bf918f44600338b167eb6e6ea25feb86f67d79ed8004a83d6b6a7bdb8dc90d24",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0009_check.json": "308c40dff46f08a27fe80bc1359bf5bf1670665959f16b3b167547cb1056926e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0009_rerun.json": "c10e07625b724d3a67d2ca49c4b1739ca2822a5e19031bb0fff0a3d8afb0907e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0010.txt": "6dc1bc37bfd9e188bc8377228c4c6b279974d939571cf19f086d3cca72f3b911",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0010_meta.json": "ff1808ec9c2857432ae2c68ea67bffe615c8a52fd5e045b4334b32cb1fbc81ed",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0010.json": "5a10e64188bc249c1615656072db4d0ad63cdd7d7a871f9582c91c1df2961062",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0010_check.json": "bea9c2deabf2b9e7f8112e10d40cf428fe89701b8a29a98a26a2182d2f0713c2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0010_rerun.json": "1928f60089804179d5574156b4f711fece0090dd4184970b4196b015013f7d16",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0011.txt": "89f23287208e4168ea20e2c20851d1c13a0d93107bd27e5c14985e5cd5f30c55",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0011_meta.json": "2defec9c41985202d3028d21379825ed34e9d4f2244fe27a3524a4c2afd58672",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0011.json": "d2f4ee82395fb213aefa9168cdbade0ee6c798c6f8fdad4f3d097ca826e9bce3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0011_check.json": "4414724e61241f007f13e0f34087380fdfd8fa1cad3bab82dbf833e9d0b5e3a9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0011_rerun.json": "ee822a4f5c5b0653c0080218fd431131d85023bf4ff60e2ba158390f2693a452",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0012.txt": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0012_meta.json": "f93a288bac7f8577c991bbab4bc0d1e95bceb28d0a24accafe85f66491d83450",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0012.json": "4de6389505970c04254064a4021098659c04050fed48b8d2008a4a439339b6f6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0012_check.json": "79a778ed3e4fb52e2ba67022a9ea1ea6d143a6418235cc0c35af8d51bc0df96f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0012_rerun.json": "d34c6400f3b91b40d20cfc4606974009b1ab83c2178741d6f4201729d12fe014",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0013.txt": "00c22242b20079f2e2974c6206bdb85af10e84891bd0c66463e316d63d3ea94b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0013_meta.json": "b57d93560a3786566fdfb953d0589bec854b7635c8d18135f01dced00907b34c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0013.json": "869716646c38760a47ad9ba25d28326022482f0a58c779df2b842d4a36d22493",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0013_check.json": "aca31046f71820d1f08ec0d33f860dce9328e77f8203b90ba8882ed2a9be105f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0013_rerun.json": "a5c0f562a64891fb02f682fd0b774bde399a330d040d572927f8d3a031b98208",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0014.txt": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0014_meta.json": "a8f4ce5f3d871064d6f4e19789c1f5d8c997d01485d370f1d5990d5c5a926e12",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0014.json": "0e8a30cc8ff4a81d51e3fa1698dfc005710d6284a51b933893c644c435a40c40",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0014_check.json": "376e3ae9c3893a968ad119a6623b20a92482afab2eea0a3e94783bdef1119703",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0014_rerun.json": "bb221a53179ea66a725e57513546538e088204230b80906670c166a0920477be",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0015.txt": "7f8153b7fd4dad22644d1615ca5a3acd5cf68fd57b955f0757f872c715a2e952",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0015_meta.json": "19ea5b356790cbe761c29fe5948446a96c9890dd12902f9550fc604e617f94be",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0015.json": "84a9852d0c01c30d5caeaf6c0ecc55caa3d998998626330955a3b737d602785a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0015_check.json": "fd90e851f2a19dd53b3434d3fe2e5ade2d9d37c6a6ddc42bc79227cd172660f5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0015_rerun.json": "9f7b2024e0e7446fa7e7a180392e01198eb9981c9f55a5e003e36e6f66b74701",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0016.txt": "7d6960cd38b7d2cea5e245331c1d1b4fc5e3b9e8a2f165b16e30542768356c8d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0016_meta.json": "0e30e28ff951664e93b1d4e2e8cef79bcb1d6898506c358a2616f25510597d24",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0016.json": "c9cc092ef0307efdc914ea86d46b0bb9a92ef82080636f4810a19e09c488bc79",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0016_check.json": "3ba66b43e670115f1114770365fa80a112363c208b9abd43f1580dc56ea92b09",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0016_rerun.json": "2b65950219605edac0754c82d304cf033807532c0ba6dfb9c695af396523f0fd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0017.txt": "32645b310d47270c9e32983bc5b56379247139e15afd4eb91f44efffbc7c99b5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0017_meta.json": "77f7f4815c6d62c795b67b5435c713e0e0c6c1c421c513a892d2cff20c505994",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0017.json": "3c2d0a14e886493ea87bac0794242c6797c3a13c41e288bec5bf573bb65344f0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0017_check.json": "4dfa260d6c0d6d1a604626dcc9a0a1e491601cc0503c58fd9438960dbfd7ce1b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0017_rerun.json": "461899288ee67c4baedcd73593f410be8f1b94796de400b75c61b68c47b64ea2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0018.txt": "2fcf34664cfb1c12d8163def2ab04dab8687a6693aa2690d2b5e5bdcdebc74d3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0018_meta.json": "37c6fb5c9931c935778ea95146a027af1f95a33ffd721b3f3b3d20fccf435fe3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0018.json": "7c97a19633786fd30a86765bbcb979a8a5245f3f46038955a55f83fa7c985a22",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0018_check.json": "cf28afdf1261b2f591152909f344f0e5efd071fc64b9148f3fb678c238a11090",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0018_rerun.json": "cba611648201c54fc408161f260fb8b611a7141c49c94813cb8988ba8fc5c6db",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0019.txt": "e03ac4fb702217aa4d9d0848bf4f2def65d033c8feefb86b39f3920d062b7a3a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0019_meta.json": "b8a91b04007a178c2c0fd649ae54f006955f075742c406d53950709b7e936bfa",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0019.json": "3e741faacc2ff53badea858eb6ae6be8f75bcfbb83419b9aac07a8717ec8c5f9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0019_check.json": "49b2b4c15f67a34308eec87f09f84c45f27e35fde7dd249fbe514189f348b907",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0019_rerun.json": "4c682fbecd45a9f118284967a3267bbe6e835324e8f559ab8326f30dfb1b8e13",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0020.txt": "1710ccf6f751833cd1a299e5209145cc465bb8024f514250acccf5abc4f1dc25",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0020_meta.json": "7de04811831ef0c4a6cdd4ac1f5b370316a46bb32b0a973f2be4ec6485be69d8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0020.json": "b46873bc17a0c80d02f89bcd00849a7428bfed31f102d4c26a70e240e64a0ba5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0020_check.json": "5020be477a6aaf0e1fa49760ccfff2f85e69ef3a7f10779ec5db8317f31f751a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0020_rerun.json": "222cc09edd95acb1464c240b063af5cda7a52bffbf33d19b1ded39688a936b8e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0021.txt": "0051480f8d878e17b6853272ec9448b9b5665d951917627dcfbf0e97d0ce4698",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0021_meta.json": "53cb22c56bc1d273d475b2525eaea4b1cf5cde22c98ea8d00651a3a943f0fdbf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0021.json": "4e0e0171ddccd0515955586ca8070abaaa925b615772eed4a1372af663e0388e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0021_check.json": "8821b75c88111256540214364674b1a8e2c9cb874bae3b603fea998497b5eb7a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0021_rerun.json": "89cd9c8e9dadc1f2af466cc6004e6281d053bd313a598d5b428f3a2961b2ad38",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0022.txt": "22da3159e792cda6ee0c49c53348e8d7d4cccb3f777128c39d23b9327f5abe77",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0022_meta.json": "ab085b9fd802ad43ea67355a213bc09d64a52679e0809d6158013f614872c2a5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0022.json": "76d1c28848adfebb7e3605739f49ae2f75692577da2bfb76fcde3e9d24298320",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0022_check.json": "902cf56ef8169bfe35a76c170c996e968514f6beca113e460a717e0057b230fb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0022_rerun.json": "b5dd3aff4ce2738232b64c0d5eaf455b389fd7cf4ad287728849ffc9699b6b1d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0023.txt": "bbaf0e93fa46424ef3a5bf24d7f08c3f18c1b04b38afd502d0f9d67ccf6b20a6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0023_meta.json": "64221d8c48a1c0dd057f68afa267982f9b6097ae2381a5354fc408d5d961a5e8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0023.json": "1ffc94d8d293132544f9db86a98495f3256781a81a24b613e6f71433e2633d55",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0023_check.json": "fdd198057d057d1e7d63e6e1df2fbbc0e3e6b7c63823c35dba5018c61ee74a38",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0023_rerun.json": "99dd1faa133be22c40ff0933e390cdd5d7f0839ba8aa50e2f8624b030bc254ca",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0024.txt": "34cc59ccab32949a18b1fcf60a29fa3d370b83522a5969a941312351cdffc6e9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0024_meta.json": "1db9ae680b853669e4425f299edcdd9547c16c03c6cb1b130f767a6323acbb04",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0024.json": "2f4f16a4bf5789d933be9176de26f1b678c9ae633accbc8950f168fb4024ae68",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0024_check.json": "01c9a4c42b8305126040e79144b346a0a434f482afd2bb865bdd2a34167f34ec",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0024_rerun.json": "138765f7766a16fcc9f6826b43171ba99b33f4914ff73af51ffaba5a1f7eff6e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0025.txt": "a6f8c48d52d4f2174697d4a34c7ed4cc8a4cf6697e062a5c23e441c59469df93",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0025_meta.json": "9ff5d8cb8470defae170ab01410afedfb696e5c33d2fc730349f9e719decf79c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0025.json": "9b52bb645765c61c79ce235d83aee2443890803800694b5f4f499c69b0f4ede6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0025_check.json": "9ae1dbf4339ad4e913047412a74ac9878a05de3ea5d23cfb2b1eae3218a60c4c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0025_rerun.json": "5add71ca239e2a542c5f3e680472a7cf0b1d21ffd6114c408f856544a21f57ff",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0026.txt": "f31c6b6d17c77aeff6b591c7b2d55e9c7dfedffb70f2016185fa3551bd3c4deb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0026_meta.json": "beb3b215fc907fd7c9404bb09d35d38b047175e1af85438b19b75f0ed9c93e68",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0026.json": "0ffc649cf3bf6e751814a3a8447f39f8ba1d84ad790ee6501831d0a6f6dff13e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0026_check.json": "ad9902e3edf0ba7f93ccc5e114ce4091073e602b65fb9e706fe04e370c42d282",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0026_rerun.json": "acf0e980d13777c0f16a415def56cd044a8e2087952a6006cc5ef3f5ba59f0df",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0027.txt": "f5482b0f2ca9d848549baeaf8323840a63684be638c6120e3b2be2abab9e9374",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0027_meta.json": "e7a38a679c90220d04fe4dd3de27468c263e2e245273984c622378c84ef56dd7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0027.json": "dd413af588cfb3f481b860924839ac736cda668dbb904d1bde02e979a18b8eab",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0027_check.json": "abd426255de5b21687bae46553b2e21a941d1f22a709c67723d8339fdc119946",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0027_rerun.json": "dc745f8a21c32e35619d252291213e9c40bc0ba34ca520fad17c855c6a28fe1b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0028.txt": "1d293127c5876958f8341e53bfc82633f8b473328947a5416ab8287b7bbb84e2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0028_meta.json": "d577e6235cb28f4fcac9e9043d659ebc32ccb4ee3dfc9b079c19b8ab87853ec2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0028.json": "3b172b09cdac8426956dd64c9f6d111717ed76d924eab608de109788c066d952",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0028_check.json": "7ef7a84a14e28e30044ec54db8facddb1d8791efc5cb3485cdc3f62300edde61",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0028_rerun.json": "59e77321b9e063b77591b27f9d1615c0148df39e916459b34168a32c2efc918c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0029.txt": "5dc22f80665be940103d01bba00882b1c6315137b57a34cf12be653a09d3a07b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0029_meta.json": "d054846201692b528aae2bea2f2e8c8b26510616d6bb00f1c8b851838c0dc890",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0029.json": "4a6a84d9fa9150c4cb0cfb9be29ff0a32b0409432495e333b80764b9ad422c1a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0029_check.json": "5abb0bd426d5551901b9ce0d505f39d4894bb40eee36b23e54c98254c15a0d71",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0029_rerun.json": "e068dd0143087fd262f7dc10a013d21de114c9a3676f04fe788725d03453d842",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0030.txt": "5395b9e4ac6888fefb710d67babde881a22c28937d5a772ff3ab4502e21db6ba",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0030_meta.json": "fe624ad0c364a73e6d2def6d6c50567d2fab711197dd5818cbd1733322c8e867",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0030.json": "5fc17b276850dd06b01413fa11cbf2b09736fb210953790a5a47532b7bea5cab",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0030_check.json": "36e736ca7e9f83605ba0dea0e0d15dc2619837891bcb25ec9bc5370c327b8b7c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0030_rerun.json": "eccc86674d09a25dba04d253c91efd2183873fba891ef6d094a2f0b5f4d2eac7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0031.txt": "4fd474d153910ce95c1bb505d0f2495bce8e19994ba1b2ce33439e808c29a224",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0031_meta.json": "133ccb00b64fae0c37f7f86e416dd0a067e56cda3bdc71b0cb7ed9d387172e61",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0031.json": "3542ca47b6447a45a9b07ffe3632d2b3b42395b41b974664075ce4e359e3d43a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0031_check.json": "18eab79feef45d7b3dae75ce85bc12d546b6fc9596ef069c9cd4050a8a5f3531",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0031_rerun.json": "af3a01a367c8db59a5751565ca17b9522142da29f73c22f6e1a46f402dcc9c1d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0032.txt": "9905d222ab44f8913f16858e8df64db6d1857df3ad30710fa96bf31791adc15b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0032_meta.json": "af25753cb217a7730c2838d422d4795036eada06a5362d3058f6942534aa882e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0032.json": "169f04f25e90fc27718af753ec8ded448bab1991d61a18f6e500575087c4c6c4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0032_check.json": "80e8661a17cc51f9ea9bf34d1d6b0194a950d5379f4c462b40badaa2c034b7c9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0032_rerun.json": "9d7470960f83a120682e9d8410904be66b7c982aacf3e5b8e078ebf529455410",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0033.txt": "a1f4faa8017fc428ffadfa2a5fcff2a4595f30a88dbae66af877e7db487a133e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0033_meta.json": "0b3c179c0788a8def67facd86d46f952fe05e0a28258598d7a3124bbff134ea6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0033.json": "8cc9c8ae739556d95339007d188ae11b50d51938201975446f08f580b33e6aaf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0033_check.json": "6c7dd3c379e2e85f1ed19e34960ef6e6a45ef819630b61368b839f8a5affad21",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0033_rerun.json": "14e1d1bd97702003d6c790b2e86353675208d6ade0f5a1763507caa5910c326b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0034.txt": "6079a1506b97c6ee33a97f233b81ea3d47e7816fb2af565fe358bee34c17cca9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0034_meta.json": "08407e0ae8ca7edb94e85435dff313bf1bcfcc593af81b99e32718420a60b4fc",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0034.json": "b6bfb0b0d311938e4bdceee2c9397a2b7f5723d1c30dec77c1128a264b5e8b57",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0034_check.json": "9bea312e8bc3671e657a121949e1b807ec370f34b9de9c43e3e2571a76ccf558",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0034_rerun.json": "1fcc561137ba05e23481d6e6e9a7967363f75c800431db501865227a2327bcac",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0035.txt": "366300c49d88db4e2de4d2a8616190d3add19776de8d904e90988249422fa4b0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0035_meta.json": "39dff819d765610a2ec5471e4e514e918e40df026c76c1ef73164e5d20b341d5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0035.json": "c6e756ec775a8be9bc00c2b5585afd6c000399bd8794cb5f11e6ed7bbd30f804",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0035_check.json": "a4238422544838a72be83908b795003ac7c98f4636d32b8813f4cafaef3c95b1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0035_rerun.json": "19f30517355abe38cdac6eb205c92124d8267e689e24667c3bc3c9c3a3e70135",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0036.txt": "1178bd2a9d8d481d4d9f8a7c6ba0d8c2771b94de1480fd777a1707b6fb20d375",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0036_meta.json": "6c5a7cea0b5103ed30a24bf3c7bc52f741ae5663fb52d64d1587e0239de26c85",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0036.json": "945237769c5004c6a5e86b638a31a5ec588aebf1a71a4dc76daf93db1233531c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0036_check.json": "dd18ac2552ed48bdfe19d6e770c8bdae3f6289eaf2262fc1a4f40f50cc623c25",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0036_rerun.json": "236f772cfa96ff8cfc1d615c8f0d111490ab45ea66f8561a6cf954909275dfc5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0037.txt": "725a377ce9714ea5511e6d7c6f981f5d30b95163abbc12af034256f5b54faaf1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0037_meta.json": "ab1a18861c64918ba38e4b495b3cdedddb8b92fe6bcaa1e3f9296ebee0c90622",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0037.json": "6e1453ad1efa2c16604aed94cc83905d77fc27e2e20bac35830822a977938098",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0037_check.json": "d0dde676c650bf2454cece9adbd552eedaea35b47c25c3dbdb718579f4303366",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0037_rerun.json": "28cb328467758cd6bae84c931b63f9455c7a2c898b31313f9fc4375db971bec2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0038.txt": "9dfc32bb8150a60bdccf247c41727d7fde5394de9f6b42122ab9e6a7d2409659",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0038_meta.json": "69bda3e989a1aab7864b2ca8ae5497cce41d08193b21172cdcc67a82650f2ced",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0038.json": "5a6348edb91ed0fb4b916f6df25b23a57d555d7b461a826ed64cb427ef932089",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0038_check.json": "3adfdf32149618142b844558895073fd644277ce3eaf77421f0da49dcdffa57c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0038_rerun.json": "5c5325312f14f5cec569714ea48e19909e8876ce42b4740aa2c7e2e8a7a7b46d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0039.txt": "d806d26f74af102c2b33243bb4a5224c91115a77752b7f273d78db5d4bc8ed5b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0039_meta.json": "c7badf42e046875772674e24a86e34e56506b9ffd2ba255612721500bd32c008",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0039.json": "5fbdc048c921d71e1ce8419dfc5cc6cf51503f6245274c14e5994dd39f763183",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0039_check.json": "ed76baff67b1661b2285ee0e63d8314bf4075af0fb40f947ad8053a840de0077",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0039_rerun.json": "8861b442890ec9782bce99d0248a838f3aacc3593595bf7aad1d83d8630b3d1a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0040.txt": "d1207f0ab03bec2beafa978b9eab1d0ed6e429520021fb52c6b91a50cde544d4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0040_meta.json": "8bae75eddeb3f0ee7d8746849e2274148c23fa4a36fe0d8a482dddcefee168a6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0040.json": "7fae413302deb119ec3d364781b98a6632f1ef447c7f36ff290533235dd2f4f7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0040_check.json": "e9b99f2fe797dd48ff8378910ead73867a1f39e1fe2b59e0fad42c8e470494fd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0040_rerun.json": "1b6799e40740f5bce06921c2123dbcdbb080357bc2d96a99fead8cf56df13e0f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0041.txt": "3146f41184aa38d76290feda5b51f39c1d61577003c548df3ea447f3f3d030c8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0041_meta.json": "e099ef60d8ad02ef0cf9228ae7e2057d886926d820eff4acc404b1378327fbe5",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0041.json": "84b6cfd3639f95763ae33203a41f56df841422356f970b890a020c20de83ec2a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0041_check.json": "0c365ec0c20d194fa429ff9567b46ae3ac7f354d32780bf7a777d7edc3b598bc",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0041_rerun.json": "d05f1559a17aa609c58d99d20fc702a24815f12fbc679841e903523980593618",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0042.txt": "a0497573e4f703131e9a63f07c2db70ee6e35040de4d97fb8ed48eec460372ba",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0042_meta.json": "fed355f4a8874ddc90204a40ec9ccd4eb12cb0af81aae6d22afc6742d8ad53c4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0042.json": "bd1ef832bc0fa3f143af774f7e61ccb0868a1e4ff179db810bd520fe7fedac3c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0042_check.json": "59a528974710009206346aa59d1135ed5d63c37ff62730844231cb68c3aec22e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0042_rerun.json": "700f2f5f3f4035249d059a259ed0f7028bc98fa3796d1b1376264aa9193727e2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0043.txt": "d5d1b8200801ca33f562fd430c329b5f3122231e8d2713f1b04c5de55ec3b899",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0043_meta.json": "086b434bbaaebe02b5ca9d0333f6bf29da2ece403dc42b0f64e6e72562ba6ac7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0043.json": "83abdd5d56080dd08f7bb25a0d1fbe08e19f5ec95d8a450012848fde6c6a76aa",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0043_check.json": "d39d8a2681e1c1aadbcf57f33969daf0e57dd3806e58186ed4ef93cd2e63a589",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0043_rerun.json": "6f9a7590d77b13b9d28e95ca9a398c6aa81697b52b439b3bf58526fa2a762b8f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0044.txt": "b8c85f80a13747831e66a84bb33762b83730c38df5da4b43322e4cddcdd31d67",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0044_meta.json": "28e8fa751009a870447383218c29c142b39ed3ce91717391d9ddadc6b9fa35ee",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0044.json": "85fab14c98754c3e30da697dd09379530f38d3af587ca6e83b4fdb6dd9615d65",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0044_check.json": "c20314d369c44545e49f2462550fc48c076c1c05637087d91b1539c1f62b97da",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0044_rerun.json": "80f7d0860a6a21851a6a7096fe39c073eb75b9df73d582a7947046e95651a368",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0045.txt": "87cb0a9e5d30fa71a548044dc62b7ea7e85915b60b1fc7a7b6bfba04dd1166f1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0045_meta.json": "bf9d85bf0730b3c8e047ff0571ce09b55dcf3a2dcbb0c5a883734677cfd0895a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0045.json": "6d97149a323b2b8a86a1d43fea5332a89d7cbb3a85d02e20f06139e63354f66a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0045_check.json": "1988b1d61d980b781c89119d212c0a1b77e05b5d08d2e834eca27095c91a36f0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0045_rerun.json": "b1e34d2bfb3331b915a487f39ae8d7f20f745ce2373e5b9b57341cf91b444880",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0046.txt": "08e97e8694073d43d679710c3baeacb28a0f12a67d8c69c857b963ab419e7874",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0046_meta.json": "338a26ea1eba6694b42a9c93463f2c701a55e7222b70ca627b9f821cec5bcae2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0046.json": "bc0694d929dcb9052e9b3eb810bc5e0eb8760d9b1c3be69b8b3822c51c503d94",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0046_check.json": "1596d25cf1e50cd205f302c62a84759f886613404afcf3c57de601bd398f9f9f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0046_rerun.json": "7c013ac354a43e375341253bb1b7ca74604aa2435c2f92c06dad48dd277bac98",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0047.txt": "a70bc0ad522e089a409e3a16f6f9d6364a9200ff3a5658f156724b0ba3cd542a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0047_meta.json": "a36aab9a7cf60f02b0960aec9060aaf258508864d6b24e4181c9ba0b3d9ceb40",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0047.json": "daefbeed663cb32781ae6d0a6bdc5c7fc0a264bbb0948e5e1f3eae3381a2bba3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0047_check.json": "6ad722d1cd4ec92825d54c4a496985051ebb0bd92b4bc3f0d90445637f1be8f4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0047_rerun.json": "4f463a0915e905dc2615305b61e5076eb3459f11fed373b2d47e9bdddf6ff4f8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0048.txt": "52a1f7d8620089eaba506c7159d00ca33883b43d5a71804bc701ce3ffcfb8a4f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0048_meta.json": "cf5fbeeabc5444533d37e43b251449770ce8777bb9efc330745fb30d5227b44a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0048.json": "21a62b1c730b7338cf25cfedec2bbf9b18d4d3612c8530b80472c01d91f3ee31",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0048_check.json": "d29d313091d303e30964771139a0f0f5fdf103edae76f646095802c387d08573",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0048_rerun.json": "d58d5b7f4d7b4055b8f34791d5260eccc2f37283d15bb47e7bcd475ed34fd85f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0049.txt": "d2143a98df1856e115fdc8e706d31b194f410dca3e363626bb28223990c0c47f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0049_meta.json": "a18c4b032ee90510014640d985976789ac615862d40b7a2e7a6a4fa6060d1a60",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0049.json": "974e18e433bede6536ae02c225ba4cfb56b49b6cfcea9f2957d8cdb78ac38fe2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0049_check.json": "84e67be39ff91ee69cd2c27df19fa27c2c1ddcaa403ba3313443d87e44bb4705",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0049_rerun.json": "6fcd2813af5689f67a2220279c5de86f795b1f9b1e67a372068e657b6e3b8c3f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0050.txt": "406ca4f50113e5026cad5d05ee2df353c220d8d35161086616ab7a42df2cd8d4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0050_meta.json": "ab72f8a32a93d83d24bd5d2e111e5c094083bdc8dc657899fd0a9949eac26a20",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0050.json": "cd8446277c0e1ba0666e5afee38daca7332d729c380e5c9fdcbec4e9dfd885b0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0050_check.json": "10f5e725981f2e099db8608669f9b7b00ed4449e69cddbdeb19ee895a0d62582",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0050_rerun.json": "4758578640d961a8989c06a31ece556d233c103cc7c456345dc7aca69cada940",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0051.txt": "502f9c1078bcc266f5aff2d06bbdb893825d8678d403ea5dbc2e3711e3ceb35b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0051_meta.json": "71f1a13325a55586c2ca58dc9d8f45fc090697087678ecb1724bbc6aaa1cfbe4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0051.json": "66523c017ba8c1fb7bb596c023b58786d2af85558dceeabb29156a08b324e5b9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0051_check.json": "544c1bfd7dae8db455cf7675f6594d21e78226874c16c955725ebf0549e9a114",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0051_rerun.json": "da9e88e12ec27657c7b1dabba16b5caa2e584ac3e7383a7ca5b8afdc46680947",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0052.txt": "1a5ceb3fa23f4690ac3ba4eb0de380c1b4fd4aea5d5179981de56b98a47d19b6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0052_meta.json": "514075bf2c86d838e28a5eeffa71c6b02a6e477b4eefcc467a93bb25d0dc0e22",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0052.json": "ec3bd16a9eb3f096b482d5f44134b3ba7e7dbc475fe9b5a399e25a5e811b421a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0052_check.json": "44ecdf3b6fd9f6baf13ed351805b77ffada4e50fc5c3c76aadd0ce968777bc5d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0052_rerun.json": "e8b0fd527935b57f97a15024cd189dff5e9a1dbf10367d02fbab7a54175b5211",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0053.txt": "d59e0eeafca759fee8f4a0ffa8244bb7450b148e772af91364b8cd8fb5f068b2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0053_meta.json": "da6f98b05c34e5c79e268df231dd18d93214bb25936f20657dec656aae9a3d14",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0053.json": "c47bb6895076de3cdbd04c7c5331d39d9a6af7122ccffa2f1d4a568f3988862a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0053_check.json": "a663bfc26d695dba49a203275a888007f3f698ea0d9b574d122c248f134a2bf0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0053_rerun.json": "91994ec28b858632745d093051858f69e10132abd246a11087d6fc8e8904886e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0054.txt": "12375dd1de24dbef5d8f8d83a09407178e6101944e4c4e4940346e9eb095470a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0054_meta.json": "6cf8f13e6655996ec290f978a3af16f6b4261847f38562b5e18884ae55aa5da8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0054.json": "520fda85a76066949b154f803d31a0924b4f88cad8bb6ef11701a57bc1f156d2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0054_check.json": "b7181d4cedc98d2df9781030c62b74ce4ca1635054ebe67bd2fc52bcbb3aec1d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0054_rerun.json": "75f51da5ee1827d4c2d42288e12fcd3deb530213953735bc95bab1d417c2df35",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0055.txt": "99f2002ebc05b60435d9ac2cfa2abb130a2d0bf8d81b799eafe2db4326ae70c9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0055_meta.json": "bcaa8b3dd07c6e8b8ddd68f545ed564750f0ad4d34167953729885230f4b45e8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0055.json": "a69ff9d6bafaebe641ef8af0210dad4248faa009c9648747372d838406c6c066",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0055_check.json": "1048d13ea05056b61278e187eaa44401fb2b13eed36b03695f7e593c7e01bd7f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0055_rerun.json": "20d312196144613bc557cae4f17d30ce9f5dc9dedd0f34c7d956f62d06390ac3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0056.txt": "c9ff074b802217bb0efc91ac9072834d990a2363984687c89dba9eac388e919f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0056_meta.json": "8e2ca4b24730a6147439142fb8d004e8473ae0e6040a24614ed6ce1456e15c9f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0056.json": "6a0eb2aa6a6efc88930e7aa55f6126ad6b7804bd4b8b091d60e5ba53ea3d9be7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0056_check.json": "ef6a6eca74b1d621f9c4b2f016fd9444a8cae24fa406f3c2b156497e688912f9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0056_rerun.json": "eac08840eb7c102a78cc2c8cd651c220dd14aadc9a787c8756e5f4d7b86da7cb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0057.txt": "f8459af24de792b28525a1c7db47ca93db0410dfd6b5584e13b3607348a78425",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0057_meta.json": "c2b9826fc4ea56cc9827cc2c91aa18fdb58a7ff08369fc6470c060e647cc9e6f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0057.json": "3fb132814c477f41143055588431dd29b0d9430cbd972fcf629d1ea8d7fc6156",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0057_check.json": "70b1f5c11ea4f5d9b968d17653366756a877f548345925448d18f230ec546319",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0057_rerun.json": "3123546e64b1725d1545b548792283e335cbb4f98c16bfb6d5fe8afefa40293c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0058.txt": "eff20b334897b72b915d3e9a6f88106b0a5a8fe9d8fb6cd2f2d6f6734ce72d8d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0058_meta.json": "aa1d12f2eb1cd71fd2eab640c0345a0f11d1fbe05ef22d37c36fdca758165385",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0058.json": "87ce712d6d3b793ca0599f12f267a9fcdc45596f4c4799f6cfd83ec1629de285",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0058_check.json": "6f625d71d3e6ae11c39d2b18931e318e0d0bc646a9c0d2566ab6affa41f03ed7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0058_rerun.json": "986f434bc43038067148c525e176d0d589f8d00ff664981500c126531e223954",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0059.txt": "8e4c7ceaa4a0ed3746c78a7aa12a5daefc7dd78dd2b4ddef2bf4bc9fd4bbd0cf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0059_meta.json": "20e73867ed958c1890dcda30819fe6bfe60cfab9983629153d52d7f6b167924c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0059.json": "5a9dfe116d643531e799c49bab1cac32d93800bf741f5051614931db15ea08ee",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0059_check.json": "e5b55649ea331d42f8fa6c77ea0fac363c8bd6f53f3d99b77b7199d62d012c41",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0059_rerun.json": "ff2e84d052ad8168a4f0d36889722fc1a85155794bc2241e804f42df6d2449d0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0060.txt": "39653c632b9097ed1e9d91b6c9e12a14b0184c07c83a7f781a0cc99f82d5f57b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0060_meta.json": "6a9635026fbb9a0dd9d1b8ff5857043c671498dd090382915db5dfb82d0daca9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0060.json": "e974947ee250365b968cee58718e9dc1117ac3f241ea098da2dbdc0d5c08af8e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0060_check.json": "2b3f84eb7f4d35dd7de4bf482fd0a4bf719f4380acd4de79d81940326ff13947",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0060_rerun.json": "0726be67c7070e63a931e7e212a92b164c6a69fbc377dba0c1587185518d5308",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0061.txt": "b54bbaf35bc14d98f2933f2f8de468a495925403e59e92a9268f9051d7385934",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0061_meta.json": "29d2bd36490eaea7868c180ca4f460b8b46e3bbb148a4493067f4ee4ac6f800e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0061.json": "d7d39dd82df560b4a45326de9b4aad8fd9504aae42ca0bcbb620f5ba72d567b2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0061_check.json": "0f5bea6d977100ae76f184aae1aec8c4f82b70e242e0fd42358a7ddd3a9b971a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0061_rerun.json": "9d56d4a1dc7bc690ad6dc396070888e606fbbba4489457261a2be465f7eacbeb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0062.txt": "c1252a309b948f3bce2e1d5568d26d5792cdae475020e2a68b508b9fad562c84",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0062_meta.json": "934226ef7e7373b5aa48e9f7f94298f26562df13d008930c959330bcf5c3141f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0062.json": "4e80fe320e58da7658e08038581f1210ea9f08a80cb8a0ddb281f4bd65e1288d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0062_check.json": "e7490f93c9ad219cc17963ce580ee8cb3e74f6cdbbae51664516f4dbe4a96fd8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0062_rerun.json": "971d8e73a9f5947303f63e8a543ed02cc13b42747843bfcec990170647c5d2f6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0063.txt": "29e907751a9ae1c2621d8f75a3900e9daef1bfb308dd7194b7317cd79d886d02",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0063_meta.json": "96fe345c81372ea7ca6e5c9666bfab789ffe12f8fbb1be012dfc80bcac61a3e1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0063.json": "ee03318f12260ea843c85a0dcab0e2d92c26e5df67ddfcb047067a63d9d507e1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0063_check.json": "aad14765ff3a5398931c5b259e672b52760f5e9528821c0049dec982f45c58d6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0063_rerun.json": "7082188806b0f6ccbc3ea92403b12599500379af7f25b1ba18ff83e4bdba6faa",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0064.txt": "8556b12893261e8328553c33ba49f3a7b9f8a7b7bd805cb62d555a6db678e5bf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0064_meta.json": "48b7907665e99c53f656bef272d5656a9b1608a00d228a0d00ec412b18f416a3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0064.json": "8be2efb38f49ee8c6b5aab7c69219d69ef78d00534cc59e6c3d37e93aa6e09a9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0064_check.json": "2e87fcf2fe6a165e271154c2e2ff1ec05dff0c3b1cbcb4c89754e3ed2c4b35bb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0064_rerun.json": "e3044252b7639b100a09614a56284f42f372dca873186b5b4949f371d05778d2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0065.txt": "0366ce7216141f14cef424d70acbb03e71246c457dade6af2d77f2c97124ef3c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0065_meta.json": "21ce6b134b430ad9bd439c431d7c747513aba3ca50955f74f45dfb693181f7c4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0065.json": "3ea8f10b0e95c93460962a09970d49cc4c5c248c1be513f0ef469512271c60d3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0065_check.json": "6ec8dfabdc6ed9bed930ab43d8dc5d10aa73583448f991971d16b6a92eedb8f7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0065_rerun.json": "6a38e0c88830fc7fee91245260e95ff325555f27c33b878ebc2e07d9f8743d7e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0066.txt": "878664e29a1b7a9ac70c0bde1c6b872271aa213513d259bafa61b221c5561cf4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0066_meta.json": "299855bbfce615971d77f0b1ec0fb12c8eafe17b39090f705599927c3355cc77",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0066.json": "f7b73931c6ad8883922039dc24d8096e1d957d9929d46c0eb24c6262c8b6772c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0066_check.json": "e6c29f47f29d07035f4f9010b4134954235943e0e84036fcaf424b905b2408ae",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0066_rerun.json": "6f0f46a5c2073df3c338d3d82ed82effce9211ddc6cfcf92e3a16c512c56ae94",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0067.txt": "1fe27d6b7035037652876b4edeb68fbe0b0756512ccdef9d98fc709b9da404fd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0067_meta.json": "bb06c992671ecf0f574ecb70c9c386b26a81eca0d75329141508575cb05cbeef",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0067.json": "e8ac54926fdfb2a0658ea5371addd4d05aaed6320ea17d060619421b057bc6c1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0067_check.json": "e39fee772f89855654bcf49963e3294cae144bc1f4e47a87e06a9dd6380e4e3a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0067_rerun.json": "53d6efe8e10d44a4b6003b2869e9b13dd0815630064a8adb757f8909cb3ba592",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0068.txt": "d780f5263e1244821e54c05a203d8d534de100787a92c69476d92039b882d36b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0068_meta.json": "9488536da456682b80f6c3b91317cc5d00caed1a1d602d1e7ec35abf1000743d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0068.json": "fc196e32a4a8a9961a1db8fca247f1355dcece8aa07efff558480b65124bb1dc",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0068_check.json": "f269961cf9f75891b98a18309b57b8c307ec7003644632bfebdbe3f82134a53f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0068_rerun.json": "39faf9b7b9ff639a28f8c97589dbc383df217f40e01e19c8a2f180aba1715ed9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0069.txt": "2bb5c64ed164e10b6f61846da2fb3aaa95499f38162bddadc9d3bbbb5f92203d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0069_meta.json": "79db69ecdd2c26a54c3d19998d91914fe73ce29c9930c8045bcdc996ee1152ac",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0069.json": "6e890eb655441e5a2d4a4e2b0fa4a2cf22dd059d0d98a29145a7577d2ecdc83b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0069_check.json": "d532db67c838e4ad6d5b36720925d913756ec7794a067053ec42fa405d9919b2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0069_rerun.json": "c5f6686aae6f158bbf80446096bc9cb1b3d6edefa3dbe997b0d3f9c1a276d846",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0070.txt": "c957f6e5f63bdedf28c17275ead00ece5f9ae0c5f6cf524590e2684e4e538474",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0070_meta.json": "3fe1f5c5e12872a57b33076423253c2c551885badda8c7b3b9614a7d2edf4621",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0070.json": "c5b0497f34c080d027248d487b2c55f96f93cff627408d2c734f755447947ee2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0070_check.json": "aaba8e3ea2493c4d12c8ef805ebe602bbbd0e364229e53b028c359b94da59d6e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0070_rerun.json": "32fd65b70f1958968b4f560b8136ce355692847294374fb92b8ac5be583e5340",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0071.txt": "bd7f5a5eaf980f5be40e44ae023e82f285c468ce41f9d54da73000094f5cb4a1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0071_meta.json": "27b4f1fd238df4484a1190d2c2c433ba6089f13421aab845f1b4a2502fbc8568",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0071.json": "4ef6a800dceab2939422193bd34e55b005bd2f627ae5f1f845fd70b0ea406b44",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0071_check.json": "501b2987cc6ebe146b76f738796310000bd5d81815dc9f16fd72a82bed7f8c09",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0071_rerun.json": "a2195920418ba1d7d780c75cab761581ae5356f557455ba2388f2c89e0dd9a83",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0072.txt": "fc692e6633117085a9740804cb3f8400ac61d08a68abeedc362279685ed03bec",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0072_meta.json": "bb77bc4e7106e313b7bfc438d29bdf956b193d0bee71c31589aef0fc29cf2c9f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0072.json": "c91bd1484d79572c69bf2fe99a23b8d86bd6035f336c8b2f8a3c13519ea8fe68",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0072_check.json": "76568b8a5682b4995620f7a0922e5f387ee7aaf58f1c30fe0efe9df9d3b11eb0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0072_rerun.json": "9ca4db545bfe5c06994933fcb942024fcc19da2ab37d1c87cdc828a910c6752e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0073.txt": "75bff31d0b5d721504e7f67cbc5411d4457847bf5727180ab94cd14f5fa8aa5b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0073_meta.json": "653851a099e2312edd3ce50ffebd06ac11bc8d2078ceb1b7be85216642b2a48e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0073.json": "20d7010dcd3817c5fa2bbccb9ab29e29bcb99e42df1456f43375acdf06e41584",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0073_check.json": "01596256857c384481f8f199e3526b2d88aa7a96a2b0fb8717d255e9023e721c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0073_rerun.json": "84cc9c62be207a89105cd728164301162100cc6a0c979488749989dde3f72b46",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0074.txt": "9c24f4f8aa46db235bedaf5e794ec95056f05fc149093c672b5159d68a449962",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0074_meta.json": "80619cf28952fbbae65a81ee4c06c06019fae46d3bec54579bd669f6c1dd388a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0074.json": "88b3c68d6aa13983faffc804663aa5efea8aa0d4cd2747961fe736395b61041b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0074_check.json": "d4b287344cdc5947019b243268b143a7b7a8c624fb0f924d54a00f423d8c968e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0074_rerun.json": "ed3e764d48044c3face6c3b745a4e31998037fd75678ddb077b4b274db52c271",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0075.txt": "82a7bb6fa56e30a8a9f788d5970de12ca11d3749b7ff54b5dd23c8fd8c6bfc85",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0075_meta.json": "04e29bd11b9ecd2a0c0157b80a52646cd5af48ea990725de2b2d4066d0dcb76c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0075.json": "425e3b4065b183436649427775220f375f9b5b749041de72f4cce137af2e5726",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0075_check.json": "43c7eb3f2ae1cdeb91c8b92c9f9f75b7a8c1a01634f5464a0d1e844b0cb89e9c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0075_rerun.json": "7d311313733f138a7b39b8e621d2d471f1ecfd2fad53fa50509efa849c3e2c1e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0076.txt": "d9a4795358ce87640ed9d2d77ba5cdc32e0a43fad1c7f084a8fdeaa2481af1a0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0076_meta.json": "1230a8133f75a4628d9987e29ecab7b0e13f7db77339f1003710859e429364fb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0076.json": "bbd080031997618e388bfb1ca595265aec94f4cb7d502ebe372cda37f01e40aa",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0076_check.json": "572aa3d26a568eaabeb74463cd4e8c8b063dd26976ace74b00db25bd69b43be4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0076_rerun.json": "87c218dba280cf0e1f337fce2586accde1d89afc6fa2ae718524f632bc5e12c1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0077.txt": "6efeada988f4e34ec9872f914f5ed619421320523b5cd16ea4d802e7c1c2da57",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0077_meta.json": "b6b529a18b70a87d7a8b1071f3857946b4c2bbca237ef533e8879cac3ef14164",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0077.json": "b0f796a10d3273034148ee96e8736f0fad6067a1e2d4ab579d8fe45a2b69351c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0077_check.json": "1a0f70ffcc346a18f43470d4583b411d56230137ff7915b5773cf7a7dd9c9a26",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0077_rerun.json": "a6f83f3ee70d0c9d1ccb2b4eda7bdc262ad59094ca76a78f8d41215994060c96",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0078.txt": "6c1b72010e2b744e6113281ad3f434031136ef9c1d14d285afb07501bb3df5e6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0078_meta.json": "5a007172585dbf421953daee3b24c7805a1a2f7a3ba8b62405b8f8a922c81cc0",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0078.json": "657aae2a10dca94f877f317f96faf3b6d5ff36c18e1bb9ad6199ce33797ec659",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0078_check.json": "bd5939c9f8b930533d199e0a890adb2feb6f08467876e8865b74137278cf5710",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0078_rerun.json": "16f375a717c919e9fba6e68a68187427ddaa1764b99b3b919af5e3fee465593f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0079.txt": "5add2a7cb7ee534a8214c135a48046fdc6bfd00ec37f7e7c5e7cfcd78e2e9eaf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0079_meta.json": "488c2fa94b3a3475a7f315bc3723c67c6689d2792d63ab2e3c2783aab2200432",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0079.json": "baa8a07c101ce610b27cb53ac656d055037d7fc6cccc1b5bc80f533bb78393fd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0079_check.json": "d4c509dd5755f772bafb3b9214fcc06f0013aed41a81a7ca1bb73808ffc7c5e1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0079_rerun.json": "04f66827d118b2512ce5066cde5f3a654d18e87eaabb0ba0be1bae148c59f5c9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0080.txt": "a63a1c20adb97f4b64b4abfca9e5be559ec817eb7f9c41c9a1a70b83ad7af6cb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0080_meta.json": "4275961864b4b9fb4720eb68b0b3608360460136819da4a9b8b42862e1728eb2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0080.json": "8199469dc97df3724654af423966641d90e675d0df358006eb65ae06ff8805e2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0080_check.json": "459320f779b90b4819be0d1da4b11264fcdf0e81c5365cde50bf6f36aefa25ed",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0080_rerun.json": "80dc7e33c074077859d038bdc132c81276986be26df51620921f978884893d98",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0081.txt": "316da5cc537c64eccf2c6566e6e93f944b674ac0ce1f6e1e296966fca63d765a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0081_meta.json": "8fc6beeb5f70319824eee0700f02018689fcbc5dfc02860bbeb97d39ffb5503a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0081.json": "a5a86ea7043173fb9a39840d23295ff3449cd8ba595acf48508a931c47742c6b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0081_check.json": "e565b4bb5fab96c88c68aea5bc6a982ff8eedd8f94669e0c2709cb0245b030a1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0081_rerun.json": "034fc5c37901247f2dde4a5ddda766049e8b9a40b411eef51c2ef5ebf2d48e30",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0082.txt": "c12e38b2534b5d5ecda9374f107e6c7641215baa2559debddbeb80f30755e723",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0082_meta.json": "d3fbeafe4fc46b22ede5f91c863a7050af756d52f8a6666dfa9d38e8e47f8919",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0082.json": "8631fbbc6aaab4d31b8223a384edf14e2772aa69a7f2814feb1ec5e1dc76459d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0082_check.json": "333ec954ad338ddfbeafbba08956ba130c7d971f8be9ec3093758719d2494104",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0082_rerun.json": "196b596bc5636f2fe9ac9aa4acfa61e3c8c6a6f9b86cb4324c7bd41e58154be4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0083.txt": "8bc511abf3c23ecaf8d71b8cac5c3ceeed8f9d403f51a7a18914c58495025d2b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0083_meta.json": "a3188a7d283ae3c2ab4e639612f1374fc53416d3f44db4d28b024d96597a2fc3",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0083.json": "294b6c1753e43b4fb116a46f8c21d06c3dec8520cb05fde47585cb036f807c7c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0083_check.json": "9ba3e3845ba13526a465f1fc63fef42370fd5193e9b8abadf01eb592227819ab",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0083_rerun.json": "e5a4f14cecf833c64522f2b8defce249ccce860c7ff92c79ba0e00ce8bd07264",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0084.txt": "813c52d86cedf8a3d6b5d0b42dffcf05797f4ca12ea911e9d20384748471fb08",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0084_meta.json": "c4d5890f9d73549e11aba2de1895fe0b4bc3659c1bca202273165e454e656060",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0084.json": "8b9ddf307f0238a5fc23513fa917e558f54c00f55603c738ba7ed42f810289b4",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0084_check.json": "c76d57413ea257c44a87dbdc95bfb434d637e12cae1eb5bb6873a718242b0f7d",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0084_rerun.json": "5cf7fb83fcb1df20090fa4ea9a3a2be4d5e7beaed06af081dfc0eed45e5d6e85",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0085.txt": "9b07baeaf3910ab140232d0cd51c0d08c5338666882356948b2e0a77b8d60d71",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0085_meta.json": "b7f8db9f47b9011ad5decb2d437cde73e5c2ed9af273d921ea8013da3564cc7f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0085.json": "47a99bf95b9e916e6125c9456176a6ced12781530acef2af25be1ad2b8dcf50e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0085_check.json": "eb84e32d346c415d66fa6f8157cf07973ae1963491e3add5d26f911d82096571",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0085_rerun.json": "385992d7f4cc851a7099e60ee4164fa23c56a925e4d64fe98d4de0a2ae31152c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0086.txt": "a4ba86774264c7fa12e58217016d5a12e73bcb3a182a302dfa42b52fd7a353d1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0086_meta.json": "9cec14541c071cba63e253134d08be7b4e9171c27f3d904483ca297fe16e6258",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0086.json": "54e098bed90042862c6d78ee0be439df7c5131356dde9d247476e29c346d1aca",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0086_check.json": "da50a487aa0180a440767338e37c30cd5e52f3e3258217c904d720a205c06872",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0086_rerun.json": "8c855d8c6182529e04ccf8808e30c83763ead36671f4f4838ddc5cbf1afe3a47",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0087.txt": "a2daf977e940b4ab0ba2d952c6a9de823ed1a07fc23a3fa0895f5263ef2268ca",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0087_meta.json": "4afecba1d18408fe5ce2ebc4b23469b628cac4c51e8bf380e7950338ae87108b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0087.json": "ab8034bc98732c59b0db7bfa679a016e7ac57b5be499b464dfd16987d9b6d4df",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0087_check.json": "ad836c309740ab73ec0d1d459f11177b484ed5d48e713de35564c56168a35499",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0087_rerun.json": "f2981e5b9d239af28b332058e1c000fcdc8de4dca729c8cac352f9c8fbc743e7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0088.txt": "eafa91c46f73e7c9d30c4449b714d9c1f48ccbb8e5a68325f20875464bcbc7bd",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0088_meta.json": "81e6c7317b6a80fae15124bd87ae692c3187fd14c2c746c7ee9eb17216682ba7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0088.json": "de9b8b210f5350e092e63cab2ab4ca27c8fa9a05b3b61975ef87adce599fcdf9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0088_check.json": "1b88b1a0a254bbd5b2b0a218c490eeb643691b90505a11309941638aa1426732",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0088_rerun.json": "bbcdb7b7340d3ee63e720bcf74b1250d44b57e5c69b7bebc8bd46bc21d514f7f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0089.txt": "1ff9a72fad57e0c07a273fd0b4546e89fcd28f57a471dd39fac36ecb41c2a0c7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0089_meta.json": "bad0ee00a754846117c38bb28f72d90fcba44bf74d8651b931d6a1b9f486d776",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0089.json": "1b35677f76e4d2fce562fa86d536bdb4956421fb92558b78959ae6a352a180c1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0089_check.json": "27cbe08f0029d9660a0f6b4d6314084b68d1759cd9417174c1793c0d192494f6",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0089_rerun.json": "98cc2e523685c1b3dd0bbb08aecc13d1e5c174379ba5296795a5343d24b1ce10",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0090.txt": "ca60c14380fe9e929f2151c4e88b70c58adb685c4644529084763f920268e081",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0090_meta.json": "c22302e4a5ca40abeeb3ffba6d06a273f92d3c8cbe15ef39a5a8c1b9ec5aa776",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0090.json": "2aed7569dc423573ff234d8542c2076c939cedd186e01b5ed12059a2548f70a7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0090_check.json": "a8010f42462c02333b31fc4279b8da6f24bf7fc3ec56a897bb8cde59fe92d8bb",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0090_rerun.json": "772ac7ff91ea41d6bd4abc93646112228baf41a54c18f158b9cc974ce278efe8",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0091.txt": "badf93986ba6a70110b841502592e75c5edb74e4447b0c75bcff67c6bf2bd9de",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0091_meta.json": "98d3cdbdb126170234773cdda14eb700b93b74414e115f886c13f7113586b982",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0091.json": "61892a2d4959211edcb9a265a50d23028bae2dd86515a2e5637da78e0b3b038f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0091_check.json": "2e3a557b40c0fc9ec4daf5c558f9a8bc28cba7fcaf96af1ead4ea35534493bab",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0091_rerun.json": "9f2642aeda313200973b98983c44cb7f6614126007bb69f8b1e08b3d502b7a99",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0092.txt": "b146d30a803a25e869212d9ccddda9b618a96841074682d98a64fca244d1cc1f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0092_meta.json": "850107de1c3e5f6178d892d0c1ee4d3af9d6f4933ddb9a188773cdce4b6bf782",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0092.json": "f04447f8a285ee85c68a0a17874f3c0399b6ee7adee3e18d7e073326ddd3056c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0092_check.json": "90cfe1b4af5b5b4152726aa882ad703e965ffb6652448a5deb07ebeab7a384ef",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0092_rerun.json": "c30d38b4de517befc5dca09ca9e9bb59fd8a22b29e91446a0114a7e28b8b5cff",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0093.txt": "5c9e5e86cda6e73e5f9da63b46535fd4bb8b100daa2dd16daac53c394ff13eec",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0093_meta.json": "13484f3df1fffed7a9a912240d494cb6ac299d7499a1a4f2b8cab5517c341d98",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0093.json": "4a2f7a7223a83765ff23f638588c121f2f3f120b152c6306167292173bd12e57",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0093_check.json": "49a4fbd59d39f3af500ab1951a9a444d80659ea776aa84bf4ca993c67b4af476",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0093_rerun.json": "e49f847a8a7480528b6253d1c43c23171f4cba33b5e32289c7a60b6124825e14",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0094.txt": "1762371864b5c1b8ed69096f004f0c63015313bd6fccea2c91604352347de99b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0094_meta.json": "1cc3cab5192922a386e92a47d4b5f804ca2a9efa1d9d48d09b87d82eef266a3c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0094.json": "ee3c3b26aeb584d26f7c85886589ab9ca3368cab0f65a79fd544d62d7e2b1e08",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0094_check.json": "7461bb23a790125edef09d39cac1088ce45f351e14996d5559f5e0f3f42b7008",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0094_rerun.json": "b59580d1c92a674bf7f1346dc674791aa61450a768da5247a970bb567602f345",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0095.txt": "d473c07f1909eff25fc980c66b2f22b6ab073451fb4c84a5e51cb9ae73eb94df",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0095_meta.json": "268238495c187761dba7a4fb5342799572add85e1d5a4681ee88f79831481587",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0095.json": "f1debd3f7f146120223740c69e12c899243b7bf1a99fce792d0b4cd679707016",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0095_check.json": "4eb947490c71ad8923bc2e9377d5af27fd4f97dd6204127a9435efebd5e1693f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0095_rerun.json": "28ce7e7647fb7ac9aa286bb398c32a6460799af3381d5498326d061997e08641",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0096.txt": "384be96298c2173a36e0a70a1e80d54e5dd9210fadc2839597ddac27e3108829",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0096_meta.json": "d998b0b4c1b97a5b1d1b0d9e991c014983393c1de13392a5655c562fd5fd3b5c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0096.json": "2d6f7ae6905ed56f1f10d964d88278950fd89c934b022f0d88a15f05a6ada3c7",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0096_check.json": "a49e1c88a59480d7ca46e06b623d241610531cc07e0a6846e10f2552aae346ae",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0096_rerun.json": "6ed535df3d8915b7e78421b954537d35aa59723d70e3cee1da6ce290207969b9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0097.txt": "6627649f6e152ff8e9f492f79d8de3508e3617630f23ed815036e60a35f219bc",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0097_meta.json": "2cc52a85b5271d1c6163533e5a3003fa79124ad9edf00f0c82c8d3cf44ced91c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0097.json": "1bb8b1b295952b9fe0b59febfea6a60cd01fc022d9a877603edaea0da22a9a83",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0097_check.json": "c1e75190118fecde7aa5560e0c557af388c540a9bcf5e8be24ffebc99c052434",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0097_rerun.json": "c0e413919f7a55d0e3022179dd5f71c9f267012c802b9761c8e7d6379b733dcf",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0098.txt": "edd5c79aea491d63c7f640693f209b1d8ed8a62c26e00a7cf9f350148852e2aa",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0098_meta.json": "5de2a93a41473fdccc85751ecb19daaf8b5fdc66a8a72594500e165dcf9fbe94",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0098.json": "be448f93e0cb5c846e83d891b17f8c114ad8c4a4cc0a80d3b38dbd4ea3656e65",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0098_check.json": "40978cd272b69f071762bfaa0d4d641fb879c7a14c7cfb1b83ba07ee4116d59c",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0098_rerun.json": "4931a57fd68c1bdd7270fea0bd2dacb97d9176ae8d9bec6d1771cc15c8136633",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0099.txt": "479644a8394ac7c8b5dc963c55be0c4d4b32ee1c70623194c9635ca1be52c197",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0099_meta.json": "2d66911753c1a2b1c1924f4d97ece5b6350777c1b20e62936bf986e4d3dc6212",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0099.json": "c025d95a15bc7b3db82fc7e5d6485870097cbc5a535aacd170f78a5b18bdf256",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0099_check.json": "3d715aef7e89e1722a6db797c886ab8c402d19ecf56259b9799bbeeb455b039f",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0099_rerun.json": "56a97e30f89b2b84fa84b468f06065345c026644849b020fe33640209b14d8b9",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0100.txt": "2365626dd3cd661f501e8762321f3e5da314b478b22f4f343e8fa4f822097b36",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0100_meta.json": "22bfabe6f3bcc502a9c705df7a34a3c961681354d5ab9bab023c94b6ae41127a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0100.json": "b38d229012c81f81bcc1110320eb3ac3be4eef22fc7d1a157725ad52ba7f5a04",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0100_check.json": "42a698fc5fcc9b43ab20f330ea0a5328a2b36d174768f47d002a6e30454e4e18",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0100_rerun.json": "bfdb6b416231ef7c7fd7351e1778bdde062a20360fc7672a13333a3750f24ff1",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0101.txt": "62530e985ff459c97dcefc44517dc8739042461600c1118be6d34e8e1699d17b",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0101_meta.json": "c649a6d26e743b98366f5106fe1711c318a391941f7fc2568696636555bbbf03",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0101.json": "d1097be38b4b1407c91790690baeaf0ea2cddeec5a7ed7754499b4340d8c7d3e",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0101_check.json": "3b725d607f989f7122efbe22a4742a9f92eafc91448d6f28277144bdc739eaf2",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0101_rerun.json": "8cb4f444886427929b5e8528499f3d893cf0ae853be4b1e6e2917e13ccff678a",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0102.txt": "90a746ee6a9513d88f19743453c295a990dc753087849da728dfe8527f7b8d99",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/meta/wbe0102_meta.json": "5a9c64d1a4550629a692f066976ea948eb30b8bc553a1514050d0994cf498951",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/request_records/wbe0102.json": "9dce90830e38530edbe25a3fa1788c7ccf5d99fbeaf334f21eb84f6d56636935",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks/wbe0102_check.json": "e2d91eb8594b746845ed4520ebaa60e100a28c850a63229508361acebbeeb912",
+    "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/checks_rerun/wbe0102_rerun.json": "7a143f1a99621db0a3d79ca50d5bcd5709c75eea870c3d4ff58e2eb4d746aa64",
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/结果/Base_7f_raw.jsonl": "b3dca5dd65a06398ba9e60346eb7da9d655d38d5631324969988fe53d08b6761",
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/结果/L-N3072-3407_7f_raw.jsonl": "6666413d62d82810b99b6c8cdb8e47e9dd96a21ef9c1f58552f101da665a9360",
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/结果/D-N3072-3407_7f_raw.jsonl": "86ac1f9694cb8af360e73205d616bacb8c0ab1e50a1fd359c926d226b6f068fb",
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/结果/D-N3072-3408_7f_raw.jsonl": "7e1cbd0ac52d96ada39792dcf820bc193ba7c9d6534b0a5553a63d7d30f8d333",
+    "协作/02_ClaudeCode_实操/夜间扩容_20261008_0244/结果/D-N3072-3409_7f_raw.jsonl": "73e92c5fd620b6a60e5c78ab1498fe266f642fdd7a13cefb897fab30dce2cda6"
+  }
+}

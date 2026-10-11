@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0519",
+    "image_sha256": "84155fa97ad16418ad779caef23b6e6a6ec79c214cbdab2e39726f739589d09b",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆最外圈约一至两圈die连续呈红色fail,构成环绕全圆周的薄层边缘环带,环内部绿色pass区中另散布约20余个彼此孤立的红色单点/短横点,散点与环带无明显连接",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "最外缘一至两圈die呈连续红色fail形成环带,环绕整个圆周,内部另散布约二十余个孤立红点,整体fail占比小",
+      "uncertainty": "中:边缘环带较薄且局部有断口,内部随机散点数量不少,Edge-Ring与Random混合特征并存,取边缘环为主导模式"
+    }
+  },
+  {
+    "item_id": "wbg0520",
+    "image_sha256": "9ce455d7c777195b6a557f4f75f0584dba48f383ea20659116dd5dfa4c881a7f",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外缘红色fail层断续环绕整个圆周,环带厚度不均、多处出现缺口,内部绿色区域中散布约三十余个孤立红色散点,部分散点呈两连点或短横条状,零散分布无明显聚集",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "外缘一圈红色fail断续环绕全周且厚薄不均,内部散布三十多个孤立红点, fail整体覆盖程度较低",
+      "uncertainty": "中:边缘环连续性一般且内部散点较多,Random成分明显,类别在Edge-Ring与Random之间存在模糊"
+    }
+  },
+  {
+    "item_id": "wbg0521",
+    "image_sha256": "f822db67dbad73e4e00a0bf4a6f9b44e4e3812aba535a18d98e2002ca85b8858",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外圈红色fail沿圆周分布但断续明显,左上与顶部略厚,环带未能完全闭合,内部绿色区域散布约三十多个孤立红点,左半区散点略密,均为单点或双连点,无成片聚集",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "外缘红色fail沿全周断续成环且局部加厚,内部散布三十余个孤立红点略偏左半区, fail覆盖程度低",
+      "uncertainty": "中:环带断续较明显,与Random散点混合,两者占比接近,主导类别判断置信度一般"
+    }
+  },
+  {
+    "item_id": "wbg0522",
+    "image_sha256": "437a5a495d31f729fa19c818f77dab549c5936909260f264846c5d5f0dccfd9e",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外缘薄层红色fail环绕圆周,底部6点附近红层相对更厚,内部绿色区域中红色散点密度较高,约四十余个,部分呈横向两连点并在中部偏上区域形成数个小簇,其余方位散点随机分布",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "外缘薄层红色fail环绕全周且底部略厚,内部四十多个红点散布并在中部偏上形成数个小簇, fail覆盖程度低到中等",
+      "uncertainty": "中:内部散点密度偏高且有小簇聚集,Random特征较强,与Edge-Ring混合,主导模式判断存在一定模糊"
+    }
+  },
+  {
+    "item_id": "wbg0523",
+    "image_sha256": "ef7ac08933c0ad4748c6f625530e3dd5f5511682ab6fa7c7f3616df62731c136",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail以孤立散点形式遍布整个圆内,数量约五十个,分布大体均匀,顶部12点方位外缘有一片相对更厚的红色聚集带,其余边缘仅薄层断续红,散点间偶有两连点但基本不成片",
+      "radial_zone": "中间",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail散点遍布全圆约五十个且分布均匀,仅顶部12点边缘红带略厚,整体fail占比低,以随机散点为主要特征",
+      "uncertainty": "中:散点占主导故判Random,但顶部12点边缘红色偏厚,存在轻度Edge-Loc倾向,方位归纳为无明显集中"
+    }
+  },
+  {
+    "item_id": "wbg0524",
+    "image_sha256": "cfefd1c70fff498dcdc275b62e932c5189872bed50a423623383e277e9f54d8a",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "晶圆中心偏上位置有一块约十余个die连成的不规则致密红色聚集块,边界参差,此外全圆散布约三十余个孤立红色散点,外缘基本无连续红层,仅在左右两侧和底部有零星红die",
+      "radial_zone": "中心",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "中心偏上即12点方位内侧出现一块十余个die组成的不规则致密红色缺陷块,周围全圆另散布三十多个孤立红点, fail占比低到中等",
+      "uncertainty": "低:局部致密块特征清晰,Loc判断明确,块体略偏右使方位在12点与1点之间略有模糊"
+    }
+  },
+  {
+    "item_id": "wbg0525",
+    "image_sha256": "4b535d911f04d79e4051dbc798371867b0cbffb39f8005d495b4add772f3bff6",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail密度很高,绿红两色混杂遍布整个圆面,红色约占四至五成,中部至中下偏右区域红色连片形成大片聚集,其余区域红点仍密集交错,边缘一圈也残留较多红die,整体呈高密度随机分布叠加中部偏密",
+      "radial_zone": "中心",
+      "clock_direction": "中心偏右下",
+      "extent_r": null,
+      "caption_zh": "红色fail高密度遍布全圆约占四至五成,中心至中下偏右连片聚集最重,边缘也有大量散布红die, fail覆盖程度高",
+      "uncertainty": "高:红色占比接近一半且中部连片,Random与Center/Near-full之间边界模糊,绿红占比接近使类别判断置信度偏低"
+    }
+  }
+]

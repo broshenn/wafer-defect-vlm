@@ -1,0 +1,1 @@
+{"morphology_zh":"一个大面积红色失效团块，边缘不规则，占据晶圆上部","main_location_zh":"团块位于晶圆上半部并偏向顶部边缘，下半部以绿色合格为主","location_clock":[12],"orientation_clock":[],"secondary_observations":["下部绿色区域散布少量红色失效点"],"caption_zh":"晶圆上部偏顶方向有一个大块红色失效团块，其余区域以绿色合格为主并散见红点。","uncertainty":""}

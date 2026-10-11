@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以孤立单点及小簇形式零散散布于整个晶圆，无明显聚集或结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die随机散布在全晶圆各区域，无可见集中模式\",\"uncertainty\":\"\"}",
+  "raw_sha256": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "01701517f434a5e4ddb962646a48f15f1d6274fdf0c83cf90c54e8edb09610e6",
+  "input_path": "raw/wbe0012.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

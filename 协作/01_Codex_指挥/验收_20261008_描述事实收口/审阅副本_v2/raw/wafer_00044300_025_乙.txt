@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Edge_Loc","morphology":"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。","radial_zone":"edge","clock_direction":"null","extent_r":null,"caption_zh":"晶圆边缘区域存在稀疏、断续的缺陷点分布，无明显特定角度聚集。","uncertainty":""}

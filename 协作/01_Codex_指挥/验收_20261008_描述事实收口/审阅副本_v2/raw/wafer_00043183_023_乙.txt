@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Near_full","morphology":"大面积红色区域覆盖晶圆大部分，仅边缘和中心有少量绿色像素","radial_zone":"global","clock_direction":"null","extent_r":null,"caption_zh":"红色区域占据绝大部分晶圆面积，绿色区域呈零星分布","uncertainty":""}

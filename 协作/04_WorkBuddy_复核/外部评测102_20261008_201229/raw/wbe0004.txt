@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"上半部有一大片连续红色失效区域，从上边缘延伸至中心附近，下半部以绿色为主并散布零星红色点","radial_zone":"center","clock_direction":"12点钟","extent_r":null,"caption_zh":"大面积连续红色失效区域集中在晶圆上部并延伸至中部，下半部基本完好。","uncertainty":"红色区域同时到达上边缘与中部，径向区域归属介于center与edge之间"}

@@ -1,0 +1,1 @@
+{"defect_class": "Random", "morphology": "红色失效die以孤立散点为主，夹杂少量横向或纵向相邻die的短条，散布于晶圆全图；晶圆中心附近有一小簇相邻的红色die；未见大片连续失效区或环形结构；绿色合格die占绝大多数。", "radial_zone": "global", "clock_direction": null, "extent_r": null, "caption_zh": "晶圆全图散布孤立的红色失效点及少量短条，中心附近有一小簇红色die，绿色合格die占绝大多数。", "uncertainty": "中心附近的小簇范围很小，是否为局部聚集无法判断；散点分布的性质无法进一步判断。"}

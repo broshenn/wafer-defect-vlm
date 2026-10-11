@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以孤立点随机散布于全晶圆，中心附近有零星小块聚集，无大片连续区域\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die随机散布在晶圆各处，仅中心附近等少数位置有零星小块聚集\",\"uncertainty\":\"中心附近有零星小块聚集，随机分布与弱局部聚集的界限不完全清晰\"}",
+  "raw_sha256": "0051480f8d878e17b6853272ec9448b9b5665d951917627dcfbf0e97d0ce4698",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "0051480f8d878e17b6853272ec9448b9b5665d951917627dcfbf0e97d0ce4698",
+  "input_path": "raw/wbe0021.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

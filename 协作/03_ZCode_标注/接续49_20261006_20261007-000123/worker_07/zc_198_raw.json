@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Loc","morphology":"底部6点方向边缘处有一条横向红色条带并延伸至晶圆轮廓底部，附近有少量相邻红色die；其余区域仅有零星孤立红色散点","radial_zone":"edge","clock_direction":"6点方向","extent_r":null,"caption_zh":"主要失效为底部边缘处的一条横向红色条带，其余区域仅有零星散点。","uncertainty":"底部条带较短，归为Edge_Loc而非Scratch存在不确定性；零星散点与条带是否相关未知"}

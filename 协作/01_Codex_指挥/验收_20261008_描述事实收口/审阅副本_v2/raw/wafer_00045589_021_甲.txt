@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"右下象限的红色块状区域","radial_zone":"middle","clock_direction":"null","extent_r":null,"caption_zh":"右下象限存在红色块状失效区域","uncertainty":""}

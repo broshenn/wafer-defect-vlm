@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Center\",\"morphology\":\"中央区域大片红色失效连片聚集，外围红绿随机混杂\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆中央区域出现大片红色失效die连片聚集，外围区域红绿die随机交错分布，失效向边缘逐渐零散。\",\"uncertainty\":\"外围红绿混杂明显，中央聚集与全局随机的界限不完全清晰。\"}\n",
+  "raw_sha256": "d9a4795358ce87640ed9d2d77ba5cdc32e0a43fad1c7f084a8fdeaa2481af1a0",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "d9a4795358ce87640ed9d2d77ba5cdc32e0a43fad1c7f084a8fdeaa2481af1a0",
+  "input_path": "raw/wbe0076.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

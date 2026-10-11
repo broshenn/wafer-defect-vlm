@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0323",
+    "image_sha256": "36490812844d15d173820d2908b1103413f52cddc0f208c15ba7547257bf7811",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "红色fail die在晶圆中心密集聚集成不规则团块，块内连片致密，团块外围零星分布少量随机红点，其余区域为绿色pass",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die密集聚集成不规则团块并占据晶圆中心，团块尺寸约为晶圆直径四分之一，外围仅有零星散点，整体fail覆盖程度较低",
+      "uncertainty": "低——中心致密团块特征清晰醒目，与周围散点对比明显，Center分类把握较大"
+    }
+  },
+  {
+    "item_id": "wbg0324",
+    "image_sha256": "4276a76bae0eb4b6da09af625f753cbba6b41310f72172e9b1abc550912d155c",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "晶圆中部偏下出现一片实心致密的红色fail连片大块，块体轮廓不规则，同时整个晶圆面内还散布着数量较多的随机红点",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "晶圆中心偏下区域形成大片实心致密红色fail块，尺寸约占晶圆直径的三分之一，并向外围发散较多随机红点，全图fail覆盖中等偏高",
+      "uncertainty": "中——中心连片块体显著且为最突出结构，但全图随机散点量也不小，Center与Random叠加存在主从判断的模糊"
+    }
+  },
+  {
+    "item_id": "wbg0325",
+    "image_sha256": "779a96886ad1247a9faea0410484ac7c1dc4c2d727b4454b36ba90c42c37882a",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "晶圆左半侧出现大片致密红色fail区，自左上角向左侧和左下方向铺展，块体连片且边界不规则，右侧大部分区域保持绿色pass并伴少量散点",
+      "radial_zone": "中间",
+      "clock_direction": "8-12点",
+      "extent_r": null,
+      "caption_zh": "晶圆左侧自左上延伸至左下形成大片致密红色fail区并深入到圆心附近，面积约占晶圆的三分之一，右半侧基本为pass",
+      "uncertainty": "低——偏侧连片聚集形态典型，Loc分类特征明确，方位判断清楚"
+    }
+  },
+  {
+    "item_id": "wbg0326",
+    "image_sha256": "938b756fce8977e6aa46eee421dbe0535c36ca38a4ff0e59404b100931aff425",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "晶圆上部偏右有一团局部红色fail聚集，团块从顶部边缘附近向内延伸成不规则片状，右缘中部另有一小簇次级聚集，其余区域仅稀疏散点",
+      "radial_zone": "边缘",
+      "clock_direction": "12-1点",
+      "extent_r": null,
+      "caption_zh": "晶圆上部偏右12至1点方向出现局部红色fail团块并自边缘向内延伸，尺寸较小，另在3点方向边缘有小簇聚集，整体fail覆盖低",
+      "uncertainty": "中——主聚集块较小且紧贴上边缘，与Edge-Loc的界限不够清晰，且存在次级小簇使形态略显复杂"
+    }
+  },
+  {
+    "item_id": "wbg0327",
+    "image_sha256": "b4ce0e5478b52b024b5a53527b42bb57af605c41a209dd13147abca3088f10e9",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail die以很高比例随机散布整个晶圆，红绿两色犬牙交错呈马赛克状，无任何连片、环带或线状结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die以约五至六成的高比例均匀随机散布于整个晶圆面内，红绿混杂交织，不见任何空间聚集结构",
+      "uncertainty": "低——随机均匀分布特征非常直观，fail比例虽高但距near-full的全红状态仍有明显距离"
+    }
+  },
+  {
+    "item_id": "wbg0328",
+    "image_sha256": "927c93bedd6414628a2e1de4f8c23730aaad472351fa359938f2b67bfcbd471b",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail die随机散布全图与绿色pass形成细碎马赛克混合，仅上半部红点密度略高于下半部，不存在连续块体或带状结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die以接近五成的比例随机散布整个晶圆并与绿色pass细碎混杂，仅上半区密度略占优，整体无聚集或定向结构",
+      "uncertainty": "低——随机混杂形态明确，上半部略密尚未形成可辨认的方位性缺陷结构"
+    }
+  },
+  {
+    "item_id": "wbg0329",
+    "image_sha256": "9e0eef80fe33d9509eb0c1a632a86b6ec999bddb2f01351ad2e47a71a743a158",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "全图绿色为主并铺有低密度细小红点，左边缘沿轮廓出现一条贴边弧形红色带状聚集，下边缘亦有零星红点，中下部偏右另见轻微密集",
+      "radial_zone": "边缘",
+      "clock_direction": "8-10点",
+      "extent_r": null,
+      "caption_zh": "晶圆以绿色pass为主并伴低密度随机红点，左边缘8至10点方向沿边出现弧形红色带状聚集，带宽较窄，整体fail覆盖较低",
+      "uncertainty": "高——左缘贴边条带细弱且全图散点近随机，在Edge-Loc、Scratch与低密度Random之间区分把握不足，方位判断也可能受条带弯曲影响"
+    }
+  }
+]

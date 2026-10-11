@@ -1,0 +1,42 @@
+{
+  "item_id": "zc_126",
+  "sample_id": "wafer_00042904_012",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00042904_012.png",
+  "image_sha256": "91f0bd645e212868c0755dc5809a7a079923b35407eb3d19af6e9062235480f3",
+  "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_126_raw.json",
+  "raw_sha256": "501ec3c2e449e5f5535f5d50ae437b1b5873474d4fd571f20b1af687f8d32752",
+  "visual_read_count": 1,
+  "visual_read_tool": "tools.view_image(path=original_png, detail=original); functions.exec image(result.image_url)",
+  "first_answer_only": true,
+  "retry_count": 0,
+  "checker_exit_code": 0,
+  "checker_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261003_GLM180\\check_answer_v4.py",
+  "checker_sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2",
+  "checker_command": [
+    "D:/python/python.exe",
+    "-X",
+    "utf8",
+    "-B",
+    "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261003_GLM180\\check_answer_v4.py",
+    "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_03\\zc_126_raw.json",
+    "--json"
+  ],
+  "started_at": "2026-10-06T11:33:44.7119084+00:00",
+  "raw_saved_at": "2026-10-06T11:34:11.995709+00:00",
+  "finished_at": "2026-10-06T11:34:12.104333+00:00",
+  "model_call_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "backend_model_id": "未提供",
+    "temperature": "未提供",
+    "seed": "未提供",
+    "token_usage": "未提供"
+  },
+  "prompt_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "source": "gpt_model_annotation",
+  "legacy_original_path_checked_without_reading": "D:\\pycode\\晶圆图研究\\协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_19\\zc_126_raw.json",
+  "legacy_original_existed_at_save": false,
+  "context_scope": "blind_03 only, fixed prompt and checker, global project instructions; no original label, lot, geometry, other answers or parent conversation",
+  "human_review_status": "not_performed"
+}

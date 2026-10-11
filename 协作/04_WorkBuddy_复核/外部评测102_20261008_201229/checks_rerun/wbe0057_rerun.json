@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"失效die沿晶圆边缘形成整圈连续红色环带，环内晶圆区域基本为绿色，另散布少量孤立红色单点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"主要失效形态为环绕晶圆边缘一整圈的红色环带，内部另有稀疏散布的孤立红点。\",\"uncertainty\":\"内部散点数量少且无聚集方向，未单独归类。\"}\n",
+  "raw_sha256": "f8459af24de792b28525a1c7db47ca93db0410dfd6b5584e13b3607348a78425",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "f8459af24de792b28525a1c7db47ca93db0410dfd6b5584e13b3607348a78425",
+  "input_path": "raw/wbe0057.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

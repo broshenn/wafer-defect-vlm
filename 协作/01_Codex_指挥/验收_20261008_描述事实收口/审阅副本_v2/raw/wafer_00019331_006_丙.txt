@@ -1,0 +1,13 @@
+<think>
+
+</think>
+
+{
+"defect_class": "Loc",
+"morphology": "红色像素呈不规则块状和条状分布",
+"radial_zone": "global",
+"clock_direction": null,
+"extent_r": null,
+"caption_zh": "红色失效点以不规则块状和条状形态随机分布于晶圆全局区域",
+"uncertainty": ""
+}

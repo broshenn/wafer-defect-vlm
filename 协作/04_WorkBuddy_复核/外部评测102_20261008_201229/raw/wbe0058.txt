@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效单点在全晶圆范围内稀疏随机散布，无聚集、无条带、无边缘成环","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效点散布于整个晶圆区域，分布随机且密度较低。","uncertainty":""}

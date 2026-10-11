@@ -1,0 +1,9 @@
+{
+  "files": {
+    "prompt_7f.txt": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+    "schema_check.py": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+    "README.md": "80c99cec8eb0648b324a9153c4e8e1ac909aeace52de7b0a6966d20984bce0d3",
+    "离线13例_验证.json": "7c2eef0573189063b416c9d848ab2ac01a0aa54fc11b4b9972d0060dee1e98ba"
+  },
+  "scope": "执行输入及机械检查，不含真实样本答案或gold"
+}

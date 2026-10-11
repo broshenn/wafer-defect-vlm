@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"红色失效die沿晶圆边缘连成整圈环带，环带较宽且基本连续，环内几乎全部为合格die，仅见极少量孤立红点","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"失效die在晶圆边缘形成完整环带，内部基本合格","uncertainty":"环带内侧边界略有不齐，个别处稍窄，但不影响整圈连续的判断"}

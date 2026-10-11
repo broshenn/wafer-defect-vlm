@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘大片团块加全局零星散点","main_location_zh":"顶部边缘","location_clock":[12],"orientation_clock":[],"secondary_observations":["左侧边缘约9点钟附近有少量红点聚集","全局散布零星红色失效点"],"caption_zh":"红色失效主要集中在顶部边缘形成大片团块，左侧边缘有少量聚集，其余区域散布零星红点。","uncertainty":""}

@@ -1,0 +1,2 @@
+{"command":"D:/python/python.exe -X utf8 -B 协作/01_Codex_指挥/无卡CPU整备_20261010/workbuddy_schema_check.py <raw>","exit_code":0,"stdout":{"schema_ok": true, "errors": [], "warnings": ["numeric_or_causal_claim_requires_content_review"], "content_verified": false, "raw_sha256": "93b898059d68ee246fc6c936da97e4ee26396674c9537fde09b4febf18402b27"}
+}

@@ -1,0 +1,22 @@
+{
+  "item_id": "zc_143",
+  "sample_id": "wafer_00044307_018",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00044307_018.png",
+  "image_sha256": "9ef57a159d664c14e5df8311672a533ba0f4f44bab01c4b767018f69949e1b7e",
+  "started_at": "2026-10-06T11:38:07.053665+00:00",
+  "old_raw_exists": false,
+  "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_06\\zc_143_raw.json",
+  "raw_sha256": "37306cbaaea60c472c5fcae4da0fdd4b977721922055bc0ec3d44466cf5fc727",
+  "answer_saved_at": "2026-10-06T11:38:25.875991+00:00",
+  "finished_at": "2026-10-06T11:38:26.015463+00:00",
+  "visual_read_count": 1,
+  "checker_version": "format_v4_clock_range_20261003",
+  "checker_exit_code": 0,
+  "model": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "source": "gpt_model_annotation",
+  "backend_version": "未提供",
+  "token_usage": "未提供",
+  "prompt_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+  "prompt_used_verbatim": true
+}

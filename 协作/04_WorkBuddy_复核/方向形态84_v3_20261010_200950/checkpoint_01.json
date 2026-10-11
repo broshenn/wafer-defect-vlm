@@ -1,0 +1,1 @@
+{"checkpoint":1,"at_utc":"2026-10-10T12:19:42Z","planned":84,"attempted":7,"format_pass":7,"format_fail":0,"not_executed":77,"completed_batches":["batch_01"],"in_flight":[],"notes":"父会话完成batch_01全7张，视觉链路/写盘/检查器正常"}

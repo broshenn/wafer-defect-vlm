@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0386",
+    "image_sha256": "2f37e267a798cadcdcebaa72b4270a670f20cbe73396a6fe35be4decd7b8d373",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "红色fail die在右上偏中部形成一块面积较大、边界不规则的实心聚集斑，斑内几乎无绿色夹杂；其余圆面仅有零星随机红点散布，边缘零星点缀",
+      "radial_zone": "中间",
+      "clock_direction": "1-2点",
+      "extent_r": null,
+      "caption_zh": "右上偏中部出现一块不规则实心红色聚集斑，约占圆面一成多，其余区域为绿色并散布零星红点",
+      "uncertainty": "中：聚集块边界不规则且与随机散点并存，Loc判断较稳但具体范围略有主观性"
+    }
+  },
+  {
+    "item_id": "wbg0387",
+    "image_sha256": "6604af3702967ba6b0fd3ec90e2fa0168f82d32dd8ab39e6509d19c84e79f2f5",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "中部偏右下有一块致密红色主团块，同侧偏左还伴随数条横向短带与稀疏散点连成的次级分布，整体呈主块加散尾的组合形态",
+      "radial_zone": "中心",
+      "clock_direction": "4-5点",
+      "extent_r": null,
+      "caption_zh": "红色fail die集中于中心偏右下形成致密团块并向4-5点方向延伸，左侧中部另有稀疏短带与散点，整体覆盖约一成圆面",
+      "uncertainty": "中：主团块明确，但左侧散带是否计入主要缺陷形态存在模糊，影响范围估计"
+    }
+  },
+  {
+    "item_id": "wbg0388",
+    "image_sha256": "632cdabb6cf13f8b76733888a329adb042229e25fba5b5d4e8f9fbcb5336197e",
+    "raw_answer": {
+      "defect_class": "Donut",
+      "morphology": "红色fail die围绕中心偏左下的绿色完好区排成一条粗细不均的闭合倾向环带，环体上部与右侧较厚实，左下与左侧断续；环外缘与圆周边缘仍为大片绿色",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色fail die在中部区域围成一条不完整的粗环带，环内保留绿色核心，环外为绿色正常区，环带覆盖约两成圆面",
+      "uncertainty": "中：环带不闭合且厚薄悬殊，与不规则的Center或Ring形态存在归类模糊，倾向Donut"
+    }
+  },
+  {
+    "item_id": "wbg0389",
+    "image_sha256": "bda16987fa6f8712d68d447fe5a55c379b7aada755f29403bf36d20bf365c954",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "红色fail die在上半圆连成一片横贯左右的大面积实心红区，纵深从上边缘直达圆心附近，左上与右上边缘均有沾染，下半圆基本为绿色完区",
+      "radial_zone": "中间",
+      "clock_direction": "10-2点",
+      "extent_r": null,
+      "caption_zh": "上半部10点至2点方位形成横贯左右的厚实红色聚集带，自上边缘向内延伸至近圆心，约占圆面三成半，下半部保持绿色",
+      "uncertainty": "中偏高：红区纵深大且横跨边缘到中心，在Loc、Edge-Loc与偏心Center之间界限模糊，取Loc为最保守归类"
+    }
+  },
+  {
+    "item_id": "wbg0390",
+    "image_sha256": "e0edd85e86671210210fbbdd1a906fb583f920147996a7224e2f531e999dd3be",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "以圆心为核形成一大片近似圆形的致密红色区域，内部夹杂少量绿色散岛，红色外缘略呈锯齿状，圆周方向过渡较均匀，最外圈仍保留绿色边环",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆中心出现一大片近圆形致密红色失效区，向四周均匀扩展约占圆面五成，仅边缘一圈保持绿色",
+      "uncertainty": "低：中心致密圆形聚集形态典型，各向分布均匀，Center归类把握较大"
+    }
+  },
+  {
+    "item_id": "wbg0391",
+    "image_sha256": "4eb13d16bfbece1ed7eb5163c99b8c7c5c74d59ba67c204abfee9f7fd4a1115d",
+    "raw_answer": {
+      "defect_class": "Near-full",
+      "morphology": "红色fail die几乎铺满整个圆面并直达边缘，仅在圆心附近、左上与左下残留几簇绿色斑块和小岛，红色为连片致密分布而非散点",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色失效die连片覆盖几乎整个圆面约七至八成，从中心一直蔓延到边缘，仅在中心区与左上左下残留零星绿色斑块",
+      "uncertainty": "低中：连片致密覆盖明确指向Near-full而非Random散点，但绿色残留比例的观感受压缩影响，覆盖率估计偏粗"
+    }
+  },
+  {
+    "item_id": "wbg0392",
+    "image_sha256": "7f2bf37f124b35d3ad1bfd51f00fa3bb0b91ad68c9ef58ac56faa82496f83d52",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "左上象限及相邻左中部有一片不规则红色聚集，由若干实心小块与短带拼接而成，周围散布较多孤立红点并向中部扩散，右侧与下半部相对干净",
+      "radial_zone": "中间",
+      "clock_direction": "9-11点",
+      "extent_r": null,
+      "caption_zh": "红色fail die在左上至左中部拼成不规则聚集区并向周围发散散点，整体覆盖约一成半圆面，右下大部保持绿色",
+      "uncertainty": "中：聚集块碎片化且与随机散点混合，主缺陷边界不清晰，Loc归类可信但范围估计波动大"
+    }
+  }
+]

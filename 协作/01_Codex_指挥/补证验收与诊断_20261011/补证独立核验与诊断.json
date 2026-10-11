@@ -1,0 +1,1566 @@
+{
+  "formal_training": {
+    "M0_v3": {
+      "final_step": 128,
+      "actual_epoch": 1.0,
+      "epoch_arg_default": 3.0,
+      "max_steps_arg": 128,
+      "loss_scale": "default+ignore_empty_think",
+      "adapter_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09"
+    },
+    "M1_v3": {
+      "final_step": 256,
+      "actual_epoch": 1.0,
+      "epoch_arg_default": 3.0,
+      "max_steps_arg": 256,
+      "loss_scale": "default+ignore_empty_think",
+      "adapter_sha256": "e81f6c4d644d59b550165f94f0178b7e261904f686dd3add6c1cec55fb298399",
+      "formal_runtime_gate": {
+        "model_loading_gate": "passed",
+        "two_step_gate": "passed",
+        "mode": "sft",
+        "M0_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09",
+        "policy_equal_M0_tensor_count": 496,
+        "trainable_tensor_count": 496,
+        "step": 2,
+        "policy_changed_tensors": 496,
+        "nonzero_gradient_tensors": 496,
+        "forwards": {
+          "policy": 8,
+          "reference": 0,
+          "image": 8
+        }
+      }
+    },
+    "M2_v3": {
+      "final_step": 256,
+      "actual_epoch": 1.0,
+      "epoch_arg_default": 3.0,
+      "max_steps_arg": 256,
+      "loss_scale": "last_round+ignore_empty_think",
+      "adapter_sha256": "7e80057e17537aec936b077b47c3f4a828ccc30e67865377803a2b11dfd77b6f",
+      "formal_runtime_gate": {
+        "model_loading_gate": "passed",
+        "two_step_gate": "passed",
+        "mode": "rl",
+        "M0_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09",
+        "policy_equal_M0_tensor_count": 496,
+        "reference_equal_M0_tensor_count": 496,
+        "trainable_tensor_count": 496,
+        "step": 2,
+        "policy_changed_tensors": 496,
+        "nonzero_gradient_tensors": 496,
+        "forwards": {
+          "policy": 16,
+          "reference": 8,
+          "image": 26
+        },
+        "reference_unchanged_M0_tensor_count": 496
+      }
+    },
+    "comparison": {
+      "common_settings": {
+        "max_steps": 256,
+        "learning_rate": 1e-05,
+        "lr_scheduler_type": "cosine",
+        "warmup_ratio": 0.0,
+        "warmup_steps": 0,
+        "optim": "adamw_torch_fused",
+        "adam_beta1": 0.9,
+        "adam_beta2": 0.95,
+        "adam_epsilon": 1e-08,
+        "weight_decay": 0.1,
+        "max_grad_norm": 1.0,
+        "tuner_type": "lora",
+        "target_modules": [
+          "all-linear"
+        ],
+        "lora_rank": 16,
+        "lora_alpha": 32,
+        "lora_dropout": 0.05,
+        "freeze_vit": true,
+        "freeze_aligner": true,
+        "torch_dtype": "bfloat16",
+        "bf16": true,
+        "per_device_train_batch_size": 1,
+        "gradient_accumulation_steps": 4,
+        "gradient_checkpointing": true,
+        "max_length": 2048,
+        "seed": 3407,
+        "data_seed": 3407,
+        "dataset_shuffle": false,
+        "train_dataloader_shuffle": false,
+        "dataloader_drop_last": false,
+        "save_strategy": "steps",
+        "save_steps": 128,
+        "save_total_limit": 3,
+        "eval_strategy": "no",
+        "report_to": [],
+        "resume_only_model": true,
+        "template": "qwen3_5",
+        "add_non_thinking_prefix": true,
+        "disable_ignore_empty_think": false,
+        "padding_side": "right",
+        "packing": false
+      },
+      "same_base_path": true,
+      "same_M0_adapter_path": true,
+      "M2_reference_path_matches_M0": true,
+      "loss_scale_difference": {
+        "M1": "default+ignore_empty_think",
+        "M2": "last_round+ignore_empty_think"
+      },
+      "batch_labels_mask_evidence": "not_recorded",
+      "full_base_shard_SHA": "not_obtained; config SHA is not full weight SHA"
+    }
+  },
+  "workbuddy": {
+    "client_log_verification": {
+      "file_SHA_matches_local_manifest": true,
+      "entry_count": 982,
+      "adjacent_chain_and_sequences_match": true,
+      "scope": "local client records; not an external cryptographic witness"
+    },
+    "reconstructed_items": 30,
+    "client_dispatch_order_verified": true,
+    "matched_new_manifest_entries": 16,
+    "current_original_fingerprints_verified": 150,
+    "originals_match_first_Codex_review": true,
+    "limitations": [
+      "Read/Write events record dispatched tool operations, not their returned contents",
+      "no backend request count, model identity, context isolation or first cognition proof"
+    ],
+    "per_item": [
+      {
+        "review_id": "rv30_001",
+        "item_id": "wbv3_002",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4305,
+          "PNG": 4306,
+          "observation": 4307,
+          "old_raw": 4310,
+          "review": 4312
+        }
+      },
+      {
+        "review_id": "rv30_002",
+        "item_id": "wbv3_003",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4315,
+          "PNG": 4316,
+          "observation": 4317,
+          "old_raw": 4320,
+          "review": 4322
+        }
+      },
+      {
+        "review_id": "rv30_003",
+        "item_id": "wbv3_005",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4325,
+          "PNG": 4326,
+          "observation": 4327,
+          "old_raw": 4330,
+          "review": 4332
+        }
+      },
+      {
+        "review_id": "rv30_004",
+        "item_id": "wbv3_006",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4335,
+          "PNG": 4336,
+          "observation": 4337,
+          "old_raw": 4340,
+          "review": 4342
+        }
+      },
+      {
+        "review_id": "rv30_005",
+        "item_id": "wbv3_009",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4345,
+          "PNG": 4346,
+          "observation": 4347,
+          "old_raw": 4350,
+          "review": 4353
+        }
+      },
+      {
+        "review_id": "rv30_006",
+        "item_id": "wbv3_010",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4356,
+          "PNG": 4357,
+          "observation": 4358,
+          "old_raw": 4361,
+          "review": 4363
+        }
+      },
+      {
+        "review_id": "rv30_007",
+        "item_id": "wbv3_014",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4366,
+          "PNG": 4367,
+          "observation": 4368,
+          "old_raw": 4371,
+          "review": 4373
+        }
+      },
+      {
+        "review_id": "rv30_008",
+        "item_id": "wbv3_016",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4383,
+          "PNG": 4385,
+          "observation": 4390,
+          "old_raw": 4393,
+          "review": 4395
+        }
+      },
+      {
+        "review_id": "rv30_009",
+        "item_id": "wbv3_024",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4401,
+          "PNG": 4404,
+          "observation": 4412,
+          "old_raw": 4417,
+          "review": 4425
+        }
+      },
+      {
+        "review_id": "rv30_010",
+        "item_id": "wbv3_029",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4428,
+          "PNG": 4429,
+          "observation": 4435,
+          "old_raw": 4440,
+          "review": 4448
+        }
+      },
+      {
+        "review_id": "rv30_011",
+        "item_id": "wbv3_031",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4455,
+          "PNG": 4457,
+          "observation": 4460,
+          "old_raw": 4467,
+          "review": 4472
+        }
+      },
+      {
+        "review_id": "rv30_012",
+        "item_id": "wbv3_033",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4478,
+          "PNG": 4479,
+          "observation": 4483,
+          "old_raw": 4488,
+          "review": 4498
+        }
+      },
+      {
+        "review_id": "rv30_013",
+        "item_id": "wbv3_034",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4501,
+          "PNG": 4502,
+          "observation": 4503,
+          "old_raw": 4506,
+          "review": 4508
+        }
+      },
+      {
+        "review_id": "rv30_014",
+        "item_id": "wbv3_037",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4511,
+          "PNG": 4512,
+          "observation": 4513,
+          "old_raw": 4516,
+          "review": 4518
+        }
+      },
+      {
+        "review_id": "rv30_015",
+        "item_id": "wbv3_038",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4380,
+          "PNG": 4381,
+          "observation": 4384,
+          "old_raw": 4388,
+          "review": 4396
+        }
+      },
+      {
+        "review_id": "rv30_016",
+        "item_id": "wbv3_039",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4402,
+          "PNG": 4403,
+          "observation": 4405,
+          "old_raw": 4408,
+          "review": 4410
+        }
+      },
+      {
+        "review_id": "rv30_017",
+        "item_id": "wbv3_040",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4416,
+          "PNG": 4418,
+          "observation": 4420,
+          "old_raw": 4423,
+          "review": 4430
+        }
+      },
+      {
+        "review_id": "rv30_018",
+        "item_id": "wbv3_043",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4433,
+          "PNG": 4434,
+          "observation": 4436,
+          "old_raw": 4442,
+          "review": 4445
+        }
+      },
+      {
+        "review_id": "rv30_019",
+        "item_id": "wbv3_044",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4449,
+          "PNG": 4450,
+          "observation": 4452,
+          "old_raw": 4458,
+          "review": 4461
+        }
+      },
+      {
+        "review_id": "rv30_020",
+        "item_id": "wbv3_046",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4466,
+          "PNG": 4468,
+          "observation": 4470,
+          "old_raw": 4474,
+          "review": 4480
+        }
+      },
+      {
+        "review_id": "rv30_021",
+        "item_id": "wbv3_049",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4484,
+          "PNG": 4485,
+          "observation": 4489,
+          "old_raw": 4492,
+          "review": 4494
+        }
+      },
+      {
+        "review_id": "rv30_022",
+        "item_id": "wbv3_051",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4527,
+          "PNG": 4528,
+          "observation": 4530,
+          "old_raw": 4536,
+          "review": 4539
+        }
+      },
+      {
+        "review_id": "rv30_023",
+        "item_id": "wbv3_055",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4545,
+          "PNG": 4546,
+          "observation": 4549,
+          "old_raw": 4552,
+          "review": 4559
+        }
+      },
+      {
+        "review_id": "rv30_024",
+        "item_id": "wbv3_056",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4565,
+          "PNG": 4566,
+          "observation": 4567,
+          "old_raw": 4570,
+          "review": 4572
+        }
+      },
+      {
+        "review_id": "rv30_025",
+        "item_id": "wbv3_061",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4575,
+          "PNG": 4576,
+          "observation": 4577,
+          "old_raw": 4580,
+          "review": 4583
+        }
+      },
+      {
+        "review_id": "rv30_026",
+        "item_id": "wbv3_063",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4586,
+          "PNG": 4587,
+          "observation": 4588,
+          "old_raw": 4591,
+          "review": 4593
+        }
+      },
+      {
+        "review_id": "rv30_027",
+        "item_id": "wbv3_064",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4596,
+          "PNG": 4597,
+          "observation": 4598,
+          "old_raw": 4601,
+          "review": 4603
+        }
+      },
+      {
+        "review_id": "rv30_028",
+        "item_id": "wbv3_068",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4606,
+          "PNG": 4607,
+          "observation": 4608,
+          "old_raw": 4611,
+          "review": 4613
+        }
+      },
+      {
+        "review_id": "rv30_029",
+        "item_id": "wbv3_073",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4524,
+          "PNG": 4526,
+          "observation": 4529,
+          "old_raw": 4535,
+          "review": 4540
+        }
+      },
+      {
+        "review_id": "rv30_030",
+        "item_id": "wbv3_076",
+        "ordered_client_tool_events": true,
+        "PNG_Read_tool_events": 1,
+        "old_raw_Read_tool_events": 1,
+        "source_event_sequences": {
+          "started": 4547,
+          "PNG": 4548,
+          "observation": 4553,
+          "old_raw": 4557,
+          "review": 4561
+        }
+      }
+    ]
+  },
+  "candidates": {
+    "allocation": {
+      "unreviewed_keep": 54,
+      "review_or_reject_isolated": 9,
+      "candidate_pending_review": 20,
+      "candidate_suspend": 1
+    },
+    "all_gold_eligible_false": true,
+    "all_in_adapt": true,
+    "seen_by_previous_D": 57,
+    "green_target_flags": [
+      "wbv3_018",
+      "wbv3_064",
+      "wbv3_082"
+    ]
+  },
+  "diagnosis": {
+    "field_changes_M2_vs_M1": {
+      "defect_class": {
+        "M1_correct_M2_wrong": 5,
+        "M1_wrong_M2_correct": 3,
+        "net_correct_change": -2
+      },
+      "coverage_band": {
+        "M1_correct_M2_wrong": 17,
+        "M1_wrong_M2_correct": 3,
+        "net_correct_change": -14
+      },
+      "red_mass_zones": {
+        "M1_correct_M2_wrong": 11,
+        "M1_wrong_M2_correct": 3,
+        "net_correct_change": -8
+      }
+    },
+    "prediction_distributions": {
+      "M0_v3": {
+        "coverage_band": {
+          "\"5_to_under_20pct\"": 65,
+          "\"20_to_under_50pct\"": 49,
+          "\"under_5pct\"": 2,
+          "\"half_or_more\"": 4
+        },
+        "angular_type": {
+          "\"unknown\"": 25,
+          "\"nondirectional\"": 95
+        }
+      },
+      "M1_v3": {
+        "coverage_band": {
+          "\"5_to_under_20pct\"": 62,
+          "\"20_to_under_50pct\"": 54,
+          "\"half_or_more\"": 4
+        },
+        "angular_type": {
+          "\"unknown\"": 20,
+          "\"nondirectional\"": 100
+        }
+      },
+      "M2_v3": {
+        "coverage_band": {
+          "\"5_to_under_20pct\"": 72,
+          "\"20_to_under_50pct\"": 39,
+          "\"under_5pct\"": 5,
+          "\"half_or_more\"": 4
+        },
+        "angular_type": {
+          "\"single\"": 4,
+          "\"nondirectional\"": 116
+        }
+      }
+    },
+    "reference_distributions": {
+      "coverage_band": {
+        "\"5_to_under_20pct\"": 56,
+        "\"half_or_more\"": 6,
+        "\"20_to_under_50pct\"": 54,
+        "\"under_5pct\"": 4
+      },
+      "angular_type": {
+        "\"unknown\"": 43,
+        "\"nondirectional\"": 77
+      }
+    },
+    "same_reward_imperfect_groups_same_wrong_field": {
+      "red_mass_zones": 28,
+      "coverage_band": 16,
+      "defect_class": 3
+    },
+    "regression_cases": [
+      {
+        "sample_id": "wafer_00042718_020",
+        "field": "defect_class",
+        "reference": "Edge_Loc",
+        "M0": "Edge_Loc",
+        "M1": "Edge_Loc",
+        "M2": "Edge_Ring",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00006227_012",
+        "field": "defect_class",
+        "reference": "Loc",
+        "M0": "Random",
+        "M1": "Loc",
+        "M2": "Random",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00045856_016",
+        "field": "defect_class",
+        "reference": "Scratch",
+        "M0": "Scratch",
+        "M1": "Scratch",
+        "M2": "none",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00004724_020",
+        "field": "defect_class",
+        "reference": "Edge_Loc",
+        "M0": "Edge_Loc",
+        "M1": "Edge_Loc",
+        "M2": "Random",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00019390_010",
+        "field": "defect_class",
+        "reference": "Loc",
+        "M0": "Loc",
+        "M1": "Loc",
+        "M2": "Center",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00040511_025",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00039511_020",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "5_to_under_20pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00030429_024",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00003293_002",
+        "field": "coverage_band",
+        "reference": "5_to_under_20pct",
+        "M0": "under_5pct",
+        "M1": "5_to_under_20pct",
+        "M2": "under_5pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036752_019",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036893_009",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00047286_025",
+        "field": "coverage_band",
+        "reference": "5_to_under_20pct",
+        "M0": "5_to_under_20pct",
+        "M1": "5_to_under_20pct",
+        "M2": "under_5pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036761_016",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036782_008",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00046043_007",
+        "field": "coverage_band",
+        "reference": "5_to_under_20pct",
+        "M0": "5_to_under_20pct",
+        "M1": "5_to_under_20pct",
+        "M2": "under_5pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00006394_010",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "5_to_under_20pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036761_005",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "5_to_under_20pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036738_025",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "5_to_under_20pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00036077_023",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00040362_016",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00007973_013",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00010329_021",
+        "field": "coverage_band",
+        "reference": "20_to_under_50pct",
+        "M0": "20_to_under_50pct",
+        "M1": "20_to_under_50pct",
+        "M2": "5_to_under_20pct",
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00006227_008",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00016605_007",
+        "field": "red_mass_zones",
+        "reference": [
+          "edge"
+        ],
+        "M0": [
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00019277_014",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00006227_012",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00043554_018",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00015670_012",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00047286_025",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00015373_023",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00019864_007",
+        "field": "red_mass_zones",
+        "reference": [
+          "edge"
+        ],
+        "M0": [
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00045717_009",
+        "field": "red_mass_zones",
+        "reference": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M0": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "center",
+          "middle",
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      },
+      {
+        "sample_id": "wafer_00012744_015",
+        "field": "red_mass_zones",
+        "reference": [
+          "edge"
+        ],
+        "M0": [
+          "middle",
+          "edge"
+        ],
+        "M1": [
+          "edge"
+        ],
+        "M2": [
+          "middle",
+          "edge"
+        ],
+        "usage": "development diagnosis; never tune the final test on these cases"
+      }
+    ],
+    "imperfect_group_diagnostics": [
+      {
+        "sample_id": "wafer_00003868_015",
+        "reward": 0.6,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00005993_007",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 4,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00007369_003",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 4,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00035449_021",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 4,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00007846_013",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00045679_019",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00018905_003",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00032163_012",
+        "reward": 0.5,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00015069_014",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00040472_024",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00042367_008",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00002517_001",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00044298_014",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00043831_010",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00045697_023",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00044127_023",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00045455_011",
+        "reward": 0.7000000000000001,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00046670_007",
+        "reward": 0.3571428571428572,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00036956_003",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00043906_004",
+        "reward": 0.48571428571428577,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00010049_013",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00037354_004",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00047468_022",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00002520_025",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00012756_013",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00042167_019",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00047486_009",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00036882_022",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00046595_016",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00018905_009",
+        "reward": 0.48571428571428577,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00044394_008",
+        "reward": 0.6142857142857143,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00044221_006",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00041132_016",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00024199_005",
+        "reward": 0.3571428571428572,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00017160_005",
+        "reward": 0.7428571428571429,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0
+        }
+      },
+      {
+        "sample_id": "wafer_00034143_009",
+        "reward": 0.7000000000000001,
+        "distinct_parsed_answers": 3,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00043031_004",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00045877_015",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00039609_016",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00042167_017",
+        "reward": 0.6,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00002521_008",
+        "reward": 0.6,
+        "distinct_parsed_answers": 2,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      },
+      {
+        "sample_id": "wafer_00003916_010",
+        "reward": 0.7999999999999999,
+        "distinct_parsed_answers": 1,
+        "eligibility": {
+          "class": 0.3,
+          "coverage": 0.2,
+          "zones": 0.2,
+          "angular": 0.2
+        }
+      }
+    ],
+    "interpretation": "counts show behavior changes; do not establish training mechanism causality"
+  },
+  "scope": {
+    "new_GPU_runs": 0,
+    "new_model_requests": 0,
+    "sources_unchanged": true,
+    "server_connections": 0,
+    "seed": 3407
+  }
+}

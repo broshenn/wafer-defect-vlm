@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Center",
+"morphology":"中心区域存在大面积不规则红色聚集",
+"radial_zone":"center",
+"clock_direction":null,
+"extent_r":null,
+"caption_zh":"晶圆中心区域存在大面积红色失效聚集",
+"uncertainty":""
+}
+```

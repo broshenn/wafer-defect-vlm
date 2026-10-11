@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die全圆散布，中心略偏右处有几块相邻红色die形成小聚集\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"全圆随机散布红色失效die，中心偏右见小片相邻聚集，其余区域零散分布\",\"uncertainty\":\"中心小聚集规模较小，不排除Loc可能，但整体以随机散布为主\"}\n",
+  "raw_sha256": "bbaf0e93fa46424ef3a5bf24d7f08c3f18c1b04b38afd502d0f9d67ccf6b20a6",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "bbaf0e93fa46424ef3a5bf24d7f08c3f18c1b04b38afd502d0f9d67ccf6b20a6",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0023.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

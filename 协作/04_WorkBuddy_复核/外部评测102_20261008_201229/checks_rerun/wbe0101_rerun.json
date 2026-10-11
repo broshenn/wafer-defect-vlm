@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效 die 以单个或小簇形式随机散布于整片晶圆，无方向性或几何图案\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效 die 随机散布在整个晶圆表面，部分相连成小簇，无特定几何形态。\",\"uncertainty\":\"散布无特定模式，Random 判断基于随机分布形态。\"}\n",
+  "raw_sha256": "62530e985ff459c97dcefc44517dc8739042461600c1118be6d34e8e1699d17b",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "62530e985ff459c97dcefc44517dc8739042461600c1118be6d34e8e1699d17b",
+  "input_path": "raw/wbe0101.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

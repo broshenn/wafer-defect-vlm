@@ -1,0 +1,8 @@
+{
+  "item_id": "wbe0001",
+  "sample_id": "wafer_00003298_021",
+  "started_at": "2026-10-08T20:17:59+08:00",
+  "image_sha256_runtime": "02e13a28ce4f2eb94da58afd0e5678f21e8daf8263d850ab04384d03cb507c01",
+  "image_sha256_ok": true,
+  "note": "第一分片为链路验证批次读取：无逐项独立started时间戳，图片hash在读取前已批量核验一致"
+}

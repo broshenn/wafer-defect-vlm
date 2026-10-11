@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"团簇状","radial_zone":"center","clock_direction":"4点钟","extent_r":null,"caption_zh":"晶圆中心区域存在一个致密的红色缺陷团簇，主要分布在4点钟方向附近。","uncertainty":""}

@@ -1,0 +1,35 @@
+{
+  "supplement_review": "accepted_with_documented_limits",
+  "new_GPU_runs": 0,
+  "server_connections": 0,
+  "new_image_requests": 0,
+  "old_sources_unchanged": true,
+  "sensitive_pattern_hits": 0,
+  "tasks_prepared_not_messaged": true,
+  "files": [
+    {
+      "file": "核验补证.py",
+      "sha256": "f1037661a53865e05ad3d6e0fd9a502f320e571b7e5f54a110458f4e3a68c716"
+    },
+    {
+      "file": "给Claude_CPU归因与训练前检查.md",
+      "sha256": "6ccb3ada19cc768614c4039bc65a95ba704b7e1d65f7cb8c64af485514dcda8a"
+    },
+    {
+      "file": "给WorkBuddy_整理争议审阅卡.md",
+      "sha256": "75c96e38abde66af8725491a28ffb3f8a6e202407cb7a8a8094dc7325dbf7a56"
+    },
+    {
+      "file": "补证独立核验与诊断.json",
+      "sha256": "374ca6eb38e15f41371c46e5ca730830ff620225cf84d66ed8e551b96280ca77"
+    },
+    {
+      "file": "输入指纹.json",
+      "sha256": "658374b5ce58dcac9bce9cfac990653669baa0021f6417c61ccb984fbe79d392"
+    },
+    {
+      "file": "验收结论与下一步.md",
+      "sha256": "a87775237acb33e54be796dfb4dafed301e1629f4fc497faf5c7987f93e0d099"
+    }
+  ]
+}

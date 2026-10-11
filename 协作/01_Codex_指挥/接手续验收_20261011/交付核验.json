@@ -1,0 +1,41 @@
+{
+  "status": "CPU_review_complete_evidence_supplements_pending",
+  "raw_metrics_reproduced": true,
+  "lot_paired_primary_CI_added": true,
+  "record_anomalies_preserved": true,
+  "old_sources_unchanged_during_audit": true,
+  "new_GPU_runs": 0,
+  "new_paid_requests": 0,
+  "messages_sent_to_other_chats": 0,
+  "sensitive_pattern_hits": 0,
+  "files": [
+    {
+      "file": "v3_独立核验.json",
+      "sha256": "d215374238df48f39b11c17bf5cd157901a0c635dab7df55c5b7748cbff8e408"
+    },
+    {
+      "file": "WorkBuddy30_独立核验.json",
+      "sha256": "af44babb2862b6b24299f4481fe2706e1b34f2abfcdeb09cff51df2ff276d140"
+    },
+    {
+      "file": "独立核验.py",
+      "sha256": "6bf05b318330ead4c6b494368ba4ec7493e2050d268315e2129be7dd16a63eaf"
+    },
+    {
+      "file": "给Claude_补齐证据与候选分账.md",
+      "sha256": "9fed0927c45777ee0fdd4b1fe8e806fbb3ac420b43d9c7d89e1275537e8cd96f"
+    },
+    {
+      "file": "给WorkBuddy_只补记录不重新看图.md",
+      "sha256": "493b38354ddc16dbce7c11b4628802710ccfca44ecaf8f110fc29554c31a8055"
+    },
+    {
+      "file": "输入指纹.json",
+      "sha256": "19f04706f2c255020f9c5a04aea8e962fcbf256649699365d30a201dacb70b2e"
+    },
+    {
+      "file": "验收与下一步.md",
+      "sha256": "4b19be4cdd8a7073573e465369b4f9928c5b4c7db6234d8690a949dd328b5d5c"
+    }
+  ]
+}

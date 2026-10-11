@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"中部有数条横向和纵向的红色线状失效贯穿分布，另散布零星红色失效点","radial_zone":"middle","clock_direction":null,"extent_r":null,"caption_zh":"数条横竖走向的红色线状失效穿过晶圆中部，周围散布零星红色失效点。","uncertainty":"存在多条不同方向的线状失效，无法给出单一可靠方向"}

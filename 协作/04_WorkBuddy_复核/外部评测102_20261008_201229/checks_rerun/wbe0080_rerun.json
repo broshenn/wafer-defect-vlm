@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"红色失效die在晶圆中部偏右下聚集成大片局部区块，周围零星散布\",\"radial_zone\":\"center\",\"clock_direction\":\"5点钟\",\"extent_r\":null,\"caption_zh\":\"失效die主要集中在晶圆中部偏右下形成局部聚集块，中心区域密集，外围零散分布\",\"uncertainty\":\"聚集区从中心向右下延伸，具体边界不清晰，方向判断为大致5点钟方向\"}\n",
+  "raw_sha256": "a63a1c20adb97f4b64b4abfca9e5be559ec817eb7f9c41c9a1a70b83ad7af6cb",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "a63a1c20adb97f4b64b4abfca9e5be559ec817eb7f9c41c9a1a70b83ad7af6cb",
+  "input_path": "raw/wbe0080.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

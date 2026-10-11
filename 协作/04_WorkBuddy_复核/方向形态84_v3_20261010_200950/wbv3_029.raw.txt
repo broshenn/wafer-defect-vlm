@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘团块加全局零星散点","main_location_zh":"右下边缘，其余区域绿色为主伴零星散点","location_clock":[5],"orientation_clock":[],"secondary_observations":["全局散布零星红色失效点","顶部边缘可见少量红点"],"caption_zh":"红色失效主要集中在右下边缘形成一片聚集团块，其余区域散布零星红点。","uncertainty":"聚集区沿右下边缘略有延伸，中心约在4至5点钟之间。"}

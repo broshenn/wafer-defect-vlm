@@ -1,0 +1,1 @@
+{"morphology_zh":"底部边缘有一红色密集团块，另有红色点状格点散布全片","main_location_zh":"主要团块位于晶圆底部边缘（6点钟方向），其余区域为全局散布","location_clock":[6],"orientation_clock":[],"secondary_observations":["中心及上半部散见红色点状失效格点","底部团块紧贴晶圆边缘"],"caption_zh":"底部边缘6点钟方向有一红色密集团块，其余区域红色点状失效格点散布","uncertainty":"底部团块略有向左下延展的趋势，位置仍以6点钟边缘为主"}

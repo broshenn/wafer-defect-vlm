@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0267",
+    "image_sha256": "fa1f58828cdfa3882cc3a5e2d150589c8e1d50eb7d7f9d90d9f5b2b768984532",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "红色fail沿晶圆圆周边缘断续连成环带，宽度不均，下半部与左下角处最宽，环带内侧多处绿色穿透至边；晶圆内部另散布少量孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向（下半部略密）",
+      "extent_r": null,
+      "caption_zh": "边缘一圈断续红色环带，整周均有分布、下半部更宽更密，宽度约1至4个die，内部仅有零星散点。",
+      "uncertainty": "中：边缘红色整周存在但环带断续且宽窄不一，介于Edge-Ring与Edge-Loc之间，主类判断存在分歧空间。"
+    }
+  },
+  {
+    "item_id": "wbg0268",
+    "image_sha256": "74746db6f35aa18c26495b980b7e6115653260751bacc60d305acdefe5a08cf7",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "边缘环绕一圈连续细窄红色环带，厚度约1至2个die；晶圆内部另见较多随机分布的孤立红点与小簇，无明显聚集中心",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆边缘为连续细窄红色环带且覆盖整周，内部伴随机散布的红点，整体覆盖程度中等。",
+      "uncertainty": "中：边缘环特征清晰，但内部散点数量偏多，可能混有Random成分。"
+    }
+  },
+  {
+    "item_id": "wbg0269",
+    "image_sha256": "1adb9f94c99b0cd59fa0a0cd92322e16b20727f27a78133d7a3df92fe8a9dee1",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "边缘红色环带整周连续，右侧与右下侧环带略厚、左侧较薄；内部红点散布较广，右中偏内处有几小簇横向排列的红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向（右侧稍厚）",
+      "extent_r": null,
+      "caption_zh": "边缘整周红色环带、右侧略厚，内部散布红点并在右中区域形成少量小簇，覆盖程度中等。",
+      "uncertainty": "中：主体为边缘环，内部散点偏多且右侧有成簇迹象，不排除叠加Loc或Random成分。"
+    }
+  },
+  {
+    "item_id": "wbg0270",
+    "image_sha256": "51af2baeb040688eaa258da870599bbdd12aea99a2e266a57f60208bbfec6635",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "边缘细薄红色环带，整周可见但局部断续、宽度仅约1个die，右上角与下缘略厚；晶圆内部基本干净，仅极少量孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆边缘为一圈细薄且局部断续的红色环带，内部几乎无缺陷，覆盖程度较低。",
+      "uncertainty": "中：环带细薄断续，与Edge-Loc多弧段形态有重叠，置信度一般。"
+    }
+  },
+  {
+    "item_id": "wbg0271",
+    "image_sha256": "043580ec19461b8d51e628c87fcd9e2aad91cc4df5a6f9811b6994847f1840ad",
+    "raw_answer": {
+      "defect_class": "Donut",
+      "morphology": "红色呈宽弧形带状围绕晶圆中心分布，环带断续不闭合、左侧开口，上偏左与下中各有一大块致密红团，右侧为竖向窄带，中心区域未被累及",
+      "radial_zone": "中间",
+      "clock_direction": "环形（左侧开口，主体位于11点至5点弧段）",
+      "extent_r": null,
+      "caption_zh": "红色缺陷围绕中心呈断续弧形环带，上部与下中部红团致密、右侧伴窄带，中心绿色完好，整体覆盖约两成。",
+      "uncertainty": "高：环带不闭合且各段宽窄差异大，与多个Loc聚集或环形划痕形态相近，类别归属不够确定。"
+    }
+  },
+  {
+    "item_id": "wbg0272",
+    "image_sha256": "5f227b685947896f1d372922e06c5fb1bf7a5bc38b049304a88004a45c6a0a48",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "左下至下中部两片相邻的致密红色团块，团块边缘略带毛刺状散点；其余区域仅零星孤立红点，晶圆边缘自身绿色完好",
+      "radial_zone": "中间",
+      "clock_direction": "7-8点（左下至下中）",
+      "extent_r": null,
+      "caption_zh": "左下至下中部出现两片相邻致密红色缺陷团，位于半径中部偏外、未触及晶圆边缘，其余区域基本为绿色。",
+      "uncertainty": "低：局部聚集特征明确，方位与形态清晰。"
+    }
+  },
+  {
+    "item_id": "wbg0273",
+    "image_sha256": "8fbe2d27c8753ce34f70b3fe9be8f753b492c04a832b1f83e3ec5d8ec9d32e39",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "一条细红划痕自左上边缘斜向下延伸至中部后近乎直角折向右、直达右缘，呈折线状；此外全图散布少量孤立红点",
+      "radial_zone": "中间",
+      "clock_direction": "10-11点起延伸至3点方向",
+      "extent_r": null,
+      "caption_zh": "一条折线状红色划痕从左上边缘贯穿中部延伸到右侧边缘，细窄且走向清晰，其余区域仅有零星散点。",
+      "uncertainty": "低：线状划痕特征显著，走向与形态明确。"
+    }
+  }
+]

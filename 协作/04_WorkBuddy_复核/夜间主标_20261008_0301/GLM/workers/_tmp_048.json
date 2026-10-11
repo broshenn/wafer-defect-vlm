@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0330",
+    "image_sha256": "68be1f378d731a4845831b81385f2ba8bddf68fd795404d8281ad2e18ba63e2d",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "局部密集小块状聚集，另在全图散布稀疏随机单点",
+      "radial_zone": "中间",
+      "clock_direction": "3点",
+      "extent_r": null,
+      "caption_zh": "晶圆中部偏右约3点方向存在一小块紧凑的红色失效聚集区，尺寸较小覆盖有限，其余区域以散在的随机红点为主，绿色合格die占绝对多数。",
+      "uncertainty": "中：聚集块明确，但散点背景较多，Loc与Random的主次划分存在主观性。"
+    }
+  },
+  {
+    "item_id": "wbg0331",
+    "image_sha256": "c2940d9288bc68d42430a38f323c330c9d0914323ee9824f3931ecf447479ae6",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "连续的边缘带状失效环，内部伴稀疏散点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆最外圈一整周被红色失效die连续包绕形成较窄的边缘环，内部绿色为主并散布少量随机红点，环带宽度和覆盖程度都不大。",
+      "uncertainty": "低：边缘整周红带清晰连续，判定直观。"
+    }
+  },
+  {
+    "item_id": "wbg0332",
+    "image_sha256": "69b5aed01f47d34bd81d80da46c6ee0018efed337db2fea9c06076ea969ddb3c",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外周红色失效环带，厚度不甚均匀，内部散点略多",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘一圈呈带状红色失效分布，环带略宽窄不均但基本整周贯通，内部区域以绿色为主且夹杂中等密度的随机红点。",
+      "uncertainty": "中：边缘环存在但局部偏薄，与内部散点比例接近时归类的边界略模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0333",
+    "image_sha256": "4a3bacebf75baa5ce38253f2519f8af1512a1d59f73a3ed08b4b51bf576b1541",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "边缘整周带状失效环，内部散布中等密度随机红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘整周可见红色失效构成的环状带，厚度中等且略有起伏，内部绿色区域中散布不少随机分布的红点，整体fail覆盖以边缘为主。",
+      "uncertainty": "中：边缘环明确，但内部散点较多，边缘环与随机散点的相对贡献需权衡。"
+    }
+  },
+  {
+    "item_id": "wbg0334",
+    "image_sha256": "4b657662221820e81fcce654c3b2f0fab88b16447d306c07890d73f8dce0652b",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "边缘断续带状失效环，厚薄不均，内部散点偏多",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外缘一圈大体被红色失效带包绕，顶部与左上、右下段较厚而局部出现间断，内部绿色为主但随机红点密度偏高，整体覆盖仍以边缘带为主。",
+      "uncertainty": "中偏高：边缘环不完全连续且厚薄变化明显，Edge-Ring与Edge-Loc之间归类把握一般。"
+    }
+  },
+  {
+    "item_id": "wbg0335",
+    "image_sha256": "1af31a6ab13c8dfdb5498787900d66379d2ecf9b85cda7d01c9df78c1109c338",
+    "raw_answer": {
+      "defect_class": "Near-full",
+      "morphology": "外围大面积块状失效，绿色合格区退缩为中央一块近方形区域",
+      "radial_zone": "边缘",
+      "clock_direction": "3点与9点两侧及6点方向大面积，上部相对窄",
+      "extent_r": null,
+      "caption_zh": "晶圆左右两侧及下方被大片连续红色失效区覆盖，红色约占全圆一半以上，仅在中央偏左残留一块边界近似方形的绿色合格区，属于大面积失效模式。",
+      "uncertainty": "中：大面积失效明确，但绿色区呈规则方形边界，模式成因（掩膜块或超厚环带）难以从图面唯一确定。"
+    }
+  },
+  {
+    "item_id": "wbg0336",
+    "image_sha256": "ecd3a251b5d7a964c103ae31b25f069a1bd544ac07d4fcd8028bb85490916e2e",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "边缘局部弧段状密集聚集，并向内略作延伸，背景散点稀少",
+      "radial_zone": "边缘",
+      "clock_direction": "3-5点",
+      "extent_r": null,
+      "caption_zh": "晶圆右侧约3至5点方向的边缘处出现一片红色失效密集聚集区，沿边缘呈弧块状并向内略延伸，尺寸中等，其余区域绿色为主、仅有零星散点。",
+      "uncertainty": "低：聚集区位置与形态清晰，仅边缘归属弧段的起止角度有少量估计误差。"
+    }
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "item_id": "wbg0239",
+    "defect_class": "Edge-Ring",
+    "morphology": "沿晶圆外周分布一圈断续的红色fail带，环体较薄且宽窄不一，晶圆内部还散布少量孤立红点",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆外周一圈断续的薄环状fail带环绕全园，宽度约1至2颗die且宽窄不均，内部另有二三十颗散在的孤立fail die，缺陷以边缘为主。",
+    "uncertainty": "中——边缘环贯穿全园但较薄且有多处缺口，与Edge-Loc及Random散点的界限不够清晰。"
+  },
+  {
+    "item_id": "wbg0240",
+    "defect_class": "Edge-Ring",
+    "morphology": "外缘细碎的环状fail边框叠加全园随机散布的孤立fail点，环不连续，内部散点略偏多",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "fail die在晶圆外围构成断续的细环，同时园内散布数十颗孤立的红色散点且均匀无聚集，边缘环覆盖约整个圆周。",
+    "uncertainty": "中——环带细且断续，内部随机散点数量偏多，Edge-Ring与Random混合形态难以严格区分。"
+  },
+  {
+    "item_id": "wbg0241",
+    "defect_class": "Edge-Ring",
+    "morphology": "边缘一圈断续红带并偶有缺口，内部为均匀散布的稀疏红点，无成片或线状结构",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆外围断续分布一圈细的fail带并偶有缺口，内部fail die稀疏散布且分布均匀，缺陷规模小、以边缘环为主。",
+    "uncertainty": "中——环体多处中断且左侧中部边缘近乎无fail，环的完整性存疑。"
+  },
+  {
+    "item_id": "wbg0242",
+    "defect_class": "Edge-Ring",
+    "morphology": "外周断续红环且右上及右侧略厚，内部随机散点较密集，散布全园、中上部略密",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆边缘环绕断续的fail带且右上方稍厚，园内还散布五六十颗随机分布的孤立fail die，整体fail密度较单纯边缘环更高。",
+    "uncertainty": "中偏高——内部随机散点占比不小，与Random类别的区分依据不足。"
+  },
+  {
+    "item_id": "wbg0243",
+    "defect_class": "Edge-Ring",
+    "morphology": "边缘厚实环带，左半侧与底部明显加厚至两三颗die宽，右上相对薄，内部散布零星红点",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向（9点至6点侧明显更厚）",
+    "extent_r": null,
+    "caption_zh": "晶圆外周形成一圈较厚且基本连续的fail环带，其中左半侧及底部加宽至两三颗die，内部另散布少量孤立fail die，环带为主要缺陷。",
+    "uncertainty": "低——环带厚实连续、形态特征明确，仅厚度存在方位差异。"
+  },
+  {
+    "item_id": "wbg0244",
+    "defect_class": "Edge-Ring",
+    "morphology": "外缘细断续环，左上、左下、右下数处稍厚，内部散点分布均匀无聚集",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆外缘分布一圈细而断续的fail环，数处略有加厚，内部fail die零散均匀分布，整体fail比例较低、以边缘环为主导。",
+    "uncertainty": "中——环体细且有多处缺口，与散点主导的Random形态存在重叠。"
+  },
+  {
+    "item_id": "wbg0245",
+    "defect_class": "Edge-Ring",
+    "morphology": "外缘薄而基本连续的红环环绕全园，内部有较多数量的随机散点，不聚集亦无线状结构",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "晶圆外周一圈薄而连续的fail环覆盖整个圆边，内部另散布约六七十颗随机分布的孤立fail die，边缘环与内部散点并存。",
+    "uncertainty": "中——环虽连续但很薄，内部散点数量较多，类别归属存在一定模糊性。"
+  }
+]

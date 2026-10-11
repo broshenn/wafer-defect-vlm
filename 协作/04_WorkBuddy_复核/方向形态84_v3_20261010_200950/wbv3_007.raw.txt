@@ -1,0 +1,1 @@
+{"morphology_zh":"两个小团块","main_location_zh":"右上方偏边缘与左下方偏边缘各一处，规模相近","location_clock":[],"orientation_clock":[],"secondary_observations":["左边缘约9点钟方向有一个孤立小红点"],"caption_zh":"晶圆右上方与左下方各有一小团红色失效，规模相近，左边缘另有一孤立小红点，其余基本为绿色合格格点","uncertainty":"两处团块规模接近，无法可靠判定唯一主要结构位置；两团块之间不构成连续线，不判定延伸轴"}

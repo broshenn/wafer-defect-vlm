@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Near_full","morphology":"晶圆左侧（约9点钟方向）存在大面积连续的红色缺陷区域，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。","radial_zone":"global","clock_direction":"9点钟方向","extent_r":"null","caption_zh":"晶圆左侧（约9点钟方向）存在大面积连续红色缺陷，覆盖从中心到边缘的径向范围，右侧分布有少量绿色正常die。","uncertainty":"无"}

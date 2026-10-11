@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"左侧与中央大片红色失效区，绿色合格die集中残留在右侧一条竖向带内\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆左半与中央为大范围红色失效区域，绿色合格die主要集中残留在右侧约3点钟方向一条自上延伸至下部的竖向带内\",\"uncertainty\":\"红色区域覆盖过半且形态不规则，Loc与Near_full之间的界限判断存在不确定性\"}",
+  "raw_sha256": "c957f6e5f63bdedf28c17275ead00ece5f9ae0c5f6cf524590e2684e4e538474",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "c957f6e5f63bdedf28c17275ead00ece5f9ae0c5f6cf524590e2684e4e538474",
+  "input_path": "raw/wbe0070.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

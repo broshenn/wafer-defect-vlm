@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_015",
+ "item_id":"wbv3_038",
+ "sample_id":"wafer_00021649_003",
+ "image_sha256":"e544e64e54431f6a098b469181dbfd6bf859436a0ef366c0bf53535eb09c7bca",
+ "original_raw_sha256":"cf4da5e0fbe9416d2abf81e3c5dc9abe7536e5a9025d3fa25c890362b88d6fc2",
+ "observation_raw_sha256":"5b1a82028d50e8f8d9ce1dfa99807d490621cd5d5f523f9632409fd2da81425f",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图中央偏上偏右确有一个边缘参差的大红色不规则团块，绿色区域内另有大量全局散布的红色点状散点，与被审句描述一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称团块位于中心偏上并向12点上缘方向延伸；图上团块主体确实覆盖中心并向上方延续，且上缘中部有红色带状聚集与之一片相连。"},
+  "location_clock":{"verdict":"unverifiable","evidence":"被审句取[12]。图上团块重心位于中心略偏右上，其质量同时向正上方（12点）与右上方（1-2点）延伸，钟点归属存在真实歧义；本worker独立观察倾向[2]，与被审[12]构成分歧，不作强定。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]。图上主要结构为不规则团块而非细长线状结构，无可靠延伸轴，填空合理。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到绿色区域全局散布红点与团块右侧边缘少量小块状延伸；图上团块右缘确有锯齿状小块突出，散点亦遍布绿色区域，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括为中上部12点钟方向红色不规则团块伴全局散点；形态与散点描述与图一致，仅钟点归属存在与独立观察[2]的分歧（见location_clock）。"},
+  "uncertainty":{"verdict":"supported","evidence":"被审句已自行注明轮廓不规则、与散点相连、钟点取重心方向存在轻微歧义，该声明与图上模糊的团块-散点过渡相符。"}
+ },
+ "overall":"requires_review",
+ "suggested_revision":"建议在uncertainty中补充说明团块重心略偏中心右侧，钟点在12与1-2之间存在歧义，或改用'中心偏上并略偏右'的方向描述以避免唯一钟点的强判定。",
+ "uncertainty":"独立观察将主要团块位置钟点记为[2]（中心偏右上），被审原答记为[12]（中心偏上）。图上团块质量向上缘和右上方均有延伸，且上缘12点处另有红色带，两者属对同一模糊结构的分歧判读，非明确矛盾；不按多数票强定真值，留待人工裁决。"
+}

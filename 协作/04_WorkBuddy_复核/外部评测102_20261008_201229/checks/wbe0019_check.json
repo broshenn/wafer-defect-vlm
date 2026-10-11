@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"晶圆中央有大片不规则红色失效die聚集区，横向延伸，其余失效die散布全片并在上、下边缘处也有小块聚集\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"主要失效集中于晶圆中心附近的不规则块状区域并向左右方向延伸，顶部与底部边缘另有小块聚集，其余区域散布孤立失效点\",\"uncertainty\":\"聚集横贯中心向两侧延伸，且多处边缘另有小块聚集，主聚集区的径向归属存在模糊\"}",
+  "raw_sha256": "e03ac4fb702217aa4d9d0848bf4f2def65d033c8feefb86b39f3920d062b7a3a",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "e03ac4fb702217aa4d9d0848bf4f2def65d033c8feefb86b39f3920d062b7a3a",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0019.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

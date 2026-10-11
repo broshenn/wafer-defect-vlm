@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Donut","morphology":"环形","radial_zone":"middle","clock_direction":"12点","extent_r":null,"caption_zh":"晶圆中部存在断续环形红色缺陷分布，12点钟方向较密集，中心区域缺陷较少。","uncertainty":""}

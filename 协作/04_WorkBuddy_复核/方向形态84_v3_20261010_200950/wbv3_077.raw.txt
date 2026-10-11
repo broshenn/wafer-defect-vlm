@@ -1,0 +1,1 @@
+{"morphology_zh":"红色失效格点与绿色合格格点高度交错混杂，呈细密点状遍布全片，无团块、环、弧或线条等可见结构","main_location_zh":"全局分布，红色格点与绿色格点在整个晶圆区域均匀混杂，无偏离中心的主要结构","location_clock":[],"orientation_clock":[],"secondary_observations":[],"caption_zh":"红色失效格点与绿色格点高度混杂、均匀遍布全片，无明显聚集形态或方向性结构。","uncertainty":""}

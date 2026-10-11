@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效点大量散布于整个晶圆并与绿色合格die交错，无明显聚集形态\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效点大量随机散布于整个晶圆，与绿色die交错分布。\",\"uncertainty\":\"\"}",
+  "raw_sha256": "899efdf74b4e445e5fcf0388ea8edb78e9ad04e92ddafe5724da74101d26b3c6",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "899efdf74b4e445e5fcf0388ea8edb78e9ad04e92ddafe5724da74101d26b3c6",
+  "input_path": "raw/wbe0005.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

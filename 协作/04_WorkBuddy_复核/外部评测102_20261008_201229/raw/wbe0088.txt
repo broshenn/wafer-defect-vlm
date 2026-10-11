@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"一条斜向红色线条从中部向右下方延伸至边缘，周围伴散点分布","radial_zone":"middle","clock_direction":"4点钟","extent_r":null,"caption_zh":"晶圆以绿色为主，红色失效die沿从中部指向右下4-5点钟方向的斜线分布并延伸到边缘，其余区域散布少量红点。","uncertainty":"线条后半段略有间断，方向取4-5点钟之间。"}

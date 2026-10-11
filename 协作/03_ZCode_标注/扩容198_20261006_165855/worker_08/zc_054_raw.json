@@ -1,0 +1,1 @@
+{"defect_class":"Donut","morphology":"围绕晶圆中心出现一圈粗且断续的红色失效环带，中心保持绿色；环带粗细不均，右侧明显加宽并向外延伸接近边缘；其余区域为绿色合格die并散布零星红色小点","radial_zone":"middle","clock_direction":null,"extent_r":null,"caption_zh":"晶圆中部围绕中心出现粗而断续的环形失效带，右侧加宽接近边缘，其余区域夹杂零星失效点","uncertainty":"环带很粗且断续，右侧加宽延伸至接近边缘，与Donut、Loc及Edge_Loc的界限均不确定"}

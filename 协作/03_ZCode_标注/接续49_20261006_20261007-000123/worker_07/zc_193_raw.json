@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"红色失效die围绕晶圆边缘形成覆盖整个圆周的较宽环带，环带内夹杂少量合格die，中央大片区域基本为绿色合格die，仅有零星红色散点","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die环绕晶圆边缘一整圈分布，中央区域基本合格。","uncertainty":"边缘环带较宽且不连续、内部夹杂绿色die，与Edge_Loc的边界有一定模糊，但红色覆盖整个圆周故选Edge_Ring"}

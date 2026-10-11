@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"中心偏右下有一片较集中的红色失效die聚集区，周围全圆散布零星红点","radial_zone":"center","clock_direction":null,"extent_r":null,"caption_zh":"中部略偏右下可见连片红色失效聚集，其余区域红点零散分布，边缘亦有零星失效","uncertainty":"中心聚集与周围散点的界限不清晰，聚集范围难以准确界定"}

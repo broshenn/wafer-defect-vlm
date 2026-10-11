@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"边缘整圈连续红色失效带，内部绿色区域散布稀疏随机红色单点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆边缘整圈呈红色失效环带，内部绿色区域另有散在的随机红色失效点。\",\"uncertainty\":\"边缘红环较窄，内部散点数量不少，可能同时存在Random模式\"}\n",
+  "raw_sha256": "406ca4f50113e5026cad5d05ee2df353c220d8d35161086616ab7a42df2cd8d4",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "406ca4f50113e5026cad5d05ee2df353c220d8d35161086616ab7a42df2cd8d4",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0050.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

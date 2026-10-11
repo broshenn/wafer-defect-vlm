@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Center\",\"morphology\":\"晶圆中央区域可见连片红色失效die聚集，周围伴有零散红点分布\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"主要失效集中在晶圆中心附近呈连片聚集，全图另有零散失效点\",\"uncertainty\":\"聚集区略偏中心左下，且全图散点较多，与Loc或叠加Random的界限不确定\"}",
+  "raw_sha256": "6c0d8e95b561a7bd9a39a2a1646cc3ef18fa2cc55fb397b2dc780319f1e2dbcd",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "6c0d8e95b561a7bd9a39a2a1646cc3ef18fa2cc55fb397b2dc780319f1e2dbcd",
+  "input_path": "raw/wbe0009.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

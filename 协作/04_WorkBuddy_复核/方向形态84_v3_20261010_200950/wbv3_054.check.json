@@ -1,0 +1,1 @@
+{"command":"cd \"D:/pycode/晶圆图研究\" && D:/python/python.exe -X utf8 -B 协作/01_Codex_指挥/无卡CPU整备_20261010/workbuddy_schema_check.py \"协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_054.raw.txt\"","exit_code":0,"stdout":{"schema_ok":true,"errors":[],"warnings":[],"content_verified":false,"raw_sha256":"f1bf38621a7d4ec5cc7103b17ffd9f8f62b6bd39b79f107f2cb61576badba5cb"}}

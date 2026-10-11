@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"中部偏右上有一片连续红色失效die聚集区，其上方12点钟方向见纵向红带延伸至边缘，其余为零散红点","radial_zone":"center","clock_direction":"12点钟","extent_r":null,"caption_zh":"中部偏右上可见连片红色失效聚集，向上方延伸至12点钟边缘形成纵向条带，全圆另有零散红点","uncertainty":"上方纵向红带可能构成独立条状图案，中心聚集与该条带的关系不完全确定"}

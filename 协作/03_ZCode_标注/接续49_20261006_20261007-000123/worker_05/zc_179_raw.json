@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"晶圆以绿色合格die为主，红色失效die呈稀疏孤立散点分布全域，无连续成片图案；晶圆中部附近可见一小段很短的斜向红色聚集，但未连成明显长线","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆整体合格，红色失效die稀疏散布于全域，中部附近另有一小段很短的斜向红色聚集。","uncertainty":"失效散点稀疏，主要图案不突出；中部短小斜向聚集不足以可靠判定为Scratch，Random与少量随机点缺陷的正常晶圆（none）之间界限不确定。"}

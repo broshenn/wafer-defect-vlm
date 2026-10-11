@@ -1,0 +1,1149 @@
+{
+ "finalized_at_utc": "2026-10-10T14:21:18Z",
+ "version": "WB84_v3",
+ "planned": 84,
+ "attempted": 84,
+ "format_pass": 84,
+ "format_fail": 0,
+ "not_executed": 0,
+ "all_image_sha_match": true,
+ "executors": [
+  "parent_session",
+  "worker-b02",
+  "worker-b02r",
+  "worker-b03",
+  "worker-b03r",
+  "worker-b04a",
+  "worker-b04b",
+  "worker-b05a",
+  "worker-b05b",
+  "worker-b06a",
+  "worker-b06b",
+  "worker-b07a",
+  "worker-b07b",
+  "worker-b08a",
+  "worker-b08b",
+  "worker-b09a",
+  "worker-b09b",
+  "worker-b10a",
+  "worker-b10b",
+  "worker-b11a",
+  "worker-b11b",
+  "worker-b12a",
+  "worker-b12b"
+ ],
+ "notes": [
+  "父会话直接执行batch_01全7张",
+  "worker-b02/b03前台流超时：wbv3_008/009/015/016由worker正常闭合，wbv3_010/017的raw为worker首次作答原样保留、由父会话补跑检查器闭合",
+  "batch_02末4图与batch_03末4图由后台worker补齐",
+  "batch_04-12每片拆4+3两个后台worker执行",
+  "模型显示名/后端模型/会话ID/积分信息：客户端不可自查，记为未提供",
+  "本结果为内容验收候选：格式合规不证明描述正确"
+ ],
+ "items": [
+  {
+   "item_id": "wbv3_001",
+   "sample_id": "wafer_00000055_011",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "2a16d7b8ec49cf02054d2e3328b163a89c41dcfd2dde3b39f43a0bad7c65020e",
+   "image_sha_match": true,
+   "raw_sha256": "93b898059d68ee246fc6c936da97e4ee26396674c9537fde09b4febf18402b27",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_002",
+   "sample_id": "wafer_00002422_015",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "956f5f84e8e9dc19e38b0bdcc82a6888cb1c4ac173a42d92460cfcd264f5f3fd",
+   "image_sha_match": true,
+   "raw_sha256": "8505a87f955141b8f53d87f81be40fe961f0a3b89fccade431f583a06dcaf524",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_003",
+   "sample_id": "wafer_00003830_021",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "61f28a4e46b4a364672b3eb14b60c3bed89ab4ddb0115046fcd133f9ceaaaa56",
+   "image_sha_match": true,
+   "raw_sha256": "ac463ae7663c04ce855b14dbcbb02ef6c1996014df913939c77649d8dc009f2a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_004",
+   "sample_id": "wafer_00004087_022",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "1d3e85143be260e662821a205f43fe2ec2f36e50238898d92e1c3b9932266043",
+   "image_sha_match": true,
+   "raw_sha256": "2e8333dec8f9ca6f52e0b8ca7ff11582f28f80fe42e44bebc7a3f01004b01aba",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_005",
+   "sample_id": "wafer_00005957_005",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "9503d361613ee5760bd7ab80b8be449e12317eb2a9d40d0994f2cdfb4bb78cb4",
+   "image_sha_match": true,
+   "raw_sha256": "8504591585e221fa44b6dfcb1827524586b6d4860b773001b7bad0634cf75cc9",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_006",
+   "sample_id": "wafer_00005998_017",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "2c550462b2cbf8ee5f96f576154b4efbf5a411c1ea81925cb429d365d96bc79e",
+   "image_sha_match": true,
+   "raw_sha256": "ba72701896f9a36ac59c5f02486722c1d06cd11ce10d748b53e9597f640a75ad",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_007",
+   "sample_id": "wafer_00005998_018",
+   "batch": "batch_01",
+   "executor": "parent_session",
+   "image_sha256": "2b3e3cd84d6c5b83aa630c00d2e4867ddaa21c2f2efc30dfd5a9326e448eb6e4",
+   "image_sha_match": true,
+   "raw_sha256": "ebbaffb5884348fe5ece05e925587e1aa180f61ba0a6e9b270e846765d95638c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_008",
+   "sample_id": "wafer_00005998_021",
+   "batch": "batch_02",
+   "executor": "worker-b02",
+   "image_sha256": "0daeeddb77a599cf6821e676a29473de6aeb61545937f16c25bae57df8d1938b",
+   "image_sha_match": true,
+   "raw_sha256": "41da6099339f0b6762ab696f9a906bb96363cb9dbc47f316ddfc88fc84baab92",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_009",
+   "sample_id": "wafer_00005998_024",
+   "batch": "batch_02",
+   "executor": "worker-b02",
+   "image_sha256": "be86c8ca747a9bb047350bf54a686c3dcb14fd2469e45ef5e513fdb10898ea2e",
+   "image_sha_match": true,
+   "raw_sha256": "f883f697a47a286c012273c7ef1523ef750d10af37ed15d57badf15254de8d9a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_010",
+   "sample_id": "wafer_00006228_004",
+   "batch": "batch_02",
+   "executor": "worker-b02",
+   "image_sha256": "ce1de374a71aaa02306ad4d1faccb9181c879b9b81b167a713d17a214e401328",
+   "image_sha_match": true,
+   "raw_sha256": "ddab07a5746a27d619de09d9c75031201f2bf22fc99b65e6c75f3f54ae33e652",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_011",
+   "sample_id": "wafer_00006233_025",
+   "batch": "batch_02",
+   "executor": "worker-b02r",
+   "image_sha256": "2d0fd2393d1d562f1d0850cc04f56ba885bd852f7c780f073393a7143d7b2f53",
+   "image_sha_match": true,
+   "raw_sha256": "16ebffb8334930a0db988e9a80d5222f120e6c6f9b444cb9fc480faf413a0c1d",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_012",
+   "sample_id": "wafer_00006467_002",
+   "batch": "batch_02",
+   "executor": "worker-b02r",
+   "image_sha256": "8663f8d0dca4f1c093d2c0b60ff90ad2b8cacc1cde6ebbbc66382729d9e270f0",
+   "image_sha_match": true,
+   "raw_sha256": "afdc84e0f7a5ed8e86e394c8759bedff8fac1c6b63eef21fd82ab89783027e1e",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_013",
+   "sample_id": "wafer_00006467_007",
+   "batch": "batch_02",
+   "executor": "worker-b02r",
+   "image_sha256": "e3c0e232e15affc1a5db4ccf9c093ed6d0f74cacd76f3a0d7dc6e4049d5a8453",
+   "image_sha_match": true,
+   "raw_sha256": "e1bdf5fe09430b4a3c95b4e781ee0d5851813b9000de865bd794f6ed45c39141",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_014",
+   "sample_id": "wafer_00006467_008",
+   "batch": "batch_02",
+   "executor": "worker-b02r",
+   "image_sha256": "2df751d52f57c60109dfa3845770edbed173becf48ee298aded06f48052b0157",
+   "image_sha_match": true,
+   "raw_sha256": "62ec8ff5d59c91f948943979871ea112201082a2ef02ed64a729e03acc4db3c8",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_015",
+   "sample_id": "wafer_00007864_013",
+   "batch": "batch_03",
+   "executor": "worker-b03",
+   "image_sha256": "05476097e5e45607bb42934377180e4f57113c60b726a4b8dceb123ec95da5b8",
+   "image_sha_match": true,
+   "raw_sha256": "faa6ffaa0845605fa71db098716a3359d64b88d7217eb83eeb76e4a5ec56801f",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_016",
+   "sample_id": "wafer_00007864_025",
+   "batch": "batch_03",
+   "executor": "worker-b03",
+   "image_sha256": "2c84dfc6fb25149d387e4dd85db97580d0b7d00fb9c028c3bb99871fd630b163",
+   "image_sha_match": true,
+   "raw_sha256": "bd2c486e6108b7a832ae99692cee90d3c6087d36b3533bcdc759db7347a05f2b",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_017",
+   "sample_id": "wafer_00012950_008",
+   "batch": "batch_03",
+   "executor": "worker-b03",
+   "image_sha256": "9b2414c1048f2bb51a2fba68cf33040b7ca3a6e5a2a6722b408d27ce011c4abd",
+   "image_sha_match": true,
+   "raw_sha256": "5cc3ffb6403fd9379f4f1858e30e558969eb276654aaf4b46b0e49c9d7023de7",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_018",
+   "sample_id": "wafer_00015558_003",
+   "batch": "batch_03",
+   "executor": "worker-b03r",
+   "image_sha256": "a80fc1900ee77781c5c21ff95cc8a3a9ebc06ec5bdf2ac4e4814eb2c828a23df",
+   "image_sha_match": true,
+   "raw_sha256": "0ae74e0a332c118e8ec371da5164ffe19c8d6637ad90fd915cc6c2fd31a46756",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_019",
+   "sample_id": "wafer_00015632_025",
+   "batch": "batch_03",
+   "executor": "worker-b03r",
+   "image_sha256": "437ba69108fa307e070d85e5dff189cf7a351f8da6a2dbe089b1d539f07190c2",
+   "image_sha_match": true,
+   "raw_sha256": "894ea4bec30b64de7869166c79bda3c9ff27caaf300cbc86105200ea974160d5",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_020",
+   "sample_id": "wafer_00015851_009",
+   "batch": "batch_03",
+   "executor": "worker-b03r",
+   "image_sha256": "c39d7a1ff1ac21699dab2e1bb5d2a1020192c4d66cf061c81186276def1392e1",
+   "image_sha_match": true,
+   "raw_sha256": "654d483f5f668a8b9a880565776503f77bd4e960478f30e7217c7614e168064a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_021",
+   "sample_id": "wafer_00015865_016",
+   "batch": "batch_03",
+   "executor": "worker-b03r",
+   "image_sha256": "baef2e3146aeda601640c732006de3ff724279031d25c6f0fdd517dcff0db928",
+   "image_sha_match": true,
+   "raw_sha256": "bda0ec5bfdd6053442d82abc014483e8bd25b5b9ca1b4f991c9f1eace8a90179",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_022",
+   "sample_id": "wafer_00016541_008",
+   "batch": "batch_04",
+   "executor": "worker-b04a",
+   "image_sha256": "afb7f6450b530c78318d68307086feef202ea280f03aa9ab044fe11a22f9e1be",
+   "image_sha_match": true,
+   "raw_sha256": "027660ffd200af5d311e83211f5b4bfb38bb98fd0321a66c7f711db3381e59e5",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_023",
+   "sample_id": "wafer_00016601_005",
+   "batch": "batch_04",
+   "executor": "worker-b04a",
+   "image_sha256": "6c787b465591f16a30c4c1c93451cc941cb3656c2479601e72f3b949f7857fa2",
+   "image_sha_match": true,
+   "raw_sha256": "45ac34f1221c0258c44a280711e713662286d5bce997c363719197892b2d6313",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_024",
+   "sample_id": "wafer_00016703_014",
+   "batch": "batch_04",
+   "executor": "worker-b04a",
+   "image_sha256": "60891d2a5f11b98713a7edbe5a33a58b33961bd9300439050facea949c344e61",
+   "image_sha_match": true,
+   "raw_sha256": "435e784cca5ea626f1f130b803c92c7541185778e96ef236154343ec5bd7ef8f",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_025",
+   "sample_id": "wafer_00017125_005",
+   "batch": "batch_04",
+   "executor": "worker-b04a",
+   "image_sha256": "79e65e8036b2045bc276a40b99d5b8134e297c2ea04517608bf5fcae2703a2c8",
+   "image_sha_match": true,
+   "raw_sha256": "8397c6e9db9acac906c2ea76f9b1d5c23b0e497f463a2a1c3bad410bd3bffae2",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_026",
+   "sample_id": "wafer_00017164_005",
+   "batch": "batch_04",
+   "executor": "worker-b04b",
+   "image_sha256": "b8ccb6f48ce4ade28287ae0d4a0c4be8eecd657964d5a909b1cdc11a75027971",
+   "image_sha_match": true,
+   "raw_sha256": "0da8c29204db52f040aa36fed34b70c56011da68c1a2924e941084bddbac666c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_027",
+   "sample_id": "wafer_00017262_007",
+   "batch": "batch_04",
+   "executor": "worker-b04b",
+   "image_sha256": "a77beea8c7ed3f45f640664eed416064eed2c45d80185d2b2013f35bc66c9735",
+   "image_sha_match": true,
+   "raw_sha256": "81682d8ae98408bb536369137ba776f5abb253900713c8c2b5e041683e864041",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_028",
+   "sample_id": "wafer_00017957_012",
+   "batch": "batch_04",
+   "executor": "worker-b04b",
+   "image_sha256": "b6d4229f9e4123f0b30613489a6b73b1dbe0525ea843ee27abb048dd8db5e905",
+   "image_sha_match": true,
+   "raw_sha256": "30f2b1f2c57a33a1451510734f5ed218552189ea1bed8934a1d89d0ff91e1712",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_029",
+   "sample_id": "wafer_00018072_011",
+   "batch": "batch_05",
+   "executor": "worker-b05a",
+   "image_sha256": "7a05bdafe8f8243bc7a20f9d91f2a0827a96c99e647c100e8dd7005755f66177",
+   "image_sha_match": true,
+   "raw_sha256": "5b7d7db188cce13d98a6b735a5902163adc0ed4c53e0d0f6fcf9c21cfc3b98a2",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_030",
+   "sample_id": "wafer_00018086_012",
+   "batch": "batch_05",
+   "executor": "worker-b05a",
+   "image_sha256": "a99985d4edd3fcfce13d0ab00e04c13d3b666a803d9f93be75e48411f6129666",
+   "image_sha_match": true,
+   "raw_sha256": "20979155b74bb2ec9a143f70e471c85013f46c7f83dbca8d3632493a6fedd93a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_031",
+   "sample_id": "wafer_00018378_014",
+   "batch": "batch_05",
+   "executor": "worker-b05a",
+   "image_sha256": "24dda7c012ee2c2ab4d0da679117ce45ba48098b541a84178d6735277968e608",
+   "image_sha_match": true,
+   "raw_sha256": "df921220de6a1b82dd7ec0085bda8181686c3aeeb09eab0c69ae0f6650ab3525",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_032",
+   "sample_id": "wafer_00018532_004",
+   "batch": "batch_05",
+   "executor": "worker-b05a",
+   "image_sha256": "0e2e04f3cff2dfed271e324c939df5aedea3fa7ac0210a96d0ad50ae47100f1f",
+   "image_sha_match": true,
+   "raw_sha256": "a96094ee3e1e88b4a6f63a875caf84e7f0680c26f4a8ba0d80aed4b4d1139163",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_033",
+   "sample_id": "wafer_00019115_022",
+   "batch": "batch_05",
+   "executor": "worker-b05b",
+   "image_sha256": "2f9dcf14e38b4b48d4f675323e04c580cc64616d8080e5d3328c664a5ef77d3f",
+   "image_sha_match": true,
+   "raw_sha256": "585c33ea74d66725764e98d2c140c3a892501c1bc542409f8e7280957f614633",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_034",
+   "sample_id": "wafer_00019321_013",
+   "batch": "batch_05",
+   "executor": "worker-b05b",
+   "image_sha256": "40042c3cac0f41966b7ee8c2674fe377cccb817151867932fc09a3b5fb0aadd6",
+   "image_sha_match": true,
+   "raw_sha256": "b1600979de8c18cc3d701802653e611f9db5a46623eb230636c59455d3c6b9e0",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_035",
+   "sample_id": "wafer_00020121_024",
+   "batch": "batch_05",
+   "executor": "worker-b05b",
+   "image_sha256": "684f2d9234561c243924da5720fff3d715dfc38015f0f4a460f8b25210943d78",
+   "image_sha_match": true,
+   "raw_sha256": "80824ba3ef9533c7d7a4fe0f3996b2977802ddba1b93100d7ee31c0d07add100",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_036",
+   "sample_id": "wafer_00020258_007",
+   "batch": "batch_06",
+   "executor": "worker-b06a",
+   "image_sha256": "3ea14a2f1347376c73d7c1ea4b9daed8f3769d5514978343b04b005c9c79c2f5",
+   "image_sha_match": true,
+   "raw_sha256": "88cd51780e7098f985bc35a23b5a7fe2c6216615e41e83ac95b7c04c9ab2c3da",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_037",
+   "sample_id": "wafer_00021623_006",
+   "batch": "batch_06",
+   "executor": "worker-b06a",
+   "image_sha256": "1ed2ed3abcb1d05543e8c3d658154129c7295a9689e5e4872401d3e9816dff21",
+   "image_sha_match": true,
+   "raw_sha256": "8bc2a205e098003ea9dc2fa4e996d58e88bfbead2491b9005916e540da45572c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_038",
+   "sample_id": "wafer_00021649_003",
+   "batch": "batch_06",
+   "executor": "worker-b06a",
+   "image_sha256": "e544e64e54431f6a098b469181dbfd6bf859436a0ef366c0bf53535eb09c7bca",
+   "image_sha_match": true,
+   "raw_sha256": "cf4da5e0fbe9416d2abf81e3c5dc9abe7536e5a9025d3fa25c890362b88d6fc2",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_039",
+   "sample_id": "wafer_00022126_006",
+   "batch": "batch_06",
+   "executor": "worker-b06a",
+   "image_sha256": "9554e1224723ea46cd3f374bdee66009ea039d3e6cfd2622aeb30c91e1f3ce4d",
+   "image_sha_match": true,
+   "raw_sha256": "e6767164e71af2617b1ee56b3e075ad8ddeb2bfd2cbfd02f19fc228d759571df",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_040",
+   "sample_id": "wafer_00022216_015",
+   "batch": "batch_06",
+   "executor": "worker-b06b",
+   "image_sha256": "aa3063db0d2209e3182005eba6ae9a7dacf9bf5fb748259ba022b8728f4896a6",
+   "image_sha_match": true,
+   "raw_sha256": "d24e4ce3bef4876702f2ff5dcd1b855320fbce81cf76e4d09ec663215ce7337a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_041",
+   "sample_id": "wafer_00023285_009",
+   "batch": "batch_06",
+   "executor": "worker-b06b",
+   "image_sha256": "789103e796d7b0a22b7408c24e35ca5c0638deee5dbd85b8e6fa8d633a711c43",
+   "image_sha_match": true,
+   "raw_sha256": "9b61cb5e1eac0e83d8622963d34dc4515aeb830478f1cae951f2956225d02886",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_042",
+   "sample_id": "wafer_00024582_004",
+   "batch": "batch_06",
+   "executor": "worker-b06b",
+   "image_sha256": "cf01b38612adf0a02d061ea5a0f42ea05d58b7dbbcd75e3cd48830ccf6c95c16",
+   "image_sha_match": true,
+   "raw_sha256": "4a9566e1f64020d2967bc994dbbcfb97d5d881d19a45e600ac59c962e094450b",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_043",
+   "sample_id": "wafer_00024635_002",
+   "batch": "batch_07",
+   "executor": "worker-b07a",
+   "image_sha256": "235158737d019f66eb60940055aa204feba70330dc95592c2fbe8075c1b5da00",
+   "image_sha_match": true,
+   "raw_sha256": "d8376079d9bc9c246b72281bd68bdd15d04656aa14764b6dd20c2ffb5ea6e0ab",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_044",
+   "sample_id": "wafer_00024635_007",
+   "batch": "batch_07",
+   "executor": "worker-b07a",
+   "image_sha256": "99d02c8d441c7fe1102aa4c9ac47042aa5f4df53c358f47c797ed53e8a394815",
+   "image_sha_match": true,
+   "raw_sha256": "5a12ece16ca6c7c194b05f78485888754c4c099c0379f8026638ccabe62d1526",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_045",
+   "sample_id": "wafer_00024635_010",
+   "batch": "batch_07",
+   "executor": "worker-b07a",
+   "image_sha256": "090aa5292021d81fa1953e043a18937b9908368870f7e3ce877af787edad742c",
+   "image_sha_match": true,
+   "raw_sha256": "ed8a85cd65ba6a167ee174300eb5a8a028f93f3993ba4e2533efff2c7a2cec08",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_046",
+   "sample_id": "wafer_00036633_025",
+   "batch": "batch_07",
+   "executor": "worker-b07a",
+   "image_sha256": "ec00de963c6a982ca5edc9c720efd3b239428fda83e10cbd301c7b4e3300acd3",
+   "image_sha_match": true,
+   "raw_sha256": "315e276331044de3c6a9d5877793e766e8bad7d46fb0bf8b65397dfd0014876c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_047",
+   "sample_id": "wafer_00036739_014",
+   "batch": "batch_07",
+   "executor": "worker-b07b",
+   "image_sha256": "c7a71f0c113cc09c04da3e90ae3dd1271ad99138303707e59a85c061398ee153",
+   "image_sha_match": true,
+   "raw_sha256": "fdd132e3d8da658ece8e33ab001db6e8079dcd9ad3ab32649d59bda69affdbc6",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_048",
+   "sample_id": "wafer_00036819_007",
+   "batch": "batch_07",
+   "executor": "worker-b07b",
+   "image_sha256": "a74c535c0adb60b383327ddb89465ccd02816e93c514f762a1870e79510c884d",
+   "image_sha_match": true,
+   "raw_sha256": "0cd94644d7f8b7b0b48dc293bcd606358ba28c8bdc60503540508017c3589f95",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_049",
+   "sample_id": "wafer_00039560_008",
+   "batch": "batch_07",
+   "executor": "worker-b07b",
+   "image_sha256": "2289c7aa9168560e529e33eaf2a6d80a8002a808fcf67ed9efa33761d2138fae",
+   "image_sha_match": true,
+   "raw_sha256": "09c225ec723d1c24d20069291e4679aa7caf516fb745e186f359cd1e40da3844",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_050",
+   "sample_id": "wafer_00040470_022",
+   "batch": "batch_08",
+   "executor": "worker-b08a",
+   "image_sha256": "c272c6df490ee0a11909ffb9ba889b128e5f9efcfbc925cb82e07846e8566fbe",
+   "image_sha_match": true,
+   "raw_sha256": "da39967b66e9957129d5a67e13b672727f78063bad02e2d7500016ac43aa203e",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_051",
+   "sample_id": "wafer_00040809_017",
+   "batch": "batch_08",
+   "executor": "worker-b08a",
+   "image_sha256": "ce5b6348a7fa2b8827e025f09b91bdae9bc275ba75f6e113c9e380022f387261",
+   "image_sha_match": true,
+   "raw_sha256": "eb80ebb9dd00984992632862e0146ea39b1fe63ff66fcb74c29d8ce536e36757",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_052",
+   "sample_id": "wafer_00040979_003",
+   "batch": "batch_08",
+   "executor": "worker-b08a",
+   "image_sha256": "701ce3466bd4482a9c2ca1b27cfd0c87501591874ff7b3726bfe185a3b60e549",
+   "image_sha_match": true,
+   "raw_sha256": "fcc9b8d0dee5ede235d5c60d651d798df83233655ccab6760c5ade954c069a93",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_053",
+   "sample_id": "wafer_00041023_015",
+   "batch": "batch_08",
+   "executor": "worker-b08a",
+   "image_sha256": "45a685b3ba64c6fc61ae1284c91107b9e483e26670f555fbe044ada0afdc9593",
+   "image_sha_match": true,
+   "raw_sha256": "e50369a320971e0ac749c8cfca927a106f2b693cee0507a5f4e044df7b3fec2a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_054",
+   "sample_id": "wafer_00042043_006",
+   "batch": "batch_08",
+   "executor": "worker-b08b",
+   "image_sha256": "9e3417ea1096ac2c9198054fb9c4b1e8d09c1b699713fbe53daa50eb8b88a1c7",
+   "image_sha_match": true,
+   "raw_sha256": "f1bf38621a7d4ec5cc7103b17ffd9f8f62b6bd39b79f107f2cb61576badba5cb",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_055",
+   "sample_id": "wafer_00042201_024",
+   "batch": "batch_08",
+   "executor": "worker-b08b",
+   "image_sha256": "4f8c21e6c801e3ddba21dbc04ac5b5d6e09c7967e643a86cad3e2e91b41ab542",
+   "image_sha_match": true,
+   "raw_sha256": "e1fa5c23337521c4560360e83f9b7877fad5d3a1b12fd0c351b1785df50b187b",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_056",
+   "sample_id": "wafer_00042267_019",
+   "batch": "batch_08",
+   "executor": "worker-b08b",
+   "image_sha256": "708e4ea4e0f39eda60b317b238727fcc26a92ad4f49b921e3149ac22e8016",
+   "image_sha_match": true,
+   "raw_sha256": "bb2c2b2856971da8bae91b4f2202cafbd32ad66e5d0b2d8087292b980e6c1e89",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_057",
+   "sample_id": "wafer_00042330_023",
+   "batch": "batch_09",
+   "executor": "worker-b09a",
+   "image_sha256": "725364a1866394559b1010c4f0a9949e203fa959ccd418e15a0a6bd095c7970d",
+   "image_sha_match": true,
+   "raw_sha256": "2ded06d557a450b9e43739eded33fff7d153c0b2e58ce347480db111bcaa8adc",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_058",
+   "sample_id": "wafer_00042332_016",
+   "batch": "batch_09",
+   "executor": "worker-b09a",
+   "image_sha256": "e88bf1933f083c7917a61343fdc111edfe9b9c4e9d63e7d455801cb010376eec",
+   "image_sha_match": true,
+   "raw_sha256": "f03f80f8da301dc2aaf2130155e0f3e7b7ecbc2b0ec038ff49512f456b034d26",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_059",
+   "sample_id": "wafer_00042397_008",
+   "batch": "batch_09",
+   "executor": "worker-b09a",
+   "image_sha256": "b010931ff489bfe7b67a19e01193950169dd63f5851eb3003249ef2f6f263b8a",
+   "image_sha_match": true,
+   "raw_sha256": "2d96b3eed7b898af368fcedf47dba9098c15c161f530bffa008a144e19998541",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_060",
+   "sample_id": "wafer_00042451_017",
+   "batch": "batch_09",
+   "executor": "worker-b09a",
+   "image_sha256": "3d33d1e331314cdb19af172ef48ac10ee792c48ccc9309e063edc65b9dc88aab",
+   "image_sha_match": true,
+   "raw_sha256": "64c9a91a1af0e60c4179f5c9f080451fe418350c7754bc6965f6d5fa6fe83695",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_061",
+   "sample_id": "wafer_00042680_025",
+   "batch": "batch_09",
+   "executor": "worker-b09b",
+   "image_sha256": "3f32c9cce6264002677ae0eca989179cf50545bc8ab55157eb177d459d0714d2",
+   "image_sha_match": true,
+   "raw_sha256": "a1fc9a747649edc9798daa800f554d393a9aa53166b7d03dfb981d39d96025d4",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_062",
+   "sample_id": "wafer_00042831_023",
+   "batch": "batch_09",
+   "executor": "worker-b09b",
+   "image_sha256": "1eae3046dcb8be582564d541805ebbb9b568ef8d3ccdd0e1dda2b9b063222df4",
+   "image_sha_match": true,
+   "raw_sha256": "ba1d0460e1488377a6e31be0ea9c2a0007888c1474e0c818f5f238ff6a3d5c14",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_063",
+   "sample_id": "wafer_00042865_024",
+   "batch": "batch_09",
+   "executor": "worker-b09b",
+   "image_sha256": "899adf2f7b224c7177061032c8b6961228ce05beb87e353344fb9cc06a365bf4",
+   "image_sha_match": true,
+   "raw_sha256": "90b9ef46164ec967e8f1cfc49a9d286791f006233fc76dbbbdab39fa9b32a382",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_064",
+   "sample_id": "wafer_00042895_016",
+   "batch": "batch_10",
+   "executor": "worker-b10a",
+   "image_sha256": "3ebbbe88bc32b19d7a1936ed90fc8623ceb9d190919b0a510a60f9163be21502",
+   "image_sha_match": true,
+   "raw_sha256": "c7e4cf4cefff7ac245c355c32c9fdb1ec7a7cb42041ce3fe72f66724ea7768e5",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_065",
+   "sample_id": "wafer_00042964_021",
+   "batch": "batch_10",
+   "executor": "worker-b10a",
+   "image_sha256": "5412db2de92712bd9b246ed79c6c0b1a3370a32ea7366e08d7e4935e0caa30f8",
+   "image_sha_match": true,
+   "raw_sha256": "0e296ac3d5accaea99393996a8892a09380bb2461d0c055c9c8192bad7ab73a2",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_066",
+   "sample_id": "wafer_00043128_019",
+   "batch": "batch_10",
+   "executor": "worker-b10a",
+   "image_sha256": "c5c725f523f808095afd2b5fb1ac726c4dd23feff338aac4e29e0ec82d0a4594",
+   "image_sha_match": true,
+   "raw_sha256": "b826ad8d10b05fb9d1c8ba5cf4051d05b27423e9f5823826109c41f6da56eaeb",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_067",
+   "sample_id": "wafer_00043374_002",
+   "batch": "batch_10",
+   "executor": "worker-b10a",
+   "image_sha256": "1f595a9b16535cf1c05fc0d508d8e8f84efa5e48aeb33f7441ae3ad6f13b8ddf",
+   "image_sha_match": true,
+   "raw_sha256": "5c103d2c63c0e18d0a716d8c4a5789e596d74e7fe10b61fa651ba5aefe266402",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_068",
+   "sample_id": "wafer_00043374_024",
+   "batch": "batch_10",
+   "executor": "worker-b10b",
+   "image_sha256": "cfceb248153fb735364a8be3231412f42c82728550d00a241f36955dbfe9b281",
+   "image_sha_match": true,
+   "raw_sha256": "0e3c81e69de79884d2532a543c15e6247c527ad67761ff0b082458f701cfa3e0",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_069",
+   "sample_id": "wafer_00043629_009",
+   "batch": "batch_10",
+   "executor": "worker-b10b",
+   "image_sha256": "5d99c11c67ff00840fbdb2a191f1232b9f0dabc9a32fc1e3ac7004a3ee0a3160",
+   "image_sha_match": true,
+   "raw_sha256": "a4e652b759907c11ca7561a2b546857944aa391fba34f88d4964f21005565e5f",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_070",
+   "sample_id": "wafer_00043729_022",
+   "batch": "batch_10",
+   "executor": "worker-b10b",
+   "image_sha256": "f6fc75250dede2280d11b1fb1463ba50bbe76a9fd9316c9e504465031c941f41",
+   "image_sha_match": true,
+   "raw_sha256": "c7caadcb79576578a399ad3c7dca726619fcdb306eb939c59de1427764f75b9c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_071",
+   "sample_id": "wafer_00044003_006",
+   "batch": "batch_11",
+   "executor": "worker-b11a",
+   "image_sha256": "a26a7982d9063c24303704378410c17531d286e5ee1c64c76fea7b6fca92af76",
+   "image_sha_match": true,
+   "raw_sha256": "0a913aed76a76cfe5b5a4210526566397dcee17755023bb91ad3f844f86235a0",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_072",
+   "sample_id": "wafer_00044003_009",
+   "batch": "batch_11",
+   "executor": "worker-b11a",
+   "image_sha256": "7dee0637ca82f2cb67aa46701ae792de5d7487d653f778ca38d67c51ab4bb0fa",
+   "image_sha_match": true,
+   "raw_sha256": "f65d557e71e34323e78d7ade78f1c5d76e03643842cd4573cb74e69c700cfa26",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_073",
+   "sample_id": "wafer_00044107_018",
+   "batch": "batch_11",
+   "executor": "worker-b11a",
+   "image_sha256": "26ebf8289af0c8a0450464ddcaecccf371871aa94675617a3d98f853c130cd62",
+   "image_sha_match": true,
+   "raw_sha256": "9eacb7d134e88f297acc4c387630f8fdbdc71dceecf17766ae0d8fc979dcb701",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_074",
+   "sample_id": "wafer_00044184_021",
+   "batch": "batch_11",
+   "executor": "worker-b11a",
+   "image_sha256": "a4126e74368bd4863f4a46b1f951c9c209404277a94686fc74e111ae7ff015c2",
+   "image_sha_match": true,
+   "raw_sha256": "9fcea5d00a362ff7199fe6578907c4d978725381a140df62652b9dc2c00aa653",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_075",
+   "sample_id": "wafer_00044374_010",
+   "batch": "batch_11",
+   "executor": "worker-b11b",
+   "image_sha256": "babb4c8501bf6b342e53386e90e8a028140bb3bf7841eea4d9ecd3cbe173d88f",
+   "image_sha_match": true,
+   "raw_sha256": "6f66bd82f00c69c483ad03ab17641fbe9ea06dfd2614427b2a175af071d85cdd",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_076",
+   "sample_id": "wafer_00044982_011",
+   "batch": "batch_11",
+   "executor": "worker-b11b",
+   "image_sha256": "316c9212c13c7137dbb3aa41ad9bfdb3618ff3b77dd7f554520204a0cc463db5",
+   "image_sha_match": true,
+   "raw_sha256": "5778337ff730f065feed48b9501a2458c0c8971d7c2d9ade06386a66dd5b9e71",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_077",
+   "sample_id": "wafer_00045692_017",
+   "batch": "batch_11",
+   "executor": "worker-b11b",
+   "image_sha256": "608c32ed151658f3e37782b98378a27088771f0c2d2c053478b82ae65b091edb",
+   "image_sha_match": true,
+   "raw_sha256": "0a3bb43e1dc9513ebf498bbbadbfa66cae3f45201b4a3037ff3b424bf1bd49dd",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_078",
+   "sample_id": "wafer_00046400_007",
+   "batch": "batch_12",
+   "executor": "worker-b12a",
+   "image_sha256": "c5ddb00685570338b8688fa5137350bfe446f1d32ce4c93129b2d2782e584a62",
+   "image_sha_match": true,
+   "raw_sha256": "1d804aa94fadb7ae3221674c0e3f86bf7409d64927d868c32f5992470d78f284",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_079",
+   "sample_id": "wafer_00046741_009",
+   "batch": "batch_12",
+   "executor": "worker-b12a",
+   "image_sha256": "efe0266c0434b3e15888c32f75c728c60199c271aa6beb7903eb7d4c2e693a0f",
+   "image_sha_match": true,
+   "raw_sha256": "b98f483d103ea5fd6501a731dbd1253aabb54d598026cbb5776103acdaddf364",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  },
+  {
+   "item_id": "wbv3_080",
+   "sample_id": "wafer_00046872_013",
+   "batch": "batch_12",
+   "executor": "worker-b12a",
+   "image_sha256": "6585280eaadedcc783a8d10ff8543c29248fc1afb89d0f618443bd76ff21cc5b",
+   "image_sha_match": true,
+   "raw_sha256": "5184757c2f0f8854cef69672cd6cacdcc7f8d2fe73c63d06d814fa71fefca87a",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_081",
+   "sample_id": "wafer_00046986_004",
+   "batch": "batch_12",
+   "executor": "worker-b12a",
+   "image_sha256": "5b5c47304e0339fd69b2f65e6ed250a6012d2569dc2697ca87c348eb2a882117",
+   "image_sha_match": true,
+   "raw_sha256": "ce251056e953740c04ecf21e8899a7c33c0560da6ae6b18a2a95c0a174e19a52",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_082",
+   "sample_id": "wafer_00047003_005",
+   "batch": "batch_12",
+   "executor": "worker-b12b",
+   "image_sha256": "51efa7c262df471e8299824b841340b8d3bf2210fd5830c73bdaf6f047e841dd",
+   "image_sha_match": true,
+   "raw_sha256": "faaf8dcac5afbd2b606f358806789d2cb20fc7b20392cf0fd0eeff440fd7f75c",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_083",
+   "sample_id": "wafer_00047081_009",
+   "batch": "batch_12",
+   "executor": "worker-b12b",
+   "image_sha256": "c310aec3e2e80182f8c5345b2edc460ffa192fa311b629a0c5c35a31f400f2e3",
+   "image_sha_match": true,
+   "raw_sha256": "9be3e455947fb06602b82056c7d1efdf8979cef14c2b02238d814f6bd891665f",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": []
+  },
+  {
+   "item_id": "wbv3_084",
+   "sample_id": "wafer_00047489_003",
+   "batch": "batch_12",
+   "executor": "worker-b12b",
+   "image_sha256": "5bb199626bcebfbe8faa22913e1a3b2f9e644149822a4e24dcf202e25cca9f58",
+   "image_sha_match": true,
+   "raw_sha256": "a078aee2055012c1328532947f3b9505e42abb8397a501620d299cf4a396c771",
+   "check_exit_code": 0,
+   "schema_ok": true,
+   "warnings": [
+    "numeric_or_causal_claim_requires_content_review"
+   ]
+  }
+ ]
+}

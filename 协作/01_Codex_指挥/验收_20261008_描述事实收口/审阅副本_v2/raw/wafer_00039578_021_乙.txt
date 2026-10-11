@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。","radial_zone":"center","clock_direction":"null","extent_r":null,"caption_zh":"晶圆中心区域存在一个致密的团簇状缺陷群，周围散布少量孤立红点。","uncertainty":""}

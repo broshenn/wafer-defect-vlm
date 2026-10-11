@@ -1,0 +1,1 @@
+{"morphology_zh":"底部一片不规则红色团块，其余区域散布零星红点","main_location_zh":"主要红色团块位于晶圆底部边缘附近，偏离中心偏向6点钟方向","location_clock":[6],"orientation_clock":[],"secondary_observations":["其余区域有稀疏红点全局散布","底部团块边缘呈破碎不规则状"],"caption_zh":"晶圆底部6点钟附近有一片红色失效团块，其余区域以绿色为主并有零星红点散布。","uncertainty":""}

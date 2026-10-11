@@ -1,0 +1,92 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex",
+  "original_saved": 107,
+  "to_complete": 91,
+  "glm_previous_attempt_uncertain": 18,
+  "new_gpt_annotation": true,
+  "requested_model": "gpt-6.1-sol",
+  "requested_reasoning_effort": "ultra",
+  "source_index_sha256": "c2405a22ca2a3a8a71eef59773b13340e78514c5b83c67044adf277118a1db55",
+  "parts": [
+    {
+      "number": 1,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_01.jsonl",
+      "sha256": "bbaccbe446a5e0d02cc76d176a8a7f83e2aa2e9bba116ba233d48aec90364d56",
+      "n": 7
+    },
+    {
+      "number": 2,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_02.jsonl",
+      "sha256": "f94b397aae3c4fed56803e33c116166bd355b86e9e97b44d4961ebe7808e6d6d",
+      "n": 7
+    },
+    {
+      "number": 3,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_03.jsonl",
+      "sha256": "425635f0995f963d6c0512c4fcc7e004a33b87c8edf5b7657e2e565c22feda1a",
+      "n": 7
+    },
+    {
+      "number": 4,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_04.jsonl",
+      "sha256": "1cc0065236b2bd5467551213535db011234d38ee77f385c6446e301429861142",
+      "n": 7
+    },
+    {
+      "number": 5,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_05.jsonl",
+      "sha256": "caaaf9ba25deaf39b40051ca3c75e49e61c6ad8ac05552ce77ada0de75139cbc",
+      "n": 7
+    },
+    {
+      "number": 6,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_06.jsonl",
+      "sha256": "64a6f3f082a62125df2c9fb5846faa8a7a90b4048aea99d75e4d1a3657addf84",
+      "n": 7
+    },
+    {
+      "number": 7,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_07.jsonl",
+      "sha256": "75358dd7c152e3a988940f15da094f5f438a47ea41be0abc6dc30e240e2ec6ad",
+      "n": 7
+    },
+    {
+      "number": 8,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_08.jsonl",
+      "sha256": "d3184d5e3d13b2882dc8b2a711d165e199f5c33e0ea7cd747496cdb01ca740f9",
+      "n": 7
+    },
+    {
+      "number": 9,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_09.jsonl",
+      "sha256": "bed6efcabc34c6ac54f1ed47f3ee0433a61a347cbd1866f4fed569310ee7b5ce",
+      "n": 7
+    },
+    {
+      "number": 10,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_10.jsonl",
+      "sha256": "389e891e1f1917b36d11bb9e412ba2bf8507b4aa01f68e52e1a7fb9b372d454c",
+      "n": 7
+    },
+    {
+      "number": 11,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_11.jsonl",
+      "sha256": "85d60405560674b31a27a49bab52dd6b436b85d4a6844bbc1722ed28b78268b7",
+      "n": 7
+    },
+    {
+      "number": 12,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_12.jsonl",
+      "sha256": "b82eca58fab63ae2084f2235067c6b01178bda6a30f9fe7241ef4811a7db7eca",
+      "n": 7
+    },
+    {
+      "number": 13,
+      "path": "协作\\01_Codex_指挥\\GPT补标91_20261006\\blind_13.jsonl",
+      "sha256": "539e7c2c6d7fb564f24e7feefbc0656a3aba4db86e0bc072ed819db60a90092b",
+      "n": 7
+    }
+  ],
+  "source_note": "New GPT model annotation, not GLM, human annotation, or human review."
+}

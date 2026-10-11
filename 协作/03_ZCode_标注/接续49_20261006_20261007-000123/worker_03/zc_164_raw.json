@@ -1,0 +1,1 @@
+{"defect_class": "Center", "morphology": "晶圆中央出现大片连续的红色失效区块，形态不规则并向中部区域延伸，中央与中部红色密集连片；其余区域绿色合格die占多数，全图散布孤立红色失效点，外围边缘也有少量散点，边缘未形成完整红环。", "radial_zone": "center", "clock_direction": null, "extent_r": null, "caption_zh": "晶圆中央及中部出现大片连续的红色失效区块，其余区域绿色为主并散布孤立红色失效点。", "uncertainty": "中央红色连片范围较大且形状不规则，介于Center与Loc之间；散点分布的性质无法进一步判断。"}

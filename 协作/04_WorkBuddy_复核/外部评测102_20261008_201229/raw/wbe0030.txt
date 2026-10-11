@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die全图零散随机分布，中部夹杂少量小块聚集","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die散布于整个晶圆，中部偏左和偏右各有小块聚集，整体以随机散点为主","uncertainty":"中部几处小聚集与Loc形态有重叠，主类判定存在 Random 与 Loc 之间的模糊"}

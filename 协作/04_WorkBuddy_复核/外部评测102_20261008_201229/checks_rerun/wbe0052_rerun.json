@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效点在全晶圆内稀疏、均匀、随机散布，无聚集或条带\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆内部绿色区域散布稀疏的随机红色失效单点，遍布整个圆面，无可见的局部聚集或环带。\",\"uncertainty\":\"边缘有细红色轮廓，是否构成Edge_Ring不易确认\"}\n",
+  "raw_sha256": "1a5ceb3fa23f4690ac3ba4eb0de380c1b4fd4aea5d5179981de56b98a47d19b6",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "1a5ceb3fa23f4690ac3ba4eb0de380c1b4fd4aea5d5179981de56b98a47d19b6",
+  "input_path": "raw/wbe0052.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

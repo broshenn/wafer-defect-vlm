@@ -1,0 +1,1 @@
+{"morphology_zh":"红色失效格点以零散点状散布全片，无团块、环、弧或线条等聚集结构","main_location_zh":"全局分布，红色散点遍布整个晶圆区域，无明确偏离中心的主要结构","location_clock":[],"orientation_clock":[],"secondary_observations":["部分红点靠近晶圆边缘","少数红点相邻成小簇但不构成明显结构"],"caption_zh":"红色失效格点以散点形式随机遍布全片，无明显聚集形态或方向性结构。","uncertainty":""}

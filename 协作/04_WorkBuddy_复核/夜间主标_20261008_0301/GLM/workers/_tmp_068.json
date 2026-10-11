@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0470",
+    "image_sha256": "c5a2057fce72fa6b27b1de7c53dea9b06026ab52739b970dd969e5e792c8c438",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "红色fail die以边缘聚集为主，左缘9点方向连片最厚，底部6点附近及右上方1-2点边缘亦成簇，内部另有零散孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "9点为主，6点与1-2点次之",
+      "extent_r": null,
+      "caption_zh": "晶圆以绿色pass为主，红色fail die集中于左缘9点方向连片聚集，底部及右上边缘亦见成簇，内部散布零星红点，整体覆盖中等。",
+      "uncertainty": "中——边缘聚集与内部散点并存，Edge-Loc与Random之间存在一定模糊"
+    }
+  },
+  {
+    "item_id": "wbg0471",
+    "image_sha256": "19d975f842fcc5d207eb2f57615e3678daf76ab7b5f336e89f4059636abaec90",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "红色fail die沿直线排布成线状划痕，左上至左缘一条明显斜线，右侧另有多条较短斜线段，其余为孤立散点",
+      "radial_zone": "中间",
+      "clock_direction": "9-10点与2-4点",
+      "extent_r": null,
+      "caption_zh": "红色fail die主要沿对角直线排列，一条自晶圆中部延伸至左缘，右侧另有数条短斜线段，其余区域仅零星散点，覆盖程度较低。",
+      "uncertainty": "中——线状特征明显但走向分散，可能为多条划痕，也可能含少量随机散点干扰"
+    }
+  },
+  {
+    "item_id": "wbg0472",
+    "image_sha256": "1bfc5de6eb27aa12b15c92a9182e37165dac84745600cd75b75f31c5b7aebd2f",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "红色fail die大面积覆盖并形成多条贯穿上下的竖向条带，条带间横向亦有红点连接，绿色pass die以斑块残存于左侧、下部及部分边缘",
+      "radial_zone": "中间",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die覆盖约全片一半，构成多条贯穿晶圆上下的竖向条带，绿色pass die仅在左侧、下部及边缘以斑块形式残存。",
+      "uncertainty": "高——覆盖过半且竖向条带与大面积散点并存，Scratch与Random/Near-full之间的归类较模糊"
+    }
+  },
+  {
+    "item_id": "wbg0473",
+    "image_sha256": "4030566f7cd93faace513e8105c710e3413dbb859d9999d85fb545002ec38c06",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "红色fail die在晶圆中心密集成大片近圆形区域，内部略带竖向条带纹理，周边仅零星孤立红点",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die在晶圆中心密集成一大片近圆形区域并带竖向纹理，约占全片两成，其余区域以绿色pass为主仅伴零星红点。",
+      "uncertainty": "低——中心致密聚集清晰，边界较明确"
+    }
+  },
+  {
+    "item_id": "wbg0474",
+    "image_sha256": "cf5d781e6e751e02cc07d3dc0e24c54def4b16bb54c996d76e0480cf68bd459c",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心大面积致密红色fail成片并带竖向条带纹理，向外延展接近中间半径，外缘一圈以绿色pass为主，红点向外零星扩散",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色fail die在晶圆中心聚成一大片致密红色区域并带竖向纹理，向外扩展至中间区域，覆盖约全片一半，仅外缘一圈及左侧以绿色pass为主。",
+      "uncertainty": "中——聚集明确但范围很大，Center与Near-full之间略有取舍，因外缘绿色仍连续成环故取Center"
+    }
+  },
+  {
+    "item_id": "wbg0475",
+    "image_sha256": "99210c61f39951095f1a40bfa16a632cc2dfc6522c35fd52a15d22891f9e64f3",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "红色fail die在中部偏左密集连片，多条竖向条带交织成大块，自顶部延伸至底部，右侧中部留有一条以绿色为主的竖向完好带",
+      "radial_zone": "中心",
+      "clock_direction": "9-12点为主，6点亦受累",
+      "extent_r": null,
+      "caption_zh": "红色fail die在晶圆中部偏左沿竖向条带交织成密集大块，自顶部延伸至底部，覆盖约四成，右侧中部保留一条以绿色为主的完好竖带。",
+      "uncertainty": "中——大片聚集形态明确，但聚集中心略偏左，Center与Loc归类存在一定模糊"
+    }
+  },
+  {
+    "item_id": "wbg0476",
+    "image_sha256": "12b1202953eedd04218337ad86b3318302632ba299ac633a5fe6f29b74e46003",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆最外缘沿圆周连成一条细窄红色fail环，宽约1-2颗die、基本完整，内部另散布数十颗孤立红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆最外缘沿圆周连成基本完整的一圈细窄红色fail环，宽约1-2颗die，内部以绿色pass为主并散布少量孤立红点，整体覆盖较低。",
+      "uncertainty": "中——外缘红环较细且局部断续，边缘环判定基本成立，但内部散点比例不低"
+    }
+  }
+]

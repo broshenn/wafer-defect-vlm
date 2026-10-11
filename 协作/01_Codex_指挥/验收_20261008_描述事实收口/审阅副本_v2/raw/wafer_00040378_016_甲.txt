@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Random","morphology":"随机点状缺陷，分布广泛且无明确聚集形态","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆内红色缺陷die呈随机散布，覆盖中心至边缘多个区域，绿色正常die占多数。","uncertainty":"缺陷分布较稀疏，局部存在少量聚集但整体无明确方向性。"}

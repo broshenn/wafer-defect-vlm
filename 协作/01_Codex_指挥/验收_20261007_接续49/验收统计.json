@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-07",
+  "raw_count": 49,
+  "raw_format_pass": 48,
+  "raw_format_failed": 1,
+  "candidate_count": 49,
+  "candidate_format_pass": 49,
+  "visual_reviewed_images": 49,
+  "teacher_class_public_label_agreement": 15,
+  "teacher_class_agreement_is_not_human_visual_accuracy": true,
+  "changed_candidate_count": 39,
+  "human_review_count": 0,
+  "size_gold_not_measured": true,
+  "duplicate_183_184": "Same broad pattern supports similar wording; does not prove independent execution. Remove wafer-level acceptance claim and unverified counts.",
+  "original_raw_150": "Retained isolated format failure; candidate dequantified after model review, not original pass."
+}

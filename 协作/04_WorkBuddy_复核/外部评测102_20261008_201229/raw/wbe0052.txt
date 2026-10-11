@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效点在全晶圆内稀疏、均匀、随机散布，无聚集或条带","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆内部绿色区域散布稀疏的随机红色失效单点，遍布整个圆面，无可见的局部聚集或环带。","uncertainty":"边缘有细红色轮廓，是否构成Edge_Ring不易确认"}

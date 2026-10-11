@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"左上区域大片红色失效连片，其余区域绿色为主但红绿噪点状混杂、失效点密集\",\"radial_zone\":\"middle\",\"clock_direction\":\"10-11点钟\",\"extent_r\":null,\"caption_zh\":\"10-11点钟方向左上区域大面积红色失效连片，右侧和下方为绿底上密集红色散点\",\"uncertainty\":\"整体失效密度偏高、边界渐变，左上连片区与高密度随机散点并存，归类存在模糊性\"}\n",
+  "raw_sha256": "52a1f7d8620089eaba506c7159d00ca33883b43d5a71804bc701ce3ffcfb8a4f",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "52a1f7d8620089eaba506c7159d00ca33883b43d5a71804bc701ce3ffcfb8a4f",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0048.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

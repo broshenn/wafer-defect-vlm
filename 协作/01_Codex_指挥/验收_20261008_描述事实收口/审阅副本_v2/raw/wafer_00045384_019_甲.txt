@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Donut","morphology":"环形缺陷图案，由红色像素组成，环绕中心区域","radial_zone":"center","clock_direction":"null","extent_r":null,"caption_zh":"中心区域呈现环形红色缺陷图案","uncertainty":""}

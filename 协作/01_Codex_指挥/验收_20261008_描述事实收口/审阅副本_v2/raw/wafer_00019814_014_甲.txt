@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Edge_Ring","morphology":"红色环状缺陷沿晶圆边缘分布","radial_zone":"edge","clock_direction":"null","extent_r":null,"caption_zh":"红色环状缺陷沿晶圆边缘分布","uncertainty":""}

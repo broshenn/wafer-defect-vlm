@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"红色失效die散布全圆，中部偏右有一条水平红色直线延伸至右边缘，右端略粗","radial_zone":"middle","clock_direction":"3点钟","extent_r":null,"caption_zh":"晶圆以绿色为主，红色失效die散布，中部偏右有一条明显的水平红色直线条纹一直延伸到右边缘。","uncertainty":"直线同时横跨中部与边缘区域，radial_zone归类存在一定模糊。"}

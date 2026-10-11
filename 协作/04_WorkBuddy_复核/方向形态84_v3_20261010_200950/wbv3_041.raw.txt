@@ -1,0 +1,1 @@
+{"morphology_zh":"以零散红点为主的全局散布，另有3点钟边缘处一个小团块","main_location_zh":"红色散点全局分布，无明显主导位置","location_clock":[],"orientation_clock":[],"secondary_observations":["3点钟边缘处有一个数格大小的小团块","散点在各区域稀疏分布，密度整体均匀"],"caption_zh":"全局稀疏散布红点为主，3点钟边缘附带一个小团块","uncertainty":"全局散布不适合指定唯一钟点"}

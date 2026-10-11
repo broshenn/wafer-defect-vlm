@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die零散分布于全圆，少量相邻成对或成小块，无连续聚集或条带","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"全圆随机散布孤立红色失效die，右侧3点钟附近略见几个相邻红点，整体无主导图案","uncertainty":"右侧边缘附近有少量相邻红点，但规模小不足以判为Loc"}

@@ -1,0 +1,514 @@
+{
+  "status": "development_confirmation_only",
+  "N": 120,
+  "lots": 106,
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Random",
+    "Scratch"
+  ],
+  "class_counts": {
+    "Edge_Loc": 23,
+    "Scratch": 23,
+    "Edge_Ring": 13,
+    "Loc": 24,
+    "Center": 23,
+    "Random": 11,
+    "Donut": 3
+  },
+  "seed": 3407,
+  "bootstrap_replicates": 10000,
+  "bootstrap_unit": "lot; same sampled lots for each paired model",
+  "missing_class_resamples": {
+    "Center": 0,
+    "Donut": 441,
+    "Edge_Loc": 0,
+    "Edge_Ring": 1,
+    "Loc": 0,
+    "Random": 0,
+    "Scratch": 0
+  },
+  "missing_class_handling": "fixed seven-class denominator; absent TP/FP/FN gives F1=0",
+  "models": {
+    "M0_v3": {
+      "correct": 100,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8158105521202021,
+      "macro_f1_lot_95CI": [
+        0.7185037262686108,
+        0.8888190743691093
+      ],
+      "rule_reward": 0.8566666666666668,
+      "coverage_exact": 107,
+      "zones_exact": 92,
+      "angular_positive_N": 0,
+      "nondirectional_exact": 70,
+      "nondirectional_N": 77,
+      "unknown_N": 43,
+      "angular_known_mean": 0.9090909090909091,
+      "angular_all_N_legacy_mean": 0.7566666666666666,
+      "raw_strict_json": 0,
+      "normalized_json": 120,
+      "adapter_fingerprints": [
+        "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09"
+      ],
+      "per_class": {
+        "Center": {
+          "support": 23,
+          "tp": 20,
+          "fp": 1,
+          "fn": 3
+        },
+        "Donut": {
+          "support": 3,
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        "Edge_Loc": {
+          "support": 23,
+          "tp": 20,
+          "fp": 1,
+          "fn": 3
+        },
+        "Edge_Ring": {
+          "support": 13,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1
+        },
+        "Loc": {
+          "support": 24,
+          "tp": 14,
+          "fp": 3,
+          "fn": 10
+        },
+        "Random": {
+          "support": 11,
+          "tp": 10,
+          "fp": 2,
+          "fn": 1
+        },
+        "Scratch": {
+          "support": 23,
+          "tp": 22,
+          "fp": 5,
+          "fn": 1
+        }
+      }
+    },
+    "M1_v3": {
+      "correct": 99,
+      "accuracy": 0.825,
+      "macro_f1": 0.8059861069163394,
+      "macro_f1_lot_95CI": [
+        0.7034398692122563,
+        0.880888672207111
+      ],
+      "rule_reward": 0.8534523809523811,
+      "coverage_exact": 110,
+      "zones_exact": 87,
+      "angular_positive_N": 0,
+      "nondirectional_exact": 73,
+      "nondirectional_N": 77,
+      "unknown_N": 43,
+      "angular_known_mean": 0.948051948051948,
+      "angular_all_N_legacy_mean": 0.7783333333333334,
+      "raw_strict_json": 0,
+      "normalized_json": 120,
+      "adapter_fingerprints": [
+        "e81f6c4d644d59b550165f94f0178b7e261904f686dd3add6c1cec55fb298399"
+      ],
+      "per_class": {
+        "Center": {
+          "support": 23,
+          "tp": 21,
+          "fp": 1,
+          "fn": 2
+        },
+        "Donut": {
+          "support": 3,
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        "Edge_Loc": {
+          "support": 23,
+          "tp": 19,
+          "fp": 1,
+          "fn": 4
+        },
+        "Edge_Ring": {
+          "support": 13,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1
+        },
+        "Loc": {
+          "support": 24,
+          "tp": 14,
+          "fp": 4,
+          "fn": 10
+        },
+        "Random": {
+          "support": 11,
+          "tp": 9,
+          "fp": 2,
+          "fn": 2
+        },
+        "Scratch": {
+          "support": 23,
+          "tp": 22,
+          "fp": 5,
+          "fn": 1
+        }
+      }
+    },
+    "M2_v3": {
+      "correct": 97,
+      "accuracy": 0.8083333333333333,
+      "macro_f1": 0.7917046492236582,
+      "macro_f1_lot_95CI": [
+        0.6892925936988568,
+        0.87151269425135
+      ],
+      "rule_reward": 0.8163095238095238,
+      "coverage_exact": 96,
+      "zones_exact": 79,
+      "angular_positive_N": 0,
+      "nondirectional_exact": 77,
+      "nondirectional_N": 77,
+      "unknown_N": 43,
+      "angular_known_mean": 1.0,
+      "angular_all_N_legacy_mean": 0.7716666666666667,
+      "raw_strict_json": 0,
+      "normalized_json": 120,
+      "adapter_fingerprints": [
+        "7e80057e17537aec936b077b47c3f4a828ccc30e67865377803a2b11dfd77b6f"
+      ],
+      "per_class": {
+        "Center": {
+          "support": 23,
+          "tp": 21,
+          "fp": 2,
+          "fn": 2
+        },
+        "Donut": {
+          "support": 3,
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        "Edge_Loc": {
+          "support": 23,
+          "tp": 17,
+          "fp": 1,
+          "fn": 6
+        },
+        "Edge_Ring": {
+          "support": 13,
+          "tp": 12,
+          "fp": 1,
+          "fn": 1
+        },
+        "Loc": {
+          "support": 24,
+          "tp": 14,
+          "fp": 3,
+          "fn": 10
+        },
+        "Random": {
+          "support": 11,
+          "tp": 10,
+          "fp": 4,
+          "fn": 1
+        },
+        "Scratch": {
+          "support": 23,
+          "tp": 21,
+          "fp": 3,
+          "fn": 2
+        }
+      }
+    }
+  },
+  "paired": {
+    "M1_v3-M0_v3": {
+      "macro_f1_difference": -0.00982444520386272,
+      "macro_f1_lot_95CI": [
+        -0.04744740318470769,
+        0.02495834908139584
+      ],
+      "macro_f1_iid_95CI": [
+        -0.04722960738627,
+        0.024284147346477047
+      ],
+      "rule_reward_difference": -0.003214285714285717,
+      "rule_reward_lot_95CI": [
+        -0.028341868917457647,
+        0.020307421698774242
+      ],
+      "rule_reward_iid_legacy_95CI": [
+        -0.027976190476190477,
+        0.02166666666666666
+      ],
+      "accuracy_difference": -0.008333333333333333
+    },
+    "M2_v3-M0_v3": {
+      "macro_f1_difference": -0.024105902896543907,
+      "macro_f1_lot_95CI": [
+        -0.06947895659401819,
+        0.0147617177480706
+      ],
+      "macro_f1_iid_95CI": [
+        -0.06817315142459023,
+        0.01483307760933767
+      ],
+      "rule_reward_difference": -0.040357142857142855,
+      "rule_reward_lot_95CI": [
+        -0.06890031233732428,
+        -0.012160566706021253
+      ],
+      "rule_reward_iid_legacy_95CI": [
+        -0.06809523809523808,
+        -0.012261904761904764
+      ],
+      "accuracy_difference": -0.025
+    },
+    "M2_v3-M1_v3": {
+      "macro_f1_difference": -0.014281457692681188,
+      "macro_f1_lot_95CI": [
+        -0.06134175499965855,
+        0.029951194207029023
+      ],
+      "macro_f1_iid_95CI": [
+        -0.0624651660141367,
+        0.030177825276764807
+      ],
+      "rule_reward_difference": -0.03714285714285714,
+      "rule_reward_lot_95CI": [
+        -0.06504096236357874,
+        -0.009279279279279283
+      ],
+      "rule_reward_iid_legacy_95CI": [
+        -0.06452380952380951,
+        -0.010714285714285711
+      ],
+      "accuracy_difference": -0.016666666666666666
+    }
+  },
+  "pool_intersections": {
+    "adapt__rl": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    },
+    "adapt__rule_dev": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    },
+    "adapt__confirmation": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    },
+    "rl__rule_dev": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    },
+    "rl__confirmation": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    },
+    "rule_dev__confirmation": {
+      "sample_id": 0,
+      "lot_name": 0,
+      "image_sha256": 0
+    }
+  },
+  "confirmation_D_prior_contact": {
+    "IDs": 0,
+    "lots": 0
+  },
+  "training_audit": {
+    "candidates": 1024,
+    "groups": 256,
+    "zero_variance_groups": 91,
+    "zero_variance_perfect_groups": 49,
+    "zero_variance_imperfect_groups": 42,
+    "average_reward": 0.7933677455357143,
+    "presented_group_order_matches_SFT": true,
+    "generation_audit_order_matches_frozen_pool": true
+  },
+  "evidence_inventory": {
+    "archive_members": 26,
+    "framework_saved_args_json": [],
+    "runtime_gates_in_archive": [
+      "out/gate_rl/runtime_gate.json"
+    ],
+    "training_logs_in_archive": [],
+    "limitations": [
+      "v3_config.trainer_actual_args is the launcher object after the pipeline call",
+      "probe runtime evidence exists; formal M1/M2 runtime reports are absent from delivery",
+      "actual scheduler/warmup and label-mask trace not available in the delivery"
+    ]
+  },
+  "probe_gate": {
+    "model_loading_gate": "passed",
+    "two_step_gate": "passed",
+    "mode": "rl",
+    "M0_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09",
+    "policy_equal_M0_tensor_count": 496,
+    "reference_equal_M0_tensor_count": 496,
+    "trainable_tensor_count": 496,
+    "step": 2,
+    "policy_changed_tensors": 496,
+    "nonzero_gradient_tensors": 496,
+    "forwards": {
+      "policy": 16,
+      "reference": 8,
+      "image": 26
+    },
+    "reference_unchanged_M0_tensor_count": 496
+  },
+  "template_gate": {
+    "think_prefix_from_template": true,
+    "assistant_prefix_example": "<|im_start|>user\nx<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\nANSWER",
+    "samples": [
+      {
+        "sample_id": "wafer_00006467_002",
+        "总长": 630,
+        "图片占位": true,
+        "答案token": 39,
+        "解码尾部与目标一致": true
+      },
+      {
+        "sample_id": "wafer_00018532_004",
+        "总长": 633,
+        "图片占位": true,
+        "答案token": 42,
+        "解码尾部与目标一致": true
+      },
+      {
+        "sample_id": "wafer_00015851_009",
+        "总长": 645,
+        "图片占位": true,
+        "答案token": 54,
+        "解码尾部与目标一致": true
+      }
+    ],
+    "labels_checked_here": false,
+    "labels_note": "encode() 不返回 labels；掩码由 collator 生成，交 2 步 GPU 门槛",
+    "verdict": "PASS"
+  },
+  "configs": {
+    "M0_v3": {
+      "mode": "adapt",
+      "steps": 128,
+      "data_sha256": "16d3321d3da48360d1ca2ac30f86a3c3465c51305187473e2f0e35a1203adceb",
+      "n_rows": 512,
+      "seconds": 609.665995,
+      "device_minutes": 10.161,
+      "peak_allocated_GiB": 19.007,
+      "selection": "末步预选（不挑最好 checkpoint）",
+      "device": "NVIDIA GeForce RTX 5090",
+      "world_size": 1,
+      "finished_at": "2026-10-10T23:35:49.711046",
+      "trainer_actual_args": {
+        "max_steps": 128,
+        "learning_rate": 1e-05,
+        "seed": 3407,
+        "data_seed": 3407,
+        "train_dataloader_shuffle": false,
+        "resume_only_model": false,
+        "dataset_shuffle": false,
+        "temperature": 0.0,
+        "adapters": [],
+        "freeze_vit": true,
+        "freeze_aligner": true,
+        "lora_rank": 16,
+        "lora_alpha": 32
+      }
+    },
+    "M1_v3": {
+      "mode": "sft",
+      "steps": 256,
+      "data_sha256": "3d33a191b1423513298a2d7f052c631cef5f9370807870750994f60dba6e57ba",
+      "n_rows": 1024,
+      "seconds": 1282.690176,
+      "device_minutes": 21.378,
+      "peak_allocated_GiB": 19.008,
+      "selection": "末步预选（不挑最好 checkpoint）",
+      "device": "NVIDIA GeForce RTX 5090",
+      "world_size": 1,
+      "finished_at": "2026-10-11T00:04:55.999122",
+      "trainer_actual_args": {
+        "max_steps": 256,
+        "learning_rate": 1e-05,
+        "seed": 3407,
+        "data_seed": 3407,
+        "train_dataloader_shuffle": false,
+        "resume_only_model": true,
+        "dataset_shuffle": false,
+        "temperature": 0.0,
+        "adapters": [
+          "M0_v3_checkpoint128"
+        ],
+        "freeze_vit": true,
+        "freeze_aligner": true,
+        "lora_rank": 16,
+        "lora_alpha": 32
+      }
+    },
+    "M2_v3": {
+      "mode": "rl",
+      "steps": 256,
+      "data_sha256": "cff81345d79025c5fd31222d07c3c348cf19a86193ad11c70635064bbb565ce5",
+      "n_rows": 256,
+      "seconds": 2393.770404,
+      "device_minutes": 39.896,
+      "peak_allocated_GiB": 19.177,
+      "selection": "末步预选（不挑最好 checkpoint）",
+      "device": "NVIDIA GeForce RTX 5090",
+      "world_size": 1,
+      "finished_at": "2026-10-11T00:44:57.366805",
+      "trainer_actual_args": {
+        "max_steps": 256,
+        "learning_rate": 1e-05,
+        "seed": 3407,
+        "data_seed": 3407,
+        "train_dataloader_shuffle": false,
+        "resume_only_model": true,
+        "dataset_shuffle": false,
+        "temperature": 1.0,
+        "adapters": [
+          "M0_v3_checkpoint128"
+        ],
+        "freeze_vit": true,
+        "freeze_aligner": true,
+        "lora_rank": 16,
+        "lora_alpha": 32,
+        "use_vllm": false,
+        "num_generations": 4,
+        "ref_adapters": [
+          "M0_v3_checkpoint128"
+        ],
+        "beta": 0.04,
+        "max_completion_length": 256
+      }
+    }
+  },
+  "runtime_reward_source_byte_match": true,
+  "wall_time_notes": {
+    "basis": "launcher timers and eval ledgers; not total billing",
+    "eval_device_minutes": 15.003166666666667,
+    "old_1437_and_cash_total": "not independently audited in this pass"
+  }
+}

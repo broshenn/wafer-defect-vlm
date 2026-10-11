@@ -1,0 +1,1 @@
+{"morphology_zh":"散点状红点，部分为两至三格相邻的小块，无连续线条、环或弧","main_location_zh":"全局大致均匀散布，无单一主导位置","location_clock":[],"orientation_clock":[],"secondary_observations":["右下区域红点相对略多但仍属散布","边缘一圈有零散贴边红点"],"caption_zh":"绿色合格格点为主的晶圆图，红色失效点全局散布，无明确主导结构或方向。","uncertainty":"红点近似均匀散布，无法确定唯一偏离方向"}

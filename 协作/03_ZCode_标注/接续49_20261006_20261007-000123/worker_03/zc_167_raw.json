@@ -1,0 +1,1 @@
+{"defect_class": "Random", "morphology": "红色失效die多以横向相邻两个die组成的短条状散布于晶圆全图，短条之间互不相连；晶圆外围边缘一圈也散布稀疏红色die，未形成连续或密集的边缘环；绿色合格die占绝大多数。", "radial_zone": "global", "clock_direction": null, "extent_r": null, "caption_zh": "晶圆全图散布横向短条状的红色失效die组合，外围边缘亦有稀疏红色die，绿色合格die占绝大多数。", "uncertainty": "短条均呈横向排列但彼此分散，是否属于未连成线的更长条状模式无法判断；边缘红点未构成可确认的边缘型缺陷。"}

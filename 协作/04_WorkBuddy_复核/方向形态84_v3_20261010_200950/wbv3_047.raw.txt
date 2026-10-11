@@ -1,0 +1,1 @@
+{"morphology_zh":"中心一团明显的红色失效团块，周围伴随全局散布的红色散点与少量小簇","main_location_zh":"主要结构位于晶圆中心，散点则全局分布","location_clock":[],"orientation_clock":[],"secondary_observations":["全片散布零星红色单点","边缘附近可见若干小红簇，局部略密"],"caption_zh":"晶圆中心有一团明显失效团块，四周全局散布红色散点","uncertainty":""}

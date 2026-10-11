@@ -1,0 +1,1 @@
+{"morphology_zh":"两处小型红色团块，另有少量孤立红点散布","main_location_zh":"团块分别位于左下边缘与右上边缘，整体以绿色为主","location_clock":[],"orientation_clock":[],"secondary_observations":["中心附近有个别孤立红点","6点钟方向附近有个别红点"],"caption_zh":"晶圆大部为绿色合格区，左下与右上边缘各有一处小红团块，另有零星红点散布","uncertainty":"左下与右上两处团块大小相近，无法可靠判定唯一主要方向；两团块相对但中间无可见连续线，不判延伸轴"}

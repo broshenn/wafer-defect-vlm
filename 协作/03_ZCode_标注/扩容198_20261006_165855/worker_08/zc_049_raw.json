@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"晶圆下半部分呈大片连续红色失效区，上边界近似水平直线横穿中部，失效从边缘一直延伸到中心以下；上半部分以绿色合格die为主，夹杂零散红色失效点，左上边缘附近散点略密","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆下半部分为大片连续失效区，上边界近似水平直线，上半部分以合格为主并夹杂零散失效点","uncertainty":"失效区横跨中心、中间与边缘多个径向区域，难以归入单一径向类别，与Edge_Loc大范围边缘失效的界限不确定"}

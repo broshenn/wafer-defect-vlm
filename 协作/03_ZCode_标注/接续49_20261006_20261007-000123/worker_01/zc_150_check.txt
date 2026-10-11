@@ -1,0 +1,2 @@
+{"checker_version": "format_v4_clock_range_20261003", "path": "协作\\03_ZCode_标注\\接续49_20261006_20261007-000123\\worker_01\\zc_150_raw.json", "exit_code": 8, "failures": [{"code": 8, "message": "morphology 剔除钟点后仍含数字 ['2', '4']：'红色失效die以单点及2-4格小簇形式大致均匀散布于整个晶圆面，各方向均有分布，未见连续环带、中心密集块或长条状划痕；边缘处散点略多，与内部密度差异不大'"}], "detail": {"clock_expressions_stripped": {}, "field_order_matches_prompt": true}}
+process_exit_code=8

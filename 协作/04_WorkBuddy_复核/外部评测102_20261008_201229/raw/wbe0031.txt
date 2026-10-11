@@ -1,0 +1,1 @@
+{"defect_class":"Donut","morphology":"红色失效die围绕中心呈不规则环带分布，中心与外缘相对绿色","radial_zone":"middle","clock_direction":null,"extent_r":null,"caption_zh":"中部半径处一圈不规则红色失效带环绕中心，中心区与最外缘大部保持绿色，并伴少量零星红点","uncertainty":"环带不完整且粗细不均，中心区也有零星失效，环状判定存在一定模糊"}

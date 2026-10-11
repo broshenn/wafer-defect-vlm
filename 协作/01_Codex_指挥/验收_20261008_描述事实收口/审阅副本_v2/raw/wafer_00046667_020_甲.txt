@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Edge_Loc","morphology":"边缘局部聚集","radial_zone":"edge","clock_direction":"4点钟","extent_r":null,"caption_zh":"晶圆边缘4点钟方向存在局部红色缺陷聚集，其余区域以绿色正常die为主并散布少量红色缺陷点。","uncertainty":"缺陷分布较稀疏，边缘聚集范围约1.96R，中心区域缺陷较少。"}

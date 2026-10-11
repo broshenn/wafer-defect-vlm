@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"红色矩形块状区域","radial_zone":"upper-middle","clock_direction":"null","extent_r":null,"caption_zh":"晶圆上方中部存在一个红色矩形块状失效区域","uncertainty":""}

@@ -1,0 +1,1 @@
+{"defect_class":"Center","morphology":"晶圆中央区域可见连片红色失效die聚集，周围伴有零散红点分布","radial_zone":"center","clock_direction":null,"extent_r":null,"caption_zh":"主要失效集中在晶圆中心附近呈连片聚集，全图另有零散失效点","uncertainty":"聚集区略偏中心左下，且全图散点较多，与Loc或叠加Random的界限不确定"}

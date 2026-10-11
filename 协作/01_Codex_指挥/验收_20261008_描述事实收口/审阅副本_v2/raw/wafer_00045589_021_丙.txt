@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Loc",
+"morphology":"中心区域聚集的红色像素块",
+"radial_zone":"center",
+"clock_direction":"null",
+"extent_r":null,
+"caption_zh":"中心区域存在聚集的红色失效点",
+"uncertainty":""
+}
+```

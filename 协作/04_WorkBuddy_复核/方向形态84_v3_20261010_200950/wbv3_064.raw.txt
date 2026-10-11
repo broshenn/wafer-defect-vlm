@@ -1,0 +1,1 @@
+{"morphology_zh":"大面积红色失效区覆盖晶圆左半及中部，绿色合格格点在右侧形成不规则团块状聚集","main_location_zh":"绿色团块位于晶圆右侧偏边缘区域，红色占左侧大部","location_clock":[3],"orientation_clock":[],"secondary_observations":["绿色团块内部夹杂零星红色格点","左侧红色区内几乎无绿色"],"caption_zh":"晶圆左侧大部为红色失效，绿色合格格点聚集于右侧约3点钟方向形成不规则团块","uncertainty":"绿色聚集区形状不规则，边界零碎"}

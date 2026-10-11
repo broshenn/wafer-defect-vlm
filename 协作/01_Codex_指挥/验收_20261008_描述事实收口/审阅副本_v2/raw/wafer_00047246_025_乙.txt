@@ -1,0 +1,13 @@
+<think>
+
+</think>
+
+{
+"defect_class": "Loc",
+"morphology": "中央区域存在不规则聚集的红色像素块",
+"radial_zone": "center",
+"clock_direction": null,
+"extent_r": null,
+"caption_zh": "中央区域可见聚集的红色失效点",
+"uncertainty": ""
+}

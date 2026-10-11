@@ -1,0 +1,1 @@
+{"defect_class":"Center","morphology":"晶圆中央偏右下有密集红色失效簇团，全图各处散布大量零星红色die","radial_zone":"center","clock_direction":null,"extent_r":null,"caption_zh":"晶圆中央偏右下存在密集红色失效聚集区，其余红色失效点广泛散布全图","uncertainty":"中央密集簇与全局散点并存，红色散点覆盖较广，类别归属有一定模糊"}

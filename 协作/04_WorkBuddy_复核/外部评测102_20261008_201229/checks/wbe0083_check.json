@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"一条红色线状划痕从左上边缘经中心附近延伸至右侧边缘，另有零星红色小点散布\",\"radial_zone\":\"global\",\"clock_direction\":\"10点钟至3点钟\",\"extent_r\":null,\"caption_zh\":\"红色失效die连成一条斜向划痕线，自左上约10点钟边缘延伸至右侧3点钟边缘，其余区域为绿色并有零星红点\",\"uncertainty\":\"划痕在中部略有折弯，走向为左上至右略偏下\"}\n",
+  "raw_sha256": "8bc511abf3c23ecaf8d71b8cac5c3ceeed8f9d403f51a7a18914c58495025d2b",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "8bc511abf3c23ecaf8d71b8cac5c3ceeed8f9d403f51a7a18914c58495025d2b",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0083.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

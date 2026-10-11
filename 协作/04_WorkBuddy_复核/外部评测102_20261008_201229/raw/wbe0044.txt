@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die以单块或小块形式随机散布全圆，右侧边缘可见局部红色连片聚集","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"失效die随机散布于整个圆片，其中3点钟方向边缘处红色失效块较为集中连片","uncertainty":"右边缘3点钟附近存在局部聚集，主要模式在随机散布与边缘局部失效之间不完全排他"}

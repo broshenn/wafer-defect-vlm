@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Edge_Ring",
+"morphology":"沿晶圆边缘分布的密集像素化斑块",
+"radial_zone":"edge",
+"clock_direction":"null",
+"extent_r":null,
+"caption_zh":"绿色合格die沿晶圆边缘呈环状密集分布，内部为红色失效die",
+"uncertainty":""
+}
+```

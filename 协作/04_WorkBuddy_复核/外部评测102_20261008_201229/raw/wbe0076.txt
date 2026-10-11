@@ -1,0 +1,1 @@
+{"defect_class":"Center","morphology":"中央区域大片红色失效连片聚集，外围红绿随机混杂","radial_zone":"center","clock_direction":null,"extent_r":null,"caption_zh":"晶圆中央区域出现大片红色失效die连片聚集，外围区域红绿die随机交错分布，失效向边缘逐渐零散。","uncertainty":"外围红绿混杂明显，中央聚集与全局随机的界限不完全清晰。"}

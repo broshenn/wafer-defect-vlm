@@ -1,0 +1,2 @@
+{"checker_version": "format_v4_clock_range_20261003", "path": "协作\\03_ZCode_标注\\接续49_20261006_20261007-000123\\worker_07\\zc_193_raw.json", "exit_code": 0, "failures": [], "detail": {"clock_expressions_stripped": {}, "field_order_matches_prompt": true}}
+process_exit_code=0

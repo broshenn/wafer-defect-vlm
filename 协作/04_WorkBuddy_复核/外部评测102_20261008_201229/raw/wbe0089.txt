@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"红色失效die散布全圆，中部偏下有一条近水平、略不连续的红色条带聚集","radial_zone":"middle","clock_direction":"6点钟","extent_r":null,"caption_zh":"晶圆以绿色为主，红色失效die散布全圆，中心偏下处有一条近水平方向的红色短条带。","uncertainty":"条带较短且不连续，与周边散点并存，Scratch判断有一定不确定性。"}

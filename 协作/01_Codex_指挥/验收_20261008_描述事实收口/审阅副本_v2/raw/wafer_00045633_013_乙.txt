@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"局部团簇状缺陷，主要分布在晶圆中心偏右下方区域，呈不规则块状分布，周围散布少量孤立红点。","radial_zone":"center","clock_direction":"4点钟方向","extent_r":null,"caption_zh":"晶圆中心偏右下方存在局部红色缺陷团簇，周围散布少量孤立红点。","uncertainty":"缺陷团簇内部结构细节及孤立点分布范围需进一步确认。"}

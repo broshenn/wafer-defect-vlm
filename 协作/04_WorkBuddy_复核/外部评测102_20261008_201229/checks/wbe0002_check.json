@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"中部有数条横向和纵向的红色线状失效贯穿分布，另散布零星红色失效点\",\"radial_zone\":\"middle\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"数条横竖走向的红色线状失效穿过晶圆中部，周围散布零星红色失效点。\",\"uncertainty\":\"存在多条不同方向的线状失效，无法给出单一可靠方向\"}",
+  "raw_sha256": "ac3e97240135eed8cd718278bd7b1c4eba208a32e7a4fec137d6dc3687ce1b13",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "ac3e97240135eed8cd718278bd7b1c4eba208a32e7a4fec137d6dc3687ce1b13",
+  "input_path": "协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0002.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

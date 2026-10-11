@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Edge_Loc","morphology":"左侧边缘有红色块状区域","radial_zone":"edge","clock_direction":"null","extent_r":null,"caption_zh":"左侧边缘存在红色失效区域","uncertainty":""}

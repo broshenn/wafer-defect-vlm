@@ -1,0 +1,1 @@
+{"defect_class":"Near_full","morphology":"晶圆几乎整体为红色失效，仅残存少量零星绿色合格die","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"整片晶圆几乎全部为红色失效die，仅左侧9点钟附近及左下方散布少量绿色合格die。","uncertainty":"绿色残存die数量很少，分布方位仅作客观描述。"}

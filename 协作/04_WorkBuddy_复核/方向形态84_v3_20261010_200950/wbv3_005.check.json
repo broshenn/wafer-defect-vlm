@@ -1,0 +1,2 @@
+{"command":"python -X utf8 -B workbuddy_schema_check.py <raw>","exit_code":0,"stdout":{"schema_ok": true, "errors": [], "warnings": [], "content_verified": false, "raw_sha256": "8504591585e221fa44b6dfcb1827524586b6d4860b773001b7bad0634cf75cc9"}
+}

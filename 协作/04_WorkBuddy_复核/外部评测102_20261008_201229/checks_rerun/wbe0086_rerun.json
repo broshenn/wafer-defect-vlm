@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"红色失效die散布全圆，中部偏右有一条水平红色直线延伸至右边缘，右端略粗\",\"radial_zone\":\"middle\",\"clock_direction\":\"3点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆以绿色为主，红色失效die散布，中部偏右有一条明显的水平红色直线条纹一直延伸到右边缘。\",\"uncertainty\":\"直线同时横跨中部与边缘区域，radial_zone归类存在一定模糊。\"}\n",
+  "raw_sha256": "a4ba86774264c7fa12e58217016d5a12e73bcb3a182a302dfa42b52fd7a353d1",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "a4ba86774264c7fa12e58217016d5a12e73bcb3a182a302dfa42b52fd7a353d1",
+  "input_path": "raw/wbe0086.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"上半部横贯宽带状红色失效区，下半部基本保持绿色","radial_zone":"middle","clock_direction":"12点钟","extent_r":null,"caption_zh":"上部约9点经12点到3点方向有一片横贯的宽带状红色失效区，下半部以绿色为主并散布零星红点","uncertainty":"失效带较宽且触及左右两侧边缘，与Donut或Edge_Loc形态有重叠，钟点方向仅代表主体方位"}

@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die以孤立小块零散随机分布在整个晶圆，边缘与内部均有，无明显聚集或条带","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"失效die零散随机散布于整个晶圆，无可见空间聚集模式","uncertainty":""}

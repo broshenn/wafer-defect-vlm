@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Loc",
+"morphology":"底部中央垂直条状",
+"radial_zone":"center",
+"clock_direction":"6点钟",
+"extent_r":null,
+"caption_zh":"底部中央存在一条明显的垂直红色失效条带",
+"uncertainty":""
+}
+```

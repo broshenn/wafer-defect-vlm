@@ -1,0 +1,1 @@
+{"morphology_zh":"中心不规则红色团块，周围散布较多红色散点","main_location_zh":"主要结构位于晶圆中心区域","location_clock":[],"orientation_clock":[],"secondary_observations":["片内各方向散布较多孤立红色散点","顶部及左侧边缘有零星红点"],"caption_zh":"主要失效为中心大块不规则团块，另有较多散点散布全片。","uncertainty":""}

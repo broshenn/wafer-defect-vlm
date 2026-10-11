@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Center\",\"morphology\":\"失效die在晶圆中部偏左聚集连片，同时全图散布大量零星红色die，边缘也有少量分布\",\"radial_zone\":\"center\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆中部偏左有较密集的红色失效聚集区，其余红色失效点散布于全图各处\",\"uncertainty\":\"中央聚集与全局散点并存，散点占比不低，类别判断存在一定模糊性\"}",
+  "raw_sha256": "725a377ce9714ea5511e6d7c6f981f5d30b95163abbc12af034256f5b54faaf1",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "725a377ce9714ea5511e6d7c6f981f5d30b95163abbc12af034256f5b54faaf1",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0037.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

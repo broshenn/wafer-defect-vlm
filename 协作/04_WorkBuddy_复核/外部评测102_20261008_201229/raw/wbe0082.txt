@@ -1,0 +1,1 @@
+{"defect_class":"Near_full","morphology":"红色失效die覆盖晶圆绝大部分区域，仅剩零散绿色小区块散布其中","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆绝大部分die失效呈红色，绿色合格die仅在左侧、中部及零星位置残存","uncertainty":"绿色残存区在左中部略多，但整体失效覆盖率极高，归为Near_full"}

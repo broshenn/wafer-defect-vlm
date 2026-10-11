@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘环加全局零星散点","main_location_zh":"沿晶圆边缘整圈分布，内部散布零星红点","location_clock":[],"orientation_clock":[],"secondary_observations":["边缘红色各段密度不均，顶部与左下段较明显","内部全域散布零星红色失效点"],"caption_zh":"红色失效主要沿晶圆边缘呈环状分布，内部散布零星红点。","uncertainty":"边缘环各段密度不均，无单一主导钟点。"}

@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"多条红色线状条纹分别位于左上、右上和中下部，其中中下部一条近水平线延伸至右边缘，伴少量散点","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"晶圆以绿色为主，可见多条红色线状条纹：左上一条近纵向弧线、右上一条斜线、中下部一条近水平线延伸至右边缘。","uncertainty":"存在多条不同方向的线条，无法给出单一钟点方向。"}

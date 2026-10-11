@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Loc\",\"morphology\":\"中部偏右上有一片连续红色失效die聚集区，其上方12点钟方向见纵向红带延伸至边缘，其余为零散红点\",\"radial_zone\":\"center\",\"clock_direction\":\"12点钟\",\"extent_r\":null,\"caption_zh\":\"中部偏右上可见连片红色失效聚集，向上方延伸至12点钟边缘形成纵向条带，全圆另有零散红点\",\"uncertainty\":\"上方纵向红带可能构成独立条状图案，中心聚集与该条带的关系不完全确定\"}\n",
+  "raw_sha256": "f31c6b6d17c77aeff6b591c7b2d55e9c7dfedffb70f2016185fa3551bd3c4deb",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "f31c6b6d17c77aeff6b591c7b2d55e9c7dfedffb70f2016185fa3551bd3c4deb",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0026.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

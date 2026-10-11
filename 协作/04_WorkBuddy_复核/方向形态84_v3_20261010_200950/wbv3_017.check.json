@@ -1,0 +1,2 @@
+{"command":"python -X utf8 -B workbuddy_schema_check.py <raw>","exit_code":0,"note":"worker超时后由父会话补闭合，raw为worker首次作答原样保留","stdout":{"schema_ok": true, "errors": [], "warnings": ["numeric_or_causal_claim_requires_content_review"], "content_verified": false, "raw_sha256": "5cc3ffb6403fd9379f4f1858e30e558969eb276654aaf4b46b0e49c9d7023de7"}
+}

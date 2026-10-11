@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Scratch","morphology":"一条从右上方向左下方延伸的红色裂纹","radial_zone":"edge","clock_direction":"1点钟方向","extent_r":null,"caption_zh":"晶圆边缘有一条明显的红色裂纹","uncertainty":""}

@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0498",
+    "image_sha256": "9158a3b3c631fc9065abc909781567e2bfaaaeef4e2817344695e9928e9bc5ac",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "晶圆中心偏右出现一大块致密的红色失效团块，轮廓不规则并向右侧略有凸出，团块边界与周围绿色晶粒直接相接，外围绿区中另散布少量孤立红点",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "晶圆中心区域存在一块不规则的致密红色失效大团块，横向跨度约为晶圆直径的三分之一，其余区域基本为绿色合格晶粒并夹杂零星红点。",
+      "uncertainty": "低-中：中心聚集特征明确，但周边散点不少，可能叠加少量Random成分，纯Center归类置信度略降。"
+    }
+  },
+  {
+    "item_id": "wbg0499",
+    "image_sha256": "298087e1f9ad175b385066ba1ac607bd952cc0dce9004ad6eb958eea5a37f175",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "失效集中在晶圆顶部边缘，呈沿轮廓横向延伸的红色带状条带，条带厚度约一到两个晶粒，晶圆其余部分的绿色区域中仅有零散单颗红点",
+      "radial_zone": "边缘",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "晶圆正上方边缘出现一条沿圆周轮廓分布的红色失效带，大致覆盖10点至2点方位并以12点最厚，其余晶面几乎全部为绿色合格晶粒。",
+      "uncertainty": "中：顶部边缘带清晰，但涉及的方位角范围偏宽，与仅限单一扇区的典型Edge-Loc相比略宽，归类存在一定弹性。"
+    }
+  },
+  {
+    "item_id": "wbg0500",
+    "image_sha256": "57ad09da2f94ae0aab2e24bcad3d54e9cbc0cbb3b9fa06c7308b2c7f92323edf",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆最外圈形成一圈连续的细红色环带，环带宽度约一至两个晶粒且整周无断口，内部绿色区域中散布数十个随机分布的孤立红点，中部偏下可见零星相邻红点",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外沿被一圈连续的红色失效细环完整环绕，内部为绿色合格晶粒并随机散布数十个孤立红点，整体以边缘环为主要缺陷特征。",
+      "uncertainty": "低：边缘环连续完整、特征典型；内部散点数量中等，可能叠加轻度Random，但对主分类影响不大。"
+    }
+  },
+  {
+    "item_id": "wbg0501",
+    "image_sha256": "20d958eab873529616a75e43812c6af8fd9c3c44c0ce29af0119e091c1c380b4",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外周红色环带整圈连续，贴着晶圆轮廓分布且宽度较均匀，环内侧边界整齐；内部红点以单颗散点为主，随机散布，未见成片聚团",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆四周被一圈宽度均匀的连续红色失效环包围，环宽约一个多晶粒，内部绿色区域中零散分布着数十个随机红点，中下部数量略多。",
+      "uncertainty": "低：边缘环形态清晰规整；内部散点是否构成次要Random成分难以量化，整体判断把握较高。"
+    }
+  },
+  {
+    "item_id": "wbg0502",
+    "image_sha256": "56babf833e2fc4497d4945014526764c1acb5ee1b108eab2a156b7129407d2df",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "晶圆外缘红色环带基本连续、个别方位略窄，内部红点数量较明显，随机散布于整面，上中部与左侧密度稍高，偶见两三颗相邻",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆外圈呈现连续的红色失效环，内部绿色晶粒间散布数十至上百个随机红点，上中部和左侧略密，缺陷覆盖仍以边缘环为主。",
+      "uncertainty": "中：内部随机散点偏多，Edge-Ring与Random叠加的比重难以明确区分，主分类存在一定模糊性。"
+    }
+  },
+  {
+    "item_id": "wbg0503",
+    "image_sha256": "90b5b0b02d9d49cdeff65f3694fb70880b9e0cefdbbfa2c08cca18e82095c3b4",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外缘红色环带整周可见、局部略加厚，内部红点随机散布，下半区可见少量相邻成对或纵向短列的排布，上部散点相对稀疏",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆最外层形成基本连续的红色失效环，内部绿色区域随机散布数十个红点，下半部分可见少数相邻或纵向排列的失效对，整体以边缘环为主导。",
+      "uncertainty": "中：边缘环与内部散点并存且散点偏多，Random叠加程度不易量化，归类置信度中等。"
+    }
+  },
+  {
+    "item_id": "wbg0504",
+    "image_sha256": "748fa74b6f4c7ae1e175e81d63550f8bf8b4412c188408378d021a608d2a3ac3",
+    "raw_answer": {
+      "defect_class": "Edge-Ring",
+      "morphology": "外缘一整圈连续红色细环贴边分布，内部红点数量较多且遍布晶面，左侧与中部偏右可见少量相邻聚集，散点总体仍呈随机样式",
+      "radial_zone": "边缘",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "晶圆边缘被一整圈连续的红色失效细环覆盖，内部绿色晶粒间散布近百个随机红点，左侧及中部偏右略有聚集，缺陷主体仍为边缘环。",
+      "uncertainty": "中：内部随机失效数量偏多，Edge-Ring为主叠加Random的判断置信度一般。"
+    }
+  }
+]

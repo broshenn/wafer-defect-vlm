@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0491",
+    "image_sha256": "3fd954025e6b1e0ae822d7ee54ffbab1b50433057b81db03d23d9b0b1f718404",
+    "raw_answer": {
+      "defect_class": "Near-full",
+      "morphology": "几乎整圆均为红色fail die，绿色pass die仅以稀疏单点形式散布，无任何几何结构",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "整片晶圆几乎全为红色fail die，绿色pass die只是零星点缀散布全圆，fail覆盖超过九成，属近全坏型缺陷。",
+      "uncertainty": "低：全圆近全红的形态非常明确，Near-full分类把握较大。"
+    }
+  },
+  {
+    "item_id": "wbg0492",
+    "image_sha256": "197639a9f9398863e7508a31e5970c68d64ebbc46271382d517e148696db0e23",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红绿两色随机交错、比例接近，无环带或条状结构，仅上部中央红色略密",
+      "radial_zone": "中心",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "红绿fail/pass随机混杂、大致各占一半，无任何几何形态，仅12点方向偏内的中央区域红色稍显密集。",
+      "uncertainty": "中：整体接近均匀随机，上部红色略密可能只是偶然波动，Random与none的边界在此图上较模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0493",
+    "image_sha256": "a5a3178ef8e11e7c36b5e7cb991f2afa0f2135099040de078f61cfa32e7b9164",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "绿色为主红色次之，两色随机混杂交错，上缘与左上区域红色斑块略集中，下半圆绿色更密",
+      "radial_zone": "中间",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "全圆红绿随机交错且绿色占比略高，上半圆尤其顶部一带红色相对聚集，未见环状、条带或划痕等结构。",
+      "uncertainty": "中：上下颜色分布有轻微不均，但差异幅度小、结构性弱，归为Random带有一定主观性。"
+    }
+  },
+  {
+    "item_id": "wbg0494",
+    "image_sha256": "3fd94babd9e168a934fc671c34d8fddf11a73859f0f6444f71238588dfe56ed2",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红绿大体各半随机散布，左半圆与顶部边缘红色偏多，右侧绿色偏多",
+      "radial_zone": "中间",
+      "clock_direction": "9点",
+      "extent_r": null,
+      "caption_zh": "全圆红绿两色约各半随机分布，左半侧及顶缘红色稍密、右半侧绿色稍密，未观察到明确的几何缺陷形态。",
+      "uncertainty": "中：左右颜色密度差异轻微，难以排除随机涨落，Random判断的置信度一般。"
+    }
+  },
+  {
+    "item_id": "wbg0495",
+    "image_sha256": "d745d6d47f9d8bfc72b0540244b55427cb97cf5efab6cfd1593c3c8f2aefc6ba",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "绿色为主体，中央偏右有一片红色聚集团块，其余红色呈零散单点分布",
+      "radial_zone": "中心",
+      "clock_direction": "3点",
+      "extent_r": null,
+      "caption_zh": "晶圆以绿色pass为主，中央偏右约3点方向内侧有一团红色fail聚集区，尺寸约占直径四分之一，周边伴少量零散红点。",
+      "uncertainty": "中：红色聚集区边界不锐利、密度渐变，与Random背景下偶然成团不易完全区分。"
+    }
+  },
+  {
+    "item_id": "wbg0496",
+    "image_sha256": "59f7591ef14040d711c9fd9ac694a56a534838d33c44c1607b8866a391d2c2ee",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "右侧存在大片连续红色fail区域，自中心附近一直延伸到右缘，左半圆以绿色为主",
+      "radial_zone": "中间",
+      "clock_direction": "3点",
+      "extent_r": null,
+      "caption_zh": "右侧约2-4点方向有大片连续红色fail区域，从中心延伸到边缘，约占晶圆三分之一面积，左侧及左下以绿色pass为主。",
+      "uncertainty": "低：红色大块连续区域轮廓清晰、与绿色区对比强烈，Loc判断可靠。"
+    }
+  },
+  {
+    "item_id": "wbg0497",
+    "image_sha256": "7a89cce901e1a9cdf342e93510062b2fed8dede6a9a9227a1d64968048d469ea",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "全圆以绿色为主，红色稀疏散点，中下部有一条自内向外延伸的短红线状痕迹",
+      "radial_zone": "中间",
+      "clock_direction": "5点",
+      "extent_r": null,
+      "caption_zh": "晶圆基本全绿、红色fail极少，仅中心偏下约5点方向有一条由内向外的短红色线痕，形似径向划痕，另伴少量随机红点。",
+      "uncertainty": "高：红色随机散点数量不少而线痕偏短，Scratch与none/Random之间难以决断，仅倾向存在轻度划痕。"
+    }
+  }
+]

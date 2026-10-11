@@ -1,0 +1,23 @@
+{
+  "checkpoint": "shards_001",
+  "generated_at": "2026-10-08T20:21:36+08:00",
+  "planned_total": 102,
+  "done": 7,
+  "raw_files": 7,
+  "meta_files": 7,
+  "done_ids": [
+    "wbe0001",
+    "wbe0002",
+    "wbe0003",
+    "wbe0004",
+    "wbe0005",
+    "wbe0006",
+    "wbe0007"
+  ],
+  "counts": {
+    "strict_json": 7,
+    "schema_ok": 7,
+    "contract_warnings": 0,
+    "failures": 0
+  }
+}

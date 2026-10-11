@@ -1,0 +1,1 @@
+{"morphology_zh":"一个致密的红色团块，另有零散红色点状失效格点","main_location_zh":"团块位于晶圆下方偏右的边缘区域，散点遍布晶圆","location_clock":[5],"orientation_clock":[],"secondary_observations":["上方靠近边缘处有一段红色小聚集","中部及左下散布少量孤立红点"],"caption_zh":"下方偏右边缘处有一大块致密红色失效团块，晶圆其余区域散布零散红点","uncertainty":"团块方向介于5点与6点之间，取5点钟"}

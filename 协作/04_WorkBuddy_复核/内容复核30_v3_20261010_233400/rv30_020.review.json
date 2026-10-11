@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_020",
+ "item_id":"wbv3_046",
+ "sample_id":"wafer_00036633_025",
+ "image_sha256":"ec00de963c6a982ca5edc9c720efd3b239428fda83e10cbd301c7b4e3300acd3",
+ "original_raw_sha256":"315e276331044de3c6a9d5877793e766e8bad7d46fb0bf8b65397dfd0014876c",
+ "observation_raw_sha256":"7ee75d780fc3357357db28f8ecca6ec1c8db859ab18e8a06979bf4c63940fa19",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上中心确有一个实心不规则红色团块，周围及全片散布较多红色散点，与被审句描述一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称主要结构位于晶圆中心区域；图上团块重心位于中心，未明显偏移，相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句为[]；主要团块位于中心，属不适用于偏离中心钟点的情形，独立观察同为[]，合理。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]；中心团块为不规则斑块而非细长线状结构，无延伸轴，不填合理。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到片内各方向散布较多孤立红点、顶部及左侧边缘有零星红点；图上左缘9点附近确有红色小斑块，上缘、右缘、下缘亦有多处红色小斑块及散点，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括为中心大块不规则团块伴较多全片散点，与图面一致。"},
+  "uncertainty":{"verdict":"not_applicable","evidence":"被审原答uncertainty为空字符串；中心团块位置明确，主要判读无重大歧义，无可核对象。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"可考虑在secondary_observations中补充：中心团块外围有断续红点呈松散环绕，且右缘与下缘附近亦有多处边缘小斑块，使次要结构描述更完整。",
+ "uncertainty":"本worker额外观察到中心团块外围红点呈断续松散环绕、边缘多处小斑块；被审仅提及顶部与左缘红点。此为详略差异，非矛盾；环绕是否成环存在歧义，已在独立观察中声明。"
+}

@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以单块或小块形式随机散布全圆，右侧边缘可见局部红色连片聚集\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die随机散布于整个圆片，其中3点钟方向边缘处红色失效块较为集中连片\",\"uncertainty\":\"右边缘3点钟附近存在局部聚集，主要模式在随机散布与边缘局部失效之间不完全排他\"}\n",
+  "raw_sha256": "b8c85f80a13747831e66a84bb33762b83730c38df5da4b43322e4cddcdd31d67",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "b8c85f80a13747831e66a84bb33762b83730c38df5da4b43322e4cddcdd31d67",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0044.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"中央偏下向右下延伸的一条斜向红色带状划痕，伴全图零星点状失效","radial_zone":"middle","clock_direction":"4点钟","extent_r":null,"caption_zh":"晶圆中部偏下自中心附近向约4点钟方向延伸一条斜向短带状红色划痕，其余区域零散分布点状红色失效die","uncertainty":"划痕带较短且由离散die构成，与局部聚集存在混淆可能"}

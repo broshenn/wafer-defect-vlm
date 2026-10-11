@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Loc","morphology":"晶圆以绿色合格die为主，左上边缘有一片集中红色失效区并向内延伸；其余区域散布零星红色小点，底部与右下边缘附近散点略多","radial_zone":"edge","clock_direction":"约10至11点钟方向","extent_r":null,"caption_zh":"晶圆以合格为主，左上边缘约10至11点钟方向有集中红色失效区，其余区域散布零星失效点","uncertainty":"散点遍布全图，与Random类随机散布的界限不确定；左上集中区的失效深度是否构成典型边缘局部失效带难以确定"}

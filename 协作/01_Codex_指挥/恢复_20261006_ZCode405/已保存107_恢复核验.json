@@ -1,0 +1,965 @@
+[
+  {
+    "item_id": "zc_001",
+    "sample_id": "wafer_00000155_019",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_001_raw.json",
+    "raw_sha256": "76cb8e8c990c948c84427d10168ed8a3e18c26594450017612f318a4aa0077a2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_002",
+    "sample_id": "wafer_00000250_017",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_002_raw.json",
+    "raw_sha256": "da3b37c36951ac8972c20722f8924628dd416611b1fe1b113f08ee8ac9e090fe",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_003",
+    "sample_id": "wafer_00001411_022",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_003_raw.json",
+    "raw_sha256": "96ad419e3367211e1e31fac440fd6bf626cc26cee92673cb06018d00d56a6411",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_004",
+    "sample_id": "wafer_00002153_020",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_004_raw.json",
+    "raw_sha256": "d036ba9b6700b8e34e97005a692cbc9a09eca5503aa086f93f716f492e25337a",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_005",
+    "sample_id": "wafer_00002155_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_005_raw.json",
+    "raw_sha256": "c25a00762aae15aff232117fbe09eb9932a35526f75083a46774577cabf16eb8",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_006",
+    "sample_id": "wafer_00002420_012",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_006_raw.json",
+    "raw_sha256": "8c289aaeb907e933565f8ec13171f7c20f63dcba0e918588832413d011bf953c",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_007",
+    "sample_id": "wafer_00002517_007",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_01\\zc_007_raw.json",
+    "raw_sha256": "b32acc37907a4988bc568697ef409b1911b4bb8ae09dae7e7c084a96e3297c17",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_008",
+    "sample_id": "wafer_00002734_020",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_008_raw.json",
+    "raw_sha256": "d443d2d90c87ea01b260fcbdecfbfbf915ee3ce89ebac601f48f29a42df22f72",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_009",
+    "sample_id": "wafer_00002920_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_009_raw.json",
+    "raw_sha256": "5e9bd5d10735fd73648880c67343480c77c2fbd39e9a95f1f55df470da1b9103",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_010",
+    "sample_id": "wafer_00003579_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_010_raw.json",
+    "raw_sha256": "60cbc4005edf82fde0841ec7265dfdaa5f44302820fb91fedb9cadcc3bda2aa3",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_011",
+    "sample_id": "wafer_00003953_007",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_011_raw.json",
+    "raw_sha256": "35dcdba28b025e32135f80c09cb561611c62260addf147f52c1ac6d44e14873a",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_012",
+    "sample_id": "wafer_00004084_007",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_012_raw.json",
+    "raw_sha256": "5e8258e5edbe1d296af1bed578b8d882c484500aeaad06ddb4546beca4f0e2fe",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_013",
+    "sample_id": "wafer_00004087_005",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_013_raw.json",
+    "raw_sha256": "dc790dfd2ad06dc79bce215307363c4e1e24dec51567cfb10c7713dd1ec7d10d",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_014",
+    "sample_id": "wafer_00004308_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_02\\zc_014_raw.json",
+    "raw_sha256": "adeaf3357c964925cedfa1aa06cf549f61ee031ab11ea77b060968e248c84f21",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_015",
+    "sample_id": "wafer_00004648_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_015_raw.json",
+    "raw_sha256": "bbef011cb670381484a88d194d3e3f982d8bbca6a74b8d5682046d0f2deebdcf",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_016",
+    "sample_id": "wafer_00004662_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_016_raw.json",
+    "raw_sha256": "1c2d4031e4effc7e322ad66b424034ae07e83cad5d897cfe4ad2b6d4be8e10d8",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_017",
+    "sample_id": "wafer_00005178_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_017_raw.json",
+    "raw_sha256": "e49c954054cad311ea4dafc9a448ab2dc40b3739718596db22c219c1a18428dd",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_018",
+    "sample_id": "wafer_00007741_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_018_raw.json",
+    "raw_sha256": "dcce881ccdf698f1c2075906167ab8422e1514e3b23bd10968c8e50cc15c5275",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_019",
+    "sample_id": "wafer_00008468_013",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_019_raw.json",
+    "raw_sha256": "e5c4bc0d6169cd2314264985e317478ad578c7d4d97b65266e6ecd3863cf57df",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_020",
+    "sample_id": "wafer_00008915_014",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_03\\zc_020_raw.json",
+    "raw_sha256": "da1de1ad9f53222d8582ad6205483e71ef8776854f683dff0f4ffb04bd0b2104",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_021",
+    "sample_id": "wafer_00008927_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_021_raw.json",
+    "raw_sha256": "9042737fadfdf1d6b2f78c6611f9fcaba5241d25a13e707d35ebadde56c2ee53",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_022",
+    "sample_id": "wafer_00009682_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_022_raw.json",
+    "raw_sha256": "d8dd2cfe9a3e032f73016e6673628061d9801c4d60a13c92b5b7fe2040ef01f2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_023",
+    "sample_id": "wafer_00011057_010",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_023_raw.json",
+    "raw_sha256": "44631c30f81a3a525c1bad391cba5924e38b85377168482084cf54cf6e881860",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_024",
+    "sample_id": "wafer_00011171_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_024_raw.json",
+    "raw_sha256": "04ea9e94698eea1458241e4fe89a2fb295eb15f5ceb28b22a7ffeb9cc214617e",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_025",
+    "sample_id": "wafer_00011172_015",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_025_raw.json",
+    "raw_sha256": "a717161684469558f592d605149d96aaef81ff97b460b3d3804a3b68a2d92393",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_026",
+    "sample_id": "wafer_00011794_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_026_raw.json",
+    "raw_sha256": "90e8428ae39a99efe0e2bbe8782c96803d004af1c3875eb0e0a9686cfa2f05ae",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_027",
+    "sample_id": "wafer_00011875_009",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_04\\zc_027_raw.json",
+    "raw_sha256": "4bf7f9ddd5ad80e9a2fac833d6c70fffc5772b6eaf3f93a9b90cfd3a482d75c2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_028",
+    "sample_id": "wafer_00011967_002",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_028_raw.json",
+    "raw_sha256": "a7ec6b6b1bc6e0e8b7d28869dbd18c87b6bf41f60f1066f2f3bc2371e9e4766d",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_029",
+    "sample_id": "wafer_00012746_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_029_raw.json",
+    "raw_sha256": "c0ace62c491a6c73c499227bbd8c04fbc923c4a295ed8348bef8cc74bd4abea5",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_030",
+    "sample_id": "wafer_00012758_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_030_raw.json",
+    "raw_sha256": "e5d986031d06c1174e903d609b2bebf48dfe89db23bed13737c075df2ffdfa8f",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_031",
+    "sample_id": "wafer_00013021_025",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_031_raw.json",
+    "raw_sha256": "9d10468a513658918074f3aba53fcbefd2b1f2830ab0564812058894130e1170",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_032",
+    "sample_id": "wafer_00013920_012",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_032_raw.json",
+    "raw_sha256": "d4395f641cb6d8c5f949641c4f7f87af1c5627972aec6e124ccc1792c281276f",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_033",
+    "sample_id": "wafer_00014255_013",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_033_raw.json",
+    "raw_sha256": "5a7c90af0eb5a396a11fa4898874a8592771d4e059aa67b5c337be3a140dc033",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_034",
+    "sample_id": "wafer_00014325_024",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_05\\zc_034_raw.json",
+    "raw_sha256": "d79d083eeb38c4c126136c73a8e65100338590c358fc48b63eaf15d2170e5f72",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_035",
+    "sample_id": "wafer_00014375_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_035_raw.json",
+    "raw_sha256": "442125c340fb17c1354e64b148118a064047cbe48404ad77cab929d0e6fcc598",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_036",
+    "sample_id": "wafer_00014400_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_036_raw.json",
+    "raw_sha256": "907d351b4d39e85a7bd2978c4b60bfbf5587cc32188f6b8535a51b6688b1133c",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_037",
+    "sample_id": "wafer_00014524_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_037_raw.json",
+    "raw_sha256": "553e0751229868cd70c5c176c1d82ad98bc7adc5dc61132945d6e34120d047db",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_038",
+    "sample_id": "wafer_00014771_010",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_038_raw.json",
+    "raw_sha256": "753c48a101be3106cf8e3ab8486d3a96d6b9867e3d280cc2de881d8710148e3f",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_039",
+    "sample_id": "wafer_00015122_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_039_raw.json",
+    "raw_sha256": "0be1f7e4c25195c941f8e1f4585cc1b6af1c2e8634498ac6ef5d72ff74ce261e",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_040",
+    "sample_id": "wafer_00015133_009",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_040_raw.json",
+    "raw_sha256": "0e922822d9ae83ecce54ede9997e81f3ef8fdafbb36756c69623e2ccd7c90f21",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_041",
+    "sample_id": "wafer_00015361_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_06\\zc_041_raw.json",
+    "raw_sha256": "7ba7cbd87fb79369ace1e2d7b66998793ead139dc2e018647f111416d37a8256",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_042",
+    "sample_id": "wafer_00015448_005",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_042_raw.json",
+    "raw_sha256": "abc07cb3acd94b0b1b8591313d40e41d56e0a685681ec7e81e455d7204af5049",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_043",
+    "sample_id": "wafer_00015458_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_043_raw.json",
+    "raw_sha256": "5ac20190c85ef7b3a0d16e930591c8a24880083cb8f6d4399f446c81e097ba55",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_044",
+    "sample_id": "wafer_00015562_022",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_044_raw.json",
+    "raw_sha256": "6a13122b8dc50de65ca2a5ea7b0491d762e3695e5c4b92e3f0d20208b2bbb718",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_045",
+    "sample_id": "wafer_00015567_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_045_raw.json",
+    "raw_sha256": "1cb78fbee5e76b6151e601d74f05e53f945c4c3277b6dad00acb364f0d3f5bf3",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_046",
+    "sample_id": "wafer_00015596_014",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_046_raw.json",
+    "raw_sha256": "7d6d01746110731d94c77810269a3d9c390e8574c390643e96e0ac9a5f6b08b7",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_047",
+    "sample_id": "wafer_00015619_008",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_047_raw.json",
+    "raw_sha256": "dfa4b2e64007e250a5b122fad403a42a18ed3dd9ce767d6acc19c0af8baab785",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_048",
+    "sample_id": "wafer_00015621_025",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_07\\zc_048_raw.json",
+    "raw_sha256": "584e86541949a961655840c424f0cb68fe6390b9d901a90d9de580cdade01d20",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_049",
+    "sample_id": "wafer_00015865_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_049_raw.json",
+    "raw_sha256": "efdf0d97376421d410dd1069ce1e74657806feac814839ac19a46f00d8fb00fa",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_050",
+    "sample_id": "wafer_00016089_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_050_raw.json",
+    "raw_sha256": "1edb1c14bf5590d11be57a3c0efa481da5be0589a06ced77f4341eb5d6045bba",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_051",
+    "sample_id": "wafer_00016675_005",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_051_raw.json",
+    "raw_sha256": "5a6ec352cf9be184554af7eee34a987ba188e420f258c049f529a8d9cbfbab17",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_052",
+    "sample_id": "wafer_00016989_017",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_052_raw.json",
+    "raw_sha256": "e57e59e9569c677132e517329102263464b984983cddf5ab7bc2566bab748a80",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_053",
+    "sample_id": "wafer_00017139_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_053_raw.json",
+    "raw_sha256": "c04fae42f5a7868700f24fa4b4b9a6de7dbbdb735aa302626a4a144a15b63d9b",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_054",
+    "sample_id": "wafer_00017150_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_054_raw.json",
+    "raw_sha256": "020769fb78fd5d89e2ac80b8fb1a4599adf0a632dbd3d4d9d54622a483b32695",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_055",
+    "sample_id": "wafer_00017157_025",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_08\\zc_055_raw.json",
+    "raw_sha256": "0cb5896559f9a40168721b79c2095790705037e3d58b6e976903e62192f8e939",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_056",
+    "sample_id": "wafer_00017220_019",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_056_raw.json",
+    "raw_sha256": "df5ac9f19e07fef262b1789a3b976a8dc419b5e39ceb753a3b08428343a2a612",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_057",
+    "sample_id": "wafer_00017253_025",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_057_raw.json",
+    "raw_sha256": "1beaab927ac6baae3ebe2cecd8919c37ab2782003602c9b214fc41f1662e68e6",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_058",
+    "sample_id": "wafer_00017787_002",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_058_raw.json",
+    "raw_sha256": "5afa87e7a8fa9dcc0001f02a6faad7265d3525010ad06a869c30953e15beaaef",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_059",
+    "sample_id": "wafer_00018399_010",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_059_raw.json",
+    "raw_sha256": "c23a7b6ac6bf060da08699f4b66c52074647b861cd16115817636213689cc466",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_060",
+    "sample_id": "wafer_00018810_018",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_060_raw.json",
+    "raw_sha256": "22f9b0e5c6e2d8baef73d02377802e00bc472151384dc49d08202debadd264af",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_061",
+    "sample_id": "wafer_00019252_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_061_raw.json",
+    "raw_sha256": "10764126a8fc5a498b44f7c287b022c30593254157d497e9ca068c27aad11182",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_062",
+    "sample_id": "wafer_00019256_017",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_09\\zc_062_raw.json",
+    "raw_sha256": "3e66748f28f00d14eb145032ba015f5abc2ee048e70865a0482fd16f5f8f4d3c",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_063",
+    "sample_id": "wafer_00019259_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_063_raw.json",
+    "raw_sha256": "3854d3b0738465a391997ad07376c83ae2a0acf2adee119f833d2511376971cf",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_064",
+    "sample_id": "wafer_00019335_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_064_raw.json",
+    "raw_sha256": "08f5764abbf9c70957829466d21b9c1161fcae30d631b4aedd82c0e5735b04b2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_065",
+    "sample_id": "wafer_00019851_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_065_raw.json",
+    "raw_sha256": "0069811ae2882de2b7b88ee009ad373ff9923b4bc7e65bece690942954b63477",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_066",
+    "sample_id": "wafer_00020126_025",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_066_raw.json",
+    "raw_sha256": "d7a0aa0d415be8e97de2e500f4b232a0915a868a652e9c30041ca93d8359e166",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_067",
+    "sample_id": "wafer_00020380_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_067_raw.json",
+    "raw_sha256": "7399b9dfdbeb3f3af4ddd365e68399db4b7ec5a0e39a7eb0bc024b313c5f75e2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_068",
+    "sample_id": "wafer_00020900_012",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_068_raw.json",
+    "raw_sha256": "fd6d7a391fba5f081436e1636c6b82562feb8bdf7c427f1406835cf5415bfcff",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_069",
+    "sample_id": "wafer_00020982_002",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_10\\zc_069_raw.json",
+    "raw_sha256": "815c2298d9fa87c983e7353d13adfc5eb483bcc3c8e8f616b2e864060d70fc1d",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_070",
+    "sample_id": "wafer_00021578_002",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_070_raw.json",
+    "raw_sha256": "9a6523317bab53ac7f56a80e8d129dab8fe3d23e070cbe39550982ee7504cfff",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_071",
+    "sample_id": "wafer_00021649_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_071_raw.json",
+    "raw_sha256": "200f4daa04d2eb28dcd9c429aede4585b58feaf3d79298ced7bedfa2f074d9ab",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_072",
+    "sample_id": "wafer_00022463_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_072_raw.json",
+    "raw_sha256": "5ba88c619508c330f6a4ac690c8bdf4558dde4ac33ec3f0fd59f6e275dd46698",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_073",
+    "sample_id": "wafer_00022486_009",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_073_raw.json",
+    "raw_sha256": "5b76de81d32fe76b8687022c9d6482d118e37abb238b2015640bc8e298e0191e",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_074",
+    "sample_id": "wafer_00022502_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_074_raw.json",
+    "raw_sha256": "cfaf7d25d3cc2963b2509bd0ebe035485809b7184a153e59c5b522ce223b7455",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_075",
+    "sample_id": "wafer_00023101_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_075_raw.json",
+    "raw_sha256": "251b5378e91c4fc9922b4f553e9ef2f3092efea7478f93854ab05002fb593aaf",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_076",
+    "sample_id": "wafer_00023173_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_11\\zc_076_raw.json",
+    "raw_sha256": "5cd4a4d73d404d1d50ed783e8741dc46f4c02b7fdd8e33fea83e4449fec12468",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_077",
+    "sample_id": "wafer_00023175_016",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_077_raw.json",
+    "raw_sha256": "3855226030fba935fffe6d273baf253141e787baa944cd8cbf4c7fa53f85526d",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_078",
+    "sample_id": "wafer_00023494_008",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_078_raw.json",
+    "raw_sha256": "79f2bcb256490662795675b635007f9bdf740ba227f2d43a19c7961ba0bdb673",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_079",
+    "sample_id": "wafer_00023580_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_079_raw.json",
+    "raw_sha256": "a5b5acb1720c499e4c118add61cfb98a11b8e3220e229769e956bc9b2d724795",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_080",
+    "sample_id": "wafer_00024205_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_080_raw.json",
+    "raw_sha256": "2955a886d5a6fe3ff189ad2591108e8f63975c1e4fd135f83a1d11a3f89d1928",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_081",
+    "sample_id": "wafer_00024261_023",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_081_raw.json",
+    "raw_sha256": "a1d70f316c69cbd16558a79d991730314bea2d524a97debf2aa20629f66a9f7d",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_082",
+    "sample_id": "wafer_00024340_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_082_raw.json",
+    "raw_sha256": "d206510243ccd098777e49d7332b5bf0f502f894bad00cde2b4147168afbbfec",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_083",
+    "sample_id": "wafer_00025615_010",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_12\\zc_083_raw.json",
+    "raw_sha256": "8cdc456676f4daeaad4e84322a4d1677ede2487fecc4cb6155e827e75de08b39",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_084",
+    "sample_id": "wafer_00026084_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_084_raw.json",
+    "raw_sha256": "4aba0fcefc4a246bb6321aacc04c92587ecc4c48a91a46ef4bae4d38e60115ca",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_085",
+    "sample_id": "wafer_00026441_001",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_085_raw.json",
+    "raw_sha256": "34322bb03053e86aa983f8c47c569b233e79c9edea90fcaca0e558e2491385f6",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_086",
+    "sample_id": "wafer_00026738_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_086_raw.json",
+    "raw_sha256": "b7ed736030083352e070fa98200ac118812aa2f8ea634fd57a841494b4993954",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_087",
+    "sample_id": "wafer_00027673_008",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_087_raw.json",
+    "raw_sha256": "6b11e090a7e0590750392de3225d78c91b21d9a44fb3539bb27ba5213b10a0b8",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_088",
+    "sample_id": "wafer_00028079_018",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_088_raw.json",
+    "raw_sha256": "9091a9c2fb67494e150c9078e33708b0c2dd30eea72e06e38f9161e01c3e27f3",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_089",
+    "sample_id": "wafer_00029259_007",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_089_raw.json",
+    "raw_sha256": "fdae80b36f0c6a7b9dd19c1d0bff01e500300721e80960705b841f1e97cb98fd",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_090",
+    "sample_id": "wafer_00034325_022",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_13\\zc_090_raw.json",
+    "raw_sha256": "645d3b1938f89ff07c61d839de4b835af5aff81d125b570b09e8575a3c7b0c00",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_091",
+    "sample_id": "wafer_00035449_021",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_091_raw.json",
+    "raw_sha256": "3cc3c080fcbf86e8d496f4edfa7dab9fe5b769696b6bd9eb146f1f1af504bebe",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_092",
+    "sample_id": "wafer_00036834_004",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_092_raw.json",
+    "raw_sha256": "ad673d16760d5592651d5eb8528a9bc0d6855397dc04575bf88e7c8795a1dbb3",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_093",
+    "sample_id": "wafer_00036955_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_093_raw.json",
+    "raw_sha256": "19e17034c3aa5ee4f90e8e700f0d13335317279a7b638445574f658b77639266",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_094",
+    "sample_id": "wafer_00037885_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_094_raw.json",
+    "raw_sha256": "2c21b8cbcf8bbdc3a97f6c5fce5aac2a4202cab37e8e55206ca266e3d2f75cf2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_095",
+    "sample_id": "wafer_00037925_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_095_raw.json",
+    "raw_sha256": "1e5ef0946529d7b3af004d5f096f22c533497b5a60179e724beb15922c0eb151",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_096",
+    "sample_id": "wafer_00038756_018",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_096_raw.json",
+    "raw_sha256": "e1d1ab9da0c9e240b3beae5fcbf6c28847ad2cefbda95f2f706d8e0d11b7b381",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_097",
+    "sample_id": "wafer_00040499_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_14\\zc_097_raw.json",
+    "raw_sha256": "724b25d72665dfd1faf3a2332c54dd3dc30cbbd999b2498815e470a54ad2a7ac",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_098",
+    "sample_id": "wafer_00040595_019",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_098_raw.json",
+    "raw_sha256": "630e986c34852ef6f5102975de456fd45fa211bffd8de7f7583d0d555eecf75b",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_099",
+    "sample_id": "wafer_00040596_020",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_099_raw.json",
+    "raw_sha256": "91c3f5a032561ecaa56e1b13c906cfeff3444f80ed538346fbcd4ca44a69b61a",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_100",
+    "sample_id": "wafer_00040600_006",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_100_raw.json",
+    "raw_sha256": "c4e4f1df047290abd0f0a428697afe0368cf270fc9c12662c6fad705e3de65b0",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_101",
+    "sample_id": "wafer_00040627_005",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_101_raw.json",
+    "raw_sha256": "b122c666dea7bbe17c069c8d917ab4cc828fb62dd0e60d7e974946caf2821dee",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_102",
+    "sample_id": "wafer_00040830_020",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_102_raw.json",
+    "raw_sha256": "dd9d4fa900479c9b36b5bf22260d96279f9c4a74ec55e1dd60c974d54f02b569",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_103",
+    "sample_id": "wafer_00040885_007",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_103_raw.json",
+    "raw_sha256": "373f6d0afc59bfd1c0ba217d68763e1fe39050b436f845a4989a4284ed5fc8c2",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_104",
+    "sample_id": "wafer_00041001_003",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_15\\zc_104_raw.json",
+    "raw_sha256": "915f2c41e5973728d2b0f548790b91add4ee3a35c83e2e8d5268ce39ce77576b",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_105",
+    "sample_id": "wafer_00041962_022",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_16\\zc_105_raw.json",
+    "raw_sha256": "9e3d6b5b11f0fc40d794d185e32f92c6df577d888fdb3561cb6eb779b65c6abe",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_106",
+    "sample_id": "wafer_00042013_011",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_16\\zc_106_raw.json",
+    "raw_sha256": "96599b2afe196e25bfdc56ec66f114f2ddefaf588fe5d577ed743224e59a2ae3",
+    "format_exit_code": 0,
+    "entry_present": false,
+    "fact_review": "pending_model_review"
+  },
+  {
+    "item_id": "zc_112",
+    "sample_id": "wafer_00042219_015",
+    "raw_path": "协作\\03_ZCode_标注\\扩容198_20261006_165855\\worker_17\\zc_112_raw.json",
+    "raw_sha256": "48b318241445eb1f633c8702b9f5584ff12b3b8fc257ceebf4f355ccfaf3c156",
+    "format_exit_code": 0,
+    "entry_present": true,
+    "fact_review": "pending_model_review"
+  }
+]

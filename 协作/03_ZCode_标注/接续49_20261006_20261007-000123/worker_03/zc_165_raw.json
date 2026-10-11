@@ -1,0 +1,1 @@
+{"defect_class": "Random", "morphology": "红色失效die以孤立散点形式散布于晶圆全图，中部与外围均有分布，各散点互不相连；未见大片连续失效区、环形、条状或边缘集中模式，绿色合格die占绝大多数。", "radial_zone": "global", "clock_direction": null, "extent_r": null, "caption_zh": "晶圆全图散布孤立的红色失效点，无聚集的大片失效结构，绿色合格die占绝大多数。", "uncertainty": "红色散点数量偏多且中下部略密，但未形成可辨认的主导结构，类别判定为散布型；散点性质无法进一步判断。"}

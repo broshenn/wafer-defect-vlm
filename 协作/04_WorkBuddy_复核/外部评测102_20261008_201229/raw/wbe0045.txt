@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"边缘一圈大量红色失效呈带状分布，顶部边缘红色连片最严重，中心区域以绿色为主并夹杂零散红点","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"晶圆边缘一圈密集红色失效带，其中12点钟方向顶部边缘连片最重，中央相对完好","uncertainty":"顶部边缘失效显著重于其他方向，不排除按顶部局部边缘失效归类"}

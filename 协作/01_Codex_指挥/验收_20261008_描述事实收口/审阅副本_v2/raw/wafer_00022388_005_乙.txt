@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Loc","morphology":"晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏","radial_zone":"middle","clock_direction":"12","extent_r":null,"caption_zh":"晶圆中部偏12点钟方向存在少量孤立红色缺陷点，整体分布稀疏","uncertainty":""}

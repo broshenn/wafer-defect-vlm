@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Random","morphology":"红色缺陷die与绿色正常die在全晶圆范围内随机散布，缺陷比例约46.5%，无明确连续图形","radial_zone":"global","clock_direction":"null","extent_r":null,"caption_zh":"全晶圆范围内红色缺陷die与绿色正常die随机混合分布，缺陷比例约46.5%，无明确连续图形","uncertainty":"缺陷分布存在局部聚集，但整体呈随机散布，无单一方向或环形主导模式"}

@@ -1,0 +1,89 @@
+{
+  "rows": 216,
+  "models": {
+    "Base": {
+      "original": {
+        "n": 18,
+        "strict_correct": 1,
+        "diagnostic_correct": 17,
+        "strict_format_failure": 17
+      },
+      "dered": {
+        "n": 18,
+        "strict_correct": 0,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 18
+      },
+      "allred": {
+        "n": 18,
+        "strict_correct": 0,
+        "diagnostic_correct": 15,
+        "strict_format_failure": 18
+      },
+      "noimage": {
+        "n": 18,
+        "object_null": 0,
+        "bare_null": 18,
+        "boolean_claim": 0
+      }
+    },
+    "L-N3072-3407": {
+      "original": {
+        "n": 18,
+        "strict_correct": 17,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 1
+      },
+      "dered": {
+        "n": 18,
+        "strict_correct": 18,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 0
+      },
+      "allred": {
+        "n": 18,
+        "strict_correct": 18,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 0
+      },
+      "noimage": {
+        "n": 18,
+        "object_null": 18,
+        "bare_null": 0,
+        "boolean_claim": 0
+      }
+    },
+    "D-N3072-3407": {
+      "original": {
+        "n": 18,
+        "strict_correct": 18,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 0
+      },
+      "dered": {
+        "n": 18,
+        "strict_correct": 18,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 0
+      },
+      "allred": {
+        "n": 18,
+        "strict_correct": 18,
+        "diagnostic_correct": 18,
+        "strict_format_failure": 0
+      },
+      "noimage": {
+        "n": 18,
+        "object_null": 0,
+        "bare_null": 18,
+        "boolean_claim": 0
+      }
+    }
+  },
+  "source_sha256": {
+    "协作/02_ClaudeCode_实操/描述事实验收_20261008_1911/租卡补诊断_20261008_2355/原答/Base_existence_raw.jsonl": "47ef23873bb42ae9746b9467a92a20cf569838d1df5febb1156e551bc8a52af8",
+    "协作/02_ClaudeCode_实操/描述事实验收_20261008_1911/租卡补诊断_20261008_2355/原答/L-N3072-3407_existence_raw.jsonl": "1ff41ed4338779bfbaaf391fc14e6f3c16b75d09284581544b38ed7e9aca3bd0",
+    "协作/02_ClaudeCode_实操/描述事实验收_20261008_1911/租卡补诊断_20261008_2355/原答/D-N3072-3407_existence_raw.jsonl": "13dc80872b62de5eab2d22458998b64aaf44d46665d155e29e338324798c96ac"
+  },
+  "scope": "18图单一二值事实辅助诊断；不是整体业务能力或根因归因证明"
+}

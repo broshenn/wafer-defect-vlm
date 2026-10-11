@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0379",
+    "image_sha256": "316c5e7d77efcfef3710f9fb306d5131df5996f64434846524fc821595d212a3",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "不规则大片状局部聚集，斑块边缘破碎参差，中上部密集并向中心偏右下延伸，周围伴少量零散红点",
+      "radial_zone": "中心",
+      "clock_direction": "11-2点（顶部偏右）",
+      "extent_r": null,
+      "caption_zh": "红色fail die在晶圆中上部聚成不规则大斑块，自12点附近向中心偏右下延伸，位于中心区域，覆盖约两成面积，另见零星散点。",
+      "uncertainty": "低-中。斑块主体清晰，但与周边散点边界略模糊，在Loc与Random聚集之间有少量歧义。"
+    }
+  },
+  {
+    "item_id": "wbg0380",
+    "image_sha256": "3ae3ee03e5451021c0d80b90a40b65bab3c4af9190345ac5a3995228fc88ed10",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "大面积块状致密聚集，占据上半圆大部，边界参差不齐，散点稀少，下半部基本完好",
+      "radial_zone": "中心",
+      "clock_direction": "9-3点（上半为主，偏左上）",
+      "extent_r": null,
+      "caption_zh": "红色fail die大面积覆盖晶圆上半部，自9点经12点至3点方向连成整片，占据中心及上中部，约占四成面积，下半部基本完好。",
+      "uncertainty": "中。覆盖范围大，介于Loc与Near-full之间，但远未达全圆覆盖且下半部完好，倾向Loc。"
+    }
+  },
+  {
+    "item_id": "wbg0381",
+    "image_sha256": "b086b8300b4205a1eed5c800cb51fcfcde6cc3dfed6c0bac64f37e84207253d2",
+    "raw_answer": {
+      "defect_class": "Donut",
+      "morphology": "粗环状致密带，环绕中心绿色核心区，环带宽窄不均，右下侧略宽厚，外缘残留绿色边带",
+      "radial_zone": "中间",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色fail die绕晶圆中心连成粗环带，中心保留绿色核心区，环带位于中间径向区域且右下略宽，覆盖约五成面积。",
+      "uncertainty": "中。环形结构明显，但环带宽窄不均、中心绿色岛偏大，与典型Donut形态略有偏差。"
+    }
+  },
+  {
+    "item_id": "wbg0382",
+    "image_sha256": "a0a3993820fe0c6921d04e928d41b0c82425ed0aec4f78335fc032cc07729fe0",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "不规则碎斑状断续聚集，中上部沿弧向形成横向碎斑带，右侧中部汇成较密纵形斑块，伴零星散点",
+      "radial_zone": "中间",
+      "clock_direction": "11-4点（偏右上）",
+      "extent_r": null,
+      "caption_zh": "红色fail die在中上部沿弧向聚成断续碎斑带并延至右中侧形成较密斑块，位于中间径向区域，覆盖约一成五。",
+      "uncertainty": "中。聚集破碎、边界不清，Loc与Random之间有歧义，但主带方向性较明显。"
+    }
+  },
+  {
+    "item_id": "wbg0383",
+    "image_sha256": "cb74012449f0b4af23c5bf60caecdd39d9e9b9e93695fbd0b9c283a23a8343d7",
+    "raw_answer": {
+      "defect_class": "Donut",
+      "morphology": "致密环状带，环绕中心圆形绿色核心区，左半环带较宽厚，外缘残留绿色边环",
+      "radial_zone": "中间",
+      "clock_direction": "环形各向（左半略密）",
+      "extent_r": null,
+      "caption_zh": "红色fail die绕晶圆中心形成致密粗环带，中心保留圆形绿色核心，环带位于中间径向区域且左半略厚，覆盖约四成五。",
+      "uncertainty": "低。环形结构清晰、中心核心区完整，判类信心较高。"
+    }
+  },
+  {
+    "item_id": "wbg0384",
+    "image_sha256": "e3206d30067df9d846279de00be0f5b8dd1e7113b3e0674641d53294f264a3f0",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "碎斑状局部聚集，中上部形成横向密集碎斑带，并向右中侧散布小斑块群，另见少量孤立散点",
+      "radial_zone": "中间",
+      "clock_direction": "11-4点（上侧为主，右侧次之）",
+      "extent_r": null,
+      "caption_zh": "红色fail die在中上部聚成横向密集碎斑带，并向右中侧散布小斑块群，位于中间径向区域，覆盖约一成五。",
+      "uncertainty": "中。聚集破碎、密度不均，主带与散点界限模糊，但相对集中于上侧的判断较稳。"
+    }
+  },
+  {
+    "item_id": "wbg0385",
+    "image_sha256": "b88831b2b3ac78a086fcc1f3625ac906bd44a3163f663dd539cc78683ebf7ba1",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "不规则碎斑状局部聚集，中上部断续碎斑并向右侧中部汇成较密斑块群，伴零星孤立散点",
+      "radial_zone": "中间",
+      "clock_direction": "12-4点（偏右）",
+      "extent_r": null,
+      "caption_zh": "红色fail die在晶圆中上部至右中侧聚成不规则碎斑群，右侧较密，位于中间径向区域，覆盖约一成二。",
+      "uncertainty": "中。聚集破碎、密度分布不均，与Random的区分依赖主体聚集判断，中等把握。"
+    }
+  }
+]

@@ -1,0 +1,1 @@
+{"morphology_zh":"红色失效格点呈点状散布，无聚集成团、成环或成线的结构","main_location_zh":"全局随机散布于整片晶圆，中心与边缘均有分布","location_clock":[],"orientation_clock":[],"secondary_observations":["部分红色格点贴近晶圆边缘"],"caption_zh":"整片晶圆绿色为主，红色失效格点全局随机点状散布，无明显主导结构","uncertainty":""}

@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die全图零散分布，部分呈短行短列状线段","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效die散布于整个晶圆各区域，中部夹杂若干短条状小聚集，无单一主导区块","uncertainty":"部分短条状线段与Scratch形态有相似之处，但整体仍以随机散点为主"}

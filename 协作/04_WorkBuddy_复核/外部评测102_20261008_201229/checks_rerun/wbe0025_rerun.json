@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die在全圆面内散乱分布，部分相邻成小团块，但无连续条带或环形结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"全圆各区域随机散布红色失效die，中部略见零星小团块，整体无明显方向或环带图案\",\"uncertainty\":\"中部散在的小团块较多，不排除轻度局部聚集，但整体仍以随机分布为主\"}\n",
+  "raw_sha256": "a6f8c48d52d4f2174697d4a34c7ed4cc8a4cf6697e062a5c23e441c59469df93",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "a6f8c48d52d4f2174697d4a34c7ed4cc8a4cf6697e062a5c23e441c59469df93",
+  "input_path": "raw/wbe0025.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

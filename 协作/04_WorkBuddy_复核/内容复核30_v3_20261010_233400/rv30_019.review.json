@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_019",
+ "item_id":"wbv3_044",
+ "sample_id":"wafer_00024635_007",
+ "image_sha256":"99d02c8d441c7fe1102aa4c9ac47042aa5f4df53c358f47c797ed53e8a394815",
+ "original_raw_sha256":"5a12ece16ca6c7c194b05f78485888754c4c099c0379f8026638ccabe62d1526",
+ "observation_raw_sha256":"b2464f99e0311d3189a9c394302c12975481c391c7ceca32fc0f0436b35bfa2f",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上左上至顶部边缘确有一条较厚的弧形红色带状聚集，内缘参差、向两侧渐薄，片内散布较多孤立红点，与被审句一致。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称主要结构位于左上至顶部边缘、偏11点钟方向；图上红带紧贴左上缘，最厚处在11点附近，相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句取[11]，并注明带跨约9点到12点、取重心偏11；独立观察记[11]（约10点至1点、重心11点附近），重心判读一致。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]；该结构为沿边缘的弧形带而非直线，无延伸轴，不填合理，独立观察同为[]。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到片内散布较多孤立红点、右侧边缘基本为绿色；图上红点遍布左中右下内部，右缘确以绿色为主，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括主要失效集中在左上约11点边缘弧形带并伴片内散点，与图面一致。"},
+  "uncertainty":{"verdict":"supported","evidence":"被审句已声明带跨越范围与钟点取重心存在主观判断；本worker对跨度的独立读数（约10-1点）与被审（约9-12点）略有出入，但双方均已声明歧义，不影响重心结论。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"",
+ "uncertainty":"唯一细微分歧是红带两端跨度：被审记约9-12点，本worker记约10-1点；重心均判为11点附近，属渐薄边界的视觉歧义，已在双方uncertainty中声明。"
+}

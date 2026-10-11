@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die以零散点状随机分布全图，左侧边缘约9点钟处有少量较密集聚集\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die零散随机分布全图，左边缘9点钟方向有一小片较密集的红色聚集\",\"uncertainty\":\"左边缘局部聚集规模较小，主图案与散点并存，类别存在一定模糊\"}",
+  "raw_sha256": "d806d26f74af102c2b33243bb4a5224c91115a77752b7f273d78db5d4bc8ed5b",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "d806d26f74af102c2b33243bb4a5224c91115a77752b7f273d78db5d4bc8ed5b",
+  "input_path": "raw/wbe0039.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

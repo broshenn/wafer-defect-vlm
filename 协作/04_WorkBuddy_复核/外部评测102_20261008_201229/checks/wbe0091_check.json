@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die散布全圆，大小不一，无明显线状、环状或单一聚集结构\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die随机散布于晶圆全圆各处，中部偶有小片聚集，整体无方向性图案。\",\"uncertainty\":\"中部存在零星小聚集，但整体以随机散布为主。\"}\n",
+  "raw_sha256": "badf93986ba6a70110b841502592e75c5edb74e4447b0c75bcff67c6bf2bd9de",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "badf93986ba6a70110b841502592e75c5edb74e4447b0c75bcff67c6bf2bd9de",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0091.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

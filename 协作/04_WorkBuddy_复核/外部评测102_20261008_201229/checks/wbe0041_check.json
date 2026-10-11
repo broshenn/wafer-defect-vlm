@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"红色失效die沿晶圆边缘呈环带分布，顶部12点钟与底部及右下方向最密集，中央区域基本干净\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"红色失效die集中于晶圆边缘呈不连续环带，顶部与底部边缘最密集，中央区域仅有零星失效点\",\"uncertainty\":\"边缘环带不完整连续，部分方位较轻，Edge_Ring 与 Edge_Loc 之间存在一定模糊\"}",
+  "raw_sha256": "3146f41184aa38d76290feda5b51f39c1d61577003c548df3ea447f3f3d030c8",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "3146f41184aa38d76290feda5b51f39c1d61577003c548df3ea447f3f3d030c8",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0041.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

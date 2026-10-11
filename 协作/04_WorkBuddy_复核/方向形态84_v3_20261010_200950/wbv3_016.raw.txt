@@ -1,0 +1,1 @@
+{"morphology_zh":"两处小团块加孤立散点","main_location_zh":"左下方约8点钟靠边缘处与右上方约1至2点钟靠边缘处各有一小团失效点，两处规模相近，另有中部偏右一个孤立红点","location_clock":[],"orientation_clock":[],"secondary_observations":["中部偏右约3点钟方向有一个孤立红点"],"caption_zh":"整片以合格格点为主，左下与右上靠边缘处各有一小团失效点，中部偏右还有一个孤立红点。","uncertainty":"左下与右上两团块规模相近，无法可靠选定唯一主要方向，故 location_clock 留空；两团块之间无可见连续结构，不判定延伸轴。"}

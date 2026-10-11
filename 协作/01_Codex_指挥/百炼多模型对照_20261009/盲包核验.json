@@ -1,0 +1,13 @@
+{
+  "n": 36,
+  "unique_sample": 36,
+  "source_sha256": "e662082e77755ead6d4dd76ad4b58be623762e007e8d01ef90f7a472a2cfd64b",
+  "blind_sha256": "dc8c4677d3feb41166f9837de0a8369175808a64ea8aacd835badbd619f4115a",
+  "keys": [
+    "item_id",
+    "sample_id",
+    "image_path",
+    "image_sha256"
+  ],
+  "scope": "原36图开发对照；去公开类别/lot/来源/学生答案；没有API调用"
+}

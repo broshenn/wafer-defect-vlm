@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Near_full","morphology":"大面积红色区域覆盖左侧及中部，右侧边缘有绿色斑块","radial_zone":"global","clock_direction":"null","extent_r":null,"caption_zh":"红色区域占据绝大部分，右侧边缘分布绿色合格区域","uncertainty":""}

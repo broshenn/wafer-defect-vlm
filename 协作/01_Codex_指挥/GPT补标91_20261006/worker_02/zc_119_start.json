@@ -1,0 +1,10 @@
+{
+  "item_id": "zc_119",
+  "sample_id": "wafer_00042476_008",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00042476_008.png",
+  "image_sha256": "7227a100b48ddcc0901b301a1f7d9032b570617e9012ad9002451cad17ceb3df",
+  "started_at_utc": "2026-10-06T11:33:54.629265+00:00",
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "checker_sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2",
+  "status": "hash_verified_before_visual_read"
+}

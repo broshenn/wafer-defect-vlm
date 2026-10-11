@@ -1,0 +1,3234 @@
+{
+ "generated_at_utc": "2026-10-10T17:36:45Z",
+ "purpose": "程序A：从客户端审计日志重建内容复核30轮逐图工具事件时间线（只读）",
+ "audit_log_files": {
+  "2026-10-10.jsonl": "已闭合段（manifest含fileSha256，982条）",
+  "2026-10-11.jsonl": "开放段（提取时仍可追加）",
+  "manifest/state": "段级hash链与序号"
+ },
+ "time_window_utc": [
+  "2026-10-10T15:34:00Z",
+  "2026-10-11T16:30:00Z"
+ ],
+ "audit_integrity_check": {
+  "2026-10-01.jsonl": {
+   "manifest_sha256": "4ec9ec6d111b56a1d1f07c733d1617a1a8ea2bd10f0a68180eb1ef3f02751a19",
+   "recomputed": "4ec9ec6d111b56a1d1f07c733d1617a1a8ea2bd10f0a68180eb1ef3f02751a19",
+   "match": true,
+   "entry_count_manifest": 42
+  },
+  "2026-10-08.jsonl": {
+   "manifest_sha256": "275b5d3a1e2d2f28a645385e8eb8997a8e3d951a8c0c0afdaede82d900531cba",
+   "recomputed": "275b5d3a1e2d2f28a645385e8eb8997a8e3d951a8c0c0afdaede82d900531cba",
+   "match": true,
+   "entry_count_manifest": 3472
+  },
+  "2026-10-10.jsonl": {
+   "manifest_sha256": "181fb3a39ea83a1cb00b0a8e170745a6cae80368be1570ab5e34dacbf7f8f2b4",
+   "recomputed": "181fb3a39ea83a1cb00b0a8e170745a6cae80368be1570ab5e34dacbf7f8f2b4",
+   "match": true,
+   "entry_count_manifest": 982
+  }
+ },
+ "sessions_in_window": {
+  "01a12677": {
+   "n_events": 73,
+   "first_local8": "10-10 23:38:57",
+   "last_local8": "10-10 23:48:22",
+   "tools": {
+    "Read": 15,
+    "Bash": 22,
+    "Write": 36
+   },
+   "rv30_writes": [
+    "rv30_001",
+    "rv30_002",
+    "rv30_003",
+    "rv30_004",
+    "rv30_005",
+    "rv30_006",
+    "rv30_007"
+   ],
+   "read_shard_files": [
+    "shard1_条目.json"
+   ]
+  },
+  "01a12682": {
+   "n_events": 144,
+   "first_local8": "10-10 23:50:24",
+   "last_local8": "10-11 00:03:54",
+   "tools": {
+    "Read": 30,
+    "Bash": 42,
+    "Write": 72
+   },
+   "rv30_writes": [
+    "rv30_008",
+    "rv30_009",
+    "rv30_010",
+    "rv30_011",
+    "rv30_012",
+    "rv30_013",
+    "rv30_014",
+    "rv30_015",
+    "rv30_016",
+    "rv30_017",
+    "rv30_018",
+    "rv30_019",
+    "rv30_020",
+    "rv30_021"
+   ],
+   "read_shard_files": [
+    "shard2_条目.json",
+    "shard3_条目.json"
+   ]
+  },
+  "01a1268f": {
+   "n_events": 95,
+   "first_local8": "10-11 00:05:08",
+   "last_local8": "10-11 00:14:53",
+   "tools": {
+    "Read": 20,
+    "Bash": 28,
+    "Write": 47
+   },
+   "rv30_writes": [
+    "rv30_022",
+    "rv30_023",
+    "rv30_024",
+    "rv30_025",
+    "rv30_026",
+    "rv30_027",
+    "rv30_028",
+    "rv30_029",
+    "rv30_030"
+   ],
+   "read_shard_files": [
+    "shard4_条目.json",
+    "shard5_条目.json"
+   ]
+  },
+  "b79246db": {
+   "n_events": 24,
+   "first_local8": "10-10 23:34:00",
+   "last_local8": "10-11 00:18:17",
+   "tools": {
+    "Bash": 12,
+    "Write": 12
+   },
+   "rv30_writes": [],
+   "read_shard_files": []
+  }
+ },
+ "per_item": [
+  {
+   "review_id": "rv30_001",
+   "item_id": "wbv3_002",
+   "sample_id": "wafer_00002422_015",
+   "png_read": [
+    {
+     "ts_ms": 1791646753902,
+     "utc": "2026-10-10T15:39:13.902Z",
+     "local8": "10-10 23:39:13",
+     "session": "01a12677",
+     "seq": 4306,
+     "id": "3c01121b-d59c-4e1d-8c1d-8eaf9080c170"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791646762310,
+     "utc": "2026-10-10T15:39:22.310Z",
+     "local8": "10-10 23:39:22",
+     "session": "01a12677",
+     "seq": 4307,
+     "id": "2187d614-d506-4e09-969b-eb00194241fd"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791646750730,
+     "utc": "2026-10-10T15:39:10.730Z",
+     "session": "01a12677",
+     "seq": 4305
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:39:32.271Z",
+     "session": "01a12677",
+     "seq": 4309
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791646775689,
+     "utc": "2026-10-10T15:39:35.689Z",
+     "local8": "10-10 23:39:35",
+     "session": "01a12677",
+     "seq": 4310,
+     "id": "3e5cda91-40cb-4ae1-ab48-4c8171e600d0"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:39:40.558Z",
+     "session": "01a12677",
+     "seq": 4311,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_002.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791646799627,
+     "utc": "2026-10-10T15:39:59.627Z",
+     "local8": "10-10 23:39:59",
+     "session": "01a12677",
+     "seq": 4312,
+     "id": "ff89de64-6d25-44d3-91a9-a0e801aac519"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791646805916,
+     "utc": "2026-10-10T15:40:05.916Z",
+     "session": "01a12677",
+     "seq": 4313
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_002",
+   "item_id": "wbv3_003",
+   "sample_id": "wafer_00003830_021",
+   "png_read": [
+    {
+     "ts_ms": 1791646820714,
+     "utc": "2026-10-10T15:40:20.714Z",
+     "local8": "10-10 23:40:20",
+     "session": "01a12677",
+     "seq": 4316,
+     "id": "474a5653-1e5c-47cc-a932-b0499208b7a7"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791646828453,
+     "utc": "2026-10-10T15:40:28.453Z",
+     "local8": "10-10 23:40:28",
+     "session": "01a12677",
+     "seq": 4317,
+     "id": "8ed003f8-f338-4a6a-92e1-48b9a833f248"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791646818073,
+     "utc": "2026-10-10T15:40:18.073Z",
+     "session": "01a12677",
+     "seq": 4315
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:40:38.052Z",
+     "session": "01a12677",
+     "seq": 4319
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791646841374,
+     "utc": "2026-10-10T15:40:41.374Z",
+     "local8": "10-10 23:40:41",
+     "session": "01a12677",
+     "seq": 4320,
+     "id": "91ce7a0c-a5d4-4ddc-99f4-39e43c68c34e"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:40:47.410Z",
+     "session": "01a12677",
+     "seq": 4321,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_003.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791646861457,
+     "utc": "2026-10-10T15:41:01.457Z",
+     "local8": "10-10 23:41:01",
+     "session": "01a12677",
+     "seq": 4322,
+     "id": "529fd9b9-ada9-421f-aa8f-47cd9fa6588e"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791646864669,
+     "utc": "2026-10-10T15:41:04.669Z",
+     "session": "01a12677",
+     "seq": 4323
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_003",
+   "item_id": "wbv3_005",
+   "sample_id": "wafer_00005957_005",
+   "png_read": [
+    {
+     "ts_ms": 1791646877135,
+     "utc": "2026-10-10T15:41:17.135Z",
+     "local8": "10-10 23:41:17",
+     "session": "01a12677",
+     "seq": 4326,
+     "id": "15e12093-0ca5-4651-b816-85e63b51147a"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791646894915,
+     "utc": "2026-10-10T15:41:34.915Z",
+     "local8": "10-10 23:41:34",
+     "session": "01a12677",
+     "seq": 4327,
+     "id": "79492888-36d8-4b19-a9e9-3c39c29b8f76"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791646874521,
+     "utc": "2026-10-10T15:41:14.521Z",
+     "session": "01a12677",
+     "seq": 4325
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:41:46.753Z",
+     "session": "01a12677",
+     "seq": 4329
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791646917189,
+     "utc": "2026-10-10T15:41:57.189Z",
+     "local8": "10-10 23:41:57",
+     "session": "01a12677",
+     "seq": 4330,
+     "id": "87353bd0-ae2f-43c3-80b0-048ef9808111"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:42:02.534Z",
+     "session": "01a12677",
+     "seq": 4331,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_005.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791646937907,
+     "utc": "2026-10-10T15:42:17.907Z",
+     "local8": "10-10 23:42:17",
+     "session": "01a12677",
+     "seq": 4332,
+     "id": "71d36867-cf6a-4a7f-9a7d-0d0d8bb4eb14"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791646941766,
+     "utc": "2026-10-10T15:42:21.766Z",
+     "session": "01a12677",
+     "seq": 4333
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_004",
+   "item_id": "wbv3_006",
+   "sample_id": "wafer_00005998_017",
+   "png_read": [
+    {
+     "ts_ms": 1791646957052,
+     "utc": "2026-10-10T15:42:37.052Z",
+     "local8": "10-10 23:42:37",
+     "session": "01a12677",
+     "seq": 4336,
+     "id": "73bd1dc5-543a-45e7-9c09-ad5800b3b1ce"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791646972441,
+     "utc": "2026-10-10T15:42:52.441Z",
+     "local8": "10-10 23:42:52",
+     "session": "01a12677",
+     "seq": 4337,
+     "id": "b8a31c3e-e76f-431f-bf41-93d1961df675"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791646952880,
+     "utc": "2026-10-10T15:42:32.880Z",
+     "session": "01a12677",
+     "seq": 4335
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:43:02.550Z",
+     "session": "01a12677",
+     "seq": 4339
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791646985713,
+     "utc": "2026-10-10T15:43:05.713Z",
+     "local8": "10-10 23:43:05",
+     "session": "01a12677",
+     "seq": 4340,
+     "id": "5eaa0d00-3969-4e67-b38f-c8576ca20ce4"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:43:10.683Z",
+     "session": "01a12677",
+     "seq": 4341,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_006.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647015796,
+     "utc": "2026-10-10T15:43:35.796Z",
+     "local8": "10-10 23:43:35",
+     "session": "01a12677",
+     "seq": 4342,
+     "id": "0bf2c511-f26f-43e1-96cd-69ff3fd934a5"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647028393,
+     "utc": "2026-10-10T15:43:48.393Z",
+     "session": "01a12677",
+     "seq": 4343
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_005",
+   "item_id": "wbv3_009",
+   "sample_id": "wafer_00005998_024",
+   "png_read": [
+    {
+     "ts_ms": 1791647041906,
+     "utc": "2026-10-10T15:44:01.906Z",
+     "local8": "10-10 23:44:01",
+     "session": "01a12677",
+     "seq": 4346,
+     "id": "05258fb4-6835-42de-b31c-a06fca21b2cf"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647053617,
+     "utc": "2026-10-10T15:44:13.617Z",
+     "local8": "10-10 23:44:13",
+     "session": "01a12677",
+     "seq": 4347,
+     "id": "f103065d-f871-416e-8a99-b76078445f4b"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647038976,
+     "utc": "2026-10-10T15:43:58.976Z",
+     "session": "01a12677",
+     "seq": 4345
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:44:28.198Z",
+     "session": "01a12677",
+     "seq": 4349
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647072046,
+     "utc": "2026-10-10T15:44:32.046Z",
+     "local8": "10-10 23:44:32",
+     "session": "01a12677",
+     "seq": 4350,
+     "id": "acf1dda6-b67d-471f-8097-60792b7bb66b"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:44:38.870Z",
+     "session": "01a12677",
+     "seq": 4351,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_009.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    },
+    {
+     "utc": "2026-10-10T15:45:07.071Z",
+     "session": "01a12677",
+     "seq": 4352,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_009.raw.txt'\nprint('ok')\n\""
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647128004,
+     "utc": "2026-10-10T15:45:28.004Z",
+     "local8": "10-10 23:45:28",
+     "session": "01a12677",
+     "seq": 4353,
+     "id": "25d6ed66-22ae-4b97-ade1-096a5531e462"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647134780,
+     "utc": "2026-10-10T15:45:34.780Z",
+     "session": "01a12677",
+     "seq": 4354
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_006",
+   "item_id": "wbv3_010",
+   "sample_id": "wafer_00006228_004",
+   "png_read": [
+    {
+     "ts_ms": 1791647151902,
+     "utc": "2026-10-10T15:45:51.902Z",
+     "local8": "10-10 23:45:51",
+     "session": "01a12677",
+     "seq": 4357,
+     "id": "5d241e8c-3988-4223-9104-7ccecc7ecc3b"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647191517,
+     "utc": "2026-10-10T15:46:31.517Z",
+     "local8": "10-10 23:46:31",
+     "session": "01a12677",
+     "seq": 4358,
+     "id": "a0c15af7-42d5-49e7-8172-8d79c6cdcd8b"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647148942,
+     "utc": "2026-10-10T15:45:48.942Z",
+     "session": "01a12677",
+     "seq": 4356
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:46:41.225Z",
+     "session": "01a12677",
+     "seq": 4360
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647204294,
+     "utc": "2026-10-10T15:46:44.294Z",
+     "local8": "10-10 23:46:44",
+     "session": "01a12677",
+     "seq": 4361,
+     "id": "906f4dee-52fb-487c-89ed-25bb7d70b985"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:46:49.574Z",
+     "session": "01a12677",
+     "seq": 4362,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_010.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647232118,
+     "utc": "2026-10-10T15:47:12.118Z",
+     "local8": "10-10 23:47:12",
+     "session": "01a12677",
+     "seq": 4363,
+     "id": "590f0c7f-dea8-4fbb-9aec-23a404e3501d"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647240940,
+     "utc": "2026-10-10T15:47:20.940Z",
+     "session": "01a12677",
+     "seq": 4364
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_007",
+   "item_id": "wbv3_014",
+   "sample_id": "wafer_00006467_008",
+   "png_read": [
+    {
+     "ts_ms": 1791647254497,
+     "utc": "2026-10-10T15:47:34.497Z",
+     "local8": "10-10 23:47:34",
+     "session": "01a12677",
+     "seq": 4367,
+     "id": "5ed2db4a-abcb-48d8-a2e8-d4a7bf766a11"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647262020,
+     "utc": "2026-10-10T15:47:42.020Z",
+     "local8": "10-10 23:47:42",
+     "session": "01a12677",
+     "seq": 4368,
+     "id": "2afeb7c4-77dc-4d5e-a0b9-b36705a02218"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647251167,
+     "utc": "2026-10-10T15:47:31.167Z",
+     "session": "01a12677",
+     "seq": 4366
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:47:55.338Z",
+     "session": "01a12677",
+     "seq": 4370
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647278346,
+     "utc": "2026-10-10T15:47:58.346Z",
+     "local8": "10-10 23:47:58",
+     "session": "01a12677",
+     "seq": 4371,
+     "id": "7d0be9af-199b-4707-a64a-6d3384edfe7a"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:48:03.612Z",
+     "session": "01a12677",
+     "seq": 4372,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_014.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647293757,
+     "utc": "2026-10-10T15:48:13.757Z",
+     "local8": "10-10 23:48:13",
+     "session": "01a12677",
+     "seq": 4373,
+     "id": "0cc1f991-dee7-4102-8939-3cb99f6402ad"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647297370,
+     "utc": "2026-10-10T15:48:17.370Z",
+     "session": "01a12677",
+     "seq": 4374
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_008",
+   "item_id": "wbv3_016",
+   "sample_id": "wafer_00007864_025",
+   "png_read": [
+    {
+     "ts_ms": 1791647457831,
+     "utc": "2026-10-10T15:50:57.831Z",
+     "local8": "10-10 23:50:57",
+     "session": "01a12682",
+     "seq": 4385,
+     "id": "6724625b-7f62-4851-8c2b-2eea3ece1732"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647480690,
+     "utc": "2026-10-10T15:51:20.690Z",
+     "local8": "10-10 23:51:20",
+     "session": "01a12682",
+     "seq": 4390,
+     "id": "8cdea1f6-617e-4403-90b0-e760819fcbad"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647454563,
+     "utc": "2026-10-10T15:50:54.563Z",
+     "session": "01a12682",
+     "seq": 4383
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:51:32.831Z",
+     "session": "01a12682",
+     "seq": 4392
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647497925,
+     "utc": "2026-10-10T15:51:37.925Z",
+     "local8": "10-10 23:51:37",
+     "session": "01a12682",
+     "seq": 4393,
+     "id": "2d8844f4-525f-40cf-af4d-2fd4c9f58275"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:51:43.727Z",
+     "session": "01a12682",
+     "seq": 4394,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_016.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647519593,
+     "utc": "2026-10-10T15:51:59.593Z",
+     "local8": "10-10 23:51:59",
+     "session": "01a12682",
+     "seq": 4395,
+     "id": "8edb3aaa-1509-4f58-8694-a815635f1612"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647525085,
+     "utc": "2026-10-10T15:52:05.085Z",
+     "session": "01a12682",
+     "seq": 4397
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_009",
+   "item_id": "wbv3_024",
+   "sample_id": "wafer_00016703_014",
+   "png_read": [
+    {
+     "ts_ms": 1791647548861,
+     "utc": "2026-10-10T15:52:28.861Z",
+     "local8": "10-10 23:52:28",
+     "session": "01a12682",
+     "seq": 4404,
+     "id": "bdf53bcf-8c53-422b-883c-ef2229bc1024"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647619244,
+     "utc": "2026-10-10T15:53:39.244Z",
+     "local8": "10-10 23:53:39",
+     "session": "01a12682",
+     "seq": 4412,
+     "id": "eda7c86f-d1ff-46f2-9a59-3dd17a62d08d"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647544154,
+     "utc": "2026-10-10T15:52:24.154Z",
+     "session": "01a12682",
+     "seq": 4401
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:53:49.060Z",
+     "session": "01a12682",
+     "seq": 4415
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647638450,
+     "utc": "2026-10-10T15:53:58.450Z",
+     "local8": "10-10 23:53:58",
+     "session": "01a12682",
+     "seq": 4417,
+     "id": "64411643-db4b-47c3-89b5-6c1c38f8184f"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:54:07.540Z",
+     "session": "01a12682",
+     "seq": 4419,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_024.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647690691,
+     "utc": "2026-10-10T15:54:50.691Z",
+     "local8": "10-10 23:54:50",
+     "session": "01a12682",
+     "seq": 4425,
+     "id": "8fd68ccb-3073-49f7-abec-2405018ab4b3"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647694354,
+     "utc": "2026-10-10T15:54:54.354Z",
+     "session": "01a12682",
+     "seq": 4426
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_010",
+   "item_id": "wbv3_029",
+   "sample_id": "wafer_00018072_011",
+   "png_read": [
+    {
+     "ts_ms": 1791647709664,
+     "utc": "2026-10-10T15:55:09.664Z",
+     "local8": "10-10 23:55:09",
+     "session": "01a12682",
+     "seq": 4429,
+     "id": "6c70ca35-a6f3-4c74-bab9-ebf8ee449ea4"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647743930,
+     "utc": "2026-10-10T15:55:43.930Z",
+     "local8": "10-10 23:55:43",
+     "session": "01a12682",
+     "seq": 4435,
+     "id": "8eb67def-00c3-418e-8243-a399d496e53e"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647706876,
+     "utc": "2026-10-10T15:55:06.876Z",
+     "session": "01a12682",
+     "seq": 4428
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:55:55.519Z",
+     "session": "01a12682",
+     "seq": 4438
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647759223,
+     "utc": "2026-10-10T15:55:59.223Z",
+     "local8": "10-10 23:55:59",
+     "session": "01a12682",
+     "seq": 4440,
+     "id": "dbfc8ea6-c5c6-4154-bd7c-04292ed51bf6"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:56:06.017Z",
+     "session": "01a12682",
+     "seq": 4443,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_029.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647802415,
+     "utc": "2026-10-10T15:56:42.415Z",
+     "local8": "10-10 23:56:42",
+     "session": "01a12682",
+     "seq": 4448,
+     "id": "63c0ad64-2d32-4f69-8b82-fb0d1854836f"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647809890,
+     "utc": "2026-10-10T15:56:49.890Z",
+     "session": "01a12682",
+     "seq": 4451
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_011",
+   "item_id": "wbv3_031",
+   "sample_id": "wafer_00018378_014",
+   "png_read": [
+    {
+     "ts_ms": 1791647836094,
+     "utc": "2026-10-10T15:57:16.094Z",
+     "local8": "10-10 23:57:16",
+     "session": "01a12682",
+     "seq": 4457,
+     "id": "b283b726-1eef-461a-9ce5-ef0e9c092ca9"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647853288,
+     "utc": "2026-10-10T15:57:33.288Z",
+     "local8": "10-10 23:57:33",
+     "session": "01a12682",
+     "seq": 4460,
+     "id": "bbc56d03-64d0-4048-a812-1391493cb97b"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647826086,
+     "utc": "2026-10-10T15:57:06.086Z",
+     "session": "01a12682",
+     "seq": 4455
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:57:48.850Z",
+     "session": "01a12682",
+     "seq": 4465
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647872227,
+     "utc": "2026-10-10T15:57:52.227Z",
+     "local8": "10-10 23:57:52",
+     "session": "01a12682",
+     "seq": 4467,
+     "id": "09cb4f07-634f-405f-b3d9-9958c901cd39"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:57:59.392Z",
+     "session": "01a12682",
+     "seq": 4469,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_031.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647896692,
+     "utc": "2026-10-10T15:58:16.692Z",
+     "local8": "10-10 23:58:16",
+     "session": "01a12682",
+     "seq": 4472,
+     "id": "b79f966b-125f-42f0-bd02-35da43d63b8a"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647904008,
+     "utc": "2026-10-10T15:58:24.008Z",
+     "session": "01a12682",
+     "seq": 4475
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_012",
+   "item_id": "wbv3_033",
+   "sample_id": "wafer_00019115_022",
+   "png_read": [
+    {
+     "ts_ms": 1791647919086,
+     "utc": "2026-10-10T15:58:39.086Z",
+     "local8": "10-10 23:58:39",
+     "session": "01a12682",
+     "seq": 4479,
+     "id": "4cfc5734-4546-41af-9659-680c82ca531a"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647934016,
+     "utc": "2026-10-10T15:58:54.016Z",
+     "local8": "10-10 23:58:54",
+     "session": "01a12682",
+     "seq": 4483,
+     "id": "6ee3e74a-7439-45b6-ad3a-7399f117221b"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647915820,
+     "utc": "2026-10-10T15:58:35.820Z",
+     "session": "01a12682",
+     "seq": 4478
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:59:04.793Z",
+     "session": "01a12682",
+     "seq": 4487
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647948285,
+     "utc": "2026-10-10T15:59:08.285Z",
+     "local8": "10-10 23:59:08",
+     "session": "01a12682",
+     "seq": 4488,
+     "id": "ec8b3f8a-1ab1-4ea5-9114-40e369a76393"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:59:58.096Z",
+     "session": "01a12682",
+     "seq": 4496,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_033.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648014792,
+     "utc": "2026-10-10T16:00:14.792Z",
+     "local8": "10-11 00:00:14",
+     "session": "01a12682",
+     "seq": 4498,
+     "id": "d7947ea1-ec0d-4413-8c43-319ae8c25c03"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648022584,
+     "utc": "2026-10-10T16:00:22.584Z",
+     "session": "01a12682",
+     "seq": 4499
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_013",
+   "item_id": "wbv3_034",
+   "sample_id": "wafer_00019321_013",
+   "png_read": [
+    {
+     "ts_ms": 1791648037629,
+     "utc": "2026-10-10T16:00:37.629Z",
+     "local8": "10-11 00:00:37",
+     "session": "01a12682",
+     "seq": 4502,
+     "id": "08d5894f-942f-476f-b3ff-67ff6950ed26"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648064689,
+     "utc": "2026-10-10T16:01:04.689Z",
+     "local8": "10-11 00:01:04",
+     "session": "01a12682",
+     "seq": 4503,
+     "id": "cc5c6c74-2b6c-4145-af6e-cde330b0afba"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648034613,
+     "utc": "2026-10-10T16:00:34.613Z",
+     "session": "01a12682",
+     "seq": 4501
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:01:16.633Z",
+     "session": "01a12682",
+     "seq": 4505
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648080544,
+     "utc": "2026-10-10T16:01:20.544Z",
+     "local8": "10-11 00:01:20",
+     "session": "01a12682",
+     "seq": 4506,
+     "id": "c6007416-7091-4787-bc6e-e9d372f0e9b7"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:02:06.424Z",
+     "session": "01a12682",
+     "seq": 4507,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_034.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648142646,
+     "utc": "2026-10-10T16:02:22.646Z",
+     "local8": "10-11 00:02:22",
+     "session": "01a12682",
+     "seq": 4508,
+     "id": "fe973463-380c-433b-a6f6-7a321b216f11"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648147418,
+     "utc": "2026-10-10T16:02:27.418Z",
+     "session": "01a12682",
+     "seq": 4509
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_014",
+   "item_id": "wbv3_037",
+   "sample_id": "wafer_00021623_006",
+   "png_read": [
+    {
+     "ts_ms": 1791648166556,
+     "utc": "2026-10-10T16:02:46.556Z",
+     "local8": "10-11 00:02:46",
+     "session": "01a12682",
+     "seq": 4512,
+     "id": "114315f5-cea7-4f37-845b-2528db6d422d"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648181712,
+     "utc": "2026-10-10T16:03:01.712Z",
+     "local8": "10-11 00:03:01",
+     "session": "01a12682",
+     "seq": 4513,
+     "id": "f3c49400-9bb4-4d0e-bbe4-f95f99d75194"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648158995,
+     "utc": "2026-10-10T16:02:38.995Z",
+     "session": "01a12682",
+     "seq": 4511
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:03:13.070Z",
+     "session": "01a12682",
+     "seq": 4515
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648196417,
+     "utc": "2026-10-10T16:03:16.417Z",
+     "local8": "10-11 00:03:16",
+     "session": "01a12682",
+     "seq": 4516,
+     "id": "c1b3540a-3d81-4b11-8069-43dfb6377f95"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:03:28.311Z",
+     "session": "01a12682",
+     "seq": 4517,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_037.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648221851,
+     "utc": "2026-10-10T16:03:41.851Z",
+     "local8": "10-11 00:03:41",
+     "session": "01a12682",
+     "seq": 4518,
+     "id": "e17e00df-1352-460b-a09a-c0fef3358a25"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648226888,
+     "utc": "2026-10-10T16:03:46.888Z",
+     "session": "01a12682",
+     "seq": 4519
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_015",
+   "item_id": "wbv3_038",
+   "sample_id": "wafer_00021649_003",
+   "png_read": [
+    {
+     "ts_ms": 1791647444165,
+     "utc": "2026-10-10T15:50:44.165Z",
+     "local8": "10-10 23:50:44",
+     "session": "01a12682",
+     "seq": 4381,
+     "id": "1a388991-6585-473f-802c-1786ee2f805b"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647457098,
+     "utc": "2026-10-10T15:50:57.098Z",
+     "local8": "10-10 23:50:57",
+     "session": "01a12682",
+     "seq": 4384,
+     "id": "22c75f00-488e-49fc-8d44-fffe4a068d28"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647440885,
+     "utc": "2026-10-10T15:50:40.885Z",
+     "session": "01a12682",
+     "seq": 4380
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:51:08.580Z",
+     "session": "01a12682",
+     "seq": 4387
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647471858,
+     "utc": "2026-10-10T15:51:11.858Z",
+     "local8": "10-10 23:51:11",
+     "session": "01a12682",
+     "seq": 4388,
+     "id": "68aecb36-19be-423c-af4d-29ea827a9f7d"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:51:16.753Z",
+     "session": "01a12682",
+     "seq": 4389,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_038.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647524880,
+     "utc": "2026-10-10T15:52:04.880Z",
+     "local8": "10-10 23:52:04",
+     "session": "01a12682",
+     "seq": 4396,
+     "id": "e654dc25-4472-4840-9332-a6f33253630f"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647528662,
+     "utc": "2026-10-10T15:52:08.662Z",
+     "session": "01a12682",
+     "seq": 4398
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_016",
+   "item_id": "wbv3_039",
+   "sample_id": "wafer_00022126_006",
+   "png_read": [
+    {
+     "ts_ms": 1791647547913,
+     "utc": "2026-10-10T15:52:27.913Z",
+     "local8": "10-10 23:52:27",
+     "session": "01a12682",
+     "seq": 4403,
+     "id": "d78665c0-9419-4207-b85f-4e63fa30d1c1"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647571903,
+     "utc": "2026-10-10T15:52:51.903Z",
+     "local8": "10-10 23:52:51",
+     "session": "01a12682",
+     "seq": 4405,
+     "id": "e359f478-bf8f-4506-b43c-ba92836976f6"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647544448,
+     "utc": "2026-10-10T15:52:24.448Z",
+     "session": "01a12682",
+     "seq": 4402
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:53:02.675Z",
+     "session": "01a12682",
+     "seq": 4407
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647585705,
+     "utc": "2026-10-10T15:53:05.705Z",
+     "local8": "10-10 23:53:05",
+     "session": "01a12682",
+     "seq": 4408,
+     "id": "aaa07d9c-5b45-4e75-90bd-d44450d2a425"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:53:11.300Z",
+     "session": "01a12682",
+     "seq": 4409,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_039.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647611041,
+     "utc": "2026-10-10T15:53:31.041Z",
+     "local8": "10-10 23:53:31",
+     "session": "01a12682",
+     "seq": 4410,
+     "id": "efa3a7f1-4c73-427b-bf09-66481daf5db4"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647614334,
+     "utc": "2026-10-10T15:53:34.334Z",
+     "session": "01a12682",
+     "seq": 4411
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_017",
+   "item_id": "wbv3_040",
+   "sample_id": "wafer_00022216_015",
+   "png_read": [
+    {
+     "ts_ms": 1791647638991,
+     "utc": "2026-10-10T15:53:58.991Z",
+     "local8": "10-10 23:53:58",
+     "session": "01a12682",
+     "seq": 4418,
+     "id": "8645ed4b-3b72-494f-984d-3d19417b3c3f"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647659623,
+     "utc": "2026-10-10T15:54:19.623Z",
+     "local8": "10-10 23:54:19",
+     "session": "01a12682",
+     "seq": 4420,
+     "id": "d46029f1-7506-4a05-b2c0-ceb35ea3bb3d"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647629097,
+     "utc": "2026-10-10T15:53:49.097Z",
+     "session": "01a12682",
+     "seq": 4416
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:54:30.036Z",
+     "session": "01a12682",
+     "seq": 4422
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647673090,
+     "utc": "2026-10-10T15:54:33.090Z",
+     "local8": "10-10 23:54:33",
+     "session": "01a12682",
+     "seq": 4423,
+     "id": "33d9b728-1e81-412d-828a-c8282e51c116"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:54:38.388Z",
+     "session": "01a12682",
+     "seq": 4424,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_040.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647712271,
+     "utc": "2026-10-10T15:55:12.271Z",
+     "local8": "10-10 23:55:12",
+     "session": "01a12682",
+     "seq": 4430,
+     "id": "bdd57377-898d-4653-91e5-0487cd22751a"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647715360,
+     "utc": "2026-10-10T15:55:15.360Z",
+     "session": "01a12682",
+     "seq": 4431
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_018",
+   "item_id": "wbv3_043",
+   "sample_id": "wafer_00024635_002",
+   "png_read": [
+    {
+     "ts_ms": 1791647728027,
+     "utc": "2026-10-10T15:55:28.027Z",
+     "local8": "10-10 23:55:28",
+     "session": "01a12682",
+     "seq": 4434,
+     "id": "33b66907-5fc2-43fc-9b26-24b4cff75d9d"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647743989,
+     "utc": "2026-10-10T15:55:43.989Z",
+     "local8": "10-10 23:55:43",
+     "session": "01a12682",
+     "seq": 4436,
+     "id": "447c0800-58a4-4cad-bf2c-27b068170fde"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647725197,
+     "utc": "2026-10-10T15:55:25.197Z",
+     "session": "01a12682",
+     "seq": 4433
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:56:02.750Z",
+     "session": "01a12682",
+     "seq": 4441
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647765402,
+     "utc": "2026-10-10T15:56:05.402Z",
+     "local8": "10-10 23:56:05",
+     "session": "01a12682",
+     "seq": 4442,
+     "id": "f36bd295-efc1-46a8-91ed-9eda5d2185bd"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:56:10.629Z",
+     "session": "01a12682",
+     "seq": 4444,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_043.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647783303,
+     "utc": "2026-10-10T15:56:23.303Z",
+     "local8": "10-10 23:56:23",
+     "session": "01a12682",
+     "seq": 4445,
+     "id": "5be46c33-f3d4-4db5-8c91-326d052972da"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647793324,
+     "utc": "2026-10-10T15:56:33.324Z",
+     "session": "01a12682",
+     "seq": 4446
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_019",
+   "item_id": "wbv3_044",
+   "sample_id": "wafer_00024635_007",
+   "png_read": [
+    {
+     "ts_ms": 1791647806540,
+     "utc": "2026-10-10T15:56:46.540Z",
+     "local8": "10-10 23:56:46",
+     "session": "01a12682",
+     "seq": 4450,
+     "id": "582d3b60-b428-4876-af8d-293209f0760b"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647815933,
+     "utc": "2026-10-10T15:56:55.933Z",
+     "local8": "10-10 23:56:55",
+     "session": "01a12682",
+     "seq": 4452,
+     "id": "bf4b7d76-3e26-4f17-94ef-cc6b02f47ecc"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647803847,
+     "utc": "2026-10-10T15:56:43.847Z",
+     "session": "01a12682",
+     "seq": 4449
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:57:13.464Z",
+     "session": "01a12682",
+     "seq": 4456
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647836358,
+     "utc": "2026-10-10T15:57:16.358Z",
+     "local8": "10-10 23:57:16",
+     "session": "01a12682",
+     "seq": 4458,
+     "id": "a1d5e497-f13a-450c-b0d0-535b591d1c49"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:57:21.695Z",
+     "session": "01a12682",
+     "seq": 4459,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_044.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647856387,
+     "utc": "2026-10-10T15:57:36.387Z",
+     "local8": "10-10 23:57:36",
+     "session": "01a12682",
+     "seq": 4461,
+     "id": "993d1c82-c639-4383-a463-27f602955a29"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647859607,
+     "utc": "2026-10-10T15:57:39.607Z",
+     "session": "01a12682",
+     "seq": 4462
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_020",
+   "item_id": "wbv3_046",
+   "sample_id": "wafer_00036633_025",
+   "png_read": [
+    {
+     "ts_ms": 1791647873085,
+     "utc": "2026-10-10T15:57:53.085Z",
+     "local8": "10-10 23:57:53",
+     "session": "01a12682",
+     "seq": 4468,
+     "id": "dc5a585b-775c-4d03-9baa-6ae493a46d67"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647886592,
+     "utc": "2026-10-10T15:58:06.592Z",
+     "local8": "10-10 23:58:06",
+     "session": "01a12682",
+     "seq": 4470,
+     "id": "d360fe8d-2b4f-4d35-954c-08d62ed6bdff"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647870502,
+     "utc": "2026-10-10T15:57:50.502Z",
+     "session": "01a12682",
+     "seq": 4466
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:58:17.883Z",
+     "session": "01a12682",
+     "seq": 4473
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647902290,
+     "utc": "2026-10-10T15:58:22.290Z",
+     "local8": "10-10 23:58:22",
+     "session": "01a12682",
+     "seq": 4474,
+     "id": "86ded96d-02fb-4b9a-8265-ca28f2d1b660"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:58:28.317Z",
+     "session": "01a12682",
+     "seq": 4476,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_046.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647921055,
+     "utc": "2026-10-10T15:58:41.055Z",
+     "local8": "10-10 23:58:41",
+     "session": "01a12682",
+     "seq": 4480,
+     "id": "7aa9b806-e553-4e20-8899-c50931ff168d"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647924715,
+     "utc": "2026-10-10T15:58:44.715Z",
+     "session": "01a12682",
+     "seq": 4481
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_021",
+   "item_id": "wbv3_049",
+   "sample_id": "wafer_00039560_008",
+   "png_read": [
+    {
+     "ts_ms": 1791647937407,
+     "utc": "2026-10-10T15:58:57.407Z",
+     "local8": "10-10 23:58:57",
+     "session": "01a12682",
+     "seq": 4485,
+     "id": "e817899b-82a5-4936-bb85-f454ddbb5391"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791647953941,
+     "utc": "2026-10-10T15:59:13.941Z",
+     "local8": "10-10 23:59:13",
+     "session": "01a12682",
+     "seq": 4489,
+     "id": "995b9018-e058-4f95-a7fa-3371337498b4"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791647934639,
+     "utc": "2026-10-10T15:58:54.639Z",
+     "session": "01a12682",
+     "seq": 4484
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T15:59:24.756Z",
+     "session": "01a12682",
+     "seq": 4491
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791647969203,
+     "utc": "2026-10-10T15:59:29.203Z",
+     "local8": "10-10 23:59:29",
+     "session": "01a12682",
+     "seq": 4492,
+     "id": "29ef56e7-d1af-4abf-865f-bf3697f3bb5d"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T15:59:34.848Z",
+     "session": "01a12682",
+     "seq": 4493,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_049.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791647993457,
+     "utc": "2026-10-10T15:59:53.457Z",
+     "local8": "10-10 23:59:53",
+     "session": "01a12682",
+     "seq": 4494,
+     "id": "62c22566-c3f8-4099-a6f1-26bd7ac1623b"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791647996768,
+     "utc": "2026-10-10T15:59:56.768Z",
+     "session": "01a12682",
+     "seq": 4495
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_022",
+   "item_id": "wbv3_051",
+   "sample_id": "wafer_00040809_017",
+   "png_read": [
+    {
+     "ts_ms": 1791648330690,
+     "utc": "2026-10-10T16:05:30.690Z",
+     "local8": "10-11 00:05:30",
+     "session": "01a1268f",
+     "seq": 4528,
+     "id": "59c9556f-1c52-471e-ad41-b8b12dd510e9"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648344052,
+     "utc": "2026-10-10T16:05:44.052Z",
+     "local8": "10-11 00:05:44",
+     "session": "01a1268f",
+     "seq": 4530,
+     "id": "19a43d03-9f5b-45bb-8c61-3188ff9e83d1"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648327865,
+     "utc": "2026-10-10T16:05:27.865Z",
+     "session": "01a1268f",
+     "seq": 4527
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:05:54.278Z",
+     "session": "01a1268f",
+     "seq": 4534
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648359049,
+     "utc": "2026-10-10T16:05:59.049Z",
+     "local8": "10-11 00:05:59",
+     "session": "01a1268f",
+     "seq": 4536,
+     "id": "ce5480ef-e0de-472d-bbfa-fb3879622cd3"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:06:04.561Z",
+     "session": "01a1268f",
+     "seq": 4538,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_051.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648380644,
+     "utc": "2026-10-10T16:06:20.644Z",
+     "local8": "10-11 00:06:20",
+     "session": "01a1268f",
+     "seq": 4539,
+     "id": "82135b07-a266-4b10-8110-1ea6a926290d"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648384661,
+     "utc": "2026-10-10T16:06:24.661Z",
+     "session": "01a1268f",
+     "seq": 4541
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_023",
+   "item_id": "wbv3_055",
+   "sample_id": "wafer_00042201_024",
+   "png_read": [
+    {
+     "ts_ms": 1791648397709,
+     "utc": "2026-10-10T16:06:37.709Z",
+     "local8": "10-11 00:06:37",
+     "session": "01a1268f",
+     "seq": 4546,
+     "id": "ef5875a9-8e22-4fe8-a0c6-be92854fc9b5"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648408088,
+     "utc": "2026-10-10T16:06:48.088Z",
+     "local8": "10-11 00:06:48",
+     "session": "01a1268f",
+     "seq": 4549,
+     "id": "ddd8a6ea-e660-40ac-a7b2-aeaaec66b8a5"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648395356,
+     "utc": "2026-10-10T16:06:35.356Z",
+     "session": "01a1268f",
+     "seq": 4545
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:06:58.557Z",
+     "session": "01a1268f",
+     "seq": 4551
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648421663,
+     "utc": "2026-10-10T16:07:01.663Z",
+     "local8": "10-11 00:07:01",
+     "session": "01a1268f",
+     "seq": 4552,
+     "id": "b239d802-3f7f-44a0-8dfc-b8ffd5f37469"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:07:09.781Z",
+     "session": "01a1268f",
+     "seq": 4555,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_055.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648446985,
+     "utc": "2026-10-10T16:07:26.985Z",
+     "local8": "10-11 00:07:26",
+     "session": "01a1268f",
+     "seq": 4559,
+     "id": "5ece1467-cbc7-4916-875c-d4c398d494e7"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648455234,
+     "utc": "2026-10-10T16:07:35.234Z",
+     "session": "01a1268f",
+     "seq": 4560
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_024",
+   "item_id": "wbv3_056",
+   "sample_id": "wafer_00042267_019",
+   "png_read": [
+    {
+     "ts_ms": 1791648483853,
+     "utc": "2026-10-10T16:08:03.853Z",
+     "local8": "10-11 00:08:03",
+     "session": "01a1268f",
+     "seq": 4566,
+     "id": "cfa71678-6c29-449d-b32d-0a600e77577a"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648502643,
+     "utc": "2026-10-10T16:08:22.643Z",
+     "local8": "10-11 00:08:22",
+     "session": "01a1268f",
+     "seq": 4567,
+     "id": "857e9699-b3d0-4068-b9ba-228807aa9753"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648474409,
+     "utc": "2026-10-10T16:07:54.409Z",
+     "session": "01a1268f",
+     "seq": 4565
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:08:32.906Z",
+     "session": "01a1268f",
+     "seq": 4569
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648515898,
+     "utc": "2026-10-10T16:08:35.898Z",
+     "local8": "10-11 00:08:35",
+     "session": "01a1268f",
+     "seq": 4570,
+     "id": "5d5421d9-ccfc-4584-88ba-068c39e2217c"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:08:41.316Z",
+     "session": "01a1268f",
+     "seq": 4571,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_056.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648533138,
+     "utc": "2026-10-10T16:08:53.138Z",
+     "local8": "10-11 00:08:53",
+     "session": "01a1268f",
+     "seq": 4572,
+     "id": "855094d7-1a41-4fde-b719-bfd89d0a7cd1"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648536697,
+     "utc": "2026-10-10T16:08:56.697Z",
+     "session": "01a1268f",
+     "seq": 4573
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_025",
+   "item_id": "wbv3_061",
+   "sample_id": "wafer_00042680_025",
+   "png_read": [
+    {
+     "ts_ms": 1791648552021,
+     "utc": "2026-10-10T16:09:12.021Z",
+     "local8": "10-11 00:09:12",
+     "session": "01a1268f",
+     "seq": 4576,
+     "id": "7bbd4d4e-8856-4b23-9d08-e22ab9895073"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648571803,
+     "utc": "2026-10-10T16:09:31.803Z",
+     "local8": "10-11 00:09:31",
+     "session": "01a1268f",
+     "seq": 4577,
+     "id": "b236c4ff-1a3c-443f-aa13-c1c0e207553b"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648549060,
+     "utc": "2026-10-10T16:09:09.060Z",
+     "session": "01a1268f",
+     "seq": 4575
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:09:41.607Z",
+     "session": "01a1268f",
+     "seq": 4579
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648584420,
+     "utc": "2026-10-10T16:09:44.420Z",
+     "local8": "10-11 00:09:44",
+     "session": "01a1268f",
+     "seq": 4580,
+     "id": "d1e55523-7be9-4958-a03b-83586594e43f"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:09:49.885Z",
+     "session": "01a1268f",
+     "seq": 4581,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_061.raw.txt'\nh=hashlib.sha256(open(p,'rb').read()).hexdigest()\n"
+    },
+    {
+     "utc": "2026-10-10T16:10:39.071Z",
+     "session": "01a1268f",
+     "seq": 4582,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_061.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648655851,
+     "utc": "2026-10-10T16:10:55.851Z",
+     "local8": "10-11 00:10:55",
+     "session": "01a1268f",
+     "seq": 4583,
+     "id": "d7058cea-2a3a-4ac2-8e8f-f4382e2f1a72"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648659150,
+     "utc": "2026-10-10T16:10:59.150Z",
+     "session": "01a1268f",
+     "seq": 4584
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_026",
+   "item_id": "wbv3_063",
+   "sample_id": "wafer_00042865_024",
+   "png_read": [
+    {
+     "ts_ms": 1791648672840,
+     "utc": "2026-10-10T16:11:12.840Z",
+     "local8": "10-11 00:11:12",
+     "session": "01a1268f",
+     "seq": 4587,
+     "id": "b34e2d23-a2cb-4b99-aa5e-9d1db5f4faa6"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648690051,
+     "utc": "2026-10-10T16:11:30.051Z",
+     "local8": "10-11 00:11:30",
+     "session": "01a1268f",
+     "seq": 4588,
+     "id": "bc5f02b2-ff23-4b41-8d62-0e5003469445"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648669926,
+     "utc": "2026-10-10T16:11:09.926Z",
+     "session": "01a1268f",
+     "seq": 4586
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:11:39.651Z",
+     "session": "01a1268f",
+     "seq": 4590
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648702937,
+     "utc": "2026-10-10T16:11:42.937Z",
+     "local8": "10-11 00:11:42",
+     "session": "01a1268f",
+     "seq": 4591,
+     "id": "dbe29c78-4783-4c27-a159-479b6d7fd1f9"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:11:48.716Z",
+     "session": "01a1268f",
+     "seq": 4592,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_063.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648722467,
+     "utc": "2026-10-10T16:12:02.467Z",
+     "local8": "10-11 00:12:02",
+     "session": "01a1268f",
+     "seq": 4593,
+     "id": "815cdc97-9a67-44b3-918b-7a19a654f4d9"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648726298,
+     "utc": "2026-10-10T16:12:06.298Z",
+     "session": "01a1268f",
+     "seq": 4594
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_027",
+   "item_id": "wbv3_064",
+   "sample_id": "wafer_00042895_016",
+   "png_read": [
+    {
+     "ts_ms": 1791648742502,
+     "utc": "2026-10-10T16:12:22.502Z",
+     "local8": "10-11 00:12:22",
+     "session": "01a1268f",
+     "seq": 4597,
+     "id": "cc2adc68-aa4e-4c80-be99-7f0a7667fb6e"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648755911,
+     "utc": "2026-10-10T16:12:35.911Z",
+     "local8": "10-11 00:12:35",
+     "session": "01a1268f",
+     "seq": 4598,
+     "id": "674c23a9-f491-417b-9e56-8ef381948713"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648739063,
+     "utc": "2026-10-10T16:12:19.063Z",
+     "session": "01a1268f",
+     "seq": 4596
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:12:45.743Z",
+     "session": "01a1268f",
+     "seq": 4600
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648769910,
+     "utc": "2026-10-10T16:12:49.910Z",
+     "local8": "10-11 00:12:49",
+     "session": "01a1268f",
+     "seq": 4601,
+     "id": "50471c0f-9755-4ee5-b848-8cf10c1d9768"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:12:55.636Z",
+     "session": "01a1268f",
+     "seq": 4602,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_064.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648787391,
+     "utc": "2026-10-10T16:13:07.391Z",
+     "local8": "10-11 00:13:07",
+     "session": "01a1268f",
+     "seq": 4603,
+     "id": "0de0ab43-c6bd-46af-b89a-a4e3d6f3cc18"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648790847,
+     "utc": "2026-10-10T16:13:10.847Z",
+     "session": "01a1268f",
+     "seq": 4604
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_028",
+   "item_id": "wbv3_068",
+   "sample_id": "wafer_00043374_024",
+   "png_read": [
+    {
+     "ts_ms": 1791648824531,
+     "utc": "2026-10-10T16:13:44.531Z",
+     "local8": "10-11 00:13:44",
+     "session": "01a1268f",
+     "seq": 4607,
+     "id": "e48d5cef-eb34-4f55-95bd-92e942794f83"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648834727,
+     "utc": "2026-10-10T16:13:54.727Z",
+     "local8": "10-11 00:13:54",
+     "session": "01a1268f",
+     "seq": 4608,
+     "id": "d8618e27-6b11-4904-a3e0-ec4ad0ce83c7"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648802593,
+     "utc": "2026-10-10T16:13:22.593Z",
+     "session": "01a1268f",
+     "seq": 4606
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:14:15.751Z",
+     "session": "01a1268f",
+     "seq": 4610
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648864620,
+     "utc": "2026-10-10T16:14:24.620Z",
+     "local8": "10-11 00:14:24",
+     "session": "01a1268f",
+     "seq": 4611,
+     "id": "da3d04df-91f1-4ad9-8272-4bdd1a3626bf"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:14:29.818Z",
+     "session": "01a1268f",
+     "seq": 4612,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_068.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648885484,
+     "utc": "2026-10-10T16:14:45.484Z",
+     "local8": "10-11 00:14:45",
+     "session": "01a1268f",
+     "seq": 4613,
+     "id": "1c3f875b-034c-4b71-aa8e-fa7004a2e335"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648889255,
+     "utc": "2026-10-10T16:14:49.255Z",
+     "session": "01a1268f",
+     "seq": 4614
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_029",
+   "item_id": "wbv3_073",
+   "sample_id": "wafer_00044107_018",
+   "png_read": [
+    {
+     "ts_ms": 1791648324418,
+     "utc": "2026-10-10T16:05:24.418Z",
+     "local8": "10-11 00:05:24",
+     "session": "01a1268f",
+     "seq": 4526,
+     "id": "0be0d6a6-e8e0-44ca-a147-c8dcf053487a"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648341399,
+     "utc": "2026-10-10T16:05:41.399Z",
+     "local8": "10-11 00:05:41",
+     "session": "01a1268f",
+     "seq": 4529,
+     "id": "32f72dec-2630-43c6-a165-88e9deada75f"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648321351,
+     "utc": "2026-10-10T16:05:21.351Z",
+     "session": "01a1268f",
+     "seq": 4524
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:05:52.650Z",
+     "session": "01a1268f",
+     "seq": 4533
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648356299,
+     "utc": "2026-10-10T16:05:56.299Z",
+     "local8": "10-11 00:05:56",
+     "session": "01a1268f",
+     "seq": 4535,
+     "id": "8853fe73-d798-4372-b305-220f9bb57328"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:06:02.337Z",
+     "session": "01a1268f",
+     "seq": 4537,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_073.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648384322,
+     "utc": "2026-10-10T16:06:24.322Z",
+     "local8": "10-11 00:06:24",
+     "session": "01a1268f",
+     "seq": 4540,
+     "id": "5e905ec7-412c-4678-8a52-9eaba0c98715"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648388230,
+     "utc": "2026-10-10T16:06:28.230Z",
+     "session": "01a1268f",
+     "seq": 4542
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  },
+  {
+   "review_id": "rv30_030",
+   "item_id": "wbv3_076",
+   "sample_id": "wafer_00044982_011",
+   "png_read": [
+    {
+     "ts_ms": 1791648402348,
+     "utc": "2026-10-10T16:06:42.348Z",
+     "local8": "10-11 00:06:42",
+     "session": "01a1268f",
+     "seq": 4548,
+     "id": "2957be62-774f-4117-a7cb-ca584e41d837"
+    }
+   ],
+   "observation_write": [
+    {
+     "ts_ms": 1791648422202,
+     "utc": "2026-10-10T16:07:02.202Z",
+     "local8": "10-11 00:07:02",
+     "session": "01a1268f",
+     "seq": 4553,
+     "id": "e9983a55-44c8-47e7-844a-d6a397d487b0"
+    }
+   ],
+   "started_write": [
+    {
+     "ts_ms": 1791648399505,
+     "utc": "2026-10-10T16:06:39.505Z",
+     "session": "01a1268f",
+     "seq": 4547
+    }
+   ],
+   "meta_write": [
+    {
+     "utc": "2026-10-10T16:07:13.135Z",
+     "session": "01a1268f",
+     "seq": 4556
+    }
+   ],
+   "oldraw_read": [
+    {
+     "ts_ms": 1791648436474,
+     "utc": "2026-10-10T16:07:16.474Z",
+     "local8": "10-11 00:07:16",
+     "session": "01a1268f",
+     "seq": 4557,
+     "id": "9acd1419-f4f3-4d38-9c77-d864fdf2df14"
+    }
+   ],
+   "oldraw_read_via_bash": [
+    {
+     "utc": "2026-10-10T16:07:22.139Z",
+     "session": "01a1268f",
+     "seq": 4558,
+     "cmd": "python -c \"\nimport hashlib\np=r'D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950/wbv3_076.raw.txt'\nprint(hashlib.sha256(open(p,'rb').read()).hexdiges"
+    }
+   ],
+   "review_write": [
+    {
+     "ts_ms": 1791648462441,
+     "utc": "2026-10-10T16:07:42.441Z",
+     "local8": "10-11 00:07:42",
+     "session": "01a1268f",
+     "seq": 4561,
+     "id": "209d90fe-5828-4273-9913-a69aecd46e9a"
+    }
+   ],
+   "done_write": [
+    {
+     "ts_ms": 1791648466419,
+     "utc": "2026-10-10T16:07:46.419Z",
+     "session": "01a1268f",
+     "seq": 4562
+    }
+   ],
+   "png_read_count": 1,
+   "oldraw_read_tool_count": 1,
+   "machine_order_png_then_obs_then_oldraw_then_review": true
+  }
+ ],
+ "self_report_vs_mtime": [
+  {
+   "review_id": "rv30_001",
+   "item_id": "wbv3_002",
+   "started": {
+    "mtime_utc": "2026-10-10T15:39:10Z",
+    "mtime_local8": "10-10 23:39:10",
+    "embedded": "2026-10-10T23:36:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:39:32Z",
+    "mtime_local8": "10-10 23:39:32",
+    "embedded": "2026-10-10T15:39:27Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:39:59Z",
+    "mtime_local8": "10-10 23:39:59",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:40:05Z",
+    "mtime_local8": "10-10 23:40:05",
+    "embedded": "2026-10-10T15:42:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_002",
+   "item_id": "wbv3_003",
+   "started": {
+    "mtime_utc": "2026-10-10T15:40:18Z",
+    "mtime_local8": "10-10 23:40:18",
+    "embedded": "2026-10-10T15:43:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:40:38Z",
+    "mtime_local8": "10-10 23:40:38",
+    "embedded": "2026-10-10T15:40:33Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:41:01Z",
+    "mtime_local8": "10-10 23:41:01",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:41:04Z",
+    "mtime_local8": "10-10 23:41:04",
+    "embedded": "2026-10-10T15:41:30Z"
+   }
+  },
+  {
+   "review_id": "rv30_003",
+   "item_id": "wbv3_005",
+   "started": {
+    "mtime_utc": "2026-10-10T15:41:14Z",
+    "mtime_local8": "10-10 23:41:14",
+    "embedded": "2026-10-10T15:44:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:41:46Z",
+    "mtime_local8": "10-10 23:41:46",
+    "embedded": "2026-10-10T15:41:42Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:42:17Z",
+    "mtime_local8": "10-10 23:42:17",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:42:21Z",
+    "mtime_local8": "10-10 23:42:21",
+    "embedded": "2026-10-10T15:44:30Z"
+   }
+  },
+  {
+   "review_id": "rv30_004",
+   "item_id": "wbv3_006",
+   "started": {
+    "mtime_utc": "2026-10-10T15:42:32Z",
+    "mtime_local8": "10-10 23:42:32",
+    "embedded": "2026-10-10T15:45:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:43:02Z",
+    "mtime_local8": "10-10 23:43:02",
+    "embedded": "2026-10-10T15:42:58Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:43:35Z",
+    "mtime_local8": "10-10 23:43:35",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:43:48Z",
+    "mtime_local8": "10-10 23:43:48",
+    "embedded": "2026-10-10T15:47:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_005",
+   "item_id": "wbv3_009",
+   "started": {
+    "mtime_utc": "2026-10-10T15:43:58Z",
+    "mtime_local8": "10-10 23:43:58",
+    "embedded": "2026-10-10T15:48:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:44:28Z",
+    "mtime_local8": "10-10 23:44:28",
+    "embedded": "2026-10-10T15:44:20Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:45:28Z",
+    "mtime_local8": "10-10 23:45:28",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:45:34Z",
+    "mtime_local8": "10-10 23:45:34",
+    "embedded": "2026-10-10T15:50:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_006",
+   "item_id": "wbv3_010",
+   "started": {
+    "mtime_utc": "2026-10-10T15:45:48Z",
+    "mtime_local8": "10-10 23:45:48",
+    "embedded": "2026-10-10T15:51:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:46:41Z",
+    "mtime_local8": "10-10 23:46:41",
+    "embedded": "2026-10-10T15:46:36Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:47:12Z",
+    "mtime_local8": "10-10 23:47:12",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:47:20Z",
+    "mtime_local8": "10-10 23:47:20",
+    "embedded": "2026-10-10T15:53:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_007",
+   "item_id": "wbv3_014",
+   "started": {
+    "mtime_utc": "2026-10-10T15:47:31Z",
+    "mtime_local8": "10-10 23:47:31",
+    "embedded": "2026-10-10T15:54:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:47:55Z",
+    "mtime_local8": "10-10 23:47:55",
+    "embedded": "2026-10-10T15:47:47Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:48:13Z",
+    "mtime_local8": "10-10 23:48:13",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:48:17Z",
+    "mtime_local8": "10-10 23:48:17",
+    "embedded": "2026-10-10T15:56:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_008",
+   "item_id": "wbv3_016",
+   "started": {
+    "mtime_utc": "2026-10-10T15:50:54Z",
+    "mtime_local8": "10-10 23:50:54",
+    "embedded": "2026-10-10T23:40:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:51:32Z",
+    "mtime_local8": "10-10 23:51:32",
+    "embedded": "2026-10-10T15:51:26Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:51:59Z",
+    "mtime_local8": "10-10 23:51:59",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:52:05Z",
+    "mtime_local8": "10-10 23:52:05",
+    "embedded": "2026-10-10T15:51:26Z"
+   }
+  },
+  {
+   "review_id": "rv30_009",
+   "item_id": "wbv3_024",
+   "started": {
+    "mtime_utc": "2026-10-10T15:52:24Z",
+    "mtime_local8": "10-10 23:52:24",
+    "embedded": "2026-10-10T15:51:26Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:53:49Z",
+    "mtime_local8": "10-10 23:53:49",
+    "embedded": "2026-10-10T15:53:44Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:54:50Z",
+    "mtime_local8": "10-10 23:54:50",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:54:54Z",
+    "mtime_local8": "10-10 23:54:54",
+    "embedded": "2026-10-10T15:53:44Z"
+   }
+  },
+  {
+   "review_id": "rv30_010",
+   "item_id": "wbv3_029",
+   "started": {
+    "mtime_utc": "2026-10-10T15:55:06Z",
+    "mtime_local8": "10-10 23:55:06",
+    "embedded": "2026-10-10T15:53:44Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:55:55Z",
+    "mtime_local8": "10-10 23:55:55",
+    "embedded": "2026-10-10T15:55:50Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:56:42Z",
+    "mtime_local8": "10-10 23:56:42",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:56:49Z",
+    "mtime_local8": "10-10 23:56:49",
+    "embedded": "2026-10-10T15:55:50Z"
+   }
+  },
+  {
+   "review_id": "rv30_011",
+   "item_id": "wbv3_031",
+   "started": {
+    "mtime_utc": "2026-10-10T15:57:06Z",
+    "mtime_local8": "10-10 23:57:06",
+    "embedded": "2026-10-10T15:55:50Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:57:48Z",
+    "mtime_local8": "10-10 23:57:48",
+    "embedded": "2026-10-10T15:57:42Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:58:16Z",
+    "mtime_local8": "10-10 23:58:16",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:58:24Z",
+    "mtime_local8": "10-10 23:58:24",
+    "embedded": "2026-10-10T15:57:42Z"
+   }
+  },
+  {
+   "review_id": "rv30_012",
+   "item_id": "wbv3_033",
+   "started": {
+    "mtime_utc": "2026-10-10T15:58:35Z",
+    "mtime_local8": "10-10 23:58:35",
+    "embedded": "2026-10-10T15:57:42Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:59:04Z",
+    "mtime_local8": "10-10 23:59:04",
+    "embedded": "2026-10-10T15:58:59Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:00:14Z",
+    "mtime_local8": "10-11 00:00:14",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:00:22Z",
+    "mtime_local8": "10-11 00:00:22",
+    "embedded": "2026-10-10T15:58:59Z"
+   }
+  },
+  {
+   "review_id": "rv30_013",
+   "item_id": "wbv3_034",
+   "started": {
+    "mtime_utc": "2026-10-10T16:00:34Z",
+    "mtime_local8": "10-11 00:00:34",
+    "embedded": "2026-10-10T15:58:59Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:01:16Z",
+    "mtime_local8": "10-11 00:01:16",
+    "embedded": "2026-10-10T16:01:10Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:02:22Z",
+    "mtime_local8": "10-11 00:02:22",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:02:27Z",
+    "mtime_local8": "10-11 00:02:27",
+    "embedded": "2026-10-10T16:01:10Z"
+   }
+  },
+  {
+   "review_id": "rv30_014",
+   "item_id": "wbv3_037",
+   "started": {
+    "mtime_utc": "2026-10-10T16:02:38Z",
+    "mtime_local8": "10-11 00:02:38",
+    "embedded": "2026-10-10T16:01:10Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:03:13Z",
+    "mtime_local8": "10-11 00:03:13",
+    "embedded": "2026-10-10T16:03:08Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:03:41Z",
+    "mtime_local8": "10-11 00:03:41",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:03:46Z",
+    "mtime_local8": "10-11 00:03:46",
+    "embedded": "2026-10-10T16:03:08Z"
+   }
+  },
+  {
+   "review_id": "rv30_015",
+   "item_id": "wbv3_038",
+   "started": {
+    "mtime_utc": "2026-10-10T15:50:40Z",
+    "mtime_local8": "10-10 23:50:40",
+    "embedded": "2026-10-10T23:41:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:51:08Z",
+    "mtime_local8": "10-10 23:51:08",
+    "embedded": "2026-10-10T15:51:04Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:52:04Z",
+    "mtime_local8": "10-10 23:52:04",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:52:08Z",
+    "mtime_local8": "10-10 23:52:08",
+    "embedded": "2026-10-10T15:53:30Z"
+   }
+  },
+  {
+   "review_id": "rv30_016",
+   "item_id": "wbv3_039",
+   "started": {
+    "mtime_utc": "2026-10-10T15:52:24Z",
+    "mtime_local8": "10-10 23:52:24",
+    "embedded": "2026-10-10T15:54:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:53:02Z",
+    "mtime_local8": "10-10 23:53:02",
+    "embedded": "2026-10-10T15:52:57Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:53:31Z",
+    "mtime_local8": "10-10 23:53:31",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:53:34Z",
+    "mtime_local8": "10-10 23:53:34",
+    "embedded": "2026-10-10T15:56:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_017",
+   "item_id": "wbv3_040",
+   "started": {
+    "mtime_utc": "2026-10-10T15:53:49Z",
+    "mtime_local8": "10-10 23:53:49",
+    "embedded": "2026-10-10T15:57:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:54:30Z",
+    "mtime_local8": "10-10 23:54:30",
+    "embedded": "2026-10-10T15:54:25Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:55:12Z",
+    "mtime_local8": "10-10 23:55:12",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:55:15Z",
+    "mtime_local8": "10-10 23:55:15",
+    "embedded": "2026-10-10T15:58:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_018",
+   "item_id": "wbv3_043",
+   "started": {
+    "mtime_utc": "2026-10-10T15:55:25Z",
+    "mtime_local8": "10-10 23:55:25",
+    "embedded": "2026-10-10T15:59:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:56:02Z",
+    "mtime_local8": "10-10 23:56:02",
+    "embedded": "2026-10-10T15:55:57Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:56:23Z",
+    "mtime_local8": "10-10 23:56:23",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:56:33Z",
+    "mtime_local8": "10-10 23:56:33",
+    "embedded": "2026-10-10T16:00:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_019",
+   "item_id": "wbv3_044",
+   "started": {
+    "mtime_utc": "2026-10-10T15:56:43Z",
+    "mtime_local8": "10-10 23:56:43",
+    "embedded": "2026-10-10T16:01:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:57:13Z",
+    "mtime_local8": "10-10 23:57:13",
+    "embedded": "2026-10-10T15:57:01Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:57:36Z",
+    "mtime_local8": "10-10 23:57:36",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:57:39Z",
+    "mtime_local8": "10-10 23:57:39",
+    "embedded": "2026-10-10T16:02:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_020",
+   "item_id": "wbv3_046",
+   "started": {
+    "mtime_utc": "2026-10-10T15:57:50Z",
+    "mtime_local8": "10-10 23:57:50",
+    "embedded": "2026-10-10T16:03:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:58:17Z",
+    "mtime_local8": "10-10 23:58:17",
+    "embedded": "2026-10-10T15:58:12Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:58:41Z",
+    "mtime_local8": "10-10 23:58:41",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:58:44Z",
+    "mtime_local8": "10-10 23:58:44",
+    "embedded": "2026-10-10T16:04:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_021",
+   "item_id": "wbv3_049",
+   "started": {
+    "mtime_utc": "2026-10-10T15:58:54Z",
+    "mtime_local8": "10-10 23:58:54",
+    "embedded": "2026-10-10T16:05:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T15:59:24Z",
+    "mtime_local8": "10-10 23:59:24",
+    "embedded": "2026-10-10T15:59:19Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T15:59:53Z",
+    "mtime_local8": "10-10 23:59:53",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T15:59:56Z",
+    "mtime_local8": "10-10 23:59:56",
+    "embedded": "2026-10-10T16:06:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_022",
+   "item_id": "wbv3_051",
+   "started": {
+    "mtime_utc": "2026-10-10T16:05:27Z",
+    "mtime_local8": "10-11 00:05:27",
+    "embedded": "2026-10-11T00:00:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:05:54Z",
+    "mtime_local8": "10-11 00:05:54",
+    "embedded": "2026-10-11T00:02:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:06:20Z",
+    "mtime_local8": "10-11 00:06:20",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:06:24Z",
+    "mtime_local8": "10-11 00:06:24",
+    "embedded": "2026-10-11T00:05:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_023",
+   "item_id": "wbv3_055",
+   "started": {
+    "mtime_utc": "2026-10-10T16:06:35Z",
+    "mtime_local8": "10-11 00:06:35",
+    "embedded": "2026-10-11T00:06:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:06:58Z",
+    "mtime_local8": "10-11 00:06:58",
+    "embedded": "2026-10-11T00:08:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:07:26Z",
+    "mtime_local8": "10-11 00:07:26",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:07:35Z",
+    "mtime_local8": "10-11 00:07:35",
+    "embedded": "2026-10-11T00:10:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_024",
+   "item_id": "wbv3_056",
+   "started": {
+    "mtime_utc": "2026-10-10T16:07:54Z",
+    "mtime_local8": "10-11 00:07:54",
+    "embedded": "2026-10-11T00:11:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:08:32Z",
+    "mtime_local8": "10-11 00:08:32",
+    "embedded": "2026-10-11T00:13:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:08:53Z",
+    "mtime_local8": "10-11 00:08:53",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:08:56Z",
+    "mtime_local8": "10-11 00:08:56",
+    "embedded": "2026-10-11T00:15:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_025",
+   "item_id": "wbv3_061",
+   "started": {
+    "mtime_utc": "2026-10-10T16:09:09Z",
+    "mtime_local8": "10-11 00:09:09",
+    "embedded": "2026-10-11T00:16:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:09:41Z",
+    "mtime_local8": "10-11 00:09:41",
+    "embedded": "2026-10-11T00:18:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:10:55Z",
+    "mtime_local8": "10-11 00:10:55",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:10:59Z",
+    "mtime_local8": "10-11 00:10:59",
+    "embedded": "2026-10-11T00:22:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_026",
+   "item_id": "wbv3_063",
+   "started": {
+    "mtime_utc": "2026-10-10T16:11:09Z",
+    "mtime_local8": "10-11 00:11:09",
+    "embedded": "2026-10-11T00:23:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:11:39Z",
+    "mtime_local8": "10-11 00:11:39",
+    "embedded": "2026-10-11T00:25:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:12:02Z",
+    "mtime_local8": "10-11 00:12:02",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:12:06Z",
+    "mtime_local8": "10-11 00:12:06",
+    "embedded": "2026-10-11T00:27:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_027",
+   "item_id": "wbv3_064",
+   "started": {
+    "mtime_utc": "2026-10-10T16:12:19Z",
+    "mtime_local8": "10-11 00:12:19",
+    "embedded": "2026-10-11T00:28:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:12:45Z",
+    "mtime_local8": "10-11 00:12:45",
+    "embedded": "2026-10-11T00:30:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:13:07Z",
+    "mtime_local8": "10-11 00:13:07",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:13:10Z",
+    "mtime_local8": "10-11 00:13:10",
+    "embedded": "2026-10-11T00:32:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_028",
+   "item_id": "wbv3_068",
+   "started": {
+    "mtime_utc": "2026-10-10T16:13:22Z",
+    "mtime_local8": "10-11 00:13:22",
+    "embedded": "2026-10-11T00:33:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:14:15Z",
+    "mtime_local8": "10-11 00:14:15",
+    "embedded": "2026-10-11T00:35:00Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:14:45Z",
+    "mtime_local8": "10-11 00:14:45",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:14:49Z",
+    "mtime_local8": "10-11 00:14:49",
+    "embedded": "2026-10-11T00:37:00Z"
+   }
+  },
+  {
+   "review_id": "rv30_029",
+   "item_id": "wbv3_073",
+   "started": {
+    "mtime_utc": "2026-10-10T16:05:21Z",
+    "mtime_local8": "10-11 00:05:21",
+    "embedded": "2026-10-11T00:00:00Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:05:52Z",
+    "mtime_local8": "10-11 00:05:52",
+    "embedded": "2026-10-10T16:05:47Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:06:24Z",
+    "mtime_local8": "10-11 00:06:24",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:06:28Z",
+    "mtime_local8": "10-11 00:06:28",
+    "embedded": "2026-10-10T16:05:47Z"
+   }
+  },
+  {
+   "review_id": "rv30_030",
+   "item_id": "wbv3_076",
+   "started": {
+    "mtime_utc": "2026-10-10T16:06:39Z",
+    "mtime_local8": "10-11 00:06:39",
+    "embedded": "2026-10-10T16:05:47Z"
+   },
+   "observation_meta": {
+    "mtime_utc": "2026-10-10T16:07:13Z",
+    "mtime_local8": "10-11 00:07:13",
+    "embedded": "2026-10-10T16:07:07Z"
+   },
+   "review": {
+    "mtime_utc": "2026-10-10T16:07:42Z",
+    "mtime_local8": "10-11 00:07:42",
+    "embedded": null
+   },
+   "done": {
+    "mtime_utc": "2026-10-10T16:07:46Z",
+    "mtime_local8": "10-11 00:07:46",
+    "embedded": "2026-10-10T16:07:07Z"
+   }
+  }
+ ],
+ "notes": [
+  "审计日志timestamp为客户端Unix毫秒（UTC纪元）；本表同时给UTC与本地UTC+8两种读法，时区换算只用此固定偏移，不用于消解自报时间矛盾。",
+  "file-safety.allow-listed 记录的是客户端放行的工具调用事件（工具、路径、时刻），不是工具返回内容，也不是后端请求记录。",
+  "png_read_count/oldraw_read_tool_count 仅统计审计日志中的工具调用次数；模型是否实际获得并使用像素/文本由后端决定，本日志不能证明。"
+ ]
+}

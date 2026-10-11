@@ -1,0 +1,15 @@
+<think>
+
+</think>
+
+```json
+{
+"defect_class":"Random",
+"morphology":"随机分布的红色像素点",
+"radial_zone":"global",
+"clock_direction":null,
+"extent_r":null,
+"caption_zh":"绿色晶圆背景上随机分布着红色失效点",
+"uncertainty":""
+}
+```

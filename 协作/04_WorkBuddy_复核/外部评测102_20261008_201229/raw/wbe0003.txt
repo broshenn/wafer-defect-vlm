@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效点稀疏且较均匀地散布于整个晶圆，无明显聚集结构","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效点稀疏散布于整个晶圆，无明显聚集形态。","uncertainty":"左侧中部有短小的横向红色线状聚集，但整体以散点为主"}

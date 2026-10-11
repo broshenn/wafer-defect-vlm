@@ -1,0 +1,1 @@
+{"morphology_zh":"多个孤立点状红色格点，整体散布，少量相邻成对，无团块、环、弧或细长带","main_location_zh":"全局分布，中心、中部与边缘均有零星红点，无主导聚集区域","location_clock":[],"orientation_clock":[],"secondary_observations":["上方约12点钟附近有少量相邻红点成小簇","中左部约9至10点钟之间有相邻红点成对"],"caption_zh":"红色失效点呈全局散布的点状形态，无主导结构","uncertainty":"分布大致均匀，无法可靠判定唯一位置钟点或延伸轴"}

@@ -1,0 +1,1 @@
+{"defect_class":"Edge_Ring","morphology":"边缘整圈连续红色失效带，内部绿色区域散布稀疏随机红色单点","radial_zone":"edge","clock_direction":null,"extent_r":null,"caption_zh":"晶圆边缘整圈呈红色失效环带，内部绿色区域另有散在的随机红色失效点。","uncertainty":"边缘红环较窄，内部散点数量不少，可能同时存在Random模式"}

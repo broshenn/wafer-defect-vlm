@@ -1,0 +1,1 @@
+{"morphology_zh":"绿色为主，红色失效格点沿晶圆边缘呈弧形带与团块，底部最重","main_location_zh":"红色主要结构位于晶圆边缘，偏底部最重","location_clock":[6],"orientation_clock":[],"secondary_observations":["左侧与右侧边缘也有红色块沿边分布","内部散布少量零星红色点"],"caption_zh":"绿色为主，红色失效格点主要沿边缘分布并偏重底部","uncertainty":"红色沿下半圈及左右边缘都有，底部最集中，故位置钟点取6"}

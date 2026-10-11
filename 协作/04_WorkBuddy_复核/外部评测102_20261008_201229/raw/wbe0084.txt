@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效die以零星小块散布全晶圆，密度较低且无可见结构模式","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"少量红色失效die以随机小块形式散布于晶圆各处，其余为绿色合格die，无明显聚集或线状结构","uncertainty":""}

@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0505",
+    "image_sha256": "3713c09838baff019e3cb9cf7c1d4fa15a0dcaa42e45ba78ba941646879b438d",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心区红色fail die呈弧形半环状聚集，部分环绕中心绿色核心且未闭合，另全圆盘伴零星随机散点",
+      "radial_zone": "中心",
+      "clock_direction": "9-12点内侧弧带为主",
+      "extent_r": null,
+      "caption_zh": "中心区域红色失效die形成未闭合的弧形半环状聚集，主要位于中心偏左一带并部分环绕绿色核心，另全片散布少量随机红点，覆盖中等。",
+      "uncertainty": "中：形态介于Center与Donut之间，环未闭合且偏侧，分类存在一定歧义。"
+    }
+  },
+  {
+    "item_id": "wbg0506",
+    "image_sha256": "5550c30f349ae1e7260049808b9c9b1d4d38ff7d58b2d059005015ecf5a58a46",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心区大片红色聚集呈团块与半环混合状，内部残留多个绿色小岛，边界不规则",
+      "radial_zone": "中心",
+      "clock_direction": "9-12点及6-8点为主",
+      "extent_r": null,
+      "caption_zh": "中心区域大片红色失效聚集，呈团块夹半环状并残留绿色小岛，整体延展约达晶圆直径四分之一，另全片有零星散点。",
+      "uncertainty": "中：中心聚集明显但环不闭合，Center与Donut边界模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0507",
+    "image_sha256": "8e63c0a3bbb7391739594fced51b128871674266bad3e95f336da7d049db028a",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心大片致密红色团块，被一条纵向绿色通道分割呈双叶状，边界较规整",
+      "radial_zone": "中心",
+      "clock_direction": "以圆心为核心向左右延展（9-3点横向为主）",
+      "extent_r": null,
+      "caption_zh": "晶圆正中心出现大片致密红色失效团块，被一条纵向绿色通道分成左右两叶，横向延展约占直径三分之一，外围绿色区域仅少量散点。",
+      "uncertainty": "低：中心致密团块特征明确，Center分类把握较大。"
+    }
+  },
+  {
+    "item_id": "wbg0508",
+    "image_sha256": "589942a8e971404ee790b50944e8384b35982c03d64dbd3da7e1ac089b5e7569",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色fail die以单颗形式随机散布全片，密度低且各方向分布均匀，无任何聚集结构",
+      "radial_zone": "无",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "全片仅见红色失效die零星随机散布，密度低、无任何聚集或条带结构，整体良率很高。",
+      "uncertainty": "低：散点分布均匀清晰，Random判断把握大。"
+    }
+  },
+  {
+    "item_id": "wbg0509",
+    "image_sha256": "c70a8c180eb84aae0435cfa9d933ace53890f2b425de4247948e8cd2258bc27c",
+    "raw_answer": {
+      "defect_class": "Edge-Loc",
+      "morphology": "左上边缘局部红色密集带状聚集，另有一条自中心偏上向左下延伸的对角虚线状红点链",
+      "radial_zone": "边缘",
+      "clock_direction": "10-12点边缘为主",
+      "extent_r": null,
+      "caption_zh": "左上边缘出现局部红色失效密集带，另见一条斜贯中下部的虚线状红点链，整体覆盖较小。",
+      "uncertainty": "中：边缘聚集与斜向点链并存，主缺陷归属Edge-Loc或Scratch存在歧义。"
+    }
+  },
+  {
+    "item_id": "wbg0510",
+    "image_sha256": "607cff79475c6ec49d970d5922db318ecfdeffc0a9049dc0158948bc40c00180",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "一条自中部延伸至右下边缘的对角线状红色划痕链，走向连续并伴周边少量散点",
+      "radial_zone": "中间",
+      "clock_direction": "4-5点方向斜线",
+      "extent_r": null,
+      "caption_zh": "一条线状红色划痕自晶圆中部斜向延伸至右下边缘，伴少量周边散点，其余区域基本为绿色。",
+      "uncertainty": "低：线状划痕特征清晰，Scratch判断把握较大。"
+    }
+  },
+  {
+    "item_id": "wbg0511",
+    "image_sha256": "e4e9e88e94525e81501e02d1b569c088f02dd27312a344de19a7f6caa4097c18",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "右半侧中部红点局部聚集，内夹数条短斜线状排列，背景全片另有较均匀散点",
+      "radial_zone": "中间",
+      "clock_direction": "3-5点",
+      "extent_r": null,
+      "caption_zh": "右半侧中部出现中等密度的红点局部聚集并夹有短斜线链，其余区域红点随机散布且密度较低。",
+      "uncertainty": "中：聚集不甚致密且含线状成分，Loc与Scratch、Random之间界定模糊。"
+    }
+  }
+]

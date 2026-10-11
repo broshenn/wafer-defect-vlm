@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Near_full\",\"morphology\":\"晶圆绝大部分die为红色失效，仅底部边缘及左侧边缘可见少量绿色合格die\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"整个晶圆几乎全部失效呈红色，仅底部边缘残存少量绿色die\",\"uncertainty\":\"\"}",
+  "raw_sha256": "6dc1bc37bfd9e188bc8377228c4c6b279974d939571cf19f086d3cca72f3b911",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "6dc1bc37bfd9e188bc8377228c4c6b279974d939571cf19f086d3cca72f3b911",
+  "input_path": "raw/wbe0010.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"一条红色线状划痕从左上边缘经中心附近延伸至右侧边缘，另有零星红色小点散布","radial_zone":"global","clock_direction":"10点钟至3点钟","extent_r":null,"caption_zh":"红色失效die连成一条斜向划痕线，自左上约10点钟边缘延伸至右侧3点钟边缘，其余区域为绿色并有零星红点","uncertainty":"划痕在中部略有折弯，走向为左上至右略偏下"}

@@ -1,0 +1,1 @@
+{"morphology_zh":"多个孤立点状红色格点，整体散布，无团块、环、弧或细长带等聚集形态","main_location_zh":"全局分布，红点散布于晶圆中心、中部与边缘各区域，无明显主导方向","location_clock":[],"orientation_clock":[],"secondary_observations":["左上象限（约10点钟附近）有一个孤立黑色格点","边缘有少量零散红点但不成连续环"],"caption_zh":"红色失效点呈全局均匀散布的点状形态，无主导聚集结构","uncertainty":"散点密度均匀，无法可靠判定任何唯一位置钟点或延伸轴"}

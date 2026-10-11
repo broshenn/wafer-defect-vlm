@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Random\",\"morphology\":\"红色失效die与绿色合格die近似各半，红块随机散布全晶圆，无可见结构模式\",\"radial_zone\":\"global\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"失效die以随机方式遍布整个晶圆，红绿交错，无中心、环状或线状聚集\",\"uncertainty\":\"红色占比接近一半，整体密度偏高，但分布形态仍以随机为主\"}\n",
+  "raw_sha256": "5add2a7cb7ee534a8214c135a48046fdc6bfd00ec37f7e7c5e7cfcd78e2e9eaf",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "5add2a7cb7ee534a8214c135a48046fdc6bfd00ec37f7e7c5e7cfcd78e2e9eaf",
+  "input_path": "raw/wbe0079.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

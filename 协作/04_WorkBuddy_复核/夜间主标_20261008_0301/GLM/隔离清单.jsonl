@@ -1,0 +1,4 @@
+{"item_id": "wbg0146", "sample_id": "wafer_00009150_018", "reason": "与其后一图答案逐字节相同,但两图像素差64.56%,独立作答不可信", "action": "隔离,不重试不改写,待Claude/Kimi复核", "time": "2026-10-08T04:10+08:00"}
+{"item_id": "wbg0147", "sample_id": "wafer_00009150_021", "reason": "答案文本复用wbg0146,worker自认相同,像素差64.56%", "action": "隔离,不重试不改写,待Claude/Kimi复核", "time": "2026-10-08T04:10+08:00"}
+{"pointer_to": "wbg0146/wbg0147 隔离记录", "reviewer": "Codex协作agent(逐张查看四图)", "conclusion": "两组相同主要描述均能合理适配各自图案，未见必须因同文拒收的主要事实错误；wbg0129/0130的\"无可见簇状\"用语偏绝对，保留提醒", "status": "146/147暂保留为带复核记录的候选，由数据验收汇总决定接收，不新作答", "time": "2026-10-08T10:17+08:00"}
+{"artifact": "workers/_tmp_090_attempt1_worker自停作废.jsonl", "reason": "分片090第1次尝试worker自停作废,未进入核验,已由attempt2完成并核验", "action": "作废留档,不删除,不参与训练数据", "time": "2026-10-08"}

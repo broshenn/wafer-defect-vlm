@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Scratch\",\"morphology\":\"失效die整体稀疏散布，右上方可见一小段斜向线状红色聚集，其余红色点散布较随机\",\"radial_zone\":\"middle\",\"clock_direction\":\"1点钟\",\"extent_r\":null,\"caption_zh\":\"晶圆大部分为绿色合格die，红色失效die稀疏散布，右上方1-2点钟方向有一小段斜向线状聚集。\",\"uncertainty\":\"线状聚集较短且与随机散点并存，Scratch判断存在一定不确定性。\"}\n",
+  "raw_sha256": "9b07baeaf3910ab140232d0cd51c0d08c5338666882356948b2e0a77b8d60d71",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "9b07baeaf3910ab140232d0cd51c0d08c5338666882356948b2e0a77b8d60d71",
+  "input_path": "raw/wbe0085.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

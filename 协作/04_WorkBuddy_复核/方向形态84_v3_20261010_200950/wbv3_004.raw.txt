@@ -1,0 +1,1 @@
+{"morphology_zh":"散点状失效，密度中等","main_location_zh":"全局散布，边缘区域密度略高","location_clock":[],"orientation_clock":[],"secondary_observations":["右侧与底部边缘附近的红色点相对更密集"],"caption_zh":"红色失效格点全局散布，边缘附近密度略高，无明确单一主要结构","uncertainty":"散点分布较均匀，边缘加密趋势较弱，不构成明确结构"}

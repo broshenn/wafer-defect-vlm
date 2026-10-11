@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Edge_Ring","morphology":"晶圆边缘存在断续的红色缺陷环，内部有少量孤立红点","radial_zone":"edge","clock_direction":"null","extent_r":null,"caption_zh":"晶圆边缘区域存在断续分布的红色缺陷环，内部有少量孤立红点","uncertainty":""}

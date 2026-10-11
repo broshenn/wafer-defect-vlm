@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效 die 以单个或小块形式零散随机分布于整片晶圆，其间另见少量黑色小块，无聚集或几何图案","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效 die 随机散布于整个晶圆表面，无局部集中、环形或方向性形态。","uncertainty":"晶圆内部另见零星黑色小块，其含义未明（题面仅定义黑色为晶圆外），不影响整体随机分布的判断。"}

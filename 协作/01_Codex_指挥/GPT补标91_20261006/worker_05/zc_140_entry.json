@@ -1,0 +1,23 @@
+{
+  "item_id": "zc_140",
+  "sample_id": "wafer_00044168_006",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00044168_006.png",
+  "image_sha256": "ac705ed6bfa1f6aeff02e473b9b231c08e83595bfa661b6f97a0ff773a6321ee",
+  "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_05\\zc_140_raw.json",
+  "raw_sha256": "e57997ef210141ffde88e16e396a5a013f3bc0da6087b20d3501b565886b3fca",
+  "started_at": "2026-10-06T19:40:17.0615603+08:00",
+  "ended_at": "2026-10-06T19:40:31.767946+08:00",
+  "visual_read_count": 1,
+  "image_read_tool": "tools.view_image",
+  "image_detail": "original",
+  "format_check_exit_code": 0,
+  "checker_version": "format_v4_clock_range_20261003",
+  "model_id": "gpt-6.1-sol",
+  "reasoning_effort": "ultra",
+  "source": "gpt_model_annotation",
+  "backend_version": "未提供",
+  "token_usage": "未提供",
+  "old_zcode_raw_exists": false,
+  "prompt_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+  "answer_policy": "首次视觉回答；原文保留；未重试或改答"
+}

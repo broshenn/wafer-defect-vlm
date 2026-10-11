@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"左侧边缘内侧一小簇竖向短条状红色失效die，其余晶圆全绿","radial_zone":"edge","clock_direction":"9点钟","extent_r":null,"caption_zh":"晶圆左侧约9点钟方向边缘内侧见一由数个红色die构成的小簇局部失效，其余区域未见明显失效","uncertainty":"簇很小，类别在Loc与Edge_Loc之间有一定模糊性"}

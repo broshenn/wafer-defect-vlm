@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0281",
+    "image_sha256": "470e42e699ae7c197203300745d5fdf35d099ef5195f9ba535d6f834d20c30d2",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色失效die以散点形式密布于整个晶圆，与绿色pass die均匀混杂，无明确几何形状、团块边界或环带结构",
+      "radial_zone": "中心",
+      "clock_direction": "无",
+      "extent_r": null,
+      "caption_zh": "红色失效die呈散点状随机分布在整张晶圆上，中心一带密度略高，全图红die约占四成，无特定方位偏好。",
+      "uncertainty": "中：散点遍布全区且密度梯度微弱，径向区域归为中心带有主观性，纯随机与弱聚集形态不易严格区分。"
+    }
+  },
+  {
+    "item_id": "wbg0282",
+    "image_sha256": "d662ccbaba09b37526c6f94248c8008120a917610b8035d73b6df19ca0ba12b1",
+    "raw_answer": {
+      "defect_class": "Random",
+      "morphology": "红色失效die全圆散点分布，上半部中央可见一小片轻度密集区，其余位置零散点缀，不构成连续形状",
+      "radial_zone": "中心",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "红色失效die以散点方式随机覆盖整片晶圆，正上方中部略见密集成小簇，整体红die占比约两成。",
+      "uncertainty": "中：上部密集簇较弱且与背景散点连成一体，Random与Loc的边界判断存在摇摆。"
+    }
+  },
+  {
+    "item_id": "wbg0283",
+    "image_sha256": "e7a03a9465da59b615982af06fa754e5beddb1f158575eeb6b9fa1d310bc2045",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "晶圆中心区红色失效die高度密集成大片团块，并向正上方延伸，外围逐渐衰减为稀疏散点",
+      "radial_zone": "中心",
+      "clock_direction": "12点",
+      "extent_r": null,
+      "caption_zh": "红色失效die在晶圆中央密集成大团并向12点方向延展，团块内部几乎连片，周边红点稀疏，中心区覆盖率明显偏高。",
+      "uncertainty": "中：中心团块尺度偏大且与随机背景叠加，Center与Loc之间的归类存在模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0284",
+    "image_sha256": "5b85e1446223d82a2c65cbbfab9c963372366391842ac6d5b00923eaf50869f6",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "上部出现一片边界较清晰的致密红色失效团块，团块内部大面积连片，其余区域红die稀疏散布",
+      "radial_zone": "中间",
+      "clock_direction": "11-1点",
+      "extent_r": null,
+      "caption_zh": "晶圆上方11点至1点方位形成大片致密红色失效聚集区，横向跨度约占晶圆直径的三分之一，其余区域仅有零星红点。",
+      "uncertainty": "低：团块连片程度高、边界清楚，定位与归类把握较大。"
+    }
+  },
+  {
+    "item_id": "wbg0285",
+    "image_sha256": "9f3d85194f0c93fe606efc9e9dc17a74b3a0c569df3a77e39f7fc684ff005f74",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "红色失效die在圆心处紧缩成小而致密的核状团块，向四周迅速衰减，外围仅为零散红点背景",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色失效die集中于晶圆圆心形成紧凑小团块并向外快速稀疏，各方向分布近似对称，全图红die约占两成。",
+      "uncertainty": "中：中心核团尺寸较小，Center与小尺度Loc的区分不够确定。"
+    }
+  },
+  {
+    "item_id": "wbg0286",
+    "image_sha256": "4249fe2219c314f902fda2251bca59484a8137fc60b704968d361399a2a76d9e",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "红色失效die沿晶圆中部形成一条近似水平的连续带状/线状轨迹，宽度仅数个die却贯穿左右两侧",
+      "radial_zone": "中心",
+      "clock_direction": "3-9点",
+      "extent_r": null,
+      "caption_zh": "红色失效die沿水平方向在晶圆中部连成一条贯穿3点至9点的窄带，形似划痕轨迹，带宽约为几个die，带外红点稀疏。",
+      "uncertainty": "中：带体较宽且中段略有鼓包，与中心密集型缺陷或Loc的区分存在模糊。"
+    }
+  },
+  {
+    "item_id": "wbg0287",
+    "image_sha256": "e542e4dfbc68482a6a0d02c183b92e115ce76e143be2ac1d34b7a3b2c0885894",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "中心区域红色失效die密集并局部连片，密度自圆心向外逐渐下降并过渡为散点，整体接近圆形对称",
+      "radial_zone": "中心",
+      "clock_direction": "环形各向",
+      "extent_r": null,
+      "caption_zh": "红色失效die以圆心为核心密集连片并向外渐次稀疏，密集区半径约为晶圆半径的一半，全图红die占比约三成。",
+      "uncertainty": "中：中心密集与全区随机散点叠加明显，Center与Random的定量界限较难把握。"
+    }
+  }
+]

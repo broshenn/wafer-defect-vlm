@@ -1,0 +1,1 @@
+{"defect_class":"Scratch","morphology":"失效die整体稀疏散布，右上方可见一小段斜向线状红色聚集，其余红色点散布较随机","radial_zone":"middle","clock_direction":"1点钟","extent_r":null,"caption_zh":"晶圆大部分为绿色合格die，红色失效die稀疏散布，右上方1-2点钟方向有一小段斜向线状聚集。","uncertainty":"线状聚集较短且与随机散点并存，Scratch判断存在一定不确定性。"}

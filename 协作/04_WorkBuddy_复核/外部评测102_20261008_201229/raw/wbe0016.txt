@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"晶圆中央偏下有一块不规则的红色失效die聚集区，其余失效die孤立随机散布","radial_zone":"middle","clock_direction":"6点钟","extent_r":null,"caption_zh":"主要失效集中于晶圆中部偏下的不规则块状区域，周围伴随机分布的孤立失效点","uncertainty":"聚集区自中心附近向下延伸，中心与中部界限不完全清晰"}

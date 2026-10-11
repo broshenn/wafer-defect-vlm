@@ -1,0 +1,1 @@
+{"defect_class":"Random","morphology":"红色失效点大量散布于整个晶圆并与绿色合格die交错，无明显聚集形态","radial_zone":"global","clock_direction":null,"extent_r":null,"caption_zh":"红色失效点大量随机散布于整个晶圆，与绿色die交错分布。","uncertainty":""}

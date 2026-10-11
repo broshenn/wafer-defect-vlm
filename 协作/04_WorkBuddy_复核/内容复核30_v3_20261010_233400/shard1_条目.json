@@ -1,0 +1,55 @@
+{
+ "shard": "shard1",
+ "old_raw_dir": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/方向形态84_v3_20261010_200950",
+ "items": [
+  {
+   "review_id": "rv30_001",
+   "item_id": "wbv3_002",
+   "sample_id": "wafer_00002422_015",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00002422_015.png",
+   "image_sha256": "956f5f84e8e9dc19e38b0bdcc82a6888cb1c4ac173a42d92460cfcd264f5f3fd"
+  },
+  {
+   "review_id": "rv30_002",
+   "item_id": "wbv3_003",
+   "sample_id": "wafer_00003830_021",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00003830_021.png",
+   "image_sha256": "61f28a4e46b4a364672b3eb14b60c3bed89ab4ddb0115046fcd133f9ceaaaa56"
+  },
+  {
+   "review_id": "rv30_003",
+   "item_id": "wbv3_005",
+   "sample_id": "wafer_00005957_005",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00005957_005.png",
+   "image_sha256": "9503d361613ee5760bd7ab80b8be449e12317eb2a9d40d0994f2cdfb4bb78cb4"
+  },
+  {
+   "review_id": "rv30_004",
+   "item_id": "wbv3_006",
+   "sample_id": "wafer_00005998_017",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00005998_017.png",
+   "image_sha256": "2c550462b2cbf8ee5f96f576154b4efbf5a411c1ea81925cb429d365d96bc79e"
+  },
+  {
+   "review_id": "rv30_005",
+   "item_id": "wbv3_009",
+   "sample_id": "wafer_00005998_024",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00005998_024.png",
+   "image_sha256": "be86c8ca747a9bb047350bf54a686c3dcb14fd2469e45ef5e513fdb10898ea2e"
+  },
+  {
+   "review_id": "rv30_006",
+   "item_id": "wbv3_010",
+   "sample_id": "wafer_00006228_004",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00006228_004.png",
+   "image_sha256": "ce1de374a71aaa02306ad4d1faccb9181c879b9b81b167a713d17a214e401328"
+  },
+  {
+   "review_id": "rv30_007",
+   "item_id": "wbv3_014",
+   "sample_id": "wafer_00006467_008",
+   "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00006467_008.png",
+   "image_sha256": "2df751d52f57c60109dfa3845770edbed173becf48ee298aded06f48052b0157"
+  }
+ ]
+}

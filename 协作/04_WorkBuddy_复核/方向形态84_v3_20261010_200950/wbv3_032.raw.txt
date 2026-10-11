@@ -1,0 +1,1 @@
+{"morphology_zh":"边缘弧状聚集加全局零星散点","main_location_zh":"左下到底部边缘","location_clock":[7],"orientation_clock":[],"secondary_observations":["全局散布零星红色失效点"],"caption_zh":"红色失效主要沿左下到底部边缘聚集成弧状片，其余区域散布零星红点。","uncertainty":"聚集沿边缘约从6点延伸至8点钟方向，中心约在7点钟。"}

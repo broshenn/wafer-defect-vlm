@@ -1,0 +1,1 @@
+{"defect_class":"Center","morphology":"红色失效die密集聚集于晶圆中心区，呈不规则团块并伴全图零散分布","radial_zone":"center","clock_direction":null,"extent_r":null,"caption_zh":"中心区域有一片不规则密集红色失效团块，外围绿色区域散布零星红点","uncertainty":"中央团块边界不规则并向中部延伸，与周边散点无清晰分界"}

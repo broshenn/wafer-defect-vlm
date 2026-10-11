@@ -1,0 +1,31 @@
+{
+  "item_id": "zc_116",
+  "sample_id": "wafer_00042332_016",
+  "image_path": "D:\\pycode\\晶圆图研究\\data\\images\\wafer_00042332_016.png",
+  "image_sha256": "e88bf1933f083c7917a61343fdc111edfe9b9c4e9d63e7d455801cb010376eec",
+  "raw_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\GPT补标91_20261006\\worker_02\\zc_116_raw.json",
+  "raw_sha256": "0959381d058ec98da4bd8047508f03d6cf141dd3251e8bc59694a6aab24fc24c",
+  "visual_read_count": 1,
+  "visual_read_method": "tools.view_image(path=original_png, detail='original') then image(result.image_url)",
+  "checker_exit_code": 0,
+  "checker_version": "format_v4_clock_range_20261003",
+  "checker_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\验收_20261003_GLM180\\check_answer_v4.py",
+  "checker_sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2",
+  "prompt_path": "D:\\pycode\\晶圆图研究\\协作\\01_Codex_指挥\\prompt_image_only_v2_20261002.txt",
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "started_at_utc": "2026-10-06T11:32:15.972027+00:00",
+  "ended_at_utc": "2026-10-06T11:32:48.614596+00:00",
+  "model_call_config": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "backend_model": "未提供",
+    "temperature": "未提供",
+    "seed": "未提供",
+    "tokens": "未提供"
+  },
+  "source": "gpt_model_annotation",
+  "retry_count": 0,
+  "first_answer_preserved": true,
+  "human_review_status": "not_performed",
+  "context_scope": "blind_02 seven rows and locked image-only prompt; sequential single-image visual reads"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "item_id": "wbg0260",
+    "defect_class": "none",
+    "morphology": "晶圆良率极高，全片绿色为主，仅圆周边缘一整圈细窄红色 fail 带，内部可见少量零星红色单点散布",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "全片绿色 pass die 占绝对多数，仅边缘一圈细窄红色带且内部散布十几个孤立红点，覆盖面积极小，无缺陷聚集模式。",
+    "uncertainty": "低——图面清晰，散点稀疏随机且无任何空间聚集，边缘红带窄而均匀，倾向视为常规边缘效应而非缺陷类型。"
+  },
+  {
+    "item_id": "wbg0261",
+    "defect_class": "none",
+    "morphology": "高良率圆形图，绿色 die 几乎铺满全片，外缘环绕一圈较薄的红色带，内部红色 fail die 呈孤立的稀疏随机散点，左中部散点数量略多于其他区域",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "晶圆良率很高，绿色 pass die 布满全片，只在边缘出现一圈薄红色带，内部红点零散随机分布不成形，左中部略密但无聚集块。",
+    "uncertainty": "低——红点数量少且空间分布近似随机，未见成片或条带结构；边缘红带厚度均匀，判断为常规边缘环带。"
+  },
+  {
+    "item_id": "wbg0262",
+    "defect_class": "none",
+    "morphology": "全片以绿色 pass die 为主体，晶圆轮廓外缘附着薄层红色带，内部红点稀少且彼此孤立，左侧边缘附近红点稍密，但整体保持随机散布格局",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "绿色 pass die 占绝大多数，边缘一圈薄红色带，内部红 die 呈孤立散点状稀疏分布，总面积很小，无任何可见的聚集或几何图案。",
+    "uncertainty": "低——散点稀少、分布随机，不满足任何典型缺陷类别的形态特征；左侧边缘红点略多属轻微不均匀。"
+  },
+  {
+    "item_id": "wbg0263",
+    "defect_class": "none",
+    "morphology": "高良率晶圆图，绿色区域几乎覆盖整片，四周一圈红色边缘带，内部红色 fail die 为稀疏散点，其中左下半区散点密度略高于右半区，但仍为孤立点状",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "全片良率高，绿色为主，边缘一圈薄红带，内部红点稀疏散布、左下方向稍密但未形成连片或条带，缺陷覆盖程度很低。",
+    "uncertainty": "低——虽然左下散点略密，但密度差异轻微且点间彼此孤立，不足以判定为 Loc 类聚集，维持 none 判断。"
+  },
+  {
+    "item_id": "wbg0264",
+    "defect_class": "Loc",
+    "morphology": "左下方出现一大片连绵的红色 fail 区域，从左下边缘向晶圆内部延伸至中下部，边界不规则呈块状聚集，其余区域绿色为主并夹杂少量孤立红点",
+    "radial_zone": "边缘",
+    "clock_direction": "7-9点",
+    "extent_r": null,
+    "caption_zh": "晶圆左下方 7 至 9 点方向有大片连续红色 fail 区，自边缘楔入内部延伸到中下部，面积约占全片四分之一，其余区域仍以绿色为主伴少量散点。",
+    "uncertainty": "中——fail 区深入内部较多，介于 Loc 与 Edge-Loc 之间，因内部连片面积大而倾向 Loc；块状边界不规则，也可能是边缘带与内部块状叠加。"
+  },
+  {
+    "item_id": "wbg0265",
+    "defect_class": "none",
+    "morphology": "绿色 pass die 几乎覆盖整个圆片，外围一圈薄红色边缘带（顶部略厚），内部红色 fail die 呈孤立散点，右上方散点密度略高于其余区域",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "晶圆整体良率高，绿色为主，边缘一圈薄红带且顶部略厚，内部红点稀疏随机、右上方向稍密但无成片聚集，缺陷占比很小。",
+    "uncertainty": "低——散点孤立且近似随机分布，顶部边缘红带略厚仍属窄带范畴，未见典型缺陷几何形态。"
+  },
+  {
+    "item_id": "wbg0266",
+    "defect_class": "none",
+    "morphology": "高良率图形，绿色 die 铺满绝大部分圆面，边缘一圈红色带（顶侧与右侧稍厚），内部红色 fail die 为稀疏散点，中上部及右侧散点略多，整体仍呈随机分布",
+    "radial_zone": "无",
+    "clock_direction": "无",
+    "extent_r": null,
+    "caption_zh": "绿色 pass die 占全片绝大多数，边缘一圈薄红带在顶部与右侧稍显增厚，内部红点稀疏散布、数量略多但无聚集结构，整体覆盖度低。",
+    "uncertainty": "低——内部散点密度略高但分布仍近似随机且无空间结构，边缘红带局部略厚不足以判定为 Edge-Ring。"
+  }
+]

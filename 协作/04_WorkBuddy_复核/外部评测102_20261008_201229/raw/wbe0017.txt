@@ -1,0 +1,1 @@
+{"defect_class":"Loc","morphology":"晶圆中下部及右下方向有若干红色失效die聚集块，其余失效die孤立散布全片","radial_zone":"middle","clock_direction":"4-6点钟","extent_r":null,"caption_zh":"主要失效聚集在晶圆中下部至右下的中部半径区域，右侧近边缘处也有块状聚集，其余区域散布孤立失效点","uncertainty":"聚集跨中部与近边缘两处，单一归属不明确"}

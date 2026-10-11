@@ -1,0 +1,1 @@
+{"morphology_zh":"大量红色点状失效格点密集散布，局部连成小团块","main_location_zh":"全局分布，遍布整片晶圆，中部偏右区域尤为密集","location_clock":[],"orientation_clock":[],"secondary_observations":["中部偏右存在几处较大的红色聚集"],"caption_zh":"整片晶圆密集散布红色失效格点并局部结成小团块，中部偏右更密集","uncertainty":"红点遍布全局且无单一主导结构，无法可靠判定唯一方向钟点"}

@@ -1,0 +1,21 @@
+{
+ "review_id":"rv30_021",
+ "item_id":"wbv3_049",
+ "sample_id":"wafer_00039560_008",
+ "image_sha256":"2289c7aa9168560e529e33eaf2a6d80a8002a808fcf67ed9efa33761d2138fae",
+ "original_raw_sha256":"09c225ec723d1c24d20069291e4679aa7caf516fb745e186f359cd1e40da3844",
+ "observation_raw_sha256":"a4720b2bad677a9a99744f3ce0bcfef9851bf2f55c79fcd4bb22806df6d868d2",
+ "model_display_name":"GLM-5.3-Flash",
+ "checks":{
+  "morphology_zh":{"verdict":"supported","evidence":"图上中心附近确有一片由多个相邻红点/小块组成的红色聚集，被审称'一团明显的红色失效团块'，本worker读为'较密集的松散团簇'；中央红色聚集真实存在，仅聚集紧密程度的刻画有差异，不构成明确矛盾。"},
+  "main_location_zh":{"verdict":"supported","evidence":"被审句称主要结构位于晶圆中心、散点全局分布；图上该聚集位于中心附近（略偏左），红点确为全局散布，相符。"},
+  "location_clock":{"verdict":"supported","evidence":"被审句为[]；聚集接近中心、偏离不明显，不填唯一钟点合理，独立观察同为[]。"},
+  "orientation_clock":{"verdict":"supported","evidence":"被审句为[]；图中无连续细长线状结构，中心聚集呈斑块/簇状，无延伸轴，不填合理。"},
+  "secondary_observations":{"verdict":"supported","evidence":"被审句提到全片零星红点与边缘附近若干小红簇；图上左缘9点、右缘3点、右上1-2点、下缘6点附近均有贴边红斑或小簇，内部散点遍布，均可核实。"},
+  "caption_zh":{"verdict":"supported","evidence":"被审句概括为中心有一团失效团块、全片散布红点；中心聚集与全局散点均存在，概括成立（聚集紧密程度刻画见morphology分歧说明）。"},
+  "uncertainty":{"verdict":"not_applicable","evidence":"被审原答uncertainty为空字符串；其中心聚集刻画与本worker存在紧密程度上的分歧，但被审未作相关声明，该字段本身无可核对象。"}
+ },
+ "overall":"usable",
+ "suggested_revision":"建议在uncertainty中补充：中心聚集由多个相邻红点组成、边界模糊，与周围散点界限不清晰，位置略偏左但接近中心。",
+ "uncertainty":"分歧点在中心聚集的形态刻画：被审称'明显的红色失效团块'，本worker读为'较密集的松散团簇（未见实心大块）'。两者针对同一处中心偏左的红色聚集，属紧密程度刻画的程度差异，非图面事实矛盾。"
+}

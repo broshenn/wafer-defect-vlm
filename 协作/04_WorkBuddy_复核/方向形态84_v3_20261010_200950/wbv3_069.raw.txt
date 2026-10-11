@@ -1,0 +1,1 @@
+{"morphology_zh":"散布的红色小方块点状失效格点","main_location_zh":"整个片内全局稀疏分布，无明显偏离中心的团块","location_clock":[],"orientation_clock":[],"secondary_observations":["右侧边缘及左下边缘附近有零星红色格点"],"caption_zh":"片内全局稀疏散布红色小方块失效格点，无明显聚集或线状结构","uncertainty":"散点稀疏且近似均匀，无法确认是否存在局部聚集"}

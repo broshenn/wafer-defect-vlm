@@ -1,0 +1,18 @@
+{"checkpoint":1,"after_shard":"040","items_done":"wbg0001-0280","rows":280,"note":"新包031-040全部完成;旧包210条含在内;累计280行=280唯一;隔离:wbg0146/0147;近重复观察:wbg0129/0130","time_basis":"2026-10-08"}
+{"checkpoint":2,"after_shard":"050","items_done":"wbg0001-0350","rows":350,"note":"新包031-050完成(140图);累计350行=350唯一;隔离:wbg0146/0147;近重复观察:wbg0129/0130;无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":3,"after_shard":"060","items_done":"wbg0001-0420","rows":420,"note":"新包031-060完成(210图);累计420行=420唯一;隔离:wbg0146/0147;近重复观察:wbg0129/0130;修复:041恢复落盘/054补image_sha;无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":4,"after_shard":"070","items_done":"wbg0001-0490","rows":490,"note":"新包031-070完成(280图);累计490行=490唯一;隔离:wbg0146/0147;近重复观察:wbg0129/0130;修复:041恢复落盘/054补image_sha;无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":5,"after_shard":"080","items_done":"wbg0001-0560","rows":560,"note":"无新增答案重复;080最终文件缺失按恢复协议从_tmp_080.json补落盘(哈希对照盲包逐一通过)","time_basis":"2026-10-08"}
+{"checkpoint":6,"after_shard":"090","items_done":"wbg0001-0630","rows":630,"note":"090两次尝试:attempt1作废隔离(见会话账目),attempt2核验通过;无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":7,"after_shard":"100","items_done":"wbg0001-0700","rows":700,"note":"过半里程碑;无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":8,"after_shard":"110","items_done":"wbg0001-0770","rows":770,"note":"无新增答案重复","time_basis":"2026-10-08"}
+{"checkpoint":9,"after_shard":"120","items_done":"wbg0001-0840","rows":840,"dup_known":["wbg0129/0130","wbg0146/0147"],"time":"2026-10-08"}
+{"checkpoint":10,"after_shard":"130","items_done":"wbg0001-0910","rows":910,"dup_known":["wbg0129/0130","wbg0146/0147"],"time":"2026-10-08"}
+{"checkpoint":11,"after_shard":"140","items_done":"wbg0001-0980","rows":980,"dup_known":["wbg0129/0130","wbg0146/0147"],"time":"2026-10-08"}
+{"checkpoint":12,"after_shard":"150","items_done":"wbg0001-1050","rows":1050,"dup_known":["wbg0129/0130","wbg0146/0147"],"time":"2026-10-08"}
+{"checkpoint":13,"after_shard":"160","items_done":"wbg0001-1120","rows":1120,"dup_known":["wbg0129/0130","wbg0146/0147"],"time":"2026-10-08"}
+{"checkpoint":14,"after_shard":"170","items_done":"wbg0001-1190","rows":1190,"unique_item":1190,"dup_answer_groups":["wbg0129/0130","wbg0146/0147"],"ts":"2026-10-08"}
+{"shard":"169","status":"done","items":"wbg1177-wbg1183","rows":7,"verified":"verify_shards.py 169 170","ts":"2026-10-08"}
+{"shard":"170","status":"done","items":"wbg1184-wbg1190","rows":7,"verified":"verify_shards.py 169 170","ts":"2026-10-08"}
+{"shard":"171","status":"dispatched","items":"wbg1191-wbg1197","ts":"2026-10-08"}
+{"shard":"172","status":"dispatched","items":"wbg1198-wbg1200(尾片3图)","ts":"2026-10-08"}

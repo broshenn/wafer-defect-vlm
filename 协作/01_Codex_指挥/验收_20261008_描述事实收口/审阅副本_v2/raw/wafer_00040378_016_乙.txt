@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Random","morphology":"红色与绿色像素随机交错分布，形成斑驳图案","radial_zone":"global","clock_direction":"null","extent_r":null,"caption_zh":"红色与绿色像素随机交错分布，形成斑驳图案","uncertainty":""}

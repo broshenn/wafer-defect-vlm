@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Donut","morphology":"中心区域呈环形分布的红色失效区，内部包含不规则红色块状结构","radial_zone":"center","clock_direction":"null","extent_r":null,"caption_zh":"中心区域呈现环形红色失效图案，内部包含不规则红色块状结构","uncertainty":""}

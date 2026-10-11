@@ -1,0 +1,72 @@
+[
+  {
+    "item_id": "wbg0316",
+    "defect_class": "Near-full",
+    "morphology": "红色fail die几乎铺满整个晶圆，仅在左侧偏上方位残留成片绿色pass区，外缘另有零星绿点，属大面积失效型",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die密布整个晶圆约九成面积并覆盖中心至边缘各径向区域，仅左侧9-11点方向边缘残留少量成片绿色pass区，整体呈近全坏分布。",
+    "uncertainty": "低——红色覆盖极广、残留pass区位置清晰，Near-full判断置信高。"
+  },
+  {
+    "item_id": "wbg0317",
+    "defect_class": "Random",
+    "morphology": "红色fail die以零散点和短小簇形式随机撒布于绿色pass底上，全圆密度大体均匀，无环状、局部成片或线状结构",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die以点状和小簇形式较均匀地散布在整个晶圆，约占总数三成，中心与边缘密度接近，无明显径向或方位聚集。",
+    "uncertainty": "低——随机散布模式典型，各方位密度差异小。"
+  },
+  {
+    "item_id": "wbg0318",
+    "defect_class": "Random",
+    "morphology": "绿色pass占绝对主体，红色fail die稀疏散点状零星分布全圆，右上方边缘略密并伴有一小段横向短串",
+    "radial_zone": "边缘",
+    "clock_direction": "1-3点",
+    "extent_r": null,
+    "caption_zh": "红色fail die以稀疏零散小点分布于整个晶圆、占比很小，其中右上方1-3点边缘略为密集并见一小段横向红点串，其余区域绿色为主。",
+    "uncertainty": "中——缺陷密度很低、模式偏弱，右上边缘略密但未构成明显的局部聚集或环带，归类存在一定歧义。"
+  },
+  {
+    "item_id": "wbg0319",
+    "defect_class": "Random",
+    "morphology": "红色fail die呈大小不一的不规则斑块与绿区犬牙交错，密布全圆约五成面积，无环状或线状结构",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die与绿色pass区不规则交错形成斑驳混合，密布整个晶圆约一半面积，中心与边缘密度相近、无明显方位偏聚。",
+    "uncertainty": "低——高密度随机混合特征明确，红绿占比接近且分布均匀。"
+  },
+  {
+    "item_id": "wbg0320",
+    "defect_class": "Center",
+    "morphology": "红色fail die在晶圆中央聚成致密连片大团块，向外密度递减，最外缘基本为绿色pass并点缀零星红点",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die密集聚集成位于晶圆中心、直径约占晶圆一半的致密团块，向外逐渐稀疏，外围以绿色pass为主，缺陷围绕中心大致各向对称。",
+    "uncertainty": "低——中心致密聚集特征清晰，向外过渡自然，Center判断置信高。"
+  },
+  {
+    "item_id": "wbg0321",
+    "defect_class": "Edge-Ring",
+    "morphology": "红色fail die沿晶圆最外圈形成宽度约1-2个die的细边缘环，环绕全周基本连续，内部绿色区域另散布少量孤立红点",
+    "radial_zone": "边缘",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die贴着晶圆外缘构成一圈细窄且基本连续的边缘环、全周分布，内部绿色区域仅见零星散点，整体失效占比很小。",
+    "uncertainty": "中——环较薄且局部略有断续，内部散点数量不算极少，Edge-Ring与随机散点叠加的判断存在少量歧义。"
+  },
+  {
+    "item_id": "wbg0322",
+    "defect_class": "Random",
+    "morphology": "红色fail die多为短横条与短竖条形小簇并夹杂孤立散点，较均匀地散布全圆，个别处似有断续竖向排列但未形成贯穿性划痕",
+    "radial_zone": "中心",
+    "clock_direction": "环形各向",
+    "extent_r": null,
+    "caption_zh": "红色fail die以短条状小簇和零散点形式较均匀地分布于整个晶圆、约占总数一成，中部沿竖轴略有连串倾向但无贯穿全圆的长线划痕。",
+    "uncertainty": "中——红块呈短条形且局部似有断续竖向排列，不排除弱划痕成分，但缺乏贯穿性长线证据。"
+  }
+]

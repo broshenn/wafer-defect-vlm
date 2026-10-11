@@ -1,0 +1,17 @@
+{
+  "strict_json": true,
+  "parse_status": "ok",
+  "schema_ok": true,
+  "schema_problems": [],
+  "contract_warnings": [],
+  "raw_text": "{\"defect_class\":\"Edge_Ring\",\"morphology\":\"边缘一圈大量红色失效呈带状分布，顶部边缘红色连片最严重，中心区域以绿色为主并夹杂零散红点\",\"radial_zone\":\"edge\",\"clock_direction\":null,\"extent_r\":null,\"caption_zh\":\"晶圆边缘一圈密集红色失效带，其中12点钟方向顶部边缘连片最重，中央相对完好\",\"uncertainty\":\"顶部边缘失效显著重于其他方向，不排除按顶部局部边缘失效归类\"}\n",
+  "raw_sha256": "87cb0a9e5d30fa71a548044dc62b7ea7e85915b60b1fc7a7b6bfba04dd1166f1",
+  "canonical_object_sha256": null,
+  "validator_sha256": "7d46c37f72bb8fd09488dd73754ad75e6a1b711d91a6f08f82e5b34026c0c0ff",
+  "scope": "仅结构/类型/域；不等于视觉事实正确或人工gold",
+  "input_sha256": "87cb0a9e5d30fa71a548044dc62b7ea7e85915b60b1fc7a7b6bfba04dd1166f1",
+  "input_path": "D:/pycode/晶圆图研究/协作/04_WorkBuddy_复核/外部评测102_20261008_201229/raw/wbe0045.txt",
+  "input_mode": "verbatim_text",
+  "prompt_file_sha256": "8a8315f785a2398ba5a823754c40b8a8658f89b79aad1a0dbd68058acb43cfda",
+  "prompt_hash_ok": true
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "item_id": "wbg0393",
+    "image_sha256": "1fe65d07cdf8e8c41b0a7c84ed24cf9ef2e0da87bf22f9cd59f6d9ae0146e3dc",
+    "raw_answer": {
+      "defect_class": "Center",
+      "morphology": "大面积不规则致密红色失效团块，核心覆盖晶圆中心并向右下方向延伸至中半径，团块内部夹杂少量绿色die，边缘一圈基本为绿色，外围另有零星孤立红点",
+      "radial_zone": "中心",
+      "clock_direction": "中心为主，略向右下（3-5点方向）延伸",
+      "extent_r": null,
+      "caption_zh": "晶圆中心偏右下有一块约覆盖三分之一直径的不规则致密红块，向中半径延伸，边缘环带基本完好。",
+      "uncertainty": "中：红块面积偏大且明显不对称，介于Center与Loc之间，倾向按核心居中判为Center。"
+    }
+  },
+  {
+    "item_id": "wbg0394",
+    "image_sha256": "3213040abf09458bc743f5f7c39b7dcfb7278c4fa2e93244c3460196d57b55bf",
+    "raw_answer": {
+      "defect_class": "Donut",
+      "morphology": "红色失效围绕中心形成一条宽而断续的环带，环带位于中半径处，顶部一段缺失，环带内部及中心区夹杂较多绿色die，外围绿环完好，另有少量散点红",
+      "radial_zone": "中间",
+      "clock_direction": "环形各向（顶部12点方向偏弱，左右9点与3点及下方较密）",
+      "extent_r": null,
+      "caption_zh": "中半径处一圈宽而不连续的红色环带围住相对较好的中心，顶部开口缺失，整体覆盖约两成。",
+      "uncertainty": "中：环带不完整且内部红绿混杂，与多点局部聚集难以严格区分，倾向判为Donut。"
+    }
+  },
+  {
+    "item_id": "wbg0395",
+    "image_sha256": "e78d1b03f994a44ca2a5519906f043ade65c10641636b27cec01d53a72cbf032",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "一片边界不规则的大块致密红色聚集区，位于晶圆中上部并横向延展至右缘，块体内部夹杂少量绿色die，下半部基本全绿仅有零散红点",
+      "radial_zone": "中心",
+      "clock_direction": "12点到3点方向（偏右上）",
+      "extent_r": null,
+      "caption_zh": "晶圆中上部至右缘有一大片致密红色失效块，占据约四分之一到三分之一圆面，下半部基本完好。",
+      "uncertainty": "低：聚集区边界清晰、位置明确，Loc特征典型。"
+    }
+  },
+  {
+    "item_id": "wbg0396",
+    "image_sha256": "7db0a0cda8d6d6c39c1343c0bb4c63d5cc50236adac931c750bb0418f909a8ea",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "右上方有一条细长斜向红线划痕，下缘及右缘另有几段极短红色线痕和小点簇，其余为零星孤立红散点，整体以绿色为主，失效覆盖率极低",
+      "radial_zone": "边缘",
+      "clock_direction": "1-2点方向为主，5-6点边缘少量",
+      "extent_r": null,
+      "caption_zh": "几乎全绿的晶圆仅在右上缘见一两条细斜划痕，下缘有零星短痕与散点，失效面积不到百分之二。",
+      "uncertainty": "高：失效数量极少且线痕短小，Scratch与Random/none界限模糊，倾向依最显眼的线状痕迹判为Scratch。"
+    }
+  },
+  {
+    "item_id": "wbg0397",
+    "image_sha256": "9075b2ad9b72419b7a90c6a96bec2781cde1b11d17780806192b4c14895d8ac3",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "多条大致平行的细线状红色划痕沿西北-东南对角走向散布于全圆各处，线条细短断续，伴少量孤立红散点，整体绿色为主，覆盖率低",
+      "radial_zone": "中间",
+      "clock_direction": "多点散布（约10点、中央偏4点、7-8点、右缘3点等多条），无单一主方位",
+      "extent_r": null,
+      "caption_zh": "多条近平行的对角向细划痕贯穿晶圆中部并延伸到边缘，夹杂零散红点，总覆盖面很小。",
+      "uncertainty": "低：线状痕迹清晰可辨，多线平行划痕的Scratch特征明确。"
+    }
+  },
+  {
+    "item_id": "wbg0398",
+    "image_sha256": "eead78820967fa52994e24b83fd661ffde91c306ac64b823d18e1fcd3f6e2102",
+    "raw_answer": {
+      "defect_class": "Scratch",
+      "morphology": "多条对角走向（西北-东南）的细红色划痕分散在全圆，另有右缘一小簇稍密集的红点聚集，其余为稀疏孤立红散点，绿色占绝对主体",
+      "radial_zone": "中间",
+      "clock_direction": "多点散布（10-11点、1点、9点、7点及右缘4点附近），无单一主方位",
+      "extent_r": null,
+      "caption_zh": "晶圆上散布多条对角向细划痕并在右缘有一小簇红点，整体仍以绿色为主，覆盖面低。",
+      "uncertainty": "低：划痕线条清晰，但右缘小簇使其混有Edge-Loc色彩，主类仍判Scratch。"
+    }
+  },
+  {
+    "item_id": "wbg0399",
+    "image_sha256": "ae82f237a54daa01001c2d5e84ce29dd3d2dbe158d93cc19b73fc2d448b49477",
+    "raw_answer": {
+      "defect_class": "Loc",
+      "morphology": "下半部为大面积致密红色失效带，呈水平带状横贯整个下半圆，上缘边界近似一条水平直线且略参差，上半部绿色为主夹少量零散红点，红区内红绿混杂但以红为主",
+      "radial_zone": "边缘",
+      "clock_direction": "下半部3-9点方向带状（以6点为中心）",
+      "extent_r": null,
+      "caption_zh": "晶圆下半部被一片横贯左右的致密红色失效带占据，约覆盖一半圆面，上半部基本完好。",
+      "uncertainty": "低：带状结构清晰、上界明显，半圆型大面积局部失效判为Loc依据充分。"
+    }
+  }
+]

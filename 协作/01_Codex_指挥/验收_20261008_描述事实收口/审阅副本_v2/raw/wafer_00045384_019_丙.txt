@@ -1,0 +1,5 @@
+<think>
+
+</think>
+
+{"defect_class":"Donut","morphology":"环形","radial_zone":"middle","clock_direction":"null","extent_r":null,"caption_zh":"晶圆中部存在断续环形分布的红色缺陷，中心区域缺陷较少，边缘也有少量散在缺陷。","uncertainty":"环形结构在径向和角度上均不连续，存在局部聚集和孤立点。"}

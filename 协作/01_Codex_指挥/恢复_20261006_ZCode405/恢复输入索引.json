@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-06",
+  "author": "Codex",
+  "original_index_path": "协作\\02_ClaudeCode_实操\\ZCode标注准备_20261006\\zcode_input_index.json",
+  "original_index_sha256": "c2405a22ca2a3a8a71eef59773b13340e78514c5b83c67044adf277118a1db55",
+  "original_run": "协作\\03_ZCode_标注\\扩容198_20261006_165855",
+  "completed": {
+    "file": "已保存107_恢复核验.json",
+    "sha256": "168eae69e03bbe04f67d6209b9e63b96eba380da3c1c4a4a570c52cc01b2d851",
+    "n": 107
+  },
+  "resume_inputs": {
+    "file": "续标73_无答案.jsonl",
+    "sha256": "4e6933b7e77f80213ae9892c9a702efed727ab4ebfcbdc73e02170f9d112b6c0",
+    "n": 73
+  },
+  "uncertain_do_not_retry": {
+    "file": "状态待核18_不可自动重试.jsonl",
+    "sha256": "a581ea53cc11c8fb88dcdda8db1ec2c2c9d20c82d5864c41aee3431c03b2920c",
+    "n": 18
+  },
+  "batches": [
+    {
+      "file": "resume_01.jsonl",
+      "sha256": "06cc5129ad0a233e2a2da40af1e1ee749ae0069a771e9a591a09a450aa761e61",
+      "n": 7
+    },
+    {
+      "file": "resume_02.jsonl",
+      "sha256": "5b4d0f99c8527229a3e06773f9fd5dce0e514123b3c415eb479c664f4c8aacdc",
+      "n": 7
+    },
+    {
+      "file": "resume_03.jsonl",
+      "sha256": "ed35e2e4b9e69330f5e152492860453da32b031633c7fbd128a0bfb70ba08a56",
+      "n": 7
+    },
+    {
+      "file": "resume_04.jsonl",
+      "sha256": "dc6101f2b2baa70d35ec2fd868b2869c2bdb83929d1e640a019e3e866333e953",
+      "n": 7
+    },
+    {
+      "file": "resume_05.jsonl",
+      "sha256": "56aadefdfeea6b096271e8afb79460e3fda6e7664063330915085ea1af7f849b",
+      "n": 7
+    },
+    {
+      "file": "resume_06.jsonl",
+      "sha256": "eab677648080646d1866e6710820edf19218119c7ed738d90d1fbe7fb4dee713",
+      "n": 7
+    },
+    {
+      "file": "resume_07.jsonl",
+      "sha256": "34779919ef448e3e05739e6f3474f0aac837aca5860e171122b997b01653bc20",
+      "n": 7
+    },
+    {
+      "file": "resume_08.jsonl",
+      "sha256": "01c9105a0ab2f390e8152eae4b08b72b540d7a6c6fdcf8d3e7ffdaef436c0a03",
+      "n": 7
+    },
+    {
+      "file": "resume_09.jsonl",
+      "sha256": "2187fd5a69dfa567b4fbaae654de98a3aac4b973672122486c8459dd6e9e4a04",
+      "n": 7
+    },
+    {
+      "file": "resume_10.jsonl",
+      "sha256": "c60045b2f3e4891a33299d32d7097dbe1fb197b9f87633a7ada2a85f3e8220b3",
+      "n": 7
+    },
+    {
+      "file": "resume_11.jsonl",
+      "sha256": "caabb7030d731aab47945daf2d2d7f92dec93449a7f4344b22256c40026f2f2f",
+      "n": 3
+    }
+  ],
+  "scope": "Only 73 undispatched items according to user-provided dispatch transcript; do not repeat 107 saved answers or 18 uncertain attempts.",
+  "prompt_path": "协作/01_Codex_指挥/prompt_image_only_v2_20261002.txt",
+  "prompt_sha256": "7df73031ee1a30dfb018dbb2417f505ea9ff139280307bce2934de604119954a",
+  "checker_path": "协作/01_Codex_指挥/验收_20261003_GLM180/check_answer_v4.py",
+  "checker_sha256": "6a2db3c69685c622fdb18c7407505902f26a18ae9d787c0e4ddec9063677fdf2",
+  "checker_v3_path": "协作/02_ClaudeCode_实操/口径修正与准备_20261002-021207/check_answer_v3.py",
+  "checker_v3_sha256": "794a254e005eaa232362c539817abde98a1c2406ecb52574b9e9edb35303ec55",
+  "old_raw_106_note": "raw saved and format passes; original entry missing, no image retry"
+}

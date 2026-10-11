@@ -1,0 +1,1 @@
+{"morphology_zh":"全局散布的红色小点，无集中团块或线条","main_location_zh":"红色格点全局稀疏散布于整片晶圆，边缘与中部均有少量分布","location_clock":[],"orientation_clock":[],"secondary_observations":["边缘处红点略多于中心区域，但无成环或成弧结构"],"caption_zh":"整片晶圆基本合格，红色失效格点呈全局稀疏点状散布，无明显主要结构","uncertainty":"红点分布较为均匀稀疏，无法确定任何偏离中心的主要方向"}
