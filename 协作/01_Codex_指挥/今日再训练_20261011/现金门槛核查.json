@@ -1,0 +1,20 @@
+{
+  "cash_policy": "retain_project_cumulative_rental_cap",
+  "project_cumulative_cap_CNY": 30,
+  "new_cap_10_CNY_rejected": true,
+  "user_reports_available_account_funds": true,
+  "actual_project_rental_spend": "not_provided_in_existing_records",
+  "current_GPU_hourly_price": "not_provided",
+  "platform_billing_access": "not_available; saved connection files are SSH access only",
+  "billing_sources_checked": [
+    "协作/01_Codex_指挥/自动接续_20261009/租机收尾回执.json",
+    "协作/02_ClaudeCode_实操/描述事实验收_20261008_1911/给Codex的回报_租卡D段完成.md",
+    "协作/02_ClaudeCode_实操/56图候选补测与最终结项_20261009/运行合同与资源账.json"
+  ],
+  "GPU_restored_by_Codex": false,
+  "new_GPU_runs": 0,
+  "required_input": "actual cumulative wafer-project rental cost and current GPU hourly price",
+  "is_current_execution_blocker": false,
+  "user_latest_instruction": "Do not gate this authorized short experiment on price checks",
+  "superseded_by": "AGENTS.md section 18.31"
+}

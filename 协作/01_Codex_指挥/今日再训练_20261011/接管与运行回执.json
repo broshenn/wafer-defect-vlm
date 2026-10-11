@@ -1,0 +1,16 @@
+{
+  "executor": "Codex",
+  "user_direct_implementation_authorized": true,
+  "handoff_attachment_sha256": "87361a97b411e6f765c979b07cbb300ad7511c99dfae5d473546e31aa0375343",
+  "price_gate_revoked_by_user": true,
+  "credentials_stored_outside_repository": true,
+  "original_proposal_joint_auxiliary": "not_run_superseded_by_class_preserving_replay",
+  "actual_candidate": "radial_replay_sft_v4b_s3407",
+  "instance_switch_interrupted_first_attempt": true,
+  "first_attempt_last_observed_step": "9/256",
+  "interruption_exact_stop_time": "not_verified",
+  "second_attempt_formal_training_started": true,
+  "formal_steps": 256,
+  "evaluation_then_independent_analysis": "pending",
+  "new_teacher_calls": 0
+}
