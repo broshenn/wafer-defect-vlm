@@ -24,6 +24,7 @@ def main() -> int:
     ap.add_argument("--train-jsonl", required=True)
     ap.add_argument("--test-jsonl", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--geom-jsonl", required=True, help="geom_all.jsonl：训练标签来源")
     ap.add_argument("--n-train", type=int, default=2000)
     ap.add_argument("--seed", type=int, default=3407)
     ap.add_argument("--limit", type=int, default=0, help="仅用于小样本试跑")
@@ -108,12 +109,12 @@ def main() -> int:
     Z_train = Xc @ W
     Z_test = (X_test - mu) @ W
 
-    # 探针标签（只对 TEST 三字段做评估；训练标签从 reference_json 取）
-    ytr = [json.loads(r["reference_json"]) for r in train_rows]
+    # 探针训练标签来自 geom_all.jsonl（sft_meta 只有 id/类/图；TEST 侧用 reference_json）
+    geo = {json.loads(l)["sample_id"]: json.loads(l) for l in open(a.geom_jsonl, encoding="utf-8") if l.strip()}
     tr_targets = {
-        "coverage_band": [r["coverage_band"] for r in ytr],
-        "red_mass_zones": [json.dumps(r["red_mass_zones"], sort_keys=True) for r in ytr],
-        "angular_type": [r["angular_type"] for r in ytr],
+        "coverage_band": [geo[r["sample_id"]]["coverage_band"] for r in train_rows],
+        "red_mass_zones": [json.dumps(geo[r["sample_id"]]["red_mass_zones"], sort_keys=True) for r in train_rows],
+        "angular_type": [geo[r["sample_id"]]["angular_type"] for r in train_rows],
     }
     try:
         from sklearn.linear_model import LogisticRegression
@@ -149,8 +150,8 @@ def main() -> int:
     results = {}
     for field, labels in tr_targets.items():
         ytr_clean = [lab if lab != "unknown" else "__unknown__" for lab in labels]
-        yte = [json.dumps(r["red_mass_zones"], sort_keys=True) if field == "red_mass_zones"
-               else r[field] for r in y_test]
+        idx = {"coverage_band": 0, "red_mass_zones": 1, "angular_type": 2}[field]
+        yte = [t[idx] for t in y_test]   # extract() 返回元组 (band, zones_json, angular)
         yte = [t if t != "unknown" else "__unknown__" for t in yte]
         clf = make_clf().fit(Z_train, ytr_clean)
         pred = clf.predict(Z_test)

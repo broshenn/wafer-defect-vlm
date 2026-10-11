@@ -31,3 +31,4 @@
 - 02:57 巡检1：调度器活；DONE 6 / RUNNING 7 / PENDING 113。SFT：S1 85/375@7.03s/it、S2 76/375@7.51、S1p 83/375@6.85、S0 30/375@18.33（S0 全主任务长序列，速率属正常）。评测：base_select(g5)、base_test200(g7)、L_test200(g6) 并行中。GPU1-7 均在用。
 - 03:06 巡检2：DONE 12 / RUNNING 6 / PENDING+SKIPPED 余下。**gate_S3 FAILED（rc=1）**：swift 数据集报 "Failed to retrieve the dataset"（896 图 + IMAGE_MAX_TOKEN_NUM=1024 令样本超 max_length=2048）；S3 是 P2 线 → 按 0.4 表标 failed，所有 S3 评测连锁 SKIPPED，不动合同数值（max_length 固定 2048）。sft_S4（P2）gate 已过、在 g6 训练中。四条主线 S1/S0/S2/S1p 进入主任务长序列段 ~18.5s/it，预计 04:20-04:45 完成。eval_base_select/base_test200/L_select/L_test200 已完成，base_rot100 运行中。
 - 03:15 巡检3：SFT 四线 44-45%（~18.5s/it，ETA 04:20-04:45）；probe（P2）首跑 FAILED（视觉塔 grid_thw 在 CPU + 返回输出对象两处接口问题）→ 两处小修后已用空闲 g5 单跑，特征提取进行中（700/2000）。其余照常。
+- 03:36-04:00 巡检4-7：SFT 四线稳定（18.3-18.9s/it）；probe 经 4 处接口小修后跑完（2000×19584 特征；coverage 0.3277/zones 0.3243/angular 0.1715，均低于多数类基线——按合同配方如实记录）；sft_S4（P2）g6 训练中。
