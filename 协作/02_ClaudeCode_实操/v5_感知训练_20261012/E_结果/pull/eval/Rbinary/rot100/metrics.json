@@ -94,6 +94,23 @@
   "raw_legal_rate": 0.0
  },
  "consistency_mean": 0.9,
- "raw_file": "/data/renjinyao/v5/eval/Rbinary/rot100/Rbinary_raw.jsonl",
- "ref_file": "/data/renjinyao/v5/data/rot100_main.jsonl"
+ "rot_pair": {
+  "coverage_unchanged": {
+   "same": 95,
+   "n": 100,
+   "rate": 0.95
+  },
+  "zones_unchanged": {
+   "same": 96,
+   "n": 100,
+   "rate": 0.96
+  },
+  "sector_plus3": {
+   "ok": 1,
+   "n": 1,
+   "rate": 1.0
+  }
+ },
+ "raw_file": "eval/Rbinary/rot100/Rbinary_raw.jsonl",
+ "ref_file": "data/rot100_main.jsonl"
 }

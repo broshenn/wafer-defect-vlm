@@ -249,8 +249,7 @@ def main():
                  (D / "test200_main.jsonl").read_text(encoding="utf-8").splitlines() if l.strip()]
         n_sec = sum(1 for r in refs2 if r["angular_type"] in ("single", "opposed"))
         md.append(f"**扇区指标分母提示**：TEST200 中参考为 single/opposed 的样本仅 {n_sec} 个"
-                  f"（几何定义下 single 全库仅 47/5904）——扇区正确率欠功效，仅作参考。
-")
+                  f"（几何定义下 single 全库仅 47/5904）——扇区正确率欠功效，仅作参考。" + chr(10))
     except Exception:
         pass
 
