@@ -1,0 +1,9 @@
+{
+ "n_candidates": 320,
+ "n_selected": 160,
+ "n_filled_from_remainder": 0,
+ "pass@1": 0.7,
+ "pass@4": 0.9313,
+ "zero_variance": 0,
+ "note": "pass 定义：几何三字段全对（coverage_band/red_mass_zones/angular_type，unknown 字段不参评）"
+}

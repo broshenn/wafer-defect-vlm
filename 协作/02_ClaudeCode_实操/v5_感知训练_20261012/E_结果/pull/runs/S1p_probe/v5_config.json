@@ -1,0 +1,43 @@
+{
+ "line": "S1p",
+ "mode": "sft_base",
+ "steps": 2,
+ "model_start": "/data/renjinyao/models/Qwen3.5-9B",
+ "start_adapter": null,
+ "start_adapter_sha256": null,
+ "data": "/data/renjinyao/v5/data/sft_S1p.jsonl",
+ "data_sha256": "61952e6076f8da1825981a58eedb2e50419a967a3b6b82411d724ddfef74a362",
+ "n_rows": 12000,
+ "reward_mode": null,
+ "dynamic_sample": "n/a(sft)",
+ "config_sha256": "45bb894d5a660cd1e5af4e61ab9716601f5833c44d9a5bdde5e944f82fe551a0",
+ "seconds": 44.969029,
+ "device_minutes": 0.749,
+ "peak_allocated_GiB": 21.467,
+ "checkpoints": [
+  "/data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2"
+ ],
+ "final_checkpoint": "/data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2",
+ "selection": "末步预选（不挑最好 checkpoint）",
+ "cuda_visible_devices": "GPU-38b5bc3e-362b-bdc3-3299-226f66204527",
+ "device": "NVIDIA GeForce RTX 5090",
+ "world_size": 1,
+ "finished_at": "2026-10-12T02:47:13.498953",
+ "trainer_actual_args": {
+  "per_device_train_batch_size": 8,
+  "max_steps": 2,
+  "learning_rate": 0.0001,
+  "gradient_accumulation_steps": 4,
+  "seed": 3408,
+  "data_seed": 3408,
+  "train_dataloader_shuffle": false,
+  "resume_only_model": false,
+  "dataset_shuffle": false,
+  "temperature": 0.0,
+  "adapters": [],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "lora_rank": 16,
+  "lora_alpha": 32
+ }
+}

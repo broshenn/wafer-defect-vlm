@@ -1,0 +1,48 @@
+{
+ "line": "RSFT",
+ "mode": "sft_cont",
+ "steps": 160,
+ "model_start": "/data/renjinyao/models/Qwen3.5-9B",
+ "start_adapter": "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375",
+ "start_adapter_sha256": "8047875d6585a29b7cfb04d972d842f683edc0082fec700317e8471a4f83d731",
+ "data": "/data/renjinyao/v5/data/rsft_pool320.jsonl",
+ "data_sha256": "71c1c62ea9a570ee00b010ce87a8c4c86c1f94694e8dbc6d6d699977128d2659",
+ "n_rows": 640,
+ "reward_mode": null,
+ "dynamic_sample": "n/a(sft)",
+ "config_sha256": "07c7082b79d602967510d58043e2ad72c6fcdcfa2c8831bc05c859309e207c0b",
+ "seconds": 1189.093305,
+ "device_minutes": 19.818,
+ "peak_allocated_GiB": 19.184,
+ "checkpoints": [
+  "/data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-120",
+  "/data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-160",
+  "/data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-40",
+  "/data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80"
+ ],
+ "final_checkpoint": "/data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-160",
+ "selection": "末步预选（不挑最好 checkpoint）",
+ "cuda_visible_devices": "GPU-dabee4a3-4ed7-8e5f-31b1-c946a6903b1c",
+ "device": "NVIDIA GeForce RTX 5090",
+ "world_size": 1,
+ "finished_at": "2026-10-12T06:08:07.130166",
+ "trainer_actual_args": {
+  "per_device_train_batch_size": 1,
+  "max_steps": 160,
+  "learning_rate": 1e-05,
+  "gradient_accumulation_steps": 4,
+  "seed": 3407,
+  "data_seed": 3407,
+  "train_dataloader_shuffle": false,
+  "resume_only_model": true,
+  "dataset_shuffle": false,
+  "temperature": 0.0,
+  "adapters": [
+   "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "lora_rank": 16,
+  "lora_alpha": 32
+ }
+}

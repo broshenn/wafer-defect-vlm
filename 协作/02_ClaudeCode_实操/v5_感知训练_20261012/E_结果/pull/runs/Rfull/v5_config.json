@@ -1,0 +1,58 @@
+{
+ "line": "Rfull",
+ "mode": "rl",
+ "steps": 160,
+ "model_start": "/data/renjinyao/models/Qwen3.5-9B",
+ "start_adapter": "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375",
+ "start_adapter_sha256": "8047875d6585a29b7cfb04d972d842f683edc0082fec700317e8471a4f83d731",
+ "data": "/data/renjinyao/v5/data/rl_pool320.jsonl",
+ "data_sha256": "893fd971aee8cbb443469c3bc3af38dba8c541ec93098d86e031d060e5c9210a",
+ "n_rows": 160,
+ "reward_mode": "full",
+ "dynamic_sample": "enabled",
+ "config_sha256": "a46a68b87516853c1685dfbd682b33f87ae87645974a0bb033db02e40b182198",
+ "seconds": 4270.117573,
+ "device_minutes": 71.169,
+ "peak_allocated_GiB": 20.108,
+ "checkpoints": [
+  "/data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-120",
+  "/data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-160",
+  "/data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-40",
+  "/data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80"
+ ],
+ "final_checkpoint": "/data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-160",
+ "selection": "末步预选（不挑最好 checkpoint）",
+ "cuda_visible_devices": "GPU-4e9dc330-5a64-d3f3-6bcb-82a3b660ead2",
+ "device": "NVIDIA GeForce RTX 5090",
+ "world_size": 1,
+ "finished_at": "2026-10-12T06:59:28.822895",
+ "trainer_actual_args": {
+  "per_device_train_batch_size": 1,
+  "max_steps": 160,
+  "learning_rate": 1e-05,
+  "gradient_accumulation_steps": 8,
+  "seed": 3407,
+  "data_seed": 3407,
+  "train_dataloader_shuffle": false,
+  "resume_only_model": true,
+  "dataset_shuffle": false,
+  "temperature": 1.0,
+  "adapters": [
+   "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "use_vllm": false,
+  "dynamic_sample": true,
+  "max_resample_times": 3,
+  "importance_sampling_level": "token",
+  "num_generations": 8,
+  "ref_adapters": [
+   "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375"
+  ],
+  "beta": 0.04,
+  "max_completion_length": 384
+ }
+}

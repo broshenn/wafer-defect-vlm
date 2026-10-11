@@ -1,0 +1,66 @@
+{
+ "kind": "CNN",
+ "impl": "torchvision ResNet18（torchvision 0.23.0+cu128）",
+ "epochs": 20,
+ "seed": 3407,
+ "class": {
+  "acc": 0.78268,
+  "macro_f1": 0.77234,
+  "per_class": {
+   "Center": {
+    "precision": 0.7311,
+    "recall": 0.9667,
+    "f1": 0.8325,
+    "support": 90
+   },
+   "Donut": {
+    "precision": 0.918,
+    "recall": 0.7568,
+    "f1": 0.8296,
+    "support": 74
+   },
+   "Edge_Loc": {
+    "precision": 0.7838,
+    "recall": 0.7342,
+    "f1": 0.7582,
+    "support": 79
+   },
+   "Edge_Ring": {
+    "precision": 1.0,
+    "recall": 0.9583,
+    "f1": 0.9787,
+    "support": 72
+   },
+   "Loc": {
+    "precision": 0.6,
+    "recall": 0.7125,
+    "f1": 0.6514,
+    "support": 80
+   },
+   "Near_full": {
+    "precision": 0.4412,
+    "recall": 0.9375,
+    "f1": 0.6,
+    "support": 16
+   },
+   "Random": {
+    "precision": 0.92,
+    "recall": 0.6053,
+    "f1": 0.7302,
+    "support": 76
+   },
+   "Scratch": {
+    "precision": 0.8644,
+    "recall": 0.6711,
+    "f1": 0.7556,
+    "support": 76
+   },
+   "none": {
+    "precision": 0.7857,
+    "recall": 0.8462,
+    "f1": 0.8148,
+    "support": 26
+   }
+  }
+ }
+}

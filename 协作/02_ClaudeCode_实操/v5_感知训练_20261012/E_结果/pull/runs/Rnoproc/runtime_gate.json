@@ -1,0 +1,18 @@
+{
+  "model_loading_gate": "passed",
+  "two_step_gate": "passed",
+  "mode": "rl",
+  "M0_sha256": "8047875d6585a29b7cfb04d972d842f683edc0082fec700317e8471a4f83d731",
+  "policy_equal_M0_tensor_count": 496,
+  "reference_equal_M0_tensor_count": 496,
+  "trainable_tensor_count": 496,
+  "step": 2,
+  "policy_changed_tensors": 496,
+  "nonzero_gradient_tensors": 496,
+  "forwards": {
+    "policy": 32,
+    "reference": 16,
+    "image": 51
+  },
+  "reference_unchanged_M0_tensor_count": 496
+}

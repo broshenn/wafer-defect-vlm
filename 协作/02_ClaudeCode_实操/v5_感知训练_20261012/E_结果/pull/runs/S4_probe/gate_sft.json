@@ -1,0 +1,15 @@
+{
+ "config": "configs/S4.json",
+ "ckpt": "/data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2",
+ "line": "S4",
+ "adapter_exists": true,
+ "n_keys": 496,
+ "visual_key_count": 0,
+ "visual_expect": "=0",
+ "lora_B_total": 248,
+ "lora_B_nonzero": 248,
+ "lora_B_half_nonzero": true,
+ "args_json_adapters": [],
+ "args_json_freeze_vit": true,
+ "passed": true
+}
