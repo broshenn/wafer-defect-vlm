@@ -29,3 +29,4 @@
 
 ## 巡检记录（服务器时间）
 - 02:57 巡检1：调度器活；DONE 6 / RUNNING 7 / PENDING 113。SFT：S1 85/375@7.03s/it、S2 76/375@7.51、S1p 83/375@6.85、S0 30/375@18.33（S0 全主任务长序列，速率属正常）。评测：base_select(g5)、base_test200(g7)、L_test200(g6) 并行中。GPU1-7 均在用。
+- 03:06 巡检2：DONE 12 / RUNNING 6 / PENDING+SKIPPED 余下。**gate_S3 FAILED（rc=1）**：swift 数据集报 "Failed to retrieve the dataset"（896 图 + IMAGE_MAX_TOKEN_NUM=1024 令样本超 max_length=2048）；S3 是 P2 线 → 按 0.4 表标 failed，所有 S3 评测连锁 SKIPPED，不动合同数值（max_length 固定 2048）。sft_S4（P2）gate 已过、在 g6 训练中。四条主线 S1/S0/S2/S1p 进入主任务长序列段 ~18.5s/it，预计 04:20-04:45 完成。eval_base_select/base_test200/L_select/L_test200 已完成，base_rot100 运行中。

@@ -59,3 +59,8 @@
 ## D13 2026-10-12 02:46 夜跑启动
 - 已释放全部占位、核验 GPU1–7 零进程后启动调度器（pid 3696693）；详见 D_夜跑/启动回执.md。
 - 实测 SFT 7.2s/step ≈ 单线 45 分钟，比冒烟估计更快；若一切顺利，全部任务预计 07:30-08:00 前收尾（硬截止 08:30 不变）。
+
+## D14 2026-10-12 03:06 gate_S3 失败：S3 线标 failed（P2）
+- 现象：S3 探针（896 图、IMAGE_MAX_TOKEN_NUM=1024）在 swift 数据集准备时报 "Failed to retrieve the dataset（increase max_length…）"——样本总 token 超 max_length=2048。
+- 选择：不改合同数值（max_length=2048 是合同 6.1 固定项），S3 线标 failed、不参选赢家、其评测连锁 SKIPPED；其余线照跑。S3 为 P2 线，不影响 P0/P1 主链。
+- 理由：0.4 表"某条线门槛失败 → 该线标 failed，其余线照跑"；P2 来不及就砍（0.3）。
