@@ -28,5 +28,95 @@
   "file": "sft_S1p.jsonl",
   "lines": 12000,
   "sha256": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd"
+ },
+ {
+  "file": "select200_main.jsonl",
+  "lines": 200,
+  "sha256": "86347f7a9e68d14d4d53fb0604b92f8901be32ead010ba1d23e2e41a759f3194"
+ },
+ {
+  "file": "test_main.jsonl",
+  "lines": 589,
+  "sha256": "765a65cab3a407a1f4c5d2678a202be8f3c83f465d66dd6758336e5cf3246677"
+ },
+ {
+  "file": "test200_main.jsonl",
+  "lines": 200,
+  "sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+ },
+ {
+  "file": "rot200_main.jsonl",
+  "lines": 200,
+  "sha256": "daedf21d6f146c99855a68e9d643ad4afe4fad3cbc4bce17e1ae152aec95b8a3"
+ },
+ {
+  "file": "rot100_main.jsonl",
+  "lines": 100,
+  "sha256": "660427547ee3d185bb5d4e972a386cba41f839320feedfe0a2a19b47a7b6572e"
+ },
+ {
+  "file": "shuf100_main.jsonl",
+  "lines": 100,
+  "sha256": "b303a2111042496c29535f7fb32cc95945628a3c69afd675aa52523148794b6f"
+ },
+ {
+  "file": "shuf50_main.jsonl",
+  "lines": 50,
+  "sha256": "b2f05c1f744f63b7b3fa90a54f866c1982386b5d77ceb8b04af9fea80d778949"
+ },
+ {
+  "file": "select200_main_x2.jsonl",
+  "lines": 200,
+  "sha256": "4672f65d1f9009ab6370b362e9e4ef618d81bda9e5d01137b5b6356bf4d0aff8"
+ },
+ {
+  "file": "test_main_x2.jsonl",
+  "lines": 589,
+  "sha256": "598975a6d85b01786ddd833c57fc59dcb4a8fb50d45ec61ae15e122c700559e3"
+ },
+ {
+  "file": "test200_main_x2.jsonl",
+  "lines": 200,
+  "sha256": "1fcf40dc76b7c598bc734e8ea9dc091ae5c6ec5c3941f28dd575743d32e74220"
+ },
+ {
+  "file": "rot200_main_x2.jsonl",
+  "lines": 200,
+  "sha256": "b571286a5108e87ff9dfb41971d997b3e8f4be33364a76609a6af7f801d1922e"
+ },
+ {
+  "file": "rot100_main_x2.jsonl",
+  "lines": 100,
+  "sha256": "d58f0dfc19199cb835a09118f0bae7143a41fd349d9e54fb1926541e5ac6656a"
+ },
+ {
+  "file": "shuf100_main_x2.jsonl",
+  "lines": 100,
+  "sha256": "37788c7ba8fdd2ae2319fb9f4eaa6117ebf3bce7b8d829d7fa4b1213aa2c7cbb"
+ },
+ {
+  "file": "shuf50_main_x2.jsonl",
+  "lines": 50,
+  "sha256": "cfa95068ce5fc72fbeb5a4b8aaabd2d3a53a462229adbcda0a1d3c8ad99293b8"
+ },
+ {
+  "file": "select200_L.jsonl",
+  "lines": 200,
+  "sha256": "5b22f7a1b68f4abd7b88e1d95e0d47fe8cf26badf1102e57080dcdc832c78d0b"
+ },
+ {
+  "file": "test_L.jsonl",
+  "lines": 589,
+  "sha256": "f7c5cb9b998c0ead997f7b53a9ffd6adf2b38ca49f27466ec247771379ad8fd3"
+ },
+ {
+  "file": "rl_candidates800.jsonl",
+  "lines": 320,
+  "sha256": "778530a97c3593133f90936a2d145170fc7c07407d6dd887e746ac5e1571d918"
+ },
+ {
+  "file": "rsft_rows_template.jsonl",
+  "lines": 1280,
+  "sha256": "61e7b7aba891f7fb364d2f55c602ebc2709ae935b1f90b217fa58c68e2327d0d"
  }
 ]

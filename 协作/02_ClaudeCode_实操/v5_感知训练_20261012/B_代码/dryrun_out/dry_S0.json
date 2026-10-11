@@ -1,0 +1,52 @@
+==============================================================================
+v5 train 2026-10-12T02:24:53.834140
+==============================================================================
+{
+ "params": {
+  "model": "/WS/models/Qwen3.5-9B",
+  "model_type": "qwen3_5",
+  "template": "qwen3_5",
+  "dataset": "/WS/v5/data/sft_S0.jsonl",
+  "tuner_type": "lora",
+  "target_modules": [
+   "all-linear"
+  ],
+  "freeze_vit": true,
+  "freeze_aligner": true,
+  "torch_dtype": "bfloat16",
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "learning_rate": 0.0001,
+  "max_steps": 375,
+  "max_length": 2048,
+  "gradient_checkpointing": true,
+  "seed": 3407,
+  "data_seed": 3407,
+  "dataset_shuffle": false,
+  "train_dataloader_shuffle": false,
+  "logging_steps": 1,
+  "save_strategy": "steps",
+  "save_steps": 125,
+  "save_total_limit": 4,
+  "output_dir": "dryrun_out/probe_S0",
+  "report_to": [],
+  "val_dataset": "/WS/v5/data/sft_S0.jsonl",
+  "per_device_eval_batch_size": 1,
+  "per_device_train_batch_size": 8,
+  "gradient_accumulation_steps": 4,
+  "warmup_ratio": 0.03,
+  "lr_scheduler_type": "cosine",
+  "dataloader_drop_last": false,
+  "eval_strategy": "no"
+ },
+ "meta": {
+  "line": "S0",
+  "mode": "sft_base",
+  "start_adapter": null,
+  "reward_mode": null,
+  "dynamic_sample": "n/a(sft)",
+  "config_sha256": "9ae31ae6f9cd65fa4c60f31566ad3495d89964c2b267d637ab5109a11a597f4d",
+  "winner": null
+ }
+}

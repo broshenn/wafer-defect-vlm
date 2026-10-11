@@ -1,0 +1,99 @@
+{
+ "kind": "main",
+ "n_ref": 5,
+ "n_attempted": 4,
+ "n_missing": 1,
+ "geoscore": 0.75,
+ "coverage": {
+  "exact_rate": 0.75,
+  "adj_rate": 0.75,
+  "n": 4
+ },
+ "zones": {
+  "exact_rate": 0.75,
+  "jaccard_mean": 0.75,
+  "n": 4
+ },
+ "angular_type": {
+  "acc": 0.75,
+  "n": 4
+ },
+ "sector": {
+  "acc": 0.5,
+  "n": 4
+ },
+ "measure_mae": {
+  "red_ratio": 0.0,
+  "zone_frac_l1": 0.0,
+  "R1": 0.0,
+  "R2": 0.0
+ },
+ "class": {
+  "acc": 0.5,
+  "macro_f1": 0.07407,
+  "per_class": {
+   "Center": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Donut": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Edge_Loc": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1": 0.6667,
+    "support": 4
+   },
+   "Edge_Ring": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Loc": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Near_full": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Random": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Scratch": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "none": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   }
+  },
+  "unknown_rate": 0.0
+ },
+ "format": {
+  "stripped_legal_rate": 0.75,
+  "raw_legal_rate": 0.75
+ },
+ "consistency_mean": 1.0,
+ "raw_file": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\tests\\fixtures\\score_raw.jsonl",
+ "ref_file": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\tests\\fixtures\\score_ref.jsonl"
+}

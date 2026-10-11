@@ -1,0 +1,65 @@
+==============================================================================
+v5 train 2026-10-12T02:24:55.997927
+==============================================================================
+{
+ "params": {
+  "model": "/WS/models/Qwen3.5-9B",
+  "model_type": "qwen3_5",
+  "template": "qwen3_5",
+  "dataset": "/WS/v5/data/rl_pool320.jsonl",
+  "tuner_type": "lora",
+  "target_modules": [
+   "all-linear"
+  ],
+  "freeze_vit": null,
+  "freeze_aligner": null,
+  "torch_dtype": "bfloat16",
+  "lora_rank": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "learning_rate": 1e-05,
+  "max_steps": 160,
+  "max_length": 2048,
+  "gradient_checkpointing": true,
+  "seed": 3408,
+  "data_seed": 3408,
+  "dataset_shuffle": false,
+  "train_dataloader_shuffle": false,
+  "logging_steps": 1,
+  "save_strategy": "steps",
+  "save_steps": 40,
+  "save_total_limit": 4,
+  "output_dir": "dryrun_out/probe_Rfullp",
+  "report_to": [],
+  "rlhf_type": "grpo",
+  "use_vllm": false,
+  "num_generations": 8,
+  "temperature": 1.0,
+  "top_p": 1.0,
+  "beta": 0.04,
+  "epsilon": 0.2,
+  "importance_sampling_level": "token",
+  "num_iterations": 1,
+  "max_completion_length": 384,
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "warmup_ratio": 0,
+  "lr_scheduler_type": "cosine",
+  "adapters": [
+   "<FROM_WINNER:winner.json#checkpoint>"
+  ],
+  "resume_only_model": true,
+  "ref_adapters": [
+   "<FROM_WINNER:winner.json#checkpoint>"
+  ]
+ },
+ "meta": {
+  "line": "Rfullp",
+  "mode": "rl",
+  "start_adapter": "<FROM_WINNER:winner.json#checkpoint>",
+  "reward_mode": "full",
+  "dynamic_sample": "checked-at-runtime",
+  "config_sha256": "9db019137515a06d081f1dbf4e5282eb8bd3c3fe4d46d165bf4d359435758c2a",
+  "winner": null
+ }
+}
