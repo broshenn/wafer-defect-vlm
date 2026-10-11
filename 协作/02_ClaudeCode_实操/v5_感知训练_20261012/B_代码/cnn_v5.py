@@ -81,6 +81,9 @@ def main() -> int:
     X_train = torch.stack([to_tensor(r["images"][0]) for r in train_rows])
     Y_train = torch.tensor([y[r["failure_type"]] for r in train_rows])
     X_test = torch.stack([to_tensor(r["images"][0]) for r in test_rows])
+    for r in test_rows:
+        if "failure_type" not in r:
+            r["failure_type"] = json.loads(r["reference_json"])["defect_class"]
     for ep in range(a.epochs):
         net.train()
         perm = torch.randperm(len(X_train))
@@ -105,7 +108,7 @@ def main() -> int:
     fp = {c: 0 for c in CLASSES}
     fn = {c: 0 for c in CLASSES}
     for r, p in zip(test_rows, preds):
-        truth = r["failure_type"]
+        truth = r.get("failure_type") or json.loads(r["reference_json"])["defect_class"]
         pred = CLASSES[p]
         per.append({"sample_id": r["sample_id"], "lot_name": r.get("lot_name", ""),
                     "present": True, "class_pred": pred, "class_ok": pred == truth,
