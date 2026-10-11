@@ -1,0 +1,6330 @@
+{
+ "组顺序与冻结一致": true,
+ "组数": 256,
+ "同分复现": {
+  "同分组": 91,
+  "满分": 49,
+  "未满分": 42
+ },
+ "42组按字段汇总": {
+  "defect_class": {
+   "全同且都错": 3,
+   "答案不同但同分": 3,
+   "被掩码排除": 0,
+   "有正确候选": 36,
+   "有正确候选但未拿满": 0,
+   "从未出现正确候选": 6
+  },
+  "coverage_band": {
+   "全同且都错": 16,
+   "答案不同但同分": 1,
+   "被掩码排除": 0,
+   "有正确候选": 25,
+   "有正确候选但未拿满": 0,
+   "从未出现正确候选": 17
+  },
+  "red_mass_zones": {
+   "全同且都错": 28,
+   "答案不同但同分": 4,
+   "被掩码排除": 0,
+   "有正确候选": 11,
+   "有正确候选但未拿满": 0,
+   "从未出现正确候选": 31
+  },
+  "angular_type": {
+   "全同且都错": 0,
+   "答案不同但同分": 1,
+   "被掩码排除": 17,
+   "有正确候选": 24,
+   "有正确候选但未拿满": 0,
+   "从未出现正确候选": 1
+  },
+  "clock_sectors": {
+   "全同且都错": 1,
+   "答案不同但同分": 0,
+   "被掩码排除": 17,
+   "有正确候选": 24,
+   "有正确候选但未拿满": 0,
+   "从未出现正确候选": 1
+  }
+ },
+ "覆盖错法": {
+  "20_to_under_50pct → 5_to_under_20pct": 44,
+  "5_to_under_20pct → under_5pct": 16,
+  "under_5pct → 5_to_under_20pct": 7,
+  "under_5pct → 20_to_under_50pct": 1
+ },
+ "区带错法": {
+  "多": 59,
+  "其他": 2,
+  "缺": 64
+ },
+ "42组按类别×参考覆盖": {
+  "Center|20_to_under_50pct": 4,
+  "Center|under_5pct": 2,
+  "Donut|20_to_under_50pct": 2,
+  "Edge_Loc|20_to_under_50pct": 2,
+  "Edge_Loc|5_to_under_20pct": 3,
+  "Edge_Ring|20_to_under_50pct": 4,
+  "Edge_Ring|5_to_under_20pct": 2,
+  "Loc|20_to_under_50pct": 1,
+  "Loc|5_to_under_20pct": 3,
+  "Loc|under_5pct": 5,
+  "Random|20_to_under_50pct": 2,
+  "Scratch|20_to_under_50pct": 2,
+  "Scratch|5_to_under_20pct": 2,
+  "none|20_to_under_50pct": 1,
+  "none|5_to_under_20pct": 7
+ },
+ "42组在训练步上的分布": {
+  "早(1-85)": 12,
+  "中(86-170)": 18,
+  "晚(171-256)": 12
+ },
+ "42组的步号列表": [
+  3,
+  13,
+  14,
+  15,
+  22,
+  63,
+  64,
+  70,
+  73,
+  76,
+  81,
+  83,
+  103,
+  109,
+  111,
+  119,
+  122,
+  132,
+  136,
+  138,
+  139,
+  144,
+  146,
+  147,
+  155,
+  156,
+  159,
+  160,
+  167,
+  168,
+  182,
+  183,
+  189,
+  194,
+  196,
+  198,
+  199,
+  202,
+  207,
+  218,
+  230,
+  238
+ ],
+ "完整logging早中晚": {
+  "总步数": 256,
+  "早": {
+   "步数": 85,
+   "奖励均值": 0.7505,
+   "reward_std均值": 0.1197,
+   "零方差步占比": 0.2706,
+   "平均生成长度": 45.1
+  },
+  "中": {
+   "步数": 85,
+   "奖励均值": 0.8208,
+   "reward_std均值": 0.092,
+   "零方差步占比": 0.4118,
+   "平均生成长度": 45.3
+  },
+  "晚": {
+   "步数": 86,
+   "奖励均值": 0.8086,
+   "reward_std均值": 0.0953,
+   "零方差步占比": 0.3837,
+   "平均生成长度": 45.5
+  }
+ },
+ "生成多样性": {
+  "全池_四候选去重后平均不同答案数": 2.152,
+  "全池_四候选完全同文本的比例": 0.2695,
+  "42组_四候选去重后平均不同答案数": 1.31,
+  "42组_四候选完全同文本的比例": 0.6905
+ },
+ "逐组明细": [
+  {
+   "sample_id": "wafer_00003868_015",
+   "step": 3,
+   "reward": 0.6,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "single",
+     "四候选取值": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "nondirectional"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [
+      7
+     ],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00005993_007",
+   "step": 13,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00007369_003",
+   "step": 14,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "edge",
+       "middle"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00035449_021",
+   "step": 15,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "unknown",
+      "unknown",
+      "unknown",
+      "unknown"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00007846_013",
+   "step": 22,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.6
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "opposed",
+      "unknown",
+      "opposed",
+      "opposed"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [
+       8,
+       2
+      ],
+      [],
+      [
+       8,
+       2
+      ],
+      [
+       8,
+       2
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00045679_019",
+   "step": 63,
+   "reward": 0.6,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00018905_003",
+   "step": 64,
+   "reward": 0.7999999999999999,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "20_to_under_50pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00032163_012",
+   "step": 70,
+   "reward": 0.5,
+   "class_true": "Scratch",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Scratch",
+     "四候选取值": [
+      "Donut",
+      "Donut",
+      "Random",
+      "Random"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00015069_014",
+   "step": 73,
+   "reward": 0.7428571428571429,
+   "class_true": "Donut",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Donut",
+     "四候选取值": [
+      "Donut",
+      "Donut",
+      "Donut",
+      "Donut"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00040472_024",
+   "step": 76,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00042367_008",
+   "step": 81,
+   "reward": 0.7999999999999999,
+   "class_true": "Donut",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Donut",
+     "四候选取值": [
+      "Donut",
+      "Donut",
+      "Donut",
+      "Donut"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00002517_001",
+   "step": 83,
+   "reward": 0.7999999999999999,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "edge",
+       "middle",
+       "center"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00044298_014",
+   "step": 103,
+   "reward": 0.7428571428571429,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00043831_010",
+   "step": 109,
+   "reward": 0.7999999999999999,
+   "class_true": "Random",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Random",
+     "四候选取值": [
+      "Random",
+      "Random",
+      "Random",
+      "Random"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge",
+       "center"
+      ],
+      [
+       "middle",
+       "edge",
+       "center"
+      ],
+      [
+       "middle",
+       "edge",
+       "center"
+      ],
+      [
+       "middle",
+       "edge",
+       "center"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00045697_023",
+   "step": 111,
+   "reward": 0.7999999999999999,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00044127_023",
+   "step": 119,
+   "reward": 0.7999999999999999,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00045455_011",
+   "step": 122,
+   "reward": 0.7000000000000001,
+   "class_true": "Edge_Loc",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Loc",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00046670_007",
+   "step": 132,
+   "reward": 0.3571428571428572,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "single",
+      "single",
+      "single",
+      "single"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [
+       4
+      ],
+      [
+       3
+      ],
+      [
+       3
+      ],
+      [
+       3
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00036956_003",
+   "step": 136,
+   "reward": 0.7999999999999999,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00043906_004",
+   "step": 138,
+   "reward": 0.48571428571428577,
+   "class_true": "Edge_Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Loc",
+     "四候选取值": [
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00010049_013",
+   "step": 139,
+   "reward": 0.7999999999999999,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00037354_004",
+   "step": 144,
+   "reward": 0.7428571428571429,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00047468_022",
+   "step": 146,
+   "reward": 0.7428571428571429,
+   "class_true": "Edge_Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Loc",
+     "四候选取值": [
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "single",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [
+       9
+      ],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00002520_025",
+   "step": 147,
+   "reward": 0.6,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00012756_013",
+   "step": 155,
+   "reward": 0.7999999999999999,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00042167_019",
+   "step": 156,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00047486_009",
+   "step": 159,
+   "reward": 0.6,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00036882_022",
+   "step": 160,
+   "reward": 0.7999999999999999,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00046595_016",
+   "step": 167,
+   "reward": 0.6,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00018905_009",
+   "step": 168,
+   "reward": 0.48571428571428577,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "under_5pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00044394_008",
+   "step": 182,
+   "reward": 0.6142857142857143,
+   "class_true": "Scratch",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Scratch",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00044221_006",
+   "step": 183,
+   "reward": 0.7999999999999999,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00041132_016",
+   "step": 189,
+   "reward": 0.7428571428571429,
+   "class_true": "Random",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Random",
+     "四候选取值": [
+      "Random",
+      "Random",
+      "Random",
+      "Random"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00024199_005",
+   "step": 194,
+   "reward": 0.3571428571428572,
+   "class_true": "Edge_Loc",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Loc",
+     "四候选取值": [
+      "Random",
+      "Loc",
+      "Random",
+      "Random"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct",
+      "20_to_under_50pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00017160_005",
+   "step": 196,
+   "reward": 0.7428571428571429,
+   "class_true": "Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 0.4
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Loc",
+     "四候选取值": [
+      "Loc",
+      "Loc",
+      "Loc",
+      "Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "under_5pct",
+      "under_5pct",
+      "under_5pct",
+      "under_5pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "unknown",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0,
+     "被掩码排除": true
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0,
+     "被掩码排除": true
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00034143_009",
+   "step": 198,
+   "reward": 0.7000000000000001,
+   "class_true": "Scratch",
+   "parts": [
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 0.0,
+     "coverage": 1.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Scratch",
+     "四候选取值": [
+      "none",
+      "Edge_Loc",
+      "none",
+      "Edge_Loc"
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.3,
+     "被掩码排除": false
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "edge",
+       "middle"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00043031_004",
+   "step": 199,
+   "reward": 0.6,
+   "class_true": "none",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "none",
+     "四候选取值": [
+      "none",
+      "none",
+      "none",
+      "none"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00045877_015",
+   "step": 202,
+   "reward": 0.7999999999999999,
+   "class_true": "Edge_Loc",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 1.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Loc",
+     "四候选取值": [
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc",
+      "Edge_Loc"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "5_to_under_20pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00039609_016",
+   "step": 207,
+   "reward": 0.7999999999999999,
+   "class_true": "Center",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Center",
+     "四候选取值": [
+      "Center",
+      "Center",
+      "Center",
+      "Center"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ],
+      [
+       "center",
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00042167_017",
+   "step": 218,
+   "reward": 0.6,
+   "class_true": "Scratch",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Scratch",
+     "四候选取值": [
+      "Scratch",
+      "Scratch",
+      "Scratch",
+      "Scratch"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "center",
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00002521_008",
+   "step": 230,
+   "reward": 0.6,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 0.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "edge",
+       "middle",
+       "center"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": false,
+     "四候选全同且都错": false,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  },
+  {
+   "sample_id": "wafer_00003916_010",
+   "step": 238,
+   "reward": 0.7999999999999999,
+   "class_true": "Edge_Ring",
+   "parts": [
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    },
+    {
+     "class": 1.0,
+     "coverage": 0.0,
+     "zones": 1.0,
+     "angular": 1.0
+    }
+   ],
+   "eligible": {
+    "class": 0.3,
+    "coverage": 0.2,
+    "zones": 0.2,
+    "angular": 0.2
+   },
+   "字段诊断": {
+    "defect_class": {
+     "参考": "Edge_Ring",
+     "四候选取值": [
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring",
+      "Edge_Ring"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.3,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "coverage_band": {
+     "参考": "20_to_under_50pct",
+     "四候选取值": [
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct",
+      "5_to_under_20pct"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": true,
+     "存在正确候选": false,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "red_mass_zones": {
+     "参考": [
+      "middle",
+      "edge"
+     ],
+     "四候选取值": [
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ],
+      [
+       "middle",
+       "edge"
+      ]
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false,
+     "正确候选得分": [
+      1.0,
+      1.0,
+      1.0,
+      1.0
+     ],
+     "正确候选是否拿满": [
+      true,
+      true,
+      true,
+      true
+     ]
+    },
+    "angular_type": {
+     "参考": "nondirectional",
+     "四候选取值": [
+      "nondirectional",
+      "nondirectional",
+      "nondirectional",
+      "nondirectional"
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    },
+    "clock_sectors": {
+     "参考": [],
+     "四候选取值": [
+      [],
+      [],
+      [],
+      []
+     ],
+     "四候选全同": true,
+     "四候选全同且都错": false,
+     "存在正确候选": true,
+     "适用权重": 0.2,
+     "被掩码排除": false
+    }
+   }
+  }
+ ]
+}
