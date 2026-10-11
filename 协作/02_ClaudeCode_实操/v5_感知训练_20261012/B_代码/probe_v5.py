@@ -52,9 +52,19 @@ def main() -> int:
         inputs = proc.image_processor(images=[img], return_tensors="pt")
         pv = inputs["pixel_values"].to(dev, dtype=torch.bfloat16)
         grid = inputs.get("image_grid_thw")
+        g2 = grid.to(dev) if grid is not None else None
         with torch.no_grad():
             visual = model.visual if hasattr(model, "visual") else model.model.visual
-            feats = visual(pv, grid_thw=grid) if grid is not None else visual(pv)
+            feats = visual(pv, grid_thw=g2) if g2 is not None else visual(pv)
+        if not torch.is_tensor(feats):
+            for attr in ("last_hidden_state", "hidden_states", "pooler_output"):
+                v = getattr(feats, attr, None)
+                if torch.is_tensor(v):
+                    feats = v
+                    break
+            else:
+                if isinstance(feats, (tuple, list)):
+                    feats = feats[0]
         feats = feats.flatten(0, 1) if feats.dim() == 3 else feats  # [tokens, h]
         f = feats.float().cpu().numpy()
         mean_pool = f.mean(0)
