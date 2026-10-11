@@ -1,0 +1,2 @@
+{"sample_id":"wafer_00045039_016","split":"train","lot_name":"lot45039","failure_type":"Edge_Loc","reason":"outline_anomalous","png_sha256":"8155d8a1fae5dbb1d8149f28c59545d7e4feb62bc72a897af917fcaec6920c50"}
+{"sample_id":"wafer_00045123_007","split":"train","lot_name":"lot45123","failure_type":"Random","reason":"outline_anomalous","png_sha256":"1777fecd84f6aa70aec6ba7b439c8ab16ad16fa640a8e38e73af17d52b51d337"}

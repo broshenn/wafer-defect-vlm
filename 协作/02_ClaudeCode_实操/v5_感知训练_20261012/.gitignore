@@ -1,0 +1,7 @@
+# 派生大文件不入库（可再生或过大）；清单与 SHA 在 数据清单.json / PROGRESS.md
+A_数据/matrices/
+A_数据/img448/
+A_数据/img896/
+A_数据/overlays/
+A_数据/*.tgz
+B_代码/__pycache__/
