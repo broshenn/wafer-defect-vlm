@@ -1,0 +1,18 @@
+# B_代码 进度
+- [x] 1 common_v5.py + 测试 10/10
+- [x] 2 reward_v5.py + 测试 23/23
+- [x] 3 train_v5.py（dry-run 11/11 rc=0）
+- [x] 4 configs/ 11 个 + 测试 20/20
+- [x] 5 gate_sft.py + 测试 6/6
+- [x] 6 eval_v5.py（py_compile 过；服务器冒烟实测）
+- [x] 7 score_v5.py + 测试 11/11
+- [x] 8 bootstrap_v5.py + 测试 4/4（P1）
+- [x] 9 select_winner.py + 测试（含计划 13/13）
+- [x] 10 screen_rl_pool.py + 测试 5/5
+- [x] 11 probe_v5.py（P2，服务器 5 张试跑）
+- [x] 12 cnn_v5.py（P1，服务器跑）
+- [x] 13 rewrite_paths.py + 测试 5/5
+- [x] 14 scheduler.py + 测试 18/18
+- [x] 15 make_night_plan.py + 测试
+- [x] 16 backup.sh（bash -n 通过）
+- 下一步：任务卡 C（上传与冒烟）
