@@ -12,8 +12,8 @@
 - [x] 第 7 步 img896（step7_img896.py）
 - [x] 第 8 步 叠加核验图（step8_overlays.py, P2 已做）
 - [x] 第 9 步 打包与交付报告（img448.tgz 25.7MB / img896.tgz，交付报告已写）（A_数据/交付报告.md）
-- [~] 任务卡 B（进行中）：common✅ reward✅(23/23) train✅ configs✅(20/20) gate✅ eval✅ score✅(11/11)；待 scheduler/make_night_plan/select_winner/screen/rewrite/backup/bootstrap/cnn/probecommon/reward/train/configs/gate/eval/score/bootstrap/select_winner/screen/rewrite/scheduler/make_night_plan/backup/probe/cnn
-- [ ] 任务卡 C：连通✅→选卡✅→上传→冒烟→night_plan
+- [x] 任务卡 B 全部完成（02:30）：16 文件 + 10 测试文件全 PASS（common10/reward23/configs20/score11/sched18/rewrite5/screen5/bootstrap4/winner+plan13/gate6）；交付报告见 B_代码/交付报告.md
+- [~] 任务卡 C：连通✅→选卡/占卡✅→上传（4 个 bundle 校验中）→冒烟（smoke_run.py 已就绪）→night_plan
 - [ ] 任务卡 D：**先释放占位** → 启动夜跑 → 巡检循环
 - [ ] 任务卡 E：初版报告 + ALL_DONE.flag
 
