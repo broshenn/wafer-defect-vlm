@@ -1,0 +1,19 @@
+{
+ "n_train_pool": 4536,
+ "n_single_orig": 34,
+ "sector_total": 102,
+ "sector_ok": 102,
+ "sector_rate": 1.0,
+ "tie_unknown": 0,
+ "band_total": 13608,
+ "band_same": 13608,
+ "band_rate": 1.0,
+ "zone_total": 13608,
+ "zone_same": 13608,
+ "zone_rate": 1.0,
+ "inconsistent_first50": [],
+ "band_bad_first50": [],
+ "zone_bad_first50": [],
+ "n_rotation_ineligible": 0,
+ "rotation_ineligible": []
+}
