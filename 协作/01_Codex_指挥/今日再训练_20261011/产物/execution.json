@@ -1,0 +1,62 @@
+{
+  "executor": "Codex",
+  "run_id": "radial_replay_sft_v4b_s3407",
+  "status": "completed_training_and_evaluation",
+  "start_utc": "2026-10-11T09:56:47.091150+00:00",
+  "cap_device_minutes": 40.0,
+  "jobs": [
+    {
+      "tag": "build_data",
+      "start_utc": "2026-10-11T09:56:47.251470+00:00",
+      "status": "finished",
+      "pid": 1694,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T09:56:47.767317+00:00"
+    },
+    {
+      "tag": "mask_gate",
+      "start_utc": "2026-10-11T09:56:47.767908+00:00",
+      "status": "finished",
+      "pid": 1695,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T09:56:55.342996+00:00"
+    },
+    {
+      "tag": "probe_sft",
+      "start_utc": "2026-10-11T09:56:55.343411+00:00",
+      "status": "finished",
+      "pid": 1931,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T09:57:29.828867+00:00"
+    },
+    {
+      "tag": "formal_sft",
+      "start_utc": "2026-10-11T09:57:29.829766+00:00",
+      "status": "finished",
+      "pid": 2212,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:19:10.793846+00:00"
+    },
+    {
+      "tag": "evaluate_v4",
+      "start_utc": "2026-10-11T10:19:11.066625+00:00",
+      "status": "finished",
+      "pid": 3059,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:24:16.054428+00:00"
+    },
+    {
+      "tag": "replay_M0",
+      "start_utc": "2026-10-11T10:24:16.055327+00:00",
+      "status": "finished",
+      "pid": 15902,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:29:35.081110+00:00"
+    }
+  ],
+  "candidate_new_unique_wafers": 0,
+  "elapsed_wall_seconds": 1968.0572244338691,
+  "final_adapter_sha256": "5352442da1f40ca2b42d24643300fdeaa1008fe78c8e9f5a830e1350f782c829",
+  "end_utc": "2026-10-11T10:29:35.081839+00:00",
+  "GPU_compute_processes_after": 0
+}

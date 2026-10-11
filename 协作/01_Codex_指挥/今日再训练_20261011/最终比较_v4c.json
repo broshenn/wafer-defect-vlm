@@ -1,0 +1,674 @@
+{
+  "status": "development_only_no_human_gold",
+  "N": 120,
+  "classes": [
+    "Center",
+    "Donut",
+    "Edge_Loc",
+    "Edge_Ring",
+    "Loc",
+    "Random",
+    "Scratch"
+  ],
+  "seed": 3407,
+  "lot_N": 106,
+  "replicates": 10000,
+  "models": {
+    "M0_clone": {
+      "class_correct": 100,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.8158105521202021,
+      "macro_f1_lot_CI": [
+        0.7185037262686108,
+        0.8888190743691093
+      ],
+      "coverage_correct": 107,
+      "zones_correct": 92,
+      "rule_reward": 0.8566666666666667,
+      "strict_raw_JSON": 0,
+      "normalized_schema_pass": 120,
+      "nondirectional_correct": 70,
+      "nondirectional_N": 77,
+      "positive_direction_N": 0,
+      "unknown_direction_N": 43,
+      "finish_reason_counts": {
+        "stop": 120
+      },
+      "by_zone_reference": {
+        "middle|edge": {
+          "N": 53,
+          "exact_correct": 43
+        },
+        "center|middle|edge": {
+          "N": 63,
+          "exact_correct": 49
+        },
+        "edge": {
+          "N": 4,
+          "exact_correct": 0
+        }
+      },
+      "by_coverage_reference": {
+        "20_to_under_50pct": {
+          "N": 54,
+          "exact_correct": 47
+        },
+        "5_to_under_20pct": {
+          "N": 56,
+          "exact_correct": 55
+        },
+        "under_5pct": {
+          "N": 4,
+          "exact_correct": 1
+        },
+        "half_or_more": {
+          "N": 6,
+          "exact_correct": 4
+        }
+      },
+      "per_class": {
+        "Center": {
+          "N": 23,
+          "tp": 20,
+          "fp": 1,
+          "fn": 3
+        },
+        "Donut": {
+          "N": 3,
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        "Edge_Loc": {
+          "N": 23,
+          "tp": 20,
+          "fp": 1,
+          "fn": 3
+        },
+        "Edge_Ring": {
+          "N": 13,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1
+        },
+        "Loc": {
+          "N": 24,
+          "tp": 14,
+          "fp": 3,
+          "fn": 10
+        },
+        "Random": {
+          "N": 11,
+          "tp": 10,
+          "fp": 2,
+          "fn": 1
+        },
+        "Scratch": {
+          "N": 23,
+          "tp": 22,
+          "fp": 5,
+          "fn": 1
+        }
+      }
+    },
+    "SFT_aux_v4c": {
+      "class_correct": 99,
+      "accuracy": 0.825,
+      "macro_f1": 0.8059861069163394,
+      "macro_f1_lot_CI": [
+        0.7034398692122563,
+        0.880888672207111
+      ],
+      "coverage_correct": 111,
+      "zones_correct": 85,
+      "rule_reward": 0.8513095238095238,
+      "strict_raw_JSON": 0,
+      "normalized_schema_pass": 120,
+      "nondirectional_correct": 73,
+      "nondirectional_N": 77,
+      "positive_direction_N": 0,
+      "unknown_direction_N": 43,
+      "finish_reason_counts": {
+        "stop": 120
+      },
+      "by_zone_reference": {
+        "middle|edge": {
+          "N": 53,
+          "exact_correct": 47
+        },
+        "center|middle|edge": {
+          "N": 63,
+          "exact_correct": 37
+        },
+        "edge": {
+          "N": 4,
+          "exact_correct": 1
+        }
+      },
+      "by_coverage_reference": {
+        "20_to_under_50pct": {
+          "N": 54,
+          "exact_correct": 51
+        },
+        "5_to_under_20pct": {
+          "N": 56,
+          "exact_correct": 56
+        },
+        "under_5pct": {
+          "N": 4,
+          "exact_correct": 0
+        },
+        "half_or_more": {
+          "N": 6,
+          "exact_correct": 4
+        }
+      },
+      "per_class": {
+        "Center": {
+          "N": 23,
+          "tp": 21,
+          "fp": 1,
+          "fn": 2
+        },
+        "Donut": {
+          "N": 3,
+          "tp": 2,
+          "fp": 3,
+          "fn": 1
+        },
+        "Edge_Loc": {
+          "N": 23,
+          "tp": 19,
+          "fp": 1,
+          "fn": 4
+        },
+        "Edge_Ring": {
+          "N": 13,
+          "tp": 12,
+          "fp": 0,
+          "fn": 1
+        },
+        "Loc": {
+          "N": 24,
+          "tp": 14,
+          "fp": 4,
+          "fn": 10
+        },
+        "Random": {
+          "N": 11,
+          "tp": 9,
+          "fp": 2,
+          "fn": 2
+        },
+        "Scratch": {
+          "N": 23,
+          "tp": 22,
+          "fp": 5,
+          "fn": 1
+        }
+      }
+    }
+  },
+  "paired_v4_minus_M0": {
+    "macro_f1_difference": -0.00982444520386272,
+    "macro_f1_lot_CI": [
+      -0.04744740318470769,
+      0.02495834908139584
+    ],
+    "rule_reward_difference": -0.005357142857142854,
+    "rule_reward_lot_CI": [
+      -0.03028083028083027,
+      0.017538413206146103
+    ],
+    "coverage_correct_difference": 4,
+    "zones_correct_difference": -7
+  },
+  "cloned_M0_vs_old_raw_equal": 120,
+  "changed_cases": [
+    {
+      "sample_id": "wafer_00003293_002",
+      "field": "coverage_band",
+      "change": "improved",
+      "reference": "5_to_under_20pct",
+      "M0": "under_5pct",
+      "v4": "5_to_under_20pct"
+    },
+    {
+      "sample_id": "wafer_00005127_006",
+      "field": "coverage_band",
+      "change": "regressed",
+      "reference": "under_5pct",
+      "M0": "under_5pct",
+      "v4": "5_to_under_20pct"
+    },
+    {
+      "sample_id": "wafer_00005127_006",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00006227_012",
+      "field": "defect_class",
+      "change": "improved",
+      "reference": "Loc",
+      "M0": "Random",
+      "v4": "Loc"
+    },
+    {
+      "sample_id": "wafer_00006394_010",
+      "field": "coverage_band",
+      "change": "improved",
+      "reference": "20_to_under_50pct",
+      "M0": "5_to_under_20pct",
+      "v4": "20_to_under_50pct"
+    },
+    {
+      "sample_id": "wafer_00015801_008",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00019390_009",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00019864_007",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "edge"
+      ],
+      "M0": [
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00022219_014",
+      "field": "defect_class",
+      "change": "regressed",
+      "reference": "Edge_Loc",
+      "M0": "Edge_Loc",
+      "v4": "Random"
+    },
+    {
+      "sample_id": "wafer_00022770_001",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00022941_019",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00023503_023",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00030429_024",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00036492_011",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00036738_025",
+      "field": "coverage_band",
+      "change": "improved",
+      "reference": "20_to_under_50pct",
+      "M0": "5_to_under_20pct",
+      "v4": "20_to_under_50pct"
+    },
+    {
+      "sample_id": "wafer_00036761_005",
+      "field": "coverage_band",
+      "change": "improved",
+      "reference": "20_to_under_50pct",
+      "M0": "5_to_under_20pct",
+      "v4": "20_to_under_50pct"
+    },
+    {
+      "sample_id": "wafer_00039511_020",
+      "field": "coverage_band",
+      "change": "improved",
+      "reference": "20_to_under_50pct",
+      "M0": "5_to_under_20pct",
+      "v4": "20_to_under_50pct"
+    },
+    {
+      "sample_id": "wafer_00040511_025",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00040641_008",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00040661_010",
+      "field": "defect_class",
+      "change": "regressed",
+      "reference": "Loc",
+      "M0": "Loc",
+      "v4": "none"
+    },
+    {
+      "sample_id": "wafer_00040661_010",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00040792_006",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00042245_015",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00042711_009",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00044792_010",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00045539_015",
+      "field": "defect_class",
+      "change": "improved",
+      "reference": "Center",
+      "M0": "none",
+      "v4": "Center"
+    },
+    {
+      "sample_id": "wafer_00045799_007",
+      "field": "defect_class",
+      "change": "regressed",
+      "reference": "Random",
+      "M0": "Random",
+      "v4": "Loc"
+    },
+    {
+      "sample_id": "wafer_00045799_007",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00046552_006",
+      "field": "red_mass_zones",
+      "change": "improved",
+      "reference": [
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "sample_id": "wafer_00047041_010",
+      "field": "red_mass_zones",
+      "change": "regressed",
+      "reference": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "M0": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "v4": [
+        "middle",
+        "edge"
+      ]
+    }
+  ],
+  "application_gate_passed": false,
+  "limitations": [
+    "single_seed",
+    "seven_covered_classes",
+    "development_confirmation_not_final_blind_test",
+    "no_positive_direction_reference",
+    "same_rule_compliance_is_not_independent_fact_gold",
+    "caption_not_evaluated",
+    "lot_bootstrap_fixed_class_denominator_absent_class_F1_zero"
+  ]
+}

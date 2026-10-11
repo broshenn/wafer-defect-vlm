@@ -1,0 +1,6 @@
+{
+  "reason": "user_changed_instance; copied live receipt but process is no longer present",
+  "old_last_observed_step": "9/256",
+  "old_run_stop_time": "unverified",
+  "old_files_preserved": true
+}

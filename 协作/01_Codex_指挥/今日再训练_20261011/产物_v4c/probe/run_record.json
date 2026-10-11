@@ -1,0 +1,15 @@
+{
+  "steps": 2,
+  "seconds": 23.725691467523575,
+  "data_sha256": "f9a64fabac389841c49a7a26027ea7977b8c6532f3ac93bb4759c37464b5d69c",
+  "start_adapter_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09",
+  "selection": "preselected_last_step",
+  "peak_allocated_GiB": 18.97140598297119,
+  "versions": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.16.1",
+    "ms-swift": "4.5.3",
+    "peft": "0.20.0",
+    "trl": "0.29.1"
+  }
+}

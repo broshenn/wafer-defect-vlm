@@ -18,6 +18,7 @@ def main():
     ap=argparse.ArgumentParser()
     ap.add_argument('--source',type=Path,required=True)
     ap.add_argument('--out',type=Path)
+    ap.add_argument('--images-dir',type=Path)
     ap.add_argument('--dry-run',action='store_true')
     ap.add_argument('--smoke',type=int,help='preview first N frozen image groups, not N dialogue rows')
     a=ap.parse_args()
@@ -51,6 +52,8 @@ def main():
         geo['messages'][1]['content']=json.dumps(target,ensure_ascii=False,separators=(',',':'))
         assert geo['images']==base['images'] and geo['sample_id']==base['sample_id']
         output.extend(joint+[geo]); targets.append(target)
+    if a.images_dir:
+        for r in output:r['images']=[str(a.images_dir/Path(x).name) for x in r['images']]
     assert [r['sample_id'] for r in output[::4]]==original_ids[:len(groups)]
     assert a.source.read_bytes()==raw
     encoded=('\n'.join(json.dumps(r,ensure_ascii=False,separators=(',',':')) for r in output)+'\n').encode('utf-8')

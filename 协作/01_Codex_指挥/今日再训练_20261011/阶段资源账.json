@@ -1,0 +1,13 @@
+{
+  "historical_management_estimate_device_minutes": 1437,
+  "historical_estimate_contains_unverified_80_minute_segment": true,
+  "fixed_start_repair_upper": 39.2505,
+  "v3_reported_upper_approx": 87.9,
+  "v4b_second_attempt_wall_upper_minutes": 32.80095374056449,
+  "v4b_first_attempt_stop_time": "unverified; cloned receipt preserved through step9",
+  "clone_and_idle_device_intervals": "not fully verified; do not report precise cumulative total",
+  "project_total_cap": 1800,
+  "v4c_new_cap_minutes": 32,
+  "no_new_teacher_calls": true,
+  "cash_invoice": "not queried after user removed price gate"
+}

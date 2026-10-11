@@ -37,6 +37,7 @@ def main():
         rows=jl(RAW/f'{tag}_raw.jsonl');by={r['sample_id']:r for r in rows}
         assert len(rows)==len(by)==len(ids) and set(by)==set(ids),'Frozen evaluation incomplete'
         pred=[];reward=[];coverage=0;zones=0;raw_ok=0;format_ok=0;nondir=0;unknown=0;angular_positive=0
+        by_zone={};by_coverage={};parsed={}
         for sid in ids:
             text=by[sid]['raw']
             try:answer=R.parse(text)
@@ -44,6 +45,10 @@ def main():
             try:R.parse_raw_strict(text);raw_ok+=1
             except (ValueError,TypeError):pass
             result=R.score(text,refs[sid]);format_ok+=int(result['format_ok'])
+            parsed[sid]=answer
+            zone='|'.join(refs[sid]['red_mass_zones']) if isinstance(refs[sid]['red_mass_zones'],list) else 'unknown'
+            z=by_zone.setdefault(zone,{'N':0,'exact_correct':0});z['N']+=1;z['exact_correct']+=int(result['parts']['zones']==1)
+            band=refs[sid]['coverage_band'];z=by_coverage.setdefault(band,{'N':0,'exact_correct':0});z['N']+=1;z['exact_correct']+=int(result['parts']['coverage']==1)
             pred.append(answer.get('defect_class'));reward.append(result['reward'])
             coverage+=int(result['parts']['coverage']==1);zones+=int(result['parts']['zones']==1)
             if refs[sid]['angular_type']=='nondirectional':nondir+=int(result['parts']['angular']==1)
@@ -57,8 +62,11 @@ def main():
             'normalized_schema_pass':format_ok,'nondirectional_correct':nondir,
             'nondirectional_N':sum(r['angular_type']=='nondirectional' for r in refs.values()),
             'positive_direction_N':angular_positive,'unknown_direction_N':unknown,
-            'finish_reason_counts':dict(Counter(by[s].get('finish_reason') for s in ids))}
-        stash[tag]={'bootstrap_f1':bootstrap_f1,'reward':rewards,'raw':by}
+            'finish_reason_counts':dict(Counter(by[s].get('finish_reason') for s in ids)),
+            'by_zone_reference':by_zone,'by_coverage_reference':by_coverage,
+            'per_class':{str(cl):{'N':int((gold==cl).sum()),'tp':int(c[:,i*3].sum()),
+                          'fp':int(c[:,i*3+1].sum()),'fn':int(c[:,i*3+2].sum())} for i,cl in enumerate(classes)}}
+        stash[tag]={'bootstrap_f1':bootstrap_f1,'reward':rewards,'raw':by,'parsed':parsed}
     b=report['models']['M0_clone'];v=report['models']['SFT_replay_v4b']
     diff=stash['SFT_replay_v4b']['reward']-stash['M0_clone']['reward']
     report['paired_v4_minus_M0']={'macro_f1_difference':v['macro_f1']-b['macro_f1'],
@@ -69,6 +77,15 @@ def main():
     old_path=REPO/'协作/02_ClaudeCode_实操/一天半优化_20261010/out_v3/服务器产物/out/评测_v3/M0_v3_raw.jsonl'
     old={r['sample_id']:r for r in jl(old_path)}
     report['cloned_M0_vs_old_raw_equal']=sum(stash['M0_clone']['raw'][s]['raw']==old[s]['raw'] for s in ids)
+    changes=[]
+    for sid in ids:
+        old_answer=stash['M0_clone']['parsed'][sid];new_answer=stash['SFT_replay_v4b']['parsed'][sid]
+        for field in ['defect_class','coverage_band','red_mass_zones']:
+            norm=lambda x:tuple(sorted(x)) if isinstance(x,list) else x
+            before=norm(old_answer.get(field))==norm(refs[sid][field]);after=norm(new_answer.get(field))==norm(refs[sid][field])
+            if before!=after:changes.append({'sample_id':sid,'field':field,'change':'improved' if after else 'regressed',
+                'reference':refs[sid][field],'M0':old_answer.get(field),'v4':new_answer.get(field)})
+    report['changed_cases']=changes
     report['application_gate_passed']=(v['macro_f1']>=b['macro_f1'] and
        v['coverage_correct']>=b['coverage_correct'] and v['zones_correct']>=b['zones_correct'] and
        max(v['coverage_correct']-b['coverage_correct'],v['zones_correct']-b['zones_correct'])>=2 and

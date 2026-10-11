@@ -1,0 +1,55 @@
+{
+  "executor": "Codex",
+  "run_id": "full_distribution_aux_sft_v4c_s3407",
+  "status": "completed_training_and_evaluation",
+  "start_utc": "2026-10-11T10:48:13.212294+00:00",
+  "cap_device_minutes": 32.0,
+  "jobs": [
+    {
+      "tag": "build_data",
+      "start_utc": "2026-10-11T10:48:13.376304+00:00",
+      "status": "finished",
+      "pid": 29287,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:48:13.491269+00:00"
+    },
+    {
+      "tag": "mask_gate",
+      "start_utc": "2026-10-11T10:48:13.491728+00:00",
+      "status": "finished",
+      "pid": 29288,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:48:21.417373+00:00"
+    },
+    {
+      "tag": "probe_sft",
+      "start_utc": "2026-10-11T10:48:21.417819+00:00",
+      "status": "finished",
+      "pid": 29524,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T10:48:56.976186+00:00"
+    },
+    {
+      "tag": "formal_sft",
+      "start_utc": "2026-10-11T10:48:56.977058+00:00",
+      "status": "finished",
+      "pid": 29820,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T11:10:10.435647+00:00"
+    },
+    {
+      "tag": "evaluate_v4",
+      "start_utc": "2026-10-11T11:10:10.714836+00:00",
+      "status": "finished",
+      "pid": 30610,
+      "exit_code": 0,
+      "end_utc": "2026-10-11T11:15:06.807473+00:00"
+    }
+  ],
+  "candidate_new_unique_wafers": 0,
+  "elapsed_wall_seconds": 1613.6819623298943,
+  "final_adapter_sha256": "2a42e59cb5ee79c83a4da775f0cfd6b3b3e2ef813cb86c309ca792876e5734b9",
+  "baseline_reused": "verified v4b M0_clone raw; unchanged environment and M0 fingerprint",
+  "end_utc": "2026-10-11T11:15:06.807928+00:00",
+  "GPU_compute_processes_after": 0
+}

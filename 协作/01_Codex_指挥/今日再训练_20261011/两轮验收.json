@@ -1,0 +1,40 @@
+{
+  "status": "two_experiments_completed_no_overall_gain",
+  "selected_model": "M0_v3",
+  "runs": {
+    "SFT_replay_v4b": {
+      "formal_step": 256,
+      "actual_epoch": 1.0,
+      "M0_initial_tensors_equal": 496,
+      "formal_two_step_gate": "passed",
+      "adapter_backup_SHA_matches": true,
+      "raw_answers": 120,
+      "normalized_schema": 120,
+      "finish_stop": 120,
+      "device_minutes_upper": 32.80095374056449,
+      "application_gate": false,
+      "GPU_compute_processes_after": 0
+    },
+    "SFT_aux_v4c": {
+      "formal_step": 256,
+      "actual_epoch": 1.0,
+      "M0_initial_tensors_equal": 496,
+      "formal_two_step_gate": "passed",
+      "adapter_backup_SHA_matches": true,
+      "raw_answers": 120,
+      "normalized_schema": 120,
+      "finish_stop": 120,
+      "device_minutes_upper": 26.894699372164904,
+      "application_gate": false,
+      "GPU_compute_processes_after": 0
+    }
+  },
+  "complete_run_device_minutes_upper_total": 59.69565311272939,
+  "first_interruption_exact_duration": "unverified",
+  "earlier_project_resource_estimate": "not converted into exact total",
+  "source_M0_raw_replay_equal": 120,
+  "new_teacher_calls": 0,
+  "new_human_reviews": 0,
+  "new_service_deployment": false,
+  "third_candidate_started": false
+}

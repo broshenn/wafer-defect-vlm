@@ -1,0 +1,75 @@
+{
+  "marker": "V4_CLOSE_READONLY",
+  "attempt1": {
+    "attempt1_execution.json": {
+      "executor": "Codex",
+      "run_id": "radial_replay_sft_v4b_s3407",
+      "status": "formal_sft",
+      "start_utc": "2026-10-11T05:21:04.343165+00:00",
+      "cap_device_minutes": 45.0,
+      "jobs": [
+        {
+          "tag": "build_data",
+          "start_utc": "2026-10-11T05:21:04.463929+00:00",
+          "status": "finished",
+          "pid": 1813,
+          "exit_code": 0,
+          "end_utc": "2026-10-11T05:21:04.979288+00:00"
+        },
+        {
+          "tag": "mask_gate",
+          "start_utc": "2026-10-11T05:21:04.979922+00:00",
+          "status": "finished",
+          "pid": 1814,
+          "exit_code": 0,
+          "end_utc": "2026-10-11T05:21:12.918404+00:00"
+        },
+        {
+          "tag": "probe_sft",
+          "start_utc": "2026-10-11T05:21:12.919059+00:00",
+          "status": "finished",
+          "pid": 2050,
+          "exit_code": 0,
+          "end_utc": "2026-10-11T05:21:46.594697+00:00"
+        },
+        {
+          "tag": "formal_sft",
+          "start_utc": "2026-10-11T05:21:46.595577+00:00",
+          "status": "running",
+          "pid": 2342
+        }
+      ],
+      "candidate_new_unique_wafers": 0,
+      "elapsed_wall_seconds": 42.253830179572105
+    },
+    "interruption_receipt.json": {
+      "reason": "user_changed_instance; copied live receipt but process is no longer present",
+      "old_last_observed_step": "9/256",
+      "old_run_stop_time": "unverified",
+      "old_files_preserved": true
+    },
+    "attempt1_model/runtime_gate.json": {
+      "model_loading_gate": "passed",
+      "two_step_gate": "passed",
+      "mode": "sft",
+      "M0_sha256": "191c62e842cb93149397d19a96bf25e9cd1e0362cfb68e9af6857e55cd702e09",
+      "policy_equal_M0_tensor_count": 496,
+      "trainable_tensor_count": 496,
+      "step": 2,
+      "policy_changed_tensors": 496,
+      "nonzero_gradient_tensors": 496,
+      "forwards": {
+        "policy": 8,
+        "reference": 0,
+        "image": 8
+      }
+    }
+  },
+  "shutdown_kind": {
+    "ELF_binary": false,
+    "shell_function_or_alias": false,
+    "provider_marker_present": false,
+    "script_provider_marker": false,
+    "script_curl_marker": false
+  }
+}

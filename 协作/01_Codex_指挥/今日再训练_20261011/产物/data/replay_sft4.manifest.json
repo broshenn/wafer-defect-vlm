@@ -1,0 +1,614 @@
+{
+  "seed": 3407,
+  "input_unique_wafers": 256,
+  "presentation_groups": 256,
+  "dialogue_rows": 1024,
+  "output_unique_wafers": 213,
+  "max_presentations_per_original_wafer": 2,
+  "class_counts_preserved": true,
+  "class_at_each_presentation_position_preserved": true,
+  "class_counts": {
+    "Edge_Loc": 28,
+    "Loc": 53,
+    "Center": 29,
+    "Donut": 44,
+    "Edge_Ring": 30,
+    "Near_full": 2,
+    "Random": 25,
+    "Scratch": 24,
+    "none": 21
+  },
+  "new_unique_wafers": 0,
+  "original_zone_counts": {
+    "middle|edge": 117,
+    "edge": 41,
+    "center|middle|edge": 94,
+    "center|edge": 3,
+    "middle": 1
+  },
+  "replayed_zone_counts": {
+    "middle|edge": 85,
+    "edge": 82,
+    "center|middle|edge": 85,
+    "center|edge": 3,
+    "middle": 1
+  },
+  "changed_presentation_positions": 43,
+  "swaps": [
+    {
+      "presentation_group": 134,
+      "original_id": "wafer_00045002_025",
+      "replacement_id": "wafer_00046595_016",
+      "class": "none",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 197,
+      "original_id": "wafer_00034143_009",
+      "replacement_id": "wafer_00046385_004",
+      "class": "Scratch",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 129,
+      "original_id": "wafer_00045902_009",
+      "replacement_id": "wafer_00007184_010",
+      "class": "Edge_Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 83,
+      "original_id": "wafer_00015069_017",
+      "replacement_id": "wafer_00005993_007",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 53,
+      "original_id": "wafer_00008468_013",
+      "replacement_id": "wafer_00011537_008",
+      "class": "Scratch",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 215,
+      "original_id": "wafer_00044211_019",
+      "replacement_id": "wafer_00007791_015",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 32,
+      "original_id": "wafer_00011171_005",
+      "replacement_id": "wafer_00002517_001",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 22,
+      "original_id": "wafer_00018082_020",
+      "replacement_id": "wafer_00045877_015",
+      "class": "Edge_Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 18,
+      "original_id": "wafer_00015069_023",
+      "replacement_id": "wafer_00003868_002",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 240,
+      "original_id": "wafer_00002517_024",
+      "replacement_id": "wafer_00012756_001",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 238,
+      "original_id": "wafer_00025247_021",
+      "replacement_id": "wafer_00003868_015",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 230,
+      "original_id": "wafer_00045877_002",
+      "replacement_id": "wafer_00006175_003",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 123,
+      "original_id": "wafer_00042167_018",
+      "replacement_id": "wafer_00007934_006",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 177,
+      "original_id": "wafer_00037813_012",
+      "replacement_id": "wafer_00016552_005",
+      "class": "Edge_Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 4,
+      "original_id": "wafer_00004289_007",
+      "replacement_id": "wafer_00007934_025",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 179,
+      "original_id": "wafer_00045241_021",
+      "replacement_id": "wafer_00007994_002",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 139,
+      "original_id": "wafer_00006953_008",
+      "replacement_id": "wafer_00020257_012",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 114,
+      "original_id": "wafer_00046865_017",
+      "replacement_id": "wafer_00002521_008",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 122,
+      "original_id": "wafer_00012759_006",
+      "replacement_id": "wafer_00002519_001",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 162,
+      "original_id": "wafer_00018017_006",
+      "replacement_id": "wafer_00012756_013",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 67,
+      "original_id": "wafer_00019344_022",
+      "replacement_id": "wafer_00035449_021",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 73,
+      "original_id": "wafer_00004084_007",
+      "replacement_id": "wafer_00012310_005",
+      "class": "Edge_Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 195,
+      "original_id": "wafer_00017160_005",
+      "replacement_id": "wafer_00007369_003",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 147,
+      "original_id": "wafer_00047316_017",
+      "replacement_id": "wafer_00038590_019",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 241,
+      "original_id": "wafer_00016675_005",
+      "replacement_id": "wafer_00003868_012",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 163,
+      "original_id": "wafer_00040337_002",
+      "replacement_id": "wafer_00005993_009",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 113,
+      "original_id": "wafer_00043680_013",
+      "replacement_id": "wafer_00016552_004",
+      "class": "Edge_Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 203,
+      "original_id": "wafer_00042367_007",
+      "replacement_id": "wafer_00007846_013",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 237,
+      "original_id": "wafer_00003916_010",
+      "replacement_id": "wafer_00011171_024",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 187,
+      "original_id": "wafer_00006693_003",
+      "replacement_id": "wafer_00007994_004",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 220,
+      "original_id": "wafer_00002494_021",
+      "replacement_id": "wafer_00010049_013",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 234,
+      "original_id": "wafer_00042917_020",
+      "replacement_id": "wafer_00007846_023",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 50,
+      "original_id": "wafer_00044783_013",
+      "replacement_id": "wafer_00002519_005",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 115,
+      "original_id": "wafer_00044335_016",
+      "replacement_id": "wafer_00005447_007",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 194,
+      "original_id": "wafer_00012759_018",
+      "replacement_id": "wafer_00047085_024",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 221,
+      "original_id": "wafer_00040557_021",
+      "replacement_id": "wafer_00007846_004",
+      "class": "Loc",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 155,
+      "original_id": "wafer_00042167_019",
+      "replacement_id": "wafer_00006175_001",
+      "class": "Loc",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 74,
+      "original_id": "wafer_00031591_025",
+      "replacement_id": "wafer_00002519_023",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 233,
+      "original_id": "wafer_00018017_002",
+      "replacement_id": "wafer_00012756_024",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 170,
+      "original_id": "wafer_00002520_004",
+      "replacement_id": "wafer_00002520_025",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 228,
+      "original_id": "wafer_00017159_024",
+      "replacement_id": "wafer_00001414_012",
+      "class": "Donut",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "middle",
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 208,
+      "original_id": "wafer_00018017_001",
+      "replacement_id": "wafer_00011171_013",
+      "class": "Edge_Ring",
+      "from_zones": [
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "edge"
+      ]
+    },
+    {
+      "presentation_group": 132,
+      "original_id": "wafer_00040567_020",
+      "replacement_id": "wafer_00045339_003",
+      "class": "Random",
+      "from_zones": [
+        "center",
+        "middle",
+        "edge"
+      ],
+      "to_zones": [
+        "middle",
+        "edge"
+      ]
+    }
+  ],
+  "prompt_and_target_per_image_unchanged": true,
+  "sampling_basis": "frozen training references only; no confirmation scores or images read",
+  "image_path_rewrite_only": true,
+  "source_sha256": "3d33a191b1423513298a2d7f052c631cef5f9370807870750994f60dba6e57ba",
+  "output_sha256": "7149f10cce5e0fc06e40cd4dddb00b4e0b7b70f947cc0d45c575b50f999f64ea"
+}
