@@ -1,0 +1,20 @@
+[
+ {
+  "file": "rw_in.jsonl",
+  "before_sha256": "68729bf3f00f2d26704fbe3c4c2e9427f09bf06c40581a867f11ac77555c8c97",
+  "after_sha256": "a321c5c2efe1485fe6b020d5fe7908f23807d26d5021e8767c9b4c7e95269977",
+  "img_replacements": 2,
+  "root_replacements": 0,
+  "img_prefix": "/REAL/img448",
+  "out": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\tests\\fixtures\\rw_out\\rw_in.jsonl"
+ },
+ {
+  "file": "rw_in_x2.jsonl",
+  "before_sha256": "12688b8edd69e5b93d30091e1824fbb82838107516b77561261bc0260e66994b",
+  "after_sha256": "f4f3cbd8b62853c688c8129d71cd1f589537c32e81a1b4a4cad9140f6f043298",
+  "img_replacements": 1,
+  "root_replacements": 0,
+  "img_prefix": "/REAL/img896",
+  "out": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\tests\\fixtures\\rw_out\\rw_in_x2.jsonl"
+ }
+]

@@ -121,6 +121,7 @@ def score_main(raw_rows, ref_rows):
             cons.append(row["consistency"])
         # 类别
         truth = ref["defect_class"]
+        row["true_class"] = truth
         if ok and parsed["obj"]["defect_class"] == truth:
             counters["class_ok"] += 1
             row["class_ok"] = True
@@ -209,7 +210,7 @@ def score_L(raw_rows, ref_rows):
             except Exception:
                 pred = None
         per.append({"sample_id": sid, "lot_name": "", "present": present,
-                    "class_pred": pred, "class_ok": pred == truth})
+                    "class_pred": pred, "class_ok": pred == truth, "true_class": truth})
     tp = Counter(); fp = Counter(); fn = Counter(); support = Counter()
     n_att = sum(1 for r in per if r["present"]) or 1
     for row in per:

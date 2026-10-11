@@ -24,3 +24,18 @@
 - 问题：合同 5.4 行格式写"sample_id":"<文件名去后缀>"；S3 的图片名加 `_x2`、评测 `_x2` 文件要与原 id 对齐打分；5.5 要求 measure_exact 是"未舍入原值"，但几何 v2 输出的 zone_frac/R1/R2 已在源头保留 5 位小数。
 - 选择：①sample_id 一律去 `_x2`（该后缀只是渲染副本），保留 `_r090/_r180/_r270`（是不同样本）；②measure_exact.red_ratio = n_red/(n_green+n_red)、zone_frac = zone_mass/n_red（真未舍入）；R1/R2 用源头的 5 位小数值（无更细分来源，偏差 <5e-6，远小于评分容差 0.3）。
 - 理由：打分对齐与"不伪造"优先；R1/R2 舍入影响可忽略且在 DECISIONS 写明。
+
+## D6 2026-10-12 02:5x runtime_guard 的最小改动（合同冲突裁决）
+- 问题：合同 6.3 规定 RL 继承赢家冻结设置（"赢家是 S2 则 freeze_vit=False"），但 B 卡要求 runtime_guard_v3 "不改逻辑"复制，而原 guard 对"视觉参数可训练"一律抛错——若 S2 赢，全部 RL 线都会被门槛拒绝（P0 崩塌）。
+- 选择：guard 逐字保留，仅加一行显式开关：`WAFER_ALLOW_VISUAL_TRAINABLE=1` 时才放行视觉 LoRA 可训练（默认行为与原版完全一致）；train_v5 在 config freeze_vit=False 时自动设该环境变量。
+- 理由：0.4 表"其他未列情况：不改合同数值、最保守"——两条合同条款冲突时选择让两者都可执行的最小改动，且改动被显式记录。
+
+## D7 2026-10-12 02:5x RL 的保存间隔与数据面量
+- 问题：合同未规定 RL 线的 save_steps（只规定 SFT 的 125）。时间盒 3.5h，需要中途可截断的保存点。
+- 选择：RL 五线 save_steps=40、save_total_limit=4（40/80/120/160 四个保存点）。
+- 理由：按 SFT 同比例（375→125 约每 42 分钟），保证"取已保存最大步 checkpoint"在时间盒截断时粒度足够；不挑选 checkpoint 的纪律不变。
+
+## D8 2026-10-12 02:5x probe_v5 视觉塔调用需服务器验证
+- 问题：线性探针的视觉塔具体调用方式（model.visual 接口、image_grid_thw）本机无法验证（本机无 ms-swift/torch 环境）。
+- 选择：按 transformers 通用接口写好，标 P2；在服务器冒烟时先用 5 张图带 --limit 5 试跑确认，失败则按 0.4 表标 not run。
+- 理由：probe 是 P2 诊断，不给关键路径挡路；失败不影响主实验。

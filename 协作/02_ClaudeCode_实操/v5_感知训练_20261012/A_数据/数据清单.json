@@ -118,5 +118,10 @@
   "file": "rsft_rows_template.jsonl",
   "lines": 1280,
   "sha256": "61e7b7aba891f7fb364d2f55c602ebc2709ae935b1f90b217fa58c68e2327d0d"
+ },
+ {
+  "file": "sft_meta_train.jsonl",
+  "lines": 4536,
+  "sha256": "a9f506aa5bb9c2389abe5067451ae22cf7adb66e7c24e049648de8e5dd801237"
  }
 ]

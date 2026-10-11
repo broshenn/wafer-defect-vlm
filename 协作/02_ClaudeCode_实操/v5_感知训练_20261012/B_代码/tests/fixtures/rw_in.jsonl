@@ -1,0 +1,2 @@
+{"messages":[{"role":"user","content":"<image>\nX"}],"images":["__IMG__/a.png"],"sample_id":"a"}
+{"messages":[{"role":"user","content":"<image>\nX"}],"images":["__IMG__/b_r090.png"],"sample_id":"b_r090"}

@@ -1,0 +1,2850 @@
+{
+ "gpus": {
+  "g1": "uuid-1",
+  "g2": "uuid-2",
+  "g3": "uuid-3",
+  "g4": "uuid-4",
+  "g5": "uuid-5",
+  "g6": "uuid-6",
+  "g7": "uuid-7"
+ },
+ "jobs": [
+  {
+   "id": "gate_S1",
+   "gpus": [
+    "g1"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S1.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S1.log",
+   "cwd": null
+  },
+  {
+   "id": "gate_S0",
+   "gpus": [
+    "g2"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S0.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S0.log",
+   "cwd": null
+  },
+  {
+   "id": "gate_S2",
+   "gpus": [
+    "g3"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S2.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S2.log",
+   "cwd": null
+  },
+  {
+   "id": "gate_S1p",
+   "gpus": [
+    "g4"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S1p.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S1p.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_base_select",
+   "gpus": [
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_base_select.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_base_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_base_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_base_select.sh"
+   ],
+   "after": [
+    "eval_base_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_base_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_base_rot100",
+   "gpus": [
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_base_rot100.sh"
+   ],
+   "after": [
+    "eval_base_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_base_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_base_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_base_rot100.sh"
+   ],
+   "after": [
+    "eval_base_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_base_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_base_test200",
+   "gpus": [
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_base_test200.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_base_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_base_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_base_test200.sh"
+   ],
+   "after": [
+    "eval_base_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_base_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_base_shuf50",
+   "gpus": [
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_base_shuf50.sh"
+   ],
+   "after": [
+    "eval_base_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_base_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_base_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_base_shuf50.sh"
+   ],
+   "after": [
+    "eval_base_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_base_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_L_select",
+   "gpus": [
+    "g6"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_L_select.sh"
+   ],
+   "after": [],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_L_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_L_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_L_select.sh"
+   ],
+   "after": [
+    "eval_L_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_L_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_L_test200",
+   "gpus": [
+    "g6"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_L_test200.sh"
+   ],
+   "after": [
+    "eval_L_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_L_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_L_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_L_test200.sh"
+   ],
+   "after": [
+    "eval_L_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_L_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S1",
+   "gpus": [
+    "g1"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S1.sh"
+   ],
+   "after": [
+    "gate_S1"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S1.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S0",
+   "gpus": [
+    "g2"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S0.sh"
+   ],
+   "after": [
+    "gate_S0"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S0.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S2",
+   "gpus": [
+    "g3"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S2.sh"
+   ],
+   "after": [
+    "gate_S2"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S2.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S1p",
+   "gpus": [
+    "g4"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S1p.sh"
+   ],
+   "after": [
+    "gate_S1p"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S1p.log",
+   "cwd": null
+  },
+  {
+   "id": "gate_S3",
+   "gpus": [
+    "g7",
+    "g6"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S3.sh"
+   ],
+   "after": [
+    "eval_L_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S3.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S3",
+   "gpus": [
+    "g7",
+    "g6"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S3.sh"
+   ],
+   "after": [
+    "gate_S3"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S3.log",
+   "cwd": null
+  },
+  {
+   "id": "gate_S4",
+   "gpus": [
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\gate_S4.sh"
+   ],
+   "after": [
+    "eval_L_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/gate_S4.log",
+   "cwd": null
+  },
+  {
+   "id": "sft_S4",
+   "gpus": [
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\sft_S4.sh"
+   ],
+   "after": [
+    "gate_S4"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 300,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/sft_S4.log",
+   "cwd": null
+  },
+  {
+   "id": "cnn",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\cnn.sh"
+   ],
+   "after": [
+    "eval_base_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 90,
+   "timeout_ok": true,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/cnn.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1_select",
+   "gpus": [
+    "g1",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1_select.sh"
+   ],
+   "after": [
+    "sft_S1"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1_select.sh"
+   ],
+   "after": [
+    "eval_S1_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1_test200",
+   "gpus": [
+    "g1",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1_test200.sh"
+   ],
+   "after": [
+    "sft_S1"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1_test200.sh"
+   ],
+   "after": [
+    "eval_S1_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1_rot100",
+   "gpus": [
+    "g1",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1_rot100.sh"
+   ],
+   "after": [
+    "eval_S1_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1_rot100.sh"
+   ],
+   "after": [
+    "eval_S1_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1_shuf50",
+   "gpus": [
+    "g1",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1_shuf50.sh"
+   ],
+   "after": [
+    "eval_S1_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1_shuf50.sh"
+   ],
+   "after": [
+    "eval_S1_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S0_select",
+   "gpus": [
+    "g2",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S0_select.sh"
+   ],
+   "after": [
+    "sft_S0"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S0_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S0_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S0_select.sh"
+   ],
+   "after": [
+    "eval_S0_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S0_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S0_test200",
+   "gpus": [
+    "g2",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S0_test200.sh"
+   ],
+   "after": [
+    "sft_S0"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S0_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S0_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S0_test200.sh"
+   ],
+   "after": [
+    "eval_S0_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S0_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S0_rot100",
+   "gpus": [
+    "g2",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S0_rot100.sh"
+   ],
+   "after": [
+    "eval_S0_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S0_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S0_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S0_rot100.sh"
+   ],
+   "after": [
+    "eval_S0_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S0_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S0_shuf50",
+   "gpus": [
+    "g2",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S0_shuf50.sh"
+   ],
+   "after": [
+    "eval_S0_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S0_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S0_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S0_shuf50.sh"
+   ],
+   "after": [
+    "eval_S0_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S0_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S2_select",
+   "gpus": [
+    "g3",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S2_select.sh"
+   ],
+   "after": [
+    "sft_S2"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S2_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S2_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S2_select.sh"
+   ],
+   "after": [
+    "eval_S2_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S2_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S2_test200",
+   "gpus": [
+    "g3",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S2_test200.sh"
+   ],
+   "after": [
+    "sft_S2"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S2_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S2_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S2_test200.sh"
+   ],
+   "after": [
+    "eval_S2_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S2_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S2_rot100",
+   "gpus": [
+    "g3",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S2_rot100.sh"
+   ],
+   "after": [
+    "eval_S2_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S2_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S2_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S2_rot100.sh"
+   ],
+   "after": [
+    "eval_S2_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S2_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S2_shuf50",
+   "gpus": [
+    "g3",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S2_shuf50.sh"
+   ],
+   "after": [
+    "eval_S2_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S2_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S2_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S2_shuf50.sh"
+   ],
+   "after": [
+    "eval_S2_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S2_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1p_test200",
+   "gpus": [
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1p_test200.sh"
+   ],
+   "after": [
+    "sft_S1p"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1p_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1p_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1p_test200.sh"
+   ],
+   "after": [
+    "eval_S1p_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1p_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1p_rot100",
+   "gpus": [
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1p_rot100.sh"
+   ],
+   "after": [
+    "eval_S1p_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1p_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1p_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1p_rot100.sh"
+   ],
+   "after": [
+    "eval_S1p_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1p_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1p_shuf50",
+   "gpus": [
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1p_shuf50.sh"
+   ],
+   "after": [
+    "eval_S1p_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1p_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1p_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1p_shuf50.sh"
+   ],
+   "after": [
+    "eval_S1p_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1p_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S3_select",
+   "gpus": [
+    "g7",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S3_select.sh"
+   ],
+   "after": [
+    "sft_S3"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S3_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S3_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S3_select.sh"
+   ],
+   "after": [
+    "eval_S3_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S3_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S3_test200",
+   "gpus": [
+    "g7",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S3_test200.sh"
+   ],
+   "after": [
+    "sft_S3"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S3_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S3_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S3_test200.sh"
+   ],
+   "after": [
+    "eval_S3_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S3_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S3_rot100",
+   "gpus": [
+    "g7",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S3_rot100.sh"
+   ],
+   "after": [
+    "eval_S3_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S3_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S3_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S3_rot100.sh"
+   ],
+   "after": [
+    "eval_S3_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S3_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S3_shuf50",
+   "gpus": [
+    "g7",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S3_shuf50.sh"
+   ],
+   "after": [
+    "eval_S3_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S3_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S3_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S3_shuf50.sh"
+   ],
+   "after": [
+    "eval_S3_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S3_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S4_select",
+   "gpus": [
+    "g6",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S4_select.sh"
+   ],
+   "after": [
+    "sft_S4"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S4_select.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S4_select",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S4_select.sh"
+   ],
+   "after": [
+    "eval_S4_select"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S4_select.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S4_test200",
+   "gpus": [
+    "g6",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S4_test200.sh"
+   ],
+   "after": [
+    "sft_S4"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S4_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S4_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S4_test200.sh"
+   ],
+   "after": [
+    "eval_S4_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S4_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S4_rot100",
+   "gpus": [
+    "g6",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S4_rot100.sh"
+   ],
+   "after": [
+    "eval_S4_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S4_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S4_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S4_rot100.sh"
+   ],
+   "after": [
+    "eval_S4_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S4_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S4_shuf50",
+   "gpus": [
+    "g6",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S4_shuf50.sh"
+   ],
+   "after": [
+    "eval_S4_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S4_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S4_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S4_shuf50.sh"
+   ],
+   "after": [
+    "eval_S4_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S4_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "select_winner",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\select_winner.sh"
+   ],
+   "after": [
+    "eval_S0_select",
+    "eval_S1_select",
+    "eval_S2_select",
+    "eval_S3_select",
+    "eval_S4_select",
+    "eval_L_select"
+   ],
+   "after_mode": "all_finished",
+   "timeout_min": 10,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/select_winner.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_0",
+   "gpus": [
+    "g1"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_0.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_0.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_1",
+   "gpus": [
+    "g2"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_1.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_1.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_2",
+   "gpus": [
+    "g3"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_2.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_2.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_3",
+   "gpus": [
+    "g4"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_3.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_3.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_4",
+   "gpus": [
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_4.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_4.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_5",
+   "gpus": [
+    "g6"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_5.sh"
+   ],
+   "after": [
+    "select_winner"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 60,
+   "timeout_ok": false,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_5.log",
+   "cwd": null
+  },
+  {
+   "id": "screen_merge",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\screen_merge.sh"
+   ],
+   "after": [
+    "screen_0",
+    "screen_1",
+    "screen_2",
+    "screen_3",
+    "screen_4",
+    "screen_5"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/screen_merge.log",
+   "cwd": null
+  },
+  {
+   "id": "rl_RSFT",
+   "gpus": [
+    "g1"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\rl_RSFT.sh"
+   ],
+   "after": [
+    "screen_merge"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 210,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/rl_RSFT.log",
+   "cwd": null
+  },
+  {
+   "id": "rl_Rfull",
+   "gpus": [
+    "g2"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\rl_Rfull.sh"
+   ],
+   "after": [
+    "screen_merge"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 210,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/rl_Rfull.log",
+   "cwd": null
+  },
+  {
+   "id": "rl_Rbinary",
+   "gpus": [
+    "g3"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\rl_Rbinary.sh"
+   ],
+   "after": [
+    "screen_merge"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 210,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/rl_Rbinary.log",
+   "cwd": null
+  },
+  {
+   "id": "rl_Rnoproc",
+   "gpus": [
+    "g4"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\rl_Rnoproc.sh"
+   ],
+   "after": [
+    "screen_merge"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 210,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/rl_Rnoproc.log",
+   "cwd": null
+  },
+  {
+   "id": "rl_Rfullp",
+   "gpus": [
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\rl_Rfullp.sh"
+   ],
+   "after": [
+    "screen_merge"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 210,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": true,
+   "log": "/WS/v5/night/logs/rl_Rfullp.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_RSFT_test200",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_RSFT_test200.sh"
+   ],
+   "after": [
+    "rl_RSFT"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_RSFT_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_RSFT_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_RSFT_test200.sh"
+   ],
+   "after": [
+    "eval_RSFT_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_RSFT_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_RSFT_rot100",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_RSFT_rot100.sh"
+   ],
+   "after": [
+    "eval_RSFT_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_RSFT_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_RSFT_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_RSFT_rot100.sh"
+   ],
+   "after": [
+    "eval_RSFT_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_RSFT_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_RSFT_shuf50",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_RSFT_shuf50.sh"
+   ],
+   "after": [
+    "eval_RSFT_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_RSFT_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_RSFT_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_RSFT_shuf50.sh"
+   ],
+   "after": [
+    "eval_RSFT_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_RSFT_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfull_test200",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfull_test200.sh"
+   ],
+   "after": [
+    "rl_Rfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfull_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfull_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfull_test200.sh"
+   ],
+   "after": [
+    "eval_Rfull_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfull_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfull_rot100",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfull_rot100.sh"
+   ],
+   "after": [
+    "eval_Rfull_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfull_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfull_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfull_rot100.sh"
+   ],
+   "after": [
+    "eval_Rfull_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfull_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfull_shuf50",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfull_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rfull_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfull_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfull_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfull_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rfull_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfull_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rbinary_test200",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rbinary_test200.sh"
+   ],
+   "after": [
+    "rl_Rbinary"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rbinary_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rbinary_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rbinary_test200.sh"
+   ],
+   "after": [
+    "eval_Rbinary_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rbinary_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rbinary_rot100",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rbinary_rot100.sh"
+   ],
+   "after": [
+    "eval_Rbinary_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rbinary_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rbinary_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rbinary_rot100.sh"
+   ],
+   "after": [
+    "eval_Rbinary_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rbinary_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rbinary_shuf50",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rbinary_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rbinary_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rbinary_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rbinary_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rbinary_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rbinary_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rbinary_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rnoproc_test200",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rnoproc_test200.sh"
+   ],
+   "after": [
+    "rl_Rnoproc"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rnoproc_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rnoproc_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rnoproc_test200.sh"
+   ],
+   "after": [
+    "eval_Rnoproc_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rnoproc_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rnoproc_rot100",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rnoproc_rot100.sh"
+   ],
+   "after": [
+    "eval_Rnoproc_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rnoproc_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rnoproc_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rnoproc_rot100.sh"
+   ],
+   "after": [
+    "eval_Rnoproc_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rnoproc_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rnoproc_shuf50",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rnoproc_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rnoproc_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rnoproc_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rnoproc_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rnoproc_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rnoproc_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rnoproc_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfullp_test200",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfullp_test200.sh"
+   ],
+   "after": [
+    "rl_Rfullp"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 33,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfullp_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfullp_test200",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfullp_test200.sh"
+   ],
+   "after": [
+    "eval_Rfullp_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfullp_test200.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfullp_rot100",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfullp_rot100.sh"
+   ],
+   "after": [
+    "eval_Rfullp_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfullp_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfullp_rot100",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfullp_rot100.sh"
+   ],
+   "after": [
+    "eval_Rfullp_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfullp_rot100.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfullp_shuf50",
+   "gpus": [
+    "g1",
+    "g2",
+    "g3",
+    "g4",
+    "g5",
+    "g6",
+    "g7"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfullp_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rfullp_rot100"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 20,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfullp_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfullp_shuf50",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfullp_shuf50.sh"
+   ],
+   "after": [
+    "eval_Rfullp_shuf50"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfullp_shuf50.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_BASE_testfull",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7",
+    "g4",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_BASE_testfull.sh"
+   ],
+   "after": [
+    "eval_base_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 91,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_BASE_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_BASE_testfull",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_BASE_testfull.sh"
+   ],
+   "after": [
+    "eval_BASE_testfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_BASE_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S0_testfull",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7",
+    "g4",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S0_testfull.sh"
+   ],
+   "after": [
+    "eval_S0_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 91,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S0_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S0_testfull",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S0_testfull.sh"
+   ],
+   "after": [
+    "eval_S0_testfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S0_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_S1_testfull",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7",
+    "g4",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_S1_testfull.sh"
+   ],
+   "after": [
+    "eval_S1_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 91,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_S1_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_S1_testfull",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_S1_testfull.sh"
+   ],
+   "after": [
+    "eval_S1_testfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_S1_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_RSFT_testfull",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7",
+    "g4",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_RSFT_testfull.sh"
+   ],
+   "after": [
+    "eval_RSFT_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 91,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_RSFT_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_RSFT_testfull",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_RSFT_testfull.sh"
+   ],
+   "after": [
+    "eval_RSFT_testfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_RSFT_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "eval_Rfull_testfull",
+   "gpus": [
+    "g5",
+    "g6",
+    "g7",
+    "g4",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\eval_Rfull_testfull.sh"
+   ],
+   "after": [
+    "eval_Rfull_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 91,
+   "timeout_ok": true,
+   "retries": 1,
+   "training": false,
+   "log": "/WS/v5/night/logs/eval_Rfull_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "score_eval_Rfull_testfull",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\score_eval_Rfull_testfull.sh"
+   ],
+   "after": [
+    "eval_Rfull_testfull"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 15,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/score_eval_Rfull_testfull.log",
+   "cwd": null
+  },
+  {
+   "id": "probe",
+   "gpus": [
+    "g7",
+    "g6",
+    "g5"
+   ],
+   "cmd": [
+    "bash",
+    "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\v5_感知训练_20261012\\B_代码\\scripts\\probe.sh"
+   ],
+   "after": [
+    "eval_L_test200"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 120,
+   "timeout_ok": true,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/probe.log",
+   "cwd": null
+  },
+  {
+   "id": "backup",
+   "gpus": [
+    "cpu"
+   ],
+   "cmd": [
+    "bash",
+    "/WS/v5/code/backup.sh"
+   ],
+   "after": [
+    "gate_S1",
+    "gate_S0",
+    "gate_S2",
+    "gate_S1p",
+    "eval_base_select",
+    "score_eval_base_select",
+    "eval_base_rot100",
+    "score_eval_base_rot100",
+    "eval_base_test200",
+    "score_eval_base_test200",
+    "eval_base_shuf50",
+    "score_eval_base_shuf50",
+    "eval_L_select",
+    "score_eval_L_select",
+    "eval_L_test200",
+    "score_eval_L_test200",
+    "sft_S1",
+    "sft_S0",
+    "sft_S2",
+    "sft_S1p",
+    "gate_S3",
+    "sft_S3",
+    "gate_S4",
+    "sft_S4",
+    "cnn",
+    "eval_S1_select",
+    "score_eval_S1_select",
+    "eval_S1_test200",
+    "score_eval_S1_test200",
+    "eval_S1_rot100",
+    "score_eval_S1_rot100",
+    "eval_S1_shuf50",
+    "score_eval_S1_shuf50",
+    "eval_S0_select",
+    "score_eval_S0_select",
+    "eval_S0_test200",
+    "score_eval_S0_test200",
+    "eval_S0_rot100",
+    "score_eval_S0_rot100",
+    "eval_S0_shuf50",
+    "score_eval_S0_shuf50",
+    "eval_S2_select",
+    "score_eval_S2_select",
+    "eval_S2_test200",
+    "score_eval_S2_test200",
+    "eval_S2_rot100",
+    "score_eval_S2_rot100",
+    "eval_S2_shuf50",
+    "score_eval_S2_shuf50",
+    "eval_S1p_test200",
+    "score_eval_S1p_test200",
+    "eval_S1p_rot100",
+    "score_eval_S1p_rot100",
+    "eval_S1p_shuf50",
+    "score_eval_S1p_shuf50",
+    "eval_S3_select",
+    "score_eval_S3_select",
+    "eval_S3_test200",
+    "score_eval_S3_test200",
+    "eval_S3_rot100",
+    "score_eval_S3_rot100",
+    "eval_S3_shuf50",
+    "score_eval_S3_shuf50",
+    "eval_S4_select",
+    "score_eval_S4_select",
+    "eval_S4_test200",
+    "score_eval_S4_test200",
+    "eval_S4_rot100",
+    "score_eval_S4_rot100",
+    "eval_S4_shuf50",
+    "score_eval_S4_shuf50",
+    "select_winner",
+    "screen_0",
+    "screen_1",
+    "screen_2",
+    "screen_3",
+    "screen_4",
+    "screen_5",
+    "screen_merge",
+    "rl_RSFT",
+    "rl_Rfull",
+    "rl_Rbinary",
+    "rl_Rnoproc",
+    "rl_Rfullp",
+    "eval_RSFT_test200",
+    "score_eval_RSFT_test200",
+    "eval_RSFT_rot100",
+    "score_eval_RSFT_rot100",
+    "eval_RSFT_shuf50",
+    "score_eval_RSFT_shuf50",
+    "eval_Rfull_test200",
+    "score_eval_Rfull_test200",
+    "eval_Rfull_rot100",
+    "score_eval_Rfull_rot100",
+    "eval_Rfull_shuf50",
+    "score_eval_Rfull_shuf50",
+    "eval_Rbinary_test200",
+    "score_eval_Rbinary_test200",
+    "eval_Rbinary_rot100",
+    "score_eval_Rbinary_rot100",
+    "eval_Rbinary_shuf50",
+    "score_eval_Rbinary_shuf50",
+    "eval_Rnoproc_test200",
+    "score_eval_Rnoproc_test200",
+    "eval_Rnoproc_rot100",
+    "score_eval_Rnoproc_rot100",
+    "eval_Rnoproc_shuf50",
+    "score_eval_Rnoproc_shuf50",
+    "eval_Rfullp_test200",
+    "score_eval_Rfullp_test200",
+    "eval_Rfullp_rot100",
+    "score_eval_Rfullp_rot100",
+    "eval_Rfullp_shuf50",
+    "score_eval_Rfullp_shuf50",
+    "eval_BASE_testfull",
+    "score_eval_BASE_testfull",
+    "eval_S0_testfull",
+    "score_eval_S0_testfull",
+    "eval_S1_testfull",
+    "score_eval_S1_testfull",
+    "eval_RSFT_testfull",
+    "score_eval_RSFT_testfull",
+    "eval_Rfull_testfull",
+    "score_eval_Rfull_testfull",
+    "probe"
+   ],
+   "after_mode": "all_ok",
+   "timeout_min": 30,
+   "timeout_ok": false,
+   "retries": 0,
+   "training": false,
+   "log": "/WS/v5/night/logs/backup.log",
+   "cwd": null
+  }
+ ],
+ "hard_stop": "08:30",
+ "generated": "2026-10-12T02:29:46",
+ "deviations": [],
+ "timing": {
+  "sft_s_per_step": 20,
+  "rl_s_per_step": 60,
+  "eval_s_per_img": 6,
+  "load_s": 120,
+  "eval_batch_size": 8
+ }
+}

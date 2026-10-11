@@ -1,0 +1,1 @@
+{"sft_s_per_step": 20, "rl_s_per_step": 60, "eval_s_per_img": 6, "load_s": 120, "eval_batch_size": 8}
