@@ -26,3 +26,6 @@
 - 第 0 步（02:12 完成）：prompt_v5.txt SHA=b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a（15 行）；
   atomic_templates.json SHA=94e9359e8a5fc21656ac1c0f57b5b8f4037ba616d863878a1ffd614bd468647d（T1..T6 六条）。
   本机解释器：D:\anaconda\python.exe（numpy 1.26.4 / PIL 12.3.0 / pandas 2.3.3）。
+
+## 巡检记录（服务器时间）
+- 02:57 巡检1：调度器活；DONE 6 / RUNNING 7 / PENDING 113。SFT：S1 85/375@7.03s/it、S2 76/375@7.51、S1p 83/375@6.85、S0 30/375@18.33（S0 全主任务长序列，速率属正常）。评测：base_select(g5)、base_test200(g7)、L_test200(g6) 并行中。GPU1-7 均在用。
