@@ -34,3 +34,4 @@
 - 03:36-04:00 巡检4-7：SFT 四线稳定（18.3-18.9s/it）；probe 经 4 处接口小修后跑完（2000×19584 特征；coverage 0.3277/zones 0.3243/angular 0.1715，均低于多数类基线——按合同配方如实记录）；sft_S4（P2）g6 训练中。
 - 04:23 巡检10：**S1/S2/S1p 完成 375 步**（1h30-1h35）；自动进入评测链（S1_select/S1_test200/S1p_test200/S2_select/S2_test200 并行）；S0 83%（ETA 04:45）；S4（P2）仍在训。cnn 修复后重跑完成：**acc=0.7827 macro_f1=0.7723**（ResNet18 从零训 20 轮）。
 - 04:50 巡检13：**S0 完成 375 步（1h54m）——四条主 SFT 线全部完成**；评测链持续推进（S0_select/S0_test200/S1_shuf50/S1p_shuf50/S2_rot100/S4_select 并行）。CNN acc=0.7827。待 S0_select 与 S4_select 完成 → select_winner → 图池筛选 → RL。
+- 05:09 巡检15：**select_winner 完成：赢家 = S0**（SELECT200 GeoScore 0.9273、类别 acc 0.875；S1 0.9093/S2 0.9115/S4 0.9069；S3 failed 不参选）。screen_0-3 已在 g1-g4 开跑；S0/S4 评测链与 S1 全量 TEST 继续。
