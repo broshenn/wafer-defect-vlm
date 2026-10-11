@@ -1,0 +1,32 @@
+[
+ {
+  "file": "sft_S0.jsonl",
+  "lines": 12000,
+  "sha256": "0d6b4754df33100b31bbefafa8315ad351737afd74a8f37c63f1b6db8024499a"
+ },
+ {
+  "file": "sft_S1.jsonl",
+  "lines": 12000,
+  "sha256": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd"
+ },
+ {
+  "file": "sft_S2.jsonl",
+  "lines": 12000,
+  "sha256": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd"
+ },
+ {
+  "file": "sft_S3.jsonl",
+  "lines": 12000,
+  "sha256": "e0114fd90ce86245729ffe8468afe4ebbb4e35d2a87f990aea951ff1bb987fc7"
+ },
+ {
+  "file": "sft_S4.jsonl",
+  "lines": 12000,
+  "sha256": "2543dbc13fb4de4381213e7a27b0413a1e654dce2de630c2a2635d4d4106a30b"
+ },
+ {
+  "file": "sft_S1p.jsonl",
+  "lines": 12000,
+  "sha256": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd"
+ }
+]

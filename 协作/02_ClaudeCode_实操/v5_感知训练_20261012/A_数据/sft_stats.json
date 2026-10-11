@@ -1,0 +1,101 @@
+{
+ "per_file": {
+  "sft_S0": {
+   "lines": 12000,
+   "atomic": 0,
+   "main": 12000,
+   "line_src": {
+    "rot": 9047,
+    "real": 2953
+   },
+   "main_line_src": {
+    "rot": 9047,
+    "real": 2953
+   },
+   "main_angular": {
+    "nondirectional": 8295,
+    "unknown": 3600,
+    "single": 92,
+    "opposed": 13
+   },
+   "template": {}
+  },
+  "sft_S1": {
+   "lines": 12000,
+   "atomic": 4000,
+   "main": 8000,
+   "line_src": {
+    "rot": 7601,
+    "syn": 1935,
+    "real": 2464
+   },
+   "main_line_src": {
+    "rot": 6052,
+    "real": 1948
+   },
+   "main_angular": {
+    "nondirectional": 5539,
+    "unknown": 2390,
+    "single": 68,
+    "opposed": 3
+   },
+   "template": {
+    "T1": 600,
+    "T2": 600,
+    "T6": 800,
+    "T5": 800,
+    "T3": 600,
+    "T4": 600
+   }
+  },
+  "sft_S4": {
+   "lines": 12000,
+   "atomic": 4000,
+   "main": 8000,
+   "line_src": {
+    "real": 12000
+   },
+   "main_line_src": {
+    "real": 8000
+   },
+   "main_angular": {
+    "single": 62,
+    "nondirectional": 5488,
+    "unknown": 2438,
+    "opposed": 12
+   },
+   "template": {
+    "T1": 600,
+    "T2": 600,
+    "T6": 800,
+    "T5": 800,
+    "T3": 600,
+    "T4": 600
+   }
+  }
+ },
+ "atomic_images_S1": {
+  "realrot": 2500,
+  "syn": 1500
+ },
+ "template_counts_S1": {
+  "T1": 600,
+  "T2": 600,
+  "T3": 600,
+  "T4": 600,
+  "T5": 800,
+  "T6": 800
+ },
+ "shas": {
+  "sft_S0.jsonl": "0d6b4754df33100b31bbefafa8315ad351737afd74a8f37c63f1b6db8024499a",
+  "sft_S1.jsonl": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd",
+  "sft_S2.jsonl": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd",
+  "sft_S3.jsonl": "e0114fd90ce86245729ffe8468afe4ebbb4e35d2a87f990aea951ff1bb987fc7",
+  "sft_S4.jsonl": "2543dbc13fb4de4381213e7a27b0413a1e654dce2de630c2a2635d4d4106a30b",
+  "sft_S1p.jsonl": "057fb655a10ce6c9dc0a5da5ed1e60ef51493878055d633515958c0a9a9dfefd"
+ },
+ "main_draw": {
+  "s0_s1_prefix": "同一 3407 排列，S0 取前 12000、S1 取前 8000",
+  "s4_mode": "原图池按轮次重复抽取"
+ }
+}
