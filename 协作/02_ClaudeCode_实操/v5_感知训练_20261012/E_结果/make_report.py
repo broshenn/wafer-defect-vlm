@@ -171,6 +171,19 @@ def main():
                   f"{fmt(m_field(m, 'format.stripped_legal_rate'))}/{fmt(m_field(m, 'format.raw_legal_rate'))} |")
     md.append("")
 
+    # 全量 TEST 附表（有才写）
+    have_tf = [tag for tag in EVAL_MODELS if metrics(tag, "testfull")]
+    if have_tf:
+        md.append("## 附表：全量 TEST（589 张，P1）")
+        md.append("| 模型 | GeoScore | coverage | zones | angular | 类别 acc | Macro-F1 |")
+        md.append("|---|---|---|---|---|---|---|")
+        for tag in have_tf:
+            m = metrics(tag, "testfull")
+            md.append(f"| {tag} | {fmt(m.get('geoscore'))} | {fmt(m_field(m, 'coverage.exact_rate'))} | "
+                      f"{fmt(m_field(m, 'zones.exact_rate'))} | {fmt(m_field(m, 'angular_type.acc'))} | "
+                      f"{fmt(m_field(m, 'class.acc'))} | {fmt(m_field(m, 'class.macro_f1'))} |")
+        md.append("")
+
     # 旋转/去图
     md.append("## 旋转等变（ROT100）与去图（SHUF50）")
     md.append("| 模型 | ROT100 coverage 不变 | ROT100 zones 不变 | ROT100 扇区+3 | SHUF50 GeoScore |")
@@ -218,6 +231,19 @@ def main():
     md.append(f"- dynamic_sample：{cfg_rf.get('dynamic_sample') if cfg_rf else 'not run'}"
               f"；起点：{cfg_rf.get('start_adapter') if cfg_rf else ''}")
     pr = load(P / "eval" / "PROBE" / "probe.json")
+    s1m = metrics("S1", "testfull") or metrics("S1", "test200")
+    if pr and s1m and s1m.get("geoscore") is not None:
+        thr = s1m["geoscore"] - 0.05
+        verdict = ("几何信息在视觉特征里基本可读，瓶颈偏语言侧"
+                   if pr.get("mean_acc", 0) >= thr else "视觉特征不足（探针不足以读出几何）")
+        md.append(f"- 探针解读规则（预注册，对照 S1 GeoScore {s1m['geoscore']:.3f}，阈值 {thr:.3f}）："
+                  f"探针 {pr.get('mean_acc')} → **{verdict}**")
+        # 与 S2−S1 方向的一致性检查
+        v2s = boot.get("视觉侧: S2−S1 (GeoScore)")
+        if v2s:
+            md.append(f"  - 与 S2−S1 方向的一致性：S2−S1 = {v2s['point_estimate']:+.4f}"
+                      f"（{'区间不含 0' if v2s['excludes_zero'] else '区间含 0'}）")
+
     if pr:
         md.append(f"- 线性探针（P2）：mean acc {pr.get('mean_acc')}（三字段 {json.dumps(pr.get('fields'), ensure_ascii=False)}）")
     cn = load(P / "eval" / "CNN" / "metrics.json")
