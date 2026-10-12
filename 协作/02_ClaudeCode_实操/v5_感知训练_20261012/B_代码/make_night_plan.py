@@ -209,6 +209,7 @@ def main() -> int:
     # ── N5：备份 ──
     add("backup", ["bash", f"{WS}/v5/code/backup.sh"], "cpu", after=[j["id"] for j in jobs],
         timeout_min=30)
+    jobs[-1]["after_mode"] = "all_finished"   # 备份不因个别线 failed/skipped 而连锁跳过（本次教训）
 
     # 依赖全部存在性检查（防手误）
     ids = {j["id"] for j in jobs}

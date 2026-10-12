@@ -64,3 +64,7 @@
 - 现象：S3 探针（896 图、IMAGE_MAX_TOKEN_NUM=1024）在 swift 数据集准备时报 "Failed to retrieve the dataset（increase max_length…）"——样本总 token 超 max_length=2048。
 - 选择：不改合同数值（max_length=2048 是合同 6.1 固定项），S3 线标 failed、不参选赢家、其评测连锁 SKIPPED；其余线照跑。S3 为 P2 线，不影响 P0/P1 主链。
 - 理由：0.4 表"某条线门槛失败 → 该线标 failed，其余线照跑"；P2 来不及就砍（0.3）。
+
+## D15 2026-10-12 08:21 夜跑终态与 backup 连锁跳过（修复）
+- 08:21:15 全部 126 任务终态（DONE 113 / FAILED 3 / SKIPPED 10），调度器正常退出写 ALL_DONE。3 个 FAILED 中 cnn 与 probe 已手动修复重跑并成功（cnn 0.7827、probe.json 已出）；gate_S3 有意不跑（D14）。10 个 SKIPPED 为 S3 连锁及其余不依赖项。
+- 发现 make_night_plan 的一个缺陷：backup 的 after=[全部任务] 未设 after_mode=all_finished，默认 all_ok 使 backup 被 gate_S3 的 FAILED 连锁跳过。修复：make_night_plan 中 backup 显式 after_mode=all_finished；本轮以手动 RUN `WS_ROOT=... bash backup.sh` 补上，不再依赖调度器。
