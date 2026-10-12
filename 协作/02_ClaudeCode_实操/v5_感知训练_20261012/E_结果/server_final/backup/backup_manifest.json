@@ -1,0 +1,1459 @@
+{
+ "tar": "/data/renjinyao/v5/backup/v5_night_20261012.tgz",
+ "sha256": "4f779fc04af19a180a2437d80de8f7b7242006112d80da2f3c3498a6345874ba",
+ "n_files": 363,
+ "files": [
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/trainer_state.json",
+   "size": 67156
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/args.json",
+   "size": 25906
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/training_args.bin",
+   "size": 11153
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary/v0-20261012-054825/checkpoint-80/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary//v5_config.json",
+   "size": 2033
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary//runtime_gate.json",
+   "size": 482
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rbinary//reward_audit.jsonl",
+   "size": 995770
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/trainer_state.json",
+   "size": 67081
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/args.json",
+   "size": 25894
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/training_args.bin",
+   "size": 11153
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull/v0-20261012-054825/checkpoint-80/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull//v5_config.json",
+   "size": 2019
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull//runtime_gate.json",
+   "size": 482
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfull//reward_audit.jsonl",
+   "size": 900415
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/trainer_state.json",
+   "size": 66814
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/args.json",
+   "size": 25900
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/training_args.bin",
+   "size": 11153
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp/v0-20261012-054826/checkpoint-80/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp//v5_config.json",
+   "size": 2025
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp//runtime_gate.json",
+   "size": 482
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rfullp//reward_audit.jsonl",
+   "size": 895572
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/trainer_state.json",
+   "size": 65583
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/args.json",
+   "size": 25906
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/training_args.bin",
+   "size": 11153
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc/v0-20261012-062008/checkpoint-80/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc//v5_config.json",
+   "size": 2033
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc//runtime_gate.json",
+   "size": 482
+  },
+  {
+   "name": "data/renjinyao/v5/runs/Rnoproc//reward_audit.jsonl",
+   "size": 1482093
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/trainer_state.json",
+   "size": 17581
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/args.json",
+   "size": 18026
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT/v0-20261012-054824/checkpoint-80/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT//v5_config.json",
+   "size": 1743
+  },
+  {
+   "name": "data/renjinyao/v5/runs/RSFT//runtime_gate.json",
+   "size": 392
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/scheduler.pt",
+   "size": 1465
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/trainer_state.json",
+   "size": 83592
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/args.json",
+   "size": 17888
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0//v5_config.json",
+   "size": 1477
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/trainer_state.json",
+   "size": 1194
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/args.json",
+   "size": 17916
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe/v0-20261012-024633/checkpoint-2/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S0_probe//v5_config.json",
+   "size": 1345
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/scheduler.pt",
+   "size": 1465
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/trainer_state.json",
+   "size": 83429
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/args.json",
+   "size": 17888
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1/v0-20261012-024732/checkpoint-375/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1//v5_config.json",
+   "size": 1476
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/scheduler.pt",
+   "size": 1465
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/trainer_state.json",
+   "size": 83438
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/args.json",
+   "size": 17896
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p/v0-20261012-024754/checkpoint-375/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p//v5_config.json",
+   "size": 1482
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/trainer_state.json",
+   "size": 1191
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/args.json",
+   "size": 17924
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe/v0-20261012-024634/checkpoint-2/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1p_probe//v5_config.json",
+   "size": 1349
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/trainer_state.json",
+   "size": 1192
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/args.json",
+   "size": 17916
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe/v0-20261012-024632/checkpoint-2/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S1_probe//v5_config.json",
+   "size": 1345
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/adapter_model.safetensors",
+   "size": 205165800
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/scheduler.pt",
+   "size": 1465
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/optimizer.pt",
+   "size": 410735367
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/trainer_state.json",
+   "size": 83363
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/args.json",
+   "size": 17890
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2/v0-20261012-024754/checkpoint-375/adapter_config.json",
+   "size": 1351
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2//v5_config.json",
+   "size": 1478
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/adapter_model.safetensors",
+   "size": 205165800
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/optimizer.pt",
+   "size": 410735367
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/trainer_state.json",
+   "size": 1194
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/args.json",
+   "size": 17918
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe/v0-20261012-024634/checkpoint-2/adapter_config.json",
+   "size": 1351
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S2_probe//v5_config.json",
+   "size": 1346
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/scheduler.pt",
+   "size": 1465
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/trainer_state.json",
+   "size": 83446
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/args.json",
+   "size": 17888
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4/v0-20261012-030037/checkpoint-375/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4//v5_config.json",
+   "size": 1476
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/additional_config.json",
+   "size": 67
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/rng_state.pth",
+   "size": 14645
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/adapter_model.safetensors",
+   "size": 173188512
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/scheduler.pt",
+   "size": 1401
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/optimizer.pt",
+   "size": 346652659
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/README.md",
+   "size": 5220
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/trainer_state.json",
+   "size": 1192
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/args.json",
+   "size": 17916
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/training_args.bin",
+   "size": 6737
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe/v0-20261012-025936/checkpoint-2/adapter_config.json",
+   "size": 1203
+  },
+  {
+   "name": "data/renjinyao/v5/runs/S4_probe//v5_config.json",
+   "size": 1344
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/rot100//BASE_raw.jsonl",
+   "size": 87496
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/rot100//metrics.json",
+   "size": 1811
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/rot100//per_sample.jsonl",
+   "size": 26795
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/rot100//台账_BASE.jsonl",
+   "size": 8846
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/select200//BASE_raw.jsonl",
+   "size": 176434
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/select200//metrics.json",
+   "size": 1641
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/select200//per_sample.jsonl",
+   "size": 53488
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/select200//台账_BASE.jsonl",
+   "size": 17127
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/shuf50//BASE_raw.jsonl",
+   "size": 37988
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/shuf50//metrics.json",
+   "size": 1594
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/shuf50//per_sample.jsonl",
+   "size": 14248
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/shuf50//台账_BASE.jsonl",
+   "size": 4702
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/test200//BASE_raw.jsonl",
+   "size": 176902
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/test200//metrics.json",
+   "size": 1632
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/test200//per_sample.jsonl",
+   "size": 53336
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/test200//台账_BASE.jsonl",
+   "size": 17140
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/testfull//BASE_raw.jsonl",
+   "size": 520330
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/testfull//metrics.json",
+   "size": 1654
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/testfull//per_sample.jsonl",
+   "size": 157540
+  },
+  {
+   "name": "data/renjinyao/v5/eval/BASE/testfull//台账_BASE.jsonl",
+   "size": 49732
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/select200//L_raw.jsonl",
+   "size": 103326
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/select200//metrics.json",
+   "size": 1206
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/select200//per_sample.jsonl",
+   "size": 27148
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/select200//台账_L.jsonl",
+   "size": 16615
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/test200//L_raw.jsonl",
+   "size": 304314
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/test200//metrics.json",
+   "size": 1220
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/test200//per_sample.jsonl",
+   "size": 79937
+  },
+  {
+   "name": "data/renjinyao/v5/eval/L/test200//台账_L.jsonl",
+   "size": 47696
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/rot100//Rbinary_raw.jsonl",
+   "size": 96884
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/rot100//metrics.json",
+   "size": 1849
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/rot100//per_sample.jsonl",
+   "size": 28356
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/rot100//台账_Rbinary.jsonl",
+   "size": 9294
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/shuf50//Rbinary_raw.jsonl",
+   "size": 48760
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/shuf50//metrics.json",
+   "size": 1609
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/shuf50//per_sample.jsonl",
+   "size": 14631
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/shuf50//台账_Rbinary.jsonl",
+   "size": 5002
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/test200//Rbinary_raw.jsonl",
+   "size": 193864
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/test200//metrics.json",
+   "size": 1681
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/test200//per_sample.jsonl",
+   "size": 56906
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rbinary/test200//台账_Rbinary.jsonl",
+   "size": 17879
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/rot100//Rfullp_raw.jsonl",
+   "size": 97302
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/rot100//metrics.json",
+   "size": 1843
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/rot100//per_sample.jsonl",
+   "size": 28302
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/rot100//台账_Rfullp.jsonl",
+   "size": 9180
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/shuf50//Rfullp_raw.jsonl",
+   "size": 48634
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/shuf50//metrics.json",
+   "size": 1612
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/shuf50//per_sample.jsonl",
+   "size": 14647
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/shuf50//台账_Rfullp.jsonl",
+   "size": 4939
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/test200//Rfullp_raw.jsonl",
+   "size": 194936
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/test200//metrics.json",
+   "size": 1688
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/test200//per_sample.jsonl",
+   "size": 56840
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfullp/test200//台账_Rfullp.jsonl",
+   "size": 17710
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/rot100//Rfull_raw.jsonl",
+   "size": 97256
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/rot100//metrics.json",
+   "size": 1845
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/rot100//per_sample.jsonl",
+   "size": 28602
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/rot100//台账_Rfull.jsonl",
+   "size": 9082
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/shuf50//Rfull_raw.jsonl",
+   "size": 48558
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/shuf50//metrics.json",
+   "size": 1604
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/shuf50//per_sample.jsonl",
+   "size": 14631
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/shuf50//台账_Rfull.jsonl",
+   "size": 4878
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/test200//Rfull_raw.jsonl",
+   "size": 194994
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/test200//metrics.json",
+   "size": 1681
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/test200//per_sample.jsonl",
+   "size": 57469
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/test200//台账_Rfull.jsonl",
+   "size": 17509
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/testfull//Rfull_raw.jsonl",
+   "size": 574044
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/testfull//metrics.json",
+   "size": 1707
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/testfull//per_sample.jsonl",
+   "size": 169640
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rfull/testfull//台账_Rfull.jsonl",
+   "size": 50526
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/rot100//Rnoproc_raw.jsonl",
+   "size": 96906
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/rot100//metrics.json",
+   "size": 1854
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/rot100//per_sample.jsonl",
+   "size": 28322
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/rot100//台账_Rnoproc.jsonl",
+   "size": 9298
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/shuf50//Rnoproc_raw.jsonl",
+   "size": 48752
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/shuf50//metrics.json",
+   "size": 1609
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/shuf50//per_sample.jsonl",
+   "size": 14630
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/shuf50//台账_Rnoproc.jsonl",
+   "size": 4998
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/test200//Rnoproc_raw.jsonl",
+   "size": 193580
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/test200//metrics.json",
+   "size": 1678
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/test200//per_sample.jsonl",
+   "size": 56978
+  },
+  {
+   "name": "data/renjinyao/v5/eval/Rnoproc/test200//台账_Rnoproc.jsonl",
+   "size": 17904
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/rot100//RSFT_raw.jsonl",
+   "size": 97220
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/rot100//metrics.json",
+   "size": 1831
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/rot100//per_sample.jsonl",
+   "size": 28363
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/rot100//台账_RSFT.jsonl",
+   "size": 8976
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/shuf50//RSFT_raw.jsonl",
+   "size": 48460
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/shuf50//metrics.json",
+   "size": 1600
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/shuf50//per_sample.jsonl",
+   "size": 14631
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/shuf50//台账_RSFT.jsonl",
+   "size": 4836
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/test200//RSFT_raw.jsonl",
+   "size": 194744
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/test200//metrics.json",
+   "size": 1681
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/test200//per_sample.jsonl",
+   "size": 56853
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/test200//台账_RSFT.jsonl",
+   "size": 17304
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/testfull//RSFT_raw.jsonl",
+   "size": 573075
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/testfull//metrics.json",
+   "size": 1702
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/testfull//per_sample.jsonl",
+   "size": 167736
+  },
+  {
+   "name": "data/renjinyao/v5/eval/RSFT/testfull//台账_RSFT.jsonl",
+   "size": 49935
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/rot100//S0_raw.jsonl",
+   "size": 97024
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/rot100//metrics.json",
+   "size": 1839
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/rot100//per_sample.jsonl",
+   "size": 28305
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/rot100//台账_S0.jsonl",
+   "size": 8758
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/select200//S0_raw.jsonl",
+   "size": 192632
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/select200//metrics.json",
+   "size": 1685
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/select200//per_sample.jsonl",
+   "size": 56910
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/select200//台账_S0.jsonl",
+   "size": 16895
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/shuf50//S0_raw.jsonl",
+   "size": 48256
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/shuf50//metrics.json",
+   "size": 1600
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/shuf50//per_sample.jsonl",
+   "size": 14631
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/shuf50//台账_S0.jsonl",
+   "size": 4715
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/test200//S0_raw.jsonl",
+   "size": 194022
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/test200//metrics.json",
+   "size": 1674
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/test200//per_sample.jsonl",
+   "size": 56754
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/test200//台账_S0.jsonl",
+   "size": 16879
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/testfull//S0_raw.jsonl",
+   "size": 570679
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/testfull//metrics.json",
+   "size": 1700
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/testfull//per_sample.jsonl",
+   "size": 167361
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S0/testfull//台账_S0.jsonl",
+   "size": 48765
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/rot100//S1p_raw.jsonl",
+   "size": 97298
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/rot100//metrics.json",
+   "size": 1849
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/rot100//per_sample.jsonl",
+   "size": 28280
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/rot100//台账_S1p.jsonl",
+   "size": 8880
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/shuf50//S1p_raw.jsonl",
+   "size": 48334
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/shuf50//metrics.json",
+   "size": 1607
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/shuf50//per_sample.jsonl",
+   "size": 14649
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/shuf50//台账_S1p.jsonl",
+   "size": 4774
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/test200//S1p_raw.jsonl",
+   "size": 194564
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/test200//metrics.json",
+   "size": 1689
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/test200//per_sample.jsonl",
+   "size": 56851
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1p/test200//台账_S1p.jsonl",
+   "size": 17111
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/rot100//S1_raw.jsonl",
+   "size": 97124
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/rot100//metrics.json",
+   "size": 1843
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/rot100//per_sample.jsonl",
+   "size": 28277
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/rot100//台账_S1.jsonl",
+   "size": 8757
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/select200//S1_raw.jsonl",
+   "size": 192938
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/select200//metrics.json",
+   "size": 1670
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/select200//per_sample.jsonl",
+   "size": 56976
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/select200//台账_S1.jsonl",
+   "size": 16890
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/shuf50//S1_raw.jsonl",
+   "size": 48252
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/shuf50//metrics.json",
+   "size": 1599
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/shuf50//per_sample.jsonl",
+   "size": 14633
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/shuf50//台账_S1.jsonl",
+   "size": 4723
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/test200//S1_raw.jsonl",
+   "size": 194200
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/test200//metrics.json",
+   "size": 1684
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/test200//per_sample.jsonl",
+   "size": 56827
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/test200//台账_S1.jsonl",
+   "size": 16890
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/testfull//S1_raw.jsonl",
+   "size": 571915
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/testfull//metrics.json",
+   "size": 1690
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/testfull//per_sample.jsonl",
+   "size": 167662
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S1/testfull//台账_S1.jsonl",
+   "size": 48737
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/rot100//S2_raw.jsonl",
+   "size": 97256
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/rot100//metrics.json",
+   "size": 1848
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/rot100//per_sample.jsonl",
+   "size": 28303
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/rot100//台账_S2.jsonl",
+   "size": 8761
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/select200//S2_raw.jsonl",
+   "size": 193178
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/select200//metrics.json",
+   "size": 1678
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/select200//per_sample.jsonl",
+   "size": 56886
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/select200//台账_S2.jsonl",
+   "size": 16894
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/shuf50//S2_raw.jsonl",
+   "size": 48250
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/shuf50//metrics.json",
+   "size": 1601
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/shuf50//per_sample.jsonl",
+   "size": 14633
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/shuf50//台账_S2.jsonl",
+   "size": 4727
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/test200//S2_raw.jsonl",
+   "size": 194494
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/test200//metrics.json",
+   "size": 1687
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/test200//per_sample.jsonl",
+   "size": 56726
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S2/test200//台账_S2.jsonl",
+   "size": 16884
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/rot100//S4_raw.jsonl",
+   "size": 97070
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/rot100//metrics.json",
+   "size": 1849
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/rot100//per_sample.jsonl",
+   "size": 28300
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/rot100//台账_S4.jsonl",
+   "size": 8765
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/select200//S4_raw.jsonl",
+   "size": 192890
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/select200//metrics.json",
+   "size": 1689
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/select200//per_sample.jsonl",
+   "size": 56971
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/select200//台账_S4.jsonl",
+   "size": 16900
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/shuf50//S4_raw.jsonl",
+   "size": 48234
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/shuf50//metrics.json",
+   "size": 1604
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/shuf50//per_sample.jsonl",
+   "size": 14649
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/shuf50//台账_S4.jsonl",
+   "size": 4720
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/test200//S4_raw.jsonl",
+   "size": 194316
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/test200//metrics.json",
+   "size": 1681
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/test200//per_sample.jsonl",
+   "size": 56812
+  },
+  {
+   "name": "data/renjinyao/v5/eval/S4/test200//台账_S4.jsonl",
+   "size": 16890
+  },
+  {
+   "name": "data/renjinyao/v5/eval/SMOKE/test200_smoke10//SMOKE_raw.jsonl",
+   "size": 10044
+  },
+  {
+   "name": "data/renjinyao/v5/eval/SMOKE/test200_smoke10//metrics.json",
+   "size": 1608
+  },
+  {
+   "name": "data/renjinyao/v5/eval/SMOKE/test200_smoke10//per_sample.jsonl",
+   "size": 2583
+  },
+  {
+   "name": "data/renjinyao/v5/eval/SMOKE/test200_smoke10//台账_SMOKE.jsonl",
+   "size": 1530
+  },
+  {
+   "name": "data/renjinyao/v5/night/state.json",
+   "size": 36722
+  },
+  {
+   "name": "data/renjinyao/v5/night/status.md",
+   "size": 15179
+  },
+  {
+   "name": "data/renjinyao/v5/night/winner.json",
+   "size": 1694
+  },
+  {
+   "name": "data/renjinyao/v5/night/passk.json",
+   "size": 253
+  },
+  {
+   "name": "data/renjinyao/v5/night/night_plan.json",
+   "size": 57384
+  }
+ ]
+}
