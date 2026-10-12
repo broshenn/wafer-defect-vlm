@@ -36,3 +36,4 @@
 - 04:50 巡检13：**S0 完成 375 步（1h54m）——四条主 SFT 线全部完成**；评测链持续推进（S0_select/S0_test200/S1_shuf50/S1p_shuf50/S2_rot100/S4_select 并行）。CNN acc=0.7827。待 S0_select 与 S4_select 完成 → select_winner → 图池筛选 → RL。
 - 05:09 巡检15：**select_winner 完成：赢家 = S0**（SELECT200 GeoScore 0.9273、类别 acc 0.875；S1 0.9093/S2 0.9115/S4 0.9069；S3 failed 不参选）。screen_0-3 已在 g1-g4 开跑；S0/S4 评测链与 S1 全量 TEST 继续。
 - 05:55 巡检20：**RL 全面开跑**：rl_RSFT(g1, 55/160@7.4s/it)、rl_Rfull(g2)、rl_Rbinary(g3)、rl_Rfullp(g5)（GRPO ~31s/步）；rl_Rnoproc 等 g4（S0 全量 TEST 收尾）。passk：**320 候选全部奖励有方差（zero_variance=0）、入选 160 无需补足；pass@1=0.70、pass@4=0.9313**（S0 赢家模型）。screen 全部分片完成。
+- 08:29（本机）：E 阶段完成——rot-pair 全模型补算、拉回 132 个文件、**E_结果/v5_初版报告.md 完成并提交、ALL_DONE.flag 已创建**。核心结果：SFT 赢家 S0（SELECT200 GeoScore 0.927）；RL 主结论未达标（反向）：Rfull−RSFT = −0.0399 [−0.0646,−0.0154]；但 Rfullp（同配置 seed 3408）= 0.943 > Rfull 0.878，种子方差被单独记录。服务器继续跑 P1 全量 TEST 与 backup（预计 ~10:00 全部结束）；之后出 v2 完整报告。

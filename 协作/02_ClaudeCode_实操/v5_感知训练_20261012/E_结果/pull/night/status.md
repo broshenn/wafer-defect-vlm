@@ -1,4 +1,4 @@
-# v5 夜跑状态（2026-10-12T07:44:31）
+# v5 夜跑状态（2026-10-12T08:21:15）全部终态
 
 | 任务 | 状态 | 卡 | 开始 | 耗时s | 尝试 | 日志 |
 |---|---|---|---|---|---|---|
@@ -84,7 +84,7 @@
 | rl_RSFT | DONE | g1 | 2026-10-12T05:48:15 | 1215.3 | 1 | /data/renjinyao/v5/night/logs/rl_RSFT.log |
 | rl_Rfull | DONE | g2 | 2026-10-12T05:48:15 | 4288.0 | 1 | /data/renjinyao/v5/night/logs/rl_Rfull.log |
 | rl_Rbinary | DONE | g3 | 2026-10-12T05:48:16 | 4568.3 | 1 | /data/renjinyao/v5/night/logs/rl_Rbinary.log |
-| rl_Rnoproc | RUNNING | g4 | 2026-10-12T06:19:59 |  | 1 | /data/renjinyao/v5/night/logs/rl_Rnoproc.log |
+| rl_Rnoproc | DONE | g4 | 2026-10-12T06:19:59 | 5292.3 | 1 | /data/renjinyao/v5/night/logs/rl_Rnoproc.log |
 | rl_Rfullp | DONE | g5 | 2026-10-12T05:48:16 | 4206.9 | 1 | /data/renjinyao/v5/night/logs/rl_Rfullp.log |
 | eval_RSFT_test200 | DONE | g1 | 2026-10-12T06:08:31 | 1148.8 | 1 | /data/renjinyao/v5/night/logs/eval_RSFT_test200.log |
 | score_eval_RSFT_test200 | DONE | cpu | 2026-10-12T06:27:40 | 20.4 | 1 | /data/renjinyao/v5/night/logs/score_eval_RSFT_test200.log |
@@ -104,12 +104,12 @@
 | score_eval_Rbinary_rot100 | DONE | cpu | 2026-10-12T07:33:29 | 20.2 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rbinary_rot100.log |
 | eval_Rbinary_shuf50 | DONE | g1 | 2026-10-12T07:33:30 | 320.7 | 1 | /data/renjinyao/v5/night/logs/eval_Rbinary_shuf50.log |
 | score_eval_Rbinary_shuf50 | DONE | cpu | 2026-10-12T07:38:50 | 20.0 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rbinary_shuf50.log |
-| eval_Rnoproc_test200 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/eval_Rnoproc_test200.log |
-| score_eval_Rnoproc_test200 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_test200.log |
-| eval_Rnoproc_rot100 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/eval_Rnoproc_rot100.log |
-| score_eval_Rnoproc_rot100 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_rot100.log |
-| eval_Rnoproc_shuf50 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/eval_Rnoproc_shuf50.log |
-| score_eval_Rnoproc_shuf50 | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_shuf50.log |
+| eval_Rnoproc_test200 | DONE | g1 | 2026-10-12T07:48:11 | 1081.3 | 1 | /data/renjinyao/v5/night/logs/eval_Rnoproc_test200.log |
+| score_eval_Rnoproc_test200 | DONE | cpu | 2026-10-12T08:06:13 | 20.3 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_test200.log |
+| eval_Rnoproc_rot100 | DONE | g1 | 2026-10-12T08:06:13 | 560.9 | 1 | /data/renjinyao/v5/night/logs/eval_Rnoproc_rot100.log |
+| score_eval_Rnoproc_rot100 | DONE | cpu | 2026-10-12T08:15:34 | 20.3 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_rot100.log |
+| eval_Rnoproc_shuf50 | DONE | g1 | 2026-10-12T08:15:35 | 320.4 | 1 | /data/renjinyao/v5/night/logs/eval_Rnoproc_shuf50.log |
+| score_eval_Rnoproc_shuf50 | DONE | cpu | 2026-10-12T08:20:55 | 20.0 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rnoproc_shuf50.log |
 | eval_Rfullp_test200 | DONE | g1 | 2026-10-12T06:58:23 | 1161.8 | 1 | /data/renjinyao/v5/night/logs/eval_Rfullp_test200.log |
 | score_eval_Rfullp_test200 | DONE | cpu | 2026-10-12T07:17:45 | 20.3 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rfullp_test200.log |
 | eval_Rfullp_rot100 | DONE | g1 | 2026-10-12T07:17:46 | 602.1 | 1 | /data/renjinyao/v5/night/logs/eval_Rfullp_rot100.log |
@@ -124,7 +124,7 @@
 | score_eval_S1_testfull | DONE | cpu | 2026-10-12T05:49:57 | 20.0 | 1 | /data/renjinyao/v5/night/logs/score_eval_S1_testfull.log |
 | eval_RSFT_testfull | DONE | g6 | 2026-10-12T06:27:40 | 3406.9 | 1 | /data/renjinyao/v5/night/logs/eval_RSFT_testfull.log |
 | score_eval_RSFT_testfull | DONE | cpu | 2026-10-12T07:24:27 | 20.0 | 1 | /data/renjinyao/v5/night/logs/score_eval_RSFT_testfull.log |
-| eval_Rfull_testfull | RUNNING | g5 | 2026-10-12T07:19:06 |  | 1 | /data/renjinyao/v5/night/logs/eval_Rfull_testfull.log |
-| score_eval_Rfull_testfull | PENDING |  |  |  | 0 | /data/renjinyao/v5/night/logs/score_eval_Rfull_testfull.log |
+| eval_Rfull_testfull | DONE | g5 | 2026-10-12T07:19:06 | 3307.4 | 1 | /data/renjinyao/v5/night/logs/eval_Rfull_testfull.log |
+| score_eval_Rfull_testfull | DONE | cpu | 2026-10-12T08:14:14 | 20.0 | 1 | /data/renjinyao/v5/night/logs/score_eval_Rfull_testfull.log |
 | probe | FAILED | g5 | 2026-10-12T03:09:18 | 20.0 | 1 | /data/renjinyao/v5/night/logs/probe.log |
 | backup | SKIPPED |  |  |  | 0 | /data/renjinyao/v5/night/logs/backup.log |

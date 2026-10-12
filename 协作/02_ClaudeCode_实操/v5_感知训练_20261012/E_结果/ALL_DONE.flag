@@ -1,0 +1,3 @@
+v5 成功标准达成：E_结果/初版报告.md 已写并 commit；夜跑调度器仍在收尾 P1 评测与 backup。
+时间：2026-10-12T08:30:00
+调度器：服务器端 setsid nohup，pid 3696693（state.json / status.md 实时更新）。
