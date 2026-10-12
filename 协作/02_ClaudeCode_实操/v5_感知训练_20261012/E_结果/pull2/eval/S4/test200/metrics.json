@@ -1,0 +1,99 @@
+{
+ "kind": "main",
+ "n_ref": 200,
+ "n_attempted": 200,
+ "n_missing": 0,
+ "geoscore": 0.92004,
+ "coverage": {
+  "exact_rate": 0.97,
+  "adj_rate": 1.0,
+  "n": 200
+ },
+ "zones": {
+  "exact_rate": 0.885,
+  "jaccard_mean": 0.95667,
+  "n": 200
+ },
+ "angular_type": {
+  "acc": 0.90511,
+  "n": 137
+ },
+ "sector": {
+  "acc": 1.0,
+  "n": 1
+ },
+ "measure_mae": {
+  "red_ratio": 0.00731,
+  "zone_frac_l1": 0.10738,
+  "R1": 0.05249,
+  "R2": 0.05305
+ },
+ "class": {
+  "acc": 0.805,
+  "macro_f1": 0.80062,
+  "per_class": {
+   "Center": {
+    "precision": 0.931,
+    "recall": 0.871,
+    "f1": 0.9,
+    "support": 31
+   },
+   "Donut": {
+    "precision": 0.8077,
+    "recall": 0.84,
+    "f1": 0.8235,
+    "support": 25
+   },
+   "Edge_Loc": {
+    "precision": 0.6333,
+    "recall": 0.7037,
+    "f1": 0.6667,
+    "support": 27
+   },
+   "Edge_Ring": {
+    "precision": 0.9091,
+    "recall": 0.8333,
+    "f1": 0.8696,
+    "support": 24
+   },
+   "Loc": {
+    "precision": 0.72,
+    "recall": 0.6667,
+    "f1": 0.6923,
+    "support": 27
+   },
+   "Near_full": {
+    "precision": 0.7143,
+    "recall": 1.0,
+    "f1": 0.8333,
+    "support": 5
+   },
+   "Random": {
+    "precision": 0.913,
+    "recall": 0.8077,
+    "f1": 0.8571,
+    "support": 26
+   },
+   "Scratch": {
+    "precision": 0.8,
+    "recall": 0.9231,
+    "f1": 0.8571,
+    "support": 26
+   },
+   "none": {
+    "precision": 0.75,
+    "recall": 0.6667,
+    "f1": 0.7059,
+    "support": 9
+   }
+  },
+  "unknown_rate": 0.0
+ },
+ "format": {
+  "stripped_legal_rate": 1.0,
+  "raw_legal_rate": 0.0
+ },
+ "consistency_mean": 0.8275,
+ "raw_file": "/data/renjinyao/v5/eval/S4/test200/S4_raw.jsonl",
+ "ref_file": "/data/renjinyao/v5/data/test200_main.jsonl"
+}

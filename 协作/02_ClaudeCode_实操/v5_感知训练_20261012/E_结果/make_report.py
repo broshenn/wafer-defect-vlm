@@ -238,11 +238,15 @@ def main():
                    if pr.get("mean_acc", 0) >= thr else "视觉特征不足（探针不足以读出几何）")
         md.append(f"- 探针解读规则（预注册，对照 S1 GeoScore {s1m['geoscore']:.3f}，阈值 {thr:.3f}）："
                   f"探针 {pr.get('mean_acc')} → **{verdict}**")
-        # 与 S2−S1 方向的一致性检查
+        # 与 S2−S1 方向的一致性检查（合同 8.4 预注册：如实报告一致或不一致）
         v2s = boot.get("视觉侧: S2−S1 (GeoScore)")
         if v2s:
-            md.append(f"  - 与 S2−S1 方向的一致性：S2−S1 = {v2s['point_estimate']:+.4f}"
-                      f"（{'区间不含 0' if v2s['excludes_zero'] else '区间含 0'}）")
+            insuff = verdict.startswith("视觉特征不足")
+            consistent = (v2s["point_estimate"] <= 0) if insuff else (v2s["point_estimate"] >= 0)
+            md.append(f"  - 与 S2−S1 方向的核对：**{'一致' if consistent else '不一致'}**"
+                      f"——S2−S1 = {v2s['point_estimate']:+.4f}"
+                      f"（{'区间不含 0' if v2s['excludes_zero'] else '区间含 0'}）；"
+                      f"解读规则判定为「{verdict}」，S2 方向 {'未显示视觉侧改进' if v2s['point_estimate'] <= 0 else '呈微弱正方向'}。")
 
     if pr:
         md.append(f"- 线性探针（P2）：mean acc {pr.get('mean_acc')}（三字段 {json.dumps(pr.get('fields'), ensure_ascii=False)}）")

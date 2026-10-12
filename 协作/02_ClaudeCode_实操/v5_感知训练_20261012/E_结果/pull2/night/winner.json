@@ -1,0 +1,78 @@
+{
+ "winner": "S0",
+ "checkpoint": "/data/renjinyao/v5/runs/S0/v0-20261012-024813/checkpoint-375",
+ "checkpoint_step": 375,
+ "config": "configs/S0.json",
+ "scores": {
+  "S0": {
+   "geoscore": 0.92733,
+   "class_acc": 0.875,
+   "metrics": "/data/renjinyao/v5/eval/S0/select200/metrics.json",
+   "complete": true,
+   "max_step": 375
+  },
+  "S1": {
+   "geoscore": 0.90927,
+   "class_acc": 0.855,
+   "metrics": "/data/renjinyao/v5/eval/S1/select200/metrics.json",
+   "complete": true,
+   "max_step": 375
+  },
+  "S2": {
+   "geoscore": 0.91148,
+   "class_acc": 0.865,
+   "metrics": "/data/renjinyao/v5/eval/S2/select200/metrics.json",
+   "complete": true,
+   "max_step": 375
+  },
+  "S3": {
+   "geoscore": null,
+   "class_acc": null,
+   "metrics": null,
+   "complete": false,
+   "max_step": null
+  },
+  "S4": {
+   "geoscore": 0.9069,
+   "class_acc": 0.84,
+   "metrics": "/data/renjinyao/v5/eval/S4/select200/metrics.json",
+   "complete": true,
+   "max_step": 375
+  }
+ },
+ "guard": {
+  "S0": {
+   "class_acc": 0.875,
+   "l_acc": 0.91,
+   "threshold": 0.81,
+   "passed": true
+  },
+  "S1": {
+   "class_acc": 0.855,
+   "l_acc": 0.91,
+   "threshold": 0.81,
+   "passed": true
+  },
+  "S2": {
+   "class_acc": 0.865,
+   "l_acc": 0.91,
+   "threshold": 0.81,
+   "passed": true
+  },
+  "S3": {
+   "class_acc": null,
+   "l_acc": 0.91,
+   "threshold": 0.81,
+   "passed": false
+  },
+  "S4": {
+   "class_acc": 0.84,
+   "l_acc": 0.91,
+   "threshold": 0.81,
+   "passed": true
+  }
+ },
+ "l_acc": 0.91,
+ "reason": "通过守门且 GeoScore 最高（0.92733）；参选线 ['S0', 'S1', 'S2', 'S4']",
+ "rule": "GeoScore 最高者（守门 类别 acc ≥ L−0.10；并列取编号小；都不过选 S1）；不得再改选"
+}

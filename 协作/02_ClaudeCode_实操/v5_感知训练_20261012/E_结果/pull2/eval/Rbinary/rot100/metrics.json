@@ -1,0 +1,116 @@
+{
+ "kind": "main",
+ "n_ref": 100,
+ "n_attempted": 100,
+ "n_missing": 0,
+ "geoscore": 0.88495,
+ "coverage": {
+  "exact_rate": 0.94,
+  "adj_rate": 1.0,
+  "n": 100
+ },
+ "zones": {
+  "exact_rate": 0.73,
+  "jaccard_mean": 0.87,
+  "n": 100
+ },
+ "angular_type": {
+  "acc": 0.98485,
+  "n": 66
+ },
+ "sector": {
+  "acc": null,
+  "n": 0
+ },
+ "measure_mae": {
+  "red_ratio": 0.01053,
+  "zone_frac_l1": 0.15159,
+  "R1": 0.05486,
+  "R2": 0.05109
+ },
+ "class": {
+  "acc": 0.89,
+  "macro_f1": 0.67183,
+  "per_class": {
+   "Center": {
+    "precision": 0.95,
+    "recall": 0.8636,
+    "f1": 0.9048,
+    "support": 22
+   },
+   "Donut": {
+    "precision": 0.8696,
+    "recall": 0.9524,
+    "f1": 0.9091,
+    "support": 21
+   },
+   "Edge_Loc": {
+    "precision": 0.6667,
+    "recall": 0.9091,
+    "f1": 0.7692,
+    "support": 11
+   },
+   "Edge_Ring": {
+    "precision": 0.9545,
+    "recall": 1.0,
+    "f1": 0.9767,
+    "support": 21
+   },
+   "Loc": {
+    "precision": 0.75,
+    "recall": 0.4286,
+    "f1": 0.5455,
+    "support": 7
+   },
+   "Near_full": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 0
+   },
+   "Random": {
+    "precision": 1.0,
+    "recall": 0.8889,
+    "f1": 0.9412,
+    "support": 9
+   },
+   "Scratch": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "support": 8
+   },
+   "none": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "support": 1
+   }
+  },
+  "unknown_rate": 0.0
+ },
+ "format": {
+  "stripped_legal_rate": 1.0,
+  "raw_legal_rate": 0.0
+ },
+ "consistency_mean": 0.9,
+ "rot_pair": {
+  "coverage_unchanged": {
+   "same": 95,
+   "n": 100,
+   "rate": 0.95
+  },
+  "zones_unchanged": {
+   "same": 96,
+   "n": 100,
+   "rate": 0.96
+  },
+  "sector_plus3": {
+   "ok": 1,
+   "n": 1,
+   "rate": 1.0
+  }
+ },
+ "raw_file": "eval/Rbinary/rot100/Rbinary_raw.jsonl",
+ "ref_file": "data/rot100_main.jsonl"
+}

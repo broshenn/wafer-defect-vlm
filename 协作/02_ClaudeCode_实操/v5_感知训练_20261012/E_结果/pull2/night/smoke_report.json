@@ -1,0 +1,167 @@
+{
+ "stages": {
+  "pure_tests": {
+   "ok": false,
+   "info": "8/9；fail=['test_configs']"
+  },
+  "test_winner_and_plan": {
+   "ok": true,
+   "info": "see log"
+  },
+  "S1_probe2": {
+   "ok": true,
+   "info": "rc=0 106s rate=9.28 s/it"
+  },
+  "S1_gate": {
+   "ok": true,
+   "info": "{'config': 'configs/S1.json', 'ckpt': '/data/renjinyao/v5/runs/S1_probe/v0-20261012-023532/checkpoint-2', 'line': 'S1', 'adapter_exists': True, 'n_keys': 496, 'visual_key_count': 0, 'visual_expect': '=0', 'lora_B_total': 248, 'lora_B_nonzero': 248, 'lora_B_half_nonzero': True, 'args_json_adapters': [], 'args_json_freeze_vit': True, 'passed': True}"
+  },
+  "S2_probe2": {
+   "ok": true,
+   "info": "rc=0 49s rate=8.89 s/it"
+  },
+  "S2_gate_visual": {
+   "ok": true,
+   "info": "{'config': 'configs/S2.json', 'ckpt': '/data/renjinyao/v5/runs/S2_probe/v0-20261012-023720/checkpoint-2', 'line': 'S2', 'adapter_exists': True, 'n_keys': 716, 'visual_key_count': 220, 'visual_expect': '>0', 'lora_B_total': 358, 'lora_B_nonzero': 358, 'lora_B_half_nonzero': True, 'args_json_adapters': [], 'args_json_freeze_vit': False, 'passed': True}"
+  },
+  "Rfull_probe2": {
+   "ok": true,
+   "info": "rc=0 92s rate=30.84（重跑）"
+  },
+  "runtime_gate": {
+   "ok": true,
+   "info": {
+    "model_loading_gate": "passed",
+    "two_step_gate": "passed",
+    "mode": "rl",
+    "M0_sha256": "5acb69408cf88df207e16d7a68dc9ec5892b84f34489a0fddef5f8c85840b2f2",
+    "policy_equal_M0_tensor_count": 496,
+    "reference_equal_M0_tensor_count": 496,
+    "trainable_tensor_count": 496,
+    "step": 2,
+    "policy_changed_tensors": 496,
+    "nonzero_gradient_tensors": 496,
+    "forwards": {
+     "policy": 32,
+     "reference": 16,
+     "image": 50
+    },
+    "reference_unchanged_M0_tensor_count": 496
+   }
+  },
+  "reward_audit": {
+   "ok": true,
+   "info": "审计 16 条，非 -1 的 4 条"
+  },
+  "eval10": {
+   "ok": true,
+   "info": "rc=0 raw=10 avg=7.14s/张 load=11.25s"
+  },
+  "score10": {
+   "ok": true,
+   "info": "rc=0"
+  },
+  "scheduler_fake": {
+   "ok": true,
+   "info": "{'t_ok': 'DONE', 't_fail': 'FAILED', 't_skip': 'SKIPPED', 't_allfin': 'DONE'}"
+  }
+ },
+ "timing": {
+  "S1_probe": {
+   "line": "S1",
+   "mode": "sft_base",
+   "steps": 2,
+   "model_start": "/data/renjinyao/models/Qwen3.5-9B",
+   "start_adapter": null,
+   "start_adapter_sha256": null,
+   "data": "/data/renjinyao/v5/data/sft_S1.jsonl",
+   "data_sha256": "61952e6076f8da1825981a58eedb2e50419a967a3b6b82411d724ddfef74a362",
+   "n_rows": 12000,
+   "reward_mode": null,
+   "dynamic_sample": "n/a(sft)",
+   "config_sha256": "220a0e105fa207c47275648c3999f8c13462941a586278f67f0d453c40d4d240",
+   "seconds": 94.888494,
+   "device_minutes": 1.581,
+   "peak_allocated_GiB": 21.467,
+   "checkpoints": [
+    "/data/renjinyao/v5/runs/S1_probe/v0-20261012-023532/checkpoint-2"
+   ],
+   "final_checkpoint": "/data/renjinyao/v5/runs/S1_probe/v0-20261012-023532/checkpoint-2",
+   "selection": "末步预选（不挑最好 checkpoint）",
+   "cuda_visible_devices": "GPU-dabee4a3-4ed7-8e5f-31b1-c946a6903b1c",
+   "device": "NVIDIA GeForce RTX 5090",
+   "world_size": 1,
+   "finished_at": "2026-10-12T02:37:01.505817",
+   "trainer_actual_args": {
+    "per_device_train_batch_size": 8,
+    "max_steps": 2,
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 4,
+    "seed": 3407,
+    "data_seed": 3407,
+    "train_dataloader_shuffle": false,
+    "resume_only_model": false,
+    "dataset_shuffle": false,
+    "temperature": 0.0,
+    "adapters": [],
+    "freeze_vit": true,
+    "freeze_aligner": true,
+    "lora_rank": 16,
+    "lora_alpha": 32
+   }
+  },
+  "S1_s_per_step": 9.28,
+  "S2_probe": {
+   "line": "S2",
+   "mode": "sft_base",
+   "steps": 2,
+   "model_start": "/data/renjinyao/models/Qwen3.5-9B",
+   "start_adapter": null,
+   "start_adapter_sha256": null,
+   "data": "/data/renjinyao/v5/data/sft_S2.jsonl",
+   "data_sha256": "61952e6076f8da1825981a58eedb2e50419a967a3b6b82411d724ddfef74a362",
+   "n_rows": 12000,
+   "reward_mode": null,
+   "dynamic_sample": "n/a(sft)",
+   "config_sha256": "4391a0a92f97caffe98d044e3d12537a48820424f86becc105fb009e010c050f",
+   "seconds": 38.191477,
+   "device_minutes": 0.637,
+   "peak_allocated_GiB": 21.649,
+   "checkpoints": [
+    "/data/renjinyao/v5/runs/S2_probe/v0-20261012-023720/checkpoint-2"
+   ],
+   "final_checkpoint": "/data/renjinyao/v5/runs/S2_probe/v0-20261012-023720/checkpoint-2",
+   "selection": "末步预选（不挑最好 checkpoint）",
+   "cuda_visible_devices": "GPU-dabee4a3-4ed7-8e5f-31b1-c946a6903b1c",
+   "device": "NVIDIA GeForce RTX 5090",
+   "world_size": 1,
+   "finished_at": "2026-10-12T02:37:53.372423",
+   "trainer_actual_args": {
+    "per_device_train_batch_size": 8,
+    "max_steps": 2,
+    "learning_rate": 0.0001,
+    "gradient_accumulation_steps": 4,
+    "seed": 3407,
+    "data_seed": 3407,
+    "train_dataloader_shuffle": false,
+    "resume_only_model": false,
+    "dataset_shuffle": false,
+    "temperature": 0.0,
+    "adapters": [],
+    "freeze_vit": false,
+    "freeze_aligner": false,
+    "lora_rank": 16,
+    "lora_alpha": 32
+   }
+  },
+  "S2_s_per_step": 8.89,
+  "eval_s_per_img": 7.14,
+  "load_s": 11.25,
+  "eval_batch_size": 4
+ },
+ "notes": [
+  "首轮 Rfull 探针 rc=1 因 rl_pool320.jsonl 尚未生成（夜跑时才生成）；按 C 卡意图改用 rl_candidates800.jsonl 作探针数据重跑，结果覆盖此三项。",
+  "首轮 Rfull 探针 rc=1 因 rl_pool320.jsonl 尚未生成（夜跑时才生成）；按 C 卡意图改用 rl_candidates800.jsonl 作探针数据重跑，结果覆盖此三项。",
+  "首轮 Rfull 探针 rc=1 因 rl_pool320.jsonl 尚未生成（夜跑时才生成）；按 C 卡意图改用 rl_candidates800.jsonl 作探针数据重跑，结果覆盖此三项。"
+ ]
+}

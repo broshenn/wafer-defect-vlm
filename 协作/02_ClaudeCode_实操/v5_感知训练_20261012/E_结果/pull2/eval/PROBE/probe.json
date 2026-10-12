@@ -1,0 +1,28 @@
+{
+ "impl": "numpy 多类 softmax（全批量梯度下降 500 步、L2=1e-3）",
+ "feature_dim_raw": 19584,
+ "pca_dim": 256,
+ "n_train": 2000,
+ "n_test": 589,
+ "fields": {
+  "coverage_band": {
+   "acc": 0.32767,
+   "n": 589,
+   "majority_class": "5_to_under_20pct",
+   "majority_baseline": 0.45161
+  },
+  "red_mass_zones": {
+   "acc": 0.32428,
+   "n": 589,
+   "majority_class": "[\"center\", \"middle\", \"edge\"]",
+   "majority_baseline": 0.54329
+  },
+  "angular_type": {
+   "acc": 0.17148,
+   "n": 589,
+   "majority_class": "nondirectional",
+   "majority_baseline": 0.66214
+  }
+ },
+ "mean_acc": 0.27448
+}
