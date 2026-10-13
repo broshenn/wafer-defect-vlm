@@ -1,0 +1,298 @@
+{
+ "schema": "bailian-probe-v1",
+ "probe_png": {
+  "path": "inputs/probe_synthetic.png",
+  "sha256": "9322b18ee1c8c7cb02d37d878d3ce7176b83ba694df18f619820776560dad6bd"
+ },
+ "probe_prompt": "图中有左右两个图形。请只回答它们的形状和颜色，格式为一行：左=<形状><颜色>；右=<形状><颜色>。不要解释。",
+ "probe_prompt_sha256": "48bcfee8503193744a70c30bf472aa42b51369a02ea6a0085ac323c1a25ee690",
+ "params": {
+  "max_tokens": 384,
+  "temperature": 0,
+  "stream": false,
+  "enable_thinking": false,
+  "seed": 3407
+ },
+ "note": "合成图连通检查；未读取任何 TEST200 图片，未取类别/几何答案",
+ "results": [
+  {
+   "model": "qwen3.8-max-0902",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "c26d95d4-b5f4-985d-9c84-af254e2b53ac",
+   "returned_model": "qwen3.8-max-0902",
+   "elapsed_s": 2.215456100006122,
+   "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens": 126,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "image_tokens": 66,
+     "text_tokens": 60
+    },
+    "total_tokens": 136
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "05fbe9a82f5eeba200b41945f22fb74bfa6642fa5fbf17d8abc07b499c28554b",
+   "raw_response_text_redacted": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"}}],\"created\":1791902552,\"id\":\"chatcmpl-c26d95d4-b5f4-985d-9c84-af254e2b53ac\",\"model\":\"qwen3.8-max-0902\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":10,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens\":126,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":66,\"text_tokens\":60},\"total_tokens\":136}}"
+  },
+  {
+   "model": "qwen3.8-max",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "08025313-5b67-9246-89ba-55324c4c5146",
+   "returned_model": "qwen3.8-max",
+   "elapsed_s": 2.1472505000419915,
+   "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens": 126,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "image_tokens": 66,
+     "text_tokens": 60
+    },
+    "total_tokens": 136
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "a5855f7d7a003f89d37f0a7e8370d435b191031f0823bd9d763704cfe22a6392",
+   "raw_response_text_redacted": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"}}],\"created\":1791902554,\"id\":\"chatcmpl-08025313-5b67-9246-89ba-55324c4c5146\",\"model\":\"qwen3.8-max\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":10,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens\":126,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":66,\"text_tokens\":60},\"total_tokens\":136}}"
+  },
+  {
+   "model": "qwen3.5-397b-a17b",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "3585cfa1-3c69-9659-b948-c6c1505c3fad",
+   "returned_model": "qwen3.5-397b-a17b",
+   "elapsed_s": 1.6187263000174426,
+   "usage": {
+    "prompt_tokens": 113,
+    "completion_tokens": 10,
+    "total_tokens": 123,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens_details": {
+     "image_tokens": 66,
+     "text_tokens": 47
+    }
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "491fb2993c6730695e856afe31e358a46074e284b788e18deb2ecf0f83ee58f1",
+   "raw_response_text_redacted": "{\"choices\":[{\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null}],\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":113,\"completion_tokens\":10,\"total_tokens\":123,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens_details\":{\"image_tokens\":66,\"text_tokens\":47}},\"created\":1791902557,\"system_fingerprint\":null,\"model\":\"qwen3.5-397b-a17b\",\"id\":\"chatcmpl-3585cfa1-3c69-9659-b948-c6c1505c3fad\"}"
+  },
+  {
+   "model": "qwen3.8-27b",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "0ca70986-e30e-9a75-821d-5a5afa17bde6",
+   "returned_model": "qwen3.8-27b",
+   "elapsed_s": 1.2388309999951161,
+   "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {},
+    "prompt_tokens": 113,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "image_tokens": 66,
+     "text_tokens": 47
+    },
+    "total_tokens": 123
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "aaa97a24b7b4cf321b81af158c49dda6ac75eba11affa68491ecc1d5193c181f",
+   "raw_response_text_redacted": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"}}],\"created\":1791902558,\"id\":\"chatcmpl-0ca70986-e30e-9a75-821d-5a5afa17bde6\",\"model\":\"qwen3.8-27b\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":10,\"completion_tokens_details\":{},\"prompt_tokens\":113,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":66,\"text_tokens\":47},\"total_tokens\":123}}"
+  },
+  {
+   "model": "qwen3.5-27b",
+   "status": "http_error",
+   "http_status": 403,
+   "error_type": "HTTPError",
+   "request_id": "42f8f615-4db9-9a9e-91c3-b3d32bd7d3d8",
+   "returned_model": null,
+   "elapsed_s": 5.7541406999807805,
+   "usage": null,
+   "finish_reason": null,
+   "content": null,
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "f8aaa351011774f02afada082ff183df45537dab269114339e2ef6673d1f29a4",
+   "raw_response_text_redacted": "{\"error\":{\"message\":\"Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \\\"use free tier only\\\" mode in the management console.\",\"type\":\"AllocationQuota.FreeTierOnly\",\"param\":null,\"code\":\"AllocationQuota.FreeTierOnly\"},\"id\":\"chatcmpl-42f8f615-4db9-9a9e-91c3-b3d32bd7d3d8\",\"request_id\":\"42f8f615-4db9-9a9e-91c3-b3d32bd7d3d8\"}"
+  },
+  {
+   "model": "qwen3.5-35b-a3b",
+   "status": "http_error",
+   "http_status": 403,
+   "error_type": "HTTPError",
+   "request_id": "de01bcfc-5e35-95d5-af82-8849fed00588",
+   "returned_model": null,
+   "elapsed_s": 2.22315149998758,
+   "usage": null,
+   "finish_reason": null,
+   "content": null,
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "594e8f123c23a15a9fca8371c6dd8e82c13da1b0f44f1a5ff43cb420b182a91d",
+   "raw_response_text_redacted": "{\"error\":{\"message\":\"Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \\\"use free tier only\\\" mode in the management console.\",\"type\":\"AllocationQuota.FreeTierOnly\",\"param\":null,\"code\":\"AllocationQuota.FreeTierOnly\"},\"id\":\"chatcmpl-de01bcfc-5e35-95d5-af82-8849fed00588\",\"request_id\":\"de01bcfc-5e35-95d5-af82-8849fed00588\"}"
+  },
+  {
+   "model": "qwen3.5-122b-a10b",
+   "status": "http_error",
+   "http_status": 403,
+   "error_type": "HTTPError",
+   "request_id": "2118c40e-272b-9e88-8f8e-68574389ea30",
+   "returned_model": null,
+   "elapsed_s": 1.285136800026521,
+   "usage": null,
+   "finish_reason": null,
+   "content": null,
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "02c80fc06559f78da8ef885ae86ec3169c48100f31bf1989206449ae00d28f55",
+   "raw_response_text_redacted": "{\"error\":{\"message\":\"Free quota exhausted. To continue accessing the model on a paid basis, please add funds or disable the \\\"use free tier only\\\" mode in the management console.\",\"type\":\"AllocationQuota.FreeTierOnly\",\"param\":null,\"code\":\"AllocationQuota.FreeTierOnly\"},\"id\":\"chatcmpl-2118c40e-272b-9e88-8f8e-68574389ea30\",\"request_id\":\"2118c40e-272b-9e88-8f8e-68574389ea30\"}"
+  },
+  {
+   "model": "qwen3.7-plus-2026-05-26",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "a08cf80b-d79a-9daf-aef6-d5ce801bc127",
+   "returned_model": "qwen3.7-plus-2026-05-26",
+   "elapsed_s": 2.073825300030876,
+   "usage": {
+    "completion_tokens": 10,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens": 113,
+    "prompt_tokens_details": {
+     "cached_tokens": 0,
+     "image_tokens": 66,
+     "text_tokens": 47
+    },
+    "total_tokens": 123
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "89cf86a8c99cfc165dff57113bc74fd8cc2a1dcf9fb94580e9e504ad85ce1b94",
+   "raw_response_text_redacted": "{\"choices\":[{\"finish_reason\":\"stop\",\"index\":0,\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"}}],\"created\":1791902569,\"id\":\"chatcmpl-a08cf80b-d79a-9daf-aef6-d5ce801bc127\",\"model\":\"qwen3.7-plus-2026-05-26\",\"object\":\"chat.completion\",\"usage\":{\"completion_tokens\":10,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens\":113,\"prompt_tokens_details\":{\"cached_tokens\":0,\"image_tokens\":66,\"text_tokens\":47},\"total_tokens\":123}}"
+  },
+  {
+   "model": "qwen3.7-plus",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "a39454fc-97e8-98e4-bcbf-75a55e98024f",
+   "returned_model": "qwen3.7-plus",
+   "elapsed_s": 3.81972189998487,
+   "usage": {
+    "total_tokens": 123,
+    "completion_tokens": 10,
+    "prompt_tokens": 113,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens_details": {
+     "image_tokens": 66,
+     "cached_tokens": 0,
+     "text_tokens": 47
+    }
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "7ba5bb17a7a5c6d7419b2a54361c72107ff2d2db906f6b04ece8e6554335429f",
+   "raw_response_text_redacted": "{\"model\":\"qwen3.7-plus\",\"id\":\"chatcmpl-a39454fc-97e8-98e4-bcbf-75a55e98024f\",\"choices\":[{\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"},\"index\":0,\"finish_reason\":\"stop\"}],\"created\":1791902572,\"object\":\"chat.completion\",\"usage\":{\"total_tokens\":123,\"completion_tokens\":10,\"prompt_tokens\":113,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens_details\":{\"image_tokens\":66,\"cached_tokens\":0,\"text_tokens\":47}}}"
+  },
+  {
+   "model": "qwen3-vl-plus",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "42075a55-0bbb-958c-a101-ef1a2cbfae71",
+   "returned_model": "qwen3-vl-plus",
+   "elapsed_s": 1.6114938000100665,
+   "usage": {
+    "prompt_tokens": 110,
+    "completion_tokens": 11,
+    "total_tokens": 121,
+    "completion_tokens_details": {
+     "text_tokens": 11
+    },
+    "prompt_tokens_details": {
+     "image_tokens": 66,
+     "text_tokens": 44,
+     "cached_tokens": 0
+    }
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "d7f321050c1ff8b224d640057cae261a82332959df40ef24301c3e61ac4d25f3",
+   "raw_response_text_redacted": "{\"choices\":[{\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null}],\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":110,\"completion_tokens\":11,\"total_tokens\":121,\"completion_tokens_details\":{\"text_tokens\":11},\"prompt_tokens_details\":{\"image_tokens\":66,\"text_tokens\":44,\"cached_tokens\":0}},\"created\":1791902575,\"system_fingerprint\":null,\"model\":\"qwen3-vl-plus\",\"id\":\"chatcmpl-42075a55-0bbb-958c-a101-ef1a2cbfae71\"}"
+  },
+  {
+   "model": "qwen3.5-plus-2026-02-15",
+   "status": "ok",
+   "http_status": 200,
+   "error_type": null,
+   "request_id": "45875c49-e7fe-981a-8339-0e1f12120b57",
+   "returned_model": "qwen3.5-plus-2026-02-15",
+   "elapsed_s": 2.1823534999857657,
+   "usage": {
+    "prompt_tokens": 113,
+    "completion_tokens": 10,
+    "total_tokens": 123,
+    "completion_tokens_details": {
+     "text_tokens": 10
+    },
+    "prompt_tokens_details": {
+     "image_tokens": 66,
+     "text_tokens": 47
+    }
+   },
+   "finish_reason": "stop",
+   "content": "左=正方形红色；右=圆形蓝色",
+   "reasoning_content_present": false,
+   "seed_used": 3407,
+   "seed_omitted_reason": null,
+   "request_sha256": "583129bfc2475970f8367f92d819989c920cd4e7ad0a2a1870b83eb8a1a5acef",
+   "raw_response_text_redacted": "{\"choices\":[{\"message\":{\"content\":\"左=正方形红色；右=圆形蓝色\",\"reasoning_content\":\"\",\"role\":\"assistant\"},\"finish_reason\":\"stop\",\"index\":0,\"logprobs\":null}],\"object\":\"chat.completion\",\"usage\":{\"prompt_tokens\":113,\"completion_tokens\":10,\"total_tokens\":123,\"completion_tokens_details\":{\"text_tokens\":10},\"prompt_tokens_details\":{\"image_tokens\":66,\"text_tokens\":47}},\"created\":1791902577,\"system_fingerprint\":null,\"model\":\"qwen3.5-plus-2026-02-15\",\"id\":\"chatcmpl-45875c49-e7fe-981a-8339-0e1f12120b57\"}"
+  }
+ ]
+}

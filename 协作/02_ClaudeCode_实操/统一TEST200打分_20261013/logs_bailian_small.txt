@@ -1,0 +1,35 @@
+[BL_small] model=qwen3.8-27b 已完成 0/200  未知 0  待派发 200
+[BL_small] 20/200  ok=20 fail=0  84s (4.21s/条)
+[BL_small] 40/200  ok=40 fail=0  169s (4.22s/条)
+[BL_small] 60/200  ok=60 fail=0  257s (4.28s/条)
+[BL_small] 80/200  ok=80 fail=0  347s (4.34s/条)
+[BL_small] 100/200  ok=100 fail=0  449s (4.49s/条)
+[BL_small] 120/200  ok=120 fail=0  533s (4.44s/条)
+[BL_small] 140/200  ok=140 fail=0  614s (4.39s/条)
+[BL_small] 160/200  ok=160 fail=0  716s (4.47s/条)
+[BL_small] 180/200  ok=179 fail=1  821s (4.56s/条)
+[BL_small] 200/200  ok=199 fail=1  912s (4.56s/条)
+{
+ "model": "qwen3.8-27b",
+ "role": "small",
+ "name": "BL_small",
+ "n_slots": 200,
+ "n_done": 0,
+ "n_unknown_not_resent": 0,
+ "n_ok_this_run": 199,
+ "n_fail_this_run": 1,
+ "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a",
+ "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担",
+ "frozen_prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+ "images_manifest_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+ "server_exam_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+ "params": {
+  "max_tokens": 384,
+  "temperature": 0,
+  "stream": false,
+  "enable_thinking": false,
+  "seed": 3407
+ },
+ "raw_file": "BL_small_raw.jsonl",
+ "ledger_file": "BL_small_ledger.jsonl"
+}

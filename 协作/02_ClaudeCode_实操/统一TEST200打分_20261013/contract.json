@@ -1,0 +1,36 @@
+{
+  "n_expected": 200,
+  "ids": {
+    "path": "inputs/TEST200_ids.txt",
+    "sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+    "canonical_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353"
+  },
+  "reference": {
+    "path": "inputs/reference200.jsonl",
+    "sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+  },
+  "images": {
+    "path": "inputs/images200.jsonl",
+    "sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe"
+  },
+  "prompts": {
+    "main": {
+      "path": "inputs/prompt_main_user.txt",
+      "sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7"
+    },
+    "L": {
+      "path": "inputs/prompt_L_user.txt",
+      "sha256": "a9eddba0bddd1c1cd23c79b8ef6d80745112e98c5ab5ea09be98c4230036b1df"
+    }
+  },
+  "parser": {
+    "path": "inputs/common_v5.py",
+    "sha256": "58a71c13e426763f4582c6bf3eb96e04d597b03dd5041e7f725ccace2d40b3fd"
+  },
+  "geometry_denominators": {
+    "coverage": 200,
+    "zones": 200,
+    "angular_type": 137
+  },
+  "note": "统一 TEST200 打分合同；主列题面 = <image>\\n + prompt_v5.txt；类别列 = L 的用户消息；服务器消费版另存 inputs/server_test200_main.jsonl（仅 images 路径不同，其余逐字段一致）"
+}

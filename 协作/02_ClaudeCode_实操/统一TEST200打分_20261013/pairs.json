@@ -1,0 +1,821 @@
+{
+ "schema": "unified-test200-pairs-v1",
+ "locked_before_scoring": true,
+ "locked_at_note": "本文件在任何分数计算之前生成；模型名单只来自清单里存在的行，与分数无关",
+ "contract_sha256": "bf696c5930837b7c6bf1f71f3a518fcc09e4fab19e84159ca97524cdeeb2eb5b",
+ "repeats": 10000,
+ "seed": 3407,
+ "resampling_unit": "lot",
+ "geo_reference": "S0_rerun",
+ "category_reference": "L",
+ "rule": "每个清单行 vs 类别参照（macro_f1/accuracy）；每个 main 类行 vs 几何参照（geo/macro_f1/accuracy）。不含参照自身；不按分数增删。",
+ "n_rows_in_manifest": 50,
+ "pairs": [
+  {
+   "a": "BASE",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BASE_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_flagship",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_maxplus",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_small",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "D_v5_test200",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "M0_v2_test200",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RES_HIGH_128",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RES_LOW_128",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3407",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3408",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3409",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rbinary",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfull",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfull_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfullp",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rnoproc",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S0",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1p",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S2",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S2_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S3_fixed",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S4",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S4_rerun",
+   "b": "S0_rerun",
+   "metrics": [
+    "geo",
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BASE",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BASE_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BINARY_R120_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_flagship",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_maxplus",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "BL_small",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CNN",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CRLVR160_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "CSFT160_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "D_L_test200",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "D_v5_test200",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "F0_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "FULL_R120_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "M0_v2_test200",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "NOPROC_R120_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RES_HIGH_128",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RES_LOW_128",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3407",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3408",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_R120_3409",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "RSFT_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rbinary",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfull",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfull_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rfullp",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "Rnoproc",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S0",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S0_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S1p",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S2",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S2_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S3_fixed",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S4",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  },
+  {
+   "a": "S4_rerun",
+   "b": "L",
+   "metrics": [
+    "macro_f1",
+    "accuracy"
+   ]
+  }
+ ]
+}

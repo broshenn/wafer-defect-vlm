@@ -1,0 +1,24 @@
+{
+ "note": "诊断，不是成绩；不改变任何正式分数",
+ "prompt_ambiguity": "题面只说『比例……各保留一位小数』，未明确 0–1 还是 0–100",
+ "results": {
+  "BL_maxplus": {
+   "rows": 200,
+   "legal_official": 58,
+   "zone_frac_percent_scale": 115,
+   "would_be_legal_if_percent_accepted": 54
+  },
+  "BL_small": {
+   "rows": 200,
+   "legal_official": 181,
+   "zone_frac_percent_scale": 0,
+   "would_be_legal_if_percent_accepted": 0
+  },
+  "BL_flagship": {
+   "rows": 200,
+   "legal_official": 199,
+   "zone_frac_percent_scale": 0,
+   "would_be_legal_if_percent_accepted": 0
+  }
+ }
+}

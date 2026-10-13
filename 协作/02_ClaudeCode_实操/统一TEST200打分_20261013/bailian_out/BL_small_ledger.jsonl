@@ -1,0 +1,401 @@
+{"事件": "冻结件", "dataset": "test200_main.jsonl", "dataset_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f", "N": 200, "source": "百炼", "protocol": "v5_main", "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7", "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a", "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担", "model": "qwen3.8-27b", "role": "small", "params": {"max_tokens": 384, "temperature": 0, "stream": false, "enable_thinking": false, "seed": 3407}, "frozen_models_sha256": "1b6e8654845d0e3a0c57f7595eefdc951ddfd4813efd1a8e58cf500e1a375264"}
+{"事件": "started", "sample_id": "wafer_00000054_010", "model": "qwen3.8-27b", "ts": 1791902647.0341427}
+{"事件": "finished", "sample_id": "wafer_00000054_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902651.1787412}
+{"事件": "started", "sample_id": "wafer_00000110_003", "model": "qwen3.8-27b", "ts": 1791902651.1823936}
+{"事件": "finished", "sample_id": "wafer_00000110_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902654.9636421}
+{"事件": "started", "sample_id": "wafer_00000167_017", "model": "qwen3.8-27b", "ts": 1791902654.9685621}
+{"事件": "finished", "sample_id": "wafer_00000167_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902659.243413}
+{"事件": "started", "sample_id": "wafer_00000201_013", "model": "qwen3.8-27b", "ts": 1791902659.2465048}
+{"事件": "finished", "sample_id": "wafer_00000201_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902663.1157882}
+{"事件": "started", "sample_id": "wafer_00000267_009", "model": "qwen3.8-27b", "ts": 1791902663.1185668}
+{"事件": "finished", "sample_id": "wafer_00000267_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902667.7057316}
+{"事件": "started", "sample_id": "wafer_00000534_006", "model": "qwen3.8-27b", "ts": 1791902667.7083137}
+{"事件": "finished", "sample_id": "wafer_00000534_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902671.6312165}
+{"事件": "started", "sample_id": "wafer_00000534_007", "model": "qwen3.8-27b", "ts": 1791902671.635108}
+{"事件": "finished", "sample_id": "wafer_00000534_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902675.685352}
+{"事件": "started", "sample_id": "wafer_00000534_010", "model": "qwen3.8-27b", "ts": 1791902675.687791}
+{"事件": "finished", "sample_id": "wafer_00000534_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902681.570937}
+{"事件": "started", "sample_id": "wafer_00000534_011", "model": "qwen3.8-27b", "ts": 1791902681.5747263}
+{"事件": "finished", "sample_id": "wafer_00000534_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902685.5992837}
+{"事件": "started", "sample_id": "wafer_00000534_014", "model": "qwen3.8-27b", "ts": 1791902685.603261}
+{"事件": "finished", "sample_id": "wafer_00000534_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902688.8185444}
+{"事件": "started", "sample_id": "wafer_00000534_020", "model": "qwen3.8-27b", "ts": 1791902688.8221369}
+{"事件": "finished", "sample_id": "wafer_00000534_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902692.184936}
+{"事件": "started", "sample_id": "wafer_00001466_011", "model": "qwen3.8-27b", "ts": 1791902692.1909935}
+{"事件": "finished", "sample_id": "wafer_00001466_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902698.5388327}
+{"事件": "started", "sample_id": "wafer_00002077_007", "model": "qwen3.8-27b", "ts": 1791902698.5441334}
+{"事件": "finished", "sample_id": "wafer_00002077_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902701.384309}
+{"事件": "started", "sample_id": "wafer_00002312_006", "model": "qwen3.8-27b", "ts": 1791902701.3862116}
+{"事件": "finished", "sample_id": "wafer_00002312_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902706.7282279}
+{"事件": "started", "sample_id": "wafer_00002527_003", "model": "qwen3.8-27b", "ts": 1791902706.7315469}
+{"事件": "finished", "sample_id": "wafer_00002527_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902710.8887987}
+{"事件": "started", "sample_id": "wafer_00004900_019", "model": "qwen3.8-27b", "ts": 1791902710.892704}
+{"事件": "finished", "sample_id": "wafer_00004900_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902715.6379175}
+{"事件": "started", "sample_id": "wafer_00005127_006", "model": "qwen3.8-27b", "ts": 1791902715.642499}
+{"事件": "finished", "sample_id": "wafer_00005127_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902718.810468}
+{"事件": "started", "sample_id": "wafer_00005621_013", "model": "qwen3.8-27b", "ts": 1791902718.813182}
+{"事件": "finished", "sample_id": "wafer_00005621_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902723.4360824}
+{"事件": "started", "sample_id": "wafer_00005686_001", "model": "qwen3.8-27b", "ts": 1791902723.4382567}
+{"事件": "finished", "sample_id": "wafer_00005686_001", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902727.5081098}
+{"事件": "started", "sample_id": "wafer_00005686_014", "model": "qwen3.8-27b", "ts": 1791902727.5099375}
+{"事件": "finished", "sample_id": "wafer_00005686_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902731.1672502}
+{"事件": "started", "sample_id": "wafer_00005930_025", "model": "qwen3.8-27b", "ts": 1791902731.169899}
+{"事件": "finished", "sample_id": "wafer_00005930_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902734.075881}
+{"事件": "started", "sample_id": "wafer_00006011_020", "model": "qwen3.8-27b", "ts": 1791902734.078069}
+{"事件": "finished", "sample_id": "wafer_00006011_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902739.163861}
+{"事件": "started", "sample_id": "wafer_00007847_014", "model": "qwen3.8-27b", "ts": 1791902739.1655838}
+{"事件": "finished", "sample_id": "wafer_00007847_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902748.4682384}
+{"事件": "started", "sample_id": "wafer_00007847_017", "model": "qwen3.8-27b", "ts": 1791902748.4712393}
+{"事件": "finished", "sample_id": "wafer_00007847_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902751.621405}
+{"事件": "started", "sample_id": "wafer_00008818_008", "model": "qwen3.8-27b", "ts": 1791902751.6261477}
+{"事件": "finished", "sample_id": "wafer_00008818_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902754.8070436}
+{"事件": "started", "sample_id": "wafer_00009147_024", "model": "qwen3.8-27b", "ts": 1791902754.8095162}
+{"事件": "finished", "sample_id": "wafer_00009147_024", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902757.975854}
+{"事件": "started", "sample_id": "wafer_00010329_021", "model": "qwen3.8-27b", "ts": 1791902757.9785357}
+{"事件": "finished", "sample_id": "wafer_00010329_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902762.7479682}
+{"事件": "started", "sample_id": "wafer_00011407_014", "model": "qwen3.8-27b", "ts": 1791902762.7505522}
+{"事件": "finished", "sample_id": "wafer_00011407_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902766.8842638}
+{"事件": "started", "sample_id": "wafer_00011432_015", "model": "qwen3.8-27b", "ts": 1791902766.8872085}
+{"事件": "finished", "sample_id": "wafer_00011432_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902772.8977075}
+{"事件": "started", "sample_id": "wafer_00011877_007", "model": "qwen3.8-27b", "ts": 1791902772.9012363}
+{"事件": "finished", "sample_id": "wafer_00011877_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902777.0482836}
+{"事件": "started", "sample_id": "wafer_00011877_009", "model": "qwen3.8-27b", "ts": 1791902777.0506947}
+{"事件": "finished", "sample_id": "wafer_00011877_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902780.9706917}
+{"事件": "started", "sample_id": "wafer_00011879_010", "model": "qwen3.8-27b", "ts": 1791902780.9730675}
+{"事件": "finished", "sample_id": "wafer_00011879_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902784.3082614}
+{"事件": "started", "sample_id": "wafer_00011885_011", "model": "qwen3.8-27b", "ts": 1791902784.3124356}
+{"事件": "finished", "sample_id": "wafer_00011885_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902789.6668413}
+{"事件": "started", "sample_id": "wafer_00011969_020", "model": "qwen3.8-27b", "ts": 1791902789.6709898}
+{"事件": "finished", "sample_id": "wafer_00011969_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902793.2702003}
+{"事件": "started", "sample_id": "wafer_00012754_022", "model": "qwen3.8-27b", "ts": 1791902793.273207}
+{"事件": "finished", "sample_id": "wafer_00012754_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902795.8931828}
+{"事件": "started", "sample_id": "wafer_00012768_013", "model": "qwen3.8-27b", "ts": 1791902795.8962893}
+{"事件": "finished", "sample_id": "wafer_00012768_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902800.2720454}
+{"事件": "started", "sample_id": "wafer_00012909_004", "model": "qwen3.8-27b", "ts": 1791902800.27471}
+{"事件": "finished", "sample_id": "wafer_00012909_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902805.7610815}
+{"事件": "started", "sample_id": "wafer_00013016_008", "model": "qwen3.8-27b", "ts": 1791902805.763404}
+{"事件": "finished", "sample_id": "wafer_00013016_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902808.8387516}
+{"事件": "started", "sample_id": "wafer_00013016_009", "model": "qwen3.8-27b", "ts": 1791902808.842003}
+{"事件": "finished", "sample_id": "wafer_00013016_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902813.0240002}
+{"事件": "started", "sample_id": "wafer_00014176_004", "model": "qwen3.8-27b", "ts": 1791902813.0265896}
+{"事件": "finished", "sample_id": "wafer_00014176_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902815.9273481}
+{"事件": "started", "sample_id": "wafer_00015325_013", "model": "qwen3.8-27b", "ts": 1791902815.9314299}
+{"事件": "finished", "sample_id": "wafer_00015325_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902819.551027}
+{"事件": "started", "sample_id": "wafer_00015373_023", "model": "qwen3.8-27b", "ts": 1791902819.5540462}
+{"事件": "finished", "sample_id": "wafer_00015373_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902824.2561512}
+{"事件": "started", "sample_id": "wafer_00015597_021", "model": "qwen3.8-27b", "ts": 1791902824.2600095}
+{"事件": "finished", "sample_id": "wafer_00015597_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902832.6819522}
+{"事件": "started", "sample_id": "wafer_00015670_012", "model": "qwen3.8-27b", "ts": 1791902832.687524}
+{"事件": "finished", "sample_id": "wafer_00015670_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902836.8270347}
+{"事件": "started", "sample_id": "wafer_00015704_002", "model": "qwen3.8-27b", "ts": 1791902836.8284502}
+{"事件": "finished", "sample_id": "wafer_00015704_002", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902839.854552}
+{"事件": "started", "sample_id": "wafer_00015796_009", "model": "qwen3.8-27b", "ts": 1791902839.859513}
+{"事件": "finished", "sample_id": "wafer_00015796_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902843.7069547}
+{"事件": "started", "sample_id": "wafer_00015801_008", "model": "qwen3.8-27b", "ts": 1791902843.7105057}
+{"事件": "finished", "sample_id": "wafer_00015801_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902848.1543255}
+{"事件": "started", "sample_id": "wafer_00015807_003", "model": "qwen3.8-27b", "ts": 1791902848.1592236}
+{"事件": "finished", "sample_id": "wafer_00015807_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902851.656181}
+{"事件": "started", "sample_id": "wafer_00016605_007", "model": "qwen3.8-27b", "ts": 1791902851.6602492}
+{"事件": "finished", "sample_id": "wafer_00016605_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902854.4917462}
+{"事件": "started", "sample_id": "wafer_00016605_014", "model": "qwen3.8-27b", "ts": 1791902854.4952888}
+{"事件": "finished", "sample_id": "wafer_00016605_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902859.628338}
+{"事件": "started", "sample_id": "wafer_00017130_002", "model": "qwen3.8-27b", "ts": 1791902859.6309857}
+{"事件": "finished", "sample_id": "wafer_00017130_002", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902864.7391245}
+{"事件": "started", "sample_id": "wafer_00017130_005", "model": "qwen3.8-27b", "ts": 1791902864.7429898}
+{"事件": "finished", "sample_id": "wafer_00017130_005", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902867.6176822}
+{"事件": "started", "sample_id": "wafer_00017130_011", "model": "qwen3.8-27b", "ts": 1791902867.6203375}
+{"事件": "finished", "sample_id": "wafer_00017130_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902872.1184435}
+{"事件": "started", "sample_id": "wafer_00017130_018", "model": "qwen3.8-27b", "ts": 1791902872.1217327}
+{"事件": "finished", "sample_id": "wafer_00017130_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902874.7731707}
+{"事件": "started", "sample_id": "wafer_00017130_019", "model": "qwen3.8-27b", "ts": 1791902874.776481}
+{"事件": "finished", "sample_id": "wafer_00017130_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902878.607182}
+{"事件": "started", "sample_id": "wafer_00017130_025", "model": "qwen3.8-27b", "ts": 1791902878.6106606}
+{"事件": "finished", "sample_id": "wafer_00017130_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902881.41314}
+{"事件": "started", "sample_id": "wafer_00017133_012", "model": "qwen3.8-27b", "ts": 1791902881.4169765}
+{"事件": "finished", "sample_id": "wafer_00017133_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902886.019378}
+{"事件": "started", "sample_id": "wafer_00017133_023", "model": "qwen3.8-27b", "ts": 1791902886.0215235}
+{"事件": "finished", "sample_id": "wafer_00017133_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902889.3197854}
+{"事件": "started", "sample_id": "wafer_00017134_017", "model": "qwen3.8-27b", "ts": 1791902889.323671}
+{"事件": "finished", "sample_id": "wafer_00017134_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902896.8099585}
+{"事件": "started", "sample_id": "wafer_00017141_012", "model": "qwen3.8-27b", "ts": 1791902896.8141525}
+{"事件": "finished", "sample_id": "wafer_00017141_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902903.8016226}
+{"事件": "started", "sample_id": "wafer_00017141_021", "model": "qwen3.8-27b", "ts": 1791902903.8057036}
+{"事件": "finished", "sample_id": "wafer_00017141_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902908.23497}
+{"事件": "started", "sample_id": "wafer_00017141_023", "model": "qwen3.8-27b", "ts": 1791902908.2398887}
+{"事件": "finished", "sample_id": "wafer_00017141_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902910.8732414}
+{"事件": "started", "sample_id": "wafer_00017149_020", "model": "qwen3.8-27b", "ts": 1791902910.8765204}
+{"事件": "finished", "sample_id": "wafer_00017149_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902915.9197755}
+{"事件": "started", "sample_id": "wafer_00017181_009", "model": "qwen3.8-27b", "ts": 1791902915.9220445}
+{"事件": "finished", "sample_id": "wafer_00017181_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902922.0312357}
+{"事件": "started", "sample_id": "wafer_00018406_018", "model": "qwen3.8-27b", "ts": 1791902922.0349767}
+{"事件": "finished", "sample_id": "wafer_00018406_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902924.6743593}
+{"事件": "started", "sample_id": "wafer_00018500_005", "model": "qwen3.8-27b", "ts": 1791902924.6787417}
+{"事件": "finished", "sample_id": "wafer_00018500_005", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902927.7621865}
+{"事件": "started", "sample_id": "wafer_00018699_009", "model": "qwen3.8-27b", "ts": 1791902927.7645464}
+{"事件": "finished", "sample_id": "wafer_00018699_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902932.4353657}
+{"事件": "started", "sample_id": "wafer_00019107_003", "model": "qwen3.8-27b", "ts": 1791902932.4384918}
+{"事件": "finished", "sample_id": "wafer_00019107_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902934.9395442}
+{"事件": "started", "sample_id": "wafer_00019289_003", "model": "qwen3.8-27b", "ts": 1791902934.9422672}
+{"事件": "finished", "sample_id": "wafer_00019289_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902940.3578637}
+{"事件": "started", "sample_id": "wafer_00019398_019", "model": "qwen3.8-27b", "ts": 1791902940.3612747}
+{"事件": "finished", "sample_id": "wafer_00019398_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902945.871442}
+{"事件": "started", "sample_id": "wafer_00019701_004", "model": "qwen3.8-27b", "ts": 1791902945.873372}
+{"事件": "finished", "sample_id": "wafer_00019701_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902951.2350123}
+{"事件": "started", "sample_id": "wafer_00020339_016", "model": "qwen3.8-27b", "ts": 1791902951.2372034}
+{"事件": "finished", "sample_id": "wafer_00020339_016", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902955.5164177}
+{"事件": "started", "sample_id": "wafer_00020731_019", "model": "qwen3.8-27b", "ts": 1791902955.5196948}
+{"事件": "finished", "sample_id": "wafer_00020731_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902961.278602}
+{"事件": "started", "sample_id": "wafer_00020732_018", "model": "qwen3.8-27b", "ts": 1791902961.2818642}
+{"事件": "finished", "sample_id": "wafer_00020732_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902966.5651336}
+{"事件": "started", "sample_id": "wafer_00020733_022", "model": "qwen3.8-27b", "ts": 1791902966.5664318}
+{"事件": "finished", "sample_id": "wafer_00020733_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902969.4239857}
+{"事件": "started", "sample_id": "wafer_00021463_023", "model": "qwen3.8-27b", "ts": 1791902969.4284124}
+{"事件": "finished", "sample_id": "wafer_00021463_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902979.0649815}
+{"事件": "started", "sample_id": "wafer_00022219_014", "model": "qwen3.8-27b", "ts": 1791902979.0703926}
+{"事件": "finished", "sample_id": "wafer_00022219_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902982.334862}
+{"事件": "started", "sample_id": "wafer_00022374_013", "model": "qwen3.8-27b", "ts": 1791902982.3397837}
+{"事件": "finished", "sample_id": "wafer_00022374_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902985.8362327}
+{"事件": "started", "sample_id": "wafer_00022471_011", "model": "qwen3.8-27b", "ts": 1791902985.8379605}
+{"事件": "finished", "sample_id": "wafer_00022471_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902989.5203388}
+{"事件": "started", "sample_id": "wafer_00022480_002", "model": "qwen3.8-27b", "ts": 1791902989.522808}
+{"事件": "finished", "sample_id": "wafer_00022480_002", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902994.1976686}
+{"事件": "started", "sample_id": "wafer_00022940_021", "model": "qwen3.8-27b", "ts": 1791902994.2000682}
+{"事件": "finished", "sample_id": "wafer_00022940_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791902997.9059029}
+{"事件": "started", "sample_id": "wafer_00025118_007", "model": "qwen3.8-27b", "ts": 1791902997.909419}
+{"事件": "finished", "sample_id": "wafer_00025118_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903005.4512453}
+{"事件": "started", "sample_id": "wafer_00026468_002", "model": "qwen3.8-27b", "ts": 1791903005.4564025}
+{"事件": "finished", "sample_id": "wafer_00026468_002", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903010.078645}
+{"事件": "started", "sample_id": "wafer_00029115_012", "model": "qwen3.8-27b", "ts": 1791903010.081324}
+{"事件": "finished", "sample_id": "wafer_00029115_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903014.905027}
+{"事件": "started", "sample_id": "wafer_00032897_010", "model": "qwen3.8-27b", "ts": 1791903014.907754}
+{"事件": "finished", "sample_id": "wafer_00032897_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903017.833777}
+{"事件": "started", "sample_id": "wafer_00033145_008", "model": "qwen3.8-27b", "ts": 1791903017.839584}
+{"事件": "finished", "sample_id": "wafer_00033145_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903022.198896}
+{"事件": "started", "sample_id": "wafer_00033145_015", "model": "qwen3.8-27b", "ts": 1791903022.2010415}
+{"事件": "finished", "sample_id": "wafer_00033145_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903027.705903}
+{"事件": "started", "sample_id": "wafer_00034470_013", "model": "qwen3.8-27b", "ts": 1791903027.7077503}
+{"事件": "finished", "sample_id": "wafer_00034470_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903035.8972077}
+{"事件": "started", "sample_id": "wafer_00035962_011", "model": "qwen3.8-27b", "ts": 1791903035.9020104}
+{"事件": "finished", "sample_id": "wafer_00035962_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903038.963143}
+{"事件": "started", "sample_id": "wafer_00035965_003", "model": "qwen3.8-27b", "ts": 1791903038.9683409}
+{"事件": "finished", "sample_id": "wafer_00035965_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903043.2286131}
+{"事件": "started", "sample_id": "wafer_00035965_007", "model": "qwen3.8-27b", "ts": 1791903043.2314804}
+{"事件": "finished", "sample_id": "wafer_00035965_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903046.4578428}
+{"事件": "started", "sample_id": "wafer_00035965_015", "model": "qwen3.8-27b", "ts": 1791903046.4606383}
+{"事件": "finished", "sample_id": "wafer_00035965_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903049.643115}
+{"事件": "started", "sample_id": "wafer_00036583_016", "model": "qwen3.8-27b", "ts": 1791903049.648163}
+{"事件": "finished", "sample_id": "wafer_00036583_016", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903055.7343652}
+{"事件": "started", "sample_id": "wafer_00036583_018", "model": "qwen3.8-27b", "ts": 1791903055.7398295}
+{"事件": "finished", "sample_id": "wafer_00036583_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903060.0339172}
+{"事件": "started", "sample_id": "wafer_00036642_016", "model": "qwen3.8-27b", "ts": 1791903060.0359635}
+{"事件": "finished", "sample_id": "wafer_00036642_016", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903065.0486977}
+{"事件": "started", "sample_id": "wafer_00036726_010", "model": "qwen3.8-27b", "ts": 1791903065.0508306}
+{"事件": "finished", "sample_id": "wafer_00036726_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903070.562467}
+{"事件": "started", "sample_id": "wafer_00036738_025", "model": "qwen3.8-27b", "ts": 1791903070.565344}
+{"事件": "finished", "sample_id": "wafer_00036738_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903079.010425}
+{"事件": "started", "sample_id": "wafer_00036893_009", "model": "qwen3.8-27b", "ts": 1791903079.0123572}
+{"事件": "finished", "sample_id": "wafer_00036893_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903082.7224894}
+{"事件": "started", "sample_id": "wafer_00036909_009", "model": "qwen3.8-27b", "ts": 1791903082.7268295}
+{"事件": "finished", "sample_id": "wafer_00036909_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903086.635868}
+{"事件": "started", "sample_id": "wafer_00036909_015", "model": "qwen3.8-27b", "ts": 1791903086.6402824}
+{"事件": "finished", "sample_id": "wafer_00036909_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903096.306381}
+{"事件": "started", "sample_id": "wafer_00037104_018", "model": "qwen3.8-27b", "ts": 1791903096.3092096}
+{"事件": "finished", "sample_id": "wafer_00037104_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903101.883513}
+{"事件": "started", "sample_id": "wafer_00037238_012", "model": "qwen3.8-27b", "ts": 1791903101.8866844}
+{"事件": "finished", "sample_id": "wafer_00037238_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903104.7809653}
+{"事件": "started", "sample_id": "wafer_00039440_006", "model": "qwen3.8-27b", "ts": 1791903104.784782}
+{"事件": "finished", "sample_id": "wafer_00039440_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903107.6046007}
+{"事件": "started", "sample_id": "wafer_00039511_015", "model": "qwen3.8-27b", "ts": 1791903107.6095273}
+{"事件": "finished", "sample_id": "wafer_00039511_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903114.3942215}
+{"事件": "started", "sample_id": "wafer_00039511_020", "model": "qwen3.8-27b", "ts": 1791903114.3990872}
+{"事件": "finished", "sample_id": "wafer_00039511_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903119.2042415}
+{"事件": "started", "sample_id": "wafer_00039943_015", "model": "qwen3.8-27b", "ts": 1791903119.2080994}
+{"事件": "finished", "sample_id": "wafer_00039943_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903124.062478}
+{"事件": "started", "sample_id": "wafer_00040467_001", "model": "qwen3.8-27b", "ts": 1791903124.0654788}
+{"事件": "finished", "sample_id": "wafer_00040467_001", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903129.386842}
+{"事件": "started", "sample_id": "wafer_00040553_020", "model": "qwen3.8-27b", "ts": 1791903129.389877}
+{"事件": "finished", "sample_id": "wafer_00040553_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903133.0681338}
+{"事件": "started", "sample_id": "wafer_00040578_014", "model": "qwen3.8-27b", "ts": 1791903133.0734053}
+{"事件": "finished", "sample_id": "wafer_00040578_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903137.0312083}
+{"事件": "started", "sample_id": "wafer_00040594_024", "model": "qwen3.8-27b", "ts": 1791903137.0332725}
+{"事件": "finished", "sample_id": "wafer_00040594_024", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903139.632281}
+{"事件": "started", "sample_id": "wafer_00040661_010", "model": "qwen3.8-27b", "ts": 1791903139.6354709}
+{"事件": "finished", "sample_id": "wafer_00040661_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903143.8064575}
+{"事件": "started", "sample_id": "wafer_00040767_010", "model": "qwen3.8-27b", "ts": 1791903143.8100467}
+{"事件": "finished", "sample_id": "wafer_00040767_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903147.4691386}
+{"事件": "started", "sample_id": "wafer_00040792_006", "model": "qwen3.8-27b", "ts": 1791903147.4724307}
+{"事件": "finished", "sample_id": "wafer_00040792_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903151.835392}
+{"事件": "started", "sample_id": "wafer_00040862_015", "model": "qwen3.8-27b", "ts": 1791903151.8403225}
+{"事件": "finished", "sample_id": "wafer_00040862_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903156.1282482}
+{"事件": "started", "sample_id": "wafer_00040887_025", "model": "qwen3.8-27b", "ts": 1791903156.1321788}
+{"事件": "finished", "sample_id": "wafer_00040887_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903161.190721}
+{"事件": "started", "sample_id": "wafer_00040983_022", "model": "qwen3.8-27b", "ts": 1791903161.1940444}
+{"事件": "finished", "sample_id": "wafer_00040983_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903165.6768312}
+{"事件": "started", "sample_id": "wafer_00041172_005", "model": "qwen3.8-27b", "ts": 1791903165.6793797}
+{"事件": "finished", "sample_id": "wafer_00041172_005", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903168.2559266}
+{"事件": "started", "sample_id": "wafer_00041473_004", "model": "qwen3.8-27b", "ts": 1791903168.2573154}
+{"事件": "finished", "sample_id": "wafer_00041473_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903171.6710532}
+{"事件": "started", "sample_id": "wafer_00042036_023", "model": "qwen3.8-27b", "ts": 1791903171.6741173}
+{"事件": "finished", "sample_id": "wafer_00042036_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903174.5714939}
+{"事件": "started", "sample_id": "wafer_00042102_025", "model": "qwen3.8-27b", "ts": 1791903174.573815}
+{"事件": "finished", "sample_id": "wafer_00042102_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903180.0186043}
+{"事件": "started", "sample_id": "wafer_00042109_006", "model": "qwen3.8-27b", "ts": 1791903180.021761}
+{"事件": "finished", "sample_id": "wafer_00042109_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903185.7000575}
+{"事件": "started", "sample_id": "wafer_00042143_025", "model": "qwen3.8-27b", "ts": 1791903185.704229}
+{"事件": "finished", "sample_id": "wafer_00042143_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903188.5683062}
+{"事件": "started", "sample_id": "wafer_00042199_017", "model": "qwen3.8-27b", "ts": 1791903188.573049}
+{"事件": "finished", "sample_id": "wafer_00042199_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903191.8647923}
+{"事件": "started", "sample_id": "wafer_00042245_023", "model": "qwen3.8-27b", "ts": 1791903191.866425}
+{"事件": "finished", "sample_id": "wafer_00042245_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903198.1474328}
+{"事件": "started", "sample_id": "wafer_00042313_014", "model": "qwen3.8-27b", "ts": 1791903198.1529288}
+{"事件": "finished", "sample_id": "wafer_00042313_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903201.0634205}
+{"事件": "started", "sample_id": "wafer_00042317_025", "model": "qwen3.8-27b", "ts": 1791903201.0659506}
+{"事件": "finished", "sample_id": "wafer_00042317_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903203.7872896}
+{"事件": "started", "sample_id": "wafer_00042318_003", "model": "qwen3.8-27b", "ts": 1791903203.7895367}
+{"事件": "finished", "sample_id": "wafer_00042318_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903208.0605922}
+{"事件": "started", "sample_id": "wafer_00042373_010", "model": "qwen3.8-27b", "ts": 1791903208.064977}
+{"事件": "finished", "sample_id": "wafer_00042373_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903213.5622065}
+{"事件": "started", "sample_id": "wafer_00042711_009", "model": "qwen3.8-27b", "ts": 1791903213.5679698}
+{"事件": "finished", "sample_id": "wafer_00042711_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903221.1076953}
+{"事件": "started", "sample_id": "wafer_00042718_020", "model": "qwen3.8-27b", "ts": 1791903221.1135726}
+{"事件": "finished", "sample_id": "wafer_00042718_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903225.1497378}
+{"事件": "started", "sample_id": "wafer_00042731_019", "model": "qwen3.8-27b", "ts": 1791903225.154447}
+{"事件": "finished", "sample_id": "wafer_00042731_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903227.7627876}
+{"事件": "started", "sample_id": "wafer_00042731_025", "model": "qwen3.8-27b", "ts": 1791903227.7674398}
+{"事件": "finished", "sample_id": "wafer_00042731_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903231.9462926}
+{"事件": "started", "sample_id": "wafer_00042739_017", "model": "qwen3.8-27b", "ts": 1791903231.9491718}
+{"事件": "finished", "sample_id": "wafer_00042739_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903235.9337971}
+{"事件": "started", "sample_id": "wafer_00042950_009", "model": "qwen3.8-27b", "ts": 1791903235.939162}
+{"事件": "finished", "sample_id": "wafer_00042950_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903239.605}
+{"事件": "started", "sample_id": "wafer_00042998_025", "model": "qwen3.8-27b", "ts": 1791903239.6101527}
+{"事件": "finished", "sample_id": "wafer_00042998_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903245.7551131}
+{"事件": "started", "sample_id": "wafer_00043047_007", "model": "qwen3.8-27b", "ts": 1791903245.7586617}
+{"事件": "finished", "sample_id": "wafer_00043047_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903248.755618}
+{"事件": "started", "sample_id": "wafer_00043177_018", "model": "qwen3.8-27b", "ts": 1791903248.7596543}
+{"事件": "finished", "sample_id": "wafer_00043177_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903251.674645}
+{"事件": "started", "sample_id": "wafer_00043245_007", "model": "qwen3.8-27b", "ts": 1791903251.6789172}
+{"事件": "finished", "sample_id": "wafer_00043245_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903254.9437962}
+{"事件": "started", "sample_id": "wafer_00043479_007", "model": "qwen3.8-27b", "ts": 1791903254.9483132}
+{"事件": "finished", "sample_id": "wafer_00043479_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903257.9806778}
+{"事件": "started", "sample_id": "wafer_00043554_010", "model": "qwen3.8-27b", "ts": 1791903257.9828963}
+{"事件": "finished", "sample_id": "wafer_00043554_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903261.472653}
+{"事件": "started", "sample_id": "wafer_00043559_015", "model": "qwen3.8-27b", "ts": 1791903261.4767158}
+{"事件": "finished", "sample_id": "wafer_00043559_015", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903264.8381073}
+{"事件": "started", "sample_id": "wafer_00043559_017", "model": "qwen3.8-27b", "ts": 1791903264.8408577}
+{"事件": "finished", "sample_id": "wafer_00043559_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903269.0919244}
+{"事件": "started", "sample_id": "wafer_00043589_017", "model": "qwen3.8-27b", "ts": 1791903269.0977378}
+{"事件": "finished", "sample_id": "wafer_00043589_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903275.8344958}
+{"事件": "started", "sample_id": "wafer_00043667_008", "model": "qwen3.8-27b", "ts": 1791903275.83743}
+{"事件": "finished", "sample_id": "wafer_00043667_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903280.479527}
+{"事件": "started", "sample_id": "wafer_00043671_025", "model": "qwen3.8-27b", "ts": 1791903280.482758}
+{"事件": "finished", "sample_id": "wafer_00043671_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903285.3624728}
+{"事件": "started", "sample_id": "wafer_00043795_017", "model": "qwen3.8-27b", "ts": 1791903285.367081}
+{"事件": "finished", "sample_id": "wafer_00043795_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903291.333587}
+{"事件": "started", "sample_id": "wafer_00043813_007", "model": "qwen3.8-27b", "ts": 1791903291.3350134}
+{"事件": "finished", "sample_id": "wafer_00043813_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903296.878397}
+{"事件": "started", "sample_id": "wafer_00043867_003", "model": "qwen3.8-27b", "ts": 1791903296.8825002}
+{"事件": "finished", "sample_id": "wafer_00043867_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903300.7489138}
+{"事件": "started", "sample_id": "wafer_00043867_007", "model": "qwen3.8-27b", "ts": 1791903300.75215}
+{"事件": "finished", "sample_id": "wafer_00043867_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903308.8895776}
+{"事件": "started", "sample_id": "wafer_00043867_022", "model": "qwen3.8-27b", "ts": 1791903308.8927813}
+{"事件": "finished", "sample_id": "wafer_00043867_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903316.9528573}
+{"事件": "started", "sample_id": "wafer_00043898_020", "model": "qwen3.8-27b", "ts": 1791903316.9582174}
+{"事件": "finished", "sample_id": "wafer_00043898_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903320.903753}
+{"事件": "started", "sample_id": "wafer_00043927_022", "model": "qwen3.8-27b", "ts": 1791903320.9057982}
+{"事件": "finished", "sample_id": "wafer_00043927_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903324.016905}
+{"事件": "started", "sample_id": "wafer_00044160_009", "model": "qwen3.8-27b", "ts": 1791903324.0196915}
+{"事件": "finished", "sample_id": "wafer_00044160_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903329.137511}
+{"事件": "started", "sample_id": "wafer_00044283_017", "model": "qwen3.8-27b", "ts": 1791903329.1417055}
+{"事件": "finished", "sample_id": "wafer_00044283_017", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903334.4383733}
+{"事件": "started", "sample_id": "wafer_00044411_005", "model": "qwen3.8-27b", "ts": 1791903334.4419012}
+{"事件": "finished", "sample_id": "wafer_00044411_005", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903339.0613983}
+{"事件": "started", "sample_id": "wafer_00044522_021", "model": "qwen3.8-27b", "ts": 1791903339.064565}
+{"事件": "finished", "sample_id": "wafer_00044522_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903343.0600822}
+{"事件": "started", "sample_id": "wafer_00044594_011", "model": "qwen3.8-27b", "ts": 1791903343.0622146}
+{"事件": "finished", "sample_id": "wafer_00044594_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903346.8263533}
+{"事件": "started", "sample_id": "wafer_00044629_001", "model": "qwen3.8-27b", "ts": 1791903346.8292644}
+{"事件": "finished", "sample_id": "wafer_00044629_001", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903353.1052504}
+{"事件": "started", "sample_id": "wafer_00044792_010", "model": "qwen3.8-27b", "ts": 1791903353.1102087}
+{"事件": "finished", "sample_id": "wafer_00044792_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903358.2092607}
+{"事件": "started", "sample_id": "wafer_00044803_014", "model": "qwen3.8-27b", "ts": 1791903358.2125204}
+{"事件": "finished", "sample_id": "wafer_00044803_014", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903362.81951}
+{"事件": "started", "sample_id": "wafer_00044803_023", "model": "qwen3.8-27b", "ts": 1791903362.8236916}
+{"事件": "finished", "sample_id": "wafer_00044803_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903372.1008668}
+{"事件": "started", "sample_id": "wafer_00044861_003", "model": "qwen3.8-27b", "ts": 1791903372.102981}
+{"事件": "finished", "sample_id": "wafer_00044861_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903375.0311227}
+{"事件": "started", "sample_id": "wafer_00044948_004", "model": "qwen3.8-27b", "ts": 1791903375.0331297}
+{"事件": "finished", "sample_id": "wafer_00044948_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903379.1686358}
+{"事件": "started", "sample_id": "wafer_00045161_006", "model": "qwen3.8-27b", "ts": 1791903379.1736758}
+{"事件": "finished", "sample_id": "wafer_00045161_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903383.0825145}
+{"事件": "started", "sample_id": "wafer_00045329_012", "model": "qwen3.8-27b", "ts": 1791903383.086478}
+{"事件": "finished", "sample_id": "wafer_00045329_012", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903392.6553543}
+{"事件": "started", "sample_id": "wafer_00045329_020", "model": "qwen3.8-27b", "ts": 1791903392.6578867}
+{"事件": "finished", "sample_id": "wafer_00045329_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903397.6961799}
+{"事件": "started", "sample_id": "wafer_00045331_019", "model": "qwen3.8-27b", "ts": 1791903397.6988428}
+{"事件": "finished", "sample_id": "wafer_00045331_019", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903401.2205505}
+{"事件": "started", "sample_id": "wafer_00045533_016", "model": "qwen3.8-27b", "ts": 1791903401.2249496}
+{"事件": "finished", "sample_id": "wafer_00045533_016", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903406.2199602}
+{"事件": "started", "sample_id": "wafer_00045569_021", "model": "qwen3.8-27b", "ts": 1791903406.2247753}
+{"事件": "finished", "sample_id": "wafer_00045569_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903412.10864}
+{"事件": "started", "sample_id": "wafer_00045573_008", "model": "qwen3.8-27b", "ts": 1791903412.110364}
+{"事件": "finished", "sample_id": "wafer_00045573_008", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903415.14569}
+{"事件": "started", "sample_id": "wafer_00045573_009", "model": "qwen3.8-27b", "ts": 1791903415.1512938}
+{"事件": "finished", "sample_id": "wafer_00045573_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903427.6702044}
+{"事件": "started", "sample_id": "wafer_00045573_022", "model": "qwen3.8-27b", "ts": 1791903427.6742158}
+{"事件": "finished", "sample_id": "wafer_00045573_022", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903431.4988759}
+{"事件": "started", "sample_id": "wafer_00045590_011", "model": "qwen3.8-27b", "ts": 1791903431.5017037}
+{"事件": "finished", "sample_id": "wafer_00045590_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903434.9421701}
+{"事件": "started", "sample_id": "wafer_00045650_005", "model": "qwen3.8-27b", "ts": 1791903434.9455829}
+{"事件": "finished", "sample_id": "wafer_00045650_005", "model": "qwen3.8-27b", "status": "transport_error", "ok": false, "ts": 1791903443.0906074}
+{"事件": "started", "sample_id": "wafer_00045650_025", "model": "qwen3.8-27b", "ts": 1791903443.0939085}
+{"事件": "finished", "sample_id": "wafer_00045650_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903446.4736328}
+{"事件": "started", "sample_id": "wafer_00045717_009", "model": "qwen3.8-27b", "ts": 1791903446.4773505}
+{"事件": "finished", "sample_id": "wafer_00045717_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903450.0700457}
+{"事件": "started", "sample_id": "wafer_00045717_018", "model": "qwen3.8-27b", "ts": 1791903450.073612}
+{"事件": "finished", "sample_id": "wafer_00045717_018", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903453.673416}
+{"事件": "started", "sample_id": "wafer_00045752_004", "model": "qwen3.8-27b", "ts": 1791903453.676412}
+{"事件": "finished", "sample_id": "wafer_00045752_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903460.1306932}
+{"事件": "started", "sample_id": "wafer_00045767_004", "model": "qwen3.8-27b", "ts": 1791903460.1343193}
+{"事件": "finished", "sample_id": "wafer_00045767_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903465.5481973}
+{"事件": "started", "sample_id": "wafer_00045799_007", "model": "qwen3.8-27b", "ts": 1791903465.5507848}
+{"事件": "finished", "sample_id": "wafer_00045799_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903468.4625466}
+{"事件": "started", "sample_id": "wafer_00045852_006", "model": "qwen3.8-27b", "ts": 1791903468.4649994}
+{"事件": "finished", "sample_id": "wafer_00045852_006", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903472.6474261}
+{"事件": "started", "sample_id": "wafer_00045985_004", "model": "qwen3.8-27b", "ts": 1791903472.650387}
+{"事件": "finished", "sample_id": "wafer_00045985_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903479.4881642}
+{"事件": "started", "sample_id": "wafer_00045985_013", "model": "qwen3.8-27b", "ts": 1791903479.4933972}
+{"事件": "finished", "sample_id": "wafer_00045985_013", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903484.5935616}
+{"事件": "started", "sample_id": "wafer_00045985_023", "model": "qwen3.8-27b", "ts": 1791903484.5971165}
+{"事件": "finished", "sample_id": "wafer_00045985_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903492.24197}
+{"事件": "started", "sample_id": "wafer_00045985_024", "model": "qwen3.8-27b", "ts": 1791903492.2450786}
+{"事件": "finished", "sample_id": "wafer_00045985_024", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903497.3465114}
+{"事件": "started", "sample_id": "wafer_00046095_010", "model": "qwen3.8-27b", "ts": 1791903497.3498294}
+{"事件": "finished", "sample_id": "wafer_00046095_010", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903502.923686}
+{"事件": "started", "sample_id": "wafer_00046116_007", "model": "qwen3.8-27b", "ts": 1791903502.9274611}
+{"事件": "finished", "sample_id": "wafer_00046116_007", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903508.1810162}
+{"事件": "started", "sample_id": "wafer_00046212_020", "model": "qwen3.8-27b", "ts": 1791903508.1840377}
+{"事件": "finished", "sample_id": "wafer_00046212_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903513.8139026}
+{"事件": "started", "sample_id": "wafer_00046328_020", "model": "qwen3.8-27b", "ts": 1791903513.8176048}
+{"事件": "finished", "sample_id": "wafer_00046328_020", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903516.7476883}
+{"事件": "started", "sample_id": "wafer_00046601_002", "model": "qwen3.8-27b", "ts": 1791903516.7499747}
+{"事件": "finished", "sample_id": "wafer_00046601_002", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903519.5702093}
+{"事件": "started", "sample_id": "wafer_00046794_024", "model": "qwen3.8-27b", "ts": 1791903519.5734599}
+{"事件": "finished", "sample_id": "wafer_00046794_024", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903522.3720531}
+{"事件": "started", "sample_id": "wafer_00046844_025", "model": "qwen3.8-27b", "ts": 1791903522.3756955}
+{"事件": "finished", "sample_id": "wafer_00046844_025", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903526.972102}
+{"事件": "started", "sample_id": "wafer_00047020_003", "model": "qwen3.8-27b", "ts": 1791903526.976574}
+{"事件": "finished", "sample_id": "wafer_00047020_003", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903532.5416481}
+{"事件": "started", "sample_id": "wafer_00047168_004", "model": "qwen3.8-27b", "ts": 1791903532.5461853}
+{"事件": "finished", "sample_id": "wafer_00047168_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903535.4344964}
+{"事件": "started", "sample_id": "wafer_00047328_011", "model": "qwen3.8-27b", "ts": 1791903535.4380713}
+{"事件": "finished", "sample_id": "wafer_00047328_011", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903539.4274852}
+{"事件": "started", "sample_id": "wafer_00047328_023", "model": "qwen3.8-27b", "ts": 1791903539.4324107}
+{"事件": "finished", "sample_id": "wafer_00047328_023", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903543.3058398}
+{"事件": "started", "sample_id": "wafer_00047391_004", "model": "qwen3.8-27b", "ts": 1791903543.3091474}
+{"事件": "finished", "sample_id": "wafer_00047391_004", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903548.6402836}
+{"事件": "started", "sample_id": "wafer_00047491_009", "model": "qwen3.8-27b", "ts": 1791903548.6446984}
+{"事件": "finished", "sample_id": "wafer_00047491_009", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903551.4092193}
+{"事件": "started", "sample_id": "wafer_00047491_021", "model": "qwen3.8-27b", "ts": 1791903551.4132712}
+{"事件": "finished", "sample_id": "wafer_00047491_021", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903555.0545938}
+{"事件": "started", "sample_id": "wafer_00047502_016", "model": "qwen3.8-27b", "ts": 1791903555.059835}
+{"事件": "finished", "sample_id": "wafer_00047502_016", "model": "qwen3.8-27b", "status": "ok", "ok": true, "ts": 1791903559.4794068}

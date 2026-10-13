@@ -1,0 +1,35 @@
+[BL_flagship] model=qwen3.8-max-0902 已完成 0/200  未知 0  待派发 200
+[BL_flagship] 20/200  ok=19 fail=1  98s (4.90s/条)
+[BL_flagship] 40/200  ok=39 fail=1  181s (4.54s/条)
+[BL_flagship] 60/200  ok=59 fail=1  269s (4.48s/条)
+[BL_flagship] 80/200  ok=79 fail=1  364s (4.55s/条)
+[BL_flagship] 100/200  ok=99 fail=1  459s (4.59s/条)
+[BL_flagship] 120/200  ok=119 fail=1  548s (4.57s/条)
+[BL_flagship] 140/200  ok=139 fail=1  632s (4.52s/条)
+[BL_flagship] 160/200  ok=159 fail=1  724s (4.53s/条)
+[BL_flagship] 180/200  ok=179 fail=1  801s (4.45s/条)
+[BL_flagship] 200/200  ok=199 fail=1  886s (4.43s/条)
+{
+ "model": "qwen3.8-max-0902",
+ "role": "flagship",
+ "name": "BL_flagship",
+ "n_slots": 200,
+ "n_done": 0,
+ "n_unknown_not_resent": 0,
+ "n_ok_this_run": 199,
+ "n_fail_this_run": 1,
+ "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a",
+ "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担",
+ "frozen_prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+ "images_manifest_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+ "server_exam_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+ "params": {
+  "max_tokens": 384,
+  "temperature": 0,
+  "stream": false,
+  "enable_thinking": false,
+  "seed": 3407
+ },
+ "raw_file": "BL_flagship_raw.jsonl",
+ "ledger_file": "BL_flagship_ledger.jsonl"
+}

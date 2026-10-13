@@ -1,0 +1,53 @@
+{
+ "schema": "bailian-frozen-v1",
+ "frozen_before_any_test_image": true,
+ "frozen_at_utc": null,
+ "roles": {
+  "flagship": "qwen3.8-max-0902",
+  "small": "qwen3.8-27b",
+  "max_or_plus": "qwen3.7-plus-2026-05-26"
+ },
+ "unresolved_roles": {},
+ "selection_rule": "按事前候选链在账户目录内、且通过合成图连通检查的第一个唯一模型；不看 TEST200 分数",
+ "chains": {
+  "flagship": [
+   "qwen3.8-max-0902",
+   "qwen3.8-max-2026-09-02",
+   "qwen3.8-max",
+   "qwen3.5-397b-a17b"
+  ],
+  "small": [
+   "qwen3.8-27b",
+   "qwen3.5-27b",
+   "qwen3.5-35b-a3b",
+   "qwen3.5-122b-a10b"
+  ],
+  "max_or_plus": [
+   "qwen3.7-plus-2026-05-26",
+   "qwen3.7-plus",
+   "qwen3-vl-plus",
+   "qwen3.5-plus-2026-02-15"
+  ]
+ },
+ "decision_notes": {
+  "flagship": [
+   "采用 qwen3.8-max-0902；合成图返回='左=正方形红色；右=圆形蓝色'"
+  ],
+  "small": [
+   "采用 qwen3.8-27b；合成图返回='左=正方形红色；右=圆形蓝色'"
+  ],
+  "max_or_plus": [
+   "采用 qwen3.7-plus-2026-05-26；合成图返回='左=正方形红色；右=圆形蓝色'"
+  ]
+ },
+ "params": {
+  "max_tokens": 384,
+  "temperature": 0,
+  "stream": false,
+  "enable_thinking": false,
+  "seed": 3407
+ },
+ "probe_png_sha256": "9322b18ee1c8c7cb02d37d878d3ce7176b83ba694df18f619820776560dad6bd",
+ "account_model_count": 176,
+ "note": "冻结即生效：此后不得因 TEST200 表现替换、增补或挑种子"
+}
