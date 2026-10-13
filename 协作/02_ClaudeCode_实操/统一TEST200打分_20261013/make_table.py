@@ -9,6 +9,7 @@
 """
 from __future__ import annotations
 
+import argparse
 import csv
 import hashlib
 import io
@@ -16,7 +17,7 @@ import json
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-OUT = HERE / "out_unified"
+DEFAULT_OUT = "out_v2_无S3"
 
 
 def sha_file(p: Path) -> str:
@@ -49,6 +50,10 @@ TRANSFER_NOTE = {
 
 
 def main() -> int:
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", default=DEFAULT_OUT, help="打分产物目录名（相对本目录）")
+    args = ap.parse_args()
+    OUT = HERE / args.out
     metrics = json.loads((OUT / "metrics.json").read_text(encoding="utf-8"))
     contract = json.loads((HERE / "contract.json").read_text(encoding="utf-8"))
     manifest = json.loads((HERE / "source_manifest.json").read_text(encoding="utf-8"))
@@ -80,6 +85,12 @@ def main() -> int:
     A("> 252 / 56 / 36 / 120 张上的旧分数一律没有搬进本表；589 张本轮没有跑。")
     A("")
     A("## 0. 口径")
+    A("")
+    A("> **本版（v2）与第一版（v1，git `e793b6a`）的唯一差别**：按用户指令把 `S3_fixed` 从清单移除，"
+      "49 条来源取代 50 条，配对 93 对取代 95 对。除此之外**其他任何模型的任何数字都没有变**"
+      "（逐行比对过 `main.csv`），也没有增补模型、换题面或挑种子。"
+      "配对是在已经看过分之后重锁的，改动被限制为「只删 S3 的两对、不加任何一对」，"
+      "新旧两份 `pairs.json` 都已留档（`pairs_S3included.json` / `pairs.json`）。")
     A("")
     A(f"- 合同 `contract.json` SHA256：`{sha_file(HERE/'contract.json')}`")
     A(f"- 来源清单 `source_manifest.json` SHA256：`{sha_file(HERE/'source_manifest.json')}`")
@@ -202,10 +213,10 @@ def main() -> int:
     A("| M0 的版本选择 | **M0_v2** | 身份核验记录了三个 M0 候选：M0_v2(`43b36375…`)、M0_v3(`191c62e8…`)、"
       "v5 S0(`8047875d…`)。其中只有 M0_v2 的权重在学校机器上（本次上传后 SHA 逐字节核对一致）；"
       "M0_v3 权重本地与学校均不存在，故用 M0_v2 新答，并标明它是 v2 轮的 M0。 |")
-    A("| S3 | **已列入并另行标注** | 任务书说「S3 没有训成，不列入」，那是 v5 当轮的情况。"
-      "学校机器上存在更晚的 `qoder_school_v5r1_20261012/runs/S3_fixed`（checkpoint-375，"
-      "adapter `b060d9f6…`），且有 200 条 TEST200 原答，原答在任何打分之前就已下载。"
-      "按「有产物就列、由用户裁量是否剔除」处理，不因为一句过期前提把它藏起来。 |")
+    A("| S3 | **按用户指令剔除** | 任务书原本写「S3 没有训成，不列入」，但学校机器上存在更晚的 "
+      "`qoder_school_v5r1_20261012/runs/S3_fixed`（checkpoint-375，adapter `b060d9f6…`）及其 200 条 "
+      "TEST200 原答，所以第一版表把它列了进去并标注。用户随后明确要求剔除，本版据此从清单移除。"
+      "**原答没有被销毁**，完整保存在 `excluded_from_table/`；含 S3 的那一版表在 git 历史 `e793b6a` 里可以翻到。 |")
     A("")
 
     # ---------------- 来源

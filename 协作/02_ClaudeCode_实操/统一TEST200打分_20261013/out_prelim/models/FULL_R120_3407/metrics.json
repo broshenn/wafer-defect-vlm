@@ -1,0 +1,181 @@
+{
+  "kind": "main",
+  "n_ref": 200,
+  "n_record_present": 200,
+  "n_attempted": 200,
+  "n_missing": 0,
+  "class": {
+    "acc": 0.805,
+    "macro_f1": 0.7845067848652078,
+    "n": 200,
+    "macro_classes": 9,
+    "per_class": {
+      "Center": {
+        "precision": 0.9032258064516129,
+        "recall": 0.9032258064516129,
+        "f1": 0.9032258064516129,
+        "support": 31,
+        "tp": 28,
+        "fp": 3,
+        "fn": 3
+      },
+      "Donut": {
+        "precision": 0.95,
+        "recall": 0.76,
+        "f1": 0.8444444444444444,
+        "support": 25,
+        "tp": 19,
+        "fp": 1,
+        "fn": 6
+      },
+      "Edge_Loc": {
+        "precision": 0.6060606060606061,
+        "recall": 0.7407407407407407,
+        "f1": 0.6666666666666666,
+        "support": 27,
+        "tp": 20,
+        "fp": 13,
+        "fn": 7
+      },
+      "Edge_Ring": {
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "f1": 0.9090909090909091,
+        "support": 24,
+        "tp": 20,
+        "fp": 0,
+        "fn": 4
+      },
+      "Loc": {
+        "precision": 0.6206896551724138,
+        "recall": 0.6666666666666666,
+        "f1": 0.6428571428571429,
+        "support": 27,
+        "tp": 18,
+        "fp": 11,
+        "fn": 9
+      },
+      "Near_full": {
+        "precision": 0.7142857142857143,
+        "recall": 1.0,
+        "f1": 0.8333333333333333,
+        "support": 5,
+        "tp": 5,
+        "fp": 2,
+        "fn": 0
+      },
+      "Random": {
+        "precision": 0.8620689655172413,
+        "recall": 0.9615384615384616,
+        "f1": 0.9090909090909091,
+        "support": 26,
+        "tp": 25,
+        "fp": 4,
+        "fn": 1
+      },
+      "Scratch": {
+        "precision": 0.8214285714285714,
+        "recall": 0.8846153846153846,
+        "f1": 0.8518518518518519,
+        "support": 26,
+        "tp": 23,
+        "fp": 5,
+        "fn": 3
+      },
+      "none": {
+        "precision": 1.0,
+        "recall": 0.3333333333333333,
+        "f1": 0.5,
+        "support": 9,
+        "tp": 3,
+        "fp": 0,
+        "fn": 6
+      }
+    },
+    "unknown_rate": 0.0
+  },
+  "format": {
+    "n": 200,
+    "n_legal": 200,
+    "stripped_legal_rate": 1.0,
+    "raw_legal_rate": 0.0,
+    "legacy_raw_regex_match_rate": 0.0,
+    "n_missing": 0,
+    "n_failures_including_missing": 0,
+    "n_nonempty_invalid": 0,
+    "n_execution_errors": 0,
+    "definition": "pinned parser; absent/empty answers and invalid formats count as failures"
+  },
+  "geometry": {
+    "geoscore": 0.924501216545012,
+    "coverage": {
+      "correct": 191,
+      "n": 200,
+      "exact_rate": 0.955
+    },
+    "zones": {
+      "correct": 171,
+      "n": 200,
+      "exact_rate": 0.855
+    },
+    "angular_type": {
+      "correct": 132,
+      "n": 137,
+      "exact_rate": 0.9635036496350365
+    }
+  },
+  "geoscore": 0.924501216545012,
+  "geometry_status": "scored",
+  "eligible_denominators": {
+    "class": 200,
+    "format": 200,
+    "coverage": 200,
+    "zones": 200,
+    "angular_type": 137
+  },
+  "name": "FULL_R120_3407",
+  "seed": 3407,
+  "source": "复用原答",
+  "protocol": "v5_main",
+  "provenance": {
+    "raw_file": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\统一TEST200打分_20261013\\sources\\FULL_R120_3407_raw.jsonl",
+    "raw_sha256": "17d5a623dfe0385a7219c90cf385943656236d20c02cb9800bc98c290ceb58b6",
+    "raw_artifact_type": "full_answer_text",
+    "raw_artifact_n": 200,
+    "nominalN": 200,
+    "extra_ids_ignored": 0,
+    "identity": {
+      "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+      "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea",
+      "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+      "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7"
+    },
+    "identity_evidence": [
+      {
+        "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\统一TEST200打分_20261013\\inputs\\server_test200_main.jsonl",
+        "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+      },
+      {
+        "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\统一TEST200打分_20261013\\evidence\\FULL_R120_3407_ledger.jsonl",
+        "sha256": "90f0bd1b1cfb455b2e46a0d6f3d6ca50fff57cc6f28eb0ec8abd79e09d9ec7df"
+      },
+      {
+        "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\统一TEST200打分_20261013\\evidence\\FULL_R120_3407_metrics.json",
+        "sha256": "9ca7d3fb24a42037e5aabd9bf1b21af15df4d9ee3b7b68f8c2a97f429cf0b919"
+      }
+    ],
+    "input_audit": {
+      "path": "D:\\pycode\\晶圆图研究\\协作\\02_ClaudeCode_实操\\统一TEST200打分_20261013\\inputs\\server_test200_main.jsonl",
+      "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "n": 200,
+      "test200_ids_checked": 200
+    },
+    "identity_basis": "per-ID frozen identity plus new hashed provenance declaration",
+    "geometry_reference_denominators": {
+      "coverage": 200,
+      "zones": 200,
+      "angular_type": 137
+    }
+  },
+  "original_question_category": null
+}

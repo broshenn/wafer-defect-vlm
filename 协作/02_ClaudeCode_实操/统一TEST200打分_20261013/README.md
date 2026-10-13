@@ -27,8 +27,19 @@
 | `probe.json` | 合成图连通检查的完整请求/返回记录 |
 | `bailian_out/` | 百炼 600 条原答 + 逐条台账 + 运行摘要（`sources/`、`evidence/` 里的百炼件是它的副本） |
 | `诊断_zone_frac刻度.json` | 题面歧义诊断（**不是成绩**） |
-| `out_unified/` | **正式打分产物**：`main.csv`（一行一个模型）、`metrics.json`、`models/<名>/per_sample.jsonl` |
+| `out_v2_无S3/` | **正式打分产物（当前版）**：49 条来源，`main.csv`（一行一个模型）、`metrics.json`、`models/<名>/per_sample.jsonl` |
+| `excluded_from_table/` | 按用户指令从表里剔除的 `S3_fixed` 原答与台账。**没有被销毁**，只是不进清单 |
+| `out_unified/` | 上一版打分产物（50 条，含 `S3_fixed`）；配对锁定件另存为 `pairs_S3included.json`、`source_manifest_S3included.json` |
 | `out_prelim/` | **已作废的中间产物**：加百炼与新增三条之前的 44 模型版；保留只为留痕，不要引用 |
+
+> **v2 与 v1（git `e793b6a`）的唯一差别**：按用户指令把 `S3_fixed` 移出清单（49 条取代 50 条，
+> 配对 93 对取代 95 对）。逐行比对过 `main.csv`：**其他 49 个模型的任何数字都没有变**。
+> 配对是在看过分之后重锁的，改动被验证限制为「只删 S3 那两对、不加任何一对」——
+> 新旧两份 `pairs.json` 都留了档，可以直接 diff。
+>
+> **注意提交时的坑**：仓库根 `.gitignore` 有一条 `models/`，本意是排除 19 GB 的权重目录，
+> 但它会连带命中打分产物里的 `out_*/models/`。这些逐样本记录必须用
+> `git add -f` 才能进版本库，否则会静默漏掉（第一版就漏过一次，已补上）。
 
 ## 复现顺序
 
@@ -38,8 +49,8 @@ python build_sources.py         # 扫描 sources/ 生成来源清单
 python lock_pairs.py            # 看分前锁定配对（必须在 unified_score.py 之前）
 python ../01_Codex_指挥/统一TEST200_20261013/code/unified_score.py \
     --contract contract.json --sources source_manifest.json \
-    --pairs pairs.json --out out_unified
-python make_table.py            # 生成中文总表
+    --pairs pairs.json --out out_v2_无S3
+python make_table.py            # 生成中文总表（默认读 out_v2_无S3，可用 --out 换）
 ```
 
 打分器是 Codex 写的、本轮**只读不改**。它在写任何输出前会做完整审计：
@@ -75,4 +86,6 @@ python bailian_run.py --model-role max_or_plus
   返回 403 `AllocationQuota.FreeTierOnly`（「免费额度已耗尽，若要按量付费请关闭『仅用免费额度』」），
   **据此推断**账号处于「仅用免费额度」模式；正式 600 次请求没有出现该错误，只出现 2 次网络失败。
   所以「本轮没有产生需要单独授权的付费」是**推断**，不是账单核实；平台账单未核。
-- 未做的：真人金标、完整九类分列、按难度分层、`none` 类的单独报告、S3 的取舍（已列入但由用户裁量）。
+- 未做的：真人金标、完整九类分列、按难度分层、`none` 类的单独报告。
+- `S3_fixed` 按用户指令从表里剔除（它不是「没训成」——学校机器上确有 checkpoint-375 和 200 条原答；
+  剔的是展示范围，不是证据）。原答保存在 `excluded_from_table/`。

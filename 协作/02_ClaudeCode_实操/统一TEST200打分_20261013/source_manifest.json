@@ -1,7 +1,7 @@
 {
   "note": "每条来源的实际消费考卷由台账声明并与本地拉取版逐 SHA 核对；identity 四 SHA 必须等于合同值，否则打分器拒绝。",
-  "pairs_note": "95 对，固定规则，看分前锁定",
-  "pairs_sha256": "9883c0920624150d882b10e631d446c59db3772de67ee931d75260aa96340428",
+  "pairs_note": "93 对，固定规则，看分前锁定",
+  "pairs_sha256": "727e56027869dd80a801f76bc3fec1006f70776234d9ff5079e81a186d76d579",
   "schema": "unified-test200-sources-v1",
   "sources": [
     {
@@ -1540,39 +1540,6 @@
       "protocol": "v5_main",
       "raw_sha256": "b721d5c5709fda33f5a0b84fb18bf58ff877eff29d3e9514892b449a02d33bf8",
       "rawfile": "sources/S2_rerun_raw.jsonl",
-      "seed": 3407,
-      "source": "复用原答"
-    },
-    {
-      "identity": {
-        "evidence": [
-          {
-            "path": "inputs/server_test200_main.jsonl",
-            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
-          },
-          {
-            "path": "evidence/S3_fixed_ledger.jsonl",
-            "sha256": "b00347864902a716e35e82c313ad52e426365d49f6a289c0c5cc4ef4cae733f1"
-          },
-          {
-            "path": "evidence/S3_fixed_metrics.json",
-            "sha256": "5bb87c1c66b6e7e5c96e040877dd0bb235e579f55db17e1ef70b2d2f62e70d08"
-          }
-        ],
-        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
-        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
-        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
-        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
-      },
-      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
-      "inputfile": "inputs/server_test200_main.jsonl",
-      "kind": "main",
-      "name": "S3_fixed",
-      "nominalN": 200,
-      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
-      "protocol": "v5_main",
-      "raw_sha256": "e965aa82333f4b2c5caac51a2a8eb8000c2a05488d7421fc840d990d77c5d2f3",
-      "rawfile": "sources/S3_fixed_raw.jsonl",
       "seed": 3407,
       "source": "复用原答"
     },

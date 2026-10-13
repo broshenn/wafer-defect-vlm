@@ -9,7 +9,7 @@
  "geo_reference": "S0_rerun",
  "category_reference": "L",
  "rule": "每个清单行 vs 类别参照（macro_f1/accuracy）；每个 main 类行 vs 几何参照（geo/macro_f1/accuracy）。不含参照自身；不按分数增删。",
- "n_rows_in_manifest": 50,
+ "n_rows_in_manifest": 49,
  "pairs": [
   {
    "a": "BASE",
@@ -399,15 +399,6 @@
    ]
   },
   {
-   "a": "S3_fixed",
-   "b": "S0_rerun",
-   "metrics": [
-    "geo",
-    "macro_f1",
-    "accuracy"
-   ]
-  },
-  {
    "a": "S4",
    "b": "S0_rerun",
    "metrics": [
@@ -787,14 +778,6 @@
   },
   {
    "a": "S2_rerun",
-   "b": "L",
-   "metrics": [
-    "macro_f1",
-    "accuracy"
-   ]
-  },
-  {
-   "a": "S3_fixed",
    "b": "L",
    "metrics": [
     "macro_f1",

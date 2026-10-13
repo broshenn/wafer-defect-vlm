@@ -1,0 +1,1646 @@
+{
+  "note": "每条来源的实际消费考卷由台账声明并与本地拉取版逐 SHA 核对；identity 四 SHA 必须等于合同值，否则打分器拒绝。",
+  "pairs_note": "95 对，固定规则，看分前锁定",
+  "pairs_sha256": "9883c0920624150d882b10e631d446c59db3772de67ee931d75260aa96340428",
+  "schema": "unified-test200-sources-v1",
+  "sources": [
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BASE_ledger.jsonl",
+            "sha256": "2489e5592f327f51718eade0ac8769298dfebfc6595aabec9aee4ab2ab947ff8"
+          },
+          {
+            "path": "evidence/BASE_metrics.json",
+            "sha256": "a59077f7d252fbffd2678a2b1a89f7bb9b4674a79f78d20d245a44d6400b3e14"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BASE",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "db64400a30d7e280834e01be22dc85d5eb2fcf6e4c23b0fdeb2f46db98f9393d",
+      "rawfile": "sources/BASE_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BASE_rerun_ledger.jsonl",
+            "sha256": "e152bb999d5188c7836c5520ae6d7aa1771ec15ca155bf8fab444b4a1cdb3a4e"
+          },
+          {
+            "path": "evidence/BASE_rerun_metrics.json",
+            "sha256": "e15c950fb9ae343d20830afecff61e80afc6e0b4e088b809ff02d8ca96e1304c"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BASE_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "2dd4fc18fe1a7a97f22b81b661204370b67d153a4e07704356c1d7e97cde2fe8",
+      "rawfile": "sources/BASE_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BINARY_R120_3407_ledger.jsonl",
+            "sha256": "59ae70c5bd18007fa7563efe13b5812c41886eaa3966c2dd8970f74d0d551a22"
+          },
+          {
+            "path": "evidence/BINARY_R120_3407_metrics.json",
+            "sha256": "60279319a6e468fe1957c4df8b69263195915823ae5c519c6aa2c40f65055bba"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BINARY_R120_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "846196fd8ffd41d319125de626fbcc72a67ec3fc9c8931b0b41b27b21715d93f",
+      "rawfile": "sources/BINARY_R120_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BINARY_R120_3408_ledger.jsonl",
+            "sha256": "599b18e19896e2cf7f622362ed23bdfccac6e31d0a63fe07a620798155cc56b3"
+          },
+          {
+            "path": "evidence/BINARY_R120_3408_metrics.json",
+            "sha256": "5d2d3390040f3d764ac03d7bee4dc63f8c907b6433d804106a72bfd2b5073002"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BINARY_R120_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "29e7f76ae235556a5db003956365ec5b41aecc64bb160136b36289e6c79a8cf0",
+      "rawfile": "sources/BINARY_R120_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BINARY_R120_3409_ledger.jsonl",
+            "sha256": "9eadb03d0033a850aeca2406e557f0442486f9adad16460475dee4d2363864e3"
+          },
+          {
+            "path": "evidence/BINARY_R120_3409_metrics.json",
+            "sha256": "157a38c5740f6781fc4b9ae12dfef0876dcb57c6ededc635d40209dbd6210128"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BINARY_R120_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "cdf04bfbacd3e127da070f93f3881b341e692e69e64beec81cab6091ff026302",
+      "rawfile": "sources/BINARY_R120_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担",
+      "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a",
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BL_flagship_ledger.jsonl",
+            "sha256": "a6a52f0e33c8080cd46c2c1ea3bf924e2d3a32605ee9a43e2456917835ace83c"
+          },
+          {
+            "path": "evidence/BL_flagship_run.json",
+            "sha256": "5303d4fd8bd49978843baabe679dfe9a36f2bff60d7dcb524a103f671c938d0a"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BL_flagship",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；API 侧实发题面 sha256=b6aa1e28d3a6…（去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担）",
+      "protocol": "v5_main",
+      "raw_sha256": "e790ce8a380ec0c95e492d8292a2812a809d808f34e8785e2347878dc8a0e98a",
+      "rawfile": "sources/BL_flagship_raw.jsonl",
+      "seed": 3407,
+      "source": "百炼"
+    },
+    {
+      "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担",
+      "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a",
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BL_maxplus_ledger.jsonl",
+            "sha256": "577ae9b74d4edbc87c82dbb175c95f01936b3cac69acfed03d962d640f04a3eb"
+          },
+          {
+            "path": "evidence/BL_maxplus_run.json",
+            "sha256": "96dfd61744ea2ac644a686fd6e96512c7842d9de8b761176fb18f81526837d78"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BL_maxplus",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；API 侧实发题面 sha256=b6aa1e28d3a6…（去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担）",
+      "protocol": "v5_main",
+      "raw_sha256": "f04cc517ad30c917720b7278122b13cfcd1f549d1f2719bc6f440565a8a4ac50",
+      "rawfile": "sources/BL_maxplus_raw.jsonl",
+      "seed": 3407,
+      "source": "百炼"
+    },
+    {
+      "api_prompt_note": "去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担",
+      "api_prompt_sha256": "b6aa1e28d3a690b040c9d4a543d08946f2a1a644389cdced23378c0edb0c441a",
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/BL_small_ledger.jsonl",
+            "sha256": "0809bd09b5d57e635e92f8d81392009f2c57e6318143f81c29a5ab99ea43837a"
+          },
+          {
+            "path": "evidence/BL_small_run.json",
+            "sha256": "ae1a5a42342123d2909f0c87d79a0ac4d76ffc7cd29cba4943bd6ef422399ca3"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "BL_small",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；API 侧实发题面 sha256=b6aa1e28d3a6…（去掉首行 <image> 占位符；该占位在 API 侧由 image 内容块承担）",
+      "protocol": "v5_main",
+      "raw_sha256": "6ecb3014301cce260bea52c0c2b4a6e327bc1117ed7d8dd57de91f659d252877",
+      "rawfile": "sources/BL_small_raw.jsonl",
+      "seed": 3407,
+      "source": "百炼"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "evidence/CNN_source_per_sample.jsonl",
+            "sha256": "886cf1002260224d8373853782daa7970625a4d5eb8ad87a0420ef41fba75e2b"
+          },
+          {
+            "path": "evidence/CNN_source_metrics.json",
+            "sha256": "52edcb5a9a048b60f24e22c54a7ad808ae8471e5267d8e98ba34cfba0fecac98"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": null,
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "kind": "CNN",
+      "name": "CNN",
+      "nominalN": 589,
+      "note": "ResNet18 类别分类器；几何分按合同写不适用，不记 0",
+      "protocol": "cnn_per_sample",
+      "raw_sha256": "9163ea7aef344c2b8ead3b46a67273908a6574d812f1857d346bdb0fd8d61c27",
+      "rawfile": "sources/CNN_per_sample200.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CRLVR160_3407_ledger.jsonl",
+            "sha256": "4bdccc44908e8e4714a50066423c46c69b6bda5afe52c66fdde940d049d23f0c"
+          },
+          {
+            "path": "evidence/CRLVR160_3407_metrics.json",
+            "sha256": "36b2ad500bccfdd1be837fb53c2712f97c6a62ac02f06fba9cfb257e15f5216f"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CRLVR160_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "f934fa7acd5313c6ca13032aa76c962d507cc70d67a38ab9ae90b68e8041d156",
+      "rawfile": "sources/CRLVR160_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CRLVR160_3408_ledger.jsonl",
+            "sha256": "ac0a6ee0275ccd890db616989298007150375f40f10561f17a1880804556edad"
+          },
+          {
+            "path": "evidence/CRLVR160_3408_metrics.json",
+            "sha256": "dad4fe7868eedd8647ff62df179d822d394598a20ed49548dc50916da7c540b5"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CRLVR160_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "833c1c661b4a6e4cf600ca3212f7f9e65fc4fa3accb8d423af359dd4273632dc",
+      "rawfile": "sources/CRLVR160_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CRLVR160_3409_ledger.jsonl",
+            "sha256": "b44afc6da597f1ffc52498d0bec00b8d990d8ea89552756793f3ea66c3201783"
+          },
+          {
+            "path": "evidence/CRLVR160_3409_metrics.json",
+            "sha256": "c775de6b554547278c5d7eeabce40e85d1d8e7625e3022ab53c7155de2393f8b"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CRLVR160_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "19c3f625e00ffeb27308b8bffb7228eb71f3e93ecd1f81e119447a12d8159e07",
+      "rawfile": "sources/CRLVR160_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CSFT160_3407_ledger.jsonl",
+            "sha256": "e65e1ef057e7bbb7f7f5f833d277b93a9425b8c17ddcc65a41f61bb82c226742"
+          },
+          {
+            "path": "evidence/CSFT160_3407_metrics.json",
+            "sha256": "4494152d3b9e0d84cb5dc60f1f9c18adbf3ff977203221d7d300c3ba923d95ee"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CSFT160_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "d45aa2ee642d1ea880d4689b57607c17b81e3a437135ca80223192e8a6d1de95",
+      "rawfile": "sources/CSFT160_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CSFT160_3408_ledger.jsonl",
+            "sha256": "a98d01f7903e4d400cc414a9b20fc859e5a839ec2c524e32f5b376182bfba1f3"
+          },
+          {
+            "path": "evidence/CSFT160_3408_metrics.json",
+            "sha256": "18099a2248f8169294e9e62a0ef6947f15150c70254b207f7c6492a0944177fd"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CSFT160_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "8eb18743ed4bb0c27e21d6a5348394dfab42d27bbd6391582f44070c7bf2d52f",
+      "rawfile": "sources/CSFT160_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/CSFT160_3409_ledger.jsonl",
+            "sha256": "6f8d7d46834d9143a2c7add458023993a0c4b0fc362f1fcaeadf2f4051a90e79"
+          },
+          {
+            "path": "evidence/CSFT160_3409_metrics.json",
+            "sha256": "d0760b145963870366d0b2c3eb2c276682fe2092b867778d032cf8c28b6c2d74"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "CSFT160_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "0baaebc0ac35449d0f6b7030143d4cccec8e13f92ce7e9f873d427500fb0c733",
+      "rawfile": "sources/CSFT160_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/L200.jsonl",
+            "sha256": "f80f9a25c88964738ae0709e2a26f7131ca0609ab52e79af5f9aeb157dd29be8"
+          },
+          {
+            "path": "evidence/D_L_test200_ledger.jsonl",
+            "sha256": "ec1f8e2ff3f9e0a60d4c187a9d90e319cd4e6d182d159de4912b9e93e899f950"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "a9eddba0bddd1c1cd23c79b8ef6d80745112e98c5ab5ea09be98c4230036b1df",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "f80f9a25c88964738ae0709e2a26f7131ca0609ab52e79af5f9aeb157dd29be8",
+      "inputfile": "inputs/L200.jsonl",
+      "kind": "L",
+      "name": "D_L_test200",
+      "nominalN": 200,
+      "note": "台账声明 dataset=L200.jsonl sha256=f80f9a25c889…；本次直接复用该原答，未重跑",
+      "protocol": "class_json",
+      "raw_sha256": "09260db80ded6e4b404fa970a53dc8aa34a834dfb00405ec53295bc173cc501b",
+      "rawfile": "sources/D_L_test200_raw.jsonl",
+      "seed": 3407,
+      "source": "新推理"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/D_v5_test200_ledger.jsonl",
+            "sha256": "2988faab4843ddd38675dc8e5bb3749d3209841f568d80c04736852612ca4ac4"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "D_v5_test200",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "a8a81b759cda9ad4e5f7366a5f0cb21bdcfefe7e4deab7611ad610e1828806fa",
+      "rawfile": "sources/D_v5_test200_raw.jsonl",
+      "seed": 3407,
+      "source": "新推理"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/F0_3407_ledger.jsonl",
+            "sha256": "f976ebfe9845b7d14e64e46c86158fd43bedd162b422e484e322016f32355e8c"
+          },
+          {
+            "path": "evidence/F0_3407_metrics.json",
+            "sha256": "d58ad7d80c23ee9e7c1cc556239bc7be3b28066331bf00a95d8ebe7b89285101"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "F0_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "06c3486d85bc75162662ccc85a6dad84effb2d8ee72b9efbd1ff92f7e7b9e8fc",
+      "rawfile": "sources/F0_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/F0_3408_ledger.jsonl",
+            "sha256": "af2477fae29b818ad58f70a9d692270758d5652e956b185a37ccf180c58b7d6a"
+          },
+          {
+            "path": "evidence/F0_3408_metrics.json",
+            "sha256": "78e87217a0446ab00d498b6741eb110f1df5f0aab15b076ae837d975fa2b77e3"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "F0_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "c1d7ce498bac2a02cd2ff185401c22466d39d8f5a3bf2956ac5f8823fcd410ce",
+      "rawfile": "sources/F0_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/F0_3409_ledger.jsonl",
+            "sha256": "9df36ba0a5cde8403503e68ab2f6f90afe97f95d88d049302c7708121fbc49e4"
+          },
+          {
+            "path": "evidence/F0_3409_metrics.json",
+            "sha256": "3c71821ff1dc614c530e29f4617eb3ef706697dfda407db5ce0e59e6454e4d86"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "F0_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "467035d66e8eec06b12ddd267b4ffd1fca55fcfa9f7b724c67f48dc261132f40",
+      "rawfile": "sources/F0_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/FULL_R120_3407_ledger.jsonl",
+            "sha256": "90f0bd1b1cfb455b2e46a0d6f3d6ca50fff57cc6f28eb0ec8abd79e09d9ec7df"
+          },
+          {
+            "path": "evidence/FULL_R120_3407_metrics.json",
+            "sha256": "9ca7d3fb24a42037e5aabd9bf1b21af15df4d9ee3b7b68f8c2a97f429cf0b919"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "FULL_R120_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "17d5a623dfe0385a7219c90cf385943656236d20c02cb9800bc98c290ceb58b6",
+      "rawfile": "sources/FULL_R120_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/FULL_R120_3408_ledger.jsonl",
+            "sha256": "99fa5c57b5edc54359038c3611e889ecaca0e71f91a23fb819664eeb9e8d96e6"
+          },
+          {
+            "path": "evidence/FULL_R120_3408_metrics.json",
+            "sha256": "52d7c4b7bcddfd34ea2918f3051aae41313cd30b710636c225ebf8ee145a41e8"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "FULL_R120_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "b3f7436d56aabd23576301c1e001dc9cee248d9c2221cff2e41102fd13e6794f",
+      "rawfile": "sources/FULL_R120_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/FULL_R120_3409_ledger.jsonl",
+            "sha256": "c73f7f79cff787562eb2a0f7a0617e410ba1c3f36da87d29a042b323bdc2a606"
+          },
+          {
+            "path": "evidence/FULL_R120_3409_metrics.json",
+            "sha256": "ca936bc122e7ba0fa9c6f8618686165ac5cd1a00ef1d1a464f2a6f8cc675a7bc"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "FULL_R120_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "e72541b30a4df956f04eb2f00d46ea08bf85522b17ab98322fda70a3cf76e30e",
+      "rawfile": "sources/FULL_R120_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test_L.jsonl",
+            "sha256": "e82e6c6088f174ac2dc34c99cad2ca098b9cccc1dc46ea0f76e7a2fd7ff4ebca"
+          },
+          {
+            "path": "evidence/L_ledger.jsonl",
+            "sha256": "e559a3cbe1773ee415d2a283aee7173c88316d54b67d8063e8b40c419c78ba3c"
+          },
+          {
+            "path": "evidence/L_metrics.json",
+            "sha256": "f875da120a37ad748b6663a14a918f4462e25185965164905d77dad3eb20bb76"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "a9eddba0bddd1c1cd23c79b8ef6d80745112e98c5ab5ea09be98c4230036b1df",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "e82e6c6088f174ac2dc34c99cad2ca098b9cccc1dc46ea0f76e7a2fd7ff4ebca",
+      "inputfile": "inputs/server_test_L.jsonl",
+      "kind": "L",
+      "name": "L",
+      "nominalN": 589,
+      "note": "台账声明 dataset=test_L.jsonl sha256=e82e6c6088f1…；本次直接复用该原答，未重跑",
+      "protocol": "class_json",
+      "raw_sha256": "778aae81065e10b79f0fa1fb15f8c57b79e4855d8520bb458755a679f5627a02",
+      "rawfile": "sources/L_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/M0_v2_test200_ledger.jsonl",
+            "sha256": "ab1f5b7dff7f8f5f79d6007ce1942ea0d2a24c815c0808d34f0e1f668278c429"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "M0_v2_test200",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "ee4787121f6182d1fe2178ef14f2a3fe48d666b7c8f911ba65b8f4da1d227a80",
+      "rawfile": "sources/M0_v2_test200_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3407_ledger.jsonl",
+            "sha256": "5822690dde5b24e7081b5ce51284b334c244873517efe63050047f9a578ffa74"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3407_metrics.json",
+            "sha256": "54f8ee4456448777a173551a2deabab913bf9225016423953fb4116698e0b751"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "NOPROC_R120_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "5b8e7b22d815c1bda0a443e4ebace39b2c2b5ff8636deb49c681b65e2e38c896",
+      "rawfile": "sources/NOPROC_R120_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3408_ledger.jsonl",
+            "sha256": "3da22f23f83859027785e548cc63c1d33261c914c80fb9af5f304094014a5407"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3408_metrics.json",
+            "sha256": "fd0bae64be02f9a197e3f2584f0d4a334389d5d039319c2ef87d153878bf1f6f"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "NOPROC_R120_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "d83787fe0601a90aa11619f94c4fafc65940a6226af8f723fcd004986308d46a",
+      "rawfile": "sources/NOPROC_R120_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3409_ledger.jsonl",
+            "sha256": "162eb4ddba4fe4264c7015bcd6ad13bd51e58c5223e3e8d4fa428d948495eaa3"
+          },
+          {
+            "path": "evidence/NOPROC_R120_3409_metrics.json",
+            "sha256": "732441e1c3910e6b0e2bcc3f04026159936943452c0817207c5b684a0bfd31f6"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "NOPROC_R120_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "b2fc36d0716f8e8ca3c71cf75917f67ed74469e9ad528b72c4b7e3304ddaa851",
+      "rawfile": "sources/NOPROC_R120_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RES_HIGH_128_ledger.jsonl",
+            "sha256": "ef62054fa51868522ac64e15cecdbb4054d5f50e2056f8dbf2225335914f5c35"
+          },
+          {
+            "path": "evidence/RES_HIGH_128_metrics.json",
+            "sha256": "266b135f8331f36c04ae0593530f6def35f1e97f810875b9177f2c46b075978c"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RES_HIGH_128",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "2a841948cd6ae16d0e7a18740fed75bfc3ede8a87eb8bfd2c725e6566acfa775",
+      "rawfile": "sources/RES_HIGH_128_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RES_LOW_128_ledger.jsonl",
+            "sha256": "e4a50ab9715f617e312df54ceffba0457a33387014b3e1189cd79ed303f59e58"
+          },
+          {
+            "path": "evidence/RES_LOW_128_metrics.json",
+            "sha256": "a3326162aebe767fa581c6060224bac64e6e6ec37a8f9a1ae8812c8745bd21be"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RES_LOW_128",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "5001ce2dae3382e25909d78547593ba2a6a44da5cdb0c52a58d95e1918cf3afb",
+      "rawfile": "sources/RES_LOW_128_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RSFT_ledger.jsonl",
+            "sha256": "dc8c116cdd4c26fc1f422f0514feffe1ffe6261379b31aa32e17deeddb5ee4f2"
+          },
+          {
+            "path": "evidence/RSFT_metrics.json",
+            "sha256": "7dd70c257ba20ffa58ecb9e50abd021bd33977d6b63a4581618809889197dd87"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RSFT",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "e3183afacf275bf89d328c4c771a8f322e64aaf5ec5909d6a27d4aea1522d5bd",
+      "rawfile": "sources/RSFT_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RSFT_R120_3407_ledger.jsonl",
+            "sha256": "255f17b94aa37c0d647c8324a984d5bd75a81c4fc7e9c96859aad3775cd6645f"
+          },
+          {
+            "path": "evidence/RSFT_R120_3407_metrics.json",
+            "sha256": "086ed1e9713a5832775f5f7a2fc966f47f99a9d0a8bf8c0f8908a00d03945642"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RSFT_R120_3407",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "69af06b62a24c89f59aa788c5af9df6be1839bc836fa33d289d6073926382526",
+      "rawfile": "sources/RSFT_R120_3407_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RSFT_R120_3408_ledger.jsonl",
+            "sha256": "c8f5c8b1231fc7354816f3d1b9335a3c63a0d75fc62271b4ae29db3bca0ceb52"
+          },
+          {
+            "path": "evidence/RSFT_R120_3408_metrics.json",
+            "sha256": "88f7aff6c94c753efc565893639e6b5ec100da13ab5eedb23c23d97038976037"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RSFT_R120_3408",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "165ff3a8dc3e7c1f880cf78e83adafd2b1d73db412dddb9fa34ddf5fce30c951",
+      "rawfile": "sources/RSFT_R120_3408_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RSFT_R120_3409_ledger.jsonl",
+            "sha256": "dc0323e1a7ee9678b6ee47d91b2ad7c1a5b10e1f45875f3e4822cda527fd5aa5"
+          },
+          {
+            "path": "evidence/RSFT_R120_3409_metrics.json",
+            "sha256": "aa3abe813c543ebcb9eae07f4cc1e2335ae7871f1783e3db4a74720e9a63b8f4"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RSFT_R120_3409",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "b25651f40aefa1599d13917316ac9ce3749c0d3498aab08deeddf69f37c4a99d",
+      "rawfile": "sources/RSFT_R120_3409_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/RSFT_rerun_ledger.jsonl",
+            "sha256": "728cb823fd8750ed777da333f9e3b0fd94591a2f7e3a3287b9c3da7078bbd871"
+          },
+          {
+            "path": "evidence/RSFT_rerun_metrics.json",
+            "sha256": "26b122f0ffd0d469ce605c686a721756f8cf09a02aed07324251d154e3999471"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "RSFT_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "8c387e407d47c2efb38c3e02e2823e97df4b5ef186728dd0952a058776f371c0",
+      "rawfile": "sources/RSFT_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/Rbinary_ledger.jsonl",
+            "sha256": "3a8411fea9d82563241f1311302310f23dc0b28018492b2015a93f310a43becc"
+          },
+          {
+            "path": "evidence/Rbinary_metrics.json",
+            "sha256": "7127396ef266fbad1f327857efac6a4b90a11790f1f55f27593e2a880be026dc"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "Rbinary",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "b68bb635a359dae8f6776162672b8e61ced0d0076b68324b39018ae2f1573b37",
+      "rawfile": "sources/Rbinary_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/Rfull_ledger.jsonl",
+            "sha256": "4571e07df62de4674af1312b2ccfca75139659b891508357cc68cf25fba0ca47"
+          },
+          {
+            "path": "evidence/Rfull_metrics.json",
+            "sha256": "9e63ac3ef591fcb7383559cd6612138f40190312cf0322df0b4e049d335be125"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "Rfull",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "64521393587629dec327c6ab34ec2e56edca64c4e4d16913881d9dbe0207ef4d",
+      "rawfile": "sources/Rfull_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/Rfull_rerun_ledger.jsonl",
+            "sha256": "73b775393fd4480d1a6b4a01308bb073a2521a9558de9e3541d9d678cb3fa2aa"
+          },
+          {
+            "path": "evidence/Rfull_rerun_metrics.json",
+            "sha256": "d81bbf5facab726489a038dedbbf99a84d7f236570a18abac1ba3acc98874f75"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "Rfull_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "1a95efe463c0d96848dc2ae4f1ec86bc5387cd37aaf90b1308f9cebdc07d135f",
+      "rawfile": "sources/Rfull_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/Rfullp_ledger.jsonl",
+            "sha256": "258bda0f84fd8796b6c1e6b4e22c1bc4bcfee031b217e8df9e00b3fdbdfe540c"
+          },
+          {
+            "path": "evidence/Rfullp_metrics.json",
+            "sha256": "7af77df54ae4e3aabd170ef3ee905909403958ab22fdec2333ff6e1a0cc2c456"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "Rfullp",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "e459f3b5bddc81e65e630591b12f7804de77011a08632a3c94bc6e9558f98385",
+      "rawfile": "sources/Rfullp_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/Rnoproc_ledger.jsonl",
+            "sha256": "2927495c8b7adeb2fd00cc54b82c1b00648b64037def865db2d637609a34b0f2"
+          },
+          {
+            "path": "evidence/Rnoproc_metrics.json",
+            "sha256": "ed9ad4c2c7dcbfe41d06d08a6768660dc3cbb1c25c5ee08be151a31dd5f5d370"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "Rnoproc",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "5c86b9320d2d69b4d5c25e740d70b9b32114d10c29c38eea57d884e5ff5c2bb3",
+      "rawfile": "sources/Rnoproc_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S0_ledger.jsonl",
+            "sha256": "ee746ca14d822ae4d740ddb5893fc6a8ab884cc997f828748423b9ab3e1a1c86"
+          },
+          {
+            "path": "evidence/S0_metrics.json",
+            "sha256": "e7dbb7ba0f042dc4d21883bea132f5a42fdcde0031ef1857a37e4655a077a7b7"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S0",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "6acecbe531c8b7070780f2e0702be56fa3287010815c7e7abff6dfa0d9096826",
+      "rawfile": "sources/S0_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S0_rerun_ledger.jsonl",
+            "sha256": "15dc06d8c3d934c508d2f2fac43f32a536390d2dd3b4fc551e9ad20b9af5f4b8"
+          },
+          {
+            "path": "evidence/S0_rerun_metrics.json",
+            "sha256": "89665bc78c2c6a2fec0f53e66e1e0b17a84fb70523e5957eed4d92da9f6bc766"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S0_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "6039cce8a19ef9e75033ef2632cf6c8ec7e511164f65afb56320e9df042447e5",
+      "rawfile": "sources/S0_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S1_ledger.jsonl",
+            "sha256": "b6c9fb217959b19f2b2ee770e71a8e8a6faabf9d2b27f0fd28d6e9375ca4a236"
+          },
+          {
+            "path": "evidence/S1_metrics.json",
+            "sha256": "d16784ddc2d23c2c121506328f9716e2a055574051f8b0821b83e25509d9d1ba"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S1",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "0e5d4156508f64c20890b9e3d5bd06bd81f95f0289ef7dfb51b9f025470a49b1",
+      "rawfile": "sources/S1_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S1_rerun_ledger.jsonl",
+            "sha256": "0c95d2076fb49055fb6e966354e583b15f9aa2684a4ba4903827774ff348d978"
+          },
+          {
+            "path": "evidence/S1_rerun_metrics.json",
+            "sha256": "e55fbed2e50f4c375b9307a0b596850f83b0f63c13fab37ea16c5dc1a86ddcab"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S1_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "e4fb5753745dd19c4a1f9d2838e23aee372af21a6adb6fdf55fb951c2e844920",
+      "rawfile": "sources/S1_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S1p_ledger.jsonl",
+            "sha256": "524e98be0f6ddec3d8240079a93165a732a5bde942565ce673f26b0862759920"
+          },
+          {
+            "path": "evidence/S1p_metrics.json",
+            "sha256": "1333ce727c103c46f5439b8ebf2f47956d2c57835f67f5e997537287d38d76bc"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S1p",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "681efd5b9a376297f3a337e9a23efc1bedc6a16e489341303840b7714ed14a45",
+      "rawfile": "sources/S1p_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S2_ledger.jsonl",
+            "sha256": "571ccdfed0b63db3052cf2dc359e15f057d7032648cdd3e81daf3a55aae9dbdb"
+          },
+          {
+            "path": "evidence/S2_metrics.json",
+            "sha256": "b37a39fbdc65bfceb0c04e84534048dbb3c676503c74f8173406006ef3c01559"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S2",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "bf257ad53a2bfba6b68bd4357587a02f87b6caef2a5e42eb2d94fbf4ba7fa70f",
+      "rawfile": "sources/S2_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S2_rerun_ledger.jsonl",
+            "sha256": "943bd453143fff67013450bc9dda29530fe91b675b002d1bb52767eee0832f24"
+          },
+          {
+            "path": "evidence/S2_rerun_metrics.json",
+            "sha256": "cf91a8b95121a0538a89fd31ea6d2d00846dfe1fc2d25b02654ffefc1e80d63b"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S2_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "b721d5c5709fda33f5a0b84fb18bf58ff877eff29d3e9514892b449a02d33bf8",
+      "rawfile": "sources/S2_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S3_fixed_ledger.jsonl",
+            "sha256": "b00347864902a716e35e82c313ad52e426365d49f6a289c0c5cc4ef4cae733f1"
+          },
+          {
+            "path": "evidence/S3_fixed_metrics.json",
+            "sha256": "5bb87c1c66b6e7e5c96e040877dd0bb235e579f55db17e1ef70b2d2f62e70d08"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S3_fixed",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "e965aa82333f4b2c5caac51a2a8eb8000c2a05488d7421fc840d990d77c5d2f3",
+      "rawfile": "sources/S3_fixed_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S4_ledger.jsonl",
+            "sha256": "dc254af09d211e246038ffa8b883634ec2a3a8a95f1b3b4765f81e16497085a8"
+          },
+          {
+            "path": "evidence/S4_metrics.json",
+            "sha256": "1c75fa737dff68e315a08ed922d2c077651e972196498489386e926385158aca"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S4",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "957f075f73f940828581b61503c05cd74fa930ed8506cdb26cb562700628e87c",
+      "rawfile": "sources/S4_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    },
+    {
+      "identity": {
+        "evidence": [
+          {
+            "path": "inputs/server_test200_main.jsonl",
+            "sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f"
+          },
+          {
+            "path": "evidence/S4_rerun_ledger.jsonl",
+            "sha256": "3341f454878310007ac25c136ca445532e398651687e45f974af36e144cfe2db"
+          },
+          {
+            "path": "evidence/S4_rerun_metrics.json",
+            "sha256": "900a79d0682c8a9a005d1a423e931c08ce9b62f3fc0223296e97fe3625d872e8"
+          }
+        ],
+        "ids_sha256": "0df7ff685e3e2790cf1dbdec6a3649c038da365ed8f08a631127e47c2abc4353",
+        "images_sha256": "52632bc7f53d83e3c54293ef6c8677d641df205b9e807f298a7a325e6c185efe",
+        "prompt_sha256": "b0e226499c3710a6b962623febc3d46a552b65263e9cc9fe6272821861b44cf7",
+        "reference_sha256": "e444fd42b42ea19d8ee855d3bf26208acaa0e895c2edc53fdc30017f960fffea"
+      },
+      "input_sha256": "9afff3da15457ca1d8ecedbf2f3ab3e7dca14140714a8e348c61435ea9a4c84f",
+      "inputfile": "inputs/server_test200_main.jsonl",
+      "kind": "main",
+      "name": "S4_rerun",
+      "nominalN": 200,
+      "note": "台账声明 dataset=test200_main.jsonl sha256=9afff3da1545…；本次直接复用该原答，未重跑",
+      "protocol": "v5_main",
+      "raw_sha256": "945fd83e4008999784cc310a3a84072baad2da0d65401bbe0599cf16b0c87696",
+      "rawfile": "sources/S4_rerun_raw.jsonl",
+      "seed": 3407,
+      "source": "复用原答"
+    }
+  ]
+}
