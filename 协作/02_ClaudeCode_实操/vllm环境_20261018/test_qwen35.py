@@ -40,7 +40,8 @@ def main() -> int:
     import os as _os
     eager = _os.environ.get("VLLM_TEST_EAGER", "0") == "1"
     result["enforce_eager"] = eager
-    result["attn_backend_env"] = _os.environ.get("VLLM_ATTENTION_BACKEND")
+    result["attn_backend_env"] = _os.environ.get("VLLM_LLM_ATTN")
+    result["mm_attn_env"] = _os.environ.get("VLLM_MM_ATTN")
     t0 = time.time()
     llm = LLM(
         model=MODEL,
@@ -50,6 +51,7 @@ def main() -> int:
         enforce_eager=eager,
         limit_mm_per_prompt={"image": 1},
         mm_encoder_attn_backend=(_os.environ.get("VLLM_MM_ATTN") or None),
+        attention_backend=(_os.environ.get("VLLM_LLM_ATTN") or None),
     )
     result["load_seconds"] = round(time.time() - t0, 2)
     result["gpu_mem_alloc_GiB"] = round(torch.cuda.memory_allocated() / 1024**3, 2)

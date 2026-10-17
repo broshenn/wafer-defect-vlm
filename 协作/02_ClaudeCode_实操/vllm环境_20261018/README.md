@@ -2,89 +2,87 @@
 
 用户要求：在学校服务器上新开一个环境装 vLLM，并且要能跑 Qwen3.5-9B。
 
-## 结论（先说结果）
+## 结论：**能跑通了**
 
-**环境建好了、vLLM 装上了、模型架构也认了，但在这台机器上跑不起来。**
-根因不是配置，是**驱动版本**：机器驱动是 570.133.07（CUDA 12.8），而所有可用的
-vLLM 预编译 wheel 都是 CUDA 12.9 / 13.0 构建，它们的 kernel 里带的 PTX 版本
-570 驱动的 JIT 不支持，一跑就报：
+模型能加载、纯文本能生成、带晶圆图也能生成。但**不能走 vLLM 的默认后端**——必须换成
+运行时 JIT 的注意力实现，原因见下。
 
-```
-torch.AcceleratorError: CUDA error: the provided PTX was compiled with an unsupported toolchain.
-cudaErrorUnsupportedPtxVersion
-```
-
-**唯一的解法是把 NVIDIA 驱动升到 580 或更高**（需要 root，会影响整台共享机器）。
-升完之后 `envs/vllm312`（vllm 0.31.0）可以直接用，不用再装。
-
-## 硬事实（逐条可核对）
+实际跑出来的数字（GPU4，RTX 5090）：
 
 | 项 | 值 |
 |---|---|
-| 服务器 | 114.214.255.89（8× RTX 5090，32 GB/卡） |
-| 系统 | Ubuntu 20.04.6，kernel 5.15.0-67 |
-| 驱动 | **570.133.07**，`nvidia-smi` 报 **CUDA Version: 12.8** |
-| 账号下原有 vLLM | **没有**。5 个 Python 环境（wafer + 4 个 conda）全部 `ModuleNotFoundError`；全盘无 `vllm` 可执行文件 |
-| 唯一的离线 wheel | `/data/renjinyao/labguard-gpu/wheels/vllm-0.31.0-...whl`（320 MB，CUDA 13 构建） |
-| 根盘 `/` | **99% 满，只剩 11 G**（所以环境建在 `/data`） |
-| 模型 | `/data/renjinyao/models/Qwen3.5-9B`，架构 `Qwen3_5ForConditionalGeneration` |
+| vLLM | `0.26.0+cu129` |
+| torch | `2.11.0+cu129`（`cuda_available: true`，`device: NVIDIA GeForce RTX 5090`） |
+| 架构识别 | `Qwen3_5ForConditionalGeneration` → `qwen3_5_registered: true` |
+| 模型加载 | 48.2 s |
+| 纯文本生成 | 12.7 s（256 max_tokens） |
+| **带图生成** | **24.1 s**（448×448 PNG，256 max_tokens） |
+| `mm_ok` / `text_ok` | **都是 true** |
 
-## 建了两个环境（都在 /data，wafer 训练环境一点没碰）
+## 为什么默认后端不行
 
-| 路径 | 内容 | 结果 |
-|---|---|---|
-| `/data/renjinyao/envs/vllm312` | Python 3.12 + vllm **0.31.0** + torch **2.13.0+cu130** | **CUDA 初始化直接失败**：`The NVIDIA driver on your system is too old (found version 12080)` |
-| `/data/renjinyao/envs/vllm026` | Python 3.12 + vllm **0.26.0+cu129** + torch **2.11.0+cu129** + torchcodec **0.15.0** | torch 能跑，**vLLM kernel 跑不了**（PTX 版本） |
+机器驱动是 **570.133.07（CUDA 12.8）**，而 vLLM 的预编译 wheel 全是 **CUDA 12.9 / 13.0** 构建。
+它们自带的 FlashAttention kernel 没有 sm_120 的 SASS，只能靠 PTX JIT，而 12.9 的 PTX
+超出 570 驱动能 JIT 的范围 → `cudaErrorUnsupportedPtxVersion`。
 
-## 实际验证到哪一步
+绕开的办法是**完全不用那些预编译 kernel**：
 
-**能跑通的**（`envs/vllm026`，GPU4 空卡）：
+| 位置 | 默认 | 本机必须改成 | 为什么 |
+|---|---|---|---|
+| 视觉编码器注意力 | FLASH_ATTN | `mm_encoder_attn_backend="TORCH_SDPA"` | 纯 PyTorch SDPA，无预编译 kernel |
+| LLM 注意力 | FLASH_ATTN | `attention_backend="TRITON_ATTN"` | Triton 运行时 JIT，按驱动支持的 PTX 生成 |
+| 采样器 | FlashInfer | `VLLM_USE_FLASHINFER_SAMPLER=0` | FlashInfer 对 sm_120 误判为 `sm<75` |
+| CUDA graph | 开启 | `enforce_eager=True` | 跳过 graph 捕获，少一条 kernel 路径 |
 
+注意：`TORCH_SDPA` 在 vLLM 0.26 里**只对 ViT 有效**（源码注释写着 `this tag is only used for ViT`），
+LLM 必须用 `TRITON_ATTN`。
+
+## 一条命令复现
+
+```bash
+/data/renjinyao/vllm_test/run_test.sh 4
 ```
-torch 2.11.0+cu129  cuda 12.9  avail True
-matmul OK on NVIDIA GeForce RTX 5090
-import vllm                  OK（vllm 0.26.0+cu129）
-Resolved architecture: Qwen3_5ForConditionalGeneration   ← 模型架构识别正确
-```
 
-**跑不通的**，三个位置，同一个错：
+（参数是 GPU 序号；脚本里已经带好上面四个环境变量/参数。）
 
-1. 默认后端 → 视觉编码器 `_vllm_fa2_C.varlen_fwd`
-2. `mm_encoder_attn_backend=TORCH_SDPA` 后 → 视觉这关过了，卡在 FlashInfer 采样器
-   （`FlashInfer requires GPUs with sm75 or higher`，对 sm_120 误判）
-3. 再加 `VLLM_USE_FLASHINFER_SAMPLER=0` 后 → 卡在 **LLM 主注意力**
-   `vllm/v1/attention/backends/flash_attn.py` 的 `_vllm_fa2_C.varlen_fwd`，还是 PTX 错误
+## 走不通、已经排除的路
 
-三次尝试的日志：`/data/renjinyao/vllm_test/{result_cu129,result_sdpa,result_sdpa2,result_sdpa3}.json`
+| 路 | 结果 |
+|---|---|
+| `envs/vllm312`：vllm 0.31.0 + torch 2.13.0+cu130 | CUDA 13 要 580+ 驱动 → `driver too old` |
+| PyPI 的 vllm 0.26.0（cu13 构建）+ torch 2.11+cu128 | `ImportError: libcudart.so.13` |
+| cuda-compat 用户态驱动（`cuda-compat-12-9`，575 用户态配 570 内核模块） | `Error 804: forward compatibility was attempted on non supported HW` —— **NVIDIA 的 forward-compat 不支持 GeForce**，只对数据中心卡开放 |
+| Docker | 容器共用宿主机内核模块，`nvidia-smi` 在容器里仍是 570，**改不了这个问题** |
+| 降级到有 cu128 构建的 vllm | vllm 0.27–0.31 全钉 torch 2.13；vllm 0.26 的 PyPI wheel 本身是 cu13；官方 wheel 索引只有 cu129/cu130 |
 
-## 为什么绕不过去
+## 代价：速度
 
-- vllm 0.27–0.31 全钉 `torch==2.13.0`，torch 2.13 **只有 cu129/cu130**，没有 cu128。
-- vllm 0.26.0 钉 `torch==2.11.0`（有 cu128），但 **PyPI 上的 vllm 0.26 wheel 本身是 CUDA 13**。
-- vLLM 官方 wheel 索引 `https://wheels.vllm.ai/<版本>/` 只提供 **cu129 / cu130**，从来没有 cu128。
-- CUDA 12.9 的**次版本兼容**只到「torch 的 kernel 能用」这一步（torch 带 sm_120 的 SASS），
-  但 vLLM 自带的 FlashAttention kernel 没有 sm_120 的 SASS，只能靠 ptX JIT，
-  而 12.9 的 PTX 又超出 570 驱动能 JIT 的范围。
+`TRITON_ATTN + TORCH_SDPA + enforce_eager` 是**慢路径**。实测带图生成 24 s/条（256 tokens），
+和现在 transformers 那条路（200 张约 20–30 分钟）**同一量级，没有明显变快**。
+如果目标是提速，真正的解法还是把驱动升到 580+，恢复 FA2 与 CUDA graph。
 
-## 该怎么办
-
-1. **找管机器的人把驱动升到 580+**（推荐）。升完 `envs/vllm312` 直接可用。
-2. 或者换一台驱动更新的机器（比如云端实例）。
-3. 在那之前，项目的评测继续用现有的 transformers 路径（`envs/wafer`，ms-swift 4.5.3），
-   这条一直是好用的，只是慢（200 张图约 20–30 分钟）。
-
-## 服务器上留下的东西
+## 服务器上有什么
 
 | 路径 | 是什么 |
 |---|---|
-| `/data/renjinyao/envs/vllm312` | Python 3.12 + vllm 0.31.0（等驱动升级后可用），约 8.5 G |
-| `/data/renjinyao/envs/vllm026` | Python 3.12 + vllm 0.26.0+cu129 + torch 2.11.0+cu129，约 11 G |
-| `/data/renjinyao/vllm_test/` | 测试脚本、题面、全部运行日志与结果 JSON |
+| `/data/renjinyao/envs/vllm312` | Python 3.12 + vllm 0.31.0（**等驱动升级后可用**），约 8.5 G |
+| `/data/renjinyao/envs/vllm026` | Python 3.12 + vllm 0.26.0+cu129 + torch 2.11.0+cu129 + torchcodec 0.15.0，约 11 G |
+| `/data/renjinyao/vllm_test/` | 测试脚本、题面、`run_test.sh`、全部运行日志与结果 JSON |
+| `/data/renjinyao/cuda_compat_12_9/` | 试过但失败的 cuda-compat 用户态库（可删） |
 | `/data/renjinyao/tmp/vllm026/` | vllm 0.26 wheel（可删） |
+
+## 环境本身的两个坑（都已处理，换环境时会再遇到）
+
+1. **torchcodec 版本必须跟 torch 对齐**：torch 从 2.13 降到 2.11 后，torchcodec 0.17 的
+   `.so` 加载失败，换成 **0.15.0** 才能 `import vllm`。
+2. **测试脚本必须有 `if __name__ == "__main__"` 保护**：vLLM 用 `spawn` 起引擎子进程会重新
+   导入主模块，否则报 `An attempt has been made to start a new process before ...`。
 
 ## 没做的事
 
 - 没有动 `wafer` 训练环境（torch 2.8.0+cu128 / ms-swift 4.5.3 原样）。
-- 没有 pkill 任何别人的进程；GPU0（tpy 的任务）全程未碰；实测只用过空闲的 GPU4。
-- 没有把 vLLM 接进项目评测流程。
-- 没有升级驱动（需要 root，且会影响整台共享机器，必须由人决定）。
+- 没有 pkill 任何别人的进程；GPU0（tpy 的任务）全程未碰；实测只用过空闲的 GPU4，已释放。
+- 没有把 vLLM 接进项目评测流程，也没有和 transformers 路径做完整吞吐对比。
+- 没有升级驱动（需要 root，且影响整台共享机器，必须由人决定）。
+- 模型这次是**原生基座**、没挂 adapter，输出的是思考文本而不是 v5 的 `<measure>+JSON` 格式；
+  这一轮只验证「环境能跑」，不验证答题质量。
