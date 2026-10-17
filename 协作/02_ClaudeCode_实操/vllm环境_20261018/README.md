@@ -52,8 +52,36 @@ LLM 必须用 `TRITON_ATTN`。
 | `envs/vllm312`：vllm 0.31.0 + torch 2.13.0+cu130 | CUDA 13 要 580+ 驱动 → `driver too old` |
 | PyPI 的 vllm 0.26.0（cu13 构建）+ torch 2.11+cu128 | `ImportError: libcudart.so.13` |
 | cuda-compat 用户态驱动（`cuda-compat-12-9`，575 用户态配 570 内核模块） | `Error 804: forward compatibility was attempted on non supported HW` —— **NVIDIA 的 forward-compat 不支持 GeForce**，只对数据中心卡开放 |
-| Docker | 容器共用宿主机内核模块，`nvidia-smi` 在容器里仍是 570，**改不了这个问题** |
+| Docker | **实测过，不行，而且比宿主机方案更差**（见下） |
 | 降级到有 cu128 构建的 vllm | vllm 0.27–0.31 全钉 torch 2.13；vllm 0.26 的 PyPI wheel 本身是 cu13；官方 wheel 索引只有 cu129/cu130 |
+
+## Docker 为什么救不了（已实测，不是推断）
+
+服务器上 Docker 是装好的（`docker 28.1.1`，`nvidia-container-cli 1.18.0`，用户在 docker 组），
+本地还有现成镜像 `heteropool/vllm-mooncake:0.26.0-cu129-mc0.3.12.post1`。实测结果：
+
+```
+$ docker run --rm --gpus all --entrypoint nvidia-smi <镜像>
+| NVIDIA-SMI 570.133.07   Driver Version: 570.133.07   CUDA Version: 12.9 |
+
+$ docker run --rm --gpus all --entrypoint python3 <镜像> -c "import torch; ..."
+torch 2.11.0+cu129 | cuda 12.9 | avail False
+RuntimeError: ... Error 804: forward compatibility was attempted on non supported HW
+```
+
+**容器里 `torch.cuda.is_available()` 直接是 False**，比宿主机方案更早失败。
+
+原因在 NVIDIA 的容器 GPU 模型：
+
+1. `nvidia-container-toolkit` 把**宿主机的驱动用户态库**（`libcuda.so`、`libnvidia-ptxjitcompiler.so` 等）
+   挂进容器，并暴露 `/dev/nvidia*`；
+2. **内核模块 `nvidia.ko` 永远在宿主机上**，容器不能替换它，也不需要 —— 这就是"容器共享驱动"的含义；
+3. 镜像里的 CUDA toolkit 只提供用户态 runtime/编译库，**PTX JIT 能力来自驱动**；
+4. 镜像自带的更新版 `libcuda`（forward-compat）想接管，NVIDIA 在 GeForce 上直接拒绝 → `Error 804`。
+
+所以 Docker 能换的是**用户态**，换不了**驱动的 PTX 能力**。而这个问题的根因恰好在后者。
+反过来说：宿主机那套 `TRITON_ATTN` 方案反而是**唯一能跑通的**，因为它用的是宿主机原生 libcuda 570，
+只把 vLLM 的 kernel 换成运行时 JIT 的。
 
 ## 代价：速度
 
