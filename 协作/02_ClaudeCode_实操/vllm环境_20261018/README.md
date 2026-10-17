@@ -9,15 +9,21 @@
 
 实际跑出来的数字（GPU4，RTX 5090）：
 
-| 项 | 值 |
+| 项 | `enforce_eager=True` | `enforce_eager=False`（开 CUDA graph） |
+|---|---|---|
+| 模型加载 | 48.2 s | 184.4 s |
+| 纯文本生成（256 tok） | 12.7 s | **3.9 s** |
+| 带图生成（448×448 PNG，256 tok） | 24.1 s | **19.8 s** |
+| `mm_ok` / `text_ok` | true / true | true / true |
+
+**开 CUDA graph 是值得的**：启动多花两分钟，但纯文本快 3.2 倍、带图快约 18%。
+`run_test.sh` 默认用 `VLLM_TEST_EAGER=0`。
+
+| 环境事实 | 值 |
 |---|---|
 | vLLM | `0.26.0+cu129` |
 | torch | `2.11.0+cu129`（`cuda_available: true`，`device: NVIDIA GeForce RTX 5090`） |
 | 架构识别 | `Qwen3_5ForConditionalGeneration` → `qwen3_5_registered: true` |
-| 模型加载 | 48.2 s |
-| 纯文本生成 | 12.7 s（256 max_tokens） |
-| **带图生成** | **24.1 s**（448×448 PNG，256 max_tokens） |
-| `mm_ok` / `text_ok` | **都是 true** |
 
 ## 为什么默认后端不行
 
@@ -54,6 +60,35 @@ LLM 必须用 `TRITON_ATTN`。
 | cuda-compat 用户态驱动（`cuda-compat-12-9`，575 用户态配 570 内核模块） | `Error 804: forward compatibility was attempted on non supported HW` —— **NVIDIA 的 forward-compat 不支持 GeForce**，只对数据中心卡开放 |
 | Docker | **实测过，不行，而且比宿主机方案更差**（见下） |
 | 降级到有 cu128 构建的 vllm | vllm 0.27–0.31 全钉 torch 2.13；vllm 0.26 的 PyPI wheel 本身是 cu13；官方 wheel 索引只有 cu129/cu130 |
+
+## 降级 vLLM 为什么也不行（版本谱系查过了）
+
+| vLLM 版本 | 官方 wheel 有的 CUDA 构建 |
+|---|---|
+| 0.10.0 | cu118 / cu126 |
+| 0.11.0 | cu129 |
+| 0.12 – 0.26 | 只有 cu129 / cu130 |
+
+- **0.12 到 0.26 之间从来没出过 cu128 构建**，"降到一个有 cu128 的版本"这个选项不存在。
+- 再往前退到 0.10（cu126）：cu126 **根本不支持 sm_120**（Blackwell / RTX 5090），
+  而且 0.10 早于 Qwen3.5，不认 `Qwen3_5ForConditionalGeneration`。
+- 结论：降级是死路，不是没查。
+
+## 真正能恢复快路径的办法：把驱动升到 575
+
+Ubuntu 20.04 官方源最高只到 `nvidia-driver-570`；但 **NVIDIA 自己的 CUDA 源
+（`ubuntu2004/x86_64`）里有 `nvidia-driver-575-open_575.57.08`**，而这台机器用的正是
+open kernel module。
+
+关键：**CUDA 12.9 的最低驱动要求就是 575.51**。升到 575 之后，已经装好的
+`envs/vllm026`（vllm 0.26.0+cu129）可以直接走**默认 FA2 后端**，不需要任何环境变量，
+CUDA graph 和 FlashInfer 采样器全部恢复——这才是真正的快路径。
+
+代价：需要 root，要卸载/重载内核模块（等于**重启**），会中断机器上其他所有人的任务。
+这是共享机器，必须由人协调，我不能单方面做。
+
+想要 580+（从而用 `envs/vllm312` 的 vllm 0.31）的话，ubuntu2004 源里没有，
+得混用 22.04 的包，风险更高。**575 是这台机器上性价比最高的一跳。**
 
 ## Docker 为什么救不了（已实测，不是推断）
 
