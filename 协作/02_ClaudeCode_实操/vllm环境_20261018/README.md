@@ -2,10 +2,47 @@
 
 用户要求：在学校服务器上新开一个环境装 vLLM，并且要能跑 Qwen3.5-9B。
 
-## 结论：**能跑通了**
+## 结论：**两台机器都跑通了，但走的路完全不同**
 
-模型能加载、纯文本能生成、带晶圆图也能生成。但**不能走 vLLM 的默认后端**——必须换成
-运行时 JIT 的注意力实现，原因见下。
+| | **学校 5090**（sm_120, Blackwell） | **学校 A100**（sm_80, Ampere） |
+|---|---|---|
+| 驱动 | 570.133.07 / CUDA 12.8 | 535.309.01 / CUDA 12.2 |
+| vLLM | 0.26.0+cu129（自建 venv） | 0.26.0+cu129（自建 venv） |
+| torch 2.11.0+cu129 | `avail True` | `avail True` |
+| **注意力后端** | **必须换成 TRITON_ATTN + TORCH_SDPA** | **默认 FLASH_ATTN 直接可用** |
+| 原因 | sm_120 没有预编译 SASS，只能 JIT 12.9 PTX，而 570 驱动 JIT 不了 | sm_80 有预编译 SASS，**根本不需要 JIT** |
+| 带图生成（256 tok） | 19.8 s | 25.8 s（**共享卡，被别人占 60%+，不代表 A100 真实速度**） |
+| 纯文本（256 tok） | 3.9 s | 7.6 s（同上） |
+| 状态 | 能跑，慢路径 | 能跑，**完整 FA2 路径** |
+
+**结论**：vLLM 能不能用，取决于 GPU 架构有没有预编译 kernel，而不是驱动版本本身。
+A100 这类成熟架构（sm_80/90）随便跑；5090 这种新架构只能等驱动升级。
+
+## A100 上的实测（2026-10-18）
+
+环境：`/data/renjinyao/envs/vllm026`（python 3.10 venv，torch 2.11.0+cu129，vllm 0.26.0+cu129）
+
+实跑结果：`mm_ok: true`、`text_ok: true`、`Resolved architecture: Qwen3_5ForConditionalGeneration`、
+**`AttentionBackendEnum.FLASH_ATTN`**、`enforce_eager: false`（CUDA graph 开着）。
+
+A100 上需要三件额外的事，都不是后端问题：
+
+1. **`C_INCLUDE_PATH` 指向 Python 头文件**：系统没装 `python3.10-dev`，Triton 编译自己的
+   驱动扩展时找不到 `Python.h`。用 `apt-get download libpython3.10-dev` 解压到
+   `/data/renjinyao/pydev` 即可（不需要 root），然后：
+   ```
+   C_INCLUDE_PATH=/data/renjinyao/pydev/usr/include/python3.10:/data/renjinyao/pydev/usr/include
+   ```
+   （两个根都要：`Python.h` 在前一个，`x86_64-linux-gnu/python3.10/pyconfig.h` 在后一个）
+2. **`VLLM_USE_FLASHINFER_SAMPLER=0`**：A100 没装 CUDA toolkit（`/usr/local/cuda` 不存在），
+   FlashInfer 找不到 nvcc。关掉采样器即可，不影响 FA2 主路径。
+3. **`VLLM_GPU_MEM`**：A100 上 6 张卡全被别人占满，只能把 `gpu_memory_utilization`
+   降到 0.55（GPU1 当时只剩约 50 GB）。
+
+注意：A100 上**没有 conda**，系统 python 3.10 又缺 `ensurepip`，建 venv 要用
+`python3.10 -m venv --without-pip` + `get-pip.py` 引导。
+
+## 5090 上的实测与结论
 
 实际跑出来的数字（GPU4，RTX 5090）：
 

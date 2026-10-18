@@ -42,12 +42,14 @@ def main() -> int:
     result["enforce_eager"] = eager
     result["attn_backend_env"] = _os.environ.get("VLLM_LLM_ATTN")
     result["mm_attn_env"] = _os.environ.get("VLLM_MM_ATTN")
+    gpu_mem = float(_os.environ.get("VLLM_GPU_MEM", "0.85"))
+    result["gpu_memory_utilization"] = gpu_mem
     t0 = time.time()
     llm = LLM(
         model=MODEL,
         dtype="bfloat16",
         max_model_len=4096,
-        gpu_memory_utilization=0.85,
+        gpu_memory_utilization=gpu_mem,
         enforce_eager=eager,
         limit_mm_per_prompt={"image": 1},
         mm_encoder_attn_backend=(_os.environ.get("VLLM_MM_ATTN") or None),
